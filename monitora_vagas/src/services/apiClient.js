@@ -1,11 +1,12 @@
 /**
  * API Client Service for Busca Vagas API
- * Based on official API documentation v1.2.1
+ * Based on official API documentation v1.4.1
  * @see https://github.com/mpbarbosa/busca_vagas/blob/main/docs/API_CLIENT_DOCUMENTATION.md
  * 
  * Uses ibira.js for API fetching and caching
  * 
- * Version: 1.1.0 - Enhanced with referential transparency improvements
+ * @module apiClient
+ * @version 2.3.0 (App) | 1.1.0 (Module) - Enhanced with referential transparency
  * - Dependency injection for logger
  * - Pure helper functions extracted
  * - Validators separated

@@ -4,6 +4,7 @@
  * Replaces alert() for better UX and accessibility
  * 
  * @module toastNotification
+ * @version 2.3.0
  */
 
 import { logger } from './logger.js';

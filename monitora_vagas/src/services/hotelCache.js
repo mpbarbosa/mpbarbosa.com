@@ -7,6 +7,9 @@
  * - Configurable TTL (Time To Live)
  * - Automatic expiration
  * - Fallback to in-memory cache if LocalStorage unavailable
+ * 
+ * @module hotelCache
+ * @version 2.3.0
  */
 
 import { logger } from './logger.js';

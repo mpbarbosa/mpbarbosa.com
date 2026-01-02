@@ -4,6 +4,7 @@
  * for better perceived performance
  * 
  * @module skeletonLoader
+ * @version 2.3.0
  */
 
 import { logger } from '../services/logger.js';

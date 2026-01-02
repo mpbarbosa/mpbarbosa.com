@@ -1,6 +1,10 @@
-// Guest Number Filter Module (FR-004B)
-// Client-side filtering of hotel vacancy results based on guest count
-// Refactored to functional programming pattern with closures
+/**
+ * Guest Number Filter Module (FR-004B)
+ * Client-side filtering of hotel vacancy results based on guest count
+ * Refactored to functional programming pattern with closures
+ * @module guestNumberFilter
+ * @version 2.3.0
+ */
 
 import { logger } from '../services/logger.js';
 import { optimisticUI } from '../services/optimisticUI.js';

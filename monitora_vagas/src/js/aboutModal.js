@@ -2,6 +2,7 @@
  * About Modal Handler
  * Manages the "Sobre" (About) modal display
  * @module aboutModal
+ * @version 2.3.0
  */
 
 import { logger } from '../services/logger.js';

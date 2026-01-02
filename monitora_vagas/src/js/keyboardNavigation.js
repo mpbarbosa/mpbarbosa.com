@@ -2,6 +2,8 @@
  * Keyboard Navigation Module
  * Implements keyboard shortcuts and enhanced navigation
  * WCAG 2.1 Level A compliance for keyboard accessibility
+ * @module keyboardNavigation
+ * @version 2.3.0
  */
 
 import { logger } from '../services/logger.js';

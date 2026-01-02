@@ -22,7 +22,7 @@ async function loadHotelsExample() {
     } catch (error) {
         // Error already logged by withErrorHandling
         // Handle UI updates here
-        console.error('Failed to load hotels:', error);
+        logger.error('Failed to load hotels', error, 'ERROR_EXAMPLES');
         throw error;
     }
 }
@@ -237,8 +237,8 @@ export {
 };
 
 // Dummy helper functions for examples
-function displayResults(results) { console.log('Results:', results); }
-function displayData(data) { console.log('Data:', data); }
+function displayResults(results) { logger.info('Results', 'ERROR_EXAMPLES'); }
+function displayData(data) { logger.info('Data', 'ERROR_EXAMPLES'); }
 function showProgressBar() { 
     return { 
         success: () => {}, 

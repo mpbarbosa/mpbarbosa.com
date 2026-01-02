@@ -1,6 +1,8 @@
 /**
  * Form Validation Service
  * Provides accessible inline form validation with ARIA support
+ * @module formValidator
+ * @version 2.3.0
  */
 
 import { logger } from './logger.js';
