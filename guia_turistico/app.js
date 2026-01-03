@@ -23,7 +23,6 @@ import toast from './toast.js';
 // Import views
 import homeView from './views/home.js';
 import converterView from './views/converter.js';
-import trackingView from './views/tracking.js';
 
 console.log("(app) Initializing Guia Turístico SPA...");
 
@@ -41,11 +40,6 @@ router
     console.log("(app) Navigating to converter");
     await routeManager.loadView(converterView);
     updateActiveNavLink('/converter');
-  })
-  .register('/tracking', async () => {
-    console.log("(app) Navigating to tracking");
-    await routeManager.loadView(trackingView);
-    updateActiveNavLink('/tracking');
   })
   .setDefault('/')
   .notFound((path) => {
@@ -153,3 +147,16 @@ window.__router = router;
 window.__routeManager = routeManager;
 
 console.log("(app) SPA initialization complete");
+
+// Ensure initial route is loaded
+// If the page has already loaded, manually trigger route handling
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  console.log("(app) Page already loaded, triggering initial route...");
+  // Use setTimeout to ensure all synchronous code completes first
+  setTimeout(() => {
+    // If no hash in URL, navigate to home
+    if (!window.location.hash || window.location.hash === '#') {
+      router.navigate('/', true);
+    }
+  }, 0);
+}
