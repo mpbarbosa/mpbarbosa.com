@@ -1,108 +1,117 @@
-/**
- * Tooltip Component Styles
- * Provides accessible tooltips for abbreviations and help text
- * 
- * Usage: <abbr title="Explanation">Term</abbr>
- */
-
-/* Abbreviation base styling */
-abbr[title] {
-  text-decoration: none;
-  border-bottom: 1px dotted var(--md-sys-color-primary, #1976d2);
-  cursor: help;
-  color: var(--md-sys-color-primary, #1976d2);
-  font-weight: 500;
+/* Tooltip Component */
+.tooltip {
   position: relative;
-  transition: border-bottom 0.2s;
+  display: inline-block;
 }
 
-abbr[title]:hover,
-abbr[title]:focus {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
+.tooltip-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10000;
+  transition: opacity 0.3s, visibility 0.3s;
+  pointer-events: none;
 }
 
-/* Touch device support - no hover tooltips */
-@media (hover: none) {
-  abbr[title] {
-    border-bottom-style: solid;
-  }
+.tooltip-content::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
 }
 
-/* Tooltip appears on hover for devices that support it */
-@media (hover: hover) {
-  abbr[title]:hover::after {
-    content: attr(title);
-    position: absolute;
-    bottom: 150%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--md-sys-color-on-surface, #1c1b1f);
-    color: var(--md-sys-color-surface, #ffffff);
-    padding: 8px 12px;
-    border-radius: 8px;
-    white-space: nowrap;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.4;
-    z-index: 1000;
-    pointer-events: none;
-    box-shadow: var(--md-sys-elevation-level2, 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15));
-    animation: tooltipFadeIn 0.2s ease-in-out;
+.tooltip:hover .tooltip-content,
+.tooltip:focus .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Tooltip Positions */
+.tooltip-content.tooltip-top {
+  bottom: 125%;
+  top: auto;
+}
+
+.tooltip-content.tooltip-bottom {
+  top: 125%;
+  bottom: auto;
+}
+
+.tooltip-content.tooltip-bottom::after {
+  top: auto;
+  bottom: 100%;
+  border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
+}
+
+.tooltip-content.tooltip-left {
+  left: auto;
+  right: 125%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip-content.tooltip-left::after {
+  left: 100%;
+  top: 50%;
+  margin-top: -5px;
+  margin-left: 0;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.9);
+}
+
+.tooltip-content.tooltip-right {
+  left: 125%;
+  right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip-content.tooltip-right::after {
+  right: 100%;
+  left: auto;
+  top: 50%;
+  margin-top: -5px;
+  margin-left: 0;
+  border-color: transparent rgba(0, 0, 0, 0.9) transparent transparent;
+}
+
+/* Accessibility - Show on Focus */
+[data-tooltip]:focus::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10000;
+}
+
+/* Mobile - Disable hover tooltips, use touch */
+@media (hover: none) and (pointer: coarse) {
+  .tooltip-content {
+    display: none;
   }
   
-  /* Tooltip arrow */
-  abbr[title]:hover::before {
-    content: '';
-    position: absolute;
-    bottom: 130%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 6px solid transparent;
-    border-top-color: var(--md-sys-color-on-surface, #1c1b1f);
-    z-index: 1001;
-    animation: tooltipFadeIn 0.2s ease-in-out;
+  .tooltip[data-tooltip]:active::after {
+    content: attr(data-tooltip);
+    display: block;
   }
-}
-
-/* Tooltip fade-in animation */
-@keyframes tooltipFadeIn {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) translateY(4px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-}
-
-/* Respect reduced motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  abbr[title]:hover::after,
-  abbr[title]:hover::before {
-    animation: none;
-  }
-}
-
-/* Mobile adjustments */
-@media (max-width: 599px) {
-  abbr[title]:hover::after {
-    font-size: 0.8125rem;
-    padding: 6px 10px;
-    max-width: 200px;
-    white-space: normal;
-  }
-}
-
-/* Ensure tooltips don't overflow viewport */
-abbr[title]:first-child:hover::after {
-  left: 0;
-  transform: translateX(0);
-}
-
-abbr[title]:last-child:hover::after {
-  left: auto;
-  right: 0;
-  transform: translateX(0);
 }

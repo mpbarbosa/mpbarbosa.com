@@ -1,330 +1,126 @@
 /**
- * Error Recovery Module
- * Comprehensive error handling and retry mechanisms
- * 
- * Provides user-friendly error messages and recovery options
- * for geolocation failures, network errors, and API timeouts.
+ * Error Recovery and Global Error Handler
+ * Provides centralized error handling and recovery mechanisms
  */
 
-// ========================================
-// GLOBAL STATE
-// ========================================
+(function() {
+  'use strict';
 
-let retryAttempts = 0;
-const MAX_RETRY_ATTEMPTS = 3;
-const RETRY_DELAY = 2000; // 2 seconds
-
-// Store retry callback for global access
-let globalRetryCallback = null;
-
-// ========================================
-// ERROR MESSAGE CONSTANTS
-// ========================================
-
-const ERROR_MESSAGES = {
-  // Geolocation errors (GeolocationPositionError codes)
-  1: {
-    title: 'Permissão Negada',
-    message: 'Por favor, permita o acesso à localização nas configurações do navegador.',
-    recoverable: false,
-    action: 'Recarregar Página'
-  },
-  2: {
-    title: 'Localização Indisponível',
-    message: 'Verifique se o GPS está ativado e se você tem conexão com a internet.',
-    recoverable: true,
-    action: 'Tentar Novamente'
-  },
-  3: {
-    title: 'Tempo Esgotado',
-    message: 'Não foi possível obter sua localização no tempo esperado.',
-    recoverable: true,
-    action: 'Tentar Novamente'
-  },
-  
-  // Network errors
-  network: {
-    title: 'Erro de Conexão',
-    message: 'Verifique sua conexão com a internet e tente novamente.',
-    recoverable: true,
-    action: 'Tentar Novamente'
-  },
-  
-  // API errors
-  api_timeout: {
-    title: 'Tempo Esgotado',
-    message: 'O servidor demorou muito para responder. Tentando novamente...',
-    recoverable: true,
-    action: 'Tentando...'
-  },
-  
-  api_error: {
-    title: 'Erro no Servidor',
-    message: 'Ocorreu um erro ao buscar os dados. Por favor, tente novamente.',
-    recoverable: true,
-    action: 'Tentar Novamente'
-  },
-  
-  // Generic fallback
-  unknown: {
-    title: 'Erro Desconhecido',
-    message: 'Ocorreu um erro inesperado. Por favor, tente novamente ou recarregue a página.',
-    recoverable: true,
-    action: 'Tentar Novamente'
-  }
-};
-
-// ========================================
-// PURE FUNCTIONS (Business Logic)
-// ========================================
-
-/**
- * Get error configuration based on error type
- * @param {number|string} errorCode - Error code or type
- * @returns {Object} Error configuration
- */
-function getErrorConfig(errorCode) {
-  return ERROR_MESSAGES[errorCode] || ERROR_MESSAGES.unknown;
-}
-
-/**
- * Check if retry should be attempted
- * @param {number} attempts - Current retry attempts
- * @param {number} maxAttempts - Maximum retry attempts
- * @returns {boolean} True if should retry
- */
-function shouldRetry(attempts, maxAttempts) {
-  return attempts < maxAttempts;
-}
-
-/**
- * Calculate retry delay with exponential backoff
- * @param {number} attempt - Current attempt number (0-indexed)
- * @param {number} baseDelay - Base delay in milliseconds
- * @returns {number} Delay in milliseconds
- */
-function calculateRetryDelay(attempt, baseDelay) {
-  return baseDelay * Math.pow(2, attempt); // Exponential backoff: 2s, 4s, 8s...
-}
-
-// ========================================
-// IMPURE FUNCTIONS (Side Effects)
-// ========================================
-
-/**
- * Handle geolocation error with recovery options
- * @param {GeolocationPositionError} error - Geolocation error object
- * @param {Function} retryCallback - Function to call on retry
- */
-function handleGeolocationError(error, retryCallback) {
-  console.error('(error-recovery) Geolocation error:', error);
-  
-  const errorConfig = getErrorConfig(error.code);
-  
-  // Store callback for global retry function
-  globalRetryCallback = retryCallback;
-  
-  // Show error banner with recovery options
-  if (typeof showErrorWithRecovery === 'function') {
-    showErrorWithRecovery(
-      errorConfig.title,
-      errorConfig.message,
-      errorConfig.recoverable,
-      errorConfig.action
-    );
-  } else {
-    // Fallback if banner function not available
-    console.warn('(error-recovery) Banner function not available');
-    alert(`${errorConfig.title}: ${errorConfig.message}`);
-  }
-}
-
-/**
- * Handle network error with retry mechanism
- * @param {Error} error - Network error object
- * @param {Function} retryCallback - Function to call on retry
- */
-function handleNetworkError(error, retryCallback) {
-  console.error('(error-recovery) Network error:', error);
-  
-  const errorConfig = getErrorConfig('network');
-  globalRetryCallback = retryCallback;
-  
-  if (typeof showErrorWithRecovery === 'function') {
-    showErrorWithRecovery(
-      errorConfig.title,
-      errorConfig.message,
-      errorConfig.recoverable,
-      errorConfig.action
-    );
-  }
-}
-
-/**
- * Handle API error with retry mechanism
- * @param {Error} error - API error object
- * @param {Function} retryCallback - Function to call on retry
- */
-function handleAPIError(error, retryCallback) {
-  console.error('(error-recovery) API error:', error);
-  
-  const isTimeout = error.name === 'TimeoutError' || error.message.includes('timeout');
-  const errorConfig = getErrorConfig(isTimeout ? 'api_timeout' : 'api_error');
-  
-  globalRetryCallback = retryCallback;
-  
-  if (typeof showErrorWithRecovery === 'function') {
-    showErrorWithRecovery(
-      errorConfig.title,
-      errorConfig.message,
-      errorConfig.recoverable,
-      errorConfig.action
-    );
-  }
-}
-
-/**
- * Retry with exponential backoff
- * @param {Function} callback - Function to retry
- * @param {number} maxAttempts - Maximum retry attempts
- */
-function retryWithBackoff(callback, maxAttempts = MAX_RETRY_ATTEMPTS) {
-  if (!shouldRetry(retryAttempts, maxAttempts)) {
-    console.warn('(error-recovery) Max retry attempts reached');
+  // Global error handler
+  window.addEventListener('error', function(event) {
+    console.error('Global error caught:', event.error);
+    displayError('Ocorreu um erro inesperado', event.error.message);
     
-    if (typeof showErrorWithRecovery === 'function') {
-      showErrorWithRecovery(
-        'Não Foi Possível Conectar',
-        'Tentamos várias vezes, mas não conseguimos obter sua localização. Por favor, verifique suas configurações e tente novamente.',
-        false,
-        'Recarregar Página'
-      );
-    }
-    return;
-  }
-  
-  const delay = calculateRetryDelay(retryAttempts, RETRY_DELAY);
-  retryAttempts++;
-  
-  console.log(`(error-recovery) Retry attempt ${retryAttempts}/${maxAttempts} after ${delay}ms`);
-  
-  setTimeout(() => {
-    if (typeof callback === 'function') {
-      callback();
-    }
-  }, delay);
-}
+    // Prevent default browser error handling
+    event.preventDefault();
+  });
 
-/**
- * Reset retry counter
- */
-function resetRetryCounter() {
-  retryAttempts = 0;
-}
+  // Unhandled promise rejection handler
+  window.addEventListener('unhandledrejection', function(event) {
+    console.error('Unhandled promise rejection:', event.reason);
+    displayError('Erro na operação assíncrona', event.reason);
+    
+    // Prevent default browser error handling
+    event.preventDefault();
+  });
 
-/**
- * Global retry function (called from banner buttons)
- */
-function retryGeolocation() {
-  console.log('(error-recovery) Manual retry triggered');
-  resetRetryCounter();
-  
-  if (globalRetryCallback && typeof globalRetryCallback === 'function') {
-    globalRetryCallback();
-  } else {
-    // Fallback: reload page
-    console.warn('(error-recovery) No retry callback available, reloading page');
-    location.reload();
-  }
-}
-
-/**
- * Show error banner with recovery options
- * @param {string} title - Error title
- * @param {string} message - Error message
- * @param {boolean} recoverable - Whether error is recoverable
- * @param {string} actionText - Action button text
- */
-function showErrorWithRecovery(title, message, recoverable, actionText) {
-  const containerId = 'geolocation-banner-container';
-  const container = document.getElementById(containerId);
-  
-  if (!container) {
-    console.error('(error-recovery) Banner container not found');
-    return;
-  }
-  
-  const retryButton = recoverable
-    ? `<button class="banner-retry" onclick="retryGeolocation()" aria-label="${actionText}">${actionText}</button>`
-    : `<button class="banner-retry" onclick="location.reload()" aria-label="${actionText}">${actionText}</button>`;
-  
-  const bannerHTML = `
-    <div class="geolocation-banner error" role="alert" aria-live="assertive">
-      <div class="geolocation-banner-icon" aria-hidden="true">✕</div>
-      <div class="geolocation-banner-content">
-        <div class="geolocation-banner-title">${title}</div>
-        <div class="geolocation-banner-message">
-          ${message}
-          ${retryButton}
-        </div>
+  /**
+   * Display error message to user
+   * @param {string} title - Error title
+   * @param {string} message - Error message
+   */
+  function displayError(title, message) {
+    const container = getOrCreateToastContainer();
+    
+    const toast = document.createElement('div');
+    toast.className = 'toast error';
+    toast.setAttribute('role', 'alert');
+    toast.setAttribute('aria-live', 'assertive');
+    
+    toast.innerHTML = `
+      <span class="toast-icon" aria-hidden="true">❌</span>
+      <div class="toast-content">
+        <strong>${escapeHtml(title)}</strong>
+        <p style="margin: 4px 0 0 0; font-size: 13px;">${escapeHtml(message)}</p>
       </div>
-    </div>
-  `;
-  
-  container.innerHTML = bannerHTML;
-}
+    `;
+    
+    container.appendChild(toast);
+    
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+      toast.classList.add('toast-exit');
+      setTimeout(() => toast.remove(), 300);
+    }, 5000);
+  }
 
-/**
- * Wrap async function with error handling
- * @param {Function} asyncFn - Async function to wrap
- * @param {Function} errorHandler - Error handler function
- * @returns {Function} Wrapped function
- */
-function withErrorHandling(asyncFn, errorHandler) {
-  return async function(...args) {
-    try {
-      return await asyncFn(...args);
-    } catch (error) {
-      if (typeof errorHandler === 'function') {
-        errorHandler(error);
-      } else {
-        console.error('(error-recovery) Unhandled error:', error);
+  /**
+   * Get or create toast container
+   * @returns {HTMLElement}
+   */
+  function getOrCreateToastContainer() {
+    let container = document.querySelector('.toast-container');
+    if (!container) {
+      container = document.createElement('div');
+      container.className = 'toast-container';
+      container.setAttribute('role', 'region');
+      container.setAttribute('aria-label', 'Notificações');
+      container.setAttribute('aria-live', 'polite');
+      document.body.appendChild(container);
+    }
+    return container;
+  }
+
+  /**
+   * Escape HTML to prevent XSS
+   * @param {string} text
+   * @returns {string}
+   */
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  /**
+   * Recovery strategies for common errors
+   */
+  const recoveryStrategies = {
+    NetworkError: function() {
+      displayError(
+        'Erro de Conexão',
+        'Verifique sua conexão com a internet e tente novamente.'
+      );
+    },
+    
+    GeolocationError: function(error) {
+      let message = 'Não foi possível obter sua localização.';
+      
+      if (error.code === 1) {
+        message = 'Permissão de localização negada. Por favor, habilite nas configurações do navegador.';
+      } else if (error.code === 2) {
+        message = 'Posição indisponível. Verifique se o GPS está ativado.';
+      } else if (error.code === 3) {
+        message = 'Tempo esgotado ao obter localização. Tente novamente.';
       }
-      throw error; // Re-throw for upstream handling
+      
+      displayError('Erro de Geolocalização', message);
+    },
+    
+    APIError: function(response) {
+      const message = response.status === 429 
+        ? 'Muitas requisições. Aguarde alguns segundos e tente novamente.'
+        : 'Erro ao comunicar com o servidor. Tente novamente mais tarde.';
+      
+      displayError('Erro de API', message);
     }
   };
-}
 
-// ========================================
-// EXPORTS (for use in other modules)
-// ========================================
-
-// Make functions available globally for browser usage
-if (typeof window !== 'undefined') {
-  window.handleGeolocationError = handleGeolocationError;
-  window.handleNetworkError = handleNetworkError;
-  window.handleAPIError = handleAPIError;
-  window.retryGeolocation = retryGeolocation;
-  window.retryWithBackoff = retryWithBackoff;
-  window.resetRetryCounter = resetRetryCounter;
-  window.showErrorWithRecovery = showErrorWithRecovery;
-  window.withErrorHandling = withErrorHandling;
-}
-
-// Export for CommonJS (Node.js testing)
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = {
-    handleGeolocationError,
-    handleNetworkError,
-    handleAPIError,
-    retryGeolocation,
-    retryWithBackoff,
-    resetRetryCounter,
-    showErrorWithRecovery,
-    withErrorHandling,
-    // Pure functions for testing
-    getErrorConfig,
-    shouldRetry,
-    calculateRetryDelay
+  // Export recovery utilities
+  window.ErrorRecovery = {
+    displayError: displayError,
+    strategies: recoveryStrategies
   };
-}
+
+  console.log('Error Recovery system initialized');
+})();

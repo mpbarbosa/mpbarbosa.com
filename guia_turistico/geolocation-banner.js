@@ -1,263 +1,203 @@
 /**
- * Geolocation Banner Utility
- * Reusable functions for showing geolocation status banners
- * 
- * Pure functions for creating banner HTML and managing banner state
+ * Geolocation Permission Banner
+ * Handles geolocation permission requests with user-friendly UI
  */
 
-// ========================================
-// PURE FUNCTIONS (Business Logic)
-// ========================================
+(function() {
+  'use strict';
 
-/**
- * Create banner HTML structure
- * @param {string} type - Banner type: 'info', 'success', 'warning', 'error'
- * @param {string} icon - Icon character/emoji
- * @param {string} title - Banner title
- * @param {string} message - Banner message
- * @param {boolean} showSpinner - Whether to show loading spinner
- * @returns {string} HTML string for banner
- */
-function createBannerHTML(type, icon, title, message, showSpinner = false) {
-  const spinnerHTML = showSpinner 
-    ? '<div class="geolocation-banner-spinner" role="progressbar" aria-label="Carregando"></div>' 
-    : '';
-  
-  return `
-    <div class="geolocation-banner ${type}" role="status" aria-live="polite">
-      <div class="geolocation-banner-icon" aria-hidden="true">${icon}</div>
+  let permissionStatus = 'prompt'; // 'prompt', 'granted', 'denied'
+
+  /**
+   * Initialize geolocation banner
+   */
+  function init() {
+    checkGeolocationPermission().then(status => {
+      permissionStatus = status;
+      
+      if (status === 'prompt') {
+        showBanner();
+      } else if (status === 'denied') {
+        showPermissionDeniedMessage();
+      }
+    });
+  }
+
+  /**
+   * Check current geolocation permission status
+   * @returns {Promise<string>}
+   */
+  async function checkGeolocationPermission() {
+    if (!navigator.permissions) {
+      return 'prompt';
+    }
+
+    try {
+      const result = await navigator.permissions.query({ name: 'geolocation' });
+      return result.state; // 'granted', 'denied', or 'prompt'
+    } catch (error) {
+      console.warn('Could not query geolocation permission:', error);
+      return 'prompt';
+    }
+  }
+
+  /**
+   * Show permission request banner
+   */
+  function showBanner() {
+    const banner = document.createElement('div');
+    banner.className = 'geolocation-banner';
+    banner.setAttribute('role', 'dialog');
+    banner.setAttribute('aria-labelledby', 'geo-banner-title');
+    banner.setAttribute('aria-describedby', 'geo-banner-message');
+    
+    banner.innerHTML = `
       <div class="geolocation-banner-content">
-        <div class="geolocation-banner-title">${title}</div>
-        <div class="geolocation-banner-message">${message}</div>
+        <h3 id="geo-banner-title" class="geolocation-banner-title">
+          📍 Permitir Acesso à Localização
+        </h3>
+        <p id="geo-banner-message" class="geolocation-banner-message">
+          Este aplicativo precisa acessar sua localização para fornecer informações sobre lugares próximos.
+        </p>
       </div>
-      ${spinnerHTML}
-    </div>
-  `;
-}
-
-/**
- * Create permission request banner
- * @returns {string} HTML for permission request banner
- */
-function createPermissionRequestBanner() {
-  return createBannerHTML(
-    'info',
-    'ℹ️',
-    'Solicitando Permissão de Localização',
-    'Por favor, permita o acesso à sua localização para continuar.',
-    true
-  );
-}
-
-/**
- * Create loading location banner
- * @returns {string} HTML for loading location banner
- */
-function createLoadingLocationBanner() {
-  return createBannerHTML(
-    'info',
-    '📍',
-    'Obtendo Localização',
-    'Buscando sua localização atual...',
-    true
-  );
-}
-
-/**
- * Create location success banner
- * @returns {string} HTML for location success banner
- */
-function createLocationSuccessBanner() {
-  return createBannerHTML(
-    'success',
-    '✓',
-    'Localização Obtida',
-    'Sua localização foi determinada com sucesso.',
-    false
-  );
-}
-
-/**
- * Create permission denied banner with instructions
- * @returns {string} HTML for permission denied banner
- */
-function createPermissionDeniedBanner() {
-  return createBannerHTML(
-    'error',
-    '✕',
-    'Permissão Negada',
-    'Por favor, permita o acesso à localização nas configurações do navegador. Depois, recarregue a página ou <button class="banner-retry" onclick="location.reload()">clique aqui para tentar novamente</button>.',
-    false
-  );
-}
-
-/**
- * Create geolocation unavailable banner with troubleshooting
- * @returns {string} HTML for geolocation unavailable banner
- */
-function createGeolocationUnavailableBanner() {
-  return createBannerHTML(
-    'error',
-    '✕',
-    'Localização Indisponível',
-    'Verifique se o GPS está ativado e se você tem conexão com a internet. <button class="banner-retry" onclick="retryGeolocation()">Tentar Novamente</button>',
-    false
-  );
-}
-
-/**
- * Create timeout banner with auto-retry
- * @returns {string} HTML for timeout banner
- */
-function createTimeoutBanner() {
-  return createBannerHTML(
-    'warning',
-    '⚠',
-    'Tempo Esgotado',
-    'Não foi possível obter sua localização no tempo esperado. <button class="banner-retry" onclick="retryGeolocation()">Tentar Novamente</button>',
-    false
-  );
-}
-
-/**
- * Create position error banner based on error code
- * @param {number} errorCode - GeolocationPositionError code
- * @returns {string} HTML for appropriate error banner
- */
-function createPositionErrorBanner(errorCode) {
-  switch (errorCode) {
-    case 1: // PERMISSION_DENIED
-      return createPermissionDeniedBanner();
-    case 2: // POSITION_UNAVAILABLE
-      return createGeolocationUnavailableBanner();
-    case 3: // TIMEOUT
-      return createTimeoutBanner();
-    default:
-      return createBannerHTML(
-        'error',
-        '✕',
-        'Erro de Localização',
-        'Ocorreu um erro ao obter sua localização.',
-        false
-      );
+      <div class="geolocation-banner-actions">
+        <button class="btn-primary" onclick="window.GeolocationBanner.requestPermission()">
+          Permitir
+        </button>
+        <button class="btn-secondary" onclick="window.GeolocationBanner.dismiss()">
+          Agora Não
+        </button>
+      </div>
+    `;
+    
+    document.body.appendChild(banner);
   }
-}
 
-// ========================================
-// IMPURE FUNCTIONS (Side Effects)
-// ========================================
+  /**
+   * Request geolocation permission
+   */
+  function requestPermission() {
+    if (!navigator.geolocation) {
+      alert('Geolocalização não é suportada neste navegador.');
+      dismissBanner();
+      return;
+    }
 
-/**
- * Show a geolocation banner in a container
- * @param {string|HTMLElement} containerId - Container ID or element
- * @param {string} bannerHTML - Banner HTML string
- * @returns {HTMLElement|null} The created banner element
- */
-function showGeolocationBanner(containerId, bannerHTML) {
-  const container = typeof containerId === 'string' 
-    ? document.getElementById(containerId) 
-    : containerId;
-  
-  if (!container) {
-    console.warn(`(geolocation-banner) Container not found: ${containerId}`);
-    return null;
+    navigator.geolocation.getCurrentPosition(
+      function success(position) {
+        console.log('Geolocation permission granted:', position);
+        permissionStatus = 'granted';
+        dismissBanner();
+        showSuccessToast();
+        
+        // Dispatch event for app to handle
+        window.dispatchEvent(new CustomEvent('geolocation-granted', {
+          detail: { position }
+        }));
+      },
+      function error(err) {
+        console.error('Geolocation permission denied:', err);
+        permissionStatus = 'denied';
+        dismissBanner();
+        showPermissionDeniedMessage();
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0
+      }
+    );
   }
-  
-  // Remove existing banner if present
-  const existingBanner = container.querySelector('.geolocation-banner');
-  if (existingBanner) {
-    existingBanner.remove();
+
+  /**
+   * Dismiss the banner
+   */
+  function dismissBanner() {
+    const banner = document.querySelector('.geolocation-banner');
+    if (banner) {
+      banner.classList.add('hidden');
+      setTimeout(() => banner.remove(), 300);
+    }
   }
-  
-  // Insert new banner at the top
-  container.insertAdjacentHTML('afterbegin', bannerHTML);
-  return container.querySelector('.geolocation-banner');
-}
 
-/**
- * Hide geolocation banner with fade animation
- * @param {string|HTMLElement} containerId - Container ID or element
- * @param {number} delay - Delay before hiding (ms)
- */
-function hideGeolocationBanner(containerId, delay = 0) {
-  const container = typeof containerId === 'string' 
-    ? document.getElementById(containerId) 
-    : containerId;
-  
-  if (!container) {
-    return;
+  /**
+   * Show success toast
+   */
+  function showSuccessToast() {
+    if (window.ErrorRecovery && window.ErrorRecovery.displayError) {
+      // Reuse toast system if available
+      const container = document.querySelector('.toast-container') || createToastContainer();
+      
+      const toast = document.createElement('div');
+      toast.className = 'toast success';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      toast.innerHTML = `
+        <span aria-hidden="true">✅</span>
+        <span>Localização ativada com sucesso!</span>
+      `;
+      
+      container.appendChild(toast);
+      
+      setTimeout(() => {
+        toast.classList.add('toast-exit');
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
   }
-  
-  const banner = container.querySelector('.geolocation-banner');
-  if (!banner) {
-    return;
+
+  /**
+   * Show permission denied message
+   */
+  function showPermissionDeniedMessage() {
+    const statusDiv = document.createElement('div');
+    statusDiv.className = 'geolocation-status denied';
+    statusDiv.setAttribute('role', 'status');
+    statusDiv.innerHTML = `
+      <span class="geolocation-status-icon" aria-hidden="true">⚠️</span>
+      <span>Localização desativada. Habilite nas configurações do navegador.</span>
+    `;
+    
+    const mainContent = document.getElementById('app-content');
+    if (mainContent) {
+      mainContent.insertBefore(statusDiv, mainContent.firstChild);
+    }
   }
-  
-  setTimeout(() => {
-    banner.classList.add('hiding');
-    setTimeout(() => {
-      banner.remove();
-    }, 300); // Match CSS animation duration
-  }, delay);
-}
 
-/**
- * Show permission request banner and hide after delay
- * @param {string|HTMLElement} containerId - Container ID or element
- */
-function showPermissionRequest(containerId) {
-  const banner = createPermissionRequestBanner();
-  showGeolocationBanner(containerId, banner);
-}
+  /**
+   * Create toast container if it doesn't exist
+   */
+  function createToastContainer() {
+    const container = document.createElement('div');
+    container.className = 'toast-container';
+    container.setAttribute('role', 'region');
+    container.setAttribute('aria-label', 'Notificações');
+    document.body.appendChild(container);
+    return container;
+  }
 
-/**
- * Show loading location banner
- * @param {string|HTMLElement} containerId - Container ID or element
- */
-function showLoadingLocation(containerId) {
-  const banner = createLoadingLocationBanner();
-  showGeolocationBanner(containerId, banner);
-}
+  /**
+   * Get current permission status
+   * @returns {string}
+   */
+  function getStatus() {
+    return permissionStatus;
+  }
 
-/**
- * Show success banner and auto-hide
- * @param {string|HTMLElement} containerId - Container ID or element
- * @param {number} autoHideDelay - Auto-hide delay (ms), default 3000
- */
-function showLocationSuccess(containerId, autoHideDelay = 3000) {
-  const banner = createLocationSuccessBanner();
-  showGeolocationBanner(containerId, banner);
-  hideGeolocationBanner(containerId, autoHideDelay);
-}
-
-/**
- * Show error banner based on GeolocationPositionError
- * @param {string|HTMLElement} containerId - Container ID or element
- * @param {GeolocationPositionError} error - Geolocation error object
- */
-function showLocationError(containerId, error) {
-  const banner = createPositionErrorBanner(error.code);
-  showGeolocationBanner(containerId, banner);
-}
-
-// Export functions for use in other modules
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = {
-    // Pure functions
-    createBannerHTML,
-    createPermissionRequestBanner,
-    createLoadingLocationBanner,
-    createLocationSuccessBanner,
-    createPermissionDeniedBanner,
-    createGeolocationUnavailableBanner,
-    createTimeoutBanner,
-    createPositionErrorBanner,
-    // Impure functions
-    showGeolocationBanner,
-    hideGeolocationBanner,
-    showPermissionRequest,
-    showLoadingLocation,
-    showLocationSuccess,
-    showLocationError
+  // Export public API
+  window.GeolocationBanner = {
+    init: init,
+    requestPermission: requestPermission,
+    dismiss: dismissBanner,
+    getStatus: getStatus
   };
-}
+
+  // Auto-initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+  console.log('Geolocation Banner initialized');
+})();

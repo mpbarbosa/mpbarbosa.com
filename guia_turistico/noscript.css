@@ -1,253 +1,136 @@
-/**
- * No JavaScript Fallback Styles
- * 
- * Styles for users with JavaScript disabled.
- * Provides clear messaging and basic functionality guidance.
- */
-
-/* No JavaScript Warning Banner */
+/* No JavaScript Fallback Styles */
 .noscript-banner {
-  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
-  color: #ffffff;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 20px;
   text-align: center;
-  border-left: 6px solid #c92a2a;
 }
 
 .noscript-banner h2 {
-  margin: 0 0 12px 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.noscript-banner h2::before {
-  content: "⚠️ ";
-  font-size: 1.8rem;
-  margin-right: 8px;
+  color: #856404;
+  margin-top: 0;
+  font-size: 24px;
 }
 
 .noscript-banner p {
-  margin: 8px 0;
-  line-height: 1.6;
-  font-size: 1rem;
+  color: #856404;
+  font-size: 16px;
+  margin: 12px 0;
 }
 
-.noscript-banner p:last-child {
-  margin-bottom: 0;
-}
-
-/* Instructions Section */
 .noscript-instructions {
-  background: #f8f9fa;
-  border: 2px solid #dee2e6;
-  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
-  margin: 20px 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .noscript-instructions h3 {
+  color: #1976d2;
+  border-bottom: 2px solid #1976d2;
+  padding-bottom: 8px;
   margin-top: 0;
-  color: #495057;
-  font-size: 1.25rem;
 }
 
-.noscript-instructions h3::before {
-  content: "💡 ";
-  margin-right: 6px;
+.browser-help {
+  margin: 24px 0;
+  padding: 16px;
+  background: #f9f9f9;
+  border-left: 4px solid #1976d2;
+  border-radius: 4px;
 }
 
-.noscript-instructions ol {
+.browser-help h4 {
+  color: #1565c0;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.browser-help ol {
   margin: 12px 0;
   padding-left: 24px;
 }
 
-.noscript-instructions li {
+.browser-help li {
   margin: 8px 0;
   line-height: 1.6;
-}
-
-.noscript-instructions strong {
-  color: #212529;
-}
-
-/* Browser Help Section */
-.browser-help {
-  background: #e7f5ff;
-  border: 2px solid #74c0fc;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px 0;
-}
-
-.browser-help h4 {
-  margin: 0 0 12px 0;
-  color: #1971c2;
-  font-size: 1.1rem;
-}
-
-.browser-help ul {
-  margin: 0;
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-.browser-help li {
-  margin: 6px 0;
-  line-height: 1.5;
 }
 
 .browser-help code {
-  background: #d0ebff;
+  background: #e0e0e0;
   padding: 2px 6px;
   border-radius: 3px;
-  font-family: 'Courier New', monospace;
-  font-size: 0.9em;
-  color: #1864ab;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
 }
 
-/* Alternative Options */
+.browser-help strong {
+  color: #1976d2;
+  font-weight: 600;
+}
+
 .noscript-alternatives {
-  background: #fff9db;
-  border: 2px solid #ffd43b;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #e3f2fd;
   border-radius: 8px;
-  padding: 16px;
-  margin: 16px 0;
+  border: 1px solid #90caf9;
 }
 
 .noscript-alternatives h4 {
-  margin: 0 0 12px 0;
-  color: #e67700;
-  font-size: 1.1rem;
-}
-
-.noscript-alternatives h4::before {
-  content: "🔗 ";
-  margin-right: 6px;
+  color: #1565c0;
+  margin-top: 0;
 }
 
 .noscript-alternatives ul {
-  margin: 0;
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
 }
 
 .noscript-alternatives li {
-  margin: 8px 0;
-  line-height: 1.6;
+  margin: 16px 0;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.noscript-alternatives strong {
+  color: #1976d2;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .noscript-alternatives a {
-  color: #1971c2;
-  text-decoration: underline;
+  color: #1565c0;
+  text-decoration: none;
   font-weight: 500;
 }
 
 .noscript-alternatives a:hover {
-  color: #1864ab;
-}
-
-/* Hide interactive elements when JS is disabled */
-.js-required {
-  display: none;
+  text-decoration: underline;
 }
 
 /* Mobile Responsive */
-@media (max-width: 599px) {
-  .noscript-banner {
+@media (max-width: 600px) {
+  .noscript-banner,
+  .noscript-instructions,
+  .noscript-alternatives {
+    margin: 12px;
     padding: 16px;
-    margin: 16px 0;
   }
   
   .noscript-banner h2 {
-    font-size: 1.25rem;
-  }
-  
-  .noscript-instructions,
-  .browser-help,
-  .noscript-alternatives {
-    padding: 12px;
-    margin: 12px 0;
-  }
-  
-  .noscript-instructions h3,
-  .browser-help h4,
-  .noscript-alternatives h4 {
-    font-size: 1rem;
-  }
-}
-
-/* Tablet */
-@media (min-width: 600px) and (max-width: 899px) {
-  .noscript-banner {
-    padding: 18px;
-  }
-  
-  .noscript-instructions,
-  .browser-help,
-  .noscript-alternatives {
-    padding: 18px;
-  }
-}
-
-/* Print styles - hide noscript warnings when printing */
-@media print {
-  .noscript-banner,
-  .noscript-instructions,
-  .browser-help,
-  .noscript-alternatives {
-    display: none;
-  }
-}
-
-/* Dark mode support (future) */
-@media (prefers-color-scheme: dark) {
-  .noscript-banner {
-    background: linear-gradient(135deg, #c92a2a 0%, #a61e4d 100%);
-  }
-  
-  .noscript-instructions {
-    background: #25262b;
-    border-color: #373a40;
-    color: #c1c2c5;
-  }
-  
-  .noscript-instructions h3 {
-    color: #e9ecef;
+    font-size: 20px;
   }
   
   .browser-help {
-    background: #1a1b1e;
-    border-color: #4c6ef5;
-    color: #c1c2c5;
-  }
-  
-  .browser-help h4 {
-    color: #748ffc;
-  }
-  
-  .browser-help code {
-    background: #364fc7;
-    color: #dbe4ff;
-  }
-  
-  .noscript-alternatives {
-    background: #2b2a1c;
-    border-color: #fab005;
-    color: #c1c2c5;
-  }
-  
-  .noscript-alternatives h4 {
-    color: #ffd43b;
-  }
-  
-  .noscript-alternatives a {
-    color: #74c0fc;
-  }
-  
-  .noscript-alternatives a:hover {
-    color: #91ceff;
+    padding: 12px;
   }
 }
