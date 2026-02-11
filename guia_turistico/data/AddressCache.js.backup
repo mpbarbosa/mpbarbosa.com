@@ -88,17 +88,16 @@ class AddressCache {
 		// DEPRECATED (v0.8.7-alpha): Legacy properties kept for backward compatibility
 		// These are now managed by the composed classes above but maintained
 		// for any direct property access (use getInstance() methods instead)
-		// Initialize from dataStore to ensure consistency
 		this.lastNotifiedChangeSignature = null;
 		this.lastNotifiedBairroChangeSignature = null;
 		this.lastNotifiedMunicipioChangeSignature = null;
 		this.logradouroChangeCallback = null;
 		this.bairroChangeCallback = null;
 		this.municipioChangeCallback = null;
-		this.currentAddress = this.dataStore.getCurrent().address;
-		this.previousAddress = this.dataStore.getPrevious().address;
-		this.currentRawData = this.dataStore.getCurrentRawData();
-		this.previousRawData = this.dataStore.getPreviousRawData();
+		this.currentAddress = null;
+		this.previousAddress = null;
+		this.currentRawData = null;
+		this.previousRawData = null;
 		
 		// Instance-based cleanup timer using TimerManager (prevents memory leaks)
 		timerManager.setInterval(() => {
@@ -253,7 +252,6 @@ class AddressCache {
 	 * @author Marcelo Pereira Barbosa
 	 */
 	setBairroChangeCallback(callback) {
-		this.callbackRegistry.register('bairro', callback);
 		this.bairroChangeCallback = callback;
 	}
 
@@ -263,7 +261,6 @@ class AddressCache {
 	 * @static
 	 */
 	static setBairroChangeCallback(callback) {
-		this.callbackRegistry.register('bairro', callback);
 		return AddressCache.getInstance().setBairroChangeCallback(callback);
 	}
 
@@ -287,7 +284,6 @@ class AddressCache {
 	 * @author Marcelo Pereira Barbosa
 	 */
 	setMunicipioChangeCallback(callback) {
-		this.callbackRegistry.register('municipio', callback);
 		this.municipioChangeCallback = callback;
 	}
 
@@ -297,7 +293,6 @@ class AddressCache {
 	 * @static
 	 */
 	static setMunicipioChangeCallback(callback) {
-		this.callbackRegistry.register('municipio', callback);
 		return AddressCache.getInstance().setMunicipioChangeCallback(callback);
 	}
 
@@ -308,7 +303,7 @@ class AddressCache {
 	 * @since 0.8.3-alpha
 	 */
 	getLogradouroChangeCallback() {
-		return this.callbackRegistry.get('logradouro');
+		return this.logradouroChangeCallback;
 	}
 
 	/**
@@ -317,7 +312,6 @@ class AddressCache {
 	 * @static
 	 */
 	static getLogradouroChangeCallback() {
-		return this.callbackRegistry.get('logradouro');
 		return AddressCache.getInstance().getLogradouroChangeCallback();
 	}
 
@@ -328,7 +322,7 @@ class AddressCache {
 	 * @since 0.8.3-alpha
 	 */
 	getBairroChangeCallback() {
-		return this.callbackRegistry.get('bairro');
+		return this.bairroChangeCallback;
 	}
 
 	/**
@@ -337,7 +331,6 @@ class AddressCache {
 	 * @static
 	 */
 	static getBairroChangeCallback() {
-		return this.callbackRegistry.get('bairro');
 		return AddressCache.getInstance().getBairroChangeCallback();
 	}
 
@@ -348,7 +341,7 @@ class AddressCache {
 	 * @since 0.8.3-alpha
 	 */
 	getMunicipioChangeCallback() {
-		return this.callbackRegistry.get('municipio');
+		return this.municipioChangeCallback;
 	}
 
 	/**
@@ -357,7 +350,6 @@ class AddressCache {
 	 * @static
 	 */
 	static getMunicipioChangeCallback() {
-		return this.callbackRegistry.get('municipio');
 		return AddressCache.getInstance().getMunicipioChangeCallback();
 	}
 
@@ -365,32 +357,31 @@ class AddressCache {
 	 * Checks if logradouro has changed compared to previous address.
 	 * Returns true only once per change to prevent notification loops.
 	 * 
-	 * **REFACTORED v0.8.7-alpha**: Now delegates to AddressChangeDetector
-	 * 
 	 * @returns {boolean} True if logradouro has changed and not yet notified
 	 * @since 0.8.3-alpha
 	 */
 	hasLogradouroChanged() {
-		const current = this.dataStore.getCurrent().address;
-		const previous = this.dataStore.getPrevious().address;
-		
-		if (!current || !previous) {
+		if (!this.currentAddress || !this.previousAddress) {
 			return false;
 		}
-		
-		const hasChanged = this.changeDetector.hasFieldChanged(
-			'logradouro',
-			previous.logradouro,
-			current.logradouro
-		);
-		
-		// Sync legacy property for backward compatibility
-		if (hasChanged) {
-			this.lastNotifiedChangeSignature = 
-				`${previous.logradouro}=>${current.logradouro}`;
+
+		const hasChanged = this.currentAddress.logradouro !== this.previousAddress.logradouro;
+
+		if (!hasChanged) {
+			return false;
 		}
-		
-		return hasChanged;
+
+		// Create a signature for this change to track if we've already notified
+		const changeSignature = `${this.previousAddress.logradouro}=>${this.currentAddress.logradouro}`;
+
+		// If we've already notified about this exact change, return false
+		if (this.lastNotifiedChangeSignature === changeSignature) {
+			return false;
+		}
+
+		// Mark this change as notified
+		this.lastNotifiedChangeSignature = changeSignature;
+		return true;
 	}
 
 	/**
@@ -406,32 +397,31 @@ class AddressCache {
 	 * Checks if bairro has changed compared to previous address.
 	 * Returns true only once per change to prevent notification loops.
 	 * 
-	 * **REFACTORED v0.8.7-alpha**: Now delegates to AddressChangeDetector
-	 * 
 	 * @returns {boolean} True if bairro has changed and not yet notified
 	 * @since 0.8.3-alpha
 	 */
 	hasBairroChanged() {
-		const current = this.dataStore.getCurrent().address;
-		const previous = this.dataStore.getPrevious().address;
-		
-		if (!current || !previous) {
+		if (!this.currentAddress || !this.previousAddress) {
 			return false;
 		}
-		
-		const hasChanged = this.changeDetector.hasFieldChanged(
-			'bairro',
-			previous.bairro,
-			current.bairro
-		);
-		
-		// Sync legacy property for backward compatibility
-		if (hasChanged) {
-			this.lastNotifiedBairroChangeSignature = 
-				`${previous.bairro}=>${current.bairro}`;
+
+		const hasChanged = this.currentAddress.bairro !== this.previousAddress.bairro;
+
+		if (!hasChanged) {
+			return false;
 		}
-		
-		return hasChanged;
+
+		// Create a signature for this change to track if we've already notified
+		const changeSignature = `${this.previousAddress.bairro}=>${this.currentAddress.bairro}`;
+
+		// If we've already notified about this exact change, return false
+		if (this.lastNotifiedBairroChangeSignature === changeSignature) {
+			return false;
+		}
+
+		// Mark this change as notified
+		this.lastNotifiedBairroChangeSignature = changeSignature;
+		return true;
 	}
 
 	/**
@@ -447,32 +437,31 @@ class AddressCache {
 	 * Checks if municipio has changed compared to previous address.
 	 * Returns true only once per change to prevent notification loops.
 	 * 
-	 * **REFACTORED v0.8.7-alpha**: Now delegates to AddressChangeDetector
-	 * 
 	 * @returns {boolean} True if municipio has changed and not yet notified
 	 * @since 0.8.3-alpha
 	 */
 	hasMunicipioChanged() {
-		const current = this.dataStore.getCurrent().address;
-		const previous = this.dataStore.getPrevious().address;
-		
-		if (!current || !previous) {
+		if (!this.currentAddress || !this.previousAddress) {
 			return false;
 		}
-		
-		const hasChanged = this.changeDetector.hasFieldChanged(
-			'municipio',
-			previous.municipio,
-			current.municipio
-		);
-		
-		// Sync legacy property for backward compatibility
-		if (hasChanged) {
-			this.lastNotifiedMunicipioChangeSignature = 
-				`${previous.municipio}=>${current.municipio}`;
+
+		const hasChanged = this.currentAddress.municipio !== this.previousAddress.municipio;
+
+		if (!hasChanged) {
+			return false;
 		}
-		
-		return hasChanged;
+
+		// Create a signature for this change to track if we've already notified
+		const changeSignature = `${this.previousAddress.municipio}=>${this.currentAddress.municipio}`;
+
+		// If we've already notified about this exact change, return false
+		if (this.lastNotifiedMunicipioChangeSignature === changeSignature) {
+			return false;
+		}
+
+		// Mark this change as notified
+		this.lastNotifiedMunicipioChangeSignature = changeSignature;
+		return true;
 	}
 
 	/**
@@ -487,17 +476,23 @@ class AddressCache {
 	/**
 	 * Gets details about logradouro change.
 	 * 
-	 * **REFACTORED v0.8.7-alpha**: Now delegates to AddressChangeDetector
-	 * 
 	 * @returns {Object} Change details with current and previous logradouro
 	 * @since 0.8.3-alpha
 	 */
 	getLogradouroChangeDetails() {
-		return this.changeDetector.getChangeDetails(
-			'logradouro',
-			this.dataStore.getPrevious().address,
-			this.dataStore.getCurrent().address
-		);
+		const currentLogradouro = this.currentAddress?.logradouro || null;
+		const previousLogradouro = this.previousAddress?.logradouro || null;
+
+		return {
+			hasChanged: currentLogradouro !== previousLogradouro,
+			current: {
+				logradouro: currentLogradouro
+			},
+			previous: {
+				logradouro: previousLogradouro
+			},
+			timestamp: Date.now()
+		};
 	}
 
 	/**
@@ -512,31 +507,29 @@ class AddressCache {
 	/**
 	 * Gets details about bairro change.
 	 * 
-	 * **REFACTORED v0.8.7-alpha**: Now delegates to AddressChangeDetector
-	 * 
 	 * @returns {Object} Change details with current and previous bairro
 	 * @since 0.8.3-alpha
 	 */
 	getBairroChangeDetails() {
-		const currentRawData = this.dataStore.getCurrentRawData();
-		const previousRawData = this.dataStore.getPreviousRawData();
-		
+		const currentBairro = this.currentAddress?.bairro || null;
+		const previousBairro = this.previousAddress?.bairro || null;
+
 		// Compute bairroCompleto from raw data if available
-		const currentBairroCompleto = this._computeBairroCompleto(currentRawData);
-		const previousBairroCompleto = this._computeBairroCompleto(previousRawData);
-		
-		// Get base change details from changeDetector
-		const details = this.changeDetector.getChangeDetails(
-			'bairro',
-			this.dataStore.getPrevious().address,
-			this.dataStore.getCurrent().address
-		);
-		
-		// Enhance with bairroCompleto information
-		details.current.bairroCompleto = currentBairroCompleto;
-		details.previous.bairroCompleto = previousBairroCompleto;
-		
-		return details;
+		const currentBairroCompleto = this._computeBairroCompleto(this.currentRawData);
+		const previousBairroCompleto = this._computeBairroCompleto(this.previousRawData);
+
+		return {
+			hasChanged: currentBairro !== previousBairro,
+			current: {
+				bairro: currentBairro,
+				bairroCompleto: currentBairroCompleto
+			},
+			previous: {
+				bairro: previousBairro,
+				bairroCompleto: previousBairroCompleto
+			},
+			timestamp: Date.now()
+		};
 	}
 
 	/**
@@ -579,19 +572,14 @@ class AddressCache {
 	/**
 	 * Gets details about municipio change.
 	 * 
-	 * **REFACTORED v0.8.7-alpha**: Now delegates to AddressChangeDetector
-	 * 
 	 * @returns {Object} Change details with current and previous municipio
 	 * @since 0.8.3-alpha
 	 */
 	getMunicipioChangeDetails() {
-		const current = this.dataStore.getCurrent().address;
-		const previous = this.dataStore.getPrevious().address;
-		
-		const currentMunicipio = current?.municipio ?? undefined;
-		const previousMunicipio = previous?.municipio ?? undefined;
-		const currentUf = current?.uf ?? undefined;
-		const previousUf = previous?.uf ?? undefined;
+		const currentMunicipio = this.currentAddress?.municipio ?? undefined;
+		const previousMunicipio = this.previousAddress?.municipio ?? undefined;
+		const currentUf = this.currentAddress?.uf ?? undefined;
+		const previousUf = this.previousAddress?.uf ?? undefined;
 
 		return {
 			hasChanged: (currentMunicipio ?? null) !== (previousMunicipio ?? null),
@@ -652,14 +640,11 @@ class AddressCache {
 				rawData: data, // Store raw data for detailed change information
 			});
 
-			// Update data store with new address and raw data (v0.8.7-alpha refactoring)
-			this.dataStore.update(extractor.enderecoPadronizado, data);
-			
-			// Sync legacy properties for backward compatibility
-			this.currentAddress = this.dataStore.getCurrent().address;
-			this.previousAddress = this.dataStore.getPrevious().address;
-			this.currentRawData = this.dataStore.getCurrentRawData();
-			this.previousRawData = this.dataStore.getPreviousRawData();
+			// Update current and previous addresses for change detection
+			this.previousAddress = this.currentAddress;
+			this.previousRawData = this.currentRawData;
+			this.currentAddress = extractor.enderecoPadronizado;
+			this.currentRawData = data;
 
 			// Reset change notification flags when new address is cached
 			// This allows detection of new changes after cache updates

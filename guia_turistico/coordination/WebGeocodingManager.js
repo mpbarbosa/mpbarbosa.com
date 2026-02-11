@@ -92,6 +92,8 @@ import DisplayerFactory from '../html/DisplayerFactory.js';
 
 // Import utility functions
 import { log, warn, error } from '../utils/logger.js';
+import { showError } from '../utils/toast.js';
+import { withObserver } from '../utils/ObserverMixin.js';
 
 /**
  * Default configuration for DOM element IDs used by WebGeocodingManager.
@@ -577,23 +579,6 @@ class WebGeocodingManager {
 	 * };
 	 * manager.subscribe(myObserver);
 	 */
-	subscribe(observer) {
-		if (observer == null) {
-			warn("(WebGeocodingManager) Attempted to subscribe a null observer.");
-			return;
-		}
-		this.observerSubject.subscribe(observer);
-	}
-
-	/**
-	 * Unsubscribes an observer from receiving notifications.
-	 * 
-	 * @param {Object} observer - Observer object to unsubscribe
-	 * @returns {void}
-	 */
-	unsubscribe(observer) {
-		this.observerSubject.unsubscribe(observer);
-	}
 
 	/**
 	 * Notifies all subscribed observers about current position and address.
@@ -907,8 +892,8 @@ class WebGeocodingManager {
 				</div>
 			`;
 		} else {
-			// Fallback to alert if no suitable element found
-			alert(`Erro: ${errorObj.message}`);
+			// Fallback to toast notification if no suitable element found
+			showError(`Erro: ${errorObj.message}`);
 		}
 	}
 
@@ -984,6 +969,10 @@ class WebGeocodingManager {
 		return `${this.constructor.name}: ${this.currentCoords ? this.currentCoords.latitude : "N/A"}, ${this.currentCoords ? this.currentCoords.longitude : "N/A"}`;
 	}
 }
+
+// Apply observer mixin for subscribe/unsubscribe with null checking (notifyObservers has custom signature)
+Object.assign(WebGeocodingManager.prototype, 
+	withObserver({ checkNull: true, className: 'WebGeocodingManager', excludeNotify: true }));
 
 export default WebGeocodingManager;
 /**
