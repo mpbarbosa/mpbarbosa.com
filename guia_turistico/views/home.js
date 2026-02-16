@@ -1,519 +1,672 @@
 /**
- * @fileoverview Home View - Main landing page for Guia Turístico
- * @version 0.8.7-alpha
+ * @fileoverview Home View Controller - Location Tracking and Geocoding
+ * Manages the home view of Guia Turístico application with real-time location tracking
  * 
- * Displays user's current location with toggle between single-position and continuous tracking
- * 
- * This view is loaded by the SPA router and uses the WebGeocodingManager from guia_js library
- * to obtain and display location information.
- * 
- * Features:
- * - Single location capture (one-time)
- * - Continuous location tracking (loop mode)
- * - Toggle between modes with checkbox
- * - Contextual button status messages (v0.8.7-alpha)
+ * This view controller handles:
+ * - Continuous and single-shot location tracking
+ * - Geocoding and address display coordination
+ * - Speech synthesis for accessibility
+ * - Chronometer for elapsed time tracking
+ * - Observer subscriptions for real-time updates
  * 
  * @module views/home
- * @requires https://cdn.jsdelivr.net/gh/mpbarbosa/guia_js@0.6.0-alpha/src/guia.js
+ * @since 0.10.0-alpha (refactored from app.js)
+ * @author Marcelo Pereira Barbosa
  */
 
-import { WebGeocodingManager, PositionManager, AddressCache } from 'https://cdn.jsdelivr.net/gh/mpbarbosa/guia_js@0.6.0-alpha/src/guia.js';
-import HTMLSidraDisplayer from '../html/HTMLSidraDisplayer.js';
-import { ADDRESS_FETCHED_EVENT } from '../config/defaults.js';
-import { extractDistrito, extractBairro, determineLocationType, formatLocationValue } from '../address-parser.js';
-import timerManager from '../utils/TimerManager.js';
+'use strict';
+
+import WebGeocodingManager from '../coordination/WebGeocodingManager.js';
+import Chronometer from '../timing/Chronometer.js';
+import PositionManager from '../core/PositionManager.js';
+import GeoPosition from '../core/GeoPosition.js';
 import { log, warn, error } from '../utils/logger.js';
-import { showInfo } from '../utils/toast.js';
-import { initializeEmptyStates, clearAllEmptyStates } from '../utils/empty-state-manager.js';
-import { disableWithReason, enableWithMessage, BUTTON_STATUS_MESSAGES } from '../utils/button-status.js';
 
 /**
- * Home view implementation
+ * Home View Controller for location tracking and geocoding display.
  * 
- * Note: This file contains helper functions for the home view.
- * The actual HTML is embedded in src/index.html and initialization
- * is handled by src/app.js.
+ * Manages the home view (/), handling:
+ * - Continuous and single-shot location tracking
+ * - Geocoding and address display
+ * - Speech synthesis for accessibility
+ * - Chronometer for elapsed time tracking
+ * - Observer subscriptions for real-time updates
  * 
- * @deprecated The view configuration object structure is unused.
- * This file is kept for potential future refactoring.
+ * @class HomeViewController
+ * @since 0.10.0-alpha (refactored from app.js)
+ * 
+ * @example
+ * // Basic usage
+ * const controller = new HomeViewController(document, {
+ *   locationResult: 'locationResult',
+ *   elementIds: {
+ *     positionDisplay: 'lat-long-display',
+ *     referencePlaceDisplay: 'reference-place-display',
+ *     enderecoPadronizadoDisplay: 'endereco-padronizado-display',
+ *     speechSynthesis: {...},
+ *     sidraDisplay: 'dadosSidra'
+ *   }
+ * });
+ * await controller.init();
+ * 
+ * @example
+ * // With dependency injection (for testing)
+ * const controller = new HomeViewController(document, {
+ *   locationResult: 'locationResult',
+ *   manager: mockManager,
+ *   chronometer: mockChronometer
+ * });
+ * await controller.init();
  */
-
-// State
-let continuousMode = false;
-let firstUpdate = true;
-let manager = null;
-let sidraDisplayer = null;
-
-// Track event listeners for cleanup
-const eventListeners = new Map();
-
-async function mount(container) {
-  log("(home-view) Mounting home view...");
-  
-  try {
-    // Initialize state
-    continuousMode = false;
-    firstUpdate = true;
-    
-    // Initialize empty states for better UX
-    initializeEmptyStates();
-    log("(home-view) Empty states initialized");
-    
-    // Initialize geolocation manager
-    manager = await _initializeGeocodingManager();
-    
-    // Expose manager to window for E2E testing
-    if (typeof window !== 'undefined') {
-      window.webGeocodingManager = manager;
+class HomeViewController {
+  /**
+   * Creates a HomeViewController instance.
+   * 
+   * @param {Document} document - Browser document object for DOM manipulation
+   * @param {Object} params - Configuration parameters
+   * @param {string|HTMLElement} params.locationResult - Location result element ID or element
+   * @param {Object} [params.elementIds] - Element IDs for all display components
+   * @param {string} [params.elementIds.positionDisplay] - Coordinate display element ID
+   * @param {string} [params.elementIds.referencePlaceDisplay] - Reference place display element ID
+   * @param {string} [params.elementIds.enderecoPadronizadoDisplay] - Address display element ID
+   * @param {Object} [params.elementIds.speechSynthesis] - Speech synthesis configuration
+   * @param {string} [params.elementIds.sidraDisplay] - SIDRA statistics display element ID
+   * @param {WebGeocodingManager} [params.manager] - Optional pre-configured manager (dependency injection)
+   * @param {Chronometer} [params.chronometer] - Optional pre-configured chronometer (dependency injection)
+   * @param {boolean} [params.autoStartTracking=true] - Auto-start tracking on init
+   * 
+   * @throws {TypeError} If document is not provided
+   * @throws {TypeError} If params.locationResult is not specified
+   */
+  constructor(document, params = {}) {
+    // Validation
+    if (!document) {
+      throw new TypeError('HomeViewController requires a document object');
+    }
+    if (!params.locationResult) {
+      throw new TypeError('HomeViewController requires params.locationResult');
     }
     
-    // Initialize SIDRA displayer
-    _initializeSidraDisplayer();
+    // Store configuration
+    this.document = document;
+    this.params = params;
+    this.autoStartTracking = params.autoStartTracking !== false; // Default true
     
-    // Setup handlers
-    _setupLocationUpdateHandlers();
-    _setupCacheDisplayHandlers();
-    _setupButtonHandlers();
-    _setupGetLocationButton();
-    _setupTrackingModeToggle();
+    // State management
+    this.initialized = false;
+    this.tracking = false;
     
-    // Initialize buttons with disabled status messages
-    _initializeButtonStates();
-  } catch (err) {
-    error("(home-view) Error mounting home view:", err);
-    // Display user-friendly error message
-      if (container) {
-        container.innerHTML = `
-          <div class="error-message" role="alert">
-            <h2>❌ Erro ao Inicializar</h2>
-      <p>Não foi possível inicializar a visualização. Por favor, recarregue a página.</p>
-      <p class="error-details">${err.message}</p>
-    </div>
-  `;
+    // Components (initialized in init())
+    this.manager = params.manager || null;
+    this.chronometer = params.chronometer || null;
+    
+    // Event listener handlers (bound methods stored for cleanup)
+    this._boundHandlers = {};
+    
+    log('HomeViewController created (not yet initialized)');
+  }
+  
+  /**
+   * Initializes the home view controller and all dependencies.
+   * 
+   * **Initialization Steps**:
+   * 1. Create WebGeocodingManager instance
+   * 2. Initialize Chronometer for elapsed time
+   * 3. Subscribe chronometer to PositionManager
+   * 4. Set up button event listeners
+   * 5. Auto-start tracking if enabled
+   * 
+   * @async
+   * @returns {Promise<void>} Resolves when initialization complete
+   * @throws {Error} If WebGeocodingManager creation fails
+   * @throws {Error} If chronometer element not found
+   * 
+   * @fires HomeViewController#homeview:initialized - When initialization completes
+   * 
+   * @example
+   * const controller = new HomeViewController(document, {...});
+   * await controller.init();
+   * console.log('Home view ready');
+   */
+  async init() {
+    if (this.initialized) {
+      warn('HomeViewController already initialized');
+      return;
     }
-    throw err; // Re-throw for app-level handling
-  }
-}
-
-function cleanup() {
-  log("(home-view) Cleaning up home view...");
-  
-  // Remove all tracked event listeners
-  eventListeners.forEach(({ element, event, handler }) => {
-    if (element) {
-      element.removeEventListener(event, handler);
-      log(`(home-view) Removed ${event} listener from`, element.id || element.tagName);
+    
+    try {
+      // 1. Create WebGeocodingManager
+      await this._initializeManager();
+      
+      // 2. Initialize Chronometer
+      await this._initializeChronometer();
+      
+      // 3. Set up event listeners (stub for Step 4)
+      this._setupEventListeners();
+      
+      // Mark as initialized BEFORE auto-start to avoid check error
+      this.initialized = true;
+      
+      // 4. Auto-start tracking if enabled
+      if (this.autoStartTracking) {
+        this.startTracking();
+      }
+      
+      log('HomeViewController initialized successfully');
+      
+      // Emit initialized event
+      this.document.dispatchEvent(new CustomEvent('homeview:initialized', {
+        detail: { controller: this }
+      }));
+      
+    } catch (err) {
+      error('HomeViewController initialization failed:', err);
+      throw err;
     }
-  });
-  eventListeners.clear();
-  
-  // Stop any ongoing geolocation watchers
-  if (manager && manager.watchId) {
-    navigator.geolocation.clearWatch(manager.watchId);
   }
   
-  // Stop speech synthesis
-  if (window.speechSynthesis) {
-    window.speechSynthesis.cancel();
+  /**
+   * Checks if controller is currently tracking location.
+   * 
+   * @returns {boolean} True if tracking is active
+   * 
+   * @example
+   * if (controller.isTracking()) {
+   *   console.log('Location tracking is active');
+   * }
+   */
+  isTracking() {
+    return this.tracking;
   }
   
-  // Clear intervals using TimerManager
-  timerManager.clearTimer('home-cache-display');
-  timerManager.clearTimer('home-speech-queue-display');
+  /**
+   * Cleans up all resources and event listeners.
+   * 
+   * **Cleanup Actions**:
+   * 1. Stop tracking if active
+   * 2. Remove all event listeners
+   * 3. Destroy chronometer
+   * 4. Destroy manager
+   * 5. Reset state
+   * 
+   * @returns {void}
+   * 
+   * @example
+   * controller.destroy();
+   * console.log('HomeViewController cleaned up');
+   */
+  destroy() {
+    log('Destroying HomeViewController...');
+    
+    // Stop tracking if active
+    if (this.tracking) {
+      this.stopTracking();
+    }
+    
+    // Remove event listeners
+    this._removeEventListeners();
+    
+    // Destroy chronometer
+    if (this.chronometer && typeof this.chronometer.destroy === 'function') {
+      this.chronometer.destroy();
+    }
+    
+    // Destroy manager
+    if (this.manager && typeof this.manager.destroy === 'function') {
+      this.manager.destroy();
+    }
+    
+    // Reset state
+    this.initialized = false;
+    this.manager = null;
+    this.chronometer = null;
+    this._boundHandlers = {};
+    
+    log('HomeViewController destroyed');
+  }
   
-  // Clear state
-  manager = null;
-  continuousMode = false;
-  firstUpdate = true;
-}
-
-// Helper methods (impure functions)
-async function _initializeGeocodingManager() {
-    const locationResult = document.getElementById("locationResult");
-    const enderecoPadronizadoDisplay = document.getElementById("endereco-padronizado-display");
-    const referencePlaceDisplay = document.getElementById("reference-place-display");
+  /**
+   * String representation of the controller.
+   * 
+   * @returns {string} String representation
+   * 
+   * @example
+   * console.log(controller.toString());
+   * // Output: "HomeViewController {initialized: true, tracking: false}"
+   */
+  toString() {
+    return `HomeViewController {initialized: ${this.initialized}, tracking: ${this.tracking}}`;
+  }
+  
+  // ===== Private Methods (Stubs for future implementation) =====
+  
+  /**
+   * Initializes the WebGeocodingManager instance.
+   * 
+   * Extracted from app.js initializeHomeView() (lines 409-434).
+   * 
+   * @private
+   * @async
+   * @returns {Promise<void>}
+   * @throws {Error} If manager creation fails
+   */
+  async _initializeManager() {
+    // Skip if manager already provided via dependency injection
+    if (this.manager) {
+      log('HomeViewController: Using provided manager (dependency injection)');
+      return;
+    }
     
-    log("(home-view) Creating WebGeocodingManager...");
-    
-    const params = {
-      locationResult: locationResult,
-      enderecoPadronizadoDisplay: enderecoPadronizadoDisplay,
-      referencePlaceDisplay: referencePlaceDisplay,
-      elementIds: {
-        chronometer: "chronometer",
-        findRestaurantsBtn: "findRestaurantsBtn",
-        cityStatsBtn: "cityStatsBtn",
-        timestampDisplay: "tsPosCapture",
-        speechSynthesis: {
-          languageSelectId: "language",
-          voiceSelectId: "voice-select",
-          textInputId: "text-input",
-          speakBtnId: "speak-btn",
-          pauseBtnId: "pause-btn",
-          resumeBtnId: "resume-btn",
-          stopBtnId: "stop-btn",
-          rateInputId: "rate",
-          rateValueId: "rate-value",
-          pitchInputId: "pitch",
-          pitchValueId: "pitch-value",
+    try {
+      // WebGeocodingManager expects params object with locationResult property
+      this.manager = new WebGeocodingManager(this.document, {
+        locationResult: this.params.locationResult,
+        elementIds: this.params.elementIds || {
+          positionDisplay: 'lat-long-display',
+          referencePlaceDisplay: 'reference-place-display',
+          enderecoPadronizadoDisplay: 'endereco-padronizado-display',
+          speechSynthesis: {
+            languageSelectId: "language",
+            voiceSelectId: "voice-select",
+            textInputId: "text-input",
+            speakBtnId: "speak-btn",
+            pauseBtnId: "pause-btn",
+            resumeBtnId: "resume-btn",
+            stopBtnId: "stop-btn",
+            rateInputId: "rate",
+            rateValueId: "rate-value",
+            pitchInputId: "pitch",
+            pitchValueId: "pitch-value"
+          },
+          sidraDisplay: 'dadosSidra'
         }
-      }
-    };
-    
-  try {
-    return await WebGeocodingManager.createAsync(document, params);
-  } catch (err) {
-    error("(home-view) Failed to create WebGeocodingManager:", err);
-    throw new Error(`Falha ao inicializar gerenciador de geolocalização: ${err.message}`);
-  }
-}
-
-function _initializeSidraDisplayer() {
-  const dadosSidraElement = document.getElementById("dadosSidra");
-  if (dadosSidraElement) {
-    log("(home-view) Initializing HTMLSidraDisplayer...");
-    sidraDisplayer = new HTMLSidraDisplayer(dadosSidraElement, { dataType: 'PopEst' });
-  } else {
-    warn("(home-view) dadosSidra element not found, SIDRA displayer not initialized");
-  }
-}
-
-function _setupLocationUpdateHandlers() {
-  manager.subscribeFunction((currentPosition, newAddress, enderecoPadronizado) => {
-    log(`(home-view) Location updated`);
-    
-    if (currentPosition) {
-      // Clear empty states when first location arrives
-      if (firstUpdate) {
-        clearAllEmptyStates();
-        window.showLocationSuccess?.('geolocation-banner-container', 3000);
-        firstUpdate = false;
-      }
+      });
       
-      // Enable buttons
-      const findRestaurantsBtn = document.getElementById("findRestaurantsBtn");
-      const cityStatsBtn = document.getElementById("cityStatsBtn");
-      
-      if (findRestaurantsBtn) {
-        enableWithMessage(findRestaurantsBtn, BUTTON_STATUS_MESSAGES.READY);
-      }
-      
-      if (cityStatsBtn) {
-        enableWithMessage(cityStatsBtn, BUTTON_STATUS_MESSAGES.READY);
-      }
-    }
-    
-    // Update display elements
-    _updateLocationDisplay(currentPosition, newAddress, enderecoPadronizado);
-    
-    // Update SIDRA data if in continuous mode using the dedicated displayer
-    if (continuousMode && sidraDisplayer && enderecoPadronizado) {
-      sidraDisplayer.update(newAddress, enderecoPadronizado, ADDRESS_FETCHED_EVENT, false, null);
-    }
-  });
-}
-
-function _updateLocationDisplay(currentPosition, newAddress, enderecoPadronizado) {
-  // Update coordinates
-  if (currentPosition) {
-    const coords = currentPosition.coords || currentPosition;
-    const latLongDisplay = document.getElementById("lat-long-display");
-    if (latLongDisplay) {
-      const lat = coords.latitude || currentPosition.latitude;
-      const lng = coords.longitude || currentPosition.longitude;
-      latLongDisplay.textContent = `${lat.toFixed(6)}, ${lng.toFixed(6)}`;
+      log('HomeViewController: WebGeocodingManager initialized');
+    } catch (err) {
+      error('HomeViewController: Failed to initialize WebGeocodingManager:', err);
+      throw err;
     }
   }
   
-  // Update location type card (Distrito or Bairro) based on address
-  if (newAddress) {
-    _updateLocationTypeCard(newAddress);
-  }
-  
-  // Update standardized address
-  if (enderecoPadronizado) {
-    const enderecoCompleto = enderecoPadronizado.enderecoCompleto 
-      ? enderecoPadronizado.enderecoCompleto() 
-      : enderecoPadronizado;
-    
-    const enderecoPadronizadoDisplay = document.getElementById("endereco-padronizado-display");
-    if (enderecoPadronizadoDisplay) {
-      enderecoPadronizadoDisplay.textContent = enderecoCompleto;
+  /**
+   * Initializes the Chronometer instance.
+   * 
+   * Extracted from app.js initializeHomeView() (lines 438-452).
+   * 
+   * @private
+   * @async
+   * @returns {Promise<void>}
+   * @throws {Error} If chronometer element not found or initialization fails
+   */
+  async _initializeChronometer() {
+    // Skip if chronometer already provided via dependency injection
+    if (this.chronometer) {
+      log('HomeViewController: Using provided chronometer (dependency injection)');
+      return;
     }
     
-    // Update município highlight card
-    const municipio = enderecoPadronizado.municipio || "Não disponível";
-    const siglaUf = enderecoPadronizado.siglaUF;
-    const municipioText = siglaUf ? `${municipio}, ${siglaUf}` : municipio;
-    _renderToElement("municipio-value", municipioText);
-  }
-}
-  
-/**
- * Update location type card (Distrito or Bairro) dynamically
- * @param {Object} address - Nominatim address object
- * @private
- * 
- * Note: Uses address-parser.js module for consistent address parsing logic.
- * The module is imported as ES6 module and shared between views and tests.
- */
-function _updateLocationTypeCard(address) {
-  // Determine location type using address parser logic
-  const locationType = _determineLocationType(address);
-  
-  // Update card label
-  const label = locationType.type === 'distrito' ? 'Distrito' : 'Bairro';
-  _renderToElement("location-type-label", label);
-  
-  // Update card value
-  const value = _formatLocationValue(locationType.value);
-  _renderToElement("location-type-value", value);
-  
-  // Update ARIA label for accessibility
-  const card = document.getElementById("location-type-card");
-  if (card) {
-    card.setAttribute('aria-labelledby', 'location-type-label');
-  }
-}
-  
-/**
- * Determine location type from address
- * @param {Object} address - Nominatim address object
- * @returns {{type: 'distrito'|'bairro', value: string|null}} Location type and value
- * @private
- */
-function _determineLocationType(address) {
-  return determineLocationType(address);
-  
-  // No subdivision available
-  return { type: 'bairro', value: null };
-}
-
-/**
- * Format location value for display
- * @param {string|null} value - Location value
- * @returns {string} Formatted value
- * @private
- */
-function _formatLocationValue(value) {
-  return formatLocationValue(value);
-}
-
-function _setupCacheDisplayHandlers() {
-  const updateCacheDisplay = () => {
-    const tamCache = document.getElementById("tam-cache");
-    if (tamCache && manager.cache) {
-      tamCache.textContent = manager.cache.size || 0;
-    }
-  };
-    
-    // Try to subscribe to cache updates
-    if (AddressCache && typeof AddressCache.subscribeFunction === 'function') {
-      AddressCache.subscribeFunction(eventData => {
-      const cacheSize = eventData?.cacheSize || eventData?.cache?.length || 0;
-      _renderToElement("tam-cache", cacheSize.toString());
-    });
-  }
-  
-  // Update initially and periodically as fallback
-  updateCacheDisplay();
-  timerManager.setInterval(updateCacheDisplay, 5000, 'home-cache-display');
-}
-
-function _setupButtonHandlers() {
-  const findRestaurantsBtn = document.getElementById("findRestaurantsBtn");
-  const cityStatsBtn = document.getElementById("cityStatsBtn");
-  
-  if (findRestaurantsBtn) {
-    const handler = () => {
-      log("(home-view) Find restaurants clicked");
-      showInfo("Funcionalidade de busca de restaurantes será implementada em breve!");
-    };
-    findRestaurantsBtn.addEventListener('click', handler);
-    eventListeners.set('findRestaurantsBtn', { element: findRestaurantsBtn, event: 'click', handler });
-  }
-  
-  if (cityStatsBtn) {
-    const handler = () => {
-      log("(home-view) City stats clicked");
-      showInfo("Funcionalidade de estatísticas da cidade será implementada em breve!");
-    };
-    cityStatsBtn.addEventListener('click', handler);
-    eventListeners.set('cityStatsBtn', { element: cityStatsBtn, event: 'click', handler });
-  }
-}
-
-function _setupGetLocationButton() {
-    const getLocationBtn = document.getElementById("getLocationBtn");
-    if (!getLocationBtn) return;
-    
-    const handler = () => {
-      log("(home-view) Get location button clicked");
+    try {
+      const chronometerElement = this.document.getElementById('chronometer');
       
-      // Show permission request banner
-      window.showPermissionRequest?.('geolocation-banner-container');
-      
-      // Get current position once
-      if (navigator.geolocation) {
-        getLocationBtn.disabled = true;
-        getLocationBtn.textContent = "⏳ Obtendo localização...";
-        
-        navigator.geolocation.getCurrentPosition(
-        (position) => {
-          log("(home-view) Location obtained:", position);
-          
-          // Trigger location update through manager
-          if (manager && manager.positionManager) {
-            manager.positionManager.updatePosition(position);
-          }
-          
-          getLocationBtn.disabled = false;
-          getLocationBtn.textContent = "📍 Obter Localização Atual";
-            
-            window.showLocationSuccess?.('geolocation-banner-container', 3000);
-          },
-          (err) => {
-            error("(home-view) Geolocation error:", err);
-            getLocationBtn.disabled = false;
-            getLocationBtn.textContent = "📍 Tentar Novamente";
-            
-            // Better error messages
-            let errorMessage = "Erro ao obter localização";
-            switch(err.code) {
-              case err.PERMISSION_DENIED:
-                errorMessage = "Permissão de localização negada. Habilite nas configurações do navegador.";
-                break;
-              case err.POSITION_UNAVAILABLE:
-                errorMessage = "Localização indisponível. Verifique se o GPS está ativado.";
-                break;
-              case err.TIMEOUT:
-                errorMessage = "Tempo esgotado ao buscar localização. Tente novamente ou use localização aproximada.";
-                break;
-            }
-            
-            window.showLocationError?.('geolocation-banner-container', errorMessage);
-            
-            // Show toast with option to retry or use low accuracy
-            if (window.toast) {
-              window.toast.error(errorMessage, 5000);
-            }
-          },
-          {
-        enableHighAccuracy: true,
-        timeout: 30000, // Increased from 10s to 30s
-        maximumAge: 60000 // Accept cached positions up to 1 minute old
+      if (!chronometerElement) {
+        warn('HomeViewController: chronometer element not found - chronometer not initialized');
+        return; // Non-critical, allow initialization to continue
       }
-    );
-  } else {
-    window.toast?.error("Geolocalização não é suportada neste navegador.", 5000);
+      
+      // Create chronometer instance
+      this.chronometer = new Chronometer(chronometerElement);
+      
+      // Subscribe chronometer to PositionManager for automatic updates
+      const positionManager = PositionManager.getInstance();
+      positionManager.subscribe(this.chronometer);
+      
+      // Start the chronometer immediately
+      this.chronometer.start();
+      
+      log('HomeViewController: Chronometer initialized and started');
+    } catch (err) {
+      error('HomeViewController: Failed to initialize chronometer:', err);
+      // Non-critical - don't throw, allow app to continue without chronometer
+      warn('HomeViewController: Continuing without chronometer');
+    }
   }
-  };
   
-  getLocationBtn.addEventListener("click", handler);
-  eventListeners.set('getLocationBtn', { element: getLocationBtn, event: 'click', handler });
-}
-
-function _setupTrackingModeToggle() {
-  const toggle = document.getElementById("continuous-tracking-toggle");
-  if (!toggle) return;
-  
-  const handler = (e) => {
-    continuousMode = e.target.checked;
-    e.target.setAttribute('aria-checked', continuousMode.toString());
-    
-    log(`(home-view) Continuous tracking ${continuousMode ? 'enabled' : 'disabled'}`);
-    
-    // Show/hide tracking-specific UI
-    const trackingTimer = document.getElementById("tracking-timer-container");
-    const getLocationBtnContainer = document.getElementById("get-location-button-container");
-    
-    if (continuousMode) {
-      // Start continuous tracking
-      if (trackingTimer) trackingTimer.style.display = 'inline';
-      if (getLocationBtnContainer) getLocationBtnContainer.style.display = 'none';
-      
-      // Start tracking
-      manager.startTracking();
-      
-      // Setup speech queue monitoring
-      _setupSpeechQueueMonitoring();
-      
-      window.toast?.info('Rastreamento contínuo ativado', 2000);
+  /**
+   * Sets up event listeners for UI buttons.
+   * @private
+   * @returns {void}
+   */
+  _setupEventListeners() {
+    // Get Location button (primary action)
+    const locationBtn = this.document.getElementById('enable-location-btn');
+    if (locationBtn) {
+      this._boundHandlers.locationClick = async () => {
+        try {
+          await this.toggleTracking();
+        } catch (err) {
+          error('Error toggling tracking:', err);
+        }
+      };
+      locationBtn.addEventListener('click', this._boundHandlers.locationClick);
+      log('HomeViewController: Location button listener added');
     } else {
-      // Stop continuous tracking
-      if (trackingTimer) trackingTimer.style.display = 'none';
-      if (getLocationBtnContainer) getLocationBtnContainer.style.display = 'block';
-      
-      // Stop tracking
-      if (manager && manager.watchId) {
-        navigator.geolocation.clearWatch(manager.watchId);
-        manager.watchId = null;
-      }
-      
-      // Stop speech
-      if (window.speechSynthesis) {
-        window.speechSynthesis.cancel();
-      }
-      
-      // Clear speech queue interval
-      timerManager.clearTimer('home-speech-queue-display');
-      
-      window.toast?.info('Rastreamento contínuo desativado', 2000);
+      warn('HomeViewController: enable-location-btn not found');
     }
-  };
-  
-  toggle.addEventListener("change", handler);
-  eventListeners.set('continuous-tracking-toggle', { element: toggle, event: 'change', handler });
-}
-
-function _setupSpeechQueueMonitoring() {
-  if (!manager.htmlSpeechSynthesisDisplayer) return;
-  if (!manager.htmlSpeechSynthesisDisplayer.speechManager) return;
-  
-  const speechQueue = manager.htmlSpeechSynthesisDisplayer.speechManager.speechQueue;
-  if (!speechQueue) return;
-  
-  if (typeof speechQueue.subscribeFunction === 'function') {
-    speechQueue.subscribeFunction(queue => {
-      const size = _calculateQueueSize(queue);
-      _renderToElement("tam-fila-fala", size.toString());
-    });
-  } else {
-    // Fallback polling
-    timerManager.setInterval(() => {
-      const queueLength = speechQueue.length || (Array.isArray(speechQueue.queue) ? speechQueue.queue.length : 0);
-      _renderToElement("tam-fila-fala", queueLength.toString());
-    }, 500, 'home-speech-queue-display');
-  }
-}
-
-function _renderToElement(elementId, content) {
-  const element = document.getElementById(elementId);
-  if (element) {
-    element.innerText = content;
-    // Add tooltip for potentially truncated text in highlight cards
-    if (element.classList.contains('highlight-card-value')) {
-      element.title = content;
+    
+    // Test Position button (advanced controls)
+    const testBtn = this.document.getElementById('insertPositionButton');
+    if (testBtn) {
+      this._boundHandlers.testPositionClick = async () => {
+        try {
+          await this.getSingleLocationUpdate();
+        } catch (err) {
+          error('Error getting test position:', err);
+        }
+      };
+      testBtn.addEventListener('click', this._boundHandlers.testPositionClick);
+      log('HomeViewController: Test position button listener added');
     }
   }
-}
-
-function _calculateQueueSize(queue) {
-  if (!queue) return 0;
-  if (typeof queue.size === 'function') return queue.size();
-  if (Array.isArray(queue.queue)) return queue.queue.length;
-  return 0;
-}
-
-function _initializeButtonStates() {
-  const findRestaurantsBtn = document.getElementById("findRestaurantsBtn");
-  const cityStatsBtn = document.getElementById("cityStatsBtn");
   
-  if (findRestaurantsBtn) {
-    disableWithReason(findRestaurantsBtn, BUTTON_STATUS_MESSAGES.WAITING_LOCATION);
+  /**
+   * Removes all event listeners set up by _setupEventListeners().
+   * 
+   * Called during destroy() to prevent memory leaks.
+   * 
+   * @private
+   * @returns {void}
+   * @since 0.10.0-alpha
+   */
+  _removeEventListeners() {
+    // Remove location button listener
+    const locationBtn = this.document.getElementById('enable-location-btn');
+    if (locationBtn && this._boundHandlers.locationClick) {
+      locationBtn.removeEventListener('click', this._boundHandlers.locationClick);
+      log('HomeViewController: Location button listener removed');
+    }
+    
+    // Remove test button listener
+    const testBtn = this.document.getElementById('insertPositionButton');
+    if (testBtn && this._boundHandlers.testPositionClick) {
+      testBtn.removeEventListener('click', this._boundHandlers.testPositionClick);
+      log('HomeViewController: Test position button listener removed');
+    }
+    
+    // Clear bound handlers
+    this._boundHandlers = {};
   }
   
-  if (cityStatsBtn) {
-    disableWithReason(cityStatsBtn, BUTTON_STATUS_MESSAGES.WAITING_LOCATION);
+  /**
+   * Updates the tracking UI button states.
+   * 
+   * Changes button text and state based on tracking status:
+   * - Not tracking: "Ativar Localização" (enabled)
+   * - Tracking: "Parar Rastreamento" (enabled)
+   * 
+   * @private
+   * @param {boolean} isTracking - Whether tracking is active
+   * @returns {void}
+   * @since 0.10.0-alpha
+   */
+  _updateTrackingUI(isTracking) {
+    const locationBtn = this.document.getElementById('enable-location-btn');
+    if (!locationBtn) {
+      warn('HomeViewController: Cannot update UI - enable-location-btn not found');
+      return;
+    }
+    
+    // Update button text
+    const textSpan = locationBtn.querySelector('.button-text');
+    if (textSpan) {
+      textSpan.textContent = isTracking ? 'Parar Rastreamento' : 'Ativar Localização';
+    } else {
+      locationBtn.textContent = isTracking ? 'Parar Rastreamento' : 'Ativar Localização';
+    }
+    
+    // Update button icon
+    const iconSpan = locationBtn.querySelector('.button-icon');
+    if (iconSpan) {
+      iconSpan.textContent = isTracking ? '⏹️' : '📍';
+    }
+    
+    // Update ARIA label for accessibility
+    locationBtn.setAttribute('aria-label', 
+      isTracking ? 'Parar rastreamento de localização' : 'Ativar localização');
+    
+    log(`HomeViewController: UI updated (tracking: ${isTracking})`);
+  }
+  
+  // ===== Public Methods (Tracking) =====
+  
+  /**
+   * Gets a single location update without starting continuous tracking.
+   * 
+   * Extracted from WebGeocodingManager (lines 729-752).
+   * 
+   * **Workflow**:
+   * 1. Delegate to ServiceCoordinator for position retrieval
+   * 2. Wrap position in GeoPosition instance
+   * 3. Update change detection coordinator
+   * 4. Notify function observers
+   * 5. Handle errors gracefully
+   * 
+   * @async
+   * @returns {Promise<GeolocationPosition>} Resolves with position object
+   * @throws {Error} If not initialized
+   * @throws {GeolocationError} If geolocation fails
+   * 
+   * @example
+   * await controller.getSingleLocationUpdate();
+   */
+  async getSingleLocationUpdate() {
+    if (!this.initialized) {
+      throw new Error('HomeViewController not initialized. Call init() first.');
+    }
+    
+    if (!this.manager || !this.manager.serviceCoordinator) {
+      throw new Error('ServiceCoordinator not available');
+    }
+    
+    try {
+      const position = await this.manager.serviceCoordinator.getSingleLocationUpdate();
+      
+      if (position && position.coords) {
+        // Wrap raw browser position in GeoPosition instance
+        const geoPosition = new GeoPosition(position);
+        
+        // Update GeocodingState for backward compatibility
+        this.manager.currentPosition = geoPosition;
+        this.manager.currentCoords = position.coords;
+        
+        // Update change detection coordinator
+        if (this.manager.changeDetectionCoordinator) {
+          this.manager.changeDetectionCoordinator.setCurrentPosition(position);
+        }
+        
+        // Notify function observers
+        if (typeof this.manager.notifyFunctionObservers === 'function') {
+          this.manager.notifyFunctionObservers();
+        }
+        
+        log('HomeViewController: Single location update successful');
+      }
+      
+      return position;
+    } catch (err) {
+      error('HomeViewController: Single location update failed:', err);
+      
+      // Display error via manager
+      if (this.manager && typeof this.manager._displayError === 'function') {
+        this.manager._displayError(err);
+      }
+      
+      throw err;
+    }
+  }
+  
+  /**
+   * Starts continuous location tracking.
+   * 
+   * Extracted from WebGeocodingManager (lines 772-782).
+   * 
+   * **Initialization Steps**:
+   * 1. Initialize speech synthesis UI components
+   * 2. Get initial location update
+   * 3. Start continuous position watching via ServiceCoordinator
+   * 4. Set up address component change detection callbacks
+   * 
+   * @returns {void}
+   * @throws {Error} If not initialized
+   * 
+   * @fires HomeViewController#homeview:tracking:started
+   * 
+   * @example
+   * controller.startTracking();
+   */
+  startTracking() {
+    if (!this.initialized) {
+      throw new Error('HomeViewController not initialized. Call init() first.');
+    }
+    
+    if (this.tracking) {
+      warn('HomeViewController: Tracking already started');
+      return;
+    }
+    
+    try {
+      // Initialize speech synthesis UI components (extracted from WebGeocodingManager)
+      if (this.manager && this.manager.speechCoordinator) {
+        this.manager.speechCoordinator.initializeSpeechSynthesis();
+      }
+      
+      // Get initial location and start continuous tracking
+      this.getSingleLocationUpdate().catch(err => {
+        warn('HomeViewController: Initial location update failed:', err.message);
+        // Continue with tracking even if initial update fails
+      });
+      
+      // Start continuous tracking via ServiceCoordinator
+      if (this.manager && this.manager.serviceCoordinator) {
+        this.manager.serviceCoordinator.startTracking();
+      }
+      
+      // Set up address component change detection callbacks
+      if (this.manager && this.manager.changeDetectionCoordinator) {
+        this.manager.changeDetectionCoordinator.setupChangeDetection();
+      }
+      
+      this.tracking = true;
+      log('HomeViewController: Tracking started');
+      
+      // Update UI to reflect tracking state
+      this._updateTrackingUI(true);
+      
+      // Emit tracking started event
+      this.document.dispatchEvent(new CustomEvent('homeview:tracking:started', {
+        detail: { controller: this }
+      }));
+    } catch (err) {
+      error('HomeViewController: Failed to start tracking:', err);
+      throw err;
+    }
+  }
+  
+  /**
+   * Stops continuous location tracking.
+   * 
+   * Extracted from WebGeocodingManager (lines 801-806).
+   * 
+   * Delegates to ServiceCoordinator to stop the GeolocationService tracking.
+   * This method can be called to stop tracking when the user toggles off
+   * the tracking feature or when cleaning up resources.
+   * 
+   * @returns {void}
+   * 
+   * @fires HomeViewController#homeview:tracking:stopped
+   * 
+   * @example
+   * controller.stopTracking();
+   */
+  stopTracking() {
+    if (!this.initialized) {
+      warn('HomeViewController not initialized');
+      return;
+    }
+    
+    if (!this.tracking) {
+      warn('HomeViewController: Tracking not started');
+      return;
+    }
+    
+    // Always set tracking to false first for fault tolerance
+    const wasTracking = this.tracking;
+    this.tracking = false;
+    
+    try {
+      // Stop tracking via ServiceCoordinator
+      if (this.manager && this.manager.serviceCoordinator && typeof this.manager.serviceCoordinator.stopTracking === 'function') {
+        this.manager.serviceCoordinator.stopTracking();
+      }
+      
+      log('HomeViewController: Tracking stopped');
+      
+      // Update UI to reflect stopped state
+      this._updateTrackingUI(false);
+      
+      // Emit tracking stopped event
+      if (wasTracking) {
+        this.document.dispatchEvent(new CustomEvent('homeview:tracking:stopped', {
+          detail: { controller: this }
+        }));
+      }
+    } catch (err) {
+      error('HomeViewController: Failed to stop tracking:', err);
+      // Don't throw - stopping tracking should be fault-tolerant
+      // tracking flag already set to false above
+    }
+  }
+  
+  /**
+   * Toggles location tracking on/off.
+   * 
+   * @returns {void}
+   * @throws {Error} If not initialized
+   * 
+   * @example
+   * controller.toggleTracking(); // Start if stopped, stop if started
+   */
+  toggleTracking() {
+    if (!this.initialized) {
+      throw new Error('HomeViewController not initialized. Call init() first.');
+    }
+    
+    if (this.tracking) {
+      this.stopTracking();
+    } else {
+      this.startTracking();
+    }
+  }
+  
+  /**
+   * Static factory method for one-step creation and initialization.
+   * 
+   * @static
+   * @async
+   * @param {Document} document - Browser document object
+   * @param {Object} params - Configuration parameters (see constructor)
+   * @returns {Promise<HomeViewController>} Initialized controller instance
+   * 
+   * @example
+   * // Convenient one-step initialization
+   * const controller = await HomeViewController.create(document, {...});
+   * // Controller is ready to use
+   */
+  static async create(document, params = {}) {
+    const controller = new HomeViewController(document, params);
+    await controller.init();
+    return controller;
   }
 }
+
+export default HomeViewController;

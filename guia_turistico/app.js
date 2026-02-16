@@ -6,20 +6,24 @@
  * @version 0.9.0-alpha
  */
 
-import WebGeocodingManager from './coordination/WebGeocodingManager.js';
-import Chronometer from './timing/Chronometer.js';
-import PositionManager from './core/PositionManager.js';
+import HomeViewController from './views/home.js';
 import { log, warn, error } from './utils/logger.js';
 import { VERSION, VERSION_STRING } from './config/version.js';
+import { 
+  hasRoute, 
+  getConverterViewTemplate, 
+  getNotFoundViewTemplate,
+  getLoadingTemplate,
+  getErrorTemplate 
+} from './config/routes.js';
+import { createDefaultErrorBoundary, setupGlobalErrorHandler } from './utils/ErrorBoundary.js';
+import { showErrorToast } from './utils/error-notifications.js';
 
 // Application state
 const AppState = {
   currentRoute: null,
-  manager: null,
-  routes: {
-    '/': 'home',
-    '/converter': 'converter'
-  }
+  homeController: null,
+  errorBoundaries: {} // Store error boundaries for each view
 };
 
 /**
@@ -53,6 +57,11 @@ const AppState = {
  */
 async function init() {
   log(`Initializing ${VERSION_STRING}...`);
+  
+  // Setup global error handlers
+  setupGlobalErrorHandler((error) => {
+    showErrorToast('Erro Inesperado', error.message || 'Ocorreu um erro na aplicação');
+  });
   
   // Hide app loading screen
   const appLoading = document.getElementById('app-loading');
@@ -329,12 +338,7 @@ function updateActiveNavLink() {
 function showLoading() {
   const content = document.getElementById('app-content');
   if (content) {
-    content.innerHTML = `
-      <div class="route-loading" role="status" aria-live="polite">
-        <div class="loading-spinner" aria-hidden="true">⏳</div>
-        <p>Carregando página...</p>
-      </div>
-    `;
+    content.innerHTML = getLoadingTemplate();
   }
 }
 
@@ -361,59 +365,51 @@ function showLoading() {
 function showError(error) {
   const content = document.getElementById('app-content');
   if (content) {
-    content.innerHTML = `
-      <div class="route-error" role="alert">
-        <h2>Erro ao Carregar Página</h2>
-        <p>Ocorreu um erro ao carregar o conteúdo desta página.</p>
-        <details>
-          <summary>Detalhes do Erro</summary>
-          <pre>${error.message}\n${error.stack || ''}</pre>
-        </details>
-        <div>
-          <button class="md3-button-filled" onclick="location.reload()">
-            Recarregar Página
-          </button>
-          <button class="md3-button-outlined" onclick="window.location.hash='#/'">
-            Voltar ao Início
-          </button>
-        </div>
-      </div>
-    `;
+    content.innerHTML = getErrorTemplate(error);
   }
 }
 
 /**
- * Initialize home view and preserve existing HTML content.
+ * Initialize the home view using HomeViewController.
  * 
- * Initializes the home view by ensuring WebGeocodingManager is set up for
- * geolocation functionality. If the home view content was replaced during
- * navigation, triggers a page reload to restore it.
+ * Creates and initializes the HomeViewController which handles all home view
+ * functionality including location tracking, geocoding, and UI management.
+ * 
+ * **Refactored in v0.10.0**: Now uses HomeViewController instead of inline
+ * WebGeocodingManager initialization. This improves separation of concerns
+ * and makes the home view logic more maintainable.
  * 
  * @async
  * @returns {Promise<void>} Resolves when home view is initialized
- * @throws {Error} If WebGeocodingManager initialization fails (error is logged)
+ * @throws {Error} If HomeViewController initialization fails
  * 
  * @example
  * // Called automatically during routing
  * await initializeHomeView();
  * 
  * @since 0.9.0-alpha
+ * @modified 0.10.0-alpha - Refactored to use HomeViewController
  * @author Marcelo Pereira Barbosa
  */
 async function initializeHomeView() {
   // Home view content is already in index.html
-  // Just ensure WebGeocodingManager is initialized
-  const content = document.getElementById('app-content');
-  
-  // Initialize WebGeocodingManager if not already done
-  if (!AppState.manager) {
-    try {
-      // WebGeocodingManager expects params object with locationResult property
-      // locationResult is for address display, positionDisplay is for coordinates
-      AppState.manager = new WebGeocodingManager(document, {
+  // Initialize HomeViewController if not already done
+  if (!AppState.homeController) {
+    // Create error boundary for home view
+    if (!AppState.errorBoundaries.home) {
+      AppState.errorBoundaries.home = createDefaultErrorBoundary('Home View');
+    }
+    
+    const boundary = AppState.errorBoundaries.home;
+    const container = document.getElementById('app-content');
+    
+    // Wrap initialization with error boundary
+    const safeInit = boundary.wrap(async () => {
+      // Create and initialize HomeViewController
+      AppState.homeController = new HomeViewController(document, {
         locationResult: 'locationResult',
         elementIds: {
-          positionDisplay: 'lat-long-display', // Use default - coordinates go here
+          positionDisplay: 'lat-long-display',
           referencePlaceDisplay: 'reference-place-display',
           enderecoPadronizadoDisplay: 'endereco-padronizado-display',
           speechSynthesis: {
@@ -430,32 +426,19 @@ async function initializeHomeView() {
             pitchValueId: "pitch-value"
           },
           sidraDisplay: 'dadosSidra'
-        }
+        },
+        autoStartTracking: true
       });
-      log('WebGeocodingManager initialized for home view');
       
-      // Initialize Chronometer for elapsed time display
-      const chronometerElement = document.getElementById('chronometer');
-      if (chronometerElement) {
-        const chronometer = new Chronometer(chronometerElement);
-        
-        // Subscribe chronometer to PositionManager for automatic updates
-        const positionManager = PositionManager.getInstance();
-        positionManager.subscribe(chronometer);
-        
-        // Start the chronometer immediately
-        chronometer.start();
-        
-        log('Chronometer initialized and started');
-      } else {
-        warn('chronometer element not found');
-      }
-      
-      // Start tracking automatically
-      AppState.manager.startTracking();
-      log('Tracking started automatically');
+      await AppState.homeController.init();
+      log('Home view initialized successfully');
+    }, container);
+    
+    try {
+      await safeInit();
     } catch (err) {
-      error('Error initializing WebGeocodingManager:', err);
+      error('Error initializing home view:', err);
+      showErrorToast('Erro', 'Falha ao inicializar página inicial');
     }
   }
 }
@@ -480,52 +463,7 @@ async function initializeHomeView() {
  */
 async function loadConverterView() {
   const content = document.getElementById('app-content');
-  
-  content.innerHTML = `
-    <div class="container">
-      <header>
-        <h1>Conversor de Endereços</h1>
-        <p>Converta coordenadas em endereços e vice-versa</p>
-      </header>
-      
-      <section class="converter-section">
-        <div class="md3-card">
-          <h2>Coordenadas → Endereço</h2>
-          <form id="coords-to-address-form">
-            <div style="margin-bottom: 1rem;">
-              <label for="latitude">Latitude:</label>
-              <input 
-                type="number" 
-                id="latitude" 
-                step="any" 
-                placeholder="-23.550520"
-                style="width: 100%; padding: 8px; margin-top: 4px;"
-                required
-              />
-            </div>
-            <div style="margin-bottom: 1rem;">
-              <label for="longitude">Longitude:</label>
-              <input 
-                type="number" 
-                id="longitude" 
-                step="any" 
-                placeholder="-46.633309"
-                style="width: 100%; padding: 8px; margin-top: 4px;"
-                required
-              />
-            </div>
-            <button type="submit" class="md3-button-filled">
-              Converter para Endereço
-            </button>
-          </form>
-          
-          <div id="address-result" style="margin-top: 1rem;" aria-live="polite">
-            <!-- Results will appear here -->
-          </div>
-        </div>
-      </section>
-    </div>
-  `;
+  content.innerHTML = getConverterViewTemplate();
   
   // Initialize converter functionality
   initializeConverterFeatures();
@@ -610,9 +548,6 @@ function initializeConverterFeatures() {
 }
 
 /**
- * Load 404 not found view
- */
-/**
  * Load 404 Not Found view for unknown routes.
  * 
  * Displays a user-friendly 404 error page when navigating to an unrecognized route.
@@ -630,17 +565,7 @@ function initializeConverterFeatures() {
  */
 async function loadNotFoundView() {
   const content = document.getElementById('app-content');
-  
-  content.innerHTML = `
-    <div class="container text-center">
-      <h1 style="font-size: 4rem; margin: 2rem 0;">404</h1>
-      <h2>Página Não Encontrada</h2>
-      <p>A página que você está procurando não existe.</p>
-      <button class="md3-button-filled" onclick="window.location.hash='#/'">
-        Voltar ao Início
-      </button>
-    </div>
-  `;
+  content.innerHTML = getNotFoundViewTemplate();
 }
 
 // Initialize app when DOM is ready (browser-only)
