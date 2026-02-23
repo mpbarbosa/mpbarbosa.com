@@ -4,7 +4,7 @@
     <meta name="version" content="0.9.0-alpha" data-source="src/config/version.js">
     
     <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://nominatim.openstreetmap.org https://servicodados.ibge.gov.br https://apisidra.ibge.gov.br; manifest-src 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://nominatim.openstreetmap.org https://servicodados.ibge.gov.br https://apisidra.ibge.gov.br https://cdn.jsdelivr.net; manifest-src 'self'; base-uri 'self'; form-action 'self'">
     
     <!-- Security Headers (meta tag fallback for static hosting) -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -451,13 +451,13 @@
         margin-bottom: 2rem;
       }
     </style>
-    <script type="module" crossorigin src="./assets/main-CR61Ypoe.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/core-8BMT7-GD.js">
-    <link rel="modulepreload" crossorigin href="./assets/speech-vyfjtYVA.js">
-    <link rel="modulepreload" crossorigin href="./assets/html-C9cQu5zu.js">
-    <link rel="modulepreload" crossorigin href="./assets/data-BHB2OutN.js">
-    <link rel="modulepreload" crossorigin href="./assets/services-BoKIztJx.js">
-    <link rel="modulepreload" crossorigin href="./assets/coordination-DdQRowJa.js">
+    <script type="module" crossorigin src="./assets/main-D_vtUX2m.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/core-DW-oUn69.js">
+    <link rel="modulepreload" crossorigin href="./assets/speech-DvZmTsNe.js">
+    <link rel="modulepreload" crossorigin href="./assets/html-CQSiwJ5y.js">
+    <link rel="modulepreload" crossorigin href="./assets/data-jCkzFaIU.js">
+    <link rel="modulepreload" crossorigin href="./assets/services-enJir2nN.js">
+    <link rel="modulepreload" crossorigin href="./assets/coordination-Crtv2qZ0.js">
     <link rel="stylesheet" crossorigin href="./assets/main-R6f1t6sP.css">
   </head>
   <body><div class="navigation-progress" role="progressbar" aria-label="Progresso de navegação"><div class="navigation-progress-bar" style="width: 0%;"></div></div>
@@ -842,7 +842,19 @@
 <!-- Service Worker Registration (optional, graceful fallback) -->
 <script>
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
+    window.addEventListener('load', async () => {
+      // Unregister any stale service workers (e.g., old sw.js registered at root scope)
+      try {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        for (const reg of registrations) {
+          const scriptURL = reg.active?.scriptURL || reg.installing?.scriptURL || reg.waiting?.scriptURL || '';
+          if (scriptURL && !scriptURL.endsWith('service-worker.js')) {
+            await reg.unregister();
+            console.log('[App] Unregistered stale service worker:', scriptURL);
+          }
+        }
+      } catch (_) { /* ignore cleanup errors */ }
+
       // Silently check if service-worker.js exists without logging errors
       fetch('./service-worker.js', { method: 'HEAD' })
         .then(response => {
