@@ -29,6 +29,13 @@
     <link rel="dns-prefetch" href="https://pt.wikipedia.org">
     
     <!-- Preload ibira.js for API fetching and caching -->
+    <script type="importmap">
+    {
+      "imports": {
+        "bessa_patterns.ts": "https://cdn.jsdelivr.net/gh/mpbarbosa/bessa_patterns.ts@v0.12.4-alpha/dist/index.mjs"
+      }
+    }
+    </script>
     <link rel="modulepreload" href="https://cdn.jsdelivr.net/gh/mpbarbosa/ibira.js@0.2.2-alpha/src/index.js">
     
     <!-- Design System -->
@@ -451,14 +458,17 @@
         margin-bottom: 2rem;
       }
     </style>
-    <script type="module" crossorigin src="./assets/main-DFryC3Ab.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/core-D3NZI8AX.js">
-    <link rel="modulepreload" crossorigin href="./assets/data-CdAoK6PF.js">
-    <link rel="modulepreload" crossorigin href="./assets/speech-ChMcIUZl.js">
-    <link rel="modulepreload" crossorigin href="./assets/services-VnxNAWyq.js">
+
+    <!-- Import map: resolves bare specifiers from paraty_geocore.js CDN transitive deps -->
+
+    <script type="module" crossorigin src="./assets/main-kcbvsko_.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/core-C935Npk-.js">
+    <link rel="modulepreload" crossorigin href="./assets/data-B7_39GHv.js">
+    <link rel="modulepreload" crossorigin href="./assets/speech-BgsWJDOv.js">
+    <link rel="modulepreload" crossorigin href="./assets/services-ClESCJ4d.js">
     <link rel="modulepreload" crossorigin href="./assets/map-WLs8NypD.js">
-    <link rel="modulepreload" crossorigin href="./assets/html-D0trjK-t.js">
-    <link rel="modulepreload" crossorigin href="./assets/coordination-DJvUlIdt.js">
+    <link rel="modulepreload" crossorigin href="./assets/html-DmuBqeAL.js">
+    <link rel="modulepreload" crossorigin href="./assets/coordination-B-ve9WjP.js">
     <link rel="stylesheet" crossorigin href="./assets/map-DwUhsmFz.css">
     <link rel="stylesheet" crossorigin href="./assets/main-BlBorTOD.css">
   </head>
