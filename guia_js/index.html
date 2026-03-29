@@ -1,0 +1,1212 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="version" content="0.9.0-alpha" data-source="src/config/version.js">
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' https://nominatim.openstreetmap.org https://servicodados.ibge.gov.br https://apisidra.ibge.gov.br https://cdn.jsdelivr.net https://b2inkriw8k.execute-api.us-east-1.amazonaws.com https://demotiles.maplibre.org; worker-src 'self' blob:; manifest-src 'self'; base-uri 'self'; form-action 'self'">
+    
+    <!-- Security Headers (meta tag fallback for static hosting) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    
+    <title>Guia Turístico - Localização - Guia Turístico</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Guia Turístico">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./assets/favicon-CQ2tXoLG.ico" type="image/x-icon">
+    
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
+    <link rel="dns-prefetch" href="https://nominatim.openstreetmap.org">
+    <link rel="dns-prefetch" href="https://servicodados.ibge.gov.br">
+    <link rel="dns-prefetch" href="https://pt.wikipedia.org">
+    
+    <!-- Import map: resolves bare specifiers from paraty_geocore.js CDN transitive deps -->
+
+
+    <!-- Preload ibira.js for API fetching and caching -->
+    <script type="importmap">
+    {
+      "imports": {
+        "bessa_patterns.ts": "https://cdn.jsdelivr.net/gh/mpbarbosa/bessa_patterns.ts@v0.12.15-alpha/dist/index.mjs"
+      }
+    }
+    </script>
+    <link rel="modulepreload" href="https://cdn.jsdelivr.net/gh/mpbarbosa/ibira.js@0.4.22-alpha/src/index.js">
+    
+    <!-- Design System -->
+    
+    <!-- Critical CSS - Common across all views -->
+    
+    <!-- App Shell Styles -->
+    <style>
+      /* App shell loading states */
+      .route-loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 300px;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .loading-spinner {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        animation: pulse 1.5s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.5; transform: scale(1.1); }
+      }
+
+      /* App shell error states */
+      .route-error {
+        padding: 2rem;
+        max-width: 600px;
+        margin: 2rem auto;
+        text-align: center;
+      }
+
+      .route-error h2 {
+        color: var(--md-sys-color-error, #ba1a1a);
+        margin-bottom: 1rem;
+      }
+
+      .route-error details {
+        text-align: left;
+        margin: 1.5rem 0;
+        padding: 1rem;
+        background: var(--color-surface-variant, #f9f9f9);
+        border-radius: 8px;
+      }
+
+      .route-error pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-size: 0.875rem;
+        color: var(--color-text-muted, #666);
+      }
+
+      .route-error button {
+        margin: 0.5rem;
+      }
+
+      /* Material Design 3 button styles */
+      .md3-button-filled {
+        min-width: 48px;
+        min-height: 48px;
+        background-color: var(--md-sys-color-primary, #1976d2);
+        color: var(--md-sys-color-on-primary, #ffffff);
+        border: none;
+        padding: 12px 24px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        transition: background 0.2s, box-shadow 0.2s;
+      }
+
+      .md3-button-filled:hover {
+        background-color: var(--md-sys-color-primary-hover, #1565c0);
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+      }
+
+      .md3-button-outlined {
+        min-width: 48px;
+        min-height: 48px;
+        background-color: transparent;
+        color: var(--md-sys-color-primary, #1976d2);
+        border: 1px solid var(--md-sys-color-primary, #1976d2);
+        padding: 12px 24px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        transition: background 0.2s;
+      }
+
+      .md3-button-outlined:hover {
+        background-color: rgba(25, 118, 210, 0.08);
+      }
+
+      /* ============================================
+         DISABLED BUTTON STATES (UX Quick Win #2)
+         ============================================ */
+
+      /* Base disabled state */
+      button:disabled,
+      button[aria-disabled="true"],
+      .md3-button-filled:disabled,
+      .md3-button-outlined:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        pointer-events: none;
+        filter: grayscale(40%);
+        transition: opacity 0.2s ease;
+      }
+
+      /* Remove hover effects when disabled */
+      button:disabled:hover,
+      button:disabled:active,
+      .md3-button-filled:disabled:hover,
+      .md3-button-outlined:disabled:hover {
+        transform: none !important;
+        box-shadow: none !important;
+        background-color: inherit !important;
+      }
+
+      /* Loading state */
+      button.loading {
+        position: relative;
+        color: transparent;
+        pointer-events: none;
+      }
+
+      button.loading::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        left: 50%;
+        margin: -8px 0 0 -8px;
+        border: 2px solid currentColor;
+        border-radius: 50%;
+        border-top-color: transparent;
+        animation: btn-spinner 0.6s linear infinite;
+      }
+
+      @keyframes btn-spinner {
+        to { transform: rotate(360deg); }
+      }
+
+      /* Specific button types disabled */
+      .md3-button-filled:disabled {
+        background-color: #a0aec0;
+      }
+
+      .md3-button-outlined:disabled {
+        background-color: #e2e8f0;
+        color: #a0aec0;
+        border-color: #cbd5e0;
+      }
+
+      /* ============================================
+         BUTTON STATUS MESSAGES (UX Quick Win #3)
+         ============================================ */
+
+      .button-status {
+        display: block;
+        font-size: 12px;
+        margin-top: 4px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        line-height: 1.4;
+      }
+
+      .button-status-info {
+        color: var(--md-sys-color-primary, #1976d2);
+        background-color: #e3f2fd;
+      }
+
+      .button-status-warning {
+        color: #f57c00;
+        background-color: #fff3e0;
+      }
+
+      .button-status-success {
+        color: #388e3c;
+        background-color: #e8f5e9;
+      }
+
+      .button-status-error {
+        color: #d32f2f;
+        background-color: #ffebee;
+      }
+
+      /* ============================================
+         EMPTY STATES (UX Quick Win #3)
+         ============================================ */
+
+      .empty-state {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 24px;
+        text-align: center;
+        min-height: 240px;
+      }
+
+      .empty-state-icon {
+        font-size: 64px;
+        margin-bottom: 16px;
+        line-height: 1;
+      }
+
+      .empty-state-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1a202c;
+        margin: 0 0 8px 0;
+      }
+
+      .empty-state-description {
+        font-size: 14px;
+        color: #718096;
+        max-width: 400px;
+        margin: 0 0 24px 0;
+        line-height: 1.5;
+      }
+
+      .empty-state-action {
+        margin-top: 8px;
+      }
+
+      /* Empty state in highlight cards */
+      .location-highlights .empty-state {
+        min-height: 120px;
+        padding: 24px 16px;
+      }
+
+      .location-highlights .empty-state-icon {
+        font-size: 32px;
+        margin-bottom: 8px;
+      }
+
+      .location-highlights .empty-state-title {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .location-highlights .empty-state-description {
+        font-size: 12px;
+        margin-bottom: 0;
+      }
+
+      /* Compact empty state for reference places */
+      .empty-state.reference-place-compact {
+        min-height: auto;
+        padding: 16px 24px;
+        background: transparent;
+      }
+
+      .empty-state.reference-place-compact .empty-state-title {
+        font-size: var(--text-body-medium-size);
+        font-weight: var(--text-body-medium-weight);
+        line-height: var(--text-body-medium-line-height);
+        color: #718096;
+        margin: 0;
+      }
+
+      /* ============================================
+         TOAST NOTIFICATIONS (UX Quick Win #4)
+         ============================================ */
+
+      .toast-container {
+        position: fixed;
+        top: 80px;
+        right: 16px;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 400px;
+      }
+
+      .toast {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 16px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        opacity: 0;
+        transform: translateX(400px);
+        transition: all 0.3s ease;
+        min-width: 300px;
+      }
+
+      .toast-show {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .toast-hide {
+        opacity: 0;
+        transform: translateX(400px);
+      }
+
+      .toast-icon {
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 50%;
+      }
+
+      .toast-message {
+        flex: 1;
+        font-size: 14px;
+        line-height: 1.4;
+        color: #2d3748;
+      }
+
+      .toast-close {
+        flex-shrink: 0;
+        min-width: 44px;  /* WCAG 2.1 AAA minimum touch target */
+        min-height: 44px; /* WCAG 2.1 AAA minimum touch target */
+        border: none;
+        background: transparent;
+        color: #4a5568; /* 7.5:1 contrast ratio - WCAG AA compliant */
+        font-size: 20px;  /* Slightly smaller icon within larger button */
+        line-height: 1;
+        cursor: pointer;
+        padding: 10px;    /* Creates larger interactive area */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        transition: background 0.2s, transform 0.1s;
+        margin: -10px -10px -10px 8px; /* Negative margin to prevent toast expansion */
+      }
+
+      .toast-close:hover {
+        background: rgba(0, 0, 0, 0.08);
+        color: #2d3748; /* Darker on hover */
+      }
+      
+      .toast-close:active {
+        transform: scale(0.95); /* Tactile feedback on press */
+        background: rgba(0, 0, 0, 0.12);
+      }
+      
+      .toast-close:focus-visible {
+        outline: 2px solid var(--color-primary, #2563eb);
+        outline-offset: 2px;
+      }
+
+      /* Toast types */
+      .toast-success {
+        border-left: 4px solid #48bb78;
+      }
+
+      .toast-success .toast-icon {
+        background: #c6f6d5;
+        color: #22543d;
+      }
+
+      .toast-error {
+        border-left: 4px solid #f56565;
+      }
+
+      .toast-error .toast-icon {
+        background: #fed7d7;
+        color: #742a2a;
+      }
+
+      .toast-info {
+        border-left: 4px solid #4299e1;
+      }
+
+      .toast-info .toast-icon {
+        background: #bee3f8;
+        color: #2c5282;
+      }
+
+      .toast-warning {
+        border-left: 4px solid #ed8936;
+      }
+
+      .toast-warning .toast-icon {
+        background: #feebc8;
+        color: #7c2d12;
+      }
+
+      /* Mobile responsive */
+      @media (max-width: 600px) {
+        .toast-container {
+          right: 8px;
+          left: 8px;
+          max-width: none;
+        }
+
+        .toast {
+          min-width: 0;
+        }
+      }
+
+      /* App content container */
+      #app-content {
+        min-height: 400px;
+      }
+
+      /* Ensure proper spacing */
+      main {
+        margin-bottom: 2rem;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/main-CGxwHUX0.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/vendor-CDLgd9d9.js">
+    <link rel="modulepreload" crossorigin href="./assets/ui-B-f8qHlr.js">
+    <link rel="modulepreload" crossorigin href="./assets/data-BKDd5hVc.js">
+    <link rel="modulepreload" crossorigin href="./assets/speech-B28tZzlu.js">
+    <link rel="modulepreload" crossorigin href="./assets/services-BwOTgesQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/map-WLs8NypD.js">
+    <link rel="modulepreload" crossorigin href="./assets/html-BLcEw_JL.js">
+    <link rel="modulepreload" crossorigin href="./assets/coordination-Dq3DZL5p.js">
+    <link rel="stylesheet" crossorigin href="./assets/ui-Cw7tTYSV.css">
+    <link rel="stylesheet" crossorigin href="./assets/map-DwUhsmFz.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-Do_GyC8A.css">
+  </head>
+  <body><div class="navigation-progress" role="progressbar" aria-label="Progresso de navegação"><div class="navigation-progress-bar" style="width: 0%;"></div></div>
+    
+    <!-- App Loading State (shown until JavaScript initializes) -->
+    <div id="app-loading" class="app-loading" role="status" aria-live="polite" aria-label="Carregando aplicativo">
+      <div class="app-loading-content">
+        <div class="app-loading-spinner">
+          <svg class="spinner" viewBox="0 0 50 50" aria-hidden="true">
+            <circle class="spinner-path" cx="25" cy="25" r="20" fill="none" stroke-width="4"></circle>
+          </svg>
+        </div>
+        <h2 class="app-loading-title">Guia Turístico</h2>
+        <p class="app-loading-message">Carregando aplicativo...</p>
+      </div>
+    </div>
+    
+    <a href="#app-content" class="skip-link">Pular para o conteúdo principal</a>
+    
+    <!-- No JavaScript Fallback -->
+    <noscript>
+      <div class="noscript-banner" role="alert">
+        <h2>JavaScript Desabilitado</h2>
+        <p><strong>Este aplicativo requer JavaScript para funcionar.</strong></p>
+        <p>O Guia Turístico usa geolocalização do navegador e APIs externas que necessitam JavaScript ativo.</p>
+      </div>
+      
+      <div class="noscript-instructions">
+        <h3>Como Habilitar JavaScript</h3>
+        
+        <div class="browser-help">
+          <h4>Google Chrome / Microsoft Edge</h4>
+          <ol>
+            <li>Clique no menu (três pontos) no canto superior direito</li>
+            <li>Selecione <strong>Configurações</strong></li>
+            <li>Vá para <strong>Privacidade e segurança</strong> → <strong>Configurações do site</strong></li>
+            <li>Clique em <strong>JavaScript</strong></li>
+            <li>Selecione <strong>Permitir que os sites usem JavaScript</strong></li>
+            <li>Recarregue esta página</li>
+          </ol>
+        </div>
+        
+        <div class="browser-help">
+          <h4>Mozilla Firefox</h4>
+          <ol>
+            <li>Digite <code>about:config</code> na barra de endereços</li>
+            <li>Clique em <strong>Aceitar o Risco e Continuar</strong></li>
+            <li>Pesquise por <code>javascript.enabled</code></li>
+            <li>Altere o valor para <strong>true</strong></li>
+            <li>Recarregue esta página</li>
+          </ol>
+        </div>
+        
+        <div class="browser-help">
+          <h4>Safari (macOS)</h4>
+          <ol>
+            <li>Abra <strong>Safari</strong> → <strong>Preferências</strong></li>
+            <li>Vá para a aba <strong>Segurança</strong></li>
+            <li>Marque a opção <strong>Ativar JavaScript</strong></li>
+            <li>Recarregue esta página</li>
+          </ol>
+        </div>
+      </div>
+      
+      <div class="noscript-alternatives">
+        <h4>Alternativas Sem JavaScript</h4>
+        <ul>
+          <li>
+            <strong>Google Maps:</strong> 
+            <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
+              maps.google.com
+            </a> - Encontre restaurantes e locais próximos
+          </li>
+          <li>
+            <strong>OpenStreetMap:</strong> 
+            <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">
+              openstreetmap.org
+            </a> - Mapa colaborativo de código aberto
+          </li>
+          <li>
+            <strong>IBGE Cidades:</strong> 
+            <a href="https://cidades.ibge.gov.br" target="_blank" rel="noopener noreferrer">
+              cidades.ibge.gov.br
+            </a> - Estatísticas oficiais dos municípios brasileiros
+          </li>
+        </ul>
+      </div>
+    </noscript>
+    
+    <!-- Primary Navigation -->
+    <nav class="navbar navbar-expand-md app-navbar" aria-label="Navegação principal">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#/">
+          <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+          Guia JS
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Abrir/fechar menu de navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#/">
+                <i class="bi bi-house-fill me-1" aria-hidden="true"></i>
+                Início
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#/converter">
+                <i class="bi bi-arrow-left-right me-1" aria-hidden="true"></i>
+                Conversor
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main App Content (dynamically loaded by router) -->
+    <main id="app-content" role="main">
+      <header class="app-hero-header" role="banner">
+        <!-- Topographic / grid overlay is rendered via CSS ::before and ::after -->
+
+        <!-- Animated map-pin -->
+        <div class="hero-pin-wrapper" aria-hidden="true">
+          <span class="hero-pin-ripple"></span>
+          <svg class="hero-pin-svg" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+          </svg>
+        </div>
+
+        <!-- Enhanced split-line title -->
+        <h1 class="hero-title">
+          <span class="hero-title-onde">Onde</span>
+          <span class="hero-title-estou">estou?</span>
+        </h1>
+
+        <!-- Live location subtitle (updated by HTMLHeaderDisplayer) -->
+        <p id="header-location-text" class="hero-location-text" aria-live="polite" data-pending="true">— · —</p>
+
+      </header>
+
+      <!-- Onboarding Card (shown for first-time users or when location denied) -->
+      <div id="onboarding-card" class="onboarding-card" role="region" aria-labelledby="onboarding-title">
+        <div class="onboarding-content">
+          <div class="onboarding-icon" aria-hidden="true">📍</div>
+          <h2 id="onboarding-title" class="onboarding-title">Bem-vindo ao Guia Turístico</h2>
+          <p class="onboarding-description">
+            Para começar a usar o guia, precisamos acessar sua localização atual.
+          </p>
+          <button id="enable-location-btn" class="md3-button-filled onboarding-cta" aria-label="Ativar localização">
+            <span class="button-icon" aria-hidden="true">📍</span>
+            <span class="button-text">Ativar Localização</span>
+          </button>
+          <details class="onboarding-details">
+            <summary>Por que precisamos de sua localização?</summary>
+            <div class="onboarding-details-content">
+              <p>
+                Usamos sua localização para mostrar informações relevantes sobre 
+                o local onde você está, incluindo:
+              </p>
+              <ul>
+                <li>Nome da cidade e bairro</li>
+                <li>Endereço formatado</li>
+                <li>Dados demográficos do IBGE</li>
+                <li>Pontos de referência próximos</li>
+              </ul>
+              <p class="onboarding-privacy">
+                <strong>Privacidade:</strong> Sua localização nunca é compartilhada 
+                ou armazenada em nossos servidores. Todos os dados permanecem no seu dispositivo.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+      
+      <!-- Geolocation status banner container -->
+      <div id="geolocation-banner-container"></div>
+
+      <!-- Location Highlight Cards - PRIMARY INFORMATION -->
+      <section class="location-highlights" aria-label="Destaques de localização">
+        <div class="highlight-card" role="region" aria-labelledby="municipio-label">
+          <div id="municipio-label" class="highlight-card-label">Município</div>
+          <div id="regiao-metropolitana-value" class="metropolitan-region-value"></div>
+          <div id="municipio-value" class="highlight-card-value" aria-live="polite">—</div>
+        </div>
+        <div class="highlight-card" role="region" aria-labelledby="bairro-label">
+          <div id="bairro-label" class="highlight-card-label">Bairro</div>
+          <div id="bairro-value" class="highlight-card-value" aria-live="polite">—</div>
+        </div>
+        <div class="highlight-card" role="region" aria-labelledby="logradouro-label">
+          <div id="logradouro-label" class="highlight-card-label">Logradouro</div>
+          <div id="logradouro-value" class="highlight-card-value" aria-live="polite">—</div>
+        </div>
+      </section>
+
+      <nav aria-label="Ações da página" class="secondary-actions">
+      </nav>
+
+      <!-- Collapsible Secondary Information (Mobile Progressive Disclosure) -->
+      <details id="secondary-info" class="secondary-info-collapse" open>
+        <summary class="secondary-info-summary">
+          <span class="summary-icon" aria-hidden="true">ℹ️</span>
+          <span class="summary-text">Informações Adicionais</span>
+          <span class="summary-arrow" aria-hidden="true">▼</span>
+        </summary>
+        
+        <div class="secondary-info-content">
+          <section id="standardized-address" aria-labelledby="address-heading">
+            <h2 id="address-heading" class="sr-only">Endereço Padronizado</h2>
+            <p><strong>Endereço:</strong> <span id="endereco-padronizado-display">Aguardando localização...</span></p>
+          </section>
+
+          <section id="coordinates" aria-labelledby="coordinates-heading">
+            <h2 id="coordinates-heading" class="sr-only">Coordenadas</h2>
+            <p><strong>Coordenadas:</strong> <span id="lat-long-display">Aguardando localização...</span></p>
+            <p id="altitude-container" class="hidden"><strong>Altitude:</strong> <span id="altitude-display"></span></p>
+          </section>
+
+          <section id="reference-place" aria-labelledby="reference-place-heading">
+            <h2 id="reference-place-heading" class="sr-only">Local de Referência</h2>
+            <p><strong>Referências próximas:</strong> <span id="reference-place-display">Aguardando localização...</span></p>
+          </section>
+
+          <section class="section" aria-labelledby="location-info-heading">
+            <p><strong>Dados IBGE:</strong> <span id="dadosSidra">Aguardando localização...</span></p>
+          </section>
+          
+          <section id="locationResult" aria-label="Resultado da localização">
+          </section>
+
+          <div id="map-section">
+            <button id="map-toggle-btn" class="md3-button-outlined" aria-label="Mostrar mapa da localização atual" aria-expanded="false">
+              <span class="button-icon" aria-hidden="true">🗺️</span>
+              <span class="button-text">Ver no Mapa</span>
+            </button>
+            <div id="maplibre-map" class="maplibre-map-container" aria-label="Mapa da localização atual" role="img" hidden></div>
+          </div>
+
+          <!-- Nearby Places -->
+          <div id="nearby-places-section">
+            <button id="findRestaurantsBtn" class="md3-button-outlined" disabled
+                    aria-label="Buscar restaurantes próximos à localização atual">
+              <span class="button-icon" aria-hidden="true">🍽️</span>
+              <span class="button-text">Lugares Próximos</span>
+            </button>
+            <ul id="nearby-places-panel" class="nearby-places-panel" aria-label="Lugares próximos" hidden>
+              <span class="nearby-panel-heading" aria-hidden="true"></span>
+              <li id="nearby-places-list"></li>
+            </ul>
+          </div>
+
+          <!-- City Statistics -->
+          <div id="city-stats-section">
+            <button id="cityStatsBtn" class="md3-button-outlined" disabled
+                    aria-label="Ver estatísticas da cidade atual">
+              <span class="button-icon" aria-hidden="true">📊</span>
+              <span class="button-text">Estatísticas da Cidade</span>
+            </button>
+            <div id="city-stats-panel" class="city-stats-panel" aria-label="Estatísticas do município" hidden></div>
+          </div>
+
+        </div>
+      </details>
+
+      <!-- Tracking Mode Controls - Progressive Disclosure -->
+      <details id="advanced-controls" class="advanced-controls">
+        <summary class="advanced-controls-summary">
+          <span class="summary-icon" aria-hidden="true">⚙️</span>
+          <span class="summary-text">Opções Avançadas</span>
+        </summary>
+        <div class="advanced-controls-content">
+          <div id="tracking-controls">
+            <button id="insertPositionButton" class="md3-button-outlined" aria-label="Inserir posição de teste">
+              Inserir posição de teste
+            </button>
+          </div>
+          
+          <!-- Chronometer - Developer/Power User Metric -->
+          <div class="advanced-control-group chronometer-group">
+            <label for="chronometer" class="chronometer-label">
+              <span class="label-text">Tempo de rastreamento</span>
+              <span class="label-hint" aria-label="Tempo desde que iniciou o rastreamento contínuo">ℹ️</span>
+            </label>
+            <div class="chronometer-display">
+              <span id="chronometer" class="chronometer-value" role="timer" aria-live="off">00:00:00</span>
+              <small class="chronometer-description">Tempo desde que iniciou o rastreamento contínuo</small>
+            </div>
+          </div>
+          
+          <div class="advanced-control-group">
+            <label for="text-input">Síntese de Voz</label>
+            <textarea id="text-input" placeholder="Digite o texto para falar..." aria-label="Texto para síntese de voz" class="speech-input-textarea"></textarea>
+          </div>
+        </div>
+      </details>
+
+      <!-- Navigation Log Display (Semantic HTML) -->
+        <label for="navigation-log" class="sr-only">Histórico de navegação</label>
+        <output 
+          id="navigation-log" 
+          role="log" 
+          aria-live="polite" 
+          aria-atomic="false"
+          class="navigation-log"
+        ></output>
+        <!-- Keep old ID for backwards compatibility (hidden) -->
+        <textarea id="bottom-scroll-textarea" class="hidden" aria-hidden="true"></textarea>
+      </div>
+    </main>
+
+    <!-- Footer with secondary features -->
+    <footer class="app-footer" role="contentinfo">
+      <!-- Version Display (Enhanced with Modal) -->
+      <div 
+        class="app-version" 
+        role="button" 
+        tabindex="0"
+        aria-label="Versão do aplicativo - clique para ver detalhes"
+        aria-haspopup="dialog"
+      >
+        <!-- Updated dynamically by version.js -->
+      </div>
+
+      <!-- LBS Provider Indicator -->
+      <div id="lbs-provider-indicator" class="lbs-provider-indicator" role="status" aria-live="polite" aria-label="Serviço de localização utilizado">
+        <span class="lbs-provider-icon" aria-hidden="true">📡</span>
+        <span id="lbs-provider-name" class="lbs-provider-name">Aguardando localização...</span>
+        <button
+          id="provider-switch-btn"
+          class="provider-switch-btn"
+          hidden
+          aria-label="Alternar provedor de geocodificação"
+          title="Alternar entre Nominatim e AWS"
+        >↔</button>
+      </div>
+      
+      <!-- Version Info Modal -->
+      <div class="version-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="version-modal-title">
+        <div class="version-modal">
+          <div class="version-modal-header">
+            <span class="version-modal-icon" aria-hidden="true">ℹ️</span>
+            <h3 id="version-modal-title">Informações da Versão</h3>
+          </div>
+          
+          <div class="version-modal-body">
+            <div class="version-info-row">
+              <span class="version-info-label">Versão:</span>
+              <span class="version-info-value" id="modal-version">-</span>
+            </div>
+            <div class="version-info-row">
+              <span class="version-info-label">Data de Build:</span>
+              <span class="version-info-value" id="modal-build-date">-</span>
+            </div>
+            <div class="version-info-row">
+              <span class="version-info-label">Navegador:</span>
+              <span class="version-info-value" id="modal-browser">-</span>
+            </div>
+            <div class="version-info-row">
+              <span class="version-info-label">User Agent:</span>
+              <span class="version-info-value version-info-user-agent" id="modal-user-agent">-</span>
+            </div>
+            
+            <a 
+              href="https://github.com/mpbarbosa/guia.js/blob/main/CHANGELOG.md" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="version-changelog-link"
+            >
+              Ver Changelog Completo
+            </a>
+          </div>
+          
+          <button class="version-modal-close" aria-label="Fechar modal de informações">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- External Libraries -->
+    <script defer src="https://cdn.jsdelivr.net/gh/mpbarbosa/sidra.js@main/sidra.js" onerror="console.warn('⚠️ Failed to load sidra.js from CDN')"></script>
+    
+    <!-- Load ibira.js for API fetching and caching (IbiraAPIFetchManager) -->
+    
+    
+    <!-- Onboarding component -->
+    
+    <!-- Update version display with enhanced manager -->
+    
+    <!-- Maps Integration - Discoverable map viewing options -->
+    
+    <!-- App Entry Point -->
+  
+
+<div class="toast-container" role="region" aria-label="Notificações" aria-live="polite"></div><div id="give-freely-root-kkkbiiikppgjdiebcabomlbidfodipjg" class="give-freely-root" data-extension-id="kkkbiiikppgjdiebcabomlbidfodipjg" data-extension-name="Substital: Add subtitles to videos and movies" style="display: block;"><template shadowrootmode="open"><style>
+  :host {
+    all: initial;
+  }
+
+  .gf-scroll-remove::-webkit-scrollbar {
+    border-radius-bottom-right: 15px;
+  }
+
+  button {
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+
+  .give-freely-close-button:hover {
+    opacity: 0.7;
+  }
+
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 1em 0;
+  }
+
+  @media (max-width: 600px), (max-height: 480px) {
+    #give-freely-checkout-popup {
+      display: none !important;
+    }
+  }
+
+  dialog::backdrop  {
+    background-color: rgba(180, 180, 180, 0.8);
+  }
+
+  dialog.backdrop-hidden::backdrop  {
+    background-color: transparent;
+  }
+</style><div><div class="gf-app"></div></div></template></div>
+
+<!-- Button Utilities -->
+
+<!-- Service Worker Registration (optional, graceful fallback) -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', async () => {
+      // Unregister any stale service workers (e.g., old sw.js registered at root scope)
+      try {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        for (const reg of registrations) {
+          const scriptURL = reg.active?.scriptURL || reg.installing?.scriptURL || reg.waiting?.scriptURL || '';
+          if (scriptURL && !scriptURL.endsWith('service-worker.js')) {
+            await reg.unregister();
+            console.log('[App] Unregistered stale service worker:', scriptURL);
+          }
+        }
+      } catch (_) { /* ignore cleanup errors */ }
+
+      // Silently check if service-worker.js exists without logging errors
+      fetch('./service-worker.js', { method: 'HEAD' })
+        .then(response => {
+          if (response.ok) {
+            return navigator.serviceWorker.register('./service-worker.js');
+          }
+          // File doesn't exist - silently skip (development mode)
+          return null;
+        })
+        .then(registration => {
+          if (!registration) return;
+          
+          console.log('✓ Service Worker registered:', registration.scope);
+          
+          // Check for updates
+          registration.addEventListener('updatefound', () => {
+            const newWorker = registration.installing;
+            newWorker.addEventListener('statechange', () => {
+              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                // New version available - show toast instead of blocking confirm dialog
+                if (window.toast) {
+                  window.toast.info('Nova versão disponível!', 0, () => {
+                    newWorker.postMessage({ type: 'SKIP_WAITING' });
+                    window.location.reload();
+                  });
+                } else if (confirm('Nova versão disponível! Recarregar a página?')) {
+                  newWorker.postMessage({ type: 'SKIP_WAITING' });
+                  window.location.reload();
+                }
+              }
+            });
+          });
+        })
+        .catch(() => {
+          // Silently ignore - development mode without service worker
+        });
+    });
+  }
+</script>
+</body>
+</html>
+
+    <style>
+      /* ============================================
+         PROGRESSIVE DISCLOSURE (Mobile UX)
+         ============================================ */
+      
+      /* Secondary Information Collapse */
+      .secondary-info-collapse {
+        margin: 24px 0;
+        border: 1px solid var(--color-border-dark, #e5e7eb);
+        border-radius: 12px;
+        overflow: hidden;
+        background: #ffffff;
+      }
+
+      .secondary-info-summary {
+        padding: 16px 20px;
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: linear-gradient(135deg, var(--color-surface-variant, #f9fafb) 0%, var(--color-border-light, #f3f4f6) 100%);
+        transition: background 0.2s;
+        user-select: none;
+        font-weight: 600;
+        color: var(--color-text-primary, #1f2937);
+      }
+
+      .secondary-info-summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .secondary-info-summary:hover {
+        background: linear-gradient(135deg, var(--color-border-light, #f3f4f6) 0%, var(--color-border-dark, #e5e7eb) 100%);
+      }
+
+      .secondary-info-summary:focus {
+        outline: 2px solid var(--color-primary, #2563eb);
+        outline-offset: -2px;
+      }
+
+      .summary-icon {
+        font-size: 1.25rem;
+        flex-shrink: 0;
+      }
+
+      .summary-text {
+        flex: 1;
+        font-size: 1rem;
+      }
+
+      .summary-arrow {
+        font-size: 0.875rem;
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      .secondary-info-collapse[open] .summary-arrow {
+        transform: rotate(180deg);
+      }
+
+      .secondary-info-content {
+        padding: 20px;
+        border-top: 1px solid var(--color-border-dark, #e5e7eb);
+        animation: slideDown 0.3s ease-out;
+      }
+
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Sticky Highlight Cards on Mobile */
+      @media (max-width: 768px) {
+        .location-highlights {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          background: #ffffff;
+          padding: 16px 0;
+          margin: 0 -16px 24px -16px;
+          padding-left: 16px;
+          padding-right: 16px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Reduce card size on mobile for sticky header */
+        .location-highlights .highlight-card {
+          min-width: 0;
+          flex: 1;
+          padding: 16px 12px;
+          max-width: none;
+        }
+
+        .highlight-card-label {
+          font-size: 0.75rem;
+        }
+
+        .highlight-card-value {
+          font-size: 1rem;
+          min-height: 40px;
+        }
+
+        .metropolitan-region-value {
+          font-size: 0.75rem;
+          margin-top: 4px;
+          margin-bottom: 8px;
+        }
+
+        /* Secondary info starts collapsed on mobile */
+        .secondary-info-collapse {
+          margin: 16px 0;
+        }
+
+        .secondary-info-content {
+          padding: 16px;
+        }
+
+        .secondary-info-content section {
+          margin-bottom: 16px;
+        }
+
+        .secondary-info-content section:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      /* Desktop: Keep original layout */
+      @media (min-width: 769px) {
+        /* Hide collapse UI on desktop, show all content */
+        .secondary-info-summary {
+          display: none;
+        }
+
+        .secondary-info-collapse {
+          border: none;
+          background: transparent;
+        }
+
+        .secondary-info-content {
+          padding: 0;
+          border: none;
+        }
+      }
+
+      /* Accessibility: Reduce motion */
+      @media (prefers-reduced-motion: reduce) {
+        .summary-arrow,
+        .secondary-info-content {
+          animation: none;
+          transition: none;
+        }
+      }
+    </style>
+
+    <style>
+      /* ============================================
+         CHRONOMETER STYLING (Advanced Controls)
+         ============================================ */
+      
+      .chronometer-group {
+        margin: 24px 0;
+        padding: 16px;
+        background: var(--color-surface-variant, #f9fafb);
+        border-radius: 8px;
+        border: 1px solid var(--color-border-dark, #e5e7eb);
+      }
+
+      .chronometer-label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        color: var(--color-text-secondary, #374151);
+        margin-bottom: 8px;
+      }
+
+      .label-hint {
+        font-size: 1rem;
+        cursor: help;
+        opacity: 0.6;
+        transition: opacity 0.2s;
+      }
+
+      .label-hint:hover,
+      .label-hint:focus {
+        opacity: 1;
+      }
+
+      .chronometer-display {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .chronometer-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: 'Courier New', monospace;
+        color: var(--color-text-primary, #1f2937);
+        letter-spacing: 0.05em;
+      }
+
+      .chronometer-description {
+        font-size: 0.75rem;
+        color: var(--color-text-muted, #6b7280);
+        font-style: italic;
+      }
+
+      /* Hide chronometer initially (show only when tracking) */
+      .chronometer-group.hidden {
+        display: none;
+      }
+
+      /* Responsive: Stack on mobile */
+      @media (max-width: 640px) {
+        .chronometer-value {
+          font-size: 1.25rem;
+        }
+      }
+    </style>
