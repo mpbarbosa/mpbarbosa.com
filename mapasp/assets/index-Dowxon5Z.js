@@ -1,10 +1,10 @@
 (function(){const c=document.createElement("link").relList;if(c&&c.supports&&c.supports("modulepreload"))return;for(const f of document.querySelectorAll('link[rel="modulepreload"]'))m(f);new MutationObserver(f=>{for(const k of f)if(k.type==="childList")for(const w of k.addedNodes)w.tagName==="LINK"&&w.rel==="modulepreload"&&m(w)}).observe(document,{childList:!0,subtree:!0});function u(f){const k={};return f.integrity&&(k.integrity=f.integrity),f.referrerPolicy&&(k.referrerPolicy=f.referrerPolicy),f.crossOrigin==="use-credentials"?k.credentials="include":f.crossOrigin==="anonymous"?k.credentials="omit":k.credentials="same-origin",k}function m(f){if(f.ep)return;f.ep=!0;const k=u(f);fetch(f.href,k)}})();const gi=[{id:"aerial-photos",name:"Fotos Aereas",description:"Pontos de fotos aereas de drone, helicoptero e celular importados do WFS do GeoSampa.",defaultEnabled:!1},{id:"water-bodies",name:"Massas d'agua",description:"Poligonos de rios, corregos e lagos importados do WFS massa_d_agua do GeoSampa.",defaultEnabled:!1},{id:"hydrographic-basin",name:"Bacia Hidrografica",description:"Poligonos de bacias, microbacias e areas de contribuicao importados do WFS bacia_hidrografica do GeoSampa.",defaultEnabled:!1},{id:"metro-stations",name:"Estações do Metrô",description:"Pontos de estacoes em operacao do Metro e concessionarias importados do WFS estacao_metro do GeoSampa.",defaultEnabled:!1},{id:"metro-lines",name:"Linhas do Metrô",description:"Linhas em operacao do Metro e concessionarias importadas do WFS linha_metro do GeoSampa.",defaultEnabled:!1},{id:"streets",name:"Logradouros",description:"Segmentos de logradouro servidos pelo WMS publicado no registro de metadados consultado.",defaultEnabled:!1},{id:"municipal-markets",name:"Mercados Municipais",description:"Pontos de mercados municipais servidos pelo WMS publicado no registro de metadados consultado.",defaultEnabled:!1},{id:"street-market",name:"Feira Livre",description:"Pontos de feira livre servidos pelo WMS publicado no registro de metadados consultado. Clique em um marcador para ver detalhes.",defaultEnabled:!1},{id:"civil-police",name:"Polícia Civil",description:"Unidades da Polícia Civil servidas pelo WMS publicado no registro de metadados consultado.",defaultEnabled:!1},{id:"demographic-density",name:"Densidade Demografica",description:"Mapa tematico de densidade demografica de 2022 servido pelo WMS publicado no registro de metadados consultado.",defaultEnabled:!1},{id:"demographic-census",name:"Censo demografico",description:"Setores censitarios de 2022 servidos pelo WMS publicado no registro de metadados consultado.",defaultEnabled:!1},{id:"city-limits",name:"Limites de Sao Paulo",description:"Contorno oficial do municipio de Sao Paulo para orientar a leitura das demais camadas.",defaultEnabled:!1},{id:"distritos",name:"Distritos",description:"Municipal district boundaries served from the imported WMS capabilities XML.",defaultEnabled:!1},{id:"subprefectures",name:"Subprefeituras",description:"Subprefecture boundaries served from the imported WMS capabilities XML.",defaultEnabled:!0}];function cs(){return`
     <main class="workspace">
-      <aside class="sidebar panel" aria-label="Map layer controls" data-layer-controls data-show-layer-descriptions="true">
-        <div class="panel__section">
-          <h1>MapaSP</h1>
+      <nav class="navbar panel" aria-label="Map layer controls">
+        <div class="navbar__brand">
+          <h1 class="navbar-brand">MapaSP</h1>
         </div>
-        <div class="panel__section">
+        <div class="navbar__content navbar-collapse" data-layer-controls data-show-layer-descriptions="true">
           <label class="description-visibility-toggle" for="toggle-layer-descriptions">
              <input
                id="toggle-layer-descriptions"
@@ -14,7 +14,7 @@
              />
             <span class="description-visibility-toggle__label">Show layer descriptions</span>
           </label>
-          <ul class="layer-list">${gi.map(c=>`
+          <ul class="layer-list navbar-nav">${gi.map(c=>`
         <li class="layer-list__item">
           <label class="layer-toggle${c.id==="city-limits"?" layer-toggle--city-limits":""}" for="layer-${c.id}">
             <input
@@ -37,13 +37,9 @@
         </li>
       `).join("")}</ul>
         </div>
-      </aside>
+      </nav>
       <section class="map-panel panel" aria-label="OpenStreetMap view">
         <div class="map-panel__header">
-          <div>
-            <p class="eyebrow">OpenStreetMap</p>
-            <h2>Interactive city map</h2>
-          </div>
           <button
             type="button"
             class="map-panel__action"
