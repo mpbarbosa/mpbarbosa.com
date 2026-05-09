@@ -32,6 +32,13 @@
 
     <!-- v2 styles -->
     <link rel="stylesheet" href="styles/v2.css" />
+
+    <!-- Ensure content is visible when JS is disabled or fails to load -->
+    <noscript>
+      <style>
+        .section-card { opacity: 1 !important; transform: none !important; }
+      </style>
+    </noscript>
   </head>
   <body>
     <!-- Background -->
@@ -328,6 +335,6 @@
     </div>
 
     <!-- v2 script (no jQuery) -->
-    <script type="module" src="scripts/v2.mjs"></script>
+    <script type="module" src="scripts/v2.js"></script>
   </body>
 </html>
