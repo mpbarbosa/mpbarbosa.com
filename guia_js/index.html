@@ -1,7 +1,7 @@
 <html lang="pt-BR"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="version" content="0.24.6-alpha" data-source="src/config/version.js">
+    <meta name="version" content="0.24.7-alpha" data-source="src/config/version.js">
     
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://nominatim.openstreetmap.org https://servicodados.ibge.gov.br https://apisidra.ibge.gov.br https://cdn.jsdelivr.net https://b2inkriw8k.execute-api.us-east-1.amazonaws.com https://demotiles.maplibre.org https://router.project-osrm.org; worker-src 'self' blob:; manifest-src 'self'; base-uri 'self'; form-action 'self'">
@@ -465,15 +465,16 @@
         margin-bottom: 2rem;
       }
     </style>
-    <script type="module" crossorigin src="./assets/main-SivZtv0U.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/data-D8hIZyQz.js">
-    <link rel="modulepreload" crossorigin href="./assets/speech-CLSRjeHY.js">
+    <script type="module" crossorigin src="./assets/main-DgdhE03N.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/data-BAc4wPxk.js">
+    <link rel="modulepreload" crossorigin href="./assets/speech-BqckEF-Y.js">
     <link rel="modulepreload" crossorigin href="./assets/map-WLs8NypD.js">
-    <link rel="modulepreload" crossorigin href="./assets/html-CanGyxVL.js">
-    <link rel="modulepreload" crossorigin href="./assets/services-BDru8rTe.js">
-    <link rel="modulepreload" crossorigin href="./assets/coordination-Di5LBvNV.js">
+    <link rel="modulepreload" crossorigin href="./assets/html-BkIaPKa7.js">
+    <link rel="modulepreload" crossorigin href="./assets/services-Divpn1PA.js">
+    <link rel="modulepreload" crossorigin href="./assets/coordination-CcsS7PH9.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-CmshlIeH.js">
     <link rel="stylesheet" crossorigin href="./assets/map-DwUhsmFz.css">
-    <link rel="stylesheet" crossorigin href="./assets/main-BdDITOp0.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-CF-2xUHz.css">
     <link rel="stylesheet" crossorigin href="./assets/ui-CAugqcqo.css">
   </head>
   <body><div class="navigation-progress" role="progressbar" aria-label="Progresso de navegação"><div class="navigation-progress-bar" style="width: 0%;"></div></div>
@@ -562,9 +563,12 @@
         </ul>
       </div>
     </noscript>
-    
-    <!-- Primary Navigation -->
-    <nav class="app-navbar" aria-label="Navegação principal">
+
+    <!-- Vue app shell (Phase 2+) -->
+    <div id="app"></div>
+
+    <!-- Primary Navigation — superseded by Vue AppBar; kept for app.ts compatibility -->
+    <nav class="app-navbar" hidden aria-hidden="true" aria-label="Navegação principal">
       <div class="app-navbar-container">
         <a class="app-navbar-brand" href="#/">
           <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
@@ -934,7 +938,9 @@
     
     <!-- Maps Integration - Discoverable map viewing options -->
     
-    <!-- App Entry Point -->
+    <!-- Vue App Shell (Phase 2+) -->
+
+    <!-- Legacy App Entry Point -->
   
 
 <div class="toast-container" role="region" aria-label="Notificações" aria-live="polite"></div>
