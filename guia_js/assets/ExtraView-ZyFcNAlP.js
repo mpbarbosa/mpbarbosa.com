@@ -1,2 +1,0 @@
-import{d as a,o as e,c as t,a as s}from"./vendor-CoF2ApIo.js";const o={class:"p-6 bg-surface min-h-full space-y-6"},n=a({name:"ExtraView",__name:"ExtraView",setup:a=>(a,n)=>(e(),t("section",o,[...n[0]||(n[0]=[s("header",{class:"space-y-2"},[s("h2",{class:"text-3xl font-bold text-indigo-950 tracking-tight"},"Extra"),s("p",{class:"text-on-surface-variant font-medium"}," Conteúdo adicional em breve. ")],-1)])]))});export{n as default};
-//# sourceMappingURL=ExtraView-ZyFcNAlP.js.map
