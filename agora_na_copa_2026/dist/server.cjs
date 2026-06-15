@@ -295,6 +295,47 @@ var buildMatchStateEntry = (localMatch, fifaMatch, fifaLiveMatch) => {
   };
 };
 
+// src/data/questions.ts
+var triviaQuestions = [
+  {
+    id: "host-countries",
+    category: "Sedes",
+    question: "Quantos pa\xEDses sediam juntos a Copa do Mundo de 2026?",
+    options: ["2", "3", "4", "5"],
+    correctOptionIndex: 1,
+    explanation: "A edi\xE7\xE3o de 2026 ser\xE1 dividida entre Estados Unidos, M\xE9xico e Canad\xE1."
+  },
+  {
+    id: "metlife-final",
+    category: "Est\xE1dios",
+    question: "Qual est\xE1dio recebe a grande final no chaveamento do app?",
+    options: [
+      "BC Place de Vancouver",
+      "Est\xE1dio da Cidade do M\xE9xico",
+      "MetLife Stadium",
+      "Arrowhead Stadium"
+    ],
+    correctOptionIndex: 2,
+    explanation: "O mata-mata termina no MetLife Stadium, em East Rutherford, palco da final."
+  },
+  {
+    id: "group-format",
+    category: "Formato",
+    question: "Quantos grupos de quatro sele\xE7\xF5es aparecem na fase inicial desta edi\xE7\xE3o?",
+    options: ["8", "10", "12", "16"],
+    correctOptionIndex: 2,
+    explanation: "O modelo adotado no app usa 12 grupos de quatro sele\xE7\xF5es para a Copa de 2026."
+  },
+  {
+    id: "broadcast-core",
+    category: "Transmiss\xE3o",
+    question: "Qual aba do app concentra o guia de onde assistir e o feed de lances?",
+    options: ["Not\xEDcias", "Partidas", "Fan Zone", "Est\xE1dios"],
+    correctOptionIndex: 1,
+    explanation: "A aba Partidas re\xFAne o cron\xF4metro, as emissoras e os lances oficiais da FIFA."
+  }
+];
+
 // src/matches.json
 var matches_default = [
   {
@@ -1128,6 +1169,7 @@ var CIRCUIT_BREAKER_OPEN_MS = 60 * 1e3;
 var APP_MATCHES = matches_default;
 var APP_MATCHES_BY_ID = new Map(APP_MATCHES.map((match) => [match.id, match]));
 app.use(import_express.default.json());
+var TRIVIA_QUESTIONS = triviaQuestions;
 var broadcastGuideCache = null;
 var matchStatesCache = null;
 var fifaSyncDiagnostics = {
@@ -1556,6 +1598,10 @@ app.get("/api/fifa-sync-status", (_req, res) => {
       activeLiveMatchIds: fifaSyncDiagnostics.matchStates.activeLiveMatchIds
     }
   });
+});
+app.get("/api/questions", (_req, res) => {
+  res.set("Cache-Control", "no-store");
+  res.json(TRIVIA_QUESTIONS);
 });
 async function startServer() {
   const port = await resolveAppPort();
