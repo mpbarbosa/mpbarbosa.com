@@ -1519,6 +1519,7 @@ var DEFAULT_BROADCAST_COUNTRY = "BR";
 var DEFAULT_BROADCAST_LANGUAGE = "pt";
 var BROADCAST_GUIDE_CACHE_TTL_MS = 5 * 60 * 1e3;
 var TEAM_LINEUPS_CACHE_TTL_MS = 5 * 60 * 1e3;
+var LIVE_TEAM_LINEUPS_CACHE_TTL_MS = 10 * 1e3;
 var LIVE_MATCH_STATE_CACHE_TTL_MS = 10 * 1e3;
 var UPCOMING_SOON_MATCH_STATE_CACHE_TTL_MS = 30 * 1e3;
 var STABLE_MATCH_STATE_CACHE_TTL_MS = 5 * 60 * 1e3;
@@ -1768,6 +1769,10 @@ var getMatchStateCacheTtlMs = (states) => {
   });
   return hasUpcomingSoon ? UPCOMING_SOON_MATCH_STATE_CACHE_TTL_MS : STABLE_MATCH_STATE_CACHE_TTL_MS;
 };
+var getTeamLineupCacheTtlMs = (matchedFifa, liveByMatchId) => matchedFifa.some(({ match, fifaMatch }) => {
+  const liveMatch = fifaMatch ? liveByMatchId.get(fifaMatch.IdMatch) : void 0;
+  return buildMatchStateEntry(match, fifaMatch, liveMatch).status === "LIVE";
+}) ? LIVE_TEAM_LINEUPS_CACHE_TTL_MS : TEAM_LINEUPS_CACHE_TTL_MS;
 var serializeErrorMessage = (error) => error instanceof Error ? error.message : String(error);
 var getCircuitOpenUntilMs = (diagnostics) => {
   if (!diagnostics.circuitOpenUntil) {
@@ -2024,11 +2029,15 @@ var getTeamLineupsPayload = async (language) => {
         ];
       })
     );
-    const payload = { language, lineups };
+    const payload = {
+      language,
+      refreshAfterMs: getTeamLineupCacheTtlMs(matchedFifa, liveByMatchId),
+      lineups
+    };
     teamLineupsCache = {
       key: cacheKey,
       createdAt: Date.now(),
-      expiresAt: Date.now() + TEAM_LINEUPS_CACHE_TTL_MS,
+      expiresAt: Date.now() + payload.refreshAfterMs,
       payload
     };
     fifaSyncDiagnostics.teamLineups.lastSuccessAt = (/* @__PURE__ */ new Date()).toISOString();
