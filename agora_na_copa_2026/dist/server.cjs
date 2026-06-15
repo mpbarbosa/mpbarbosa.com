@@ -197,20 +197,47 @@ var findMatchingLineupPlayer = (player, lineup) => {
   );
 };
 var getFifaPlayerPictureUrl = (player) => player?.PlayerPicture?.PictureUrl || void 0;
+var getNormalizedPlayerNameParts = (name) => name.normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/[^A-Za-z0-9]+/g, " ").trim().toUpperCase().split(/\s+/).filter(Boolean);
+var getNormalizedSurname = (name) => getNormalizedPlayerNameParts(name).at(-1) || "";
+var isInitialMatch = (left, right) => Boolean(left) && Boolean(right) && left[0] === right[0];
+var isStrongPlayerNameMatch = (leftName, rightName) => {
+  const leftNormalized = normalizePlayerName(leftName);
+  const rightNormalized = normalizePlayerName(rightName);
+  if (leftNormalized === rightNormalized) {
+    return true;
+  }
+  const leftParts = getNormalizedPlayerNameParts(leftName);
+  const rightParts = getNormalizedPlayerNameParts(rightName);
+  if (leftParts.length === 0 || rightParts.length === 0) {
+    return false;
+  }
+  const leftSurname = leftParts.at(-1);
+  const rightSurname = rightParts.at(-1);
+  if (!leftSurname || !rightSurname || leftSurname !== rightSurname) {
+    return false;
+  }
+  const leftFirst = leftParts[0] || "";
+  const rightFirst = rightParts[0] || "";
+  return isInitialMatch(leftFirst, rightFirst);
+};
+var getComparableFifaPlayerNames = (player) => [
+  getBestPlayerName(player.PlayerName, ""),
+  getBestPlayerName(player.ShortName, "")
+].filter(Boolean);
 var findMatchingFifaPlayer = (player, fifaPlayers) => {
-  const normalizedName = normalizePlayerName(player.name);
   return fifaPlayers.find((candidate) => {
-    const candidateName = getBestPlayerName(
-      candidate.ShortName,
-      getBestPlayerName(candidate.PlayerName, "Jogador")
+    return (candidate.ShirtNumber || 0) === player.number && getComparableFifaPlayerNames(candidate).some(
+      (candidateName) => isStrongPlayerNameMatch(player.name, candidateName)
     );
-    return (candidate.ShirtNumber || 0) === player.number && normalizePlayerName(candidateName) === normalizedName;
-  }) || fifaPlayers.find((candidate) => (candidate.ShirtNumber || 0) === player.number) || fifaPlayers.find((candidate) => {
-    const candidateName = getBestPlayerName(
-      candidate.ShortName,
-      getBestPlayerName(candidate.PlayerName, "Jogador")
+  }) || fifaPlayers.find((candidate) => {
+    return getComparableFifaPlayerNames(candidate).some(
+      (candidateName) => isStrongPlayerNameMatch(player.name, candidateName)
     );
-    return normalizePlayerName(candidateName) === normalizedName;
+  }) || fifaPlayers.find((candidate) => {
+    const candidateSurnameMatches = getComparableFifaPlayerNames(candidate).some(
+      (candidateName) => getNormalizedSurname(candidateName) === getNormalizedSurname(player.name)
+    );
+    return (candidate.ShirtNumber || 0) === player.number && candidateSurnameMatches;
   });
 };
 var mergeLineupWithLocalMetadata = (players, fallbackLineup) => players.map((player) => {
@@ -228,7 +255,14 @@ var enrichFallbackLineupWithFifaPictures = (fallbackLineup, fifaTeam) => {
   return fallbackLineup.map((player) => {
     const fifaPlayer = findMatchingFifaPlayer(player, fifaPlayers);
     const pictureUrl = getFifaPlayerPictureUrl(fifaPlayer);
-    return pictureUrl && player.pictureUrl !== pictureUrl ? { ...player, pictureUrl } : player;
+    if (!fifaPlayer) {
+      return player;
+    }
+    return {
+      ...player,
+      number: fifaPlayer.ShirtNumber || player.number,
+      pictureUrl: pictureUrl ?? player.pictureUrl
+    };
   });
 };
 var buildPlayerNameMap = (team2) => {
