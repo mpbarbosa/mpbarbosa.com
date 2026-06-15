@@ -187,6 +187,50 @@ var getMinuteSortValue = (minute) => {
   return values.reduce((total, value) => total + value, 0);
 };
 var getBestPlayerName = (entries, fallback = "") => getLocalizedDescription(entries, "pt") || fallback;
+var normalizePlayerName = (name) => normalizeText(name);
+var findMatchingLineupPlayer = (player, lineup) => {
+  const normalizedName = normalizePlayerName(player.name);
+  return lineup.find(
+    (candidate) => candidate.number === player.number && normalizePlayerName(candidate.name) === normalizedName
+  ) || lineup.find((candidate) => candidate.number === player.number) || lineup.find(
+    (candidate) => normalizePlayerName(candidate.name) === normalizedName
+  );
+};
+var getFifaPlayerPictureUrl = (player) => player?.PlayerPicture?.PictureUrl || void 0;
+var findMatchingFifaPlayer = (player, fifaPlayers) => {
+  const normalizedName = normalizePlayerName(player.name);
+  return fifaPlayers.find((candidate) => {
+    const candidateName = getBestPlayerName(
+      candidate.ShortName,
+      getBestPlayerName(candidate.PlayerName, "Jogador")
+    );
+    return (candidate.ShirtNumber || 0) === player.number && normalizePlayerName(candidateName) === normalizedName;
+  }) || fifaPlayers.find((candidate) => (candidate.ShirtNumber || 0) === player.number) || fifaPlayers.find((candidate) => {
+    const candidateName = getBestPlayerName(
+      candidate.ShortName,
+      getBestPlayerName(candidate.PlayerName, "Jogador")
+    );
+    return normalizePlayerName(candidateName) === normalizedName;
+  });
+};
+var mergeLineupWithLocalMetadata = (players, fallbackLineup) => players.map((player) => {
+  const fallbackPlayer = findMatchingLineupPlayer(player, fallbackLineup);
+  if (!fallbackPlayer) return player;
+  return {
+    ...player,
+    club: player.club ?? fallbackPlayer.club,
+    pictureUrl: player.pictureUrl ?? fallbackPlayer.pictureUrl
+  };
+});
+var enrichFallbackLineupWithFifaPictures = (fallbackLineup, fifaTeam) => {
+  const fifaPlayers = fifaTeam?.Players;
+  if (!fifaPlayers || fifaPlayers.length === 0) return fallbackLineup;
+  return fallbackLineup.map((player) => {
+    const fifaPlayer = findMatchingFifaPlayer(player, fifaPlayers);
+    const pictureUrl = getFifaPlayerPictureUrl(fifaPlayer);
+    return pictureUrl && player.pictureUrl !== pictureUrl ? { ...player, pictureUrl } : player;
+  });
+};
 var buildPlayerNameMap = (team) => {
   const players = team?.Players || [];
   return new Map(
@@ -349,14 +393,15 @@ var getStartingLineupFromLiveFifa = (team) => {
     number: player.ShirtNumber || 0,
     position: FIFA_POSITION_TO_LOCAL[player.Position ?? 2] ?? "MF" /* MF */,
     x: coords[index]?.x ?? 50,
-    y: coords[index]?.y ?? 50
+    y: coords[index]?.y ?? 50,
+    pictureUrl: getFifaPlayerPictureUrl(player)
   }));
 };
 var buildTeamLineupEntry = (fallbackLineup, fifaMatch, fifaTeam) => {
   const starters = getStartingLineupFromLiveFifa(fifaTeam);
   if (starters) {
     return {
-      players: starters,
+      players: mergeLineupWithLocalMetadata(starters, fallbackLineup),
       source: "fifa",
       note: "Escala\xE7\xE3o oficial divulgada pela FIFA.",
       fifaMatchId: fifaMatch?.IdMatch,
@@ -364,7 +409,7 @@ var buildTeamLineupEntry = (fallbackLineup, fifaMatch, fifaTeam) => {
     };
   }
   return {
-    players: fallbackLineup,
+    players: enrichFallbackLineupWithFifaPictures(fallbackLineup, fifaTeam),
     source: "fallback",
     note: fifaMatch ? "Escala\xE7\xE3o oficial da FIFA ainda n\xE3o divulgada; exibindo dados locais." : "Dados oficiais da FIFA indispon\xEDveis para esta partida no momento; exibindo dados locais.",
     fifaMatchId: fifaMatch?.IdMatch,
