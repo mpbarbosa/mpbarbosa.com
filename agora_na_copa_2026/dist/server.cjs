@@ -1136,187 +1136,18 @@ var matches_default = [
     kickoffDate: "14 Junho, 2026",
     kickoffTimestamp: "2026-06-14T23:00:00-03:00",
     officialMatchUrl: "https://www.fifa.com/pt/match-centre/match/17/285023/289273/400021474",
-    status: "PRE_GAME",
-    countdownTargetSeconds: 69478,
+    status: "LIVE",
+    score: {
+      teamA: 3,
+      teamB: 1
+    },
+    matchTime: "90'+1",
+    countdownTargetSeconds: 0,
     broadcasters: [
       { id: "gb13", type: "STREAM", name: "Globoplay", iconColor: "#00e476", link: "https://globoplay.globo.com/tv-globo/ao-vivo/6120663/", logoUrl: "https://extranets.fifa.com/TvStationPhotos/30.png" },
       { id: "cz13", type: "YOUTUBE", name: "Caz\xE9TV", iconColor: "#ed2939", link: "https://www.youtube.com/@CazeTV", logoUrl: "https://extranets.fifa.com/TvStationPhotos/451.png" },
       { id: "g13", type: "TV ABERTA", name: "TV Globo", iconColor: "#05ff85", link: "https://redeglobo.globo.com/", logoUrl: "https://extranets.fifa.com/TvStationPhotos/25.png" },
       { id: "s13", type: "TV PAGA", name: "sportv", iconColor: "#ffd700", link: "https://ge.globo.com/sportv/", logoUrl: "https://extranets.fifa.com/TvStationPhotos/26.png" }
-    ]
-  },
-  {
-    id: "por-col-2026",
-    teamA: {
-      name: "PORTUGAL",
-      code: "POR",
-      flagSvg: "portugal",
-      primaryColor: "#006600",
-      secondaryColor: "#ff0000",
-      group: "Grupo G",
-      lineup: [
-        { id: "pt1", name: "Diogo Costa", number: 1, position: "GK", x: 50, y: 88, club: "Porto" },
-        { id: "pt2", name: "Diogo Dalot", number: 2, position: "DF", x: 15, y: 70, club: "Manchester United" },
-        { id: "pt3", name: "R\xFAben Dias", number: 4, position: "DF", x: 38, y: 75, club: "Manchester City" },
-        { id: "pt4", name: "Gon\xE7alo In\xE1cio", number: 14, position: "DF", x: 62, y: 75, club: "Sporting" },
-        { id: "pt5", name: "Nuno Mendes", number: 19, position: "DF", x: 85, y: 70, club: "PSG" },
-        { id: "pt6", name: "Jo\xE3o Palhinha", number: 6, position: "MF", x: 30, y: 48, club: "Bayern Munique" },
-        { id: "pt7", name: "Vitinha", number: 23, position: "MF", x: 50, y: 44, club: "PSG" },
-        { id: "pt8", name: "Bruno Fernandes", number: 8, position: "MF", x: 70, y: 48, club: "Manchester United" },
-        { id: "pt9", name: "Bernardo Silva", number: 10, position: "FW", x: 15, y: 22, club: "Manchester City" },
-        { id: "pt10", name: "Cristiano Ronaldo", number: 7, position: "FW", x: 50, y: 28, club: "Al-Nassr" },
-        { id: "pt11", name: "Rafael Le\xE3o", number: 17, position: "FW", x: 85, y: 22, club: "Milan" }
-      ]
-    },
-    teamB: {
-      name: "COL\xD4MBIA",
-      code: "COL",
-      flagSvg: "colombia",
-      primaryColor: "#fcd116",
-      secondaryColor: "#003893",
-      group: "Grupo G",
-      lineup: [
-        { id: "co1", name: "Camilo Vargas", number: 1, position: "GK", x: 50, y: 12, club: "Atlas" },
-        { id: "co2", name: "Daniel Mu\xF1oz", number: 2, position: "DF", x: 15, y: 30, club: "Crystal Palace" },
-        { id: "co3", name: "Davinson S\xE1nchez", number: 23, position: "DF", x: 38, y: 25, club: "Galatasaray" },
-        { id: "co4", name: "Jhon Lucum\xED", number: 3, position: "DF", x: 62, y: 25, club: "Bologna" },
-        { id: "co5", name: "Johan Mojica", number: 17, position: "DF", x: 85, y: 30, club: "Mallorca" },
-        { id: "co6", name: "Jefferson Lerma", number: 16, position: "MF", x: 30, y: 50, club: "Crystal Palace" },
-        { id: "co7", name: "Richard R\xEDos", number: 6, position: "MF", x: 50, y: 45, club: "Palmeiras" },
-        { id: "co8", name: "James Rodr\xEDguez", number: 10, position: "MF", x: 70, y: 50, club: "Le\xF3n" },
-        { id: "co9", name: "Jhon Arias", number: 11, position: "FW", x: 15, y: 75, club: "Fluminense" },
-        { id: "co10", name: "Jhon Dur\xE1n", number: 14, position: "FW", x: 50, y: 85, club: "Al-Nassr" },
-        { id: "co11", name: "Luis D\xEDaz", number: 7, position: "FW", x: 85, y: 75, club: "Liverpool" }
-      ]
-    },
-    stadiumName: "Est\xE1dio de Atlanta",
-    city: "ATLANTA",
-    stageName: "Group Stage",
-    kickoffTime: "14:00",
-    kickoffDate: "15 Junho, 2026",
-    kickoffTimestamp: "2026-06-15T14:00:00-03:00",
-    status: "PRE_GAME",
-    countdownTargetSeconds: 0,
-    broadcasters: [
-      { id: "g14a", type: "TV ABERTA", name: "TV Globo", iconColor: "#05ff85", link: "https://redeglobo.globo.com/" },
-      { id: "s14a", type: "TV PAGA", name: "sportv", iconColor: "#ffd700", link: "https://ge.globo.com/sportv/" },
-      { id: "cz14a", type: "YOUTUBE", name: "Caz\xE9TV", iconColor: "#ed2939", link: "https://www.youtube.com/@CazeTV" }
-    ]
-  },
-  {
-    id: "nga-crc-2026",
-    teamA: {
-      name: "NIG\xC9RIA",
-      code: "NGA",
-      flagSvg: "nigeria",
-      primaryColor: "#008751",
-      secondaryColor: "#ffffff",
-      group: "Grupo G",
-      lineup: [
-        { id: "ng1", name: "Stanley Nwabali", number: 23, position: "GK", x: 50, y: 88, club: "Chippa United" },
-        { id: "ng2", name: "Ola Aina", number: 2, position: "DF", x: 15, y: 70, club: "Nottingham Forest" },
-        { id: "ng3", name: "William Troost-Ekong", number: 5, position: "DF", x: 38, y: 75, club: "Al-Kholood" },
-        { id: "ng4", name: "Calvin Bassey", number: 6, position: "DF", x: 62, y: 75, club: "Fulham" },
-        { id: "ng5", name: "Zaidu Sanusi", number: 12, position: "DF", x: 85, y: 70, club: "Porto" },
-        { id: "ng6", name: "Wilfred Ndidi", number: 4, position: "MF", x: 30, y: 48, club: "Leicester City" },
-        { id: "ng7", name: "Frank Onyeka", number: 8, position: "MF", x: 50, y: 44, club: "Augsburg" },
-        { id: "ng8", name: "Alex Iwobi", number: 17, position: "MF", x: 70, y: 48, club: "Fulham" },
-        { id: "ng9", name: "Samuel Chukwueze", number: 11, position: "FW", x: 15, y: 22, club: "Milan" },
-        { id: "ng10", name: "Victor Osimhen", number: 9, position: "FW", x: 50, y: 28, club: "Galatasaray" },
-        { id: "ng11", name: "Ademola Lookman", number: 18, position: "FW", x: 85, y: 22, club: "Atalanta" }
-      ]
-    },
-    teamB: {
-      name: "COSTA RICA",
-      code: "CRC",
-      flagSvg: "costarica",
-      primaryColor: "#002b7f",
-      secondaryColor: "#ce1126",
-      group: "Grupo G",
-      lineup: [
-        { id: "cr1", name: "Keylor Navas", number: 1, position: "GK", x: 50, y: 12, club: "Newell's Old Boys" },
-        { id: "cr2", name: "Carlos Mart\xEDnez", number: 22, position: "DF", x: 15, y: 30, club: "Alajuelense" },
-        { id: "cr3", name: "Francisco Calvo", number: 15, position: "DF", x: 38, y: 25, club: "Hatayspor" },
-        { id: "cr4", name: "Juan Pablo Vargas", number: 4, position: "DF", x: 62, y: 25, club: "Millonarios" },
-        { id: "cr5", name: "Joseph Mora", number: 8, position: "DF", x: 85, y: 30, club: "Charlotte FC" },
-        { id: "cr6", name: "Yeltsin Tejeda", number: 5, position: "MF", x: 30, y: 50, club: "Herediano" },
-        { id: "cr7", name: "Brandon Aguilera", number: 10, position: "MF", x: 50, y: 45, club: "Bristol Rovers" },
-        { id: "cr8", name: "Orlando Galo", number: 14, position: "MF", x: 70, y: 50, club: "Riga FC" },
-        { id: "cr9", name: "Jewison Bennette", number: 11, position: "FW", x: 15, y: 75, club: "Luton Town" },
-        { id: "cr10", name: "Manfred Ugalde", number: 9, position: "FW", x: 50, y: 85, club: "Spartak Moscou" },
-        { id: "cr11", name: "Joel Campbell", number: 12, position: "FW", x: 85, y: 75, club: "Alajuelense" }
-      ]
-    },
-    stadiumName: "Est\xE1dio de Miami",
-    city: "MIAMI",
-    stageName: "Group Stage",
-    kickoffTime: "17:00",
-    kickoffDate: "15 Junho, 2026",
-    kickoffTimestamp: "2026-06-15T17:00:00-03:00",
-    status: "PRE_GAME",
-    countdownTargetSeconds: 0,
-    broadcasters: [
-      { id: "g14b", type: "TV ABERTA", name: "TV Globo", iconColor: "#05ff85", link: "https://redeglobo.globo.com/" },
-      { id: "s14b", type: "TV PAGA", name: "sportv", iconColor: "#ffd700", link: "https://ge.globo.com/sportv/" },
-      { id: "cz14b", type: "YOUTUBE", name: "Caz\xE9TV", iconColor: "#ed2939", link: "https://www.youtube.com/@CazeTV" }
-    ]
-  },
-  {
-    id: "esp-ita-2026",
-    teamA: {
-      name: "ESPANHA",
-      code: "ESP",
-      flagSvg: "spain",
-      primaryColor: "#c60b1e",
-      secondaryColor: "#ffc400",
-      group: "Grupo H",
-      lineup: [
-        { id: "esg1", name: "Unai Sim\xF3n", number: 23, position: "GK", x: 50, y: 88, club: "Athletic Club" },
-        { id: "esg2", name: "Dani Carvajal", number: 2, position: "DF", x: 15, y: 70, club: "Real Madrid" },
-        { id: "esg3", name: "Robin Le Normand", number: 3, position: "DF", x: 38, y: 75, club: "Atl\xE9tico de Madrid" },
-        { id: "esg4", name: "Aymeric Laporte", number: 14, position: "DF", x: 62, y: 75, club: "Al-Nassr" },
-        { id: "esg5", name: "Marc Cucurella", number: 24, position: "DF", x: 85, y: 70, club: "Chelsea" },
-        { id: "esg6", name: "Rodri", number: 16, position: "MF", x: 30, y: 48, club: "Manchester City" },
-        { id: "esg7", name: "Pedri", number: 20, position: "MF", x: 50, y: 44, club: "Barcelona" },
-        { id: "esg8", name: "Fabi\xE1n Ruiz", number: 8, position: "MF", x: 70, y: 48, club: "PSG" },
-        { id: "esg9", name: "Lamine Yamal", number: 19, position: "FW", x: 15, y: 22, club: "Barcelona" },
-        { id: "esg10", name: "\xC1lvaro Morata", number: 7, position: "FW", x: 50, y: 28, club: "Galatasaray" },
-        { id: "esg11", name: "Nico Williams", number: 11, position: "FW", x: 85, y: 22, club: "Athletic Club" }
-      ]
-    },
-    teamB: {
-      name: "IT\xC1LIA",
-      code: "ITA",
-      flagSvg: "italy",
-      primaryColor: "#009246",
-      secondaryColor: "#ce2b37",
-      group: "Grupo H",
-      lineup: [
-        { id: "it1", name: "Gianluigi Donnarumma", number: 1, position: "GK", x: 50, y: 12, club: "PSG" },
-        { id: "it2", name: "Giovanni Di Lorenzo", number: 2, position: "DF", x: 15, y: 30, club: "Napoli" },
-        { id: "it3", name: "Alessandro Bastoni", number: 23, position: "DF", x: 38, y: 25, club: "Inter de Mil\xE3o" },
-        { id: "it4", name: "Riccardo Calafiori", number: 5, position: "DF", x: 62, y: 25, club: "Arsenal" },
-        { id: "it5", name: "Federico Dimarco", number: 3, position: "DF", x: 85, y: 30, club: "Inter de Mil\xE3o" },
-        { id: "it6", name: "Nicol\xF2 Barella", number: 18, position: "MF", x: 30, y: 50, club: "Inter de Mil\xE3o" },
-        { id: "it7", name: "Sandro Tonali", number: 8, position: "MF", x: 50, y: 45, club: "Newcastle" },
-        { id: "it8", name: "Jorginho", number: 10, position: "MF", x: 70, y: 50, club: "Arsenal" },
-        { id: "it9", name: "Federico Chiesa", number: 14, position: "FW", x: 15, y: 75, club: "Liverpool" },
-        { id: "it10", name: "Gianluca Scamacca", number: 9, position: "FW", x: 50, y: 85, club: "Atalanta" },
-        { id: "it11", name: "Lorenzo Pellegrini", number: 7, position: "FW", x: 85, y: 75, club: "Roma" }
-      ]
-    },
-    stadiumName: "Est\xE1dio da Bay Area",
-    city: "SANTA CLARA",
-    stageName: "Group Stage",
-    kickoffTime: "20:00",
-    kickoffDate: "15 Junho, 2026",
-    kickoffTimestamp: "2026-06-15T20:00:00-03:00",
-    status: "PRE_GAME",
-    countdownTargetSeconds: 0,
-    broadcasters: [
-      { id: "g14c", type: "TV ABERTA", name: "TV Globo", iconColor: "#05ff85", link: "https://redeglobo.globo.com/" },
-      { id: "s14c", type: "TV PAGA", name: "sportv", iconColor: "#ffd700", link: "https://ge.globo.com/sportv/" },
-      { id: "cz14c", type: "YOUTUBE", name: "Caz\xE9TV", iconColor: "#ed2939", link: "https://www.youtube.com/@CazeTV" }
     ]
   },
   {
@@ -1327,7 +1158,7 @@ var matches_default = [
       flagSvg: "spain",
       primaryColor: "#c60b1e",
       secondaryColor: "#ffc400",
-      group: "Partida Especial",
+      group: "Grupo H",
       lineup: [
         { id: "es1", name: "Unai Sim\xF3n", number: 23, position: "GK", x: 50, y: 88, club: "Athletic Club" },
         { id: "es2", name: "Dani Carvajal", number: 2, position: "DF", x: 15, y: 70, club: "Real Madrid" },
@@ -1348,7 +1179,7 @@ var matches_default = [
       flagSvg: "capeverde",
       primaryColor: "#0057b8",
       secondaryColor: "#cf2027",
-      group: "Partida Especial",
+      group: "Grupo H",
       lineup: [
         { id: "cv1", name: "Vozinha", number: 1, position: "GK", x: 50, y: 12, club: "Gil Vicente" },
         { id: "cv2", name: "Steven Moreira", number: 22, position: "DF", x: 15, y: 30, club: "Columbus Crew" },
@@ -1363,76 +1194,18 @@ var matches_default = [
         { id: "cv11", name: "Willy Semedo", number: 17, position: "FW", x: 85, y: 75, club: "Al-Faisaly" }
       ]
     },
-    stadiumName: "Est\xE1dio de Miami",
-    city: "MIAMI",
-    stageName: "Partida Especial",
-    kickoffTime: "21:00",
+    stadiumName: "Est\xE1dio de Atlanta",
+    city: "ATLANTA",
+    stageName: "Group Stage",
+    kickoffTime: "13:00",
     kickoffDate: "15 Junho, 2026",
-    kickoffTimestamp: "2026-06-15T21:00:00-03:00",
+    kickoffTimestamp: "2026-06-15T13:00:00-03:00",
     status: "PRE_GAME",
     countdownTargetSeconds: 0,
     broadcasters: [
       { id: "g14", type: "TV ABERTA", name: "TV Globo", iconColor: "#05ff85", link: "https://redeglobo.globo.com/" },
       { id: "s14", type: "TV PAGA", name: "sportv", iconColor: "#ffd700", link: "https://ge.globo.com/sportv/" },
       { id: "cz14", type: "YOUTUBE", name: "Caz\xE9TV", iconColor: "#ed2939", link: "https://www.youtube.com/@CazeTV" }
-    ]
-  },
-  {
-    id: "egy-nzl-2026",
-    teamA: {
-      name: "EGITO",
-      code: "EGY",
-      flagSvg: "egypt",
-      primaryColor: "#ce1126",
-      secondaryColor: "#000000",
-      group: "Grupo H",
-      lineup: [
-        { id: "egy1", name: "Mohamed El Shenawy", number: 1, position: "GK", x: 50, y: 88, club: "Al Ahly" },
-        { id: "egy2", name: "Mohamed Hany", number: 3, position: "DF", x: 15, y: 70, club: "Al Ahly" },
-        { id: "egy3", name: "Ramy Rabia", number: 5, position: "DF", x: 38, y: 75, club: "Al Ahly" },
-        { id: "egy4", name: "Mohamed Abdelmonem", number: 6, position: "DF", x: 62, y: 75, club: "Nice" },
-        { id: "egy5", name: "Ahmed Fattouh", number: 13, position: "DF", x: 85, y: 70, club: "Zamalek" },
-        { id: "egy6", name: "Hamdi Fathi", number: 8, position: "MF", x: 30, y: 48, club: "Al Wakrah" },
-        { id: "egy7", name: "Marwan Attia", number: 19, position: "MF", x: 50, y: 44, club: "Al Ahly" },
-        { id: "egy8", name: "Emam Ashour", number: 22, position: "MF", x: 70, y: 48, club: "Al Ahly" },
-        { id: "egy9", name: "Mahmoud Tr\xE9z\xE9guet", number: 7, position: "FW", x: 15, y: 22, club: "Trabzonspor" },
-        { id: "egy10", name: "Mostafa Mohamed", number: 11, position: "FW", x: 50, y: 28, club: "Nantes" },
-        { id: "egy11", name: "Mohamed Salah", number: 10, position: "FW", x: 85, y: 22, club: "Liverpool" }
-      ]
-    },
-    teamB: {
-      name: "NOVA ZEL\xC2NDIA",
-      code: "NZL",
-      flagSvg: "newzealand",
-      primaryColor: "#00247d",
-      secondaryColor: "#c8102e",
-      group: "Grupo H",
-      lineup: [
-        { id: "nzg1", name: "Max Crocombe", number: 1, position: "GK", x: 50, y: 12, club: "Burton Albion" },
-        { id: "nzg2", name: "Tim Payne", number: 2, position: "DF", x: 15, y: 30, club: "Wellington Phoenix" },
-        { id: "nzg3", name: "Michael Boxall", number: 5, position: "DF", x: 38, y: 25, club: "Minnesota United" },
-        { id: "nzg4", name: "Tyler Bindon", number: 4, position: "DF", x: 62, y: 25, club: "Reading" },
-        { id: "nzg5", name: "Liberato Cacace", number: 13, position: "DF", x: 85, y: 30, club: "Empoli" },
-        { id: "nzg6", name: "Joe Bell", number: 6, position: "MF", x: 30, y: 50, club: "Viking FK" },
-        { id: "nzg7", name: "Marko Stamenic", number: 8, position: "MF", x: 50, y: 45, club: "Olympiacos" },
-        { id: "nzg8", name: "Sarpreet Singh", number: 10, position: "MF", x: 70, y: 50, club: "Leiria" },
-        { id: "nzg9", name: "Elijah Just", number: 11, position: "FW", x: 15, y: 75, club: "SKN St. Polten" },
-        { id: "nzg10", name: "Chris Wood", number: 9, position: "FW", x: 50, y: 85, club: "Nottingham Forest" },
-        { id: "nzg11", name: "Ben Waine", number: 17, position: "FW", x: 85, y: 75, club: "Plymouth Argyle" }
-      ]
-    },
-    stadiumName: "Est\xE1dio de Seattle",
-    city: "SEATTLE",
-    stageName: "Group Stage",
-    kickoffTime: "23:00",
-    kickoffDate: "15 Junho, 2026",
-    kickoffTimestamp: "2026-06-15T23:00:00-03:00",
-    status: "PRE_GAME",
-    countdownTargetSeconds: 0,
-    broadcasters: [
-      { id: "g14d", type: "TV ABERTA", name: "TV Globo", iconColor: "#05ff85", link: "https://redeglobo.globo.com/" },
-      { id: "s14d", type: "TV PAGA", name: "sportv", iconColor: "#ffd700", link: "https://ge.globo.com/sportv/" },
-      { id: "cz14d", type: "YOUTUBE", name: "Caz\xE9TV", iconColor: "#ed2939", link: "https://www.youtube.com/@CazeTV" }
     ]
   },
   {
@@ -1443,7 +1216,7 @@ var matches_default = [
       flagSvg: "belgium",
       primaryColor: "#000000",
       secondaryColor: "#fae042",
-      group: "Partida Especial",
+      group: "Grupo G",
       lineup: [
         { id: "be1", name: "Koen Casteels", number: 1, position: "GK", x: 50, y: 88, club: "Al-Qadsiah" },
         { id: "be2", name: "Timothy Castagne", number: 21, position: "DF", x: 15, y: 70, club: "Fulham" },
@@ -1464,7 +1237,7 @@ var matches_default = [
       flagSvg: "egypt",
       primaryColor: "#ce1126",
       secondaryColor: "#000000",
-      group: "Partida Especial",
+      group: "Grupo G",
       lineup: [
         { id: "eg1", name: "Mohamed El Shenawy", number: 1, position: "GK", x: 50, y: 12, club: "Al Ahly" },
         { id: "eg2", name: "Mohamed Hany", number: 3, position: "DF", x: 15, y: 30, club: "Al Ahly" },
@@ -1479,12 +1252,12 @@ var matches_default = [
         { id: "eg11", name: "Mohamed Salah", number: 10, position: "FW", x: 85, y: 75, club: "Liverpool" }
       ]
     },
-    stadiumName: "Est\xE1dio de Atlanta",
-    city: "ATLANTA",
-    stageName: "Partida Especial",
-    kickoffTime: "19:00",
-    kickoffDate: "17 Junho, 2026",
-    kickoffTimestamp: "2026-06-17T19:00:00-03:00",
+    stadiumName: "Est\xE1dio de Seattle",
+    city: "SEATTLE",
+    stageName: "Group Stage",
+    kickoffTime: "16:00",
+    kickoffDate: "15 Junho, 2026",
+    kickoffTimestamp: "2026-06-15T16:00:00-03:00",
     status: "PRE_GAME",
     countdownTargetSeconds: 0,
     broadcasters: [
@@ -1501,7 +1274,7 @@ var matches_default = [
       flagSvg: "saudiarabia",
       primaryColor: "#006c35",
       secondaryColor: "#ffffff",
-      group: "Partida Especial",
+      group: "Grupo H",
       lineup: [
         { id: "sau1", name: "Mohammed Al-Owais", number: 21, position: "GK", x: 50, y: 88, club: "Al-Hilal" },
         { id: "sau2", name: "Saud Abdulhamid", number: 12, position: "DF", x: 15, y: 70, club: "Roma" },
@@ -1522,7 +1295,7 @@ var matches_default = [
       flagSvg: "uruguay",
       primaryColor: "#0038a8",
       secondaryColor: "#fcd116",
-      group: "Partida Especial",
+      group: "Grupo H",
       lineup: [
         { id: "uy1", name: "Sergio Rochet", number: 1, position: "GK", x: 50, y: 12, club: "Internacional" },
         { id: "uy2", name: "Nahitan N\xE1ndez", number: 8, position: "DF", x: 15, y: 30, club: "Al-Qadsiah" },
@@ -1537,12 +1310,12 @@ var matches_default = [
         { id: "uy11", name: "Maximiliano Ara\xFAjo", number: 20, position: "FW", x: 85, y: 75, club: "Sporting" }
       ]
     },
-    stadiumName: "Est\xE1dio da Bay Area",
-    city: "SANTA CLARA",
-    stageName: "Partida Especial",
-    kickoffTime: "22:30",
-    kickoffDate: "18 Junho, 2026",
-    kickoffTimestamp: "2026-06-18T22:30:00-03:00",
+    stadiumName: "Est\xE1dio de Miami",
+    city: "MIAMI",
+    stageName: "Group Stage",
+    kickoffTime: "19:00",
+    kickoffDate: "15 Junho, 2026",
+    kickoffTimestamp: "2026-06-15T19:00:00-03:00",
     status: "PRE_GAME",
     countdownTargetSeconds: 0,
     broadcasters: [
@@ -1554,12 +1327,12 @@ var matches_default = [
   {
     id: "irn-nzl-2026",
     teamA: {
-      name: "IR\xC3",
+      name: "RI DO IR\xC3",
       code: "IRN",
       flagSvg: "iran",
       primaryColor: "#239f40",
       secondaryColor: "#da0000",
-      group: "Partida Especial",
+      group: "Grupo G",
       lineup: [
         { id: "ir1", name: "Alireza Beiranvand", number: 1, position: "GK", x: 50, y: 88, club: "Persepolis" },
         { id: "ir2", name: "Sadegh Moharrami", number: 2, position: "DF", x: 15, y: 70, club: "Dinamo Zagreb" },
@@ -1580,7 +1353,7 @@ var matches_default = [
       flagSvg: "newzealand",
       primaryColor: "#00247d",
       secondaryColor: "#c8102e",
-      group: "Partida Especial",
+      group: "Grupo G",
       lineup: [
         { id: "nz1", name: "Max Crocombe", number: 1, position: "GK", x: 50, y: 12, club: "Burton Albion" },
         { id: "nz2", name: "Tim Payne", number: 2, position: "DF", x: 15, y: 30, club: "Wellington Phoenix" },
@@ -1595,12 +1368,12 @@ var matches_default = [
         { id: "nz11", name: "Ben Waine", number: 17, position: "FW", x: 85, y: 75, club: "Plymouth Argyle" }
       ]
     },
-    stadiumName: "Est\xE1dio de Seattle",
-    city: "SEATTLE",
-    stageName: "Partida Especial",
-    kickoffTime: "20:30",
-    kickoffDate: "19 Junho, 2026",
-    kickoffTimestamp: "2026-06-19T20:30:00-03:00",
+    stadiumName: "Est\xE1dio de Los Angeles",
+    city: "LOS ANGELES",
+    stageName: "Group Stage",
+    kickoffTime: "22:00",
+    kickoffDate: "15 Junho, 2026",
+    kickoffTimestamp: "2026-06-15T22:00:00-03:00",
     status: "PRE_GAME",
     countdownTargetSeconds: 0,
     broadcasters: [
