@@ -29,6 +29,30 @@ var import_path = __toESM(require("path"), 1);
 var import_vite = require("vite");
 var import_dotenv = __toESM(require("dotenv"), 1);
 
+// src/utils/playerMetadata.ts
+var normalizePlayerMetadataName = (value) => value.normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/[^A-Za-z0-9]+/g, "").toUpperCase();
+var PLAYER_METADATA = [
+  {
+    teamCode: "KSA",
+    aliases: ["Abdulilah Alamri", "Alamri", "Al-Amri"],
+    socials: {
+      instagram: "https://instagram.com/aalamri32"
+    }
+  }
+];
+var getPlayerMetadataSupplement = (teamCode, playerName) => {
+  const normalizedTeamCode = teamCode.trim().toUpperCase();
+  const normalizedPlayerName = normalizePlayerMetadataName(playerName);
+  const entry = PLAYER_METADATA.find(
+    (candidate) => candidate.teamCode === normalizedTeamCode && candidate.aliases.some(
+      (alias) => normalizePlayerMetadataName(alias) === normalizedPlayerName
+    )
+  );
+  return entry ? {
+    socials: entry.socials
+  } : null;
+};
+
 // fifa-sync-core.ts
 var SPORTV_URL = "https://ge.globo.com/sportv/";
 var normalizeText = (value) => value.normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
@@ -240,16 +264,23 @@ var findMatchingFifaPlayer = (player, fifaPlayers) => {
     return (candidate.ShirtNumber || 0) === player.number && candidateSurnameMatches;
   });
 };
-var mergeLineupWithLocalMetadata = (players, fallbackLineup) => players.map((player) => {
+var mergeLineupWithLocalMetadata = (players, fallbackLineup, teamCode) => players.map((player) => {
   const fallbackPlayer = findMatchingLineupPlayer(player, fallbackLineup);
-  if (!fallbackPlayer) return player;
+  const metadataSupplement = getPlayerMetadataSupplement(teamCode, player.name);
+  if (!fallbackPlayer) {
+    return {
+      ...player,
+      socials: player.socials ?? metadataSupplement?.socials
+    };
+  }
   return {
     ...player,
     club: player.club ?? fallbackPlayer.club,
-    pictureUrl: player.pictureUrl ?? fallbackPlayer.pictureUrl
+    pictureUrl: player.pictureUrl ?? fallbackPlayer.pictureUrl,
+    socials: player.socials ?? fallbackPlayer.socials ?? metadataSupplement?.socials
   };
 });
-var enrichFallbackLineupWithFifaPictures = (fallbackLineup, fifaTeam) => {
+var enrichFallbackLineupWithFifaPictures = (fallbackLineup, fifaTeam, teamCode) => {
   const fifaPlayers = fifaTeam?.Players;
   if (!fifaPlayers || fifaPlayers.length === 0) return fallbackLineup;
   return fallbackLineup.map((player) => {
@@ -261,7 +292,8 @@ var enrichFallbackLineupWithFifaPictures = (fallbackLineup, fifaTeam) => {
     return {
       ...player,
       number: fifaPlayer.ShirtNumber || player.number,
-      pictureUrl: pictureUrl ?? player.pictureUrl
+      pictureUrl: pictureUrl ?? player.pictureUrl,
+      socials: player.socials ?? getPlayerMetadataSupplement(teamCode, player.name)?.socials
     };
   });
 };
@@ -274,10 +306,23 @@ var buildPlayerNameMap = (team2) => {
     ])
   );
 };
+var buildFifaPlayerMap = (team2) => {
+  const players = team2?.Players || [];
+  return new Map(players.map((player) => [player.IdPlayer, player]));
+};
+var toIncidentPlayerMention = (fifaPlayer, fallbackName) => ({
+  id: fifaPlayer?.IdPlayer,
+  name: fallbackName,
+  number: typeof fifaPlayer?.ShirtNumber === "number" ? fifaPlayer.ShirtNumber : void 0,
+  position: typeof fifaPlayer?.Position === "number" ? FIFA_POSITION_TO_LOCAL[fifaPlayer.Position] ?? "MF" /* MF */ : void 0,
+  pictureUrl: getFifaPlayerPictureUrl(fifaPlayer)
+});
 var getIncidentsFromLiveFifa = (fifaMatch) => {
   const homePlayerNames = buildPlayerNameMap(fifaMatch.HomeTeam);
   const awayPlayerNames = buildPlayerNameMap(fifaMatch.AwayTeam);
-  const buildGoalIncidents = (goals, playerNames, team2) => (goals || []).map((goal, index) => {
+  const homePlayers = buildFifaPlayerMap(fifaMatch.HomeTeam);
+  const awayPlayers = buildFifaPlayerMap(fifaMatch.AwayTeam);
+  const buildGoalIncidents = (goals, playerNames, players, team2) => (goals || []).map((goal, index) => {
     const playerName = goal.IdPlayer ? playerNames.get(goal.IdPlayer) || "Jogador" : "Jogador";
     return {
       id: `${team2}-goal-${goal.IdGoal || `${goal.Minute || "sem-minuto"}-${index}`}`,
@@ -285,10 +330,11 @@ var getIncidentsFromLiveFifa = (fifaMatch) => {
       type: "GOAL",
       text: `${playerName} marcou.`,
       team: team2,
+      playerMentions: [toIncidentPlayerMention(goal.IdPlayer ? players.get(goal.IdPlayer) : void 0, playerName)],
       period: goal.Period
     };
   });
-  const buildBookingIncidents = (bookings, playerNames, team2) => (bookings || []).filter((booking) => booking.Card === 1 || booking.Card === 2).map((booking, index) => {
+  const buildBookingIncidents = (bookings, playerNames, players, team2) => (bookings || []).filter((booking) => booking.Card === 1 || booking.Card === 2).map((booking, index) => {
     const playerName = booking.IdPlayer ? playerNames.get(booking.IdPlayer) || "Jogador" : "Jogador";
     const isRedCard = booking.Card === 2;
     return {
@@ -297,10 +343,16 @@ var getIncidentsFromLiveFifa = (fifaMatch) => {
       type: isRedCard ? "RED_CARD" : "YELLOW_CARD",
       text: isRedCard ? `${playerName} foi expulso.` : `${playerName} recebeu amarelo.`,
       team: team2,
+      playerMentions: [
+        toIncidentPlayerMention(
+          booking.IdPlayer ? players.get(booking.IdPlayer) : void 0,
+          playerName
+        )
+      ],
       period: booking.Period
     };
   });
-  const buildSubstitutionIncidents = (substitutions, playerNames, team2) => (substitutions || []).map((substitution, index) => {
+  const buildSubstitutionIncidents = (substitutions, playerNames, players, team2) => (substitutions || []).map((substitution, index) => {
     const playerOffName = getBestPlayerName(
       substitution.PlayerOffName,
       substitution.IdPlayerOff ? playerNames.get(substitution.IdPlayerOff) || "Jogador" : "Jogador"
@@ -315,22 +367,34 @@ var getIncidentsFromLiveFifa = (fifaMatch) => {
       type: "SUBSTITUTION",
       text: `Sai ${playerOffName}, entra ${playerOnName}.`,
       team: team2,
+      playerMentions: [
+        toIncidentPlayerMention(
+          substitution.IdPlayerOff ? players.get(substitution.IdPlayerOff) : void 0,
+          playerOffName
+        ),
+        toIncidentPlayerMention(
+          substitution.IdPlayerOn ? players.get(substitution.IdPlayerOn) : void 0,
+          playerOnName
+        )
+      ],
       period: substitution.Period
     };
   });
   return [
-    ...buildGoalIncidents(fifaMatch.HomeTeam?.Goals, homePlayerNames, "A"),
-    ...buildGoalIncidents(fifaMatch.AwayTeam?.Goals, awayPlayerNames, "B"),
-    ...buildBookingIncidents(fifaMatch.HomeTeam?.Bookings, homePlayerNames, "A"),
-    ...buildBookingIncidents(fifaMatch.AwayTeam?.Bookings, awayPlayerNames, "B"),
+    ...buildGoalIncidents(fifaMatch.HomeTeam?.Goals, homePlayerNames, homePlayers, "A"),
+    ...buildGoalIncidents(fifaMatch.AwayTeam?.Goals, awayPlayerNames, awayPlayers, "B"),
+    ...buildBookingIncidents(fifaMatch.HomeTeam?.Bookings, homePlayerNames, homePlayers, "A"),
+    ...buildBookingIncidents(fifaMatch.AwayTeam?.Bookings, awayPlayerNames, awayPlayers, "B"),
     ...buildSubstitutionIncidents(
       fifaMatch.HomeTeam?.Substitutions,
       homePlayerNames,
+      homePlayers,
       "A"
     ),
     ...buildSubstitutionIncidents(
       fifaMatch.AwayTeam?.Substitutions,
       awayPlayerNames,
+      awayPlayers,
       "B"
     )
   ].sort((a, b) => {
@@ -431,11 +495,11 @@ var getStartingLineupFromLiveFifa = (team2) => {
     pictureUrl: getFifaPlayerPictureUrl(player)
   }));
 };
-var buildTeamLineupEntry = (fallbackLineup, fifaMatch, fifaTeam) => {
+var buildTeamLineupEntry = (teamCode, fallbackLineup, fifaMatch, fifaTeam) => {
   const starters = getStartingLineupFromLiveFifa(fifaTeam);
   if (starters) {
     return {
-      players: mergeLineupWithLocalMetadata(starters, fallbackLineup),
+      players: mergeLineupWithLocalMetadata(starters, fallbackLineup, teamCode),
       source: "fifa",
       note: "Escala\xE7\xE3o oficial divulgada pela FIFA.",
       fifaMatchId: fifaMatch?.IdMatch,
@@ -443,7 +507,7 @@ var buildTeamLineupEntry = (fallbackLineup, fifaMatch, fifaTeam) => {
     };
   }
   return {
-    players: enrichFallbackLineupWithFifaPictures(fallbackLineup, fifaTeam),
+    players: enrichFallbackLineupWithFifaPictures(fallbackLineup, fifaTeam, teamCode),
     source: "fallback",
     note: fifaMatch ? "Escala\xE7\xE3o oficial da FIFA ainda n\xE3o divulgada; exibindo dados locais." : "Dados oficiais da FIFA indispon\xEDveis para esta partida no momento; exibindo dados locais.",
     fifaMatchId: fifaMatch?.IdMatch,
@@ -1337,7 +1401,7 @@ var matches_default = [
       secondaryColor: "#cf2027",
       group: "Grupo H",
       lineup: [
-        { id: "cv1", name: "Vozinha", number: 1, position: "GK", x: 50, y: 12, club: "Gil Vicente" },
+        { id: "cv1", name: "Vozinha", number: 1, position: "GK", x: 50, y: 12, club: "Gil Vicente", socials: { instagram: "https://instagram.com/vozinha1" } },
         { id: "cv2", name: "Steven Moreira", number: 22, position: "DF", x: 15, y: 30, club: "Columbus Crew" },
         { id: "cv3", name: "Logan Costa", number: 4, position: "DF", x: 38, y: 25, club: "Toulouse" },
         { id: "cv4", name: "Roberto Lopes", number: 3, position: "DF", x: 62, y: 25, club: "Shamrock Rovers" },
@@ -1432,7 +1496,7 @@ var matches_default = [
       secondaryColor: "#ffffff",
       group: "Grupo H",
       lineup: [
-        { id: "sau1", name: "Mohammed Al-Owais", number: 21, position: "GK", x: 50, y: 88, club: "Al-Hilal" },
+        { id: "sau1", name: "Mohammed Al-Owais", number: 21, position: "GK", x: 50, y: 88, club: "Al-Hilal", socials: { instagram: "https://instagram.com/alowais_33" } },
         { id: "sau2", name: "Saud Abdulhamid", number: 12, position: "DF", x: 15, y: 70, club: "Roma" },
         { id: "sau3", name: "Hassan Kadesh", number: 14, position: "DF", x: 38, y: 75, club: "Al-Ittihad" },
         { id: "sau4", name: "Ali Al-Bulaihi", number: 5, position: "DF", x: 62, y: 75, club: "Al-Hilal" },
@@ -2442,8 +2506,18 @@ var getTeamLineupsPayload = async (language) => {
         return [
           match.id,
           {
-            teamA: buildTeamLineupEntry(match.teamA.lineup, fifaMatch, liveMatch?.HomeTeam),
-            teamB: buildTeamLineupEntry(match.teamB.lineup, fifaMatch, liveMatch?.AwayTeam)
+            teamA: buildTeamLineupEntry(
+              match.teamA.code,
+              match.teamA.lineup,
+              fifaMatch,
+              liveMatch?.HomeTeam
+            ),
+            teamB: buildTeamLineupEntry(
+              match.teamB.code,
+              match.teamB.lineup,
+              fifaMatch,
+              liveMatch?.AwayTeam
+            )
           }
         ];
       })
