@@ -486,9 +486,9 @@ var triviaQuestions = [
     id: "broadcast-core",
     category: "Transmiss\xE3o",
     question: "Qual aba do app concentra o guia de onde assistir e o feed de lances?",
-    options: ["Not\xEDcias", "Partidas", "Fan Zone", "Est\xE1dios"],
+    options: ["Not\xEDcias", "Ao Vivo", "Fan Zone", "Est\xE1dios"],
     correctOptionIndex: 1,
-    explanation: "A aba Partidas re\xFAne o cron\xF4metro, as emissoras e os lances oficiais da FIFA."
+    explanation: "A aba Ao Vivo re\xFAne o cron\xF4metro, as emissoras e os lances oficiais da FIFA."
   }
 ];
 
