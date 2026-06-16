@@ -1747,7 +1747,10 @@ var matches_default = [
           x: 30,
           y: 45,
           club: "Newcastle",
-          pictureUrl: "https://digitalhub.fifa.com/transform/0215cb23-c389-4c5a-9bb0-c7044ae7059a/BRUNO-GUIMARAES_430605"
+          pictureUrl: "https://digitalhub.fifa.com/transform/0215cb23-c389-4c5a-9bb0-c7044ae7059a/BRUNO-GUIMARAES_430605",
+          socials: {
+            instagram: "https://instagram.com/brunoguimaraes97"
+          }
         },
         {
           id: "b7",
