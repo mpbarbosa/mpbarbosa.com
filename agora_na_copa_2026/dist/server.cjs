@@ -541,7 +541,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "Nottingham Forest"
+          club: "Nottingham Forest",
+          pictureUrl: "https://digitalhub.fifa.com/transform/01fb042f-5de5-41df-8104-7445672fdca5/TURNER-Matt_448217"
         },
         {
           id: "us2",
@@ -560,7 +561,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "Crystal Palace"
+          club: "Crystal Palace",
+          pictureUrl: "https://digitalhub.fifa.com/transform/54036d3d-1588-4634-944b-a7c2d97d0b76/RICHARDS-Chris_419062"
         },
         {
           id: "us4",
@@ -569,7 +571,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Charlotte FC"
+          club: "Charlotte FC",
+          pictureUrl: "https://digitalhub.fifa.com/transform/964be907-1e8e-49ec-bd7f-7085cf7d79d3/REAM-Tim_339510"
         },
         {
           id: "us5",
@@ -578,7 +581,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Fulham"
+          club: "Fulham",
+          pictureUrl: "https://digitalhub.fifa.com/transform/62363054-d9e0-4926-9404-90b975d56647/ROBINSON-Antonee_441251"
         },
         {
           id: "us6",
@@ -597,7 +601,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 48,
-          club: "Juventus"
+          club: "Juventus",
+          pictureUrl: "https://digitalhub.fifa.com/transform/4406f0ad-8f60-4a98-89c0-89797bfe804d/McKENNIE-Weston_390259"
         },
         {
           id: "us8",
@@ -674,7 +679,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Palmeiras"
+          club: "Palmeiras",
+          pictureUrl: "https://digitalhub.fifa.com/transform/d37c65ce-135e-4bd4-b870-2c2548b93e2d/GOMEZ-Gustavo_369744"
         },
         {
           id: "py4",
@@ -683,7 +689,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "Getafe"
+          club: "Getafe",
+          pictureUrl: "https://digitalhub.fifa.com/transform/2b408b3b-5027-445e-9b55-6139deed7bea/ALDERETE-Omar_431202"
         },
         {
           id: "py5",
@@ -702,7 +709,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "Vancouver Whitecaps"
+          club: "Vancouver Whitecaps",
+          pictureUrl: "https://digitalhub.fifa.com/transform/5f115675-51fb-4e0c-ac8c-7226b762b4a1/CUBAS-Andres_385306"
         },
         {
           id: "py7",
@@ -750,7 +758,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 75,
-          club: "Brighton"
+          club: "Brighton",
+          pictureUrl: "https://digitalhub.fifa.com/transform/aa8ef158-6636-46a9-a6fb-185a2f92ad95/ENCISO-Julio_441234"
         }
       ]
     },
@@ -852,7 +861,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 70,
-          club: "Cruz Azul"
+          club: "Cruz Azul",
+          pictureUrl: "https://digitalhub.fifa.com/transform/8640d435-8aba-4b52-a864-9952d3a6db5c/SANCHEZ-Jorge_403596"
         },
         {
           id: "mx3",
@@ -871,7 +881,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Genoa"
+          club: "Genoa",
+          pictureUrl: "https://digitalhub.fifa.com/transform/838cb65f-3d60-4acb-855d-35a364c25f1a/VASQUEZ-Johan_425701"
         },
         {
           id: "mx5",
@@ -880,7 +891,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Monterrey"
+          club: "Monterrey",
+          pictureUrl: "https://digitalhub.fifa.com/transform/f1417540-93cb-4b82-9cfe-223e877d5923/GALLARDO-Jesus_402772"
         },
         {
           id: "mx6",
@@ -909,7 +921,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 45,
-          club: "AEK Atenas"
+          club: "AEK Atenas",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ef0f99d9-6838-4b25-8a18-ecd9638bd51f/PINEDA-Orbelin_372090"
         },
         {
           id: "mx9",
@@ -918,7 +931,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 22,
-          club: "Tigres"
+          club: "Tigres",
+          pictureUrl: "https://digitalhub.fifa.com/transform/fd0fef42-8129-4cc0-a958-f44521a742be/1442571310"
         },
         {
           id: "mx10",
@@ -927,7 +941,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 28,
-          club: "Milan"
+          club: "Milan",
+          pictureUrl: "https://digitalhub.fifa.com/transform/0e27d0c6-e057-4d0c-a603-3843fcd0c542/GIMENEZ-Santiago_430759"
         },
         {
           id: "mx11",
@@ -936,7 +951,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 22,
-          club: "San Diego FC"
+          club: "San Diego FC",
+          pictureUrl: "https://digitalhub.fifa.com/transform/25256872-cd39-4782-862a-45aa19ba5875/1442570768"
         }
       ]
     },
@@ -955,7 +971,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Mamelodi Sundowns"
+          club: "Mamelodi Sundowns",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b95f9142-251c-4943-911c-9c8d7ad8dd1c/WILLIAMS-Ronwen_395986"
         },
         {
           id: "sa2",
@@ -964,7 +981,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 30,
-          club: "Mamelodi Sundowns"
+          club: "Mamelodi Sundowns",
+          pictureUrl: "https://digitalhub.fifa.com/transform/29d0b36b-2727-4fc0-ab1e-4d21b5858f5a/MUDAU-Khuliso_463218"
         },
         {
           id: "sa3",
@@ -1001,7 +1019,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "Mamelodi Sundowns"
+          club: "Mamelodi Sundowns",
+          pictureUrl: "https://digitalhub.fifa.com/transform/bf36679b-73eb-4813-a99d-b9673439dd05/MOKOENA-Teboho_403616"
         },
         {
           id: "sa7",
@@ -1142,7 +1161,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "Ulsan HD"
+          club: "Ulsan HD",
+          pictureUrl: "https://digitalhub.fifa.com/transform/15bfe432-3e69-4900-b736-50ee6fd20cb5/JO-Hyeonwoo_397753"
         },
         {
           id: "kr2",
@@ -1151,7 +1171,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 70,
-          club: "FK Crvena zvezda"
+          club: "FK Crvena zvezda",
+          pictureUrl: "https://digitalhub.fifa.com/transform/db3b1a56-6cf2-42ad-9d02-139333d68f38/SEOL-Youngwoo_429608"
         },
         {
           id: "kr3",
@@ -1160,7 +1181,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "Bayern Munique"
+          club: "Bayern Munique",
+          pictureUrl: "https://digitalhub.fifa.com/transform/743f3b76-7c6e-484c-8f62-4f4e22c082ae/KIM-Minjae_395088"
         },
         {
           id: "kr4",
@@ -1187,7 +1209,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 45,
-          club: "Feyenoord"
+          club: "Feyenoord",
+          pictureUrl: "https://digitalhub.fifa.com/transform/70be8ce3-bc90-4585-8871-a951dabf811e/HWANG-Inbeom_395084"
         },
         {
           id: "kr7",
@@ -1205,7 +1228,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 45,
-          club: "PSG"
+          club: "PSG",
+          pictureUrl: "https://digitalhub.fifa.com/transform/a54e995b-caa3-43c4-981f-b54ada7f678d/LEE-Kangin_418490"
         },
         {
           id: "kr9",
@@ -1214,7 +1238,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 22,
-          club: "Wolverhampton"
+          club: "Wolverhampton",
+          pictureUrl: "https://digitalhub.fifa.com/transform/8460686d-d2c7-4d3e-98a5-f797400470ed/HWANG-Heechan_395083"
         },
         {
           id: "kr10",
@@ -1223,7 +1248,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 28,
-          club: "Midtjylland"
+          club: "Midtjylland",
+          pictureUrl: "https://digitalhub.fifa.com/transform/6efa6506-c1f1-4659-8249-9bc800f32691/CHO-Guesung_430387"
         },
         {
           id: "kr11",
@@ -1232,7 +1258,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 22,
-          club: "Tottenham"
+          club: "Tottenham",
+          pictureUrl: "https://digitalhub.fifa.com/transform/f9694bf1-eb42-4d26-9503-e988bd32a435/SON-Heungmin_307849"
         }
       ]
     },
@@ -1251,7 +1278,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Slavia Praga"
+          club: "Slavia Praga",
+          pictureUrl: "https://digitalhub.fifa.com/transform/9351d9a7-4be7-4c59-8e0e-3f5fbca8ac7d/STANEK-Jindrich_441162"
         },
         {
           id: "cz2",
@@ -1260,7 +1288,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 30,
-          club: "West Ham"
+          club: "West Ham",
+          pictureUrl: "https://digitalhub.fifa.com/transform/e013f16f-8ada-4532-b3c4-b674b0e08cc9/COUFAL-Vladimir_472908"
         },
         {
           id: "cz3",
@@ -1269,7 +1298,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Slavia Praga"
+          club: "Slavia Praga",
+          pictureUrl: "https://digitalhub.fifa.com/transform/25d4147e-8cc2-4262-bba5-3e47680a3f23/HOLES-Tomas_441167"
         },
         {
           id: "cz4",
@@ -1288,7 +1318,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "Hoffenheim"
+          club: "Hoffenheim",
+          pictureUrl: "https://digitalhub.fifa.com/transform/4e32c53e-28e4-4757-ab4e-c7b18cee9bbf/JURASEK-David_483990"
         },
         {
           id: "cz6",
@@ -1297,7 +1328,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "West Ham"
+          club: "West Ham",
+          pictureUrl: "https://digitalhub.fifa.com/transform/eb34bfe6-5b60-4771-a303-40f68231bbd2/SOUCEK-Tomas_404885"
         },
         {
           id: "cz7",
@@ -1390,7 +1422,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "LAFC"
+          club: "LAFC",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c4570ca7-10a7-44ca-901d-fee1e11e4400/CREPEAU-Maxime_331732"
         },
         {
           id: "ca2",
@@ -1409,7 +1442,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "Panathinaikos"
+          club: "Panathinaikos",
+          pictureUrl: "https://digitalhub.fifa.com/transform/efe78874-6cb4-4156-a6ce-af7c6374d11f/CORNELIUS-Derek_371958"
         },
         {
           id: "ca4",
@@ -1418,7 +1452,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Nice"
+          club: "Nice",
+          pictureUrl: "https://digitalhub.fifa.com/transform/2d2bbffa-0dcf-47c1-b681-706566867489/BOMBITO-Moise_466585"
         },
         {
           id: "ca5",
@@ -1427,7 +1462,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Bayern Munique"
+          club: "Bayern Munique",
+          pictureUrl: "https://digitalhub.fifa.com/transform/4b0a6361-55a2-4bde-82a4-8275181091f5/DAVIES-Alphonso_412144"
         },
         {
           id: "ca6",
@@ -1446,7 +1482,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 48,
-          club: "Marselha"
+          club: "Marselha",
+          pictureUrl: "https://digitalhub.fifa.com/transform/51344b42-77de-4109-a167-7723dc1d4dd2/KONE-Ismael_441258"
         },
         {
           id: "ca8",
@@ -1505,7 +1542,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Midtjylland"
+          club: "Midtjylland",
+          pictureUrl: "https://digitalhub.fifa.com/transform/be1c5819-9bc1-4bf3-b677-9172d1be6bea/VASILJ-Nikola_482978"
         },
         {
           id: "bh2",
@@ -1514,7 +1552,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "Benfica"
+          club: "Benfica",
+          pictureUrl: "https://digitalhub.fifa.com/transform/87dcec5a-fbf4-45d7-8f1e-26e00140cce7/DEDIC-Amar_482976"
         },
         {
           id: "bh3",
@@ -1523,7 +1562,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "Cagliari"
+          club: "Cagliari",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ddc91c53-fc37-453c-b16e-50ef5e2dd2da/SUNJIC-Ivan_372436"
         },
         {
           id: "bh4",
@@ -1532,7 +1572,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "FC K\xF6ln"
+          club: "FC K\xF6ln",
+          pictureUrl: "https://digitalhub.fifa.com/transform/6cacbe9a-89b9-4eee-8d20-4e68fc0ef7ad/HADZIKADUNIC-Dennis_430194"
         },
         {
           id: "bh5",
@@ -1588,7 +1629,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 68,
-          club: "Hoffenheim"
+          club: "Hoffenheim",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b84ad80f-6b2b-455d-9c2e-f71195b5c2ba/TABAKOVIC-Haris_482984"
         },
         {
           id: "bh11",
@@ -1597,7 +1639,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 80,
-          club: "Fenerbah\xE7e"
+          club: "Fenerbah\xE7e",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b5fa7216-27c0-4652-b7df-b099e97a5604/DZEKO-Edin_300409"
         }
       ]
     },
@@ -1654,7 +1697,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "Liverpool"
+          club: "Liverpool",
+          pictureUrl: "https://digitalhub.fifa.com/transform/6b051628-d407-41ce-8a60-dc354ac4ccb8/ALISSON_308370"
         },
         {
           id: "b2",
@@ -1673,7 +1717,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "PSG"
+          club: "PSG",
+          pictureUrl: "https://digitalhub.fifa.com/transform/30069661-f88d-4ff7-9c4e-071a5cf3c093/MARQUINHOS_332946"
         },
         {
           id: "b4",
@@ -1682,7 +1727,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Arsenal"
+          club: "Arsenal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b5870a76-5391-40b7-a348-e2b17995637b/GABRIEL-MAGALHAES_430601"
         },
         {
           id: "b5",
@@ -1719,7 +1765,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 22,
-          club: "Barcelona"
+          club: "Barcelona",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b4def0b2-7d6f-4f3a-bcde-600b292096d6/RAPHINHA_433872"
         },
         {
           id: "b9",
@@ -1728,7 +1775,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 28,
-          club: "Real Madrid"
+          club: "Real Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/f03a612a-1563-4fd2-93d4-85f2b53da0b3/1443021592"
         },
         {
           id: "b10",
@@ -1737,7 +1785,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 22,
-          club: "Real Madrid"
+          club: "Real Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/1c2722c3-a70b-49d8-bdb4-77109161f533/VINICIUS-JUNIOR_405742"
         },
         {
           id: "b11",
@@ -1746,7 +1795,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 10,
-          club: "Botafogo"
+          club: "Botafogo",
+          pictureUrl: "https://digitalhub.fifa.com/transform/a3fba875-a9c9-4d5b-aa92-ff7319d1177a/1443021717"
         }
       ]
     },
@@ -1765,7 +1815,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Al-Hilal"
+          club: "Al-Hilal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/338ae8a7-8734-423e-ae54-2f783dba77ce/BOUNOU-Yassine_356956"
         },
         {
           id: "m2",
@@ -1784,7 +1835,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Brest"
+          club: "Brest",
+          pictureUrl: "https://digitalhub.fifa.com/transform/814883ae-a895-4aac-a723-8bb5ab557255/Morocco-Portraits-FIFA-World-Cup-Qatar-2022"
         },
         {
           id: "m4",
@@ -1793,7 +1845,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "West Ham"
+          club: "West Ham",
+          pictureUrl: "https://digitalhub.fifa.com/transform/8be99692-04dd-4c92-8a86-70dc8e6901c7/Morocco-Portraits-FIFA-World-Cup-Qatar-2022"
         },
         {
           id: "m5",
@@ -1802,7 +1855,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "PSG"
+          club: "PSG",
+          pictureUrl: "https://digitalhub.fifa.com/transform/22c6ca49-7262-4799-8a9f-530e427321ac/HAKIMI-Achraf_400721"
         },
         {
           id: "m6",
@@ -1821,7 +1875,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 45,
-          club: "Fenerbah\xE7e"
+          club: "Fenerbah\xE7e",
+          pictureUrl: "https://digitalhub.fifa.com/transform/cf6efacc-6c34-4679-b833-b2c5371b4ee6/AMRABAT-Sofyan_372266"
         },
         {
           id: "m8",
@@ -1840,7 +1895,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 75,
-          club: "Galatasaray"
+          club: "Galatasaray",
+          pictureUrl: "https://digitalhub.fifa.com/transform/96ff445c-211f-4bc3-b0d8-cc6bb5777982/Morocco-Portraits-FIFA-World-Cup-Qatar-2022"
         },
         {
           id: "m10",
@@ -1849,7 +1905,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 85,
-          club: "Fenerbah\xE7e"
+          club: "Fenerbah\xE7e",
+          pictureUrl: "https://digitalhub.fifa.com/transform/2cbd2bc3-0cd6-442e-9877-3cd951e63234/Morocco-Portraits-FIFA-World-Cup-Qatar-2022"
         },
         {
           id: "m11",
@@ -1924,7 +1981,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "AC Milan"
+          club: "AC Milan",
+          pictureUrl: "https://digitalhub.fifa.com/transform/3f92a933-a22d-4f58-8f4f-b51370aeacf4/MAIGNAN-Mike_448332"
         },
         {
           id: "f2",
@@ -1933,7 +1991,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 70,
-          club: "AC Milan"
+          club: "AC Milan",
+          pictureUrl: "https://digitalhub.fifa.com/transform/6f76533f-feca-4811-a010-e6e296b29db8/HERNANDEZ-Theo_408042"
         },
         {
           id: "f3",
@@ -1942,7 +2001,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "Arsenal"
+          club: "Arsenal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/242125e7-67c3-4fcd-b0cc-6c5984c319f4/SALIBA-William_419177"
         },
         {
           id: "f4",
@@ -1951,7 +2011,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Bayern Munique"
+          club: "Bayern Munique",
+          pictureUrl: "https://digitalhub.fifa.com/transform/daae69ae-72e0-4e42-812f-d19d74d12478/UPAMECANO-Dayot_389876"
         },
         {
           id: "f5",
@@ -1960,7 +2021,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Barcelona"
+          club: "Barcelona",
+          pictureUrl: "https://digitalhub.fifa.com/transform/31b384b6-20b7-4629-ab33-aa67cf403fc3/KOUNDE-Jules_430707"
         },
         {
           id: "f6",
@@ -1969,7 +2031,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "Real Madrid"
+          club: "Real Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/8575fee6-68ae-4be0-9529-7e5c392e06e6/TCHOUAMENI-Aurelien_405893"
         },
         {
           id: "f7",
@@ -1978,7 +2041,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 55,
-          club: "Al-Ittihad"
+          club: "Al-Ittihad",
+          pictureUrl: "https://digitalhub.fifa.com/transform/355040a8-6b40-452b-92af-7c22f91cb87c/KANTE-Ngolo_398681"
         },
         {
           id: "f8",
@@ -1987,7 +2051,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 50,
-          club: "Atl\xE9tico Madrid"
+          club: "Atl\xE9tico Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/9f03ff5a-aad3-433a-8e21-cb96143627ac/1442234382"
         },
         {
           id: "f9",
@@ -1996,7 +2061,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 25,
-          club: "PSG"
+          club: "PSG",
+          pictureUrl: "https://digitalhub.fifa.com/transform/e6eee717-fd8c-4f8f-a7e0-c4f978fe327f/DEMBELE-Ousmane_398680"
         },
         {
           id: "f10",
@@ -2005,7 +2071,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 15,
-          club: "Real Madrid"
+          club: "Real Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/66f6087d-9563-4644-8f10-5614ef6e1e51/MBAPPE-Kylian_389867"
         },
         {
           id: "f11",
@@ -2014,7 +2081,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 25,
-          club: "PSG"
+          club: "PSG",
+          pictureUrl: "https://digitalhub.fifa.com/transform/10e80ef7-3aa9-4c07-9639-e8bc04828d31/BARCOLA-Bradley_484860"
         }
       ]
     },
@@ -2033,7 +2101,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Al-Ahli"
+          club: "Al-Ahli",
+          pictureUrl: "https://digitalhub.fifa.com/transform/9093beeb-51a2-4e1d-b700-73e094c6949c/MENDY-Edouard_433806"
         },
         {
           id: "sn2",
@@ -2042,7 +2111,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 30,
-          club: "Monaco"
+          club: "Monaco",
+          pictureUrl: "https://digitalhub.fifa.com/transform/a24c412d-22cb-4d33-a341-e7f5e731756a/JAKOBS-Ismail_430671"
         },
         {
           id: "sn3",
@@ -2051,7 +2121,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Olympiacos"
+          club: "Olympiacos",
+          pictureUrl: "https://digitalhub.fifa.com/transform/23048d3f-9ced-4cfc-85ca-ca1281ccf1f1/1442261725"
         },
         {
           id: "sn4",
@@ -2060,7 +2131,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "Al-Hilal"
+          club: "Al-Hilal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/538bee26-1d47-4a95-a0f0-5d706f741e07/KOULIBALY-Kalidou_339820"
         },
         {
           id: "sn5",
@@ -2069,7 +2141,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "Al-Arabi"
+          club: "Al-Arabi",
+          pictureUrl: "https://digitalhub.fifa.com/transform/7a0bf8db-1494-4769-aa3f-7d131d165eb4/1442262267"
         },
         {
           id: "sn6",
@@ -2078,7 +2151,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "Tottenham"
+          club: "Tottenham",
+          pictureUrl: "https://digitalhub.fifa.com/transform/60281798-1792-4113-ba5c-fbfd3299270f/SARR-Pape-Matar_418798"
         },
         {
           id: "sn7",
@@ -2087,7 +2161,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 45,
-          club: "Marselha"
+          club: "Marselha",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ce2a3833-450c-413b-990f-7c76132e4913/GUEYE-Pape_431788"
         },
         {
           id: "sn8",
@@ -2096,7 +2171,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 50,
-          club: "Everton"
+          club: "Everton",
+          pictureUrl: "https://digitalhub.fifa.com/transform/eec40484-d0a0-48cb-bd21-3b9fb90a0e00/1442261952"
         },
         {
           id: "sn9",
@@ -2105,7 +2181,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 75,
-          club: "Crystal Palace"
+          club: "Crystal Palace",
+          pictureUrl: "https://digitalhub.fifa.com/transform/695226c6-92b8-4aa6-995e-dcdd2d08eb96/SARR-Ismaila_401889"
         },
         {
           id: "sn10",
@@ -2114,7 +2191,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 85,
-          club: "Chelsea"
+          club: "Chelsea",
+          pictureUrl: "https://digitalhub.fifa.com/transform/27569451-1271-4fb3-86ee-51e88e913ec7/JACKSON-Nicolas_418795"
         },
         {
           id: "sn11",
@@ -2123,7 +2201,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 75,
-          club: "Al-Rayyan"
+          club: "Al-Rayyan",
+          pictureUrl: "https://digitalhub.fifa.com/transform/87016310-d872-4f1d-b60a-2c9e702190d7/DIARRA-Habib_486130"
         }
       ]
     },
@@ -2176,7 +2255,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "Bastia"
+          club: "Bastia",
+          pictureUrl: "https://digitalhub.fifa.com/transform/3b4c1123-62c6-4267-9d22-6d138e461a54/PLACIDE-Johny_295922"
         },
         {
           id: "h2",
@@ -2185,7 +2265,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 70,
-          club: "Angers"
+          club: "Angers",
+          pictureUrl: "https://digitalhub.fifa.com/transform/924dd9c4-2333-4662-be95-df5d3d551368/ARCUS-Carlens_397775"
         },
         {
           id: "h3",
@@ -2194,7 +2275,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "LDU Quito"
+          club: "LDU Quito",
+          pictureUrl: "https://digitalhub.fifa.com/transform/188e1d63-5bfa-450a-b202-730221c18fe1/ADE-Ricardo_275917"
         },
         {
           id: "h4",
@@ -2212,7 +2294,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Mirebalais"
+          club: "Mirebalais",
+          pictureUrl: "https://digitalhub.fifa.com/transform/338f9a41-36d4-4f87-8425-9d5fdc30ac35/SAINTE-Carl_424556"
         },
         {
           id: "h6",
@@ -2230,7 +2313,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 48,
-          club: "Metz"
+          club: "Metz",
+          pictureUrl: "https://digitalhub.fifa.com/transform/948f9361-348d-4c5d-a26f-83205cae2f6b/JEAN-JACQUES-Danley_466838"
         },
         {
           id: "h8",
@@ -2239,7 +2323,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 45,
-          club: "Dunkerque"
+          club: "Dunkerque",
+          pictureUrl: "https://digitalhub.fifa.com/transform/68889bed-7acd-4e67-a3bd-a18a300e70a0/PIERRE-Alexandre_466835"
         },
         {
           id: "h9",
@@ -2248,7 +2333,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 22,
-          club: "Kayserispor"
+          club: "Kayserispor",
+          pictureUrl: "https://digitalhub.fifa.com/transform/93e74f55-211b-4332-8b5c-d328eb02d026/NAZON-Duckens_394993"
         },
         {
           id: "h10",
@@ -2257,7 +2343,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 28,
-          club: "Maccabi Haifa"
+          club: "Maccabi Haifa",
+          pictureUrl: "https://digitalhub.fifa.com/transform/0faa5cdb-4727-42be-b2b8-cedf04a37dd6/PIERROT-Frantzdy_431693"
         },
         {
           id: "h11",
@@ -2286,7 +2373,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Norwich City"
+          club: "Norwich City",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c13202b1-f3b1-4fe1-bc72-0ee5b3135bbc/GUNN-Angus_411301"
         },
         {
           id: "sc2",
@@ -2295,7 +2383,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 30,
-          club: "Celtic"
+          club: "Celtic",
+          pictureUrl: "https://digitalhub.fifa.com/transform/eef7a9cc-256c-4000-ae64-38407521d30b/RALSTON-Anthony_337389"
         },
         {
           id: "sc3",
@@ -2304,7 +2393,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Rangers"
+          club: "Rangers",
+          pictureUrl: "https://digitalhub.fifa.com/transform/4b905694-87c7-4148-be4b-802e4dbcc7ba/SOUTTAR-John_442430"
         },
         {
           id: "sc4",
@@ -2313,7 +2403,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "Las Palmas"
+          club: "Las Palmas",
+          pictureUrl: "https://digitalhub.fifa.com/transform/073ebe12-5ba9-4de4-8729-2a0b0e942b43/McKENNA-Scott_442431"
         },
         {
           id: "sc5",
@@ -2322,7 +2413,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "Liverpool"
+          club: "Liverpool",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ba94c3aa-e071-4add-b402-5d3f8df8acb9/ROBERTSON-Andy_401339"
         },
         {
           id: "sc6",
@@ -2340,7 +2432,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 45,
-          club: "Napoli"
+          club: "Napoli",
+          pictureUrl: "https://digitalhub.fifa.com/transform/483440e3-5bdc-46e2-9b80-77e880b5fd85/McTOMINAY-Scott_433787"
         },
         {
           id: "sc8",
@@ -2425,7 +2518,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "AZ Alkmaar"
+          club: "AZ Alkmaar",
+          pictureUrl: "https://digitalhub.fifa.com/transform/7c98d5eb-1514-4e8f-a6c6-60f4017b2175/RYAN-Mathew_339117"
         },
         {
           id: "au2",
@@ -2434,7 +2528,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 70,
-          club: "Hearts"
+          club: "Hearts",
+          pictureUrl: "https://digitalhub.fifa.com/transform/1b5aed14-761f-47a8-b8e6-b02d805c295d/Australia-Portraits-FIFA-World-Cup-Qatar-2022"
         },
         {
           id: "au3",
@@ -2443,7 +2538,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "Leicester City"
+          club: "Leicester City",
+          pictureUrl: "https://digitalhub.fifa.com/transform/6777563e-5036-4252-9809-a0cc21d96147/SOUTTAR-Harry_430442"
         },
         {
           id: "au4",
@@ -2452,7 +2548,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Heart of Midlothian"
+          club: "Heart of Midlothian",
+          pictureUrl: "https://digitalhub.fifa.com/transform/04fd32f9-273a-460b-aaa7-ce6dcbfb57b8/Australia-Portraits-FIFA-World-Cup-Qatar-2022"
         },
         {
           id: "au5",
@@ -2481,7 +2578,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 48,
-          club: "St. Mirren"
+          club: "St. Mirren",
+          pictureUrl: "https://digitalhub.fifa.com/transform/acb6b0d9-626b-414d-a679-7696cd6e9ec2/Australia-Portraits-FIFA-World-Cup-Qatar-2022"
         },
         {
           id: "au8",
@@ -2490,7 +2588,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 45,
-          club: "Salernitana"
+          club: "Salernitana",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c63012a5-37f8-4317-8a69-60f861fb03a7/HRUSTIC-Ajdin_404319"
         },
         {
           id: "au9",
@@ -2508,7 +2607,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 28,
-          club: "Machida Zelvia"
+          club: "Machida Zelvia",
+          pictureUrl: "https://digitalhub.fifa.com/transform/6d8bc1a2-9372-4be3-be28-9786bd087fc4/Australia-Portraits-FIFA-World-Cup-Qatar-2022"
         },
         {
           id: "au11",
@@ -2517,7 +2617,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 22,
-          club: "Al-Wehda"
+          club: "Al-Wehda",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ca86de50-e8d6-4065-8be5-8501919e6499/Australia-Portraits-FIFA-World-Cup-Qatar-2022"
         }
       ]
     },
@@ -2536,7 +2637,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Be\u015Fikta\u015F"
+          club: "Be\u015Fikta\u015F",
+          pictureUrl: "https://digitalhub.fifa.com/transform/1ce10157-fad1-435e-b21d-b4f25a483bc1/GUNOK-Mert_360498"
         },
         {
           id: "tr2",
@@ -2555,7 +2657,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Al-Ahli"
+          club: "Al-Ahli",
+          pictureUrl: "https://digitalhub.fifa.com/transform/905e3e12-72e9-440d-96f5-0b3a48aebe92/DEMIRAL-Merih_441179"
         },
         {
           id: "tr4",
@@ -2564,7 +2667,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "Galatasaray"
+          club: "Galatasaray",
+          pictureUrl: "https://digitalhub.fifa.com/transform/de2b1023-3aee-4233-b83d-07f94fd288d4/BARDAKCI-Abdulkerim_484082"
         },
         {
           id: "tr5",
@@ -2573,7 +2677,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "Brighton"
+          club: "Brighton",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c69621e7-9ba5-438d-89dc-7871b6e0f611/KADIOGLU-Ferdi_484113"
         },
         {
           id: "tr6",
@@ -2582,7 +2687,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "Inter de Mil\xE3o"
+          club: "Inter de Mil\xE3o",
+          pictureUrl: "https://digitalhub.fifa.com/transform/f192cf34-173f-47b3-9748-981bd3f21275/CALHANOGLU-Hakan_369304"
         },
         {
           id: "tr7",
@@ -2601,7 +2707,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 50,
-          club: "Real Madrid"
+          club: "Real Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/e2f26175-13ac-4850-acd7-6408de06ce19/GULER-Arda_484087"
         },
         {
           id: "tr9",
@@ -2620,7 +2727,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 85,
-          club: "Juventus"
+          club: "Juventus",
+          pictureUrl: "https://digitalhub.fifa.com/transform/7dff809e-a965-4b36-a7b5-8da772fc96a5/YILDIZ-Kenan_484112"
         },
         {
           id: "tr11",
@@ -2629,7 +2737,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 75,
-          club: "Galatasaray"
+          club: "Galatasaray",
+          pictureUrl: "https://digitalhub.fifa.com/transform/49e46d17-bf69-41b1-a8df-5aeabf137c7d/YILMAZ-Baris-Alper_484139"
         }
       ]
     },
@@ -2706,7 +2815,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "Barcelona"
+          club: "Barcelona",
+          pictureUrl: "https://digitalhub.fifa.com/transform/dc083bab-2f1f-42e8-b0a3-c56dd449b7ec/1442303551"
         },
         {
           id: "de2",
@@ -2725,7 +2835,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "Real Madrid"
+          club: "Real Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/88c43fe2-0c78-437c-a2bf-388c3673c58c/RUEDIGER-Antonio_379955"
         },
         {
           id: "de4",
@@ -2763,7 +2874,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 48,
-          club: "Barcelona"
+          club: "Barcelona",
+          pictureUrl: "https://digitalhub.fifa.com/transform/6e7836ec-7855-480f-9aed-7dc471e08d63/1442303696"
         },
         {
           id: "de8",
@@ -2782,7 +2894,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 22,
-          club: "Bayern Munique"
+          club: "Bayern Munique",
+          pictureUrl: "https://digitalhub.fifa.com/transform/097a6749-47b0-4285-a1f9-8aa0ac0e2c12/SANE-Leroy_404353"
         },
         {
           id: "de10",
@@ -2791,7 +2904,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 28,
-          club: "Arsenal"
+          club: "Arsenal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/1fdd4d11-97d1-4392-b345-5a5eecc54839/HAVERTZ-Kai_411367"
         },
         {
           id: "de11",
@@ -2800,7 +2914,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 22,
-          club: "Bayer Leverkusen"
+          club: "Bayer Leverkusen",
+          pictureUrl: "https://digitalhub.fifa.com/transform/3a120189-62cc-441f-b862-7fdd2a9abfa4/WIRTZ-Florian_430669"
         }
       ]
     },
@@ -2819,7 +2934,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Columbus Crew"
+          club: "Columbus Crew",
+          pictureUrl: "https://digitalhub.fifa.com/transform/5bd9ff87-6801-46d2-8f10-ca9eb3ea2ea4/ROOM-Eloy_390650"
         },
         {
           id: "cw2",
@@ -2828,7 +2944,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 30,
-          club: "Al Hazem"
+          club: "Al Hazem",
+          pictureUrl: "https://digitalhub.fifa.com/transform/4744d27b-6a5c-48be-a849-48facb6f6d6e/GAARI-Jurien_431698"
         },
         {
           id: "cw3",
@@ -2855,7 +2972,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "Al Rayyan"
+          club: "Al Rayyan",
+          pictureUrl: "https://digitalhub.fifa.com/transform/2069bb09-aaf0-41dc-81e4-a8f4df33b4e5/BRENET-Joshua_401023"
         },
         {
           id: "cw6",
@@ -2864,7 +2982,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "Groningen"
+          club: "Groningen",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ae48f357-6b53-4d49-b62f-fbfb4a041b62/BACUNA-Leandro_466340"
         },
         {
           id: "cw7",
@@ -2873,7 +2992,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 45,
-          club: "Al Wehda"
+          club: "Al Wehda",
+          pictureUrl: "https://digitalhub.fifa.com/transform/804768d8-badb-4492-9aef-1e523440aed4/BACUNA-Juninho_466317"
         },
         {
           id: "cw8",
@@ -2955,7 +3075,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "Aston Villa"
+          club: "Aston Villa",
+          pictureUrl: "https://digitalhub.fifa.com/transform/1b4390f3-e94f-4851-a36b-595356b3d414/MARTINEZ-Lisandro_402921"
         },
         {
           id: "a2",
@@ -2964,7 +3085,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 70,
-          club: "Atl\xE9tico Madrid"
+          club: "Atl\xE9tico Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/7aef8344-2a5b-42f0-b1a0-565d5220aa76/MOLINA-Nahuel_402925"
         },
         {
           id: "a3",
@@ -2973,7 +3095,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "Tottenham"
+          club: "Tottenham",
+          pictureUrl: "https://digitalhub.fifa.com/transform/61d5d60a-7e5a-4a29-919d-c52bd80b9a5a/ROMERO-Cristian_431196"
         },
         {
           id: "a4",
@@ -2982,7 +3105,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Benfica"
+          club: "Benfica",
+          pictureUrl: "https://digitalhub.fifa.com/transform/4aedbffa-a35c-4aa5-a7ce-8a29c2af3e72/OTAMENDI-Nicolas_310116"
         },
         {
           id: "a5",
@@ -2991,7 +3115,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Lyon"
+          club: "Lyon",
+          pictureUrl: "https://digitalhub.fifa.com/transform/dd4d5f75-b3d4-4ff2-81bf-c16bf0b0a061/TAGLIAFICO-Nicolas_308322"
         },
         {
           id: "a6",
@@ -3000,7 +3125,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 45,
-          club: "Atl\xE9tico Madrid"
+          club: "Atl\xE9tico Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/314bcb4c-8c81-4bce-9750-85827a209c1b/DE-PAUL-Rodrigo_428882"
         },
         {
           id: "a7",
@@ -3009,7 +3135,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 48,
-          club: "Liverpool"
+          club: "Liverpool",
+          pictureUrl: "https://digitalhub.fifa.com/transform/78b6a9e4-f2b9-4e19-b414-79b18858caaf/MAC-ALLISTER-Alexis_430628"
         },
         {
           id: "a8",
@@ -3018,7 +3145,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 45,
-          club: "Chelsea"
+          club: "Chelsea",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b88c6da2-28db-4d61-a668-ac8e84114063/FERNANDEZ-Enzo_448252"
         },
         {
           id: "a9",
@@ -3027,7 +3155,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 25,
-          club: "Inter Miami"
+          club: "Inter Miami",
+          pictureUrl: "https://digitalhub.fifa.com/transform/19823774-fac0-485a-8a8f-572e7324c6c2/MESSI-Lionel_229397"
         },
         {
           id: "a10",
@@ -3036,7 +3165,8 @@ var matches_default = [
           position: "FW",
           x: 30,
           y: 15,
-          club: "Atl\xE9tico Madrid"
+          club: "Atl\xE9tico Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c7715f12-adb9-4504-9be2-e2899bdbd172/ALVAREZ-Julian_416081"
         },
         {
           id: "a11",
@@ -3045,7 +3175,8 @@ var matches_default = [
           position: "FW",
           x: 70,
           y: 15,
-          club: "Inter de Mil\xE3o"
+          club: "Inter de Mil\xE3o",
+          pictureUrl: "https://digitalhub.fifa.com/transform/2368bf53-1f73-427b-929e-557187d53ac7/MARTINEZ-Lautaro_402920"
         }
       ]
     },
@@ -3073,7 +3204,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 30,
-          club: "Eintracht Frankfurt"
+          club: "Eintracht Frankfurt",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c24e6b93-736c-41a7-be57-2e165509ce5c/HADJAM-Jaouen_482869"
         },
         {
           id: "dz3",
@@ -3082,7 +3214,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Borussia Dortmund"
+          club: "Borussia Dortmund",
+          pictureUrl: "https://digitalhub.fifa.com/transform/329752fa-e310-4124-8fb2-be7cc478b929/BENSEBAINI-Ramy_395113"
         },
         {
           id: "dz4",
@@ -3091,7 +3224,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "Be\u015Fikta\u015F"
+          club: "Be\u015Fikta\u015F",
+          pictureUrl: "https://digitalhub.fifa.com/transform/dc4250ac-0a37-44da-9ae0-c858225ad8a1/MANDI-Aissa_376285"
         },
         {
           id: "dz5",
@@ -3118,7 +3252,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 45,
-          club: "Al-Ittihad"
+          club: "Al-Ittihad",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ac743888-d671-4971-9df9-594b591f2425/AOUAR-Houssem_430698"
         },
         {
           id: "dz8",
@@ -3136,7 +3271,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 75,
-          club: "Al-Ahli"
+          club: "Al-Ahli",
+          pictureUrl: "https://digitalhub.fifa.com/transform/172fb59c-24f2-4bc0-82a2-cdc869badf53/MAHREZ-Riyad_379942"
         },
         {
           id: "dz10",
@@ -3145,7 +3281,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 85,
-          club: "Marselha"
+          club: "Marselha",
+          pictureUrl: "https://digitalhub.fifa.com/transform/4818d176-036a-4494-b53e-ada08bba749c/GOUIRI-Amine_405877"
         },
         {
           id: "dz11",
@@ -3207,7 +3344,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "Brighton"
+          club: "Brighton",
+          pictureUrl: "https://digitalhub.fifa.com/transform/44bfd693-27d5-4d36-823e-5ff0e6cd2524/VERBRUGGEN-Bart_424081"
         },
         {
           id: "nl2",
@@ -3216,7 +3354,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 70,
-          club: "Inter de Mil\xE3o"
+          club: "Inter de Mil\xE3o",
+          pictureUrl: "https://digitalhub.fifa.com/transform/f2a2746b-7691-40c4-a052-60db3219a856/DUMFRIES-Denzel_436612"
         },
         {
           id: "nl3",
@@ -3235,7 +3374,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Manchester United"
+          club: "Manchester United",
+          pictureUrl: "https://digitalhub.fifa.com/transform/f978cdf5-fd66-4f3d-82c1-3ea80e332cea/1442168832"
         },
         {
           id: "nl5",
@@ -3254,7 +3394,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 45,
-          club: "Barcelona"
+          club: "Barcelona",
+          pictureUrl: "https://digitalhub.fifa.com/transform/fe8176f7-bf45-49fc-bd5e-0bfd0c834992/DE-JONG-Frenkie_422657"
         },
         {
           id: "nl7",
@@ -3273,7 +3414,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 45,
-          club: "RB Leipzig"
+          club: "RB Leipzig",
+          pictureUrl: "https://digitalhub.fifa.com/transform/3256af6a-5bc1-4f81-84b7-526c4aa49f2e/1442169724"
         },
         {
           id: "nl9",
@@ -3282,7 +3424,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 22,
-          club: "Bayer Leverkusen"
+          club: "Bayer Leverkusen",
+          pictureUrl: "https://digitalhub.fifa.com/transform/a6d80537-faf4-4bf3-8541-39dda191cba2/1442170689"
         },
         {
           id: "nl10",
@@ -3321,7 +3464,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Parma"
+          club: "Parma",
+          pictureUrl: "https://digitalhub.fifa.com/transform/7a045252-7c97-4f14-9493-4977e3e3156e/SUZUKI-Zion_405530"
         },
         {
           id: "jp2",
@@ -3340,7 +3484,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Borussia Monchengladbach"
+          club: "Borussia Monchengladbach",
+          pictureUrl: "https://digitalhub.fifa.com/transform/5797a9db-f271-4f10-a480-1a0fdde80b7b/ITAKURA-Kou_400511"
         },
         {
           id: "jp4",
@@ -3359,7 +3504,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "Bayern Munique"
+          club: "Bayern Munique",
+          pictureUrl: "https://digitalhub.fifa.com/transform/68ebc735-7e69-4908-98b7-b6d691e9cbf7/ITO-Hiroki_403274"
         },
         {
           id: "jp6",
@@ -3368,7 +3514,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "Liverpool"
+          club: "Liverpool",
+          pictureUrl: "https://digitalhub.fifa.com/transform/d1f64b72-4fcf-44b4-8f7a-33abe45f3993/Japan-Portraits-FIFA-World-Cup-Qatar-2022"
         },
         {
           id: "jp7",
@@ -3377,7 +3524,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 45,
-          club: "Sporting"
+          club: "Sporting",
+          pictureUrl: "https://digitalhub.fifa.com/transform/3098e878-ab1e-4c8e-8322-77fd1a0b4ac0/Japan-Portraits-FIFA-World-Cup-Qatar-2022"
         },
         {
           id: "jp8",
@@ -3416,7 +3564,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 75,
-          club: "Brighton"
+          club: "Brighton",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c329c2a8-50c7-4460-89a3-2a349c12abe7/1442484179"
         }
       ]
     },
@@ -3509,7 +3658,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "Angers"
+          club: "Angers",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c5bc8a38-479f-4c33-b8f6-9ab95bb45b57/FOFANA-Yahia_405873"
         },
         {
           id: "ci2",
@@ -3537,7 +3687,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Roma"
+          club: "Roma",
+          pictureUrl: "https://digitalhub.fifa.com/transform/e308dd93-4706-4ed9-80a2-1db8e4a52d6c/PAUGAIN-Wilguens_419172"
         },
         {
           id: "ci5",
@@ -3546,7 +3697,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Al Fayha"
+          club: "Al Fayha",
+          pictureUrl: "https://digitalhub.fifa.com/transform/8b0c92b7-4756-42a3-8cc8-b997693ff4aa/KONAN-Ghislain_407343"
         },
         {
           id: "ci6",
@@ -3555,7 +3707,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 45,
-          club: "Al Ahli"
+          club: "Al Ahli",
+          pictureUrl: "https://digitalhub.fifa.com/transform/2e649ed1-5e23-4de2-aafc-79fac130f5f0/KESSIE-Franck_371609"
         },
         {
           id: "ci7",
@@ -3574,7 +3727,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 45,
-          club: "Sporting"
+          club: "Sporting",
+          pictureUrl: "https://digitalhub.fifa.com/transform/45b55597-6503-4470-a778-af125afb698a/DIOMANDE-Ousmane_477802"
         },
         {
           id: "ci9",
@@ -3621,7 +3775,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Huracan"
+          club: "Huracan",
+          pictureUrl: "https://digitalhub.fifa.com/transform/679fc90e-2f98-4494-a4dd-f26442fae6d3/GALINDEZ-Hernan_441236"
         },
         {
           id: "ec2",
@@ -3640,7 +3795,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Bayer Leverkusen"
+          club: "Bayer Leverkusen",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b8f68e80-3057-4fbf-be1e-8cf885a713e1/HINCAPIE-Piero_424031"
         },
         {
           id: "ec4",
@@ -3649,7 +3805,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "Santos"
+          club: "Santos",
+          pictureUrl: "https://digitalhub.fifa.com/transform/755ac13c-2122-42ff-b40a-4582be61e59e/TORRES-Felix_402979"
         },
         {
           id: "ec5",
@@ -3658,7 +3815,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "Brighton"
+          club: "Brighton",
+          pictureUrl: "https://digitalhub.fifa.com/transform/85df33e2-083f-4cef-9fa2-3a8fc7d29466/ESTUPINAN-Pervis_389782"
         },
         {
           id: "ec6",
@@ -3667,7 +3825,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "Chelsea"
+          club: "Chelsea",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ae32bbc5-09f0-4743-ae0a-5b80461bdc79/CAICEDO-Moises_428885"
         },
         {
           id: "ec7",
@@ -3686,7 +3845,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 50,
-          club: "Chelsea"
+          club: "Chelsea",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ee18ba2f-5e31-4e33-8739-f0d59033c409/PAEZ-Kendry_463495"
         },
         {
           id: "ec9",
@@ -3695,7 +3855,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 75,
-          club: "Brighton"
+          club: "Brighton",
+          pictureUrl: "https://digitalhub.fifa.com/transform/59b0fcdc-5cbf-4e78-8221-a2a28e651702/1442153740"
         },
         {
           id: "ec10",
@@ -3802,7 +3963,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "Manchester United"
+          club: "Manchester United",
+          pictureUrl: "https://digitalhub.fifa.com/transform/88b96376-9f31-40fd-a0fc-ae12aab484c4/LINDELOF-Victor_395283"
         },
         {
           id: "se4",
@@ -3811,7 +3973,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Atalanta"
+          club: "Atalanta",
+          pictureUrl: "https://digitalhub.fifa.com/transform/0daf43d1-2714-4cc3-ab8b-3cf2020bf150/HIEN-Isak_483312"
         },
         {
           id: "se5",
@@ -3896,7 +4059,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Augsburg"
+          club: "Augsburg",
+          pictureUrl: "https://digitalhub.fifa.com/transform/90030173-815d-4411-8eac-20fb42834f9d/DAHMEN-Aymen_433365"
         },
         {
           id: "tn2",
@@ -3905,7 +4069,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 30,
-          club: "Basel"
+          club: "Basel",
+          pictureUrl: "https://digitalhub.fifa.com/transform/a6f8e781-c336-403d-8e6b-69b2501b767a/1442514989"
         },
         {
           id: "tn3",
@@ -3914,7 +4079,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Servette"
+          club: "Servette",
+          pictureUrl: "https://digitalhub.fifa.com/transform/9a7aa138-5845-4890-aa20-43f4021160ed/BRONN-Dylan_411653"
         },
         {
           id: "tn4",
@@ -3923,7 +4089,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "Lorient"
+          club: "Lorient",
+          pictureUrl: "https://digitalhub.fifa.com/transform/253ef705-760c-457f-afde-067d2fb39010/TALBI-Montassar_433380"
         },
         {
           id: "tn5",
@@ -3932,7 +4099,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "Nice"
+          club: "Nice",
+          pictureUrl: "https://digitalhub.fifa.com/transform/8ff3509c-8a73-40ea-ac0e-1beed4560b23/ABDI-Ali_433362"
         },
         {
           id: "tn6",
@@ -3951,7 +4119,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 45,
-          club: "Al Wakrah"
+          club: "Al Wakrah",
+          pictureUrl: "https://digitalhub.fifa.com/transform/680502d6-145d-4bbb-a055-c182661ce9be/1442514798"
         },
         {
           id: "tn8",
@@ -3960,7 +4129,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 50,
-          club: "Burnley"
+          club: "Burnley",
+          pictureUrl: "https://digitalhub.fifa.com/transform/856f0cc0-6dcc-48bc-a8db-f4fe26d8ae06/MEJBRI-Hannibal_433378"
         },
         {
           id: "tn9",
@@ -3969,7 +4139,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 75,
-          club: "Al Arabi"
+          club: "Al Arabi",
+          pictureUrl: "https://digitalhub.fifa.com/transform/dda4d665-f092-461b-b243-aac373166807/1442515172"
         },
         {
           id: "tn10",
@@ -3978,7 +4149,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 85,
-          club: "Zamalek"
+          club: "Zamalek",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b82cb142-2ff4-4999-9f7f-deabb6617823/1442514129"
         },
         {
           id: "tn11",
@@ -3987,7 +4159,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 75,
-          club: "Copenhagen"
+          club: "Copenhagen",
+          pictureUrl: "https://digitalhub.fifa.com/transform/5ffd95df-83a5-4768-9331-0842c3f433b6/ACHOURI-Elias_448662"
         }
       ]
     },
@@ -4056,7 +4229,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "Athletic Club"
+          club: "Athletic Club",
+          pictureUrl: "https://digitalhub.fifa.com/transform/41e0f920-bd7d-4bd6-882b-c83ed33e3f26/SIMON-Unai_430753"
         },
         {
           id: "es2",
@@ -4065,7 +4239,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 70,
-          club: "Real Madrid"
+          club: "Real Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/e4f534e2-d24e-4d69-aae7-970fe7bcbf54/1442550925"
         },
         {
           id: "es3",
@@ -4083,7 +4258,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Al-Nassr"
+          club: "Al-Nassr",
+          pictureUrl: "https://digitalhub.fifa.com/transform/e923ca38-381d-4187-9d40-9f5f72434530/LAPORTE-Aymeric_335999"
         },
         {
           id: "es5",
@@ -4092,7 +4268,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Chelsea"
+          club: "Chelsea",
+          pictureUrl: "https://digitalhub.fifa.com/transform/3bc6b871-a4b2-4201-8885-a77420f4c7c9/CUCURELLA-Marc_430735"
         },
         {
           id: "es6",
@@ -4141,7 +4318,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 28,
-          club: "Galatasaray"
+          club: "Galatasaray",
+          pictureUrl: "https://digitalhub.fifa.com/transform/a6d1d8b4-a559-4c7f-aed3-095126b60e1c/1442552095"
         },
         {
           id: "es11",
@@ -4173,7 +4351,8 @@ var matches_default = [
           club: "Gil Vicente",
           socials: {
             instagram: "https://instagram.com/vozinha1"
-          }
+          },
+          pictureUrl: "https://digitalhub.fifa.com/transform/b8286230-b161-484e-87a9-ce5a20e6f7d1/VOZINHA_364752"
         },
         {
           id: "cv2",
@@ -4182,7 +4361,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 30,
-          club: "Columbus Crew"
+          club: "Columbus Crew",
+          pictureUrl: "https://digitalhub.fifa.com/transform/79a2bdd5-b9a9-41d1-8fdd-3dff50346705/STEVEN-MOREIRA_477847"
         },
         {
           id: "cv3",
@@ -4191,7 +4371,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Toulouse"
+          club: "Toulouse",
+          pictureUrl: "https://digitalhub.fifa.com/transform/248677f0-fc09-4244-a18f-7ef9afb98dcc/LOGAN-COSTA_477831"
         },
         {
           id: "cv4",
@@ -4200,7 +4381,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "Shamrock Rovers"
+          club: "Shamrock Rovers",
+          pictureUrl: "https://digitalhub.fifa.com/transform/aae92383-d5ce-4d00-8eb8-71891a619d11/PICO-LOPES_477770"
         },
         {
           id: "cv5",
@@ -4219,7 +4401,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "CSKA Sofia"
+          club: "CSKA Sofia",
+          pictureUrl: "https://digitalhub.fifa.com/transform/40e5a4a5-c7f0-4b0e-8a6e-d8ffbaa12d29/KEVIN-PINA_477852"
         },
         {
           id: "cv7",
@@ -4248,7 +4431,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 75,
-          club: "Sivasspor"
+          club: "Sivasspor",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c8ad756c-e6dc-4458-ad13-d34d2b668c63/GARRY-RODRIGUES_373344"
         },
         {
           id: "cv10",
@@ -4324,7 +4508,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "Al-Qadsiah"
+          club: "Al-Qadsiah",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b0d79089-3449-46e4-9de4-0c0d91f5ab33/1442830192"
         },
         {
           id: "be2",
@@ -4343,7 +4528,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "Leicester City"
+          club: "Leicester City",
+          pictureUrl: "https://digitalhub.fifa.com/transform/91f5100b-cbf4-4b16-b42b-89acec809f35/1442830885"
         },
         {
           id: "be4",
@@ -4352,7 +4538,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Sporting"
+          club: "Sporting",
+          pictureUrl: "https://digitalhub.fifa.com/transform/f6f8a277-eb22-4353-9ce1-a8abe7749d1d/DEBAST-Zeno_448369"
         },
         {
           id: "be5",
@@ -4361,7 +4548,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Eintracht Frankfurt"
+          club: "Eintracht Frankfurt",
+          pictureUrl: "https://digitalhub.fifa.com/transform/34da124d-c474-4154-90e9-aa132a5df818/THEATE-Arthur_448346"
         },
         {
           id: "be6",
@@ -4380,7 +4568,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 44,
-          club: "Aston Villa"
+          club: "Aston Villa",
+          pictureUrl: "https://digitalhub.fifa.com/transform/158822ad-a0e9-406c-a84d-e79b0392409f/TIELEMANS-Youri_401444"
         },
         {
           id: "be8",
@@ -4419,7 +4608,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 22,
-          club: "Arsenal"
+          club: "Arsenal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/78476568-5abb-4047-b6c0-fd9651e0f39d/TROSSARD-Leandro_448355"
         }
       ]
     },
@@ -4438,7 +4628,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Al Ahly"
+          club: "Al Ahly",
+          pictureUrl: "https://digitalhub.fifa.com/transform/5bfa85ca-3349-4143-9afa-1b5a43ac8c54/MOHAMED-ELSHENAWY_408948"
         },
         {
           id: "eg2",
@@ -4447,7 +4638,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 30,
-          club: "Al Ahly"
+          club: "Al Ahly",
+          pictureUrl: "https://digitalhub.fifa.com/transform/04f8ef57-e16f-49de-b7d4-ad430c4c430c/MOHAMED-HANY_408950"
         },
         {
           id: "eg3",
@@ -4466,7 +4658,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "Nice"
+          club: "Nice",
+          pictureUrl: "https://digitalhub.fifa.com/transform/5bfa85ca-3349-4143-9afa-1b5a43ac8c54/MOHAMED-ELSHENAWY_408948"
         },
         {
           id: "eg5",
@@ -4475,7 +4668,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "Zamalek"
+          club: "Zamalek",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c22759e9-6346-4cb7-8611-74074421be7f/AHMED-FATOUH_430477"
         },
         {
           id: "eg6",
@@ -4484,7 +4678,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "Al Wakrah"
+          club: "Al Wakrah",
+          pictureUrl: "https://digitalhub.fifa.com/transform/2de277f5-cea7-47f9-9635-f9fb3a205c2a/HAMDY-FATHY_429095"
         },
         {
           id: "eg7",
@@ -4513,7 +4708,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 75,
-          club: "Trabzonspor"
+          club: "Trabzonspor",
+          pictureUrl: "https://digitalhub.fifa.com/transform/fd2622c8-9bd4-40f0-bb16-6b3311bb1811/TREZEGUET_363863"
         },
         {
           id: "eg10",
@@ -4522,7 +4718,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 85,
-          club: "Nantes"
+          club: "Nantes",
+          pictureUrl: "https://digitalhub.fifa.com/transform/5bfa85ca-3349-4143-9afa-1b5a43ac8c54/MOHAMED-ELSHENAWY_408948"
         },
         {
           id: "eg11",
@@ -4592,7 +4789,8 @@ var matches_default = [
           club: "Al-Hilal",
           socials: {
             instagram: "https://instagram.com/alowais_33"
-          }
+          },
+          pictureUrl: "https://digitalhub.fifa.com/transform/be2d88f0-e368-49ef-9a33-c7585955c495/MOHAMMED-ALOWAIS_396885"
         },
         {
           id: "sau2",
@@ -4611,7 +4809,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "Al-Ittihad"
+          club: "Al-Ittihad",
+          pictureUrl: "https://digitalhub.fifa.com/transform/fc41abe4-036c-4c99-aa2a-b56ddece0c2d/HASSAN-KADISH_401924"
         },
         {
           id: "sau4",
@@ -4620,7 +4819,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Al-Hilal"
+          club: "Al-Hilal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/4f8e42cf-4966-4717-8c6d-f1b7f861a291/1442483955"
         },
         {
           id: "sau5",
@@ -4629,7 +4829,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Al-Hilal"
+          club: "Al-Hilal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/e7d57d32-2d62-489e-85e7-fddcf1bc17f7/1442482644"
         },
         {
           id: "sau6",
@@ -4638,7 +4839,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 48,
-          club: "Al-Hilal"
+          club: "Al-Hilal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c3eb4162-fd6d-41f1-aad4-1b632b266f19/MOHAMED-KANNO_407993"
         },
         {
           id: "sau7",
@@ -4647,7 +4849,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 44,
-          club: "Al-Hilal"
+          club: "Al-Hilal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/81e654c7-8273-4e1f-b909-62613fbf14ea/NASSER-ALDAWSARI_403319"
         },
         {
           id: "sau8",
@@ -4656,7 +4859,8 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 48,
-          club: "Al-Hilal"
+          club: "Al-Hilal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/d167ee25-02d4-48c1-b6bf-ec1eea3a1633/SALEM-ALDAWSARI_339745"
         },
         {
           id: "sau9",
@@ -4665,7 +4869,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 22,
-          club: "Al-Ahli"
+          club: "Al-Ahli",
+          pictureUrl: "https://digitalhub.fifa.com/transform/9d59c398-9c66-4dad-b20d-9694a0f74dd4/FERAS-ALBRIKAN_419291"
         },
         {
           id: "sau10",
@@ -4674,7 +4879,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 28,
-          club: "Al-Ittihad"
+          club: "Al-Ittihad",
+          pictureUrl: "https://digitalhub.fifa.com/transform/a912d91a-f467-4d57-a2fc-7937f8cafb66/SALEH-ALSHEHRI_425804"
         },
         {
           id: "sau11",
@@ -4702,7 +4908,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Internacional"
+          club: "Internacional",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b5a98e25-83d4-441e-9c25-0eb4581277dc/ROCHET-Sergio_368664"
         },
         {
           id: "uy2",
@@ -4720,7 +4927,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Barcelona"
+          club: "Barcelona",
+          pictureUrl: "https://digitalhub.fifa.com/transform/41008beb-38a3-46e0-9229-229d0afc8db7/ARAUJO-Ronald_419101"
         },
         {
           id: "uy4",
@@ -4729,7 +4937,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 25,
-          club: "Atl\xE9tico de Madrid"
+          club: "Atl\xE9tico de Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/977da143-5380-497d-85f7-d6e5ca34b27c/GIMENEZ-Jose-Maria_368655"
         },
         {
           id: "uy5",
@@ -4738,7 +4947,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 30,
-          club: "Napoli"
+          club: "Napoli",
+          pictureUrl: "https://digitalhub.fifa.com/transform/704d2d9d-1b5f-4296-87f4-b7b591a58116/OLIVERA-Mathias_402893"
         },
         {
           id: "uy6",
@@ -4757,7 +4967,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 45,
-          club: "Real Madrid"
+          club: "Real Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/bc29f114-2d51-4605-ae7a-eadf774e9d38/VALVERDE-Federico_402884"
         },
         {
           id: "uy8",
@@ -4776,7 +4987,8 @@ var matches_default = [
           position: "FW",
           x: 15,
           y: 75,
-          club: "Panathinaikos"
+          club: "Panathinaikos",
+          pictureUrl: "https://digitalhub.fifa.com/transform/51b7eeb6-cac1-48cd-9ed3-4a18b34c5d90/PELLISTRI-Facundo_439956"
         },
         {
           id: "uy10",
@@ -4856,7 +5068,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 88,
-          club: "Persepolis"
+          club: "Persepolis",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c8cf4e84-2bd2-4e20-bb73-c7f14a935b73/BEIRANVAND-Alireza_380007"
         },
         {
           id: "ir2",
@@ -4865,7 +5078,8 @@ var matches_default = [
           position: "DF",
           x: 15,
           y: 70,
-          club: "Dinamo Zagreb"
+          club: "Dinamo Zagreb",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c9c01799-0540-466a-b55d-58caf1c5f40e/1441896039"
         },
         {
           id: "ir3",
@@ -4874,7 +5088,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 75,
-          club: "Tractor"
+          club: "Tractor",
+          pictureUrl: "https://digitalhub.fifa.com/transform/509a4e4e-b242-4488-a334-84faac974457/KHALILZADEH-Shoja_346743"
         },
         {
           id: "ir4",
@@ -4883,7 +5098,8 @@ var matches_default = [
           position: "DF",
           x: 62,
           y: 75,
-          club: "Persepolis"
+          club: "Persepolis",
+          pictureUrl: "https://digitalhub.fifa.com/transform/20ec6667-ff1b-4fb3-8128-ecf2eb1c6e18/KANANI-Hossein_390534"
         },
         {
           id: "ir5",
@@ -4892,7 +5108,8 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Persepolis"
+          club: "Persepolis",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ed36d5fa-f6ab-4e3c-8bdd-1c5cf555f225/MOHAMMADI-Milad_390537"
         },
         {
           id: "ir6",
@@ -4901,7 +5118,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 48,
-          club: "Shabab Al Ahli"
+          club: "Shabab Al Ahli",
+          pictureUrl: "https://digitalhub.fifa.com/transform/a2e8983e-9596-49b3-8c5c-e398d66e27c5/EZATOLAHI-Saeid_371736"
         },
         {
           id: "ir7",
@@ -4910,7 +5128,8 @@ var matches_default = [
           position: "MF",
           x: 50,
           y: 44,
-          club: "Esteghlal"
+          club: "Esteghlal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ecf8d94c-609d-4a5c-8375-8c8e92629a59/CHESHMI-Roozbeh_406595"
         },
         {
           id: "ir8",
@@ -4939,7 +5158,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 28,
-          club: "Shabab Al Ahli"
+          club: "Shabab Al Ahli",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c50245ff-0d7f-47b3-8f94-206a58531506/1441897616"
         },
         {
           id: "ir11",
@@ -4968,7 +5188,8 @@ var matches_default = [
           position: "GK",
           x: 50,
           y: 12,
-          club: "Burton Albion"
+          club: "Burton Albion",
+          pictureUrl: "https://digitalhub.fifa.com/transform/0d8fc4f9-7330-4eaa-bbf0-7dfccbec09db/CROCOMBE-Max_368535"
         },
         {
           id: "nz2",
@@ -4987,7 +5208,8 @@ var matches_default = [
           position: "DF",
           x: 38,
           y: 25,
-          club: "Minnesota United"
+          club: "Minnesota United",
+          pictureUrl: "https://digitalhub.fifa.com/transform/e4d41670-878d-4717-b07c-84d09a5f6938/BOXALL-Michael_261367"
         },
         {
           id: "nz4",
@@ -5016,7 +5238,8 @@ var matches_default = [
           position: "MF",
           x: 30,
           y: 50,
-          club: "Viking FK"
+          club: "Viking FK",
+          pictureUrl: "https://digitalhub.fifa.com/transform/37f084e5-faf4-4447-bdf1-c7ac8b0fa6e8/BELL-Joe_390181"
         },
         {
           id: "nz7",
@@ -5058,7 +5281,8 @@ var matches_default = [
           position: "FW",
           x: 50,
           y: 85,
-          club: "Nottingham Forest"
+          club: "Nottingham Forest",
+          pictureUrl: "https://digitalhub.fifa.com/transform/431bf921-6e73-469f-87bd-3fb2c010966e/WOOD-Chris_274078"
         },
         {
           id: "nz11",
@@ -5067,7 +5291,8 @@ var matches_default = [
           position: "FW",
           x: 85,
           y: 75,
-          club: "Plymouth Argyle"
+          club: "Plymouth Argyle",
+          pictureUrl: "https://digitalhub.fifa.com/transform/88f867f6-433a-4846-a145-fc06b8aac544/WAINE-Ben_419577"
         }
       ]
     },
