@@ -5891,6 +5891,59 @@ var triviaQuestions = [
   }
 ];
 
+// src/data/wikipediaCountries.ts
+var WIKIPEDIA_COUNTRIES = {
+  ALG: { ptArticle: "Arg\xE9lia", wikidataId: "Q262" },
+  ARG: { ptArticle: "Argentina", wikidataId: "Q414" },
+  AUS: { ptArticle: "Austr\xE1lia", wikidataId: "Q408" },
+  AUT: { ptArticle: "\xC1ustria", wikidataId: "Q40" },
+  BEL: { ptArticle: "B\xE9lgica", wikidataId: "Q31" },
+  BIH: { ptArticle: "B\xF3snia e Herzegovina", wikidataId: "Q225" },
+  BRA: { ptArticle: "Brasil", wikidataId: "Q155" },
+  CAN: { ptArticle: "Canad\xE1", wikidataId: "Q16" },
+  CIV: { ptArticle: "Costa do Marfim", wikidataId: "Q1008" },
+  COD: { ptArticle: "Rep\xFAblica Democr\xE1tica do Congo", wikidataId: "Q974" },
+  COL: { ptArticle: "Col\xF4mbia", wikidataId: "Q739" },
+  CPV: { ptArticle: "Cabo Verde", wikidataId: "Q1011" },
+  CRO: { ptArticle: "Cro\xE1cia", wikidataId: "Q224" },
+  CUW: { ptArticle: "Cura\xE7ao", wikidataId: "Q25279" },
+  CZE: { ptArticle: "Ch\xE9quia", wikidataId: "Q213" },
+  ECU: { ptArticle: "Equador", wikidataId: "Q736" },
+  EGY: { ptArticle: "Egito", wikidataId: "Q79" },
+  ENG: { ptArticle: "Inglaterra", wikidataId: "Q21" },
+  ESP: { ptArticle: "Espanha", wikidataId: "Q29" },
+  FRA: { ptArticle: "Fran\xE7a", wikidataId: "Q142" },
+  GER: { ptArticle: "Alemanha", wikidataId: "Q183" },
+  GHA: { ptArticle: "Gana", wikidataId: "Q117" },
+  HAI: { ptArticle: "Haiti", wikidataId: "Q790" },
+  IRN: { ptArticle: "Ir\xE3", wikidataId: "Q794" },
+  IRQ: { ptArticle: "Iraque", wikidataId: "Q796" },
+  JOR: { ptArticle: "Jord\xE2nia", wikidataId: "Q810" },
+  JPN: { ptArticle: "Jap\xE3o", wikidataId: "Q17" },
+  KOR: { ptArticle: "Coreia do Sul", wikidataId: "Q884" },
+  KSA: { ptArticle: "Ar\xE1bia Saudita", wikidataId: "Q851" },
+  MAR: { ptArticle: "Marrocos", wikidataId: "Q1028" },
+  MEX: { ptArticle: "M\xE9xico", wikidataId: "Q96" },
+  NED: { ptArticle: "Pa\xEDses Baixos", wikidataId: "Q55" },
+  NOR: { ptArticle: "Noruega", wikidataId: "Q20" },
+  NZL: { ptArticle: "Nova Zel\xE2ndia", wikidataId: "Q664" },
+  PAN: { ptArticle: "Panam\xE1", wikidataId: "Q804" },
+  PAR: { ptArticle: "Paraguai", wikidataId: "Q733" },
+  POR: { ptArticle: "Portugal", wikidataId: "Q45" },
+  QAT: { ptArticle: "Catar", wikidataId: "Q846" },
+  RSA: { ptArticle: "\xC1frica do Sul", wikidataId: "Q258" },
+  SCO: { ptArticle: "Esc\xF3cia", wikidataId: "Q22" },
+  SEN: { ptArticle: "Senegal", wikidataId: "Q1041" },
+  SUI: { ptArticle: "Su\xED\xE7a", wikidataId: "Q39" },
+  SWE: { ptArticle: "Su\xE9cia", wikidataId: "Q34" },
+  TUN: { ptArticle: "Tun\xEDsia", wikidataId: "Q948" },
+  TUR: { ptArticle: "Turquia", wikidataId: "Q43" },
+  URU: { ptArticle: "Uruguai", wikidataId: "Q77" },
+  USA: { ptArticle: "Estados Unidos", wikidataId: "Q30" },
+  UZB: { ptArticle: "Uzbequist\xE3o", wikidataId: "Q265" }
+};
+var wikipediaCountries_default = WIKIPEDIA_COUNTRIES;
+
 // src/standings.ts
 var POINTS_FOR_WIN = 3;
 var POINTS_FOR_DRAW = 1;
@@ -6012,6 +6065,10 @@ var BACKGROUND_WARM_FAILURE_RETRY_MS = 30 * 1e3;
 var CIRCUIT_BREAKER_FAILURE_THRESHOLD = 3;
 var CIRCUIT_BREAKER_OPEN_MS = 60 * 1e3;
 var TOURNAMENT_LEADER_LIMIT = 5;
+var WIKIPEDIA_API_BASE = "https://pt.wikipedia.org/api/rest_v1";
+var WIKIDATA_API_BASE = "https://www.wikidata.org/w/api.php";
+var COUNTRY_INFO_CACHE_TTL_MS = 24 * 60 * 60 * 1e3;
+var WIKIPEDIA_USER_AGENT = "agora-na-copa-2026 (https://github.com/mpbarbosa/agora_na_copa_2026)";
 var APP_MATCHES_BY_ID = new Map(APP_MATCHES.map((match) => [match.id, match]));
 var GOAL_INCIDENT_SUFFIX = " marcou.";
 var YELLOW_CARD_INCIDENT_SUFFIX = " recebeu amarelo.";
@@ -6021,6 +6078,7 @@ var TRIVIA_QUESTIONS = triviaQuestions;
 var broadcastGuideCache = null;
 var matchStatesCache = null;
 var teamLineupsCache = null;
+var countryInfoCache = /* @__PURE__ */ new Map();
 var fifaSyncDiagnostics = {
   broadcastGuide: {
     lastAttemptAt: null,
@@ -6966,6 +7024,97 @@ app.get("/api/team-view/:teamCode", async (req, res) => {
   } catch (error) {
     console.error("FIFA API Error in /api/team-view/:teamCode:", error);
     res.status(502).json({ error: error?.message || "Erro ao carregar painel completo da sele\xE7\xE3o" });
+  }
+});
+async function fetchCountryInfo(code) {
+  const entry = wikipediaCountries_default[code.toUpperCase()];
+  if (!entry) return null;
+  const cached = countryInfoCache.get(code);
+  if (cached && cached.expiresAt > Date.now()) return cached.payload;
+  const { ptArticle, wikidataId } = entry;
+  const now = (/* @__PURE__ */ new Date()).toISOString();
+  const encodedTitle = encodeURIComponent(ptArticle);
+  const summaryUrl = `${WIKIPEDIA_API_BASE}/page/summary/${encodedTitle}`;
+  const summaryRes = await fetch(summaryUrl, {
+    headers: { "User-Agent": WIKIPEDIA_USER_AGENT }
+  });
+  if (!summaryRes.ok) {
+    return {
+      code,
+      description: "",
+      extract: "",
+      thumbnailUrl: null,
+      wikipediaUrl: `https://pt.wikipedia.org/wiki/${encodedTitle}`,
+      population: null,
+      areaSqKm: null,
+      capital: null,
+      source: "fallback",
+      updatedAt: now
+    };
+  }
+  const summary = await summaryRes.json();
+  const wdUrl = `${WIKIDATA_API_BASE}?action=wbgetentities&ids=${wikidataId}&languages=pt&props=claims&format=json`;
+  const wdRes = await fetch(wdUrl, {
+    headers: { "User-Agent": WIKIPEDIA_USER_AGENT }
+  });
+  let population = null;
+  let areaSqKm = null;
+  let capitalQid = null;
+  if (wdRes.ok) {
+    const wd = await wdRes.json();
+    const claims = wd.entities?.[wikidataId]?.claims ?? {};
+    const popClaims = claims["P1082"] ?? [];
+    const popClaim = (popClaims.find((c) => c.rank === "preferred") ?? popClaims.at(-1))?.mainsnak?.datavalue?.value?.amount;
+    if (popClaim) population = Math.abs(parseInt(popClaim, 10));
+    const areaClaim = claims["P2046"]?.[0]?.mainsnak?.datavalue?.value?.amount;
+    if (areaClaim) areaSqKm = Math.abs(parseFloat(areaClaim));
+    const capitalClaims = claims["P36"] ?? [];
+    const preferred = capitalClaims.find((c) => c.rank === "preferred");
+    const currentCapital = preferred ?? capitalClaims.find((c) => !c.qualifiers?.["P582"]) ?? capitalClaims.at(-1);
+    capitalQid = currentCapital?.mainsnak?.datavalue?.value?.id ?? null;
+  }
+  let capital = null;
+  if (capitalQid) {
+    const capUrl = `${WIKIDATA_API_BASE}?action=wbgetentities&ids=${capitalQid}&languages=pt&props=labels&format=json`;
+    const capRes = await fetch(capUrl, {
+      headers: { "User-Agent": WIKIPEDIA_USER_AGENT }
+    });
+    if (capRes.ok) {
+      const capData = await capRes.json();
+      capital = capData.entities?.[capitalQid]?.labels?.["pt"]?.value ?? null;
+    }
+  }
+  const payload = {
+    code,
+    description: summary.description ?? "",
+    extract: summary.extract ?? "",
+    thumbnailUrl: summary.thumbnail?.source ?? null,
+    wikipediaUrl: summary.content_urls?.desktop?.page ?? `https://pt.wikipedia.org/wiki/${encodedTitle}`,
+    population,
+    areaSqKm: areaSqKm ? Math.round(areaSqKm) : null,
+    capital,
+    source: "wikipedia",
+    updatedAt: now
+  };
+  countryInfoCache.set(code, {
+    expiresAt: Date.now() + COUNTRY_INFO_CACHE_TTL_MS,
+    payload
+  });
+  return payload;
+}
+app.get("/api/country-info/:code", async (req, res) => {
+  try {
+    const code = req.params.code.toUpperCase();
+    const payload = await fetchCountryInfo(code);
+    if (!payload) {
+      res.status(404).json({ error: "Pa\xEDs n\xE3o encontrado" });
+      return;
+    }
+    res.set("Cache-Control", "public, max-age=3600");
+    res.json(payload);
+  } catch (error) {
+    console.error("Wikipedia API Error in /api/country-info:", error);
+    res.status(502).json({ error: error?.message || "Erro ao carregar informa\xE7\xF5es do pa\xEDs" });
   }
 });
 app.get("/api/fifa-sync-status", (_req, res) => {
