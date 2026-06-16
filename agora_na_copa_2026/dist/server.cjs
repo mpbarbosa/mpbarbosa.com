@@ -7044,6 +7044,7 @@ async function fetchCountryInfo(code) {
       description: "",
       extract: "",
       thumbnailUrl: null,
+      flagSvgUrl: null,
       wikipediaUrl: `https://pt.wikipedia.org/wiki/${encodedTitle}`,
       population: null,
       areaSqKm: null,
@@ -7056,6 +7057,14 @@ async function fetchCountryInfo(code) {
     };
   }
   const summary = await summaryRes.json();
+  const svgFromThumb = (url) => {
+    if (!url) return null;
+    const m = url.match(
+      /^(https:\/\/upload\.wikimedia\.org\/wikipedia\/commons)\/thumb\/([^/]+\/[^/]+\/[^/]+\.svg)\//
+    );
+    return m ? `${m[1]}/${m[2]}` : null;
+  };
+  const flagSvgUrl = svgFromThumb(summary.originalimage?.source) ?? svgFromThumb(summary.thumbnail?.source);
   const wdUrl = `${WIKIDATA_API_BASE}?action=wbgetentities&ids=${wikidataId}&languages=pt&props=claims&format=json`;
   const wdRes = await fetch(wdUrl, {
     headers: { "User-Agent": WIKIPEDIA_USER_AGENT }
@@ -7114,6 +7123,7 @@ async function fetchCountryInfo(code) {
     description: summary.description ?? "",
     extract: summary.extract ?? "",
     thumbnailUrl: summary.thumbnail?.source ?? null,
+    flagSvgUrl,
     wikipediaUrl: summary.content_urls?.desktop?.page ?? `https://pt.wikipedia.org/wiki/${encodedTitle}`,
     population,
     areaSqKm: areaSqKm ? Math.round(areaSqKm) : null,
