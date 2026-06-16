@@ -1746,7 +1746,10 @@ var matches_default = [
           position: "DF",
           x: 85,
           y: 70,
-          club: "Lyon"
+          club: "Lyon",
+          socials: {
+            instagram: "https://instagram.com/abner_vinicius6"
+          }
         },
         {
           id: "b6",
