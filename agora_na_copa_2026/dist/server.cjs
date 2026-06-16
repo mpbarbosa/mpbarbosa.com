@@ -1832,6 +1832,18 @@ var matches_default = [
           }
         },
         {
+          id: "b13",
+          name: "Vitinho",
+          number: 22,
+          position: "FW",
+          x: 85,
+          y: 10,
+          club: "Flamengo",
+          socials: {
+            instagram: "https://instagram.com/vitao_oficial"
+          }
+        },
+        {
           id: "b12",
           name: "Neymar Jr",
           number: 21,
