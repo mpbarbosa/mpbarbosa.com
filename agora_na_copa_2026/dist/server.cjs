@@ -515,47 +515,6 @@ var buildTeamLineupEntry = (teamCode, fallbackLineup, fifaMatch, fifaTeam) => {
   };
 };
 
-// src/data/questions.ts
-var triviaQuestions = [
-  {
-    id: "host-countries",
-    category: "Sedes",
-    question: "Quantos pa\xEDses sediam juntos a Copa do Mundo de 2026?",
-    options: ["2", "3", "4", "5"],
-    correctOptionIndex: 1,
-    explanation: "A edi\xE7\xE3o de 2026 ser\xE1 dividida entre Estados Unidos, M\xE9xico e Canad\xE1."
-  },
-  {
-    id: "metlife-final",
-    category: "Est\xE1dios",
-    question: "Qual est\xE1dio recebe a grande final no chaveamento do app?",
-    options: [
-      "BC Place de Vancouver",
-      "Est\xE1dio da Cidade do M\xE9xico",
-      "MetLife Stadium",
-      "Arrowhead Stadium"
-    ],
-    correctOptionIndex: 2,
-    explanation: "O mata-mata termina no MetLife Stadium, em East Rutherford, palco da final."
-  },
-  {
-    id: "group-format",
-    category: "Formato",
-    question: "Quantos grupos de quatro sele\xE7\xF5es aparecem na fase inicial desta edi\xE7\xE3o?",
-    options: ["8", "10", "12", "16"],
-    correctOptionIndex: 2,
-    explanation: "O modelo adotado no app usa 12 grupos de quatro sele\xE7\xF5es para a Copa de 2026."
-  },
-  {
-    id: "broadcast-core",
-    category: "Transmiss\xE3o",
-    question: "Qual aba do app concentra o guia de onde assistir e o feed de lances?",
-    options: ["Not\xEDcias", "Ao Vivo", "Fan Zone", "Est\xE1dios"],
-    correctOptionIndex: 1,
-    explanation: "A aba Ao Vivo re\xFAne o cron\xF4metro, as emissoras e os lances oficiais da FIFA."
-  }
-];
-
 // src/matches.json
 var matches_default = [
   {
@@ -1114,10 +1073,10 @@ var matches_default = [
     kickoffDate: "14 Junho, 2026",
     kickoffTimestamp: "2026-06-14T14:00:00-03:00",
     officialMatchUrl: "https://www.fifa.com/pt/match-centre/match/17/285023/289273/400021464",
-    status: "LIVE",
+    status: "FINISHED",
     score: {
-      teamA: 1,
-      teamB: 0
+      teamA: 7,
+      teamB: 1
     },
     countdownTargetSeconds: 0,
     broadcasters: [
@@ -1233,8 +1192,12 @@ var matches_default = [
     kickoffDate: "14 Junho, 2026",
     kickoffTimestamp: "2026-06-14T17:00:00-03:00",
     officialMatchUrl: "https://www.fifa.com/pt/match-centre/match/17/285023/289273/400021470",
-    status: "PRE_GAME",
-    countdownTargetSeconds: 48638,
+    status: "FINISHED",
+    score: {
+      teamA: 2,
+      teamB: 2
+    },
+    countdownTargetSeconds: 0,
     broadcasters: [
       { id: "getv11", type: "STREAM", name: "GETV", iconColor: "#00e476", link: "https://globoplay.globo.com/categorias/ge-tv/", logoUrl: "https://extranets.fifa.com/TvStationPhotos/914.png" },
       { id: "gb11", type: "STREAM", name: "Globoplay", iconColor: "#00e476", link: "https://globoplay.globo.com/tv-globo/ao-vivo/6120663/", logoUrl: "https://extranets.fifa.com/TvStationPhotos/30.png" },
@@ -1296,8 +1259,12 @@ var matches_default = [
     kickoffDate: "14 Junho, 2026",
     kickoffTimestamp: "2026-06-14T20:00:00-03:00",
     officialMatchUrl: "https://www.fifa.com/pt/match-centre/match/17/285023/289273/400021467",
-    status: "PRE_GAME",
-    countdownTargetSeconds: 58950,
+    status: "FINISHED",
+    score: {
+      teamA: 1,
+      teamB: 0
+    },
+    countdownTargetSeconds: 0,
     broadcasters: [
       { id: "gb12", type: "STREAM", name: "Globoplay", iconColor: "#00e476", link: "https://globoplay.globo.com/tv-globo/ao-vivo/6120663/", logoUrl: "https://extranets.fifa.com/TvStationPhotos/30.png" },
       { id: "cz12", type: "YOUTUBE", name: "Caz\xE9TV", iconColor: "#ed2939", link: "https://www.youtube.com/@CazeTV", logoUrl: "https://extranets.fifa.com/TvStationPhotos/451.png" },
@@ -1356,12 +1323,11 @@ var matches_default = [
     kickoffDate: "14 Junho, 2026",
     kickoffTimestamp: "2026-06-14T23:00:00-03:00",
     officialMatchUrl: "https://www.fifa.com/pt/match-centre/match/17/285023/289273/400021474",
-    status: "LIVE",
+    status: "FINISHED",
     score: {
-      teamA: 3,
+      teamA: 5,
       teamB: 1
     },
-    matchTime: "90'+1",
     countdownTargetSeconds: 0,
     broadcasters: [
       { id: "gb13", type: "STREAM", name: "Globoplay", iconColor: "#00e476", link: "https://globoplay.globo.com/tv-globo/ao-vivo/6120663/", logoUrl: "https://extranets.fifa.com/TvStationPhotos/30.png" },
@@ -1420,7 +1386,11 @@ var matches_default = [
     kickoffTime: "13:00",
     kickoffDate: "15 Junho, 2026",
     kickoffTimestamp: "2026-06-15T13:00:00-03:00",
-    status: "PRE_GAME",
+    status: "FINISHED",
+    score: {
+      teamA: 0,
+      teamB: 0
+    },
     countdownTargetSeconds: 0,
     broadcasters: [
       { id: "g14", type: "TV ABERTA", name: "TV Globo", iconColor: "#05ff85", link: "https://redeglobo.globo.com/" },
@@ -1478,7 +1448,11 @@ var matches_default = [
     kickoffTime: "16:00",
     kickoffDate: "15 Junho, 2026",
     kickoffTimestamp: "2026-06-15T16:00:00-03:00",
-    status: "PRE_GAME",
+    status: "FINISHED",
+    score: {
+      teamA: 1,
+      teamB: 1
+    },
     countdownTargetSeconds: 0,
     broadcasters: [
       { id: "g15", type: "TV ABERTA", name: "TV Globo", iconColor: "#05ff85", link: "https://redeglobo.globo.com/" },
@@ -1536,7 +1510,11 @@ var matches_default = [
     kickoffTime: "19:00",
     kickoffDate: "15 Junho, 2026",
     kickoffTimestamp: "2026-06-15T19:00:00-03:00",
-    status: "PRE_GAME",
+    status: "FINISHED",
+    score: {
+      teamA: 1,
+      teamB: 1
+    },
     countdownTargetSeconds: 0,
     broadcasters: [
       { id: "g16", type: "TV ABERTA", name: "TV Globo", iconColor: "#05ff85", link: "https://redeglobo.globo.com/" },
@@ -1547,7 +1525,7 @@ var matches_default = [
   {
     id: "irn-nzl-2026",
     teamA: {
-      name: "RI DO IR\xC3",
+      name: "IR\xC3",
       code: "IRN",
       flagSvg: "iran",
       primaryColor: "#239f40",
@@ -1603,6 +1581,152 @@ var matches_default = [
     ]
   }
 ];
+
+// src/data/bbcScheduledMatches.ts
+var BBC_SCHEDULED_MATCHES = [
+  // Grupo A
+  { teamA: "CZE", teamB: "RSA", kickoffTimestamp: "2026-06-18T13:00:00-03:00" },
+  { teamA: "MEX", teamB: "KOR", kickoffTimestamp: "2026-06-18T22:00:00-03:00" },
+  { teamA: "CZE", teamB: "MEX", kickoffTimestamp: "2026-06-24T22:00:00-03:00" },
+  { teamA: "RSA", teamB: "KOR", kickoffTimestamp: "2026-06-24T22:00:00-03:00" },
+  // Grupo B
+  { teamA: "SUI", teamB: "BIH", kickoffTimestamp: "2026-06-18T16:00:00-03:00" },
+  { teamA: "CAN", teamB: "QAT", kickoffTimestamp: "2026-06-18T19:00:00-03:00" },
+  { teamA: "BIH", teamB: "QAT", kickoffTimestamp: "2026-06-24T16:00:00-03:00" },
+  { teamA: "SUI", teamB: "CAN", kickoffTimestamp: "2026-06-24T16:00:00-03:00" },
+  // Grupo C
+  { teamA: "SCO", teamB: "MAR", kickoffTimestamp: "2026-06-19T19:00:00-03:00" },
+  { teamA: "BRA", teamB: "HAI", kickoffTimestamp: "2026-06-19T21:30:00-03:00" },
+  { teamA: "MAR", teamB: "HAI", kickoffTimestamp: "2026-06-24T19:00:00-03:00" },
+  { teamA: "SCO", teamB: "BRA", kickoffTimestamp: "2026-06-24T19:00:00-03:00" },
+  // Grupo D
+  { teamA: "USA", teamB: "AUS", kickoffTimestamp: "2026-06-19T16:00:00-03:00" },
+  { teamA: "TUR", teamB: "PAR", kickoffTimestamp: "2026-06-20T00:00:00-03:00" },
+  { teamA: "PAR", teamB: "AUS", kickoffTimestamp: "2026-06-25T23:00:00-03:00" },
+  { teamA: "TUR", teamB: "USA", kickoffTimestamp: "2026-06-25T23:00:00-03:00" },
+  // Grupo E
+  { teamA: "GER", teamB: "CIV", kickoffTimestamp: "2026-06-20T17:00:00-03:00" },
+  { teamA: "ECU", teamB: "CUW", kickoffTimestamp: "2026-06-20T21:00:00-03:00" },
+  { teamA: "CUW", teamB: "CIV", kickoffTimestamp: "2026-06-25T17:00:00-03:00" },
+  { teamA: "ECU", teamB: "GER", kickoffTimestamp: "2026-06-25T17:00:00-03:00" },
+  // Grupo F
+  { teamA: "NED", teamB: "SWE", kickoffTimestamp: "2026-06-20T14:00:00-03:00" },
+  { teamA: "TUN", teamB: "JPN", kickoffTimestamp: "2026-06-21T01:00:00-03:00" },
+  { teamA: "JPN", teamB: "SWE", kickoffTimestamp: "2026-06-25T20:00:00-03:00" },
+  { teamA: "TUN", teamB: "NED", kickoffTimestamp: "2026-06-25T20:00:00-03:00" },
+  // Grupo G
+  { teamA: "BEL", teamB: "IRN", kickoffTimestamp: "2026-06-21T16:00:00-03:00" },
+  { teamA: "NZL", teamB: "EGY", kickoffTimestamp: "2026-06-21T22:00:00-03:00" },
+  { teamA: "EGY", teamB: "IRN", kickoffTimestamp: "2026-06-27T00:00:00-03:00" },
+  { teamA: "NZL", teamB: "BEL", kickoffTimestamp: "2026-06-27T00:00:00-03:00" },
+  // Grupo H
+  { teamA: "ESP", teamB: "KSA", kickoffTimestamp: "2026-06-21T13:00:00-03:00" },
+  { teamA: "URU", teamB: "CPV", kickoffTimestamp: "2026-06-21T19:00:00-03:00" },
+  { teamA: "CPV", teamB: "KSA", kickoffTimestamp: "2026-06-26T21:00:00-03:00" },
+  { teamA: "URU", teamB: "ESP", kickoffTimestamp: "2026-06-26T21:00:00-03:00" },
+  // Grupo I
+  { teamA: "IRQ", teamB: "NOR", kickoffTimestamp: "2026-06-16T19:00:00-03:00" },
+  { teamA: "FRA", teamB: "IRQ", kickoffTimestamp: "2026-06-22T18:00:00-03:00" },
+  { teamA: "NOR", teamB: "SEN", kickoffTimestamp: "2026-06-22T21:00:00-03:00" },
+  { teamA: "NOR", teamB: "FRA", kickoffTimestamp: "2026-06-26T16:00:00-03:00" },
+  { teamA: "SEN", teamB: "IRQ", kickoffTimestamp: "2026-06-26T16:00:00-03:00" },
+  // Grupo J
+  { teamA: "AUT", teamB: "JOR", kickoffTimestamp: "2026-06-17T01:00:00-03:00" },
+  { teamA: "ARG", teamB: "AUT", kickoffTimestamp: "2026-06-22T14:00:00-03:00" },
+  { teamA: "JOR", teamB: "ALG", kickoffTimestamp: "2026-06-23T00:00:00-03:00" },
+  { teamA: "ALG", teamB: "AUT", kickoffTimestamp: "2026-06-27T23:00:00-03:00" },
+  { teamA: "JOR", teamB: "ARG", kickoffTimestamp: "2026-06-27T23:00:00-03:00" },
+  // Grupo K
+  { teamA: "POR", teamB: "COD", kickoffTimestamp: "2026-06-17T14:00:00-03:00" },
+  { teamA: "UZB", teamB: "COL", kickoffTimestamp: "2026-06-17T23:00:00-03:00" },
+  { teamA: "POR", teamB: "UZB", kickoffTimestamp: "2026-06-23T14:00:00-03:00" },
+  { teamA: "COL", teamB: "COD", kickoffTimestamp: "2026-06-23T23:00:00-03:00" },
+  { teamA: "COL", teamB: "POR", kickoffTimestamp: "2026-06-27T20:30:00-03:00" },
+  { teamA: "COD", teamB: "UZB", kickoffTimestamp: "2026-06-27T20:30:00-03:00" },
+  // Grupo L
+  { teamA: "ENG", teamB: "CRO", kickoffTimestamp: "2026-06-17T17:00:00-03:00" },
+  { teamA: "GHA", teamB: "PAN", kickoffTimestamp: "2026-06-17T20:00:00-03:00" },
+  { teamA: "ENG", teamB: "GHA", kickoffTimestamp: "2026-06-23T17:00:00-03:00" },
+  { teamA: "PAN", teamB: "CRO", kickoffTimestamp: "2026-06-23T20:00:00-03:00" },
+  { teamA: "CRO", teamB: "GHA", kickoffTimestamp: "2026-06-27T18:00:00-03:00" },
+  { teamA: "PAN", teamB: "ENG", kickoffTimestamp: "2026-06-27T18:00:00-03:00" }
+];
+
+// src/data/fifaMatchVenues.ts
+var FIFA_MATCH_VENUES = {
+  "alg-aut-2026": { stadiumName: "Est\xE1dio de Kansas City", city: "Kansas City" },
+  "arg-alg-2026": { stadiumName: "Est\xE1dio de Kansas City", city: "Kansas City" },
+  "arg-aut-2026": { stadiumName: "Est\xE1dio de Dallas", city: "Dallas" },
+  "aus-tur-2026": { stadiumName: "BC Place de Vancouver", city: "Vancouver" },
+  "aut-jor-2026": { stadiumName: "Est\xE1dio da Ba\xEDa de S\xE3o Francisco", city: "\xC1rea da ba\xEDa de S\xE3o Francisco" },
+  "bel-egy-2026": { stadiumName: "Est\xE1dio de Seattle", city: "Seattle" },
+  "bel-irn-2026": { stadiumName: "Est\xE1dio de Los Angeles", city: "Los Angeles" },
+  "bih-qat-2026": { stadiumName: "Est\xE1dio de Seattle", city: "Seattle" },
+  "bra-hai-2026": { stadiumName: "Est\xE1dio de Filad\xE9lfia", city: "Filad\xE9lfia" },
+  "bra-mar-2026": { stadiumName: "Est\xE1dio de Nova York/Nova Jersey", city: "Nova Jersey" },
+  "can-bih-2026": { stadiumName: "Est\xE1dio de Toronto", city: "Toronto" },
+  "can-qat-2026": { stadiumName: "BC Place de Vancouver", city: "Vancouver" },
+  "civ-ecu-2026": { stadiumName: "Est\xE1dio de Filad\xE9lfia", city: "Filad\xE9lfia" },
+  "cod-uzb-2026": { stadiumName: "Est\xE1dio de Atlanta", city: "Atlanta" },
+  "col-cod-2026": { stadiumName: "Est\xE1dio de Guadalajara", city: "Guadalajara" },
+  "col-por-2026": { stadiumName: "Est\xE1dio de Miami", city: "Miami" },
+  "cpv-ksa-2026": { stadiumName: "Est\xE1dio de Houston", city: "Houston" },
+  "cro-gha-2026": { stadiumName: "Est\xE1dio de Filad\xE9lfia", city: "Filad\xE9lfia" },
+  "cuw-civ-2026": { stadiumName: "Est\xE1dio de Filad\xE9lfia", city: "Filad\xE9lfia" },
+  "cze-mex-2026": { stadiumName: "Est\xE1dio da Cidade do M\xE9xico", city: "Cidade do M\xE9xico" },
+  "cze-rsa-2026": { stadiumName: "Est\xE1dio de Atlanta", city: "Atlanta" },
+  "ecu-cuw-2026": { stadiumName: "Est\xE1dio de Kansas City", city: "Kansas City" },
+  "ecu-ger-2026": { stadiumName: "Est\xE1dio de Nova York/Nova Jersey", city: "Nova Jersey" },
+  "egy-irn-2026": { stadiumName: "Est\xE1dio de Seattle", city: "Seattle" },
+  "eng-cro-2026": { stadiumName: "Est\xE1dio de Dallas", city: "Dallas" },
+  "eng-gha-2026": { stadiumName: "Est\xE1dio de Boston", city: "Boston" },
+  "esp-cpv-2026": { stadiumName: "Est\xE1dio de Atlanta", city: "Atlanta" },
+  "esp-ksa-2026": { stadiumName: "Est\xE1dio de Atlanta", city: "Atlanta" },
+  "fra-irq-2026": { stadiumName: "Est\xE1dio de Filad\xE9lfia", city: "Filad\xE9lfia" },
+  "fra-sen-2026": { stadiumName: "Est\xE1dio de Nova York/Nova Jersey", city: "Nova Jersey" },
+  "ger-civ-2026": { stadiumName: "Est\xE1dio de Toronto", city: "Toronto" },
+  "ger-cuw-2026": { stadiumName: "Est\xE1dio de Houston", city: "Houston" },
+  "gha-pan-2026": { stadiumName: "Est\xE1dio de Toronto", city: "Toronto" },
+  "hai-sco-2026": { stadiumName: "Est\xE1dio de Boston", city: "Boston" },
+  "irn-nzl-2026": { stadiumName: "Est\xE1dio de Los Angeles", city: "Los Angeles" },
+  "irq-nor-2026": { stadiumName: "Est\xE1dio de Boston", city: "Boston" },
+  "jor-alg-2026": { stadiumName: "Est\xE1dio da Ba\xEDa de S\xE3o Francisco", city: "\xC1rea da ba\xEDa de S\xE3o Francisco" },
+  "jor-arg-2026": { stadiumName: "Est\xE1dio de Dallas", city: "Dallas" },
+  "jpn-swe-2026": { stadiumName: "Est\xE1dio de Dallas", city: "Dallas" },
+  "kor-cze-2026": { stadiumName: "Est\xE1dio de Guadalajara", city: "Guadalajara" },
+  "ksa-uru-2026": { stadiumName: "Est\xE1dio de Miami", city: "Miami" },
+  "mar-hai-2026": { stadiumName: "Est\xE1dio de Atlanta", city: "Atlanta" },
+  "mex-kor-2026": { stadiumName: "Est\xE1dio de Guadalajara", city: "Guadalajara" },
+  "mex-rsa-2026": { stadiumName: "Est\xE1dio da Cidade do M\xE9xico", city: "Cidade do M\xE9xico" },
+  "ned-jpn-2026": { stadiumName: "Est\xE1dio de Dallas", city: "Dallas" },
+  "ned-swe-2026": { stadiumName: "Est\xE1dio de Houston", city: "Houston" },
+  "nor-fra-2026": { stadiumName: "Est\xE1dio de Boston", city: "Boston" },
+  "nor-sen-2026": { stadiumName: "Est\xE1dio de Nova York/Nova Jersey", city: "Nova Jersey" },
+  "nzl-bel-2026": { stadiumName: "BC Place de Vancouver", city: "Vancouver" },
+  "nzl-egy-2026": { stadiumName: "BC Place de Vancouver", city: "Vancouver" },
+  "pan-cro-2026": { stadiumName: "Est\xE1dio de Toronto", city: "Toronto" },
+  "pan-eng-2026": { stadiumName: "Est\xE1dio de Nova York/Nova Jersey", city: "Nova Jersey" },
+  "par-aus-2026": { stadiumName: "Est\xE1dio da Ba\xEDa de S\xE3o Francisco", city: "\xC1rea da ba\xEDa de S\xE3o Francisco" },
+  "por-cod-2026": { stadiumName: "Est\xE1dio de Houston", city: "Houston" },
+  "por-uzb-2026": { stadiumName: "Est\xE1dio de Houston", city: "Houston" },
+  "qat-sui-2026": { stadiumName: "Est\xE1dio da Ba\xEDa de S\xE3o Francisco", city: "\xC1rea da ba\xEDa de S\xE3o Francisco" },
+  "rsa-kor-2026": { stadiumName: "Est\xE1dio de Monterrey", city: "Monterrey" },
+  "sco-bra-2026": { stadiumName: "Est\xE1dio de Miami", city: "Miami" },
+  "sco-mar-2026": { stadiumName: "Est\xE1dio de Boston", city: "Boston" },
+  "sen-irq-2026": { stadiumName: "Est\xE1dio de Toronto", city: "Toronto" },
+  "sui-bih-2026": { stadiumName: "Est\xE1dio de Los Angeles", city: "Los Angeles" },
+  "sui-can-2026": { stadiumName: "BC Place de Vancouver", city: "Vancouver" },
+  "swe-tun-2026": { stadiumName: "Est\xE1dio de Monterrey", city: "Monterrey" },
+  "tun-jpn-2026": { stadiumName: "Est\xE1dio de Monterrey", city: "Monterrey" },
+  "tun-ned-2026": { stadiumName: "Est\xE1dio de Kansas City", city: "Kansas City" },
+  "tur-par-2026": { stadiumName: "Est\xE1dio da Ba\xEDa de S\xE3o Francisco", city: "\xC1rea da ba\xEDa de S\xE3o Francisco" },
+  "tur-usa-2026": { stadiumName: "Est\xE1dio de Los Angeles", city: "Los Angeles" },
+  "uru-cpv-2026": { stadiumName: "Est\xE1dio de Miami", city: "Miami" },
+  "uru-esp-2026": { stadiumName: "Est\xE1dio de Guadalajara", city: "Guadalajara" },
+  "usa-aus-2026": { stadiumName: "Est\xE1dio de Seattle", city: "Seattle" },
+  "usa-par-2026": { stadiumName: "Est\xE1dio de Los Angeles", city: "Los Angeles" },
+  "uzb-col-2026": { stadiumName: "Est\xE1dio da Cidade do M\xE9xico", city: "Cidade do M\xE9xico" }
+};
 
 // src/data/tournament.ts
 function team(id, name, code, flagSvg, primaryColor, secondaryColor, group, stats) {
@@ -1859,6 +1983,166 @@ var sf = Array.from({ length: 2 }, (_, i) => ({
 var final = [{ id: "F-1", stage: "F" }];
 var bracket = [...r32, ...r16, ...qf, ...sf, ...final];
 
+// src/appMatches.ts
+var PT_MONTHS = [
+  "Janeiro",
+  "Fevereiro",
+  "Mar\xE7o",
+  "Abril",
+  "Maio",
+  "Junho",
+  "Julho",
+  "Agosto",
+  "Setembro",
+  "Outubro",
+  "Novembro",
+  "Dezembro"
+];
+var DEFAULT_SCHEDULED_STADIUM = "Est\xE1dio a confirmar";
+var DEFAULT_SCHEDULED_CITY = "A CONFIRMAR";
+var FIFA_SUPPLEMENTAL_MATCHES = [
+  {
+    teamA: "QAT",
+    teamB: "SUI",
+    kickoffTimestamp: "2026-06-13T16:00:00-03:00",
+    status: "FINISHED",
+    stadiumName: "Est\xE1dio da Ba\xEDa de S\xE3o Francisco",
+    city: "\xC1REA DA BA\xCDA DE S\xC3O FRANCISCO",
+    score: {
+      teamA: 1,
+      teamB: 1
+    }
+  }
+];
+var BASE_MATCHES = matches_default;
+var existingIds = new Set(BASE_MATCHES.map((match) => match.id));
+var lineupByTeamCode = /* @__PURE__ */ new Map();
+for (const match of BASE_MATCHES) {
+  for (const team2 of [match.teamA, match.teamB]) {
+    if (!lineupByTeamCode.has(team2.code) && team2.lineup.length > 0) {
+      lineupByTeamCode.set(team2.code, team2.lineup);
+    }
+  }
+}
+var teamByCode = new Map(
+  standings.map((row) => [
+    row.code,
+    {
+      name: row.name,
+      code: row.code,
+      flagSvg: row.flagSvg,
+      primaryColor: row.primaryColor,
+      secondaryColor: row.secondaryColor,
+      group: row.group
+    }
+  ])
+);
+var formatKickoffDate = (kickoffTimestamp) => {
+  const [datePart] = kickoffTimestamp.split("T");
+  const [year, month, day] = datePart.split("-").map(Number);
+  return `${day} ${PT_MONTHS[month - 1]}, ${year}`;
+};
+var formatKickoffTime = (kickoffTimestamp) => kickoffTimestamp.slice(11, 16);
+var buildTeamEntry = (teamCode) => {
+  const team2 = teamByCode.get(teamCode);
+  if (!team2) {
+    throw new Error(`Time ${teamCode} n\xE3o encontrado no seed do torneio.`);
+  }
+  return {
+    ...team2,
+    lineup: lineupByTeamCode.get(teamCode) ?? []
+  };
+};
+var buildSupplementalMatch = (seed) => {
+  const { teamA: teamACode, teamB: teamBCode, kickoffTimestamp, status, score, stadiumName, city } = seed;
+  const kickoffMs = new Date(kickoffTimestamp).getTime();
+  return {
+    id: `${teamACode.toLowerCase()}-${teamBCode.toLowerCase()}-2026`,
+    teamA: buildTeamEntry(teamACode),
+    teamB: buildTeamEntry(teamBCode),
+    stadiumName,
+    city,
+    stageName: "Group Stage",
+    kickoffTime: formatKickoffTime(kickoffTimestamp),
+    kickoffDate: formatKickoffDate(kickoffTimestamp),
+    kickoffTimestamp,
+    status,
+    score,
+    countdownTargetSeconds: Math.max(0, Math.floor((kickoffMs - Date.now()) / 1e3)),
+    broadcasters: []
+  };
+};
+var buildScheduledMatch = (teamACode, teamBCode, kickoffTimestamp) => buildSupplementalMatch({
+  teamA: teamACode,
+  teamB: teamBCode,
+  kickoffTimestamp,
+  status: "PRE_GAME",
+  stadiumName: DEFAULT_SCHEDULED_STADIUM,
+  city: DEFAULT_SCHEDULED_CITY
+});
+var APP_MATCHES = [
+  ...BASE_MATCHES,
+  ...FIFA_SUPPLEMENTAL_MATCHES.filter(
+    ({ teamA, teamB }) => !existingIds.has(`${teamA.toLowerCase()}-${teamB.toLowerCase()}-2026`)
+  ).map(buildSupplementalMatch),
+  ...BBC_SCHEDULED_MATCHES.filter(
+    ({ teamA, teamB }) => !existingIds.has(`${teamA.toLowerCase()}-${teamB.toLowerCase()}-2026`)
+  ).map(
+    ({ teamA, teamB, kickoffTimestamp }) => buildScheduledMatch(teamA, teamB, kickoffTimestamp)
+  )
+].map((match) => {
+  const officialVenue = FIFA_MATCH_VENUES[match.id];
+  if (!officialVenue) {
+    return match;
+  }
+  return {
+    ...match,
+    stadiumName: officialVenue.stadiumName.trim(),
+    city: officialVenue.city.trim()
+  };
+});
+
+// src/data/questions.ts
+var triviaQuestions = [
+  {
+    id: "host-countries",
+    category: "Sedes",
+    question: "Quantos pa\xEDses sediam juntos a Copa do Mundo de 2026?",
+    options: ["2", "3", "4", "5"],
+    correctOptionIndex: 1,
+    explanation: "A edi\xE7\xE3o de 2026 ser\xE1 dividida entre Estados Unidos, M\xE9xico e Canad\xE1."
+  },
+  {
+    id: "metlife-final",
+    category: "Est\xE1dios",
+    question: "Qual est\xE1dio recebe a grande final no chaveamento do app?",
+    options: [
+      "BC Place de Vancouver",
+      "Est\xE1dio da Cidade do M\xE9xico",
+      "MetLife Stadium",
+      "Arrowhead Stadium"
+    ],
+    correctOptionIndex: 2,
+    explanation: "O mata-mata termina no MetLife Stadium, em East Rutherford, palco da final."
+  },
+  {
+    id: "group-format",
+    category: "Formato",
+    question: "Quantos grupos de quatro sele\xE7\xF5es aparecem na fase inicial desta edi\xE7\xE3o?",
+    options: ["8", "10", "12", "16"],
+    correctOptionIndex: 2,
+    explanation: "O modelo adotado no app usa 12 grupos de quatro sele\xE7\xF5es para a Copa de 2026."
+  },
+  {
+    id: "broadcast-core",
+    category: "Transmiss\xE3o",
+    question: "Qual aba do app concentra o guia de onde assistir e o feed de lances?",
+    options: ["Not\xEDcias", "Ao Vivo", "Fan Zone", "Est\xE1dios"],
+    correctOptionIndex: 1,
+    explanation: "A aba Ao Vivo re\xFAne o cron\xF4metro, as emissoras e os lances oficiais da FIFA."
+  }
+];
+
 // src/standings.ts
 var POINTS_FOR_WIN = 3;
 var POINTS_FOR_DRAW = 1;
@@ -1893,7 +2177,7 @@ function createSeedRowFromMatchTeam(team2) {
     dataSource: "seed"
   };
 }
-function getCanonicalSeedStandings(matches = matches_default) {
+function getCanonicalSeedStandings(matches = APP_MATCHES) {
   const canonicalRows = new Map(
     standings.map((row) => [
       row.code,
@@ -1916,7 +2200,7 @@ function countsForStandings(match, groupByCode) {
   const teamBGroup = groupByCode.get(match.teamB.code);
   return Boolean(teamAGroup) && Boolean(teamBGroup) && teamAGroup === teamBGroup && match.stageName === "Group Stage" && (match.status === "LIVE" || match.status === "FINISHED") && match.score;
 }
-function computeStandings(matches = matches_default) {
+function computeStandings(matches = APP_MATCHES) {
   const canonicalSeedStandings = getCanonicalSeedStandings(matches);
   const groupByCode = new Map(
     canonicalSeedStandings.map((row) => [row.code, row.group])
@@ -1980,7 +2264,6 @@ var BACKGROUND_WARM_FAILURE_RETRY_MS = 30 * 1e3;
 var CIRCUIT_BREAKER_FAILURE_THRESHOLD = 3;
 var CIRCUIT_BREAKER_OPEN_MS = 60 * 1e3;
 var TOURNAMENT_LEADER_LIMIT = 5;
-var APP_MATCHES = matches_default;
 var APP_MATCHES_BY_ID = new Map(APP_MATCHES.map((match) => [match.id, match]));
 var GOAL_INCIDENT_SUFFIX = " marcou.";
 var YELLOW_CARD_INCIDENT_SUFFIX = " recebeu amarelo.";
