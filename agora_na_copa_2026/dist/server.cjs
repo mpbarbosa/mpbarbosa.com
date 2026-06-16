@@ -1527,7 +1527,7 @@ var matches_default = [
         { id: "uy8", name: "Nicol\xE1s de la Cruz", number: 7, position: "MF", x: 70, y: 50, club: "Flamengo" },
         { id: "uy9", name: "Facundo Pellistri", number: 11, position: "FW", x: 15, y: 75, club: "Panathinaikos" },
         { id: "uy10", name: "Darwin N\xFA\xF1ez", number: 9, position: "FW", x: 50, y: 85, club: "Liverpool" },
-        { id: "uy11", name: "Maximiliano Ara\xFAjo", number: 20, position: "FW", x: 85, y: 75, club: "Sporting" }
+        { id: "uy11", name: "Maximiliano Ara\xFAjo", number: 20, position: "FW", x: 85, y: 75, club: "Sporting", socials: { instagram: "https://instagram.com/maximilianoaraujo6" } }
       ]
     },
     stadiumName: "Est\xE1dio de Miami",
