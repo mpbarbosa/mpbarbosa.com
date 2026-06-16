@@ -1768,7 +1768,10 @@ var matches_default = [
           position: "MF",
           x: 70,
           y: 45,
-          club: "Wolverhampton"
+          club: "Wolverhampton",
+          socials: {
+            instagram: "https://instagram.com/joaogomes08"
+          }
         },
         {
           id: "b8",
