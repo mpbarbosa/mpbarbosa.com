@@ -38,6 +38,13 @@ var PLAYER_METADATA = [
     socials: {
       instagram: "https://instagram.com/aalamri32"
     }
+  },
+  {
+    teamCode: "IRN",
+    aliases: ["Ramin Rezaeian", "Rezaeian", "Ramin"],
+    socials: {
+      instagram: "https://instagram.com/raminrezaeian"
+    }
   }
 ];
 var getPlayerMetadataSupplement = (teamCode, playerName) => {
