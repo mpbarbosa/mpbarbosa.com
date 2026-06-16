@@ -45,6 +45,13 @@ var PLAYER_METADATA = [
     socials: {
       instagram: "https://instagram.com/raminrezaeian"
     }
+  },
+  {
+    teamCode: "NOR",
+    aliases: ["Erling Haaland", "Haaland", "E. Haaland"],
+    socials: {
+      instagram: "https://instagram.com/erling"
+    }
   }
 ];
 var getPlayerMetadataSupplement = (teamCode, playerName) => {
