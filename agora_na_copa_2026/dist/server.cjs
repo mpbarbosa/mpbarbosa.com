@@ -1737,7 +1737,10 @@ var matches_default = [
           x: 62,
           y: 75,
           club: "Arsenal",
-          pictureUrl: "https://digitalhub.fifa.com/transform/b5870a76-5391-40b7-a348-e2b17995637b/GABRIEL-MAGALHAES_430601"
+          pictureUrl: "https://digitalhub.fifa.com/transform/b5870a76-5391-40b7-a348-e2b17995637b/GABRIEL-MAGALHAES_430601",
+          socials: {
+            instagram: "https://instagram.com/gmagalhaes4"
+          }
         },
         {
           id: "b5",
