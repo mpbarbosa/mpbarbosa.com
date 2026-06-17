@@ -31,240 +31,6 @@ var import_dotenv = __toESM(require("dotenv"), 1);
 
 // src/data/squads.json
 var squads_default = {
-  "ENG-1": {
-    fifaId: "ENG-1",
-    teamCode: "ENG",
-    name: "J. Pickford",
-    fullName: "Jordan Pickford",
-    number: 1,
-    position: "GK",
-    club: "Everton"
-  },
-  "ENG-2": {
-    fifaId: "ENG-2",
-    teamCode: "ENG",
-    name: "K. Walker",
-    fullName: "Kyle Walker",
-    number: 2,
-    position: "DF",
-    club: "Manchester City"
-  },
-  "ENG-3": {
-    fifaId: "ENG-3",
-    teamCode: "ENG",
-    name: "L. Shaw",
-    fullName: "Luke Shaw",
-    number: 3,
-    position: "DF",
-    club: "Manchester United"
-  },
-  "ENG-4": {
-    fifaId: "ENG-4",
-    teamCode: "ENG",
-    name: "D. Rice",
-    fullName: "Declan Rice",
-    number: 4,
-    position: "MF",
-    club: "Arsenal"
-  },
-  "ENG-5": {
-    fifaId: "ENG-5",
-    teamCode: "ENG",
-    name: "J. Stones",
-    fullName: "John Stones",
-    number: 5,
-    position: "DF",
-    club: "Manchester City"
-  },
-  "ENG-6": {
-    fifaId: "ENG-6",
-    teamCode: "ENG",
-    name: "M. Gu\xE9hi",
-    fullName: "Marc Gu\xE9hi",
-    number: 6,
-    position: "DF",
-    club: "Newcastle"
-  },
-  "ENG-7": {
-    fifaId: "ENG-7",
-    teamCode: "ENG",
-    name: "P. Foden",
-    fullName: "Phil Foden",
-    number: 7,
-    position: "FW",
-    club: "Manchester City"
-  },
-  "ENG-8": {
-    fifaId: "ENG-8",
-    teamCode: "ENG",
-    name: "J. Bellingham",
-    fullName: "Jude Bellingham",
-    number: 8,
-    position: "MF",
-    club: "Real Madrid"
-  },
-  "ENG-9": {
-    fifaId: "ENG-9",
-    teamCode: "ENG",
-    name: "H. Kane",
-    fullName: "Harry Kane",
-    number: 9,
-    position: "FW",
-    club: "Bayern M\xFCnchen"
-  },
-  "ENG-10": {
-    fifaId: "ENG-10",
-    teamCode: "ENG",
-    name: "E. Eze",
-    fullName: "Eberechi Eze",
-    number: 10,
-    position: "FW",
-    club: "Crystal Palace"
-  },
-  "ENG-11": {
-    fifaId: "ENG-11",
-    teamCode: "ENG",
-    name: "B. Saka",
-    fullName: "Bukayo Saka",
-    number: 11,
-    position: "FW",
-    club: "Arsenal"
-  },
-  "ENG-12": {
-    fifaId: "ENG-12",
-    teamCode: "ENG",
-    name: "D. Henderson",
-    fullName: "Dean Henderson",
-    number: 12,
-    position: "GK",
-    club: "Crystal Palace"
-  },
-  "ENG-13": {
-    fifaId: "ENG-13",
-    teamCode: "ENG",
-    name: "A. Gordon",
-    fullName: "Anthony Gordon",
-    number: 13,
-    position: "FW",
-    club: "Liverpool"
-  },
-  "ENG-14": {
-    fifaId: "ENG-14",
-    teamCode: "ENG",
-    name: "C. Gallagher",
-    fullName: "Conor Gallagher",
-    number: 14,
-    position: "MF",
-    club: "Atl\xE9tico de Madrid"
-  },
-  "ENG-15": {
-    fifaId: "ENG-15",
-    teamCode: "ENG",
-    name: "B. White",
-    fullName: "Ben White",
-    number: 15,
-    position: "DF",
-    club: "Arsenal"
-  },
-  "ENG-16": {
-    fifaId: "ENG-16",
-    teamCode: "ENG",
-    name: "K. Mainoo",
-    fullName: "Kobbie Mainoo",
-    number: 16,
-    position: "MF",
-    club: "Manchester United"
-  },
-  "ENG-17": {
-    fifaId: "ENG-17",
-    teamCode: "ENG",
-    name: "O. Watkins",
-    fullName: "Ollie Watkins",
-    number: 17,
-    position: "FW",
-    club: "Aston Villa"
-  },
-  "ENG-18": {
-    fifaId: "ENG-18",
-    teamCode: "ENG",
-    name: "T. Alexander-Arnold",
-    fullName: "Trent Alexander-Arnold",
-    number: 18,
-    position: "MF",
-    club: "Real Madrid"
-  },
-  "ENG-19": {
-    fifaId: "ENG-19",
-    teamCode: "ENG",
-    name: "M. Gibbs-White",
-    fullName: "Morgan Gibbs-White",
-    number: 19,
-    position: "MF",
-    club: "Nottingham Forest"
-  },
-  "ENG-20": {
-    fifaId: "ENG-20",
-    teamCode: "ENG",
-    name: "C. Palmer",
-    fullName: "Cole Palmer",
-    number: 20,
-    position: "MF",
-    club: "Chelsea"
-  },
-  "ENG-21": {
-    fifaId: "ENG-21",
-    teamCode: "ENG",
-    name: "L. Colwill",
-    fullName: "Levi Colwill",
-    number: 21,
-    position: "DF",
-    club: "Chelsea"
-  },
-  "ENG-22": {
-    fifaId: "ENG-22",
-    teamCode: "ENG",
-    name: "R. James",
-    fullName: "Reece James",
-    number: 22,
-    position: "DF",
-    club: "Chelsea"
-  },
-  "ENG-23": {
-    fifaId: "ENG-23",
-    teamCode: "ENG",
-    name: "N. Pope",
-    fullName: "Nick Pope",
-    number: 23,
-    position: "GK",
-    club: "Newcastle"
-  },
-  "ENG-24": {
-    fifaId: "ENG-24",
-    teamCode: "ENG",
-    name: "E. Konsa",
-    fullName: "Ezri Konsa",
-    number: 24,
-    position: "DF",
-    club: "Aston Villa"
-  },
-  "ENG-25": {
-    fifaId: "ENG-25",
-    teamCode: "ENG",
-    name: "A. Wharton",
-    fullName: "Adam Wharton",
-    number: 25,
-    position: "MF",
-    club: "Crystal Palace"
-  },
-  "ENG-26": {
-    fifaId: "ENG-26",
-    teamCode: "ENG",
-    name: "J. Bowen",
-    fullName: "Jarrod Bowen",
-    number: 26,
-    position: "FW",
-    club: "West Ham"
-  },
   "403001": {
     fifaId: "403001",
     teamCode: "POR",
@@ -11177,6 +10943,522 @@ var squads_default = {
     position: "DF",
     club: "Emelec",
     pictureUrl: "https://digitalhub.fifa.com/transform/84400276-88b5-4054-b0fb-f8206f384291/MEDINA-Yaimar_463489"
+  },
+  "336022": {
+    fifaId: "336022",
+    teamCode: "ENG",
+    name: "Pickford",
+    fullName: "Jordan Pickford",
+    number: 1,
+    position: "GK",
+    club: "Everton",
+    pictureUrl: "https://digitalhub.fifa.com/transform/5f9b3bbf-edb5-4956-bce7-2d0a8e77f6ab/PICKFORD-Jordan_336022"
+  },
+  "403049": {
+    fifaId: "403049",
+    teamCode: "ENG",
+    name: "Konsa",
+    fullName: "Ezri Konsa",
+    number: 2,
+    position: "DF",
+    club: "Aston Villa",
+    pictureUrl: "https://digitalhub.fifa.com/transform/54b28723-92e1-42e8-97b5-162f5099cf60/KONSA-Ezri_403049"
+  },
+  "463780": {
+    fifaId: "463780",
+    teamCode: "ENG",
+    name: "O'Reilly",
+    fullName: "Nico Oreilly",
+    number: 3,
+    position: "DF",
+    club: "Manchester United",
+    pictureUrl: "https://digitalhub.fifa.com/transform/6a6be1c6-3496-49ba-81ca-354bdb2f404c/OREILLY-Nico_390761"
+  },
+  "433097": {
+    fifaId: "433097",
+    teamCode: "ENG",
+    name: "Declan Rice",
+    fullName: "Declan Rice",
+    number: 4,
+    position: "MF",
+    club: "Arsenal",
+    pictureUrl: "https://digitalhub.fifa.com/transform/acb98657-fa9b-4202-bc38-075a97b5bf78/RICE-Declan_433097"
+  },
+  "369434": {
+    fifaId: "369434",
+    teamCode: "ENG",
+    name: "Stones",
+    fullName: "John Stones",
+    number: 5,
+    position: "DF",
+    club: "Manchester City",
+    pictureUrl: "https://digitalhub.fifa.com/transform/bb455f6a-d793-44ef-92b8-bd1aff6d14d6/STONES-John_369434"
+  },
+  "405841": {
+    fifaId: "405841",
+    teamCode: "ENG",
+    name: "Gu\xE9hi",
+    fullName: "Marc Guehi",
+    number: 6,
+    position: "DF",
+    club: "Crystal Palace",
+    pictureUrl: "https://digitalhub.fifa.com/transform/c9686f87-8abd-45fb-a1e0-321ee8470dd6/GUEHI-Marc_405841"
+  },
+  "448196": {
+    fifaId: "448196",
+    teamCode: "ENG",
+    name: "Saka",
+    fullName: "Bukayo Saka",
+    number: 7,
+    position: "FW",
+    club: "Arsenal",
+    pictureUrl: "https://digitalhub.fifa.com/transform/b1182d25-62ad-4ad8-8bae-2b7577569484/MUMIN-Abdul_441336"
+  },
+  "481610": {
+    fifaId: "481610",
+    teamCode: "ENG",
+    name: "Elliot Anderson",
+    fullName: "Elliot Anderson",
+    number: 8,
+    position: "MF",
+    club: "Newcastle United",
+    pictureUrl: "https://digitalhub.fifa.com/transform/8da5855f-c957-4151-94a0-731e9714249f/ANDERSON-Elliot_481610"
+  },
+  "369419": {
+    fifaId: "369419",
+    teamCode: "ENG",
+    name: "Kane",
+    fullName: "Harry Kane",
+    number: 9,
+    position: "FW",
+    club: "Bayern M\xFCnchen",
+    pictureUrl: "https://digitalhub.fifa.com/transform/5ad83fe6-1139-4f92-a97c-669052eb1755/KANE-Harry_369419",
+    socials: {
+      instagram: "harrykane"
+    }
+  },
+  "448202": {
+    fifaId: "448202",
+    teamCode: "ENG",
+    name: "Bellingham",
+    fullName: "Jude Bellingham",
+    number: 10,
+    position: "MF",
+    club: "Real Madrid",
+    pictureUrl: "https://digitalhub.fifa.com/transform/d711b37f-ec06-4ea7-bb52-50ba0a42ef67/BELLINGHAM-Jude_448202"
+  },
+  "401470": {
+    fifaId: "401470",
+    teamCode: "ENG",
+    name: "Rashford",
+    fullName: "Marcus Rashford",
+    number: 11,
+    position: "FW",
+    club: "Manchester United",
+    pictureUrl: "https://digitalhub.fifa.com/transform/1c89a3e5-8d8f-474f-a0fe-8c39faa3dc8d/RASHFORD-Marcus_401470"
+  },
+  "403046": {
+    fifaId: "403046",
+    teamCode: "ENG",
+    name: "Henderson",
+    fullName: "Dean Henderson",
+    number: 13,
+    position: "GK",
+    club: "Crystal Palace",
+    pictureUrl: "https://digitalhub.fifa.com/transform/acb3f8de-1176-40ef-99c2-e671120fbde0/HENDERSON-Dean_403046"
+  },
+  "356189": {
+    fifaId: "356189",
+    teamCode: "ENG",
+    name: "Henderson",
+    fullName: "Jordan Henderson",
+    number: 14,
+    position: "MF",
+    club: "Ajax",
+    pictureUrl: "https://digitalhub.fifa.com/transform/95e802dd-2731-42ff-97ce-b92c47954fa1/HENDERSON-Jordan_356189"
+  },
+  "494345": {
+    fifaId: "494345",
+    teamCode: "ENG",
+    name: "Dan Burn",
+    fullName: "Dan Burn",
+    number: 15,
+    position: "DF",
+    club: "Newcastle United",
+    pictureUrl: "https://digitalhub.fifa.com/transform/ac44e40e-162d-4459-94b6-8971a032e371/BURN-Dan_494345"
+  },
+  "482621": {
+    fifaId: "482621",
+    teamCode: "ENG",
+    name: "Kobbie Mainoo",
+    fullName: "Kobbie Mainoo",
+    number: 16,
+    position: "MF",
+    club: "Manchester United",
+    pictureUrl: "https://digitalhub.fifa.com/transform/add399f5-3af6-4ce6-b078-8595e805f1be/MAINOO-Kobbie_482621"
+  },
+  "492716": {
+    fifaId: "492716",
+    teamCode: "ENG",
+    name: "Morgan Rogers",
+    fullName: "Morgan Rogers",
+    number: 17,
+    position: "MF",
+    club: "Aston Villa",
+    pictureUrl: "https://digitalhub.fifa.com/transform/426bfdb9-3999-4826-81b8-dd33691a45a2/ROGERS-Morgan_492716"
+  },
+  "448189": {
+    fifaId: "448189",
+    teamCode: "ENG",
+    name: "Gordon",
+    fullName: "Anthony Gordon",
+    number: 18,
+    position: "FW",
+    club: "Liverpool",
+    pictureUrl: "https://digitalhub.fifa.com/transform/bb7bbfe0-791d-408e-a2c2-f33156fce3e8/GORDON-Anthony_448189"
+  },
+  "448203": {
+    fifaId: "448203",
+    teamCode: "ENG",
+    name: "Watkins",
+    fullName: "Ollie Watkins",
+    number: 19,
+    position: "FW",
+    club: "Aston Villa",
+    pictureUrl: "https://digitalhub.fifa.com/transform/876d6c91-be07-4b54-a86d-d73e2ef52d8f/WATKINS-Ollie_448203"
+  },
+  "489732": {
+    fifaId: "489732",
+    teamCode: "ENG",
+    name: "Madueke",
+    fullName: "Noni Madueke",
+    number: 20,
+    position: "FW",
+    club: "Chelsea",
+    pictureUrl: "https://digitalhub.fifa.com/transform/115733f4-8e52-477a-867f-063f1e2c7752/MADUEKE-Noni_489732"
+  },
+  "473113": {
+    fifaId: "473113",
+    teamCode: "ENG",
+    name: "Eberechi Eze",
+    fullName: "Eberechi Eze",
+    number: 21,
+    position: "MF",
+    club: "Crystal Palace",
+    pictureUrl: "https://digitalhub.fifa.com/transform/c08bf1d9-1dce-4862-b810-2f9e198a4950/EZE-Eberechi_473113"
+  },
+  "448198": {
+    fifaId: "448198",
+    teamCode: "ENG",
+    name: "Toney",
+    fullName: "Ivan Toney",
+    number: 22,
+    position: "FW",
+    club: "Al-Ahli",
+    pictureUrl: "https://digitalhub.fifa.com/transform/720c0b56-6b1c-49aa-8c9d-5aec2c23c673/TONEY-Ivan_448198"
+  },
+  "485080": {
+    fifaId: "485080",
+    teamCode: "ENG",
+    name: "James Trafford",
+    fullName: "James Trafford",
+    number: 23,
+    position: "GK",
+    club: "Burnley",
+    pictureUrl: "https://digitalhub.fifa.com/transform/f923135f-5d11-46cb-90a3-517f74cb4c76/TRAFFORD-James_485080"
+  },
+  "439641": {
+    fifaId: "439641",
+    teamCode: "ENG",
+    name: "James",
+    fullName: "Reece James",
+    number: 24,
+    position: "DF",
+    club: "Chelsea",
+    pictureUrl: "https://digitalhub.fifa.com/transform/1ffcc3c3-fdf3-4b61-9ac5-299213771a62/JAMES-Reece_439641"
+  },
+  "506329": {
+    fifaId: "506329",
+    teamCode: "ENG",
+    name: "Djed Spence",
+    fullName: "Djed Spence",
+    number: 25,
+    position: "DF",
+    club: "Crystal Palace",
+    pictureUrl: "https://digitalhub.fifa.com/transform/03356baa-b368-4192-bf86-ad3033e57ad2/SPENCE-Djed_506329"
+  },
+  "463809": {
+    fifaId: "463809",
+    teamCode: "ENG",
+    name: "Jarell Quansah",
+    fullName: "Jarell Quansah",
+    number: 26,
+    position: "DF",
+    club: "Liverpool",
+    pictureUrl: "https://digitalhub.fifa.com/transform/60c5fb68-c640-45dc-a493-75e1d9f3450c/QUANSAH-Jarell_463809"
+  },
+  "369029": {
+    fifaId: "369029",
+    teamCode: "CRO",
+    name: "Livakovi\u0107",
+    fullName: "Dominik Livakovic",
+    number: 1,
+    position: "GK",
+    club: "Fenerbah\xE7e",
+    pictureUrl: "https://digitalhub.fifa.com/transform/6f54cf31-4fd8-4dff-aaa7-9db6bf2fa2ec/LIVAKOVIC-Dominik_369029"
+  },
+  "433667": {
+    fifaId: "433667",
+    teamCode: "CRO",
+    name: "Stani\u0161i\u0107",
+    fullName: "Josip Stanisic",
+    number: 2,
+    position: "DF",
+    club: "Bayer Leverkusen",
+    pictureUrl: "https://digitalhub.fifa.com/transform/c1f59cf4-db22-4b38-af85-ab5692105f95/STANISIC-Josip_433667"
+  },
+  "448174": {
+    fifaId: "448174",
+    teamCode: "CRO",
+    name: "Pongra\u010Di\u0107",
+    fullName: "Marin Pongracic",
+    number: 3,
+    position: "DF",
+    club: "Fiorentina",
+    pictureUrl: "https://digitalhub.fifa.com/transform/002f5150-852a-45f5-9a9b-46cd3dcaface/PONGRACIC-Marin_448174"
+  },
+  "448180": {
+    fifaId: "448180",
+    teamCode: "CRO",
+    name: "Gvardiol",
+    fullName: "Josko Gvardiol",
+    number: 4,
+    position: "DF",
+    club: "Manchester City",
+    pictureUrl: "https://digitalhub.fifa.com/transform/18cba70e-f4ed-4f57-8e6a-5d4bfd3df8b0/GVARDIOL-Josko_448180"
+  },
+  "372424": {
+    fifaId: "372424",
+    teamCode: "CRO",
+    name: "\u0106aleta-Car",
+    fullName: "Duje Caleta-Car",
+    number: 5,
+    position: "DF",
+    club: "Southampton",
+    pictureUrl: "https://digitalhub.fifa.com/transform/d8171170-8b91-49e5-b32a-7b3494bf5809/CALETA-CAR-Duje_372424"
+  },
+  "448171": {
+    fifaId: "448171",
+    teamCode: "CRO",
+    name: "\u0160utalo",
+    fullName: "Josip Sutalo",
+    number: 6,
+    position: "DF",
+    club: "Ajax",
+    pictureUrl: "https://digitalhub.fifa.com/transform/5b23d028-3bf8-4355-8364-7838975c264f/SUTALO-Josip_448171"
+  },
+  "389753": {
+    fifaId: "389753",
+    teamCode: "CRO",
+    name: "Moro",
+    fullName: "Nikola Moro",
+    number: 7,
+    position: "MF",
+    club: "Dynamo Moscow",
+    pictureUrl: "https://digitalhub.fifa.com/transform/f0845e44-1c38-4bff-a4d4-3e238907d961/MORO-Nikola_389753"
+  },
+  "339987": {
+    fifaId: "339987",
+    teamCode: "CRO",
+    name: "Kovacic",
+    fullName: "Mateo Kovacic",
+    number: 8,
+    position: "MF",
+    club: "Manchester City",
+    pictureUrl: "https://digitalhub.fifa.com/transform/5d230f74-1e00-4b42-a880-844fe2aee964/KOVACIC-Mateo_339987"
+  },
+  "336472": {
+    fifaId: "336472",
+    teamCode: "CRO",
+    name: "Kramari\u0107",
+    fullName: "Andrej Kramaric",
+    number: 9,
+    position: "FW",
+    club: "Hoffenheim",
+    pictureUrl: "https://digitalhub.fifa.com/transform/a1ea2a12-4fba-4dbb-9a75-25c88685d90c/KRAMARIC-Andrej_336472"
+  },
+  "241559": {
+    fifaId: "241559",
+    teamCode: "CRO",
+    name: "Modri\u0107",
+    fullName: "Luka Modric",
+    number: 10,
+    position: "MF",
+    club: "Real Madrid",
+    pictureUrl: "https://digitalhub.fifa.com/transform/cbff6a19-cce4-45ee-9869-84cf30ce5676/MODRIC-Luka_241559",
+    socials: {
+      instagram: "lukamodric10"
+    }
+  },
+  "430070": {
+    fifaId: "430070",
+    teamCode: "CRO",
+    name: "Ante Budimir",
+    fullName: "Ante Budimir",
+    number: 11,
+    position: "FW",
+    club: "Osasuna",
+    pictureUrl: "https://digitalhub.fifa.com/transform/135f8f1c-6e03-43b8-a18a-8914b4a4bd7a/BUDIMIR-Ante_430070"
+  },
+  "514526": {
+    fifaId: "514526",
+    teamCode: "CRO",
+    name: "Ivor Pandur",
+    fullName: "Ivor Pandur",
+    number: 12,
+    position: "GK",
+    club: "Levante",
+    pictureUrl: "https://digitalhub.fifa.com/transform/5a32b76f-ee60-4eb1-a2e0-b12bc86e41e0/PANDUR-Ivor_514526"
+  },
+  "409191": {
+    fifaId: "409191",
+    teamCode: "CRO",
+    name: "Nikola Vlasic",
+    fullName: "Nikola Vlasic",
+    number: 13,
+    position: "MF",
+    club: "Torino",
+    pictureUrl: "https://digitalhub.fifa.com/transform/59a64db7-c267-432d-9172-cf012b37c0b5/VLASIC-Nikola_409191"
+  },
+  "359381": {
+    fifaId: "359381",
+    teamCode: "CRO",
+    name: "Peri\u0161i\u0107",
+    fullName: "Ivan Perisic",
+    number: 14,
+    position: "FW",
+    club: "Hajduk Split",
+    pictureUrl: "https://digitalhub.fifa.com/transform/ba7ea3ab-0ef6-4cdd-834c-79a94739fe26/PERISIC-Ivan_359381"
+  },
+  "380005": {
+    fifaId: "380005",
+    teamCode: "CRO",
+    name: "Mario Pasalic",
+    fullName: "Mario Pasalic",
+    number: 15,
+    position: "MF",
+    club: "Atalanta",
+    pictureUrl: "https://digitalhub.fifa.com/transform/f3c0fd5e-6814-4acc-822a-2152e1cf79de/PASALIC-Mario_380005"
+  },
+  "482774": {
+    fifaId: "482774",
+    teamCode: "CRO",
+    name: "Martin Baturina",
+    fullName: "Martin Baturina",
+    number: 16,
+    position: "MF",
+    club: "Dinamo Zagreb",
+    pictureUrl: "https://digitalhub.fifa.com/transform/b9125a74-a920-4ffc-922b-68d57c524f4e/BATURINA-Martin_482774"
+  },
+  "485066": {
+    fifaId: "485066",
+    teamCode: "CRO",
+    name: "Petar Sucic",
+    fullName: "Petar Sucic",
+    number: 17,
+    position: "MF",
+    club: "RB Leipzig",
+    pictureUrl: "https://digitalhub.fifa.com/transform/89c383c2-39ba-413d-b945-e42dd2d47c6d/SUCIC-Petar_485066"
+  },
+  "448164": {
+    fifaId: "448164",
+    teamCode: "CRO",
+    name: "Jaki\u0107",
+    fullName: "Kristijan Jakic",
+    number: 18,
+    position: "DF",
+    club: "Eintracht Frankfurt",
+    pictureUrl: "https://digitalhub.fifa.com/transform/8fdebc61-0e5a-4d33-bf9f-3dcb4b413f21/JAKIC-Kristijan_448164"
+  },
+  "485065": {
+    fifaId: "485065",
+    teamCode: "CRO",
+    name: "Toni Fruk",
+    fullName: "Toni Fruk",
+    number: 19,
+    position: "MF",
+    club: "Dinamo Zagreb",
+    pictureUrl: "https://digitalhub.fifa.com/transform/f71b54fc-4cf8-463c-b8cc-7837e3d9eca8/FRUK-Toni_390197"
+  },
+  "485068": {
+    fifaId: "485068",
+    teamCode: "CRO",
+    name: "Igor Matanovic",
+    fullName: "Igor Matanovic",
+    number: 20,
+    position: "FW",
+    club: "Eintracht Frankfurt",
+    pictureUrl: "https://digitalhub.fifa.com/transform/72c82c16-da76-4f5a-a849-5b84343228eb/MATANOVIC-Igor_485068"
+  },
+  "448160": {
+    fifaId: "448160",
+    teamCode: "CRO",
+    name: "Su\u010Di\u0107",
+    fullName: "Luka Sucic",
+    number: 21,
+    position: "MF",
+    club: "RB Salzburg",
+    pictureUrl: "https://digitalhub.fifa.com/transform/4f4c5521-6b60-46e0-b93b-4aaae66f28f7/SUCIC-Luka_448160"
+  },
+  "499290": {
+    fifaId: "499290",
+    teamCode: "CRO",
+    name: "Luka Vuskovic",
+    fullName: "Luka Vuskovic",
+    number: 22,
+    position: "DF",
+    club: "Tottenham",
+    pictureUrl: "https://digitalhub.fifa.com/transform/c905e324-dc60-4e79-a2a1-c06412f27aed/VUSKOVIC-Luka_499290"
+  },
+  "448179": {
+    fifaId: "448179",
+    teamCode: "CRO",
+    name: "Kotarski",
+    fullName: "Dominik Kotarski",
+    number: 23,
+    position: "GK",
+    club: "Dinamo Zagreb",
+    pictureUrl: "https://digitalhub.fifa.com/transform/4fb248c2-8d15-4415-ab5f-19bf997447ae/KOTARSKI-Dominik_448179"
+  },
+  "482931": {
+    fifaId: "482931",
+    teamCode: "CRO",
+    name: "Marco Pasalic",
+    fullName: "Marco Pasalic",
+    number: 24,
+    position: "FW",
+    club: "Hajduk Split",
+    pictureUrl: "https://digitalhub.fifa.com/transform/ea070001-3892-4086-89c9-fe982a729f5d/PASALIC-Marco_482931"
+  },
+  "389740": {
+    fifaId: "389740",
+    teamCode: "CRO",
+    name: "Erli\u0107",
+    fullName: "Martin Erlic",
+    number: 25,
+    position: "DF",
+    club: "Sassuolo",
+    pictureUrl: "https://digitalhub.fifa.com/transform/6353056f-aabd-49e1-9931-9b28010746a6/ERLIC-Martin_389740"
+  },
+  "389754": {
+    fifaId: "389754",
+    teamCode: "CRO",
+    name: "Petar Musa",
+    fullName: "Petar Musa",
+    number: 26,
+    position: "FW",
+    club: "Benfica",
+    pictureUrl: "https://digitalhub.fifa.com/transform/5c33a6f7-32cc-4821-949d-42fa33de6f74/MUSA-Petar_389754"
   }
 };
 
@@ -11639,13 +11921,13 @@ var getStartingLineupFromLiveFifa = (team2) => {
       counts[player.Position] += 1;
     }
   }
-  const expectedForwards = formation[formation.length - 1];
+  if (counts[0] !== 1) return null;
   const expectedDefenders = formation[0];
   const expectedMidfielders = formation.slice(1, -1).reduce((sum, count) => sum + count, 0);
-  if (counts[0] !== 1 || counts[1] !== expectedDefenders || counts[2] !== expectedMidfielders || counts[3] !== expectedForwards) {
-    return null;
-  }
-  const coords = getFormationCoordinates(formation);
+  const expectedForwards = formation[formation.length - 1];
+  const coordFormation = counts[1] === expectedDefenders && counts[2] === expectedMidfielders && counts[3] === expectedForwards ? formation : [counts[1], counts[2], counts[3]];
+  if (coordFormation.reduce((s, n) => s + n, 0) !== 10) return null;
+  const coords = getFormationCoordinates(coordFormation);
   return starters.map((player, index) => ({
     id: player.IdPlayer,
     fifaId: player.IdPlayer,
@@ -16825,7 +17107,11 @@ var matches_default = [
     kickoffTime: "14:00",
     kickoffDate: "17 Junho, 2026",
     kickoffTimestamp: "2026-06-17T14:00:00-03:00",
-    status: "PRE_GAME",
+    status: "FINISHED",
+    score: {
+      teamA: 1,
+      teamB: 1
+    },
     countdownTargetSeconds: 0,
     broadcasters: [
       {
@@ -17106,77 +17392,285 @@ var matches_default = [
     },
     countdownTargetSeconds: 0,
     broadcasters: []
+  },
+  {
+    id: "eng-cro-2026",
+    teamA: {
+      name: "INGLATERRA",
+      code: "ENG",
+      flagSvg: "england",
+      primaryColor: "#ce1124",
+      secondaryColor: "#ffffff",
+      group: "Grupo L",
+      lineup: [
+        {
+          id: "336022",
+          name: "Pickford",
+          number: 1,
+          position: "GK",
+          x: 50,
+          y: 88,
+          club: "Everton",
+          pictureUrl: "https://digitalhub.fifa.com/transform/5f9b3bbf-edb5-4956-bce7-2d0a8e77f6ab/PICKFORD-Jordan_336022",
+          fifaId: "336022"
+        },
+        {
+          id: "403049",
+          name: "Konsa",
+          number: 2,
+          position: "DF",
+          x: 12,
+          y: 72,
+          club: "Aston Villa",
+          pictureUrl: "https://digitalhub.fifa.com/transform/54b28723-92e1-42e8-97b5-162f5099cf60/KONSA-Ezri_403049",
+          fifaId: "403049"
+        },
+        {
+          id: "463780",
+          name: "O'Reilly",
+          number: 3,
+          position: "DF",
+          x: 37,
+          y: 72,
+          club: "Manchester United",
+          pictureUrl: "https://digitalhub.fifa.com/transform/6a6be1c6-3496-49ba-81ca-354bdb2f404c/OREILLY-Nico_390761",
+          fifaId: "463780"
+        },
+        {
+          id: "369434",
+          name: "Stones",
+          number: 5,
+          position: "DF",
+          x: 63,
+          y: 72,
+          club: "Manchester City",
+          pictureUrl: "https://digitalhub.fifa.com/transform/bb455f6a-d793-44ef-92b8-bd1aff6d14d6/STONES-John_369434",
+          fifaId: "369434"
+        },
+        {
+          id: "439641",
+          name: "James",
+          number: 24,
+          position: "DF",
+          x: 88,
+          y: 72,
+          club: "Chelsea",
+          pictureUrl: "https://digitalhub.fifa.com/transform/1ffcc3c3-fdf3-4b61-9ac5-299213771a62/JAMES-Reece_439641",
+          fifaId: "439641"
+        },
+        {
+          id: "433097",
+          name: "Declan Rice",
+          number: 4,
+          position: "MF",
+          x: 12,
+          y: 45,
+          club: "Arsenal",
+          pictureUrl: "https://digitalhub.fifa.com/transform/acb98657-fa9b-4202-bc38-075a97b5bf78/RICE-Declan_433097",
+          fifaId: "433097"
+        },
+        {
+          id: "481610",
+          name: "Elliot Anderson",
+          number: 8,
+          position: "MF",
+          x: 50,
+          y: 45,
+          club: "Newcastle United",
+          pictureUrl: "https://digitalhub.fifa.com/transform/8da5855f-c957-4151-94a0-731e9714249f/ANDERSON-Elliot_481610",
+          fifaId: "481610"
+        },
+        {
+          id: "448202",
+          name: "Bellingham",
+          number: 10,
+          position: "MF",
+          x: 88,
+          y: 45,
+          club: "Real Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/d711b37f-ec06-4ea7-bb52-50ba0a42ef67/BELLINGHAM-Jude_448202",
+          fifaId: "448202"
+        },
+        {
+          id: "369419",
+          name: "Kane",
+          number: 9,
+          position: "FW",
+          x: 12,
+          y: 18,
+          club: "Bayern M\xFCnchen",
+          pictureUrl: "https://digitalhub.fifa.com/transform/5ad83fe6-1139-4f92-a97c-669052eb1755/KANE-Harry_369419",
+          fifaId: "369419"
+        },
+        {
+          id: "448189",
+          name: "Gordon",
+          number: 18,
+          position: "FW",
+          x: 50,
+          y: 18,
+          club: "Liverpool",
+          pictureUrl: "https://digitalhub.fifa.com/transform/bb7bbfe0-791d-408e-a2c2-f33156fce3e8/GORDON-Anthony_448189",
+          fifaId: "448189"
+        },
+        {
+          id: "489732",
+          name: "Madueke",
+          number: 20,
+          position: "FW",
+          x: 88,
+          y: 18,
+          club: "Chelsea",
+          pictureUrl: "https://digitalhub.fifa.com/transform/115733f4-8e52-477a-867f-063f1e2c7752/MADUEKE-Noni_489732",
+          fifaId: "489732"
+        }
+      ]
+    },
+    teamB: {
+      name: "CRO\xC1CIA",
+      code: "CRO",
+      flagSvg: "croatia",
+      primaryColor: "#ff0000",
+      secondaryColor: "#ffffff",
+      group: "Grupo L",
+      lineup: [
+        {
+          id: "369029",
+          name: "Livakovi\u0107",
+          number: 1,
+          position: "GK",
+          x: 50,
+          y: 88,
+          club: "Fenerbah\xE7e",
+          pictureUrl: "https://digitalhub.fifa.com/transform/6f54cf31-4fd8-4dff-aaa7-9db6bf2fa2ec/LIVAKOVIC-Dominik_369029",
+          fifaId: "369029"
+        },
+        {
+          id: "433667",
+          name: "Stani\u0161i\u0107",
+          number: 2,
+          position: "DF",
+          x: 12,
+          y: 72,
+          club: "Bayer Leverkusen",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c1f59cf4-db22-4b38-af85-ab5692105f95/STANISIC-Josip_433667",
+          fifaId: "433667"
+        },
+        {
+          id: "448180",
+          name: "Gvardiol",
+          number: 4,
+          position: "DF",
+          x: 37,
+          y: 72,
+          club: "Manchester City",
+          pictureUrl: "https://digitalhub.fifa.com/transform/18cba70e-f4ed-4f57-8e6a-5d4bfd3df8b0/GVARDIOL-Josko_448180",
+          fifaId: "448180"
+        },
+        {
+          id: "448171",
+          name: "\u0160utalo",
+          number: 6,
+          position: "DF",
+          x: 63,
+          y: 72,
+          club: "Ajax",
+          pictureUrl: "https://digitalhub.fifa.com/transform/5b23d028-3bf8-4355-8364-7838975c264f/SUTALO-Josip_448171",
+          fifaId: "448171"
+        },
+        {
+          id: "499290",
+          name: "Luka Vuskovic",
+          number: 22,
+          position: "DF",
+          x: 88,
+          y: 72,
+          club: "Tottenham",
+          pictureUrl: "https://digitalhub.fifa.com/transform/c905e324-dc60-4e79-a2a1-c06412f27aed/VUSKOVIC-Luka_499290",
+          fifaId: "499290"
+        },
+        {
+          id: "241559",
+          name: "Modri\u0107",
+          number: 10,
+          position: "MF",
+          x: 12,
+          y: 45,
+          club: "Real Madrid",
+          pictureUrl: "https://digitalhub.fifa.com/transform/cbff6a19-cce4-45ee-9869-84cf30ce5676/MODRIC-Luka_241559",
+          fifaId: "241559"
+        },
+        {
+          id: "380005",
+          name: "Mario Pasalic",
+          number: 15,
+          position: "MF",
+          x: 37,
+          y: 45,
+          club: "Atalanta",
+          pictureUrl: "https://digitalhub.fifa.com/transform/f3c0fd5e-6814-4acc-822a-2152e1cf79de/PASALIC-Mario_380005",
+          fifaId: "380005"
+        },
+        {
+          id: "482774",
+          name: "Martin Baturina",
+          number: 16,
+          position: "MF",
+          x: 63,
+          y: 45,
+          club: "Dinamo Zagreb",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b9125a74-a920-4ffc-922b-68d57c524f4e/BATURINA-Martin_482774",
+          fifaId: "482774"
+        },
+        {
+          id: "485066",
+          name: "Petar Sucic",
+          number: 17,
+          position: "MF",
+          x: 88,
+          y: 45,
+          club: "RB Leipzig",
+          pictureUrl: "https://digitalhub.fifa.com/transform/89c383c2-39ba-413d-b945-e42dd2d47c6d/SUCIC-Petar_485066",
+          fifaId: "485066"
+        },
+        {
+          id: "359381",
+          name: "Peri\u0161i\u0107",
+          number: 14,
+          position: "FW",
+          x: 12,
+          y: 18,
+          club: "Hajduk Split",
+          pictureUrl: "https://digitalhub.fifa.com/transform/ba7ea3ab-0ef6-4cdd-834c-79a94739fe26/PERISIC-Ivan_359381",
+          fifaId: "359381"
+        },
+        {
+          id: "389754",
+          name: "Petar Musa",
+          number: 26,
+          position: "FW",
+          x: 88,
+          y: 18,
+          club: "Benfica",
+          pictureUrl: "https://digitalhub.fifa.com/transform/5c33a6f7-32cc-4821-949d-42fa33de6f74/MUSA-Petar_389754",
+          fifaId: "389754"
+        }
+      ]
+    },
+    stadiumName: "Dallas Stadium",
+    city: "DALLAS",
+    stageName: "Group Stage",
+    kickoffTime: "17:00",
+    kickoffDate: "17 Junho, 2026",
+    kickoffTimestamp: "2026-06-17T17:00:00-03:00",
+    status: "LIVE",
+    score: {
+      teamA: 2,
+      teamB: 2
+    },
+    countdownTargetSeconds: 0,
+    broadcasters: []
   }
-];
-
-// src/data/bbcScheduledMatches.ts
-var BBC_SCHEDULED_MATCHES = [
-  // Grupo A
-  { teamA: "CZE", teamB: "RSA", kickoffTimestamp: "2026-06-18T13:00:00-03:00" },
-  { teamA: "MEX", teamB: "KOR", kickoffTimestamp: "2026-06-18T22:00:00-03:00" },
-  { teamA: "CZE", teamB: "MEX", kickoffTimestamp: "2026-06-24T22:00:00-03:00" },
-  { teamA: "RSA", teamB: "KOR", kickoffTimestamp: "2026-06-24T22:00:00-03:00" },
-  // Grupo B
-  { teamA: "SUI", teamB: "BIH", kickoffTimestamp: "2026-06-18T16:00:00-03:00" },
-  { teamA: "CAN", teamB: "QAT", kickoffTimestamp: "2026-06-18T19:00:00-03:00" },
-  { teamA: "BIH", teamB: "QAT", kickoffTimestamp: "2026-06-24T16:00:00-03:00" },
-  { teamA: "SUI", teamB: "CAN", kickoffTimestamp: "2026-06-24T16:00:00-03:00" },
-  // Grupo C
-  { teamA: "SCO", teamB: "MAR", kickoffTimestamp: "2026-06-19T19:00:00-03:00" },
-  { teamA: "BRA", teamB: "HAI", kickoffTimestamp: "2026-06-19T21:30:00-03:00" },
-  { teamA: "MAR", teamB: "HAI", kickoffTimestamp: "2026-06-24T19:00:00-03:00" },
-  { teamA: "SCO", teamB: "BRA", kickoffTimestamp: "2026-06-24T19:00:00-03:00" },
-  // Grupo D
-  { teamA: "USA", teamB: "AUS", kickoffTimestamp: "2026-06-19T16:00:00-03:00" },
-  { teamA: "TUR", teamB: "PAR", kickoffTimestamp: "2026-06-20T00:00:00-03:00" },
-  { teamA: "PAR", teamB: "AUS", kickoffTimestamp: "2026-06-25T23:00:00-03:00" },
-  { teamA: "TUR", teamB: "USA", kickoffTimestamp: "2026-06-25T23:00:00-03:00" },
-  // Grupo E
-  { teamA: "GER", teamB: "CIV", kickoffTimestamp: "2026-06-20T17:00:00-03:00" },
-  { teamA: "ECU", teamB: "CUW", kickoffTimestamp: "2026-06-20T21:00:00-03:00" },
-  { teamA: "CUW", teamB: "CIV", kickoffTimestamp: "2026-06-25T17:00:00-03:00" },
-  { teamA: "ECU", teamB: "GER", kickoffTimestamp: "2026-06-25T17:00:00-03:00" },
-  // Grupo F
-  { teamA: "NED", teamB: "SWE", kickoffTimestamp: "2026-06-20T14:00:00-03:00" },
-  { teamA: "TUN", teamB: "JPN", kickoffTimestamp: "2026-06-21T01:00:00-03:00" },
-  { teamA: "JPN", teamB: "SWE", kickoffTimestamp: "2026-06-25T20:00:00-03:00" },
-  { teamA: "TUN", teamB: "NED", kickoffTimestamp: "2026-06-25T20:00:00-03:00" },
-  // Grupo G
-  { teamA: "BEL", teamB: "IRN", kickoffTimestamp: "2026-06-21T16:00:00-03:00" },
-  { teamA: "NZL", teamB: "EGY", kickoffTimestamp: "2026-06-21T22:00:00-03:00" },
-  { teamA: "EGY", teamB: "IRN", kickoffTimestamp: "2026-06-27T00:00:00-03:00" },
-  { teamA: "NZL", teamB: "BEL", kickoffTimestamp: "2026-06-27T00:00:00-03:00" },
-  // Grupo H
-  { teamA: "ESP", teamB: "KSA", kickoffTimestamp: "2026-06-21T13:00:00-03:00" },
-  { teamA: "URU", teamB: "CPV", kickoffTimestamp: "2026-06-21T19:00:00-03:00" },
-  { teamA: "CPV", teamB: "KSA", kickoffTimestamp: "2026-06-26T21:00:00-03:00" },
-  { teamA: "URU", teamB: "ESP", kickoffTimestamp: "2026-06-26T21:00:00-03:00" },
-  // Grupo I
-  { teamA: "IRQ", teamB: "NOR", kickoffTimestamp: "2026-06-16T19:00:00-03:00" },
-  { teamA: "FRA", teamB: "IRQ", kickoffTimestamp: "2026-06-22T18:00:00-03:00" },
-  { teamA: "NOR", teamB: "SEN", kickoffTimestamp: "2026-06-22T21:00:00-03:00" },
-  { teamA: "NOR", teamB: "FRA", kickoffTimestamp: "2026-06-26T16:00:00-03:00" },
-  { teamA: "SEN", teamB: "IRQ", kickoffTimestamp: "2026-06-26T16:00:00-03:00" },
-  // Grupo J
-  { teamA: "AUT", teamB: "JOR", kickoffTimestamp: "2026-06-17T01:00:00-03:00" },
-  { teamA: "ARG", teamB: "AUT", kickoffTimestamp: "2026-06-22T14:00:00-03:00" },
-  { teamA: "JOR", teamB: "ALG", kickoffTimestamp: "2026-06-23T00:00:00-03:00" },
-  { teamA: "ALG", teamB: "AUT", kickoffTimestamp: "2026-06-27T23:00:00-03:00" },
-  { teamA: "JOR", teamB: "ARG", kickoffTimestamp: "2026-06-27T23:00:00-03:00" },
-  // Grupo K
-  { teamA: "POR", teamB: "COD", kickoffTimestamp: "2026-06-17T14:00:00-03:00" },
-  { teamA: "UZB", teamB: "COL", kickoffTimestamp: "2026-06-17T23:00:00-03:00" },
-  { teamA: "POR", teamB: "UZB", kickoffTimestamp: "2026-06-23T14:00:00-03:00" },
-  { teamA: "COL", teamB: "COD", kickoffTimestamp: "2026-06-23T23:00:00-03:00" },
-  { teamA: "COL", teamB: "POR", kickoffTimestamp: "2026-06-27T20:30:00-03:00" },
-  { teamA: "COD", teamB: "UZB", kickoffTimestamp: "2026-06-27T20:30:00-03:00" },
-  // Grupo L
-  { teamA: "ENG", teamB: "CRO", kickoffTimestamp: "2026-06-17T17:00:00-03:00" },
-  { teamA: "GHA", teamB: "PAN", kickoffTimestamp: "2026-06-17T20:00:00-03:00" },
-  { teamA: "ENG", teamB: "GHA", kickoffTimestamp: "2026-06-23T17:00:00-03:00" },
-  { teamA: "PAN", teamB: "CRO", kickoffTimestamp: "2026-06-23T20:00:00-03:00" },
-  { teamA: "CRO", teamB: "GHA", kickoffTimestamp: "2026-06-27T18:00:00-03:00" },
-  { teamA: "PAN", teamB: "ENG", kickoffTimestamp: "2026-06-27T18:00:00-03:00" }
 ];
 
 // src/data/fifaMatchVenues.ts
@@ -17525,8 +18019,6 @@ var PT_MONTHS = [
   "Novembro",
   "Dezembro"
 ];
-var DEFAULT_SCHEDULED_STADIUM = "Est\xE1dio a confirmar";
-var DEFAULT_SCHEDULED_CITY = "A CONFIRMAR";
 var FIFA_SUPPLEMENTAL_MATCHES = [
   {
     teamA: "QAT",
@@ -17629,24 +18121,11 @@ var buildSupplementalMatch = (seed) => {
     broadcasters: []
   };
 };
-var buildScheduledMatch = (teamACode, teamBCode, kickoffTimestamp) => buildSupplementalMatch({
-  teamA: teamACode,
-  teamB: teamBCode,
-  kickoffTimestamp,
-  status: "PRE_GAME",
-  stadiumName: DEFAULT_SCHEDULED_STADIUM,
-  city: DEFAULT_SCHEDULED_CITY
-});
 var APP_MATCHES = [
   ...BASE_MATCHES,
   ...FIFA_SUPPLEMENTAL_MATCHES.filter(
     ({ teamA, teamB }) => !existingIds.has(`${teamA.toLowerCase()}-${teamB.toLowerCase()}-2026`)
-  ).map(buildSupplementalMatch),
-  ...BBC_SCHEDULED_MATCHES.filter(
-    ({ teamA, teamB }) => !existingIds.has(`${teamA.toLowerCase()}-${teamB.toLowerCase()}-2026`)
-  ).map(
-    ({ teamA, teamB, kickoffTimestamp }) => buildScheduledMatch(teamA, teamB, kickoffTimestamp)
-  )
+  ).map(buildSupplementalMatch)
 ].map((match) => {
   const officialVenue = FIFA_MATCH_VENUES[match.id];
   if (!officialVenue) {
