@@ -11965,6 +11965,7 @@ var fifaSyncDiagnostics = {
 };
 var backgroundWarmTimeout = null;
 var buildPlayerLeaderKey = (teamCode, playerName) => `${teamCode}:${normalizeText2(playerName)}`;
+var isNumericFifaId = (id) => id !== void 0 && /^\d+$/.test(id);
 var parseIncidentPlayerName = (state) => {
   if (state.type === "GOAL" && state.text.endsWith(GOAL_INCIDENT_SUFFIX)) {
     return state.text.slice(0, -GOAL_INCIDENT_SUFFIX.length).trim();
@@ -12002,6 +12003,7 @@ var upsertPlayerLeaderMetadata = (metadataByPlayerKey, teamCode, player) => {
 };
 var buildPlayerLeaderMetadataMap = (lineupsPayload) => {
   const metadataByPlayerKey = /* @__PURE__ */ new Map();
+  const playerKeyByFifaId = /* @__PURE__ */ new Map();
   APP_MATCHES.forEach((match) => {
     const lineupEntry = lineupsPayload.lineups[match.id];
     const teamALineup = lineupEntry?.teamA.players ?? match.teamA.lineup;
@@ -12014,11 +12016,15 @@ var buildPlayerLeaderMetadataMap = (lineupsPayload) => {
         socials: player.socials ?? entry?.socials,
         pictureUrl: player.pictureUrl ?? entry?.pictureUrl
       });
+      const fifaId = player.fifaId ?? (isNumericFifaId(player.id) ? player.id : void 0);
+      if (fifaId) {
+        playerKeyByFifaId.set(`${teamCode}:${fifaId}`, buildPlayerLeaderKey(teamCode, player.name));
+      }
     };
     teamALineup.forEach((player) => enrich(match.teamA.code, player));
     teamBLineup.forEach((player) => enrich(match.teamB.code, player));
   });
-  return metadataByPlayerKey;
+  return { metadataByPlayerKey, playerKeyByFifaId };
 };
 var resolveTournamentLeadersSource = (states) => {
   const sources = new Set(Object.values(states).map((state) => state.source));
@@ -12057,7 +12063,7 @@ var aggregateTournamentLeaders = async (language) => {
     getMatchStatesPayload(language),
     getTeamLineupsPayload(language)
   ]);
-  const metadataByPlayerKey = buildPlayerLeaderMetadataMap(lineupsPayload);
+  const { metadataByPlayerKey, playerKeyByFifaId } = buildPlayerLeaderMetadataMap(lineupsPayload);
   const playerLeaders = /* @__PURE__ */ new Map();
   const teamLeaders = /* @__PURE__ */ new Map();
   APP_MATCHES.forEach((match) => {
@@ -12095,20 +12101,21 @@ var aggregateTournamentLeaders = async (language) => {
       const playerName = parseIncidentPlayerName(incident);
       if (!playerName) return;
       const team2 = incident.team === "A" ? match.teamA : match.teamB;
-      const playerKey = buildPlayerLeaderKey(team2.code, playerName);
-      let metadata = metadataByPlayerKey.get(playerKey);
+      const incidentFifaId = incident.playerMentions?.[0]?.id;
+      let metadata = incidentFifaId ? metadataByPlayerKey.get(playerKeyByFifaId.get(`${team2.code}:${incidentFifaId}`) ?? "") : void 0;
+      if (!metadata) {
+        metadata = metadataByPlayerKey.get(buildPlayerLeaderKey(team2.code, playerName));
+      }
       if (!metadata) {
         const shirtNumber = incident.playerMentions?.[0]?.number;
         if (shirtNumber !== void 0) {
           const lineupPlayer = team2.lineup.find((p) => p.number === shirtNumber);
           if (lineupPlayer) {
-            metadata = metadataByPlayerKey.get(
-              buildPlayerLeaderKey(team2.code, lineupPlayer.name)
-            );
+            metadata = metadataByPlayerKey.get(buildPlayerLeaderKey(team2.code, lineupPlayer.name));
           }
         }
       }
-      const canonicalKey = metadata ? buildPlayerLeaderKey(team2.code, metadata.name) : playerKey;
+      const canonicalKey = metadata ? buildPlayerLeaderKey(team2.code, metadata.name) : buildPlayerLeaderKey(team2.code, playerName);
       const current = playerLeaders.get(canonicalKey) ?? {
         id: `${team2.code.toLowerCase()}-${normalizeText2(metadata?.name ?? playerName).toLowerCase()}`,
         name: metadata?.name ?? playerName,
