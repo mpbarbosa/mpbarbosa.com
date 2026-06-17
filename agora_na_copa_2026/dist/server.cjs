@@ -101,7 +101,7 @@ var squads_default = {
     club: "Al Nassr",
     pictureUrl: "https://digitalhub.fifa.com/transform/7b63f223-fda2-4d56-b218-f143f0abd2d8/CRISTIANO-RONALDO_201200",
     socials: {
-      instagram: "https://instagram.com/cristiano"
+      instagram: "cristiano"
     }
   },
   "395206": {
@@ -904,7 +904,7 @@ var squads_default = {
     club: "Inter Miami",
     pictureUrl: "https://digitalhub.fifa.com/transform/19823774-fac0-485a-8a8f-572e7324c6c2/MESSI-Lionel_229397",
     socials: {
-      instagram: "https://instagram.com/leomessi"
+      instagram: "leomessi"
     }
   },
   "395414": {
@@ -1077,7 +1077,7 @@ var squads_default = {
     club: "Al Hilal",
     pictureUrl: "",
     socials: {
-      instagram: "https://instagram.com/neymarjr"
+      instagram: "neymarjr"
     }
   },
   "520070": {
@@ -4030,7 +4030,7 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/ee269811-9f84-401f-99b8-e953a2704ebb/HAALAND-Erling_419652",
     socials: {
-      instagram: "https://instagram.com/erling"
+      instagram: "erling"
     }
   },
   "400716": {
@@ -4283,7 +4283,7 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/aef63530-cc2b-4b8e-b06b-6c0a9fb90ec0/MOHEBBI-Mohammad_448497",
     socials: {
-      instagram: "https://instagram.com/mohammadmohebi_official"
+      instagram: "mohammadmohebi_official"
     }
   },
   "388475": {
@@ -4396,7 +4396,7 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/22c62fcc-736e-413e-a925-4bb643e3f007/NEMATI-Ali_489603",
     socials: {
-      instagram: "https://instagram.com/raminrezaeian"
+      instagram: "raminrezaeian"
     }
   },
   "481180": {
@@ -4569,7 +4569,7 @@ var squads_default = {
     club: "SKN St. Polten",
     pictureUrl: "https://digitalhub.fifa.com/transform/fe32736f-5d5f-4870-8db3-5b4560835f53/JUST-Elijah_405454",
     socials: {
-      instagram: "https://instagram.com/elijah_just"
+      instagram: "elijah_just"
     }
   },
   "423574": {
@@ -5862,7 +5862,7 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/66f6087d-9563-4644-8f10-5614ef6e1e51/MBAPPE-Kylian_389867",
     socials: {
-      instagram: "https://instagram.com/k.mbappe"
+      instagram: "k.mbappe"
     }
   },
   "485655": {
@@ -6555,7 +6555,7 @@ var squads_default = {
     club: "Gil Vicente",
     pictureUrl: "https://digitalhub.fifa.com/transform/b8286230-b161-484e-87a9-ce5a20e6f7d1/VOZINHA_364752",
     socials: {
-      instagram: "https://instagram.com/vozinha1"
+      instagram: "vozinha1"
     }
   },
   "297266": {
@@ -7018,7 +7018,7 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/be2d88f0-e368-49ef-9a33-c7585955c495/MOHAMMED-ALOWAIS_396885",
     socials: {
-      instagram: "https://instagram.com/alowais_33"
+      instagram: "alowais_33"
     }
   },
   "339746": {
@@ -7251,7 +7251,7 @@ var squads_default = {
     club: "Sporting",
     pictureUrl: "https://digitalhub.fifa.com/transform/f1a7af03-ada1-4642-927c-5fe06844c89c/ARAUJO-Maxi_419100",
     socials: {
-      instagram: "https://instagram.com/maximilianoaraujo6"
+      instagram: "maximilianoaraujo6"
     }
   },
   "477536": {
@@ -18748,6 +18748,102 @@ var getTournamentLeadersPayload = async (language) => {
     }
   };
 };
+var resolveMentionToCanonicalKey = (mention, teamCode, teamLineup, metadataByPlayerKey, playerKeyByFifaId) => {
+  if (isNumericFifaId(mention.id)) {
+    const key = playerKeyByFifaId.get(`${teamCode}:${mention.id}`);
+    if (key) return key;
+  }
+  if (mention.name) {
+    const key = buildPlayerLeaderKey(teamCode, mention.name);
+    if (metadataByPlayerKey.has(key)) return key;
+  }
+  if (mention.number !== void 0) {
+    const lineupPlayer = teamLineup.find((p) => p.number === mention.number);
+    if (lineupPlayer) {
+      const key = buildPlayerLeaderKey(teamCode, lineupPlayer.name);
+      if (metadataByPlayerKey.has(key)) return key;
+    }
+  }
+  return mention.name ? buildPlayerLeaderKey(teamCode, mention.name) : "";
+};
+var aggregatePlayerIncidents = async (teamCode, rawPlayerName, language) => {
+  const [matchStatesPayload, lineupsPayload] = await Promise.all([
+    getMatchStatesPayload(language),
+    getTeamLineupsPayload(language)
+  ]);
+  const { metadataByPlayerKey, playerKeyByFifaId } = buildPlayerLeaderMetadataMap(lineupsPayload);
+  const targetKey = buildPlayerLeaderKey(teamCode, rawPlayerName);
+  const metadata = metadataByPlayerKey.get(targetKey);
+  if (!metadata) return null;
+  const teamMatch = APP_MATCHES.find(
+    (m) => m.teamA.code === teamCode || m.teamB.code === teamCode
+  );
+  const teamName = teamMatch ? teamMatch.teamA.code === teamCode ? teamMatch.teamA.name : teamMatch.teamB.name : teamCode;
+  const teamFlagSvg = teamMatch ? teamMatch.teamA.code === teamCode ? teamMatch.teamA.flagSvg : teamMatch.teamB.flagSvg : "";
+  const incidents = [];
+  let latestUpdatedAt = "";
+  APP_MATCHES.forEach((match) => {
+    const state = matchStatesPayload.states[match.id];
+    if (!state?.incidents?.length) return;
+    const isTeamA = match.teamA.code === teamCode;
+    const isTeamB = match.teamB.code === teamCode;
+    if (!isTeamA && !isTeamB) return;
+    const teamSide = isTeamA ? "A" : "B";
+    const teamInMatch = isTeamA ? match.teamA : match.teamB;
+    state.incidents.forEach((incident) => {
+      if (incident.team !== teamSide) return;
+      (incident.playerMentions ?? []).forEach((mention, mentionIndex) => {
+        const resolvedKey = resolveMentionToCanonicalKey(
+          mention,
+          teamCode,
+          teamInMatch.lineup,
+          metadataByPlayerKey,
+          playerKeyByFifaId
+        );
+        if (resolvedKey !== targetKey) return;
+        incidents.push({
+          matchId: match.id,
+          matchLabel: `${match.teamA.name} vs ${match.teamB.name}`,
+          kickoffTimestamp: match.kickoffTimestamp,
+          minute: incident.time,
+          type: incident.type,
+          ...incident.type === "SUBSTITUTION" && {
+            role: mentionIndex === 0 ? "off" : "on"
+          }
+        });
+      });
+      if (state.updatedAt > latestUpdatedAt) latestUpdatedAt = state.updatedAt;
+    });
+  });
+  const resolvedSource = resolveTournamentLeadersSource(matchStatesPayload.states);
+  incidents.sort((a, b) => {
+    const tsDiff = a.kickoffTimestamp.localeCompare(b.kickoffTimestamp);
+    if (tsDiff !== 0) return tsDiff;
+    return (parseInt(a.minute) || 0) - (parseInt(b.minute) || 0);
+  });
+  return {
+    player: {
+      name: metadata.name,
+      teamCode,
+      teamName,
+      teamFlagSvg,
+      shirtNumber: metadata.shirtNumber,
+      position: metadata.position,
+      pictureUrl: metadata.pictureUrl
+    },
+    incidents,
+    summary: {
+      goals: incidents.filter((i) => i.type === "GOAL").length,
+      yellowCards: incidents.filter((i) => i.type === "YELLOW_CARD").length,
+      redCards: incidents.filter((i) => i.type === "RED_CARD").length,
+      substitutionsOff: incidents.filter((i) => i.type === "SUBSTITUTION" && i.role === "off").length,
+      substitutionsOn: incidents.filter((i) => i.type === "SUBSTITUTION" && i.role === "on").length
+    },
+    source: resolvedSource,
+    note: resolvedSource === "fallback" ? "Incidentes a partir de dados locais (FIFA indispon\xEDvel)." : "Incidentes sincronizados com a FIFA.",
+    updatedAt: latestUpdatedAt || (/* @__PURE__ */ new Date()).toISOString()
+  };
+};
 var getMatchStateCacheTtlMs = (states) => {
   const stateEntries = Object.entries(states);
   if (stateEntries.some(([, state]) => state.status === "LIVE")) {
@@ -19424,6 +19520,23 @@ app.get("/api/player-stats/:teamCode/:playerName", async (req, res) => {
   } catch (error) {
     console.error("FIFA API Error in /api/player-stats:", error);
     res.status(502).json({ error: error?.message || "Erro ao carregar estat\xEDsticas do jogador" });
+  }
+});
+app.get("/api/player-incidents/:teamCode/:playerName", async (req, res) => {
+  try {
+    const teamCode = req.params.teamCode.toUpperCase();
+    const playerName = req.params.playerName;
+    const language = typeof req.query.language === "string" && req.query.language.trim() ? req.query.language.trim() : DEFAULT_BROADCAST_LANGUAGE;
+    const payload = await aggregatePlayerIncidents(teamCode, playerName, language);
+    if (!payload) {
+      res.status(404).json({ error: "Jogador n\xE3o encontrado" });
+      return;
+    }
+    res.set("Cache-Control", "no-store");
+    res.json(payload);
+  } catch (error) {
+    console.error("FIFA API Error in /api/player-incidents:", error);
+    res.status(502).json({ error: error?.message || "Erro ao carregar incidentes do jogador" });
   }
 });
 app.get("/api/team-view/:teamCode", async (req, res) => {
