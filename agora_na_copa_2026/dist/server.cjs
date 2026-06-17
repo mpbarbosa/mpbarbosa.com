@@ -7384,7 +7384,7 @@ var matches_default = [
     kickoffTime: "16:00",
     kickoffDate: "16 Junho, 2026",
     kickoffTimestamp: "2026-06-16T16:00:00-03:00",
-    status: "PRE_GAME",
+    status: "FINISHED",
     countdownTargetSeconds: 248400,
     broadcasters: [
       {
@@ -7408,7 +7408,11 @@ var matches_default = [
         iconColor: "#ed2939",
         link: "https://www.youtube.com/@CazeTV"
       }
-    ]
+    ],
+    score: {
+      teamA: 3,
+      teamB: 1
+    }
   },
   {
     id: "hai-sco-2026",
@@ -8476,7 +8480,7 @@ var matches_default = [
     kickoffTime: "22:00",
     kickoffDate: "16 Junho, 2026",
     kickoffTimestamp: "2026-06-16T22:00:00-03:00",
-    status: "PRE_GAME",
+    status: "FINISHED",
     countdownTargetSeconds: 27e4,
     broadcasters: [
       {
@@ -8500,7 +8504,11 @@ var matches_default = [
         iconColor: "#00e476",
         link: "https://plus.fifa.com"
       }
-    ]
+    ],
+    score: {
+      teamA: 3,
+      teamB: 0
+    }
   },
   {
     id: "ned-jpn-2026",
@@ -10489,7 +10497,7 @@ var matches_default = [
     kickoffTime: "22:00",
     kickoffDate: "15 Junho, 2026",
     kickoffTimestamp: "2026-06-15T22:00:00-03:00",
-    status: "PRE_GAME",
+    status: "FINISHED",
     countdownTargetSeconds: 0,
     broadcasters: [
       {
@@ -10513,7 +10521,11 @@ var matches_default = [
         iconColor: "#ed2939",
         link: "https://www.youtube.com/@CazeTV"
       }
-    ]
+    ],
+    score: {
+      teamA: 2,
+      teamB: 2
+    }
   },
   {
     id: "por-cod-2026",
@@ -11030,10 +11042,10 @@ var matches_default = [
     kickoffTime: "19:00",
     kickoffDate: "16 Junho, 2026",
     kickoffTimestamp: "2026-06-16T19:00:00-03:00",
-    status: "LIVE",
+    status: "FINISHED",
     score: {
       teamA: 1,
-      teamB: 2
+      teamB: 4
     },
     countdownTargetSeconds: 0,
     broadcasters: []
