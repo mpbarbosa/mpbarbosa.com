@@ -6902,6 +6902,9 @@ var squads_default = {
     position: "MF",
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/ef292137-a5b1-44b8-b329-031d23320552/MAHMIC-Ermin_522846",
+    socials: {
+      instagram: "erminmahmiic"
+    },
     dateOfBirth: "2005-03-14",
     height: 182
   },
