@@ -21842,11 +21842,27 @@ app.get("/api/player-stats/:teamCode/:playerName", async (req, res) => {
       res.status(404).json({ error: "Jogador n\xE3o encontrado nos l\xEDderes do torneio" });
       return;
     }
+    const payload = {
+      goals: leader.goals,
+      yellowCards: leader.yellowCards,
+      redCards: leader.redCards,
+      source: aggregated.source,
+      note: aggregated.note,
+      updatedAt: aggregated.updatedAt
+    };
     res.set("Cache-Control", "no-store");
-    res.json({ goals: leader.goals, yellowCards: leader.yellowCards, redCards: leader.redCards });
+    res.json(payload);
   } catch (error) {
     console.error("FIFA API Error in /api/player-stats:", error);
-    res.status(502).json({ error: error?.message || "Erro ao carregar estat\xEDsticas do jogador" });
+    const fallback = {
+      goals: 0,
+      yellowCards: 0,
+      redCards: 0,
+      source: "fallback",
+      note: "Estat\xEDsticas indispon\xEDveis \u2014 FIFA API inacess\xEDvel.",
+      updatedAt: (/* @__PURE__ */ new Date()).toISOString()
+    };
+    res.json(fallback);
   }
 });
 app.get("/api/player-incidents/:teamCode/:playerName", async (req, res) => {
@@ -21863,7 +21879,20 @@ app.get("/api/player-incidents/:teamCode/:playerName", async (req, res) => {
     res.json(payload);
   } catch (error) {
     console.error("FIFA API Error in /api/player-incidents:", error);
-    res.status(502).json({ error: error?.message || "Erro ao carregar incidentes do jogador" });
+    const fallback = {
+      player: {
+        name: req.params.playerName,
+        teamCode: req.params.teamCode.toUpperCase(),
+        teamName: req.params.teamCode.toUpperCase(),
+        teamFlagSvg: req.params.teamCode.toLowerCase()
+      },
+      incidents: [],
+      summary: { goals: 0, yellowCards: 0, redCards: 0, substitutionsOff: 0, substitutionsOn: 0 },
+      source: "fallback",
+      note: "Incidentes indispon\xEDveis \u2014 FIFA API inacess\xEDvel.",
+      updatedAt: (/* @__PURE__ */ new Date()).toISOString()
+    };
+    res.json(fallback);
   }
 });
 app.get("/api/team-view/:teamCode", async (req, res) => {
@@ -21909,6 +21938,7 @@ async function fetchCountryInfo(code) {
       government: null,
       currency: null,
       source: "fallback",
+      note: "Informa\xE7\xF5es indispon\xEDveis \u2014 Wikipedia inacess\xEDvel.",
       updatedAt: now
     };
   }
@@ -21988,6 +22018,7 @@ async function fetchCountryInfo(code) {
     government,
     currency,
     source: "wikipedia",
+    note: "Dados da Wikipedia e Wikidata.",
     updatedAt: now
   };
   countryInfoCache.set(code, {
@@ -21997,8 +22028,8 @@ async function fetchCountryInfo(code) {
   return payload;
 }
 app.get("/api/country-info/:code", async (req, res) => {
+  const code = req.params.code.toUpperCase();
   try {
-    const code = req.params.code.toUpperCase();
     const payload = await fetchCountryInfo(code);
     if (!payload) {
       res.status(404).json({ error: "Pa\xEDs n\xE3o encontrado" });
@@ -22008,7 +22039,30 @@ app.get("/api/country-info/:code", async (req, res) => {
     res.json(payload);
   } catch (error) {
     console.error("Wikipedia API Error in /api/country-info:", error);
-    res.status(502).json({ error: error?.message || "Erro ao carregar informa\xE7\xF5es do pa\xEDs" });
+    const stale = countryInfoCache.get(code);
+    if (stale) {
+      res.set("Cache-Control", "public, max-age=3600");
+      res.json({ ...stale.payload, source: "fallback", note: "Usando dados em cache \u2014 Wikipedia inacess\xEDvel." });
+      return;
+    }
+    const fallback = {
+      code,
+      description: "",
+      extract: "",
+      thumbnailUrl: null,
+      flagSvgUrl: null,
+      wikipediaUrl: "",
+      population: null,
+      areaSqKm: null,
+      capital: null,
+      language: null,
+      government: null,
+      currency: null,
+      source: "fallback",
+      note: "Informa\xE7\xF5es indispon\xEDveis \u2014 Wikipedia inacess\xEDvel.",
+      updatedAt: (/* @__PURE__ */ new Date()).toISOString()
+    };
+    res.json(fallback);
   }
 });
 app.get("/api/fifa-sync-status", (_req, res) => {
