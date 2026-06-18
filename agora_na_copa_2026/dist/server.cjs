@@ -23,6 +23,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 
 // server.ts
 var import_express = __toESM(require("express"), 1);
+var import_node_os = __toESM(require("node:os"), 1);
 var import_node_http = require("node:http");
 var import_node_net = require("node:net");
 var import_path = __toESM(require("path"), 1);
@@ -20792,7 +20793,19 @@ var APP_MATCHES_BY_ID = new Map(APP_MATCHES.map((match) => [match.id, match]));
 var GOAL_INCIDENT_SUFFIX = " marcou.";
 var YELLOW_CARD_INCIDENT_SUFFIX = " recebeu amarelo.";
 var RED_CARD_INCIDENT_SUFFIX = " foi expulso.";
+app.set("trust proxy", 1);
 app.use(import_express.default.json());
+app.use((req, res, next) => {
+  if (req.path.startsWith("/assets/") || req.path === "/favicon.ico") return next();
+  const start = Date.now();
+  res.on("finish", () => {
+    const ms = Date.now() - start;
+    const ip = req.ip ?? req.socket.remoteAddress ?? "-";
+    const ref = req.get("referer") ?? "-";
+    console.log(`[access] ${req.method} ${req.path} ${res.statusCode} ${ms}ms ip=${ip} ref=${ref}`);
+  });
+  next();
+});
 var TRIVIA_QUESTIONS = triviaQuestions;
 var broadcastGuideCache = null;
 var matchStatesCache = null;
@@ -22128,6 +22141,26 @@ app.get("/api/fifa-sync-status", (_req, res) => {
 app.get("/api/questions", (_req, res) => {
   res.set("Cache-Control", "no-store");
   res.json(TRIVIA_QUESTIONS);
+});
+app.get("/api/health", (_req, res) => {
+  const mem = process.memoryUsage();
+  res.set("Cache-Control", "no-store");
+  res.json({
+    status: "ok",
+    version: process.env.npm_package_version ?? "unknown",
+    uptime: Math.round(process.uptime()),
+    load: import_node_os.default.loadavg(),
+    memory: {
+      rss: mem.rss,
+      heapUsed: mem.heapUsed,
+      heapTotal: mem.heapTotal,
+      external: mem.external
+    },
+    system: {
+      freeMem: import_node_os.default.freemem(),
+      totalMem: import_node_os.default.totalmem()
+    }
+  });
 });
 async function startServer() {
   const port = await resolveAppPort();
