@@ -7872,6 +7872,7 @@ var squads_default = {
     socials: {
       instagram: "vozinha1"
     },
+    instagramPostUrl: "https://www.instagram.com/reel/DZno5Zsxo6V/",
     dateOfBirth: "1986-06-03",
     height: 189
   },
