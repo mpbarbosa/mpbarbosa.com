@@ -14006,6 +14006,7 @@ var mergeLineupWithLocalMetadata = (players, fallbackLineup, teamCode) => player
     return {
       ...player,
       socials: player.socials ?? entry?.socials,
+      instagramPostUrl: player.instagramPostUrl ?? entry?.instagramPostUrl,
       fullName: player.fullName ?? entry?.fullName,
       dateOfBirth: player.dateOfBirth ?? entry?.dateOfBirth,
       height: player.height ?? entry?.height
@@ -14016,6 +14017,7 @@ var mergeLineupWithLocalMetadata = (players, fallbackLineup, teamCode) => player
     club: player.club ?? fallbackPlayer.club ?? entry?.club,
     pictureUrl: player.pictureUrl ?? fallbackPlayer.pictureUrl,
     socials: player.socials ?? fallbackPlayer.socials ?? entry?.socials,
+    instagramPostUrl: player.instagramPostUrl ?? fallbackPlayer.instagramPostUrl ?? entry?.instagramPostUrl,
     fullName: player.fullName ?? fallbackPlayer.fullName ?? entry?.fullName,
     dateOfBirth: player.dateOfBirth ?? fallbackPlayer.dateOfBirth ?? entry?.dateOfBirth,
     height: player.height ?? fallbackPlayer.height ?? entry?.height
@@ -14037,6 +14039,7 @@ var enrichFallbackLineupWithFifaPictures = (fallbackLineup, fifaTeam, teamCode) 
       number: fifaPlayer.ShirtNumber || player.number,
       pictureUrl: pictureUrl ?? player.pictureUrl,
       socials: player.socials ?? entry?.socials,
+      instagramPostUrl: player.instagramPostUrl ?? entry?.instagramPostUrl,
       fullName: player.fullName ?? entry?.fullName,
       dateOfBirth: player.dateOfBirth ?? entry?.dateOfBirth,
       height: player.height ?? entry?.height
@@ -20904,7 +20907,8 @@ var upsertPlayerLeaderMetadata = (metadataByPlayerKey, teamCode, player) => {
       position: player.position,
       club: player.club,
       socials: player.socials,
-      pictureUrl: player.pictureUrl
+      pictureUrl: player.pictureUrl,
+      instagramPostUrl: player.instagramPostUrl
     });
     return;
   }
@@ -20914,7 +20918,8 @@ var upsertPlayerLeaderMetadata = (metadataByPlayerKey, teamCode, player) => {
     position: current.position ?? player.position,
     club: current.club ?? player.club,
     socials: current.socials ?? player.socials,
-    pictureUrl: current.pictureUrl ?? player.pictureUrl
+    pictureUrl: current.pictureUrl ?? player.pictureUrl,
+    instagramPostUrl: current.instagramPostUrl ?? player.instagramPostUrl
   });
 };
 var buildPlayerLeaderMetadataMap = (lineupsPayload) => {
@@ -20930,7 +20935,8 @@ var buildPlayerLeaderMetadataMap = (lineupsPayload) => {
         ...player,
         club: player.club ?? entry?.club,
         socials: player.socials ?? entry?.socials,
-        pictureUrl: player.pictureUrl ?? entry?.pictureUrl
+        pictureUrl: player.pictureUrl ?? entry?.pictureUrl,
+        instagramPostUrl: player.instagramPostUrl ?? entry?.instagramPostUrl
       });
       const fifaId = player.fifaId ?? (isNumericFifaId(player.id) ? player.id : void 0);
       if (fifaId) {
@@ -21045,6 +21051,7 @@ var aggregateTournamentLeaders = async (language) => {
         club: metadata?.club,
         socials: metadata?.socials,
         pictureUrl: metadata?.pictureUrl,
+        instagramPostUrl: metadata?.instagramPostUrl,
         goals: 0,
         yellowCards: 0,
         redCards: 0
