@@ -743,6 +743,7 @@ var squads_default = {
     position: "FW",
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c2722c3-a70b-49d8-bdb4-77109161f533/VINICIUS-JUNIOR_405742",
+    instagramPostUrl: "https://www.instagram.com/p/DZjBZ9UjVG6/",
     dateOfBirth: "2000-07-12",
     height: 176
   },
