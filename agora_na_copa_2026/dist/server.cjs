@@ -3555,6 +3555,7 @@ var squads_default = {
     position: "FW",
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/b2483096-041c-489b-a1c5-6d930f380909/EMBOLO-Breel_393480",
+    socials: { instagram: "breel.embolo" },
     dateOfBirth: "1997-02-14",
     height: 184
   },
@@ -3579,6 +3580,7 @@ var squads_default = {
     position: "MF",
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/a0cb9413-32ea-4b8f-9801-55474cb12b77/MANZAMBI-Johan_502727",
+    socials: { instagram: "jkmanzambi" },
     dateOfBirth: "2005-10-14",
     height: 182
   },
@@ -3591,6 +3593,7 @@ var squads_default = {
     position: "MF",
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/a6c333cc-3042-4094-9ec0-094479b8ca3a/XHAKA-Granit_311558",
+    socials: { instagram: "granit_xhaka" },
     dateOfBirth: "1992-09-27",
     height: 183
   },
@@ -3603,6 +3606,7 @@ var squads_default = {
     position: "FW",
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/b536dbbe-88a2-4caf-97c0-6baac25c43fe/NDOYE-Dan_448114",
+    socials: { instagram: "dandan_ndoye" },
     dateOfBirth: "2000-10-25",
     height: 184
   },
@@ -3675,6 +3679,7 @@ var squads_default = {
     position: "FW",
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/625f7ce0-81a9-4bab-9b18-c9ec395b5096/VARGAS-Ruben_448131",
+    socials: { instagram: "rubenvargas11" },
     dateOfBirth: "1998-08-05",
     height: 179
   },
@@ -12102,6 +12107,7 @@ var squads_default = {
     position: "MF",
     club: "Gangwon FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/a54e995b-caa3-43c4-981f-b54ada7f678d/LEE-Kangin_418490",
+    socials: { instagram: "kanginleeoficial" },
     dateOfBirth: "2001-02-19",
     height: 174
   },
