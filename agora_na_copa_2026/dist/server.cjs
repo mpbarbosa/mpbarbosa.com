@@ -26,6 +26,7 @@ var import_express = __toESM(require("express"), 1);
 var import_node_os = __toESM(require("node:os"), 1);
 var import_node_http = require("node:http");
 var import_node_net = require("node:net");
+var import_node_fs = require("node:fs");
 var import_path = __toESM(require("path"), 1);
 var import_vite = require("vite");
 var import_dotenv = __toESM(require("dotenv"), 1);
@@ -20768,6 +20769,13 @@ function groupStandings(rows) {
 
 // server.ts
 import_dotenv.default.config();
+var APP_VERSION = (() => {
+  try {
+    return JSON.parse((0, import_node_fs.readFileSync)("package.json", "utf8")).version;
+  } catch {
+    return process.env.npm_package_version ?? "unknown";
+  }
+})();
 var app = (0, import_express.default)();
 var DEFAULT_PORT = Number(process.env.PORT || 3e3);
 var HOST = "0.0.0.0";
@@ -22150,7 +22158,7 @@ app.get("/api/health", (_req, res) => {
   res.set("Cache-Control", "no-store");
   res.json({
     status: "ok",
-    version: process.env.npm_package_version ?? "unknown",
+    version: APP_VERSION,
     uptime: Math.round(process.uptime()),
     load: import_node_os.default.loadavg(),
     memory: {
