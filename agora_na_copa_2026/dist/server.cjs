@@ -2619,6 +2619,7 @@ var squads_default = {
     position: "MF",
     club: "Houston Dynamo",
     pictureUrl: "https://digitalhub.fifa.com/transform/bc7f864e-c553-4995-9eb3-62139e29a7d7/ROMO-Luis_430763",
+    socials: { instagram: "luis.romo3" },
     dateOfBirth: "1995-06-05",
     height: 183
   },
@@ -3704,6 +3705,7 @@ var squads_default = {
     position: "FW",
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/dd8abcd7-7775-4f67-9e25-eaa6e7cb2b97/OKAFOR-Noah_448127",
+    socials: { instagram: "noah.okafor" },
     dateOfBirth: "2000-05-24",
     height: 185
   },
