@@ -85,7 +85,10 @@ var squads_default = {
     club: "Club Am\xE9rica",
     pictureUrl: "https://digitalhub.fifa.com/transform/fedeac9f-968d-4d4c-b08a-5b2bf157c396/OCHOA-Guillermo_215285",
     dateOfBirth: "1985-07-13",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "yosoy8a"
+    }
   },
   "215553": {
     fifaId: "215553",
@@ -97,7 +100,10 @@ var squads_default = {
     club: "Bournemouth",
     pictureUrl: "https://digitalhub.fifa.com/transform/6bb645f8-c45e-4630-baf7-b7ddcd905a26/GORDON-Craig_215553",
     dateOfBirth: "1982-12-31",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "craig_gordon1"
+    }
   },
   "228912": {
     fifaId: "228912",
@@ -109,7 +115,10 @@ var squads_default = {
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/e3701d06-66b5-4728-8bad-fea05319b6b8/NEUER-Manuel_228912",
     dateOfBirth: "1986-03-27",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "manuelneuer"
+    }
   },
   "229397": {
     fifaId: "229397",
@@ -136,7 +145,10 @@ var squads_default = {
     club: "Cagliari",
     pictureUrl: "https://digitalhub.fifa.com/transform/bec34ba5-7129-44fe-b108-bc57a1fd3257/MUSLERA-Fernando_229498",
     dateOfBirth: "1986-06-16",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "muslera"
+    }
   },
   "241559": {
     fifaId: "241559",
@@ -175,7 +187,10 @@ var squads_default = {
     club: "Plymouth Argyle",
     pictureUrl: "https://digitalhub.fifa.com/transform/485b38ee-9a46-4494-b518-952574e944e6/BARBAROUSES-Kosta_269592",
     dateOfBirth: "1990-02-19",
-    height: 171
+    height: 171,
+    socials: {
+      instagram: "kostabarbarouses9"
+    }
   },
   "274078": {
     fifaId: "274078",
@@ -187,7 +202,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/431bf921-6e73-469f-87bd-3fb2c010966e/WOOD-Chris_274078",
     dateOfBirth: "1991-12-07",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "woodsy39"
+    }
   },
   "274102": {
     fifaId: "274102",
@@ -223,7 +241,10 @@ var squads_default = {
     club: "LDU Quito",
     pictureUrl: "https://digitalhub.fifa.com/transform/188e1d63-5bfa-450a-b202-730221c18fe1/ADE-Ricardo_275917",
     dateOfBirth: "1990-05-21",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "adericardo4"
+    }
   },
   "284190": {
     fifaId: "284190",
@@ -235,7 +256,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/521889b3-16a2-48ef-92d4-6978a9e05cc6/HASSAN-ALHAYDOS_284190",
     dateOfBirth: "1990-12-11",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "hassanalhaydos"
+    }
   },
   "288961": {
     fifaId: "288961",
@@ -247,7 +271,10 @@ var squads_default = {
     club: "Persepolis",
     pictureUrl: "https://digitalhub.fifa.com/transform/6567ec6b-b63d-4163-8729-6e9ad25e32f7/HAJISAFI-Ehsan_288961",
     dateOfBirth: "1990-02-25",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "ehsanhajsafi28"
+    }
   },
   "290821": {
     fifaId: "290821",
@@ -259,7 +286,10 @@ var squads_default = {
     club: "Atl\xE9tico Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/ff0110d3-0721-4983-bc62-018a993d8486/WITSEL-Axel_290821",
     dateOfBirth: "1989-01-12",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "axelwitsel28"
+    }
   },
   "291372": {
     fifaId: "291372",
@@ -271,7 +301,10 @@ var squads_default = {
     club: "Sporting",
     pictureUrl: "https://digitalhub.fifa.com/transform/719252dc-c983-411f-875b-13a0f6acd967/NAGATOMO-Yuto_291372",
     dateOfBirth: "1986-09-12",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "yutonagatomo55"
+    }
   },
   "295922": {
     fifaId: "295922",
@@ -283,7 +316,10 @@ var squads_default = {
     club: "Bastia",
     pictureUrl: "https://digitalhub.fifa.com/transform/3b4c1123-62c6-4267-9d22-6d138e461a54/PLACIDE-Johny_295922",
     dateOfBirth: "1988-01-29",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "johny_placide"
+    }
   },
   "297266": {
     fifaId: "297266",
@@ -295,7 +331,10 @@ var squads_default = {
     club: "Rayo Vallecano",
     pictureUrl: "https://digitalhub.fifa.com/transform/2cf947a1-aabe-4e69-84c7-4e22c24e01da/STOPIRA_297266",
     dateOfBirth: "1988-05-20",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "stopy22"
+    }
   },
   "299200": {
     fifaId: "299200",
@@ -307,7 +346,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/8bc6e66f-1f5a-4f1d-813d-41c4ab04c6ac/ARNAUTOVIC-Marko_299200",
     dateOfBirth: "1989-04-19",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "m.arnautovic7"
+    }
   },
   "300409": {
     fifaId: "300409",
@@ -319,7 +361,10 @@ var squads_default = {
     club: "\u0160ibenik",
     pictureUrl: "https://digitalhub.fifa.com/transform/b5fa7216-27c0-4652-b7df-b099e97a5604/DZEKO-Edin_300409",
     dateOfBirth: "1986-03-17",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "edindzeko"
+    }
   },
   "306538": {
     fifaId: "306538",
@@ -331,7 +376,10 @@ var squads_default = {
     club: "Hoffenheim",
     pictureUrl: "https://digitalhub.fifa.com/transform/9da65f41-ea53-4209-b2f6-c59e69dbc193/BAUMANN-Oliver_306538",
     dateOfBirth: "1990-06-02",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "olibaumann90"
+    }
   },
   "307849": {
     fifaId: "307849",
@@ -358,7 +406,10 @@ var squads_default = {
     club: "Aston Villa",
     pictureUrl: "https://digitalhub.fifa.com/transform/f5f477fe-a519-4c69-bb68-f6f5b97c1399/MARTINEZ_Emiliano_308300",
     dateOfBirth: "1992-09-02",
-    height: 195
+    height: 195,
+    socials: {
+      instagram: "emimartinezz1"
+    }
   },
   "308322": {
     fifaId: "308322",
@@ -370,7 +421,10 @@ var squads_default = {
     club: "Lyon",
     pictureUrl: "https://digitalhub.fifa.com/transform/dd4d5f75-b3d4-4ff2-81bf-c16bf0b0a061/TAGLIAFICO-Nicolas_308322",
     dateOfBirth: "1992-08-31",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "tagliafico3"
+    }
   },
   "308370": {
     fifaId: "308370",
@@ -412,7 +466,10 @@ var squads_default = {
     club: "Benfica",
     pictureUrl: "https://digitalhub.fifa.com/transform/4aedbffa-a35c-4aa5-a7ce-8a29c2af3e72/OTAMENDI-Nicolas_310116",
     dateOfBirth: "1988-02-12",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "nicolasotamendi30"
+    }
   },
   "311558": {
     fifaId: "311558",
@@ -439,7 +496,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/07f27983-8eee-43f3-b68c-b45b6f806785/RODRIGUEZ-Ricardo_313559",
     dateOfBirth: "1992-08-25",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "rrodriguez.68"
+    }
   },
   "314255": {
     fifaId: "314255",
@@ -451,7 +511,10 @@ var squads_default = {
     club: "Tractor",
     pictureUrl: "https://digitalhub.fifa.com/transform/65922b90-e1f9-453b-aa7c-b436746fce3c/HOSSEINI-Hossein_314255",
     dateOfBirth: "1992-06-30",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "hosseini21"
+    }
   },
   "316002": {
     fifaId: "316002",
@@ -463,7 +526,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/3ef36338-4967-43c2-8698-1fb504ce30fd/ALABA-David_316002",
     dateOfBirth: "1992-06-24",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "davidalaba"
+    }
   },
   "318647": {
     fifaId: "318647",
@@ -475,7 +541,10 @@ var squads_default = {
     club: "New York Red Bulls",
     pictureUrl: "https://digitalhub.fifa.com/transform/d606fc1a-1644-428f-ada8-69c93198e5b3/FERNANDEZ-Gatito_318647",
     dateOfBirth: "1988-03-29",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "gatitofernandez"
+    }
   },
   "321697": {
     fifaId: "321697",
@@ -487,7 +556,10 @@ var squads_default = {
     club: "Melbourne City",
     pictureUrl: "https://digitalhub.fifa.com/transform/bc1b0683-9839-4c4e-acf1-2256bc2e58a3/LECKIE-Mathew_321697",
     dateOfBirth: "1991-02-04",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "lecks.7"
+    }
   },
   "331135": {
     fifaId: "331135",
@@ -511,7 +583,10 @@ var squads_default = {
     club: "Sunderland",
     pictureUrl: "https://digitalhub.fifa.com/transform/93c60eb1-755d-4019-aedb-4da099ceb670/DEGENEK-Milos_331149",
     dateOfBirth: "1994-04-28",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "milosdegenek"
+    }
   },
   "331463": {
     fifaId: "331463",
@@ -523,7 +598,10 @@ var squads_default = {
     club: "Wellington Phoenix",
     pictureUrl: "https://digitalhub.fifa.com/transform/2fd43bf7-76f0-4733-88d4-5d5ca820e91c/PAYNE-Tim_331463",
     dateOfBirth: "1994-01-10",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "timpayne__"
+    }
   },
   "331732": {
     fifaId: "331732",
@@ -535,7 +613,10 @@ var squads_default = {
     club: "Red Star Belgrade",
     pictureUrl: "https://digitalhub.fifa.com/transform/c4570ca7-10a7-44ca-901d-fee1e11e4400/CREPEAU-Maxime_331732",
     dateOfBirth: "1994-05-11",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "mcrepeau"
+    }
   },
   "332314": {
     fifaId: "332314",
@@ -547,7 +628,10 @@ var squads_default = {
     club: "Monaco",
     pictureUrl: "https://digitalhub.fifa.com/transform/4d275801-8b11-4fcc-bed0-ace70703da2d/IDRISSA-GANA-GUEYE_332314_1",
     dateOfBirth: "1989-09-26",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "iganagueye"
+    }
   },
   "332847": {
     fifaId: "332847",
@@ -559,7 +643,10 @@ var squads_default = {
     club: "Roma",
     pictureUrl: "https://digitalhub.fifa.com/transform/76c073ae-2d3c-47b6-8fb5-698893f91a6f/PAREDES-Leandro_332847",
     dateOfBirth: "1994-06-29",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "leoparedes20"
+    }
   },
   "332897": {
     fifaId: "332897",
@@ -571,7 +658,10 @@ var squads_default = {
     club: "Lazio",
     pictureUrl: "https://digitalhub.fifa.com/transform/eadeb58a-387f-4979-ae12-23a0296c172c/AGUIRRE-Rodrigo_332897",
     dateOfBirth: "1994-10-01",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "aguirrerodrigo21"
+    }
   },
   "332946": {
     fifaId: "332946",
@@ -628,7 +718,10 @@ var squads_default = {
     club: "Sporting",
     pictureUrl: "https://digitalhub.fifa.com/transform/115c99fd-ddc4-4f97-bc20-2cb7dae80735/SERI-Jean-Michael_335807",
     dateOfBirth: "1991-07-19",
-    height: 168
+    height: 168,
+    socials: {
+      instagram: "mika_seri6"
+    }
   },
   "335999": {
     fifaId: "335999",
@@ -640,7 +733,10 @@ var squads_default = {
     club: "Al-Nassr",
     pictureUrl: "https://digitalhub.fifa.com/transform/e923ca38-381d-4187-9d40-9f5f72434530/LAPORTE-Aymeric_335999",
     dateOfBirth: "1994-05-27",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "laporte"
+    }
   },
   "336022": {
     fifaId: "336022",
@@ -652,7 +748,10 @@ var squads_default = {
     club: "Everton",
     pictureUrl: "https://digitalhub.fifa.com/transform/5f9b3bbf-edb5-4956-bce7-2d0a8e77f6ab/PICKFORD-Jordan_336022",
     dateOfBirth: "1994-03-07",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "jpickford1"
+    }
   },
   "336088": {
     fifaId: "336088",
@@ -664,7 +763,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/e44b0c79-cb0b-4ce8-bace-7530a516371f/AKE-Nathan_336088",
     dateOfBirth: "1995-02-18",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "nathanake"
+    }
   },
   "336098": {
     fifaId: "336098",
@@ -676,7 +778,10 @@ var squads_default = {
     club: "Corinthians",
     pictureUrl: "https://digitalhub.fifa.com/transform/6fe9f49e-5f45-4a44-9807-579be23fc0db/DEPAY-Memphis_336098",
     dateOfBirth: "1994-02-13",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "memphisdepay"
+    }
   },
   "336170": {
     fifaId: "336170",
@@ -688,7 +793,10 @@ var squads_default = {
     club: "Sivasspor",
     pictureUrl: "https://digitalhub.fifa.com/transform/e9747d8e-47e9-45f3-b3b7-d3caf1ba1ecf/AYHAN-Kaan_336170",
     dateOfBirth: "1994-11-10",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "kaanayhan"
+    }
   },
   "336425": {
     fifaId: "336425",
@@ -700,7 +808,10 @@ var squads_default = {
     club: "Villarreal",
     pictureUrl: "https://digitalhub.fifa.com/transform/25e27fcf-479e-42fe-bd09-63dc8b8fa202/BAKAMBU-Cedric_336425",
     dateOfBirth: "1991-04-11",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "bakambu17"
+    }
   },
   "336439": {
     fifaId: "336439",
@@ -724,7 +835,10 @@ var squads_default = {
     club: "Sivasspor",
     pictureUrl: "https://digitalhub.fifa.com/transform/21f404b3-b430-489b-819c-c0460a2c3590/KHEDIRA-Rani_336459",
     dateOfBirth: "1994-01-27",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "wahbi_khazri_8"
+    }
   },
   "336472": {
     fifaId: "336472",
@@ -736,7 +850,10 @@ var squads_default = {
     club: "Hoffenheim",
     pictureUrl: "https://digitalhub.fifa.com/transform/a1ea2a12-4fba-4dbb-9a75-25c88685d90c/KRAMARIC-Andrej_336472",
     dateOfBirth: "1991-06-19",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "andrejkramaric"
+    }
   },
   "336641": {
     fifaId: "336641",
@@ -760,7 +877,10 @@ var squads_default = {
     club: "Watford",
     pictureUrl: "https://digitalhub.fifa.com/transform/eef7a9cc-256c-4000-ae64-38407521d30b/RALSTON-Anthony_337389",
     dateOfBirth: "1998-11-16",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "anthony_ralston1"
+    }
   },
   "339112": {
     fifaId: "339112",
@@ -784,7 +904,10 @@ var squads_default = {
     club: "AZ Alkmaar",
     pictureUrl: "https://digitalhub.fifa.com/transform/7c98d5eb-1514-4e8f-a6c6-60f4017b2175/RYAN-Mathew_339117",
     dateOfBirth: "1992-04-08",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "matthew_ryan_gk25"
+    }
   },
   "339510": {
     fifaId: "339510",
@@ -796,7 +919,10 @@ var squads_default = {
     club: "Charlotte FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/964be907-1e8e-49ec-bd7f-7085cf7d79d3/REAM-Tim_339510",
     dateOfBirth: "1987-10-05",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "tim.ream13"
+    }
   },
   "339745": {
     fifaId: "339745",
@@ -808,7 +934,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/d167ee25-02d4-48c1-b6bf-ec1eea3a1633/SALEM-ALDAWSARI_339745",
     dateOfBirth: "1991-08-19",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "29salem"
+    }
   },
   "339746": {
     fifaId: "339746",
@@ -832,7 +961,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/538bee26-1d47-4a95-a0f0-5d706f741e07/KOULIBALY-Kalidou_339820",
     dateOfBirth: "1991-06-20",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "kkoulibaly26"
+    }
   },
   "339987": {
     fifaId: "339987",
@@ -844,7 +976,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/5d230f74-1e00-4b42-a880-844fe2aee964/KOVACIC-Mateo_339987",
     dateOfBirth: "1994-05-06",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "mateokovacic8"
+    }
   },
   "344654": {
     fifaId: "344654",
@@ -856,7 +991,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/8d5236b8-acac-4946-af8e-5b007bcfa284/MOHAMED-SALAH_344654",
     dateOfBirth: "1992-06-15",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "mosalah"
+    }
   },
   "344661": {
     fifaId: "344661",
@@ -868,7 +1006,10 @@ var squads_default = {
     club: "Al Ahly",
     pictureUrl: "https://digitalhub.fifa.com/transform/403c9e6d-efe6-4917-86ea-c7eddc442208/RABIA-Ramy_344661",
     dateOfBirth: "1993-05-20",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "ramyrabia"
+    }
   },
   "345059": {
     fifaId: "345059",
@@ -880,7 +1021,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/618c02bf-ef05-4651-bd3a-10ee566afcab/ABDULAZIZ-HATEM_345059",
     dateOfBirth: "1990-01-01",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "abdulaziz_hatim"
+    }
   },
   "346743": {
     fifaId: "346743",
@@ -892,7 +1036,10 @@ var squads_default = {
     club: "Kasimpasa",
     pictureUrl: "https://digitalhub.fifa.com/transform/509a4e4e-b242-4488-a334-84faac974457/KHALILZADEH-Shoja_346743",
     dateOfBirth: "1989-05-14",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "shoja_khalilzadeh"
+    }
   },
   "347085": {
     fifaId: "347085",
@@ -916,7 +1063,10 @@ var squads_default = {
     club: "Middlesbrough",
     pictureUrl: "https://digitalhub.fifa.com/transform/7b166229-d82d-4323-9c79-eb973e996408/BEHICH-Aziz_349342",
     dateOfBirth: "1990-12-16",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "azizbehich"
+    }
   },
   "353251": {
     fifaId: "353251",
@@ -940,7 +1090,10 @@ var squads_default = {
     club: "Al-Nassr",
     pictureUrl: "https://digitalhub.fifa.com/transform/e0f75257-7c12-4777-a0d6-87b5d30f5548/MANE-Sadio_353790",
     dateOfBirth: "1992-04-10",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "sadiomaneofficiel"
+    }
   },
   "354861": {
     fifaId: "354861",
@@ -976,7 +1129,10 @@ var squads_default = {
     club: "St. Pauli",
     pictureUrl: "https://digitalhub.fifa.com/transform/7726492b-0996-47a2-aafd-bd362844d9df/IRVINE-Jackson_355775",
     dateOfBirth: "1993-03-07",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "jacksonirvine_"
+    }
   },
   "356189": {
     fifaId: "356189",
@@ -988,7 +1144,10 @@ var squads_default = {
     club: "Ajax",
     pictureUrl: "https://digitalhub.fifa.com/transform/95e802dd-2731-42ff-97ce-b92c47954fa1/HENDERSON-Jordan_356189",
     dateOfBirth: "1990-06-17",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "jordanhenderson"
+    }
   },
   "356412": {
     fifaId: "356412",
@@ -1000,7 +1159,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/41a8791f-677e-4106-b2e4-9d71011c561d/WIDMER-Silvan_356412",
     dateOfBirth: "1993-03-05",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "silvanwidmer"
+    }
   },
   "356532": {
     fifaId: "356532",
@@ -1012,7 +1174,10 @@ var squads_default = {
     club: "Marseille",
     pictureUrl: "https://digitalhub.fifa.com/transform/30bebca0-cc33-4a32-ad33-8a6141647128/MBEMBA-Chancel_356532",
     dateOfBirth: "1994-08-08",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "chancel22"
+    }
   },
   "356673": {
     fifaId: "356673",
@@ -1036,7 +1201,10 @@ var squads_default = {
     club: "LA Galaxy",
     pictureUrl: "https://digitalhub.fifa.com/transform/ec48d7a7-0cf7-4fc8-b999-e3c15fee5e98/JIMENEZ-Raul_356731",
     dateOfBirth: "1991-05-05",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "raulalonsojimenez9"
+    }
   },
   "356956": {
     fifaId: "356956",
@@ -1048,7 +1216,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/338ae8a7-8734-423e-ae54-2f783dba77ce/BOUNOU-Yassine_356956",
     dateOfBirth: "1991-04-05",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "bounouyassine_bono"
+    }
   },
   "358003": {
     fifaId: "358003",
@@ -1060,7 +1231,10 @@ var squads_default = {
     club: "Kasimpasa",
     pictureUrl: "https://digitalhub.fifa.com/transform/201b5e1b-25b8-4cd6-a8fa-2678977172fe/DARIDA-Vladimir_358003",
     dateOfBirth: "1990-08-08",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "v_dary"
+    }
   },
   "358106": {
     fifaId: "358106",
@@ -1072,7 +1246,10 @@ var squads_default = {
     club: "Al-Qadsiah",
     pictureUrl: "https://digitalhub.fifa.com/transform/b630bdbe-3615-43b0-b715-8da37b1ecfa6/COURTOIS-Thibaut_358106",
     dateOfBirth: "1992-05-11",
-    height: 199
+    height: 199,
+    socials: {
+      instagram: "thibautcourtois"
+    }
   },
   "358112": {
     fifaId: "358112",
@@ -1084,7 +1261,10 @@ var squads_default = {
     club: "DC United",
     pictureUrl: "https://digitalhub.fifa.com/transform/302b7fb7-6964-4a52-8db4-9c12778b80fa/LUKAKU-Romelu_358112",
     dateOfBirth: "1993-05-13",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "romelulukaku"
+    }
   },
   "358120": {
     fifaId: "358120",
@@ -1096,7 +1276,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/41fb7de3-9f9e-44f1-b63f-0551f5d33b2b/DE-BRUYNE-Kevin_358120",
     dateOfBirth: "1991-06-28",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "kevindebruyne"
+    }
   },
   "358122": {
     fifaId: "358122",
@@ -1108,7 +1291,10 @@ var squads_default = {
     club: "Atalanta",
     pictureUrl: "https://digitalhub.fifa.com/transform/13d6695b-4220-48cb-91b1-16a60dff2aa6/MEUNIER-Thomas_358122",
     dateOfBirth: "1991-09-12",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "thomas12meunier"
+    }
   },
   "358241": {
     fifaId: "358241",
@@ -1120,7 +1306,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/aa016ba2-828d-4d40-8e48-8f07a8d275d9/SABITZER-Marcel_358241",
     dateOfBirth: "1994-03-17",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "marcel7sabitzer"
+    }
   },
   "359381": {
     fifaId: "359381",
@@ -1132,7 +1321,10 @@ var squads_default = {
     club: "Hajduk Split",
     pictureUrl: "https://digitalhub.fifa.com/transform/ba7ea3ab-0ef6-4cdd-834c-79a94739fe26/PERISIC-Ivan_359381",
     dateOfBirth: "1989-02-02",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "ivanperisic444"
+    }
   },
   "359634": {
     fifaId: "359634",
@@ -1144,7 +1336,10 @@ var squads_default = {
     club: "Rangers",
     pictureUrl: "https://digitalhub.fifa.com/transform/acc9b74c-859b-406f-add5-879c21150144/HANLEY-Grant_359634",
     dateOfBirth: "1991-11-20",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "ghanley__"
+    }
   },
   "360496": {
     fifaId: "360496",
@@ -1156,7 +1351,10 @@ var squads_default = {
     club: "AEK Athens",
     pictureUrl: "https://digitalhub.fifa.com/transform/747828c3-0592-411d-889a-9a59ae78e0b6/NORDFELDT-Kristoffer_360496",
     dateOfBirth: "1989-06-23",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "krisnordfeldt"
+    }
   },
   "360498": {
     fifaId: "360498",
@@ -1168,7 +1366,10 @@ var squads_default = {
     club: "Be\u015Fikta\u015F",
     pictureUrl: "https://digitalhub.fifa.com/transform/1ce10157-fad1-435e-b21d-b4f25a483bc1/GUNOK-Mert_360498",
     dateOfBirth: "1989-03-01",
-    height: 196
+    height: 196,
+    socials: {
+      instagram: "mertgunok_34"
+    }
   },
   "363863": {
     fifaId: "363863",
@@ -1180,7 +1381,10 @@ var squads_default = {
     club: "Trabzonspor",
     pictureUrl: "https://digitalhub.fifa.com/transform/fd2622c8-9bd4-40f0-bb16-6b3311bb1811/TREZEGUET_363863",
     dateOfBirth: "1994-10-01",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "mahmoudtrezeguet"
+    }
   },
   "364752": {
     fifaId: "364752",
@@ -1223,7 +1427,10 @@ var squads_default = {
     club: "Burton Albion",
     pictureUrl: "https://digitalhub.fifa.com/transform/0d8fc4f9-7330-4eaa-bbf0-7dfccbec09db/CROCOMBE-Max_368535",
     dateOfBirth: "1993-08-12",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "maximecrocombe"
+    }
   },
   "368649": {
     fifaId: "368649",
@@ -1235,7 +1442,10 @@ var squads_default = {
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/bb6c8016-d4b5-4434-9bba-1ec8cac37300/JOAO-CANCELO_368649",
     dateOfBirth: "1994-05-27",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "jpcancelo"
+    }
   },
   "368655": {
     fifaId: "368655",
@@ -1247,7 +1457,10 @@ var squads_default = {
     club: "Atl\xE9tico de Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/977da143-5380-497d-85f7-d6e5ca34b27c/GIMENEZ-Jose-Maria_368655",
     dateOfBirth: "1995-01-20",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "josemariagimenez"
+    }
   },
   "368660": {
     fifaId: "368660",
@@ -1259,7 +1472,10 @@ var squads_default = {
     club: "Fenerbah\xE7e",
     pictureUrl: "https://digitalhub.fifa.com/transform/5e8ec886-a385-4ca6-9e90-d16b13c37534/VARELA-Guillermo_368660",
     dateOfBirth: "1993-03-24",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "guillermovarela4"
+    }
   },
   "368664": {
     fifaId: "368664",
@@ -1271,7 +1487,10 @@ var squads_default = {
     club: "Internacional",
     pictureUrl: "https://digitalhub.fifa.com/transform/b5a98e25-83d4-441e-9c25-0eb4581277dc/ROCHET-Sergio_368664",
     dateOfBirth: "1993-03-23",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "chinorochet93"
+    }
   },
   "368689": {
     fifaId: "368689",
@@ -1283,7 +1502,10 @@ var squads_default = {
     club: "Wolverhampton",
     pictureUrl: "https://digitalhub.fifa.com/transform/167fd8ff-0a3f-4c15-adc8-859e9d81caa3/JOSE-SA_368689",
     dateOfBirth: "1993-01-17",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "josesaoficial"
+    }
   },
   "368744": {
     fifaId: "368744",
@@ -1307,7 +1529,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/70e09388-6736-4f6c-85cf-0aa2017a6b18/DIGNE-Lucas_368860",
     dateOfBirth: "1993-07-20",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "lucasdigne"
+    }
   },
   "369029": {
     fifaId: "369029",
@@ -1319,7 +1544,10 @@ var squads_default = {
     club: "Fenerbah\xE7e",
     pictureUrl: "https://digitalhub.fifa.com/transform/6f54cf31-4fd8-4dff-aaa7-9db6bf2fa2ec/LIVAKOVIC-Dominik_369029",
     dateOfBirth: "1995-01-09",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "dominiklivakovic40"
+    }
   },
   "369267": {
     fifaId: "369267",
@@ -1331,7 +1559,10 @@ var squads_default = {
     club: "Al Ittihad",
     pictureUrl: "https://digitalhub.fifa.com/transform/028afc10-053b-443f-819c-d95ae0d46a55/YASSER-IBRAHIM_369267",
     dateOfBirth: "1993-02-10",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "yasserebrahim5"
+    }
   },
   "369304": {
     fifaId: "369304",
@@ -1343,7 +1574,10 @@ var squads_default = {
     club: "Inter de Mil\xE3o",
     pictureUrl: "https://digitalhub.fifa.com/transform/f192cf34-173f-47b3-9748-981bd3f21275/CALHANOGLU-Hakan_369304",
     dateOfBirth: "1994-02-08",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "hakancalhanoglu"
+    }
   },
   "369419": {
     fifaId: "369419",
@@ -1370,7 +1604,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/bb455f6a-d793-44ef-92b8-bd1aff6d14d6/STONES-John_369434",
     dateOfBirth: "1994-05-28",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "johnstones5"
+    }
   },
   "369744": {
     fifaId: "369744",
@@ -1382,7 +1619,10 @@ var squads_default = {
     club: "Palmeiras",
     pictureUrl: "https://digitalhub.fifa.com/transform/d37c65ce-135e-4bd4-b870-2c2548b93e2d/GOMEZ-Gustavo_369744",
     dateOfBirth: "1993-05-06",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "gustavogomez462"
+    }
   },
   "369749": {
     fifaId: "369749",
@@ -1394,7 +1634,10 @@ var squads_default = {
     club: "Atl\xE9tico Mineiro",
     pictureUrl: "https://digitalhub.fifa.com/transform/241fe8c3-a33e-411a-8eca-e81cc3fba926/ALONSO-Junior_369749",
     dateOfBirth: "1993-02-09",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "junioralonso_"
+    }
   },
   "369761": {
     fifaId: "369761",
@@ -1406,7 +1649,10 @@ var squads_default = {
     club: "Newcastle",
     pictureUrl: "https://digitalhub.fifa.com/transform/62600270-27f4-432a-8f1f-1014124829c1/ALMIRON-Miguel_369761",
     dateOfBirth: "1994-02-10",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "miguel_almiron"
+    }
   },
   "369768": {
     fifaId: "369768",
@@ -1418,7 +1664,10 @@ var squads_default = {
     club: "Torino",
     pictureUrl: "https://digitalhub.fifa.com/transform/97bc175a-1e5c-417f-ab23-492237ddb3ab/SANABRIA-Antonio_369768",
     dateOfBirth: "1996-03-04",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "tsanabria9"
+    }
   },
   "370171": {
     fifaId: "370171",
@@ -1442,7 +1691,10 @@ var squads_default = {
     club: "Toronto FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/982a5ed2-0878-4733-b071-cd7cc532ee37/OSORIO-Jonathan_370986",
     dateOfBirth: "1992-06-12",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "j.oso21"
+    }
   },
   "371142": {
     fifaId: "371142",
@@ -1454,7 +1706,10 @@ var squads_default = {
     club: "Troyes",
     pictureUrl: "https://digitalhub.fifa.com/transform/cc41974e-475a-4ba0-bb88-ec792a18c3ab/RUFER-Alex_371142",
     dateOfBirth: "1996-06-12",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "alexrufer"
+    }
   },
   "371553": {
     fifaId: "371553",
@@ -1466,7 +1721,10 @@ var squads_default = {
     club: "Real Betis",
     pictureUrl: "https://digitalhub.fifa.com/transform/3efabccf-6fc5-4192-b000-ea89f4b63c06/TAGNAOUTI-Ahmed-Reda_371553",
     dateOfBirth: "1996-04-05",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "reda_tagnaouti"
+    }
   },
   "371609": {
     fifaId: "371609",
@@ -1478,7 +1736,10 @@ var squads_default = {
     club: "Al Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/2e649ed1-5e23-4de2-aafc-79fac130f5f0/KESSIE-Franck_371609",
     dateOfBirth: "1996-12-19",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "franckkessie"
+    }
   },
   "371736": {
     fifaId: "371736",
@@ -1490,7 +1751,10 @@ var squads_default = {
     club: "Shabab Al Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/a2e8983e-9596-49b3-8c5c-e398d66e27c5/EZATOLAHI-Saeid_371736",
     dateOfBirth: "1996-10-01",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "saeedezatolahi"
+    }
   },
   "371739": {
     fifaId: "371739",
@@ -1502,7 +1766,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/9612130f-7351-47d4-b346-dcd331a62cbe/SCHLAGER-Alexander_371739",
     dateOfBirth: "1996-02-01",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "xav_er_"
+    }
   },
   "371956": {
     fifaId: "371956",
@@ -1529,7 +1796,10 @@ var squads_default = {
     club: "Inter Miami",
     pictureUrl: "https://digitalhub.fifa.com/transform/efe78874-6cb4-4156-a6ce-af7c6374d11f/CORNELIUS-Derek_371958",
     dateOfBirth: "1997-11-25",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "dcornelius13"
+    }
   },
   "372090": {
     fifaId: "372090",
@@ -1541,7 +1811,10 @@ var squads_default = {
     club: "AEK Atenas",
     pictureUrl: "https://digitalhub.fifa.com/transform/ef0f99d9-6838-4b25-8a18-ecd9638bd51f/PINEDA-Orbelin_372090",
     dateOfBirth: "1996-03-24",
-    height: 169
+    height: 169,
+    socials: {
+      instagram: "orbelin7pineda"
+    }
   },
   "372243": {
     fifaId: "372243",
@@ -1553,7 +1826,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/b2217b87-df88-4228-8235-a7ec752aef31/LIENHART-Philipp_372243",
     dateOfBirth: "1996-07-11",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "philipp_lienhart"
+    }
   },
   "372266": {
     fifaId: "372266",
@@ -1565,7 +1841,10 @@ var squads_default = {
     club: "Fenerbah\xE7e",
     pictureUrl: "https://digitalhub.fifa.com/transform/cf6efacc-6c34-4679-b833-b2c5371b4ee6/AMRABAT-Sofyan_372266",
     dateOfBirth: "1996-08-21",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "sofyanamrabat"
+    }
   },
   "372294": {
     fifaId: "372294",
@@ -1589,7 +1868,10 @@ var squads_default = {
     club: "Southampton",
     pictureUrl: "https://digitalhub.fifa.com/transform/d8171170-8b91-49e5-b32a-7b3494bf5809/CALETA-CAR-Duje_372424",
     dateOfBirth: "1996-09-17",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "dujecar_5"
+    }
   },
   "372436": {
     fifaId: "372436",
@@ -1601,7 +1883,10 @@ var squads_default = {
     club: "FC K\xF6ln",
     pictureUrl: "https://digitalhub.fifa.com/transform/ddc91c53-fc37-453c-b16e-50ef5e2dd2da/SUNJIC-Ivan_372436",
     dateOfBirth: "1996-10-09",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "ivan_sunjic34"
+    }
   },
   "373235": {
     fifaId: "373235",
@@ -1613,7 +1898,10 @@ var squads_default = {
     club: "Real Sociedad",
     pictureUrl: "https://digitalhub.fifa.com/transform/4abc883f-1368-46d6-8849-308d06b641e6/NYLAND-Orjan_373235",
     dateOfBirth: "1990-09-10",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "orjanhnyland1"
+    }
   },
   "373344": {
     fifaId: "373344",
@@ -1637,7 +1925,10 @@ var squads_default = {
     club: "Internacional",
     pictureUrl: "https://digitalhub.fifa.com/transform/4688cb2a-6446-4439-ba5f-e4db7b5a18c5/VALENCIA-Enner_373400",
     dateOfBirth: "1989-11-04",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "ennervalencia1"
+    }
   },
   "375600": {
     fifaId: "375600",
@@ -1649,7 +1940,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/712811cf-a3ff-4043-91f0-5044f8028dee/SCHOEPF-Alessandro_375600",
     dateOfBirth: "1994-02-07",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "alessandroschoepf"
+    }
   },
   "376230": {
     fifaId: "376230",
@@ -1661,7 +1955,10 @@ var squads_default = {
     club: "Cagliari",
     pictureUrl: "https://digitalhub.fifa.com/transform/bed62578-6b40-402e-8c63-94159988fe95/KOLASINAC-Sead_376230",
     dateOfBirth: "1993-06-20",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "seadk6"
+    }
   },
   "376285": {
     fifaId: "376285",
@@ -1673,7 +1970,10 @@ var squads_default = {
     club: "Al-Arabi",
     pictureUrl: "https://digitalhub.fifa.com/transform/dc4250ac-0a37-44da-9ae0-c858225ad8a1/MANDI-Aissa_376285",
     dateOfBirth: "1991-10-22",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "aissamandi23"
+    }
   },
   "379886": {
     fifaId: "379886",
@@ -1685,7 +1985,10 @@ var squads_default = {
     club: "Persepolis",
     pictureUrl: "https://digitalhub.fifa.com/transform/1bea8439-0136-4f96-ae79-7d165c648b4a/JAHANBAKHSH-Alireza_379886",
     dateOfBirth: "1993-08-11",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "alirezajb_official"
+    }
   },
   "379939": {
     fifaId: "379939",
@@ -1697,7 +2000,10 @@ var squads_default = {
     club: "Eintracht Frankfurt",
     pictureUrl: "https://digitalhub.fifa.com/transform/02fbf423-afa1-4863-8ddc-af2136fb5685/BENTALEB-Nabil_379939",
     dateOfBirth: "1994-11-24",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "nabilbentaleb"
+    }
   },
   "379942": {
     fifaId: "379942",
@@ -1709,7 +2015,10 @@ var squads_default = {
     club: "Al-Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/172fb59c-24f2-4bc0-82a2-cdc869badf53/MAHREZ-Riyad_379942",
     dateOfBirth: "1991-02-21",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "riyadmahrez26.7"
+    }
   },
   "379953": {
     fifaId: "379953",
@@ -1721,7 +2030,10 @@ var squads_default = {
     club: "Bayer Leverkusen",
     pictureUrl: "https://digitalhub.fifa.com/transform/a5e5e083-d89c-4be7-a367-8456e0f8cb35/GORETZKA-Leon_379953",
     dateOfBirth: "1995-02-06",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "leon_goretzka"
+    }
   },
   "379955": {
     fifaId: "379955",
@@ -1733,7 +2045,10 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/88c43fe2-0c78-437c-a2bf-388c3673c58c/RUEDIGER-Antonio_379955",
     dateOfBirth: "1993-03-03",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "toniruediger"
+    }
   },
   "380005": {
     fifaId: "380005",
@@ -1745,7 +2060,10 @@ var squads_default = {
     club: "Atalanta",
     pictureUrl: "https://digitalhub.fifa.com/transform/f3c0fd5e-6814-4acc-822a-2152e1cf79de/PASALIC-Mario_380005",
     dateOfBirth: "1995-02-09",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "pasalicmario"
+    }
   },
   "380007": {
     fifaId: "380007",
@@ -1757,7 +2075,10 @@ var squads_default = {
     club: "Persepolis",
     pictureUrl: "https://digitalhub.fifa.com/transform/c8cf4e84-2bd2-4e20-bb73-c7f14a935b73/BEIRANVAND-Alireza_380007",
     dateOfBirth: "1992-09-21",
-    height: 195
+    height: 195,
+    socials: {
+      instagram: "alirezabeyranvand.official"
+    }
   },
   "382312": {
     fifaId: "382312",
@@ -1769,7 +2090,10 @@ var squads_default = {
     club: "Central Coast Mariners",
     pictureUrl: "https://digitalhub.fifa.com/transform/75870c29-917d-4ad0-984c-c7ba4e85953c/BURGESS-Cameron_382312",
     dateOfBirth: "1995-10-21",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "cburgess95"
+    }
   },
   "382739": {
     fifaId: "382739",
@@ -1781,7 +2105,10 @@ var squads_default = {
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/ab948683-40c0-4af1-9038-b7f24da3ffc2/LLORENTE-Marcos_382739",
     dateOfBirth: "1995-01-30",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "marcosllorente"
+    }
   },
   "384751": {
     fifaId: "384751",
@@ -1793,7 +2120,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/ebae7760-2b89-4f53-bc2a-38b1b276f85b/GONCALO-GUEDES_384751",
     dateOfBirth: "1996-11-29",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "goncaloguedes17"
+    }
   },
   "384752": {
     fifaId: "384752",
@@ -1805,7 +2135,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/7eab2fa3-e7d1-4876-aaaa-a44a9e923750/RUBEN-DIAS_384752",
     dateOfBirth: "1997-05-14",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "rubendias"
+    }
   },
   "384797": {
     fifaId: "384797",
@@ -1817,7 +2150,10 @@ var squads_default = {
     club: "Persepolis",
     pictureUrl: "https://digitalhub.fifa.com/transform/0aad53c3-8ade-4161-8605-09eed82b2c23/REZAEIAN-Ramin_384797",
     dateOfBirth: "1990-03-21",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "raminrezaeian"
+    }
   },
   "384850": {
     fifaId: "384850",
@@ -1829,7 +2165,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/98cfccc5-8732-4a13-a4ec-127c4e886d90/RAJAEI-AYED_384850",
     dateOfBirth: "1993-07-25",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "rajaei.ayed"
+    }
   },
   "385067": {
     fifaId: "385067",
@@ -1841,7 +2180,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/c3e4cf4b-06b4-4c6b-9370-a64d8a4c8bfb/BOUALEM-KHOUKHI_385067",
     dateOfBirth: "1990-07-09",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "khoukhi1616"
+    }
   },
   "385070": {
     fifaId: "385070",
@@ -1865,7 +2207,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/255e18de-7d1d-4a99-a05c-8047149ec1bc/GRILLITSCH-Florian_385248",
     dateOfBirth: "1995-08-07",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "floriangrillitsch"
+    }
   },
   "385259": {
     fifaId: "385259",
@@ -1877,7 +2222,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/e5140daf-dd57-4b76-9777-85aec86e6c22/LAIMER-Konrad_385259",
     dateOfBirth: "1997-05-27",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "konradlaimer"
+    }
   },
   "385306": {
     fifaId: "385306",
@@ -1889,7 +2237,10 @@ var squads_default = {
     club: "Vancouver Whitecaps",
     pictureUrl: "https://digitalhub.fifa.com/transform/5f115675-51fb-4e0c-ac8c-7226b762b4a1/CUBAS-Andres_385306",
     dateOfBirth: "1996-05-11",
-    height: 166
+    height: 166,
+    socials: {
+      instagram: "andrescubas08"
+    }
   },
   "385531": {
     fifaId: "385531",
@@ -1901,7 +2252,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/f00dad89-01ad-4a76-9b69-9da9b0cccceb/SCHLAGER-Xaver_385531",
     dateOfBirth: "1997-09-28",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "xav_er_"
+    }
   },
   "385994": {
     fifaId: "385994",
@@ -1913,7 +2267,10 @@ var squads_default = {
     club: "Crystal Palace",
     pictureUrl: "https://digitalhub.fifa.com/transform/8b0d52a9-62d1-4e23-9a23-e786cfde39dd/ROLDAN-Cristian_385994",
     dateOfBirth: "1995-06-03",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "cristianroldan_"
+    }
   },
   "386339": {
     fifaId: "386339",
@@ -1937,7 +2294,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/b5995ed9-3969-48a1-abc7-abd8df77abda/AKRAM-AFIF_386347",
     dateOfBirth: "1996-11-18",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "akramafif"
+    }
   },
   "386348": {
     fifaId: "386348",
@@ -1949,7 +2309,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/2b2c6d70-e76e-41d8-baff-36ba0965fca3/ASSIM-MADIBO_386348",
     dateOfBirth: "1996-10-22",
-    height: 168
+    height: 168,
+    socials: {
+      instagram: "madibo_96"
+    }
   },
   "386366": {
     fifaId: "386366",
@@ -1961,7 +2324,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/e49165f0-de52-4f7b-bb9a-689e7c4d4bd3/ALMOEZ-ALI_386366",
     dateOfBirth: "1996-08-19",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "ali.almoez"
+    }
   },
   "386387": {
     fifaId: "386387",
@@ -1985,7 +2351,10 @@ var squads_default = {
     club: "Bayern Munique",
     pictureUrl: "https://digitalhub.fifa.com/transform/ada33dfd-5b01-4792-88f4-14c06641509e/KIMMICH-Joshua_386413",
     dateOfBirth: "1995-02-08",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "joshua.kimmich"
+    }
   },
   "386458": {
     fifaId: "386458",
@@ -1997,7 +2366,10 @@ var squads_default = {
     club: "Brighton",
     pictureUrl: "https://digitalhub.fifa.com/transform/f1ba51b5-2593-413f-9d87-a464060e20ff/ROMERO-GAMARRA-Alejandro_386458",
     dateOfBirth: "1995-01-11",
-    height: 165
+    height: 165,
+    socials: {
+      instagram: "kaku_romero17"
+    }
   },
   "386538": {
     fifaId: "386538",
@@ -2009,7 +2381,10 @@ var squads_default = {
     club: "Tottenham",
     pictureUrl: "https://digitalhub.fifa.com/transform/148bf081-d6bb-4b52-8db0-9231126fa762/BENTANCUR-Rodrigo_386538",
     dateOfBirth: "1997-06-25",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "rodrigo_bentancur"
+    }
   },
   "388475": {
     fifaId: "388475",
@@ -2021,7 +2396,10 @@ var squads_default = {
     club: "Inter de Mil\xE3o",
     pictureUrl: "https://digitalhub.fifa.com/transform/0d942331-39fb-421e-8a8d-d1f875958559/TAREMI-Mehdi_388475",
     dateOfBirth: "1992-07-18",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "mehditaremiofficial9"
+    }
   },
   "389437": {
     fifaId: "389437",
@@ -2033,7 +2411,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/59f676b5-4f37-4206-8c37-5c2aecdd3b9e/EHSAN-HADDAD_389437",
     dateOfBirth: "1994-02-05",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "ehsan_haddad_"
+    }
   },
   "389485": {
     fifaId: "389485",
@@ -2045,7 +2426,10 @@ var squads_default = {
     club: "Bayer Leverkusen",
     pictureUrl: "https://digitalhub.fifa.com/transform/0c3725a4-a529-412d-867b-2ca0929a7a85/PALACIOS-Exequiel_389485",
     dateOfBirth: "1998-10-05",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "exepalaciosok"
+    }
   },
   "389740": {
     fifaId: "389740",
@@ -2057,7 +2441,10 @@ var squads_default = {
     club: "Sassuolo",
     pictureUrl: "https://digitalhub.fifa.com/transform/6353056f-aabd-49e1-9931-9b28010746a6/ERLIC-Martin_389740",
     dateOfBirth: "1998-01-24",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "martin.erlic"
+    }
   },
   "389753": {
     fifaId: "389753",
@@ -2069,7 +2456,10 @@ var squads_default = {
     club: "Dynamo Moscow",
     pictureUrl: "https://digitalhub.fifa.com/transform/f0845e44-1c38-4bff-a4d4-3e238907d961/MORO-Nikola_389753",
     dateOfBirth: "1998-03-12",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "moronikola"
+    }
   },
   "389754": {
     fifaId: "389754",
@@ -2081,7 +2471,10 @@ var squads_default = {
     club: "Benfica",
     pictureUrl: "https://digitalhub.fifa.com/transform/5c33a6f7-32cc-4821-949d-42fa33de6f74/MUSA-Petar_389754",
     dateOfBirth: "1998-03-04",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "petarmusa"
+    }
   },
   "389782": {
     fifaId: "389782",
@@ -2093,7 +2486,10 @@ var squads_default = {
     club: "Brighton",
     pictureUrl: "https://digitalhub.fifa.com/transform/85df33e2-083f-4cef-9fa2-3a8fc7d29466/ESTUPINAN-Pervis_389782",
     dateOfBirth: "1998-01-21",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "pervisestupinan_oficial"
+    }
   },
   "389784": {
     fifaId: "389784",
@@ -2132,7 +2528,10 @@ var squads_default = {
     club: "Bayern Munique",
     pictureUrl: "https://digitalhub.fifa.com/transform/daae69ae-72e0-4e42-812f-d19d74d12478/UPAMECANO-Dayot_389876",
     dateOfBirth: "1998-10-27",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "upamecano"
+    }
   },
   "389879": {
     fifaId: "389879",
@@ -2144,7 +2543,10 @@ var squads_default = {
     club: "USM Alger",
     pictureUrl: "https://digitalhub.fifa.com/transform/9a389290-d443-4b83-8e3a-70e481bca3f1/ZIDANE-Luca_389879",
     dateOfBirth: "1998-05-13",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "luca"
+    }
   },
   "389886": {
     fifaId: "389886",
@@ -2156,7 +2558,10 @@ var squads_default = {
     club: "Fenerbah\xE7e",
     pictureUrl: "https://digitalhub.fifa.com/transform/87cebb80-d20e-42c4-9030-8adcb1a3e1a8/BURNIC-Dzenis_389886",
     dateOfBirth: "1998-05-22",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "dz.burnic"
+    }
   },
   "389907": {
     fifaId: "389907",
@@ -2168,7 +2573,10 @@ var squads_default = {
     club: "Galatasaray",
     pictureUrl: "https://digitalhub.fifa.com/transform/1e968b8d-1b4c-4bce-86b7-8a4ad87eef3a/OZCAN-Salih_389907",
     dateOfBirth: "1998-01-11",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "salihoezcan"
+    }
   },
   "390181": {
     fifaId: "390181",
@@ -2192,7 +2600,10 @@ var squads_default = {
     club: "Wellington Phoenix",
     pictureUrl: "https://digitalhub.fifa.com/transform/e2c1ff8e-bc45-46aa-b217-a6c2c588c497/McCOWATT-Callum_390196",
     dateOfBirth: "1999-04-30",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "callum_mccowatt"
+    }
   },
   "390209": {
     fifaId: "390209",
@@ -2204,7 +2615,10 @@ var squads_default = {
     club: "Leiria",
     pictureUrl: "https://digitalhub.fifa.com/transform/3c43e6c2-50b4-4cb3-ba2e-e94f9a928edd/SINGH-Sarpreet_390209",
     dateOfBirth: "1999-02-20",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "sarpreet.singh11"
+    }
   },
   "390218": {
     fifaId: "390218",
@@ -2216,7 +2630,10 @@ var squads_default = {
     club: "Livingston",
     pictureUrl: "https://digitalhub.fifa.com/transform/a9766a27-9d3c-4856-8462-396d87ee2335/WOUD-Michael_390218",
     dateOfBirth: "1999-01-16",
-    height: 196
+    height: 196,
+    socials: {
+      instagram: "michaelwoud32"
+    }
   },
   "390238": {
     fifaId: "390238",
@@ -2228,7 +2645,10 @@ var squads_default = {
     club: "Bournemouth",
     pictureUrl: "https://digitalhub.fifa.com/transform/7fdbded2-aa27-44b1-9bf1-ff1d17c58f86/ADAMS-Tyler_390238",
     dateOfBirth: "1999-02-14",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "tyler.adams"
+    }
   },
   "390259": {
     fifaId: "390259",
@@ -2240,7 +2660,10 @@ var squads_default = {
     club: "Juventus",
     pictureUrl: "https://digitalhub.fifa.com/transform/4406f0ad-8f60-4a98-89c0-89797bfe804d/McKENNIE-Weston_390259",
     dateOfBirth: "1998-08-28",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "west.mckennie"
+    }
   },
   "390267": {
     fifaId: "390267",
@@ -2252,7 +2675,10 @@ var squads_default = {
     club: "Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/34d1c247-2a09-4fd6-87bc-71ec687a54aa/PULISIC-Christian_390267",
     dateOfBirth: "1998-09-18",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "cmpulisic"
+    }
   },
   "390272": {
     fifaId: "390272",
@@ -2264,7 +2690,10 @@ var squads_default = {
     club: "Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/e14ee5aa-4770-492a-9e51-95343310e5d9/TRUSTY-Auston_390272",
     dateOfBirth: "1998-08-12",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "austontrusty3"
+    }
   },
   "390276": {
     fifaId: "390276",
@@ -2276,7 +2705,10 @@ var squads_default = {
     club: "Venezia",
     pictureUrl: "https://digitalhub.fifa.com/transform/31951bf6-a6b5-4646-b489-a2ca3fd4e550/WRIGHT-Haji_390276",
     dateOfBirth: "1998-03-27",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "hajiwright"
+    }
   },
   "390278": {
     fifaId: "390278",
@@ -2288,7 +2720,10 @@ var squads_default = {
     club: "Leeds United",
     pictureUrl: "https://digitalhub.fifa.com/transform/c23fe669-c31a-45e3-b5b2-bbe9ecb8b4de/ZENDEJAS-Alex_390278",
     dateOfBirth: "1998-02-07",
-    height: 167
+    height: 167,
+    socials: {
+      instagram: "alex_zendejas"
+    }
   },
   "390475": {
     fifaId: "390475",
@@ -2300,7 +2735,10 @@ var squads_default = {
     club: "Tondela",
     pictureUrl: "https://digitalhub.fifa.com/transform/200f1c50-a60a-4c33-ad94-b4dabd605f35/SITHOLE-Sphephelo_390475",
     dateOfBirth: "1999-03-03",
-    height: 197
+    height: 197,
+    socials: {
+      instagram: "yaya_sithole_42"
+    }
   },
   "390525": {
     fifaId: "390525",
@@ -2327,7 +2765,10 @@ var squads_default = {
     club: "Persepolis",
     pictureUrl: "https://digitalhub.fifa.com/transform/20ec6667-ff1b-4fb3-8128-ecf2eb1c6e18/KANANI-Hossein_390534",
     dateOfBirth: "1994-03-23",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "hossein_kanani6"
+    }
   },
   "390535": {
     fifaId: "390535",
@@ -2339,7 +2780,10 @@ var squads_default = {
     club: "Al-Wehda",
     pictureUrl: "https://digitalhub.fifa.com/transform/f41b26d6-f1d1-47c2-ac56-dbce12a4baef/TORABI-Mehdi_390535",
     dateOfBirth: "1994-09-10",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "mahditorabi.m"
+    }
   },
   "390537": {
     fifaId: "390537",
@@ -2351,7 +2795,10 @@ var squads_default = {
     club: "Tractor",
     pictureUrl: "https://digitalhub.fifa.com/transform/ed36d5fa-f6ab-4e3c-8bdd-1c5cf555f225/MOHAMMADI-Milad_390537",
     dateOfBirth: "1993-09-29",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "miladmohammadi.official"
+    }
   },
   "390541": {
     fifaId: "390541",
@@ -2363,7 +2810,10 @@ var squads_default = {
     club: "Gent",
     pictureUrl: "https://digitalhub.fifa.com/transform/339c7ce2-356d-4b5f-8aed-58e4040a6f62/TANIGUCHI-Shogo_390541",
     dateOfBirth: "1991-07-15",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "shogo_taniguchi_5"
+    }
   },
   "390650": {
     fifaId: "390650",
@@ -2375,7 +2825,10 @@ var squads_default = {
     club: "Columbus Crew",
     pictureUrl: "https://digitalhub.fifa.com/transform/5bd9ff87-6801-46d2-8f10-ca9eb3ea2ea4/ROOM-Eloy_390650",
     dateOfBirth: "1989-02-06",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "eloyroom"
+    }
   },
   "390670": {
     fifaId: "390670",
@@ -2387,7 +2840,10 @@ var squads_default = {
     club: "Club Am\xE9rica",
     pictureUrl: "https://digitalhub.fifa.com/transform/21086aea-3ec5-47b2-a81f-f7316489183a/LARIN-Cyle_390670",
     dateOfBirth: "1995-04-17",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "cylelarin"
+    }
   },
   "391297": {
     fifaId: "391297",
@@ -2399,7 +2855,10 @@ var squads_default = {
     club: "Atl\xE9tico de Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/5517003d-ede4-43f5-a595-68e9bd17f6ca/GRIMALDO-Alex_391297",
     dateOfBirth: "1995-09-20",
-    height: 171
+    height: 171,
+    socials: {
+      instagram: "grimaldo35"
+    }
   },
   "391646": {
     fifaId: "391646",
@@ -2411,7 +2870,10 @@ var squads_default = {
     club: "SC Freiburg",
     pictureUrl: "https://digitalhub.fifa.com/transform/e69df72a-0135-4989-802c-e2c85556cd00/DOAN-Ritsu_391646",
     dateOfBirth: "1998-06-16",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "doanritsu"
+    }
   },
   "393480": {
     fifaId: "393480",
@@ -2453,7 +2915,10 @@ var squads_default = {
     club: "Atl\xE9tico Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/db91883b-99ec-4aa2-bf1a-cc7912040c7b/RULLI-Geronimo_394824",
     dateOfBirth: "1992-05-20",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "gerorulli"
+    }
   },
   "394829": {
     fifaId: "394829",
@@ -2465,7 +2930,10 @@ var squads_default = {
     club: "Independiente",
     pictureUrl: "https://digitalhub.fifa.com/transform/eac9ab63-eeed-412a-9ba7-4c5e6be05852/BALBUENA-Fabian_394829",
     dateOfBirth: "1991-08-23",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "fbalbuenito"
+    }
   },
   "394993": {
     fifaId: "394993",
@@ -2477,7 +2945,10 @@ var squads_default = {
     club: "Kayserispor",
     pictureUrl: "https://digitalhub.fifa.com/transform/93e74f55-211b-4332-8b5c-d328eb02d026/NAZON-Duckens_394993",
     dateOfBirth: "1994-04-07",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "nazon.official"
+    }
   },
   "395050": {
     fifaId: "395050",
@@ -2489,7 +2960,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/e5ddfbfb-b601-4ff8-83a5-f55162967798/MODIBA-Aubrey_395050",
     dateOfBirth: "1995-07-22",
-    height: 171
+    height: 171,
+    socials: {
+      instagram: "modiba_16"
+    }
   },
   "395059": {
     fifaId: "395059",
@@ -2501,7 +2975,10 @@ var squads_default = {
     club: "AmaZulu",
     pictureUrl: "https://digitalhub.fifa.com/transform/2727bd1f-2d55-4a70-9bd5-58a96d4bf9bc/GOSS-Ricardo_395059",
     dateOfBirth: "1994-04-02",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "ricardogoss13"
+    }
   },
   "395083": {
     fifaId: "395083",
@@ -2528,7 +3005,10 @@ var squads_default = {
     club: "Feyenoord",
     pictureUrl: "https://digitalhub.fifa.com/transform/70be8ce3-bc90-4585-8871-a951dabf811e/HWANG-Inbeom_395084",
     dateOfBirth: "1996-09-20",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "inbeom_hwang6"
+    }
   },
   "395088": {
     fifaId: "395088",
@@ -2555,7 +3035,10 @@ var squads_default = {
     club: "Brest",
     pictureUrl: "https://digitalhub.fifa.com/transform/329752fa-e310-4124-8fb2-be7cc478b929/BENSEBAINI-Ramy_395113",
     dateOfBirth: "1995-04-16",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "rbens.official"
+    }
   },
   "395186": {
     fifaId: "395186",
@@ -2579,7 +3062,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/97535989-5b6f-414b-a582-54a0c48df12a/BERNARDO-SILVA_395205",
     dateOfBirth: "1994-08-10",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "bernardocarvalhosilva"
+    }
   },
   "395206": {
     fifaId: "395206",
@@ -2591,7 +3077,10 @@ var squads_default = {
     club: "Manchester United",
     pictureUrl: "https://digitalhub.fifa.com/transform/4a31c35d-c697-4c1a-ac51-a120b82a3d83/BRUNO-FERNANDES_395206",
     dateOfBirth: "1994-09-08",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "brunofernandes8"
+    }
   },
   "395212": {
     fifaId: "395212",
@@ -2603,7 +3092,10 @@ var squads_default = {
     club: "Wolverhampton",
     pictureUrl: "https://digitalhub.fifa.com/transform/7b97ea5c-f883-424a-9133-eead7e175b00/NELSON-SEMEDO_395212",
     dateOfBirth: "1993-11-16",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "nelsonsemedo50"
+    }
   },
   "395216": {
     fifaId: "395216",
@@ -2615,7 +3107,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/884a330c-be4c-442d-becb-2d601c7574d1/RUBEN-NEVES_395216",
     dateOfBirth: "1997-03-13",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "rubendsneves"
+    }
   },
   "395283": {
     fifaId: "395283",
@@ -2627,7 +3122,10 @@ var squads_default = {
     club: "Manchester United",
     pictureUrl: "https://digitalhub.fifa.com/transform/88b96376-9f31-40fd-a0fc-ae12aab484c4/LINDELOF-Victor_395283",
     dateOfBirth: "1994-07-17",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "victorlindelof"
+    }
   },
   "395286": {
     fifaId: "395286",
@@ -2639,7 +3137,10 @@ var squads_default = {
     club: "AIK",
     pictureUrl: "https://digitalhub.fifa.com/transform/eb495b7c-f859-40c2-9327-9478faf03c24/SEMA-Ken_395286",
     dateOfBirth: "1993-09-30",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "kenzema12"
+    }
   },
   "395321": {
     fifaId: "395321",
@@ -2651,7 +3152,10 @@ var squads_default = {
     club: "Reims",
     pictureUrl: "https://digitalhub.fifa.com/transform/87ce677a-e78d-474c-bfd7-b7dc77e89e62/ITO-Junya_395321",
     dateOfBirth: "1993-03-09",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "1409junya"
+    }
   },
   "395414": {
     fifaId: "395414",
@@ -2663,7 +3167,10 @@ var squads_default = {
     club: "Villarreal",
     pictureUrl: "https://digitalhub.fifa.com/transform/ddda0414-89fe-4118-9830-8ef417990db4/LO-CELSO-Giovani_395414",
     dateOfBirth: "1996-04-09",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "locelsogiovani"
+    }
   },
   "395427": {
     fifaId: "395427",
@@ -2690,7 +3197,10 @@ var squads_default = {
     club: "Bayern Munique",
     pictureUrl: "https://digitalhub.fifa.com/transform/3c1dcefe-5f38-479a-ac6a-091a86cb7663/AMIRI-Nadiem_395471",
     dateOfBirth: "1996-10-27",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "nadiemamiri10"
+    }
   },
   "395516": {
     fifaId: "395516",
@@ -2702,7 +3212,10 @@ var squads_default = {
     club: "Lokomotiv Moscou",
     pictureUrl: "https://digitalhub.fifa.com/transform/c8c3fa3a-9001-4221-ab3c-754158c0ad8a/MONTES-Cesar_395516",
     dateOfBirth: "1997-02-24",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "cjasib"
+    }
   },
   "395755": {
     fifaId: "395755",
@@ -2750,7 +3263,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/8d294899-e656-4484-91b7-99d646bc590c/ZWANE-Themba_395984",
     dateOfBirth: "1989-08-03",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "mshishi18"
+    }
   },
   "395986": {
     fifaId: "395986",
@@ -2762,7 +3278,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/b95f9142-251c-4943-911c-9c8d7ad8dd1c/WILLIAMS-Ronwen_395986",
     dateOfBirth: "1992-01-21",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "ronwen30"
+    }
   },
   "396158": {
     fifaId: "396158",
@@ -2816,7 +3335,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/1e7a3a2d-fca9-400e-8a5a-244eadc0fb92/MAHMOUD-ALMARDI_396950",
     dateOfBirth: "1993-10-06",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "m.almardi13"
+    }
   },
   "397753": {
     fifaId: "397753",
@@ -2852,7 +3374,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/df0e21eb-c210-4ea6-ab2c-0ac13635a9f8/VAN-DIJK-Virgil_397786",
     dateOfBirth: "1991-07-08",
-    height: 195
+    height: 195,
+    socials: {
+      instagram: "virgilvandijk"
+    }
   },
   "397894": {
     fifaId: "397894",
@@ -2864,7 +3389,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/155d55d5-4b94-4b50-9ed1-b9a102a501a2/YAZEED-ABULAILA_397894",
     dateOfBirth: "1993-01-08",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "yazeed.abulaila"
+    }
   },
   "398509": {
     fifaId: "398509",
@@ -2876,7 +3404,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/5631cb24-dba7-44dd-ac2c-1c67b14d7649/ELVEDI-Nico_398509",
     dateOfBirth: "1996-09-30",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "nicoelvedi30"
+    }
   },
   "398569": {
     fifaId: "398569",
@@ -2888,7 +3419,10 @@ var squads_default = {
     club: "Excelsior",
     pictureUrl: "https://digitalhub.fifa.com/transform/93fcbe0f-13ca-41f6-b453-447b45aea6ef/BAZOER-Riechedly_398569",
     dateOfBirth: "1996-10-12",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "riechedly"
+    }
   },
   "398588": {
     fifaId: "398588",
@@ -2900,7 +3434,10 @@ var squads_default = {
     club: "Atl\xE9tico Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/23bcc976-2dbc-4fe2-b844-1878ff0cd354/SORLOTH-Alexander_398588",
     dateOfBirth: "1995-12-05",
-    height: 196
+    height: 196,
+    socials: {
+      instagram: "asorloth"
+    }
   },
   "398680": {
     fifaId: "398680",
@@ -2912,7 +3449,10 @@ var squads_default = {
     club: "Atl\xE9tico Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/e6eee717-fd8c-4f8f-a7e0-c4f978fe327f/DEMBELE-Ousmane_398680",
     dateOfBirth: "1997-05-15",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "o.dembele7"
+    }
   },
   "398681": {
     fifaId: "398681",
@@ -2924,7 +3464,10 @@ var squads_default = {
     club: "Al-Ittihad",
     pictureUrl: "https://digitalhub.fifa.com/transform/355040a8-6b40-452b-92af-7c22f91cb87c/KANTE-Ngolo_398681",
     dateOfBirth: "1991-03-29",
-    height: 171
+    height: 171,
+    socials: {
+      instagram: "nglkante"
+    }
   },
   "400511": {
     fifaId: "400511",
@@ -2936,7 +3479,10 @@ var squads_default = {
     club: "Borussia Monchengladbach",
     pictureUrl: "https://digitalhub.fifa.com/transform/5797a9db-f271-4f10-a480-1a0fdde80b7b/ITAKURA-Kou_400511",
     dateOfBirth: "1997-01-27",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "koitakura"
+    }
   },
   "400514": {
     fifaId: "400514",
@@ -2948,7 +3494,10 @@ var squads_default = {
     club: "Brighton",
     pictureUrl: "https://digitalhub.fifa.com/transform/c041ee70-6920-4696-afe9-5a9982dc9a2b/TANAKA-Ao_400514",
     dateOfBirth: "1998-09-10",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "tnk_0910"
+    }
   },
   "400634": {
     fifaId: "400634",
@@ -2960,7 +3509,10 @@ var squads_default = {
     club: "West Ham",
     pictureUrl: "https://digitalhub.fifa.com/transform/b1581870-6bef-4c29-9a06-f306bbf03ca8/ALVAREZ-Edson_400634",
     dateOfBirth: "1997-10-24",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "edsonnalvarez"
+    }
   },
   "400716": {
     fifaId: "400716",
@@ -2972,7 +3524,10 @@ var squads_default = {
     club: "Arsenal",
     pictureUrl: "https://digitalhub.fifa.com/transform/2b895db6-7f67-4436-b8da-54bdf0dd2e2b/ODEGAARD-Martin_400716",
     dateOfBirth: "1998-12-17",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "odegaard.98"
+    }
   },
   "400721": {
     fifaId: "400721",
@@ -2984,7 +3539,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/22c6ca49-7262-4799-8a9f-530e427321ac/HAKIMI-Achraf_400721",
     dateOfBirth: "1998-11-04",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "achrafhakimi"
+    }
   },
   "401023": {
     fifaId: "401023",
@@ -3008,7 +3566,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/d33de7b2-c69b-4669-aaac-155c5657be16/GREGORITSCH-Michael_401131",
     dateOfBirth: "1994-04-18",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "mgregerl"
+    }
   },
   "401167": {
     fifaId: "401167",
@@ -3020,7 +3581,10 @@ var squads_default = {
     club: "Atletico Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/1b2e4fe1-8aec-4473-845b-d0ccb4e20a3a/SOYUNCU-Caglar_401167",
     dateOfBirth: "1996-05-23",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "syncaglar"
+    }
   },
   "401334": {
     fifaId: "401334",
@@ -3032,7 +3596,10 @@ var squads_default = {
     club: "Aston Villa",
     pictureUrl: "https://digitalhub.fifa.com/transform/af6ceadd-a14f-47c0-9f30-fd85d71a94cd/McGINN-John_401334",
     dateOfBirth: "1994-10-18",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "johnmcginn7"
+    }
   },
   "401339": {
     fifaId: "401339",
@@ -3044,7 +3611,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/ba94c3aa-e071-4add-b402-5d3f8df8acb9/ROBERTSON-Andy_401339",
     dateOfBirth: "1994-03-11",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "andyrobertson94"
+    }
   },
   "401378": {
     fifaId: "401378",
@@ -3056,7 +3626,10 @@ var squads_default = {
     club: "Bayer Leverkusen",
     pictureUrl: "https://digitalhub.fifa.com/transform/34f74ca0-1102-446c-b098-02decdf58b8d/TAH-Jonathan_401378",
     dateOfBirth: "1996-02-11",
-    height: 195
+    height: 195,
+    socials: {
+      instagram: "jonathantah"
+    }
   },
   "401444": {
     fifaId: "401444",
@@ -3068,7 +3641,10 @@ var squads_default = {
     club: "Aston Villa",
     pictureUrl: "https://digitalhub.fifa.com/transform/158822ad-a0e9-406c-a84d-e79b0392409f/TIELEMANS-Youri_401444",
     dateOfBirth: "1997-05-07",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "youritielemans"
+    }
   },
   "401448": {
     fifaId: "401448",
@@ -3080,7 +3656,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/e47d229b-d092-4759-82e0-0e5f88b2c894/ZAKARIA-Denis_401448",
     dateOfBirth: "1996-11-20",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "deniszakaria"
+    }
   },
   "401470": {
     fifaId: "401470",
@@ -3092,7 +3671,10 @@ var squads_default = {
     club: "Manchester United",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c89a3e5-8d8f-474f-a0fe-8c39faa3dc8d/RASHFORD-Marcus_401470",
     dateOfBirth: "1997-10-31",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "marcusrashford"
+    }
   },
   "401481": {
     fifaId: "401481",
@@ -3104,7 +3686,10 @@ var squads_default = {
     club: "Bayer Leverkusen",
     pictureUrl: "https://digitalhub.fifa.com/transform/725e8c7e-c712-45be-9e0a-ec5b121e84ad/SCHICK-Patrik_401481",
     dateOfBirth: "1996-01-24",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "p_schicky"
+    }
   },
   "401712": {
     fifaId: "401712",
@@ -3116,7 +3701,10 @@ var squads_default = {
     club: "Celtic",
     pictureUrl: "https://digitalhub.fifa.com/transform/d2b1d878-bbcc-4e16-bb77-7a90a01d0e37/TIERNEY-Kieran_401712",
     dateOfBirth: "1997-06-05",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "kierantierney"
+    }
   },
   "401889": {
     fifaId: "401889",
@@ -3128,7 +3716,10 @@ var squads_default = {
     club: "Ajax",
     pictureUrl: "https://digitalhub.fifa.com/transform/695226c6-92b8-4aa6-995e-dcdd2d08eb96/SARR-Ismaila_401889",
     dateOfBirth: "1998-02-25",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "ismaila_sarr_18"
+    }
   },
   "401893": {
     fifaId: "401893",
@@ -3152,7 +3743,10 @@ var squads_default = {
     club: "Greuther F\xFCrth",
     pictureUrl: "https://digitalhub.fifa.com/transform/04f8c613-3779-443b-8aa4-25ed1d3a60f1/JAMIRO-MONTEIRO_401894",
     dateOfBirth: "1993-11-23",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "jamiromonteiro"
+    }
   },
   "401924": {
     fifaId: "401924",
@@ -3176,7 +3770,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/821a56dc-683d-4326-a784-21e25428a18f/FREULER-Remo_402021",
     dateOfBirth: "1992-04-15",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "remo_freuler"
+    }
   },
   "402022": {
     fifaId: "402022",
@@ -3188,7 +3785,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/66a48e5b-90b7-48fa-94b6-f91d76c28962/MVOGO-Yvon_402022",
     dateOfBirth: "1994-06-06",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "ymvogo"
+    }
   },
   "402044": {
     fifaId: "402044",
@@ -3200,7 +3800,10 @@ var squads_default = {
     club: "Manchester United",
     pictureUrl: "https://digitalhub.fifa.com/transform/bf755ec0-abe7-4790-ad87-a2dc6d709654/DE-ROON-Marten_402044",
     dateOfBirth: "1991-03-29",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "martenderoon15"
+    }
   },
   "402047": {
     fifaId: "402047",
@@ -3212,7 +3815,10 @@ var squads_default = {
     club: "Manchester United",
     pictureUrl: "https://digitalhub.fifa.com/transform/2daab6cd-9fc6-4a46-acd6-82974aab8415/RABIOT-Adrien_402047",
     dateOfBirth: "1995-04-03",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "adrienrabiot_25"
+    }
   },
   "402261": {
     fifaId: "402261",
@@ -3224,7 +3830,10 @@ var squads_default = {
     club: "Villarreal",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c7519d2-960c-4d19-83e7-40a155f1a8eb/PEPE-Nicolas_402261",
     dateOfBirth: "1995-05-29",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "nicolas.pepe19"
+    }
   },
   "402772": {
     fifaId: "402772",
@@ -3236,7 +3845,10 @@ var squads_default = {
     club: "Monterrey",
     pictureUrl: "https://digitalhub.fifa.com/transform/f1417540-93cb-4b82-9cfe-223e877d5923/GALLARDO-Jesus_402772",
     dateOfBirth: "1994-08-15",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "jesusgallardo17"
+    }
   },
   "402817": {
     fifaId: "402817",
@@ -3248,7 +3860,10 @@ var squads_default = {
     club: "Mainz",
     pictureUrl: "https://digitalhub.fifa.com/transform/369d8cea-dbe3-48fb-8a8a-e55180bf1fca/PAIK-Seungho_402817",
     dateOfBirth: "1997-03-17",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "seungho_paik"
+    }
   },
   "402820": {
     fifaId: "402820",
@@ -3260,7 +3875,10 @@ var squads_default = {
     club: "Vissel Kobe",
     pictureUrl: "https://digitalhub.fifa.com/transform/a45e87b1-92c4-4d33-ac9b-1bca03075996/SONG-Bumkeun_402820",
     dateOfBirth: "1997-10-15",
-    height: 196
+    height: 196,
+    socials: {
+      instagram: "bumkeun_song"
+    }
   },
   "402876": {
     fifaId: "402876",
@@ -3272,7 +3890,10 @@ var squads_default = {
     club: "Galatasaray",
     pictureUrl: "https://digitalhub.fifa.com/transform/5985fa52-e467-4c1c-95f2-355bd1cb3925/CANOBBIO-Agustin_402876",
     dateOfBirth: "1998-10-01",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "agus_cano7"
+    }
   },
   "402884": {
     fifaId: "402884",
@@ -3284,7 +3905,10 @@ var squads_default = {
     club: "Al-Qadsiah",
     pictureUrl: "https://digitalhub.fifa.com/transform/bc29f114-2d51-4605-ae7a-eadf774e9d38/VALVERDE-Federico_402884",
     dateOfBirth: "1998-07-22",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "fedevalverde"
+    }
   },
   "402893": {
     fifaId: "402893",
@@ -3296,7 +3920,10 @@ var squads_default = {
     club: "Napoli",
     pictureUrl: "https://digitalhub.fifa.com/transform/704d2d9d-1b5f-4296-87f4-b7b591a58116/OLIVERA-Mathias_402893",
     dateOfBirth: "1997-10-31",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "mathiasolivera5"
+    }
   },
   "402895": {
     fifaId: "402895",
@@ -3308,7 +3935,10 @@ var squads_default = {
     club: "PSV",
     pictureUrl: "https://digitalhub.fifa.com/transform/b8714c68-0892-4c4f-8a51-deabf1e13879/VINA-Matias_402895",
     dateOfBirth: "1997-11-09",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "matiasv17"
+    }
   },
   "402897": {
     fifaId: "402897",
@@ -3320,7 +3950,10 @@ var squads_default = {
     club: "Deportivo Cali",
     pictureUrl: "https://digitalhub.fifa.com/transform/39573fa9-f716-4703-b772-cf1892d1b748/MELE-Santiago_402897",
     dateOfBirth: "1997-09-06",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "santimele1"
+    }
   },
   "402898": {
     fifaId: "402898",
@@ -3332,7 +3965,10 @@ var squads_default = {
     club: "Flamengo",
     pictureUrl: "https://digitalhub.fifa.com/transform/7694c9e6-d4f9-4f60-8173-5a3a79bcaaa2/DE-LA-CRUZ-Nicolas_402898",
     dateOfBirth: "1997-06-01",
-    height: 167
+    height: 167,
+    socials: {
+      instagram: "nicodelacruz10"
+    }
   },
   "402904": {
     fifaId: "402904",
@@ -3344,7 +3980,10 @@ var squads_default = {
     club: "Wolverhampton",
     pictureUrl: "https://digitalhub.fifa.com/transform/cb547d8e-b176-46d1-8ae0-d53d106d168c/BUENO-Santiago_402904",
     dateOfBirth: "1998-11-09",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "santibuenoo"
+    }
   },
   "402920": {
     fifaId: "402920",
@@ -3356,7 +3995,10 @@ var squads_default = {
     club: "Inter Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/2368bf53-1f73-427b-929e-557187d53ac7/MARTINEZ-Lautaro_402920",
     dateOfBirth: "1997-08-22",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "lautaromartinez"
+    }
   },
   "402921": {
     fifaId: "402921",
@@ -3368,7 +4010,10 @@ var squads_default = {
     club: "Manchester United",
     pictureUrl: "https://digitalhub.fifa.com/transform/1b4390f3-e94f-4851-a36b-595356b3d414/MARTINEZ-Lisandro_402921",
     dateOfBirth: "1998-01-18",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "lisandromartinez"
+    }
   },
   "402925": {
     fifaId: "402925",
@@ -3380,7 +4025,10 @@ var squads_default = {
     club: "Atl\xE9tico Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/7aef8344-2a5b-42f0-b1a0-565d5220aa76/MOLINA-Nahuel_402925",
     dateOfBirth: "1998-04-06",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "nahuelmolina35"
+    }
   },
   "402926": {
     fifaId: "402926",
@@ -3392,7 +4040,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/b8cd278f-c843-4b99-9fb3-c8f081fbb2a8/MONTIEL-Gonzalo_402926",
     dateOfBirth: "1997-01-01",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "gonzalo_montiel29"
+    }
   },
   "402934": {
     fifaId: "402934",
@@ -3404,7 +4055,10 @@ var squads_default = {
     club: "Bournemouth",
     pictureUrl: null,
     dateOfBirth: "1997-05-10",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "marcosenesi"
+    }
   },
   "402974": {
     fifaId: "402974",
@@ -3416,7 +4070,10 @@ var squads_default = {
     club: "Sparta Praga",
     pictureUrl: "https://digitalhub.fifa.com/transform/2e9be79f-76b7-4f12-8ba0-c4c21ec8b39d/PRECIADO-Angelo_402974",
     dateOfBirth: "1998-02-18",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "angelothy_preciado17"
+    }
   },
   "402979": {
     fifaId: "402979",
@@ -3428,7 +4085,10 @@ var squads_default = {
     club: "Santos",
     pictureUrl: "https://digitalhub.fifa.com/transform/755ac13c-2122-42ff-b40a-4582be61e59e/TORRES-Felix_402979",
     dateOfBirth: "1997-01-11",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "felix_torres_s_c"
+    }
   },
   "402985": {
     fifaId: "402985",
@@ -3440,7 +4100,10 @@ var squads_default = {
     club: "Brighton",
     pictureUrl: "https://digitalhub.fifa.com/transform/d4d93e2b-74aa-4bbf-89b2-22ebff655348/CAICEDO-Jordy_402985",
     dateOfBirth: "1997-11-18",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "moises_caicedo55"
+    }
   },
   "403001": {
     fifaId: "403001",
@@ -3452,7 +4115,10 @@ var squads_default = {
     club: "Porto",
     pictureUrl: "https://digitalhub.fifa.com/transform/7c3541e5-a8cb-458c-b368-7f57c1b5ae03/DIOGO-COSTA_403001",
     dateOfBirth: "1999-09-19",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "diogomcosta99"
+    }
   },
   "403002": {
     fifaId: "403002",
@@ -3464,7 +4130,10 @@ var squads_default = {
     club: "Manchester United",
     pictureUrl: "https://digitalhub.fifa.com/transform/d9eaa8b4-91e3-4c4f-b501-4082718f5323/DIOGO-DALOT_403002",
     dateOfBirth: "1999-03-18",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "diogodalot"
+    }
   },
   "403046": {
     fifaId: "403046",
@@ -3476,7 +4145,10 @@ var squads_default = {
     club: "Crystal Palace",
     pictureUrl: "https://digitalhub.fifa.com/transform/acb3f8de-1176-40ef-99c2-e671120fbde0/HENDERSON-Dean_403046",
     dateOfBirth: "1997-03-12",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "deanhenderson"
+    }
   },
   "403049": {
     fifaId: "403049",
@@ -3488,7 +4160,10 @@ var squads_default = {
     club: "Aston Villa",
     pictureUrl: "https://digitalhub.fifa.com/transform/54b28723-92e1-42e8-97b5-162f5099cf60/KONSA-Ezri_403049",
     dateOfBirth: "1997-10-23",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "ezrikonsa"
+    }
   },
   "403063": {
     fifaId: "403063",
@@ -3500,7 +4175,10 @@ var squads_default = {
     club: "Stoke City",
     pictureUrl: "https://digitalhub.fifa.com/transform/c918f48b-6fff-449f-ba1d-a8c84e6a6f00/TUANZEBE-Axel_403063",
     dateOfBirth: "1997-11-14",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "axeltuanzebe_38"
+    }
   },
   "403083": {
     fifaId: "403083",
@@ -3512,7 +4190,10 @@ var squads_default = {
     club: "Royal Antwerp",
     pictureUrl: "https://digitalhub.fifa.com/transform/a89dc777-6262-4c1e-8b22-a9a9e5bf7300/DIOP-Issa_403083",
     dateOfBirth: "1997-01-09",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "sofiane_diop"
+    }
   },
   "403090": {
     fifaId: "403090",
@@ -3524,7 +4205,10 @@ var squads_default = {
     club: "Kasimpasa",
     pictureUrl: "https://digitalhub.fifa.com/transform/4387ca2a-2c1e-4bee-baad-95e9485a4ba0/LAFONT-Alban_403090",
     dateOfBirth: "1999-01-23",
-    height: 196
+    height: 196,
+    socials: {
+      instagram: "alban_lafont"
+    }
   },
   "403094": {
     fifaId: "403094",
@@ -3536,7 +4220,10 @@ var squads_default = {
     club: "AC Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/91ab0f40-08d4-44bc-8b5b-dddb63b440bf/MATETA-Jean-Philippe_403094",
     dateOfBirth: "1997-06-28",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "iammateta"
+    }
   },
   "403109": {
     fifaId: "403109",
@@ -3548,7 +4235,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/6d9fa458-dba9-47da-87d9-83749fdfce9d/THURAM-Marcus_403109",
     dateOfBirth: "1997-08-06",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "thuram"
+    }
   },
   "403236": {
     fifaId: "403236",
@@ -3560,7 +4250,10 @@ var squads_default = {
     club: "Kalba",
     pictureUrl: "https://digitalhub.fifa.com/transform/df931c9f-862e-411a-bc23-35af4d0d1bd1/GHAYEDI-Mehdi_403236",
     dateOfBirth: "1998-12-05",
-    height: 166
+    height: 166,
+    socials: {
+      instagram: "mehdighayedi10"
+    }
   },
   "403274": {
     fifaId: "403274",
@@ -3572,7 +4265,10 @@ var squads_default = {
     club: "Bayern Munique",
     pictureUrl: "https://digitalhub.fifa.com/transform/68ebc735-7e69-4908-98b7-b6d691e9cbf7/ITO-Hiroki_403274",
     dateOfBirth: "1999-05-12",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "hiroki_ito38"
+    }
   },
   "403289": {
     fifaId: "403289",
@@ -3584,7 +4280,10 @@ var squads_default = {
     club: "Arsenal",
     pictureUrl: "https://digitalhub.fifa.com/transform/959b632f-531d-420a-85af-5d0fc3c83d5f/TOMIYASU-Takehiro_403289",
     dateOfBirth: "1998-11-05",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "tomiyasu.t"
+    }
   },
   "403293": {
     fifaId: "403293",
@@ -3608,7 +4307,10 @@ var squads_default = {
     club: "Crystal Palace",
     pictureUrl: "https://digitalhub.fifa.com/transform/7391febf-1e97-4ce1-89c8-0e3ae529ae81/KUBO-Takefusa_403304",
     dateOfBirth: "2001-06-04",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "takefusa.kubo"
+    }
   },
   "403305": {
     fifaId: "403305",
@@ -3620,7 +4322,10 @@ var squads_default = {
     club: "Sint-Truiden",
     pictureUrl: "https://digitalhub.fifa.com/transform/4304491f-2404-4e52-a9c3-948c95a01f5a/OSAKO-Keisuke_403305",
     dateOfBirth: "1999-07-28",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "keisuke.osako"
+    }
   },
   "403312": {
     fifaId: "403312",
@@ -3644,7 +4349,10 @@ var squads_default = {
     club: "Al-Ittihad",
     pictureUrl: "https://digitalhub.fifa.com/transform/81e654c7-8273-4e1f-b909-62613fbf14ea/NASSER-ALDAWSARI_403319",
     dateOfBirth: "1998-12-19",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "nassiraldosrii6"
+    }
   },
   "403335": {
     fifaId: "403335",
@@ -3656,7 +4364,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/e64a0c6b-4cc6-4ffb-bc98-b4af95bed8bf/ALTAMBAKTI-Hassan_403335",
     dateOfBirth: "1999-02-09",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "hos__5"
+    }
   },
   "403585": {
     fifaId: "403585",
@@ -3668,7 +4379,10 @@ var squads_default = {
     club: "Celta Vigo",
     pictureUrl: "https://digitalhub.fifa.com/transform/b1a8a14a-2a27-4524-a6ed-679aca39d35d/ALVARADO-Roberto_403585",
     dateOfBirth: "1998-09-07",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "piojo.13"
+    }
   },
   "403596": {
     fifaId: "403596",
@@ -3680,7 +4394,10 @@ var squads_default = {
     club: "Cruz Azul",
     pictureUrl: "https://digitalhub.fifa.com/transform/8640d435-8aba-4b52-a864-9952d3a6db5c/SANCHEZ-Jorge_403596",
     dateOfBirth: "1997-12-10",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "sanchezjorgie4"
+    }
   },
   "403616": {
     fifaId: "403616",
@@ -3692,7 +4409,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/bf36679b-73eb-4813-a99d-b9673439dd05/MOKOENA-Teboho_403616",
     dateOfBirth: "1997-01-24",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "mokoena_28"
+    }
   },
   "403642": {
     fifaId: "403642",
@@ -3704,7 +4424,10 @@ var squads_default = {
     club: "Bologna",
     pictureUrl: "https://digitalhub.fifa.com/transform/29d66b6d-0e3d-4613-b399-d75741b2585d/DIATTA-Krepin_403642",
     dateOfBirth: "1999-02-25",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "krepindiatta"
+    }
   },
   "404319": {
     fifaId: "404319",
@@ -3716,7 +4439,10 @@ var squads_default = {
     club: "Salernitana",
     pictureUrl: "https://digitalhub.fifa.com/transform/c63012a5-37f8-4317-8a69-60f861fb03a7/HRUSTIC-Ajdin_404319",
     dateOfBirth: "1996-07-05",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "ajdinhrustic"
+    }
   },
   "404353": {
     fifaId: "404353",
@@ -3728,7 +4454,10 @@ var squads_default = {
     club: "Bayern Munique",
     pictureUrl: "https://digitalhub.fifa.com/transform/097a6749-47b0-4285-a1f9-8aa0ac0e2c12/SANE-Leroy_404353",
     dateOfBirth: "1996-01-11",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "leroysane"
+    }
   },
   "404645": {
     fifaId: "404645",
@@ -3740,7 +4469,10 @@ var squads_default = {
     club: "Burnley",
     pictureUrl: "https://digitalhub.fifa.com/transform/b7cf7654-f43e-4993-975e-5a2a0d5633f8/BERGE-Sander_404645",
     dateOfBirth: "1998-02-14",
-    height: 195
+    height: 195,
+    socials: {
+      instagram: "sanderberge8"
+    }
   },
   "404885": {
     fifaId: "404885",
@@ -3752,7 +4484,10 @@ var squads_default = {
     club: "West Ham",
     pictureUrl: "https://digitalhub.fifa.com/transform/eb34bfe6-5b60-4771-a303-40f68231bbd2/SOUCEK-Tomas_404885",
     dateOfBirth: "1995-02-27",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "tomassoucek28"
+    }
   },
   "405175": {
     fifaId: "405175",
@@ -3764,7 +4499,10 @@ var squads_default = {
     club: "Al Nassr",
     pictureUrl: "https://digitalhub.fifa.com/transform/08197d78-88b8-458f-9ad9-de192f25313c/FOFANA-Seko_405175",
     dateOfBirth: "1995-05-07",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "sekofofana"
+    }
   },
   "405178": {
     fifaId: "405178",
@@ -3791,7 +4529,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/ff76ce8c-bd4a-436b-87d8-f62532d898b7/DANSO-Kevin_405263",
     dateOfBirth: "1998-09-19",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "kevin.danso"
+    }
   },
   "405454": {
     fifaId: "405454",
@@ -3818,7 +4559,10 @@ var squads_default = {
     club: "Empoli",
     pictureUrl: "https://digitalhub.fifa.com/transform/0954fe05-e301-4ec1-a8ad-2aaccc60d8a7/CACACE-Liberato_405469",
     dateOfBirth: "2000-09-27",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "liberatocacace27"
+    }
   },
   "405522": {
     fifaId: "405522",
@@ -3830,7 +4574,10 @@ var squads_default = {
     club: "Stuttgart",
     pictureUrl: "https://digitalhub.fifa.com/transform/fa77e0e6-716b-463e-b210-252bbd18e2d9/NAKAMURA-Keito_405522",
     dateOfBirth: "2000-07-28",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "nakamura.keito"
+    }
   },
   "405527": {
     fifaId: "405527",
@@ -3842,7 +4589,10 @@ var squads_default = {
     club: "Real Sociedad",
     pictureUrl: "https://digitalhub.fifa.com/transform/2c33d7cc-d75e-427f-9aa9-2dac0872e561/SEKO-Ayumu_405527",
     dateOfBirth: "2000-06-07",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "ayumuseko_00"
+    }
   },
   "405528": {
     fifaId: "405528",
@@ -3854,7 +4604,10 @@ var squads_default = {
     club: "Southampton",
     pictureUrl: "https://digitalhub.fifa.com/transform/09574b48-f59b-436b-b0db-ab4816a96ede/SUGAWARA-Yukinari_405528",
     dateOfBirth: "2000-06-28",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "yukinarisugawara"
+    }
   },
   "405530": {
     fifaId: "405530",
@@ -3866,7 +4619,10 @@ var squads_default = {
     club: "Parma",
     pictureUrl: "https://digitalhub.fifa.com/transform/7a045252-7c97-4f14-9493-4977e3e3156e/SUZUKI-Zion_405530",
     dateOfBirth: "2002-08-21",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "zionsuzuki"
+    }
   },
   "405545": {
     fifaId: "405545",
@@ -3878,7 +4634,10 @@ var squads_default = {
     club: "Galatasaray",
     pictureUrl: "https://digitalhub.fifa.com/transform/aa65d133-f0fb-4379-9b1b-6c9dc2f40195/TORRES-Ferran_405545",
     dateOfBirth: "2000-02-29",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "ferrantorres"
+    }
   },
   "405562": {
     fifaId: "405562",
@@ -3890,7 +4649,10 @@ var squads_default = {
     club: "Fenerbah\xE7e",
     pictureUrl: "https://digitalhub.fifa.com/transform/96536fc5-7d12-442c-89ba-c7ccdae45d61/GARCIA-Eric_405562",
     dateOfBirth: "2001-01-09",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "ericgm3"
+    }
   },
   "405639": {
     fifaId: "405639",
@@ -3902,7 +4664,10 @@ var squads_default = {
     club: "Al-Shabab",
     pictureUrl: "https://digitalhub.fifa.com/transform/94c4de69-a055-4127-b21e-2071a84a4526/HOSSEINZADEH-Amirhossein_405639",
     dateOfBirth: "2000-10-30",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "amirhossein_.hosseinzadeh"
+    }
   },
   "405742": {
     fifaId: "405742",
@@ -3930,7 +4695,10 @@ var squads_default = {
     club: "Crystal Palace",
     pictureUrl: "https://digitalhub.fifa.com/transform/c9686f87-8abd-45fb-a1e0-321ee8470dd6/GUEHI-Marc_405841",
     dateOfBirth: "2000-07-13",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "marcguehi"
+    }
   },
   "405873": {
     fifaId: "405873",
@@ -3942,7 +4710,10 @@ var squads_default = {
     club: "Angers",
     pictureUrl: "https://digitalhub.fifa.com/transform/c5bc8a38-479f-4c33-b8f6-9ab95bb45b57/FOFANA-Yahia_405873",
     dateOfBirth: "2000-08-21",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "yahia.fofana_"
+    }
   },
   "405877": {
     fifaId: "405877",
@@ -3954,7 +4725,10 @@ var squads_default = {
     club: "Marselha",
     pictureUrl: "https://digitalhub.fifa.com/transform/4818d176-036a-4494-b53e-ada08bba749c/GOUIRI-Amine_405877",
     dateOfBirth: "2000-02-16",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "amine_gouiri"
+    }
   },
   "405879": {
     fifaId: "405879",
@@ -3966,7 +4740,10 @@ var squads_default = {
     club: "Red Star",
     pictureUrl: "https://digitalhub.fifa.com/transform/226c4315-372a-4dcf-8a1c-d4f8dc646419/ISIDOR-Wilson_405879",
     dateOfBirth: "2000-08-27",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "wilsonisidor21"
+    }
   },
   "405881": {
     fifaId: "405881",
@@ -3978,7 +4755,10 @@ var squads_default = {
     club: "Bayern Munich",
     pictureUrl: "https://digitalhub.fifa.com/transform/a250ee2e-c181-46bb-b565-27d12a7b1878/LACROIX-Maxence_405881",
     dateOfBirth: "2000-04-06",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "lacroix_maxence"
+    }
   },
   "405893": {
     fifaId: "405893",
@@ -3990,7 +4770,10 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/8575fee6-68ae-4be0-9529-7e5c392e06e6/TCHOUAMENI-Aurelien_405893",
     dateOfBirth: "2000-01-27",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "aurelientchm"
+    }
   },
   "405920": {
     fifaId: "405920",
@@ -4002,7 +4785,10 @@ var squads_default = {
     club: "Venezia",
     pictureUrl: "https://digitalhub.fifa.com/transform/1fc64d7c-4383-4c61-bd76-f22f22b91a8f/YEBOAH-John_405920",
     dateOfBirth: "2000-06-23",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "john_yeboahjr"
+    }
   },
   "406135": {
     fifaId: "406135",
@@ -4014,7 +4800,10 @@ var squads_default = {
     club: "Chivas",
     pictureUrl: "https://digitalhub.fifa.com/transform/c5a00320-abe6-4d97-9892-e4afaf601fed/HUERTA-Cesar_406135",
     dateOfBirth: "2000-12-03",
-    height: 171
+    height: 171,
+    socials: {
+      instagram: "cesarh_33"
+    }
   },
   "406205": {
     fifaId: "406205",
@@ -4026,7 +4815,10 @@ var squads_default = {
     club: "Pumas UNAM",
     pictureUrl: "https://digitalhub.fifa.com/transform/4075346b-2148-424c-b178-1a7cdd863bd2/OJEDA-Braian_406205",
     dateOfBirth: "2000-06-27",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "braian_ojeda06"
+    }
   },
   "406231": {
     fifaId: "406231",
@@ -4038,7 +4830,10 @@ var squads_default = {
     club: "Fenerbah\xE7e",
     pictureUrl: "https://digitalhub.fifa.com/transform/32587fe7-0e67-4aa1-8b07-3a1618183e80/AKGUN-Yunus_406231",
     dateOfBirth: "2000-07-07",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "yunusakgun17"
+    }
   },
   "406249": {
     fifaId: "406249",
@@ -4050,7 +4845,10 @@ var squads_default = {
     club: "Fenerbah\xE7e",
     pictureUrl: "https://digitalhub.fifa.com/transform/c42910db-c5e6-4706-bc99-1e08456bd3ef/KABAK-Ozan_406249",
     dateOfBirth: "2000-03-25",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "ozankabak4"
+    }
   },
   "406280": {
     fifaId: "406280",
@@ -4062,7 +4860,10 @@ var squads_default = {
     club: "PSV",
     pictureUrl: "https://digitalhub.fifa.com/transform/5ee00bd8-552e-4e02-b680-b16534e53493/DEST-Sergino_406280",
     dateOfBirth: "2000-11-03",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "sgd_2"
+    }
   },
   "406281": {
     fifaId: "406281",
@@ -4074,7 +4875,10 @@ var squads_default = {
     club: "FC Alverca",
     pictureUrl: "https://digitalhub.fifa.com/transform/ecf9ed76-fe11-4089-96d4-8126286db543/CJ-DOS-SANTOS_406281",
     dateOfBirth: "2000-08-24",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "cj_dos_santos"
+    }
   },
   "406304": {
     fifaId: "406304",
@@ -4086,7 +4890,10 @@ var squads_default = {
     club: "Juventus",
     pictureUrl: "https://digitalhub.fifa.com/transform/c0dcfa0a-b862-4cd2-9c33-034bd18dc231/WEAH-Timothy_406304",
     dateOfBirth: "2000-02-22",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "timothyweah"
+    }
   },
   "406595": {
     fifaId: "406595",
@@ -4098,7 +4905,10 @@ var squads_default = {
     club: "Esteghlal",
     pictureUrl: "https://digitalhub.fifa.com/transform/ecf8d94c-609d-4a5c-8375-8c8e92629a59/CHESHMI-Roozbeh_406595",
     dateOfBirth: "1993-07-24",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "roozbeh.cheshmi4"
+    }
   },
   "406606": {
     fifaId: "406606",
@@ -4110,7 +4920,10 @@ var squads_default = {
     club: "Sunderland",
     pictureUrl: "https://digitalhub.fifa.com/transform/9beaa464-b945-4d89-b310-025eea682693/MABIL-Awer_406606",
     dateOfBirth: "1995-09-15",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "awermabil10"
+    }
   },
   "407022": {
     fifaId: "407022",
@@ -4122,7 +4935,10 @@ var squads_default = {
     club: "Al Ahly",
     pictureUrl: "https://digitalhub.fifa.com/transform/2cd7ce59-aa56-4018-8d9c-5628a27e13c4/KARIM-HAFEZ_407022",
     dateOfBirth: "1996-03-12",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "karimhafez23"
+    }
   },
   "407114": {
     fifaId: "407114",
@@ -4146,7 +4962,10 @@ var squads_default = {
     club: "Al Fayha",
     pictureUrl: "https://digitalhub.fifa.com/transform/8b0c92b7-4756-42a3-8cc8-b997693ff4aa/KONAN-Ghislain_407343",
     dateOfBirth: "1995-12-27",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "konan_ghislain_3"
+    }
   },
   "407680": {
     fifaId: "407680",
@@ -4158,7 +4977,10 @@ var squads_default = {
     club: "FCSB",
     pictureUrl: "https://digitalhub.fifa.com/transform/95d67c13-c534-48f4-a2de-e831079a0d42/LOCADIA-Juergen_407680",
     dateOfBirth: "1993-11-07",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "jurgenlocadia"
+    }
   },
   "407993": {
     fifaId: "407993",
@@ -4170,7 +4992,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/c3eb4162-fd6d-41f1-aad4-1b632b266f19/MOHAMED-KANNO_407993",
     dateOfBirth: "1994-09-22",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "kannoo18"
+    }
   },
   "408042": {
     fifaId: "408042",
@@ -4182,7 +5007,10 @@ var squads_default = {
     club: "Bayern Munich",
     pictureUrl: "https://digitalhub.fifa.com/transform/6f76533f-feca-4811-a010-e6e296b29db8/HERNANDEZ-Theo_408042",
     dateOfBirth: "1997-10-06",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "theo3hernandez"
+    }
   },
   "408948": {
     fifaId: "408948",
@@ -4194,7 +5022,10 @@ var squads_default = {
     club: "Al Ahly",
     pictureUrl: "https://digitalhub.fifa.com/transform/5bfa85ca-3349-4143-9afa-1b5a43ac8c54/MOHAMED-ELSHENAWY_408948",
     dateOfBirth: "1988-12-18",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "m.elshenawy1"
+    }
   },
   "408950": {
     fifaId: "408950",
@@ -4206,7 +5037,10 @@ var squads_default = {
     club: "Al Ahly",
     pictureUrl: "https://digitalhub.fifa.com/transform/04f8ef57-e16f-49de-b7d4-ad430c4c430c/MOHAMED-HANY_408950",
     dateOfBirth: "1996-02-02",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "mohany30"
+    }
   },
   "409191": {
     fifaId: "409191",
@@ -4218,7 +5052,10 @@ var squads_default = {
     club: "Torino",
     pictureUrl: "https://digitalhub.fifa.com/transform/59a64db7-c267-432d-9172-cf012b37c0b5/VLASIC-Nikola_409191",
     dateOfBirth: "1997-10-04",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "niksivlasic_"
+    }
   },
   "409241": {
     fifaId: "409241",
@@ -4242,7 +5079,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/64b86b6f-824e-4ef9-aa1e-43cfff2a7df1/SOW-Djibril_411226",
     dateOfBirth: "1997-02-06",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "dsow8"
+    }
   },
   "411301": {
     fifaId: "411301",
@@ -4254,7 +5094,10 @@ var squads_default = {
     club: "Norwich City",
     pictureUrl: "https://digitalhub.fifa.com/transform/c13202b1-f3b1-4fe1-bc72-0ee5b3135bbc/GUNN-Angus_411301",
     dateOfBirth: "1996-01-22",
-    height: 196
+    height: 196,
+    socials: {
+      instagram: "angusgunn01"
+    }
   },
   "411367": {
     fifaId: "411367",
@@ -4266,7 +5109,10 @@ var squads_default = {
     club: "Arsenal",
     pictureUrl: "https://digitalhub.fifa.com/transform/1fdd4d11-97d1-4392-b345-5a5eecc54839/HAVERTZ-Kai_411367",
     dateOfBirth: "1999-06-11",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "kaihavertz29"
+    }
   },
   "411375": {
     fifaId: "411375",
@@ -4290,7 +5136,10 @@ var squads_default = {
     club: "Fulham",
     pictureUrl: "https://digitalhub.fifa.com/transform/58f1cc7c-04f4-43ba-bc82-85c1226fb7a2/CASTAGNE-Timothy_411443",
     dateOfBirth: "1995-12-05",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "timothycastagne"
+    }
   },
   "411470": {
     fifaId: "411470",
@@ -4302,7 +5151,10 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/6ce8ced5-3b91-4a38-80ca-730e4a2ceb57/HERNANDEZ-Lucas_411470",
     dateOfBirth: "1996-02-14",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "lucashernandez5"
+    }
   },
   "411624": {
     fifaId: "411624",
@@ -4326,7 +5178,10 @@ var squads_default = {
     club: "Kalba",
     pictureUrl: "https://digitalhub.fifa.com/transform/96d480ac-42c5-4dd6-a2f0-6220ea1a0f4b/GHODDOS-Saman_411644",
     dateOfBirth: "1993-09-06",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "saman.ghoddos"
+    }
   },
   "411653": {
     fifaId: "411653",
@@ -4338,7 +5193,10 @@ var squads_default = {
     club: "Servette",
     pictureUrl: "https://digitalhub.fifa.com/transform/9a7aa138-5845-4890-aa20-43f4021160ed/BRONN-Dylan_411653",
     dateOfBirth: "1995-06-19",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "dylanbronnofficiel"
+    }
   },
   "411658": {
     fifaId: "411658",
@@ -4350,7 +5208,10 @@ var squads_default = {
     club: "Eintracht Frankfurt",
     pictureUrl: "https://digitalhub.fifa.com/transform/e2ba8e19-b4ab-435f-b12c-e56d655c31e6/SKHIRI-Ellyes_411658",
     dateOfBirth: "1995-05-10",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "ellyes_skhiri"
+    }
   },
   "411678": {
     fifaId: "411678",
@@ -4362,7 +5223,10 @@ var squads_default = {
     club: "Wydad Casablanca",
     pictureUrl: "https://digitalhub.fifa.com/transform/207a8ba8-3f3f-4f86-9730-335f21c1924f/EL-KAABI-Ayoub_411678",
     dateOfBirth: "1993-06-25",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "ayoub_elkaabii"
+    }
   },
   "411680": {
     fifaId: "411680",
@@ -4374,7 +5238,10 @@ var squads_default = {
     club: "Bayern Munique",
     pictureUrl: "https://digitalhub.fifa.com/transform/000d2b43-36ff-4fe5-90d8-23c96e555c56/MAZRAOUI-Noussair_411680",
     dateOfBirth: "1997-11-14",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "nousmaz97"
+    }
   },
   "411726": {
     fifaId: "411726",
@@ -4401,7 +5268,10 @@ var squads_default = {
     club: "Bayern Munique",
     pictureUrl: "https://digitalhub.fifa.com/transform/4b0a6361-55a2-4bde-82a4-8275181091f5/DAVIES-Alphonso_412144",
     dateOfBirth: "2000-11-02",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "alphonsodavies"
+    }
   },
   "416051": {
     fifaId: "416051",
@@ -4413,7 +5283,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/5bd982c9-0644-4fe3-836a-2b2d9b88db36/PEDRO-MIGUEL_416051",
     dateOfBirth: "1990-08-06",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "pedrororocorreia22"
+    }
   },
   "416056": {
     fifaId: "416056",
@@ -4425,7 +5298,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/b5f22cd1-218d-478b-b4a3-f3b2fb832c39/MESHAAL-BARSHAM_416056",
     dateOfBirth: "1998-02-14",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "barsham01"
+    }
   },
   "416081": {
     fifaId: "416081",
@@ -4437,7 +5313,10 @@ var squads_default = {
     club: "Atl\xE9tico Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/c7715f12-adb9-4504-9be2-e2899bdbd172/ALVAREZ-Julian_416081",
     dateOfBirth: "2000-01-31",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "juliaanalvarez"
+    }
   },
   "416576": {
     fifaId: "416576",
@@ -4449,7 +5328,10 @@ var squads_default = {
     club: "Beta Guadalajara",
     pictureUrl: "https://digitalhub.fifa.com/transform/fda68f1a-eceb-4219-8f1b-ed6b1f2e37ed/FIDALGO-Alvaro_416576",
     dateOfBirth: "1997-04-09",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "alvarofidalgo"
+    }
   },
   "416652": {
     fifaId: "416652",
@@ -4461,7 +5343,10 @@ var squads_default = {
     club: "HB K\xF8ge",
     pictureUrl: "https://digitalhub.fifa.com/transform/22bc60f6-3a5a-4df2-8493-b3193cf0cf22/RANDALL-Jesse_416652",
     dateOfBirth: "2002-08-19",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "jesserandall10"
+    }
   },
   "416902": {
     fifaId: "416902",
@@ -4473,7 +5358,10 @@ var squads_default = {
     club: "Nice",
     pictureUrl: "https://digitalhub.fifa.com/transform/5e36f80b-9432-444f-ac25-10cf792c341f/MOHAMED-ABDELMONEIM_416902",
     dateOfBirth: "1999-02-01",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "mohamed_abdelmoneim66"
+    }
   },
   "416906": {
     fifaId: "416906",
@@ -4485,7 +5373,10 @@ var squads_default = {
     club: "Al Ahly",
     pictureUrl: "https://digitalhub.fifa.com/transform/0fa52c2d-3a6c-49cf-ac83-ddc4a08d57e3/MOSTAFA-SHOUBIR_416906",
     dateOfBirth: "2000-05-15",
-    height: 195
+    height: 195,
+    socials: {
+      instagram: "oufashobeir1"
+    }
   },
   "416989": {
     fifaId: "416989",
@@ -4536,7 +5427,10 @@ var squads_default = {
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/e1fd310b-cac5-47ef-95e9-9d0b8b41ba2f/JOAO-FELIX_418535",
     dateOfBirth: "1999-11-10",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "joaofelix79"
+    }
   },
   "418548": {
     fifaId: "418548",
@@ -4548,7 +5442,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/e4e58acb-f7af-402c-a7b8-e284583ce14f/PEDRO-NETO_418548",
     dateOfBirth: "2000-03-09",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "pedroneto_30"
+    }
   },
   "418550": {
     fifaId: "418550",
@@ -4560,7 +5457,10 @@ var squads_default = {
     club: "AC Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/a5a760a7-7b47-42ed-8302-3ea75dbe9fc4/RAFAEL-LEAO_418550",
     dateOfBirth: "1999-06-10",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "iamrafaeleao93"
+    }
   },
   "418561": {
     fifaId: "418561",
@@ -4572,7 +5472,10 @@ var squads_default = {
     club: "Sporting CP",
     pictureUrl: "https://digitalhub.fifa.com/transform/3aaa45cd-d807-4825-9145-3b1865a009bb/FRANCISCO-TRINCAO_418561",
     dateOfBirth: "1999-12-29",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "trincao"
+    }
   },
   "418781": {
     fifaId: "418781",
@@ -4584,7 +5487,10 @@ var squads_default = {
     club: "Al-Rayyan",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c4c9caa-ee5b-49ef-afaf-159f1046f0eb/DIENG-Bamba_418781",
     dateOfBirth: "2000-03-23",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "dieng_ahmadou_bamba"
+    }
   },
   "418795": {
     fifaId: "418795",
@@ -4596,7 +5502,10 @@ var squads_default = {
     club: "Crystal Palace",
     pictureUrl: "https://digitalhub.fifa.com/transform/27569451-1271-4fb3-86ee-51e88e913ec7/JACKSON-Nicolas_418795",
     dateOfBirth: "2001-06-20",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "jackson.nj1"
+    }
   },
   "418798": {
     fifaId: "418798",
@@ -4608,7 +5517,10 @@ var squads_default = {
     club: "Tottenham",
     pictureUrl: "https://digitalhub.fifa.com/transform/60281798-1792-4113-ba5c-fbfd3299270f/SARR-Pape-Matar_418798",
     dateOfBirth: "2002-09-14",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "pape"
+    }
   },
   "418963": {
     fifaId: "418963",
@@ -4620,7 +5532,10 @@ var squads_default = {
     club: "RC Lens",
     pictureUrl: "https://digitalhub.fifa.com/transform/6d4b9a27-2cd5-4372-8426-51876990ba1b/MEDINA-Facundo_418963",
     dateOfBirth: "1999-05-28",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "facumedina99_"
+    }
   },
   "418975": {
     fifaId: "418975",
@@ -4632,7 +5547,10 @@ var squads_default = {
     club: "Lyon",
     pictureUrl: "https://digitalhub.fifa.com/transform/2bcc1c2f-7d0e-46c9-bcd9-1c02ed4d408a/ALMADA-Thiago_418975",
     dateOfBirth: "2001-04-26",
-    height: 171
+    height: 171,
+    socials: {
+      instagram: "thiago_almada23"
+    }
   },
   "419002": {
     fifaId: "419002",
@@ -4656,7 +5574,10 @@ var squads_default = {
     club: "Independiente del Valle",
     pictureUrl: "https://digitalhub.fifa.com/transform/17ccf39c-5480-439a-be5f-90045606ca37/POROZO-Jackson_419003",
     dateOfBirth: "2000-08-04",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "jacksonporozo"
+    }
   },
   "419005": {
     fifaId: "419005",
@@ -4668,7 +5589,10 @@ var squads_default = {
     club: "S\xE3o Paulo",
     pictureUrl: "https://digitalhub.fifa.com/transform/7f7492dc-4cdc-41c2-8acc-91ccad4d9664/ALCIVAR-Jordy_419005",
     dateOfBirth: "1999-08-05",
-    height: 168
+    height: 168,
+    socials: {
+      instagram: "jordy_alcivar13"
+    }
   },
   "419020": {
     fifaId: "419020",
@@ -4680,7 +5604,10 @@ var squads_default = {
     club: "Racing Club",
     pictureUrl: "https://digitalhub.fifa.com/transform/743cc231-ab9e-45b7-8d59-ce8655280ae1/PLATA-Gonzalo_419020",
     dateOfBirth: "2000-11-01",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "gonzaloplata"
+    }
   },
   "419055": {
     fifaId: "419055",
@@ -4692,7 +5619,10 @@ var squads_default = {
     club: "St. Gallen",
     pictureUrl: "https://digitalhub.fifa.com/transform/8352f743-68bc-4077-ad83-5cd22f1a62dd/AARONSON-Brenden_419055",
     dateOfBirth: "2000-10-22",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "baaronson7"
+    }
   },
   "419062": {
     fifaId: "419062",
@@ -4704,7 +5634,10 @@ var squads_default = {
     club: "Crystal Palace",
     pictureUrl: "https://digitalhub.fifa.com/transform/54036d3d-1588-4634-944b-a7c2d97d0b76/RICHARDS-Chris_419062",
     dateOfBirth: "2000-03-28",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "eastmamba"
+    }
   },
   "419068": {
     fifaId: "419068",
@@ -4716,7 +5649,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/b30d701d-d9eb-4b2d-8db4-6841fc9ed1a9/REYNA-Giovanni_419068",
     dateOfBirth: "2002-11-13",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "gioareyna"
+    }
   },
   "419077": {
     fifaId: "419077",
@@ -4728,7 +5664,10 @@ var squads_default = {
     club: "Colorado Rapids",
     pictureUrl: "https://digitalhub.fifa.com/transform/492ad87d-f9a1-449e-9361-64323405107b/McKENZIE-Mark_419077",
     dateOfBirth: "1999-02-25",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "markmckenzie4"
+    }
   },
   "419082": {
     fifaId: "419082",
@@ -4740,7 +5679,10 @@ var squads_default = {
     club: "Norwich City",
     pictureUrl: "https://digitalhub.fifa.com/transform/2a7c4d85-fa83-40ec-a953-d4cebbd63480/PEPI-Ricardo_419082",
     dateOfBirth: "2003-01-09",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "pepi_ricardo"
+    }
   },
   "419100": {
     fifaId: "419100",
@@ -4767,7 +5709,10 @@ var squads_default = {
     club: "V\xE9lez S\xE1rsfield",
     pictureUrl: "https://digitalhub.fifa.com/transform/f959cef5-7f3b-4baa-af52-c8972780fbce/CACERES-Sebastian_419108",
     dateOfBirth: "1999-08-18",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "seba4caceres"
+    }
   },
   "419126": {
     fifaId: "419126",
@@ -4779,7 +5724,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/078805a6-5fbe-44f3-a58c-ed3837ca5665/NUNEZ-Darwin_419126",
     dateOfBirth: "1999-06-24",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "darwin_n9"
+    }
   },
   "419132": {
     fifaId: "419132",
@@ -4791,7 +5739,10 @@ var squads_default = {
     club: "Sporting CP",
     pictureUrl: "https://digitalhub.fifa.com/transform/c6c94193-1372-4e11-94b5-35bcdd575e62/RODRIGUEZ-Brian_419132",
     dateOfBirth: "2000-05-20",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "brianrodriguez_10"
+    }
   },
   "419134": {
     fifaId: "419134",
@@ -4803,7 +5754,10 @@ var squads_default = {
     club: "Orlando City",
     pictureUrl: "https://digitalhub.fifa.com/transform/ad89e83d-ec32-4c30-a78f-1255d03ac0ed/SANABRIA-Juan-Manuel_419134",
     dateOfBirth: "2000-03-29",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "juanma_sanabria7"
+    }
   },
   "419142": {
     fifaId: "419142",
@@ -4815,7 +5769,10 @@ var squads_default = {
     club: "Nacional",
     pictureUrl: "https://digitalhub.fifa.com/transform/4b33d4cb-ddc9-4183-abbb-1f848e8c14a8/ZALAZAR-Rodrigo_419142",
     dateOfBirth: "1999-08-12",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "rodrigozalazar"
+    }
   },
   "419166": {
     fifaId: "419166",
@@ -4827,7 +5784,10 @@ var squads_default = {
     club: "Inter Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/de7e635e-41b2-4383-9fbf-d38e6c737d51/KONATE-Ibrahima_419166",
     dateOfBirth: "1999-05-25",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "ibrahimakonate"
+    }
   },
   "419172": {
     fifaId: "419172",
@@ -4839,7 +5799,10 @@ var squads_default = {
     club: "Roma",
     pictureUrl: "https://digitalhub.fifa.com/transform/e308dd93-4706-4ed9-80a2-1db8e4a52d6c/PAUGAIN-Wilguens_419172",
     dateOfBirth: "1999-08-20",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "evanndicka"
+    }
   },
   "419177": {
     fifaId: "419177",
@@ -4851,7 +5814,10 @@ var squads_default = {
     club: "Arsenal",
     pictureUrl: "https://digitalhub.fifa.com/transform/242125e7-67c3-4fcd-b0cc-6c5984c319f4/SALIBA-William_419177",
     dateOfBirth: "2001-03-24",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "w.saliba4"
+    }
   },
   "419189": {
     fifaId: "419189",
@@ -4863,7 +5829,10 @@ var squads_default = {
     club: "Basel",
     pictureUrl: "https://digitalhub.fifa.com/transform/6ffa54d7-e23d-400d-a90a-960903c63f8b/VALERY-Yan_419189",
     dateOfBirth: "1999-02-22",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "yan.valery"
+    }
   },
   "419211": {
     fifaId: "419211",
@@ -4875,7 +5844,10 @@ var squads_default = {
     club: "Burnley",
     pictureUrl: "https://digitalhub.fifa.com/transform/155c969c-63e1-438e-bd3d-ce587ac212c6/FOSTER-Lyle_419211",
     dateOfBirth: "2000-09-03",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "lyle.foster17"
+    }
   },
   "419223": {
     fifaId: "419223",
@@ -4887,7 +5859,10 @@ var squads_default = {
     club: "Kaizer Chiefs",
     pictureUrl: "https://digitalhub.fifa.com/transform/91646285-a63d-4aeb-8036-da1dd055d6b5/APPOLLIS-Oswin_419223",
     dateOfBirth: "2001-08-25",
-    height: 171
+    height: 171,
+    socials: {
+      instagram: "oswinappollis_11"
+    }
   },
   "419225": {
     fifaId: "419225",
@@ -4899,7 +5874,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/6cee5a12-c935-4707-a3b8-2cad746fd5f5/CROSS-Bradley_419225",
     dateOfBirth: "2001-01-30",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "brxd.cross"
+    }
   },
   "419281": {
     fifaId: "419281",
@@ -4911,7 +5889,10 @@ var squads_default = {
     club: "Roma",
     pictureUrl: "https://digitalhub.fifa.com/transform/66d9e01f-7f5e-4bef-b5bd-68d1ce4d9849/SAUD-ABDULHAMID_419281",
     dateOfBirth: "1999-07-18",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "s.abdualhamed66"
+    }
   },
   "419287": {
     fifaId: "419287",
@@ -4923,7 +5904,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/6b95e954-e3fd-4ba9-a171-690c9626eced/NAWAF-ALAQIDI_419287",
     dateOfBirth: "2000-05-10",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "nf.d26"
+    }
   },
   "419291": {
     fifaId: "419291",
@@ -4935,7 +5919,10 @@ var squads_default = {
     club: "Al-Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/9d59c398-9c66-4dad-b20d-9694a0f74dd4/FERAS-ALBRIKAN_419291",
     dateOfBirth: "2000-05-14",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "frr9_"
+    }
   },
   "419300": {
     fifaId: "419300",
@@ -4959,7 +5946,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/2bdfc07a-ee4d-46f1-bc76-a69bd5d9e9be/ABDULLAH-ALHAMDDAN_419302",
     dateOfBirth: "1999-09-13",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "a.alhamddan"
+    }
   },
   "419303": {
     fifaId: "419303",
@@ -4971,7 +5961,10 @@ var squads_default = {
     club: "Al-Qadsiah",
     pictureUrl: "https://digitalhub.fifa.com/transform/0d671a6b-7632-46ee-91c7-39c01ee4b00c/MOTEB-ALHARBI_419303",
     dateOfBirth: "2000-02-20",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "matta.14"
+    }
   },
   "419326": {
     fifaId: "419326",
@@ -4983,7 +5976,10 @@ var squads_default = {
     club: "Al-Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/3b436722-501d-4098-8daf-b298d010c530/ALI-MAJRASHI_419326",
     dateOfBirth: "1999-10-02",
-    height: 169
+    height: 169,
+    socials: {
+      instagram: "ali_majrashi27"
+    }
   },
   "419436": {
     fifaId: "419436",
@@ -5007,7 +6003,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/5a182a95-d4c3-4618-838e-d374bbc576ba/HOMAM-AHMED_419441",
     dateOfBirth: "1999-08-25",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "homam_99"
+    }
   },
   "419459": {
     fifaId: "419459",
@@ -5019,7 +6018,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/86cd9af3-c09a-4bcd-9830-fed9d7b19ab6/MAHMOUD-ABUNADA_419459",
     dateOfBirth: "2000-02-05",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "abunada21"
+    }
   },
   "419461": {
     fifaId: "419461",
@@ -5043,7 +6045,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/a114c943-718b-4345-b9da-54f1b8eb923c/YUSUF-ABDURISAG_419463",
     dateOfBirth: "1999-08-06",
-    height: 171
+    height: 171,
+    socials: {
+      instagram: "yosefyrs"
+    }
   },
   "419473": {
     fifaId: "419473",
@@ -5055,7 +6060,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/14edcf5c-c52c-4a12-8078-40032f99dbd0/JASSEM-GABER_419473",
     dateOfBirth: "2002-02-20",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "jassim.gaber"
+    }
   },
   "419518": {
     fifaId: "419518",
@@ -5067,7 +6075,10 @@ var squads_default = {
     club: "Al-Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/83109586-542d-4950-83eb-f3388757ef90/LIRA-Erik_419518",
     dateOfBirth: "2000-05-08",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "eriklira"
+    }
   },
   "419567": {
     fifaId: "419567",
@@ -5079,7 +6090,10 @@ var squads_default = {
     club: "Barnsley",
     pictureUrl: "https://digitalhub.fifa.com/transform/0758a55c-7ba4-4988-bcd8-c2401d5fc9d1/ELLIOT-Callan_419567",
     dateOfBirth: "1999-07-07",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "callan_elliot"
+    }
   },
   "419572": {
     fifaId: "419572",
@@ -5091,7 +6105,10 @@ var squads_default = {
     club: "FC Lugano",
     pictureUrl: "https://digitalhub.fifa.com/transform/73a44115-3c98-4cb3-b1d8-4e20cdc7ba23/PIJNAKER-Nando_419572",
     dateOfBirth: "1999-02-25",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "nandopijnaker"
+    }
   },
   "419577": {
     fifaId: "419577",
@@ -5103,7 +6120,10 @@ var squads_default = {
     club: "FC Emmen",
     pictureUrl: "https://digitalhub.fifa.com/transform/88f867f6-433a-4846-a145-fc06b8aac544/WAINE-Ben_419577",
     dateOfBirth: "2001-06-11",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "_waineo"
+    }
   },
   "419652": {
     fifaId: "419652",
@@ -5130,7 +6150,10 @@ var squads_default = {
     club: "Krasnodar",
     pictureUrl: "https://digitalhub.fifa.com/transform/6230b1c1-3c6f-4cfc-9afd-440e1cf3df09/HAUGE-Jens-Petter_419654",
     dateOfBirth: "1999-10-12",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "jenspetterhauge"
+    }
   },
   "419662": {
     fifaId: "419662",
@@ -5142,7 +6165,10 @@ var squads_default = {
     club: "Tottenham",
     pictureUrl: "https://digitalhub.fifa.com/transform/116d01b5-9d0d-4456-a5a8-0e63a16b9862/STRAND-LARSEN-Jorgen_419662",
     dateOfBirth: "2000-02-06",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "strandlarsen"
+    }
   },
   "419672": {
     fifaId: "419672",
@@ -5154,7 +6180,10 @@ var squads_default = {
     club: "Napoli",
     pictureUrl: "https://digitalhub.fifa.com/transform/548ecd96-6fc9-40f2-b020-7b3a02391341/OSTIGARD-Leo_419672",
     dateOfBirth: "1999-11-28",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "leoskirio"
+    }
   },
   "419681": {
     fifaId: "419681",
@@ -5166,7 +6195,10 @@ var squads_default = {
     club: "Augsburg",
     pictureUrl: "https://digitalhub.fifa.com/transform/4680df24-b4b3-46e5-9b38-01800898afa5/THORSTVEDT-Kristian_419681",
     dateOfBirth: "1999-03-13",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "kristianthorstvedt"
+    }
   },
   "422657": {
     fifaId: "422657",
@@ -5178,7 +6210,10 @@ var squads_default = {
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/fe8176f7-bf45-49fc-bd5e-0bfd0c834992/DE-JONG-Frenkie_422657",
     dateOfBirth: "1997-05-12",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "frenkiedejong"
+    }
   },
   "422968": {
     fifaId: "422968",
@@ -5202,7 +6237,10 @@ var squads_default = {
     club: "Columbus Crew",
     pictureUrl: "https://digitalhub.fifa.com/transform/4b537554-d211-4b77-aa31-0935973fdd50/BOS-Jordan_423522",
     dateOfBirth: "2002-10-29",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "jordanbos__"
+    }
   },
   "423574": {
     fifaId: "423574",
@@ -5238,7 +6276,10 @@ var squads_default = {
     club: "Olympiacos",
     pictureUrl: "https://digitalhub.fifa.com/transform/b0e38724-034f-4d1e-a08a-def455a86569/STAMENIC-Marko_423595",
     dateOfBirth: "2002-02-19",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "markos_stamenic"
+    }
   },
   "423646": {
     fifaId: "423646",
@@ -5250,7 +6291,10 @@ var squads_default = {
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/75a5861e-008f-460c-81e4-8085fa2cc961/PEDRI_423646",
     dateOfBirth: "2002-11-25",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "pedri"
+    }
   },
   "423658": {
     fifaId: "423658",
@@ -5262,7 +6306,10 @@ var squads_default = {
     club: "Athletic Club",
     pictureUrl: "https://digitalhub.fifa.com/transform/40328b78-c5b4-4c63-a11e-e5d1491793ef/PINO-Yeremy_423658",
     dateOfBirth: "2002-10-20",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "yeresantos10"
+    }
   },
   "423700": {
     fifaId: "423700",
@@ -5274,7 +6321,10 @@ var squads_default = {
     club: "FC Dallas",
     pictureUrl: "https://digitalhub.fifa.com/transform/86a32b0d-9007-4451-bbc6-a383a284f32f/SCALLY-Joe_423700",
     dateOfBirth: "2002-12-31",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "jjscally_3"
+    }
   },
   "423855": {
     fifaId: "423855",
@@ -5310,7 +6360,10 @@ var squads_default = {
     club: "Tianjin Jinmen Tiger",
     pictureUrl: "https://digitalhub.fifa.com/transform/f2a9ce7b-5d5a-4ec7-9def-79407ccc338b/LEE-Taeseok_423880",
     dateOfBirth: "2002-07-28",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "lee_hanbeom"
+    }
   },
   "423933": {
     fifaId: "423933",
@@ -5322,7 +6375,10 @@ var squads_default = {
     club: "CF Montr\xE9al",
     pictureUrl: "https://digitalhub.fifa.com/transform/11fd224d-e90c-41f4-8497-e387c702f00a/NELSON-Jayden_423933",
     dateOfBirth: "2002-09-26",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "jaydennelsonn"
+    }
   },
   "423941": {
     fifaId: "423941",
@@ -5334,7 +6390,10 @@ var squads_default = {
     club: "Hatayspor",
     pictureUrl: "https://digitalhub.fifa.com/transform/1da64224-0271-489f-bea3-2aaa2e4cdf14/SALIBA-Nathan_423941",
     dateOfBirth: "2004-02-07",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "nathansaliba_"
+    }
   },
   "424031": {
     fifaId: "424031",
@@ -5346,7 +6405,10 @@ var squads_default = {
     club: "Bayer Leverkusen",
     pictureUrl: "https://digitalhub.fifa.com/transform/b8f68e80-3057-4fbf-be1e-8cf885a713e1/HINCAPIE-Piero_424031",
     dateOfBirth: "2002-01-09",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "pierohincapie"
+    }
   },
   "424036": {
     fifaId: "424036",
@@ -5358,7 +6420,10 @@ var squads_default = {
     club: "Independiente",
     pictureUrl: "https://digitalhub.fifa.com/transform/0eceba19-8ceb-4cbc-ba7c-81b158e277bd/VITE-Pedro_424036",
     dateOfBirth: "2002-03-09",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "pedro_vite45"
+    }
   },
   "424047": {
     fifaId: "424047",
@@ -5382,7 +6447,10 @@ var squads_default = {
     club: "PSV",
     pictureUrl: "https://digitalhub.fifa.com/transform/15246275-ff97-404c-bac3-ce793d98c744/BROBBEY-Brian_424051",
     dateOfBirth: "2002-02-01",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "brianbrobbeyy"
+    }
   },
   "424056": {
     fifaId: "424056",
@@ -5394,7 +6462,10 @@ var squads_default = {
     club: "Hapoel Beer-Sheva",
     pictureUrl: "https://digitalhub.fifa.com/transform/35e4773d-8580-4100-a87a-239c2e03e179/HANSEN-Sontje_424056",
     dateOfBirth: "2002-05-18",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "sontje.hansen"
+    }
   },
   "424071": {
     fifaId: "424071",
@@ -5406,7 +6477,10 @@ var squads_default = {
     club: "Angers",
     pictureUrl: "https://digitalhub.fifa.com/transform/06a01d87-4cc8-4a19-b4c3-b4902454e44e/SALAH-EDDINE-Anass_424071",
     dateOfBirth: "2002-01-18",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "asedi_"
+    }
   },
   "424081": {
     fifaId: "424081",
@@ -5418,7 +6492,10 @@ var squads_default = {
     club: "Brighton",
     pictureUrl: "https://digitalhub.fifa.com/transform/44bfd693-27d5-4d36-823e-5ff0e6cd2524/VERBRUGGEN-Bart_424081",
     dateOfBirth: "2002-08-18",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "bartverbruggen1"
+    }
   },
   "424106": {
     fifaId: "424106",
@@ -5430,7 +6507,10 @@ var squads_default = {
     club: "Al Ahly",
     pictureUrl: "https://digitalhub.fifa.com/transform/88bef92d-4236-4445-9d6f-c2674e218a60/HAISSEM-HASSAN_424106",
     dateOfBirth: "2002-02-08",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "haissemhassan"
+    }
   },
   "424119": {
     fifaId: "424119",
@@ -5442,7 +6522,10 @@ var squads_default = {
     club: "Stade Reims",
     pictureUrl: "https://digitalhub.fifa.com/transform/5977f6d5-d50b-46c4-9e33-d8c4aef7202c/MBUKU-Nathanael_424119",
     dateOfBirth: "2002-03-16",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "n.mbuku"
+    }
   },
   "424422": {
     fifaId: "424422",
@@ -5469,7 +6552,10 @@ var squads_default = {
     club: "CF Montr\xE9al",
     pictureUrl: "https://digitalhub.fifa.com/transform/338f9a41-36d4-4f87-8425-9d5fdc30ac35/SAINTE-Carl_424556",
     dateOfBirth: "2002-08-09",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "carlfredsainte"
+    }
   },
   "425607": {
     fifaId: "425607",
@@ -5481,7 +6567,10 @@ var squads_default = {
     club: "Zamalek",
     pictureUrl: "https://digitalhub.fifa.com/transform/cb5fcd59-cbd1-4e4f-b5e7-f9adc81441e5/BEN-HMIDA-Mohamed-Amine_425607",
     dateOfBirth: "1995-12-15",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "ghaylen_chaaleli"
+    }
   },
   "425701": {
     fifaId: "425701",
@@ -5493,7 +6582,10 @@ var squads_default = {
     club: "Genoa",
     pictureUrl: "https://digitalhub.fifa.com/transform/838cb65f-3d60-4acb-855d-35a364c25f1a/VASQUEZ-Johan_425701",
     dateOfBirth: "1998-10-22",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "johan_pipe"
+    }
   },
   "425804": {
     fifaId: "425804",
@@ -5505,7 +6597,10 @@ var squads_default = {
     club: "Al-Ittihad",
     pictureUrl: "https://digitalhub.fifa.com/transform/a912d91a-f467-4d57-a2fc-7937f8cafb66/SALEH-ALSHEHRI_425804",
     dateOfBirth: "1993-11-01",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "saleh_alshehri11"
+    }
   },
   "426357": {
     fifaId: "426357",
@@ -5517,7 +6612,10 @@ var squads_default = {
     club: "West Ham United",
     pictureUrl: "https://digitalhub.fifa.com/transform/55753894-f81e-4e55-84a7-835ef46fc9bb/WAN-BISSAKA-Aaron_426357",
     dateOfBirth: "1997-11-26",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "awbissaka"
+    }
   },
   "426506": {
     fifaId: "426506",
@@ -5529,7 +6627,10 @@ var squads_default = {
     club: "Young Boys",
     pictureUrl: "https://digitalhub.fifa.com/transform/8ac2d949-e53e-4f4e-9196-d91ab9bc8f65/ELIA-Meschack_426506",
     dateOfBirth: "1997-08-06",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "meschackelialina"
+    }
   },
   "428882": {
     fifaId: "428882",
@@ -5541,7 +6642,10 @@ var squads_default = {
     club: "Atl\xE9tico Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/314bcb4c-8c81-4bce-9750-85827a209c1b/DE-PAUL-Rodrigo_428882",
     dateOfBirth: "1994-05-24",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "rodridepaul"
+    }
   },
   "428885": {
     fifaId: "428885",
@@ -5565,7 +6669,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/45fa6cc3-85e1-45eb-8881-3b31bcddc992/EDMILSON-JUNIOR_429063",
     dateOfBirth: "1994-08-19",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "edmilsonjunior22"
+    }
   },
   "429095": {
     fifaId: "429095",
@@ -5577,7 +6684,10 @@ var squads_default = {
     club: "Zamalek",
     pictureUrl: "https://digitalhub.fifa.com/transform/2de277f5-cea7-47f9-9635-f9fb3a205c2a/HAMDY-FATHY_429095",
     dateOfBirth: "1994-09-29",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "hamdyfathy_8"
+    }
   },
   "429157": {
     fifaId: "429157",
@@ -5631,7 +6741,10 @@ var squads_default = {
     club: "FK Crvena zvezda",
     pictureUrl: "https://digitalhub.fifa.com/transform/db3b1a56-6cf2-42ad-9d02-139333d68f38/SEOL-Youngwoo_429608",
     dateOfBirth: "1998-12-05",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "0_woo.98"
+    }
   },
   "429639": {
     fifaId: "429639",
@@ -5655,7 +6768,10 @@ var squads_default = {
     club: "VfB Stuttgart",
     pictureUrl: "https://digitalhub.fifa.com/transform/69c7b030-2ce8-479c-9cd4-a7d62e48d9a4/STILLER-Angelo_429640",
     dateOfBirth: "2001-04-04",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "angelo.stiller"
+    }
   },
   "429642": {
     fifaId: "429642",
@@ -5667,7 +6783,10 @@ var squads_default = {
     club: "Bayern Munique",
     pictureUrl: "https://digitalhub.fifa.com/transform/05f50027-268f-43ff-ba75-1b477b37ca60/MUSIALA-Jamal_429642",
     dateOfBirth: "2003-02-26",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "jamalmusiala10"
+    }
   },
   "430070": {
     fifaId: "430070",
@@ -5679,7 +6798,10 @@ var squads_default = {
     club: "Osasuna",
     pictureUrl: "https://digitalhub.fifa.com/transform/135f8f1c-6e03-43b8-a18a-8914b4a4bd7a/BUDIMIR-Ante_430070",
     dateOfBirth: "1991-07-22",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "budimir__ante"
+    }
   },
   "430097": {
     fifaId: "430097",
@@ -5691,7 +6813,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/fce70106-25b4-4b34-b12b-10e4c6e90c18/CHRISTIE-Ryan_430097",
     dateOfBirth: "1995-02-22",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "ryanchristie2"
+    }
   },
   "430098": {
     fifaId: "430098",
@@ -5715,7 +6840,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/5d061c8b-6223-45c9-b1fa-c02624542eee/KALAJDZIC-Sasa_430100",
     dateOfBirth: "1997-07-07",
-    height: 200
+    height: 200,
+    socials: {
+      instagram: "sasakalajdzic"
+    }
   },
   "430120": {
     fifaId: "430120",
@@ -5727,7 +6855,10 @@ var squads_default = {
     club: "LOSC Lille",
     pictureUrl: "https://digitalhub.fifa.com/transform/61f43913-2824-4711-9838-0d620f393353/MULDUR-Mert_430120",
     dateOfBirth: "1999-04-03",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "mert.m99"
+    }
   },
   "430138": {
     fifaId: "430138",
@@ -5739,7 +6870,10 @@ var squads_default = {
     club: "Club Am\xE9rica",
     pictureUrl: "https://digitalhub.fifa.com/transform/a607b6f5-fe42-4a89-9e88-cb9690e4bcd1/BUCHANAN-Tajon_430138",
     dateOfBirth: "1999-02-08",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "tajonbuchanan"
+    }
   },
   "430144": {
     fifaId: "430144",
@@ -5751,7 +6885,10 @@ var squads_default = {
     club: "Real Sociedad",
     pictureUrl: "https://digitalhub.fifa.com/transform/2c33b0c7-c399-4eac-98b2-66f35e77886a/PORRO-Pedro_430144",
     dateOfBirth: "1999-09-13",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "pedroporro29_"
+    }
   },
   "430147": {
     fifaId: "430147",
@@ -5763,7 +6900,10 @@ var squads_default = {
     club: "Norwich City",
     pictureUrl: "https://digitalhub.fifa.com/transform/4c09cb0f-5174-41b5-a47e-dcfb5506b282/HENDRY-Jack_430147",
     dateOfBirth: "1995-05-07",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "jackhendry22"
+    }
   },
   "430150": {
     fifaId: "430150",
@@ -5775,7 +6915,10 @@ var squads_default = {
     club: "Newcastle",
     pictureUrl: "https://digitalhub.fifa.com/transform/c6ffe63b-aefd-43b8-bd9d-3c6e31a8f418/ISAK-Alexander_430150",
     dateOfBirth: "1999-09-21",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "alex_isak"
+    }
   },
   "430176": {
     fifaId: "430176",
@@ -5787,7 +6930,10 @@ var squads_default = {
     club: "Juventus",
     pictureUrl: "https://digitalhub.fifa.com/transform/ad5fe14f-b29c-4c20-8477-b00bf14c413f/GRAVENBERCH-Ryan_430176",
     dateOfBirth: "2002-05-16",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "ryanjiro_"
+    }
   },
   "430194": {
     fifaId: "430194",
@@ -5799,7 +6945,10 @@ var squads_default = {
     club: "Vitesse",
     pictureUrl: "https://digitalhub.fifa.com/transform/6cacbe9a-89b9-4eee-8d20-4e68fc0ef7ad/HADZIKADUNIC-Dennis_430194",
     dateOfBirth: "1998-07-09",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "dennis.hadzi"
+    }
   },
   "430196": {
     fifaId: "430196",
@@ -5811,7 +6960,10 @@ var squads_default = {
     club: "Fenerbah\xE7e",
     pictureUrl: "https://digitalhub.fifa.com/transform/bbe9f175-c9cd-4a96-a655-cb2c4321d03b/HADZIAHMETOVIC-Amir_430196",
     dateOfBirth: "1997-03-08",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "a_hadzi18"
+    }
   },
   "430385": {
     fifaId: "430385",
@@ -5835,7 +6987,10 @@ var squads_default = {
     club: "Midtjylland",
     pictureUrl: "https://digitalhub.fifa.com/transform/6efa6506-c1f1-4659-8249-9bc800f32691/CHO-Guesung_430387",
     dateOfBirth: "1998-01-25",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "whrbtjd"
+    }
   },
   "430401": {
     fifaId: "430401",
@@ -5847,7 +7002,10 @@ var squads_default = {
     club: "Kashima Antlers",
     pictureUrl: "https://digitalhub.fifa.com/transform/c7ca3373-d0e0-451d-963a-9e68025385e7/WATANABE-Tsuyoshi_430401",
     dateOfBirth: "1997-02-05",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "tys_w0205"
+    }
   },
   "430407": {
     fifaId: "430407",
@@ -5859,7 +7017,10 @@ var squads_default = {
     club: "Reims",
     pictureUrl: "https://digitalhub.fifa.com/transform/42bcfad9-f62c-4238-a0e6-2f38b3757e2a/MAEDA-Daizen_430407",
     dateOfBirth: "1997-10-20",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "m_daizen0827"
+    }
   },
   "430413": {
     fifaId: "430413",
@@ -5871,7 +7032,10 @@ var squads_default = {
     club: "Kashima Antlers",
     pictureUrl: "https://digitalhub.fifa.com/transform/1b05e82f-94e8-470d-9c12-f9bdf1a0e080/UEDA-Ayase_430413",
     dateOfBirth: "1998-08-28",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "bee18_official"
+    }
   },
   "430437": {
     fifaId: "430437",
@@ -5883,7 +7047,10 @@ var squads_default = {
     club: "Al-Faisaly",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c095f2b-8169-4023-a676-48c6fb3e6897/DEVLIN-Cameron_430437",
     dateOfBirth: "1998-06-07",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "cameron.devlin"
+    }
   },
   "430440": {
     fifaId: "430440",
@@ -5895,7 +7062,10 @@ var squads_default = {
     club: "Perth Glory",
     pictureUrl: "https://digitalhub.fifa.com/transform/a7dc9d98-0215-4756-995a-09b61830ab8b/ONEILL-Aiden_430440",
     dateOfBirth: "1998-07-04",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "_aidenoneill"
+    }
   },
   "430442": {
     fifaId: "430442",
@@ -5907,7 +7077,10 @@ var squads_default = {
     club: "Leicester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/6777563e-5036-4252-9809-a0cc21d96147/SOUTTAR-Harry_430442",
     dateOfBirth: "1998-10-22",
-    height: 198
+    height: 198,
+    socials: {
+      instagram: "harry_souttar"
+    }
   },
   "430450": {
     fifaId: "430450",
@@ -5919,7 +7092,10 @@ var squads_default = {
     club: "Heart of Midlothian",
     pictureUrl: "https://digitalhub.fifa.com/transform/58be20f9-ed45-4c69-9c3d-d148271e8e92/ITALIANO-Jacob_430450",
     dateOfBirth: "2001-07-30",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "jacobitaliano"
+    }
   },
   "430452": {
     fifaId: "430452",
@@ -5931,7 +7107,10 @@ var squads_default = {
     club: "Westerlo",
     pictureUrl: "https://digitalhub.fifa.com/transform/a539f793-3d95-46b8-805e-67156152ac8b/METCALFE-Connor_430452",
     dateOfBirth: "1999-11-05",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "connor_metcalfe"
+    }
   },
   "430465": {
     fifaId: "430465",
@@ -5943,7 +7122,10 @@ var squads_default = {
     club: "Al Ahly",
     pictureUrl: "https://digitalhub.fifa.com/transform/7486073a-56eb-4963-9bca-1036e8b187f0/IBRAHIM-ADEL_430465",
     dateOfBirth: "2001-04-23",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "ibrahim_adel_30"
+    }
   },
   "430476": {
     fifaId: "430476",
@@ -5955,7 +7137,10 @@ var squads_default = {
     club: "Al Ahly",
     pictureUrl: "https://digitalhub.fifa.com/transform/a3f5a36a-57b4-407b-a07e-7b5f6d19af5b/OMAR-MARMOUSH_430476",
     dateOfBirth: "1999-02-07",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "marmoush"
+    }
   },
   "430477": {
     fifaId: "430477",
@@ -5991,7 +7176,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/af0837e0-63e3-47e7-9b24-9676dcdf3c5c/AIMAN-YAHYA_430512",
     dateOfBirth: "2001-05-14",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "aiman.yahya_23"
+    }
   },
   "430518": {
     fifaId: "430518",
@@ -6003,7 +7191,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/66433f37-d71a-4b14-ba06-da9d762320b4/NAWAF-BU-WASHL_430518",
     dateOfBirth: "1999-09-16",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "nawaf_buwashal"
+    }
   },
   "430594": {
     fifaId: "430594",
@@ -6090,7 +7281,10 @@ var squads_default = {
     club: "Atalanta",
     pictureUrl: "https://digitalhub.fifa.com/transform/c4a2b6b7-378f-422d-b2d1-42a04e5b1dfb/MUSSO-Juan_430624",
     dateOfBirth: "1994-05-06",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "juanmusso"
+    }
   },
   "430628": {
     fifaId: "430628",
@@ -6102,7 +7296,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/78b6a9e4-f2b9-4e19-b414-79b18858caaf/MAC-ALLISTER-Alexis_430628",
     dateOfBirth: "1998-12-24",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "alemacallister"
+    }
   },
   "430631": {
     fifaId: "430631",
@@ -6114,7 +7311,10 @@ var squads_default = {
     club: "Juventus",
     pictureUrl: "https://digitalhub.fifa.com/transform/7c86f0b3-0e7b-46e4-adb5-eafcd09d5cd0/GONZALEZ-Nico_430631",
     dateOfBirth: "1998-04-06",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "nicoigonzalez"
+    }
   },
   "430657": {
     fifaId: "430657",
@@ -6126,7 +7326,10 @@ var squads_default = {
     club: "Borussia Dortmund",
     pictureUrl: "https://digitalhub.fifa.com/transform/ce3509c6-13ad-441a-8d05-9d42f8a4578c/RAUM-David_430657",
     dateOfBirth: "1998-04-22",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "david.raum"
+    }
   },
   "430658": {
     fifaId: "430658",
@@ -6138,7 +7341,10 @@ var squads_default = {
     club: "RB Leipzig",
     pictureUrl: "https://digitalhub.fifa.com/transform/2bdd66d9-f9dc-44ab-8c6e-ededdb004f77/ANTON-Waldemar_430658",
     dateOfBirth: "1996-07-20",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "wowaanton31"
+    }
   },
   "430667": {
     fifaId: "430667",
@@ -6150,7 +7356,10 @@ var squads_default = {
     club: "Borussia Dortmund",
     pictureUrl: "https://digitalhub.fifa.com/transform/3ece206c-50ae-4b63-ac21-a174f2fbb35a/SCHLOTTERBECK-Nico_430667",
     dateOfBirth: "1999-12-01",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "nico.schlotterbeck"
+    }
   },
   "430669": {
     fifaId: "430669",
@@ -6162,7 +7371,10 @@ var squads_default = {
     club: "Bayer Leverkusen",
     pictureUrl: "https://digitalhub.fifa.com/transform/3a120189-62cc-441f-b862-7fdd2a9abfa4/WIRTZ-Florian_430669",
     dateOfBirth: "2003-05-03",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "flowirtz"
+    }
   },
   "430671": {
     fifaId: "430671",
@@ -6174,7 +7386,10 @@ var squads_default = {
     club: "Lazio",
     pictureUrl: "https://digitalhub.fifa.com/transform/a24c412d-22cb-4d33-a341-e7f5e731756a/JAKOBS-Ismail_430671",
     dateOfBirth: "1999-08-17",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "ismailjakobs"
+    }
   },
   "430690": {
     fifaId: "430690",
@@ -6186,7 +7401,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/8f89704d-50da-430b-b9dd-1775cf3c0f29/NIAKHATE-Moussa_430690",
     dateOfBirth: "1996-03-08",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "niakhate"
+    }
   },
   "430697": {
     fifaId: "430697",
@@ -6198,7 +7416,10 @@ var squads_default = {
     club: "Caen",
     pictureUrl: "https://digitalhub.fifa.com/transform/29f38f6c-fac7-4844-8656-c18527ebe792/BELLEGARDE-Jean-Ricner_430697",
     dateOfBirth: "1998-06-27",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "bellegardejr"
+    }
   },
   "430698": {
     fifaId: "430698",
@@ -6210,7 +7431,10 @@ var squads_default = {
     club: "AC Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/ac743888-d671-4971-9df9-594b591f2425/AOUAR-Houssem_430698",
     dateOfBirth: "1998-06-30",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "houssem_aouar"
+    }
   },
   "430707": {
     fifaId: "430707",
@@ -6222,7 +7446,10 @@ var squads_default = {
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/31b384b6-20b7-4629-ab33-aa67cf403fc3/KOUNDE-Jules_430707",
     dateOfBirth: "1998-11-12",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "jkeey4"
+    }
   },
   "430718": {
     fifaId: "430718",
@@ -6234,7 +7461,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/c40ded96-190d-41c8-90f2-6a253a63b33d/RUIZ-Fabian_430718",
     dateOfBirth: "1996-04-03",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "fabianruiz52"
+    }
   },
   "430733": {
     fifaId: "430733",
@@ -6246,7 +7476,10 @@ var squads_default = {
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/bcc810b0-5c45-4781-809e-beae8b68e1d8/MERINO-Mikel_430733",
     dateOfBirth: "1996-06-22",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "mikelmerino"
+    }
   },
   "430735": {
     fifaId: "430735",
@@ -6258,7 +7491,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/3bc6b871-a4b2-4201-8885-a77420f4c7c9/CUCURELLA-Marc_430735",
     dateOfBirth: "1998-07-22",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "cucurella3"
+    }
   },
   "430740": {
     fifaId: "430740",
@@ -6270,7 +7506,10 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/b05c2233-cb0a-4abc-9413-e56ad25f0899/DIAZ-Brahim_430740",
     dateOfBirth: "1999-08-03",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "brahim"
+    }
   },
   "430750": {
     fifaId: "430750",
@@ -6282,7 +7521,10 @@ var squads_default = {
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/c3f3e67a-90c1-469a-a4e1-263a470db989/OLMO-Dani_430750",
     dateOfBirth: "1998-05-07",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "daniolmo"
+    }
   },
   "430751": {
     fifaId: "430751",
@@ -6294,7 +7536,10 @@ var squads_default = {
     club: "Villarreal",
     pictureUrl: "https://digitalhub.fifa.com/transform/2f46ed20-b155-4201-8b97-badbc3619450/OYARZABAL-Mikel_430751",
     dateOfBirth: "1997-04-21",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "mikel10oyar"
+    }
   },
   "430753": {
     fifaId: "430753",
@@ -6318,7 +7563,10 @@ var squads_default = {
     club: "Arsenal",
     pictureUrl: "https://digitalhub.fifa.com/transform/640def2c-056d-4b6d-8bcc-613b77f99160/ZUBIMENDI-Martin_430754",
     dateOfBirth: "1999-02-02",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "martin_zubimendi"
+    }
   },
   "430759": {
     fifaId: "430759",
@@ -6330,7 +7578,10 @@ var squads_default = {
     club: "Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/0e27d0c6-e057-4d0c-a603-3843fcd0c542/GIMENEZ-Santiago_430759",
     dateOfBirth: "2001-04-18",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "sant.gimenez"
+    }
   },
   "430763": {
     fifaId: "430763",
@@ -6357,7 +7608,10 @@ var squads_default = {
     club: "Chivas",
     pictureUrl: "https://digitalhub.fifa.com/transform/eeeba73b-bc80-47f5-a1ff-f38f94ff2ee0/VEGA-Alexis_430766",
     dateOfBirth: "1997-11-25",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "alexisvega.9"
+    }
   },
   "430822": {
     fifaId: "430822",
@@ -6369,7 +7623,10 @@ var squads_default = {
     club: "Boavista",
     pictureUrl: "https://digitalhub.fifa.com/transform/92354f59-681a-4409-b1eb-0e0744a78da8/DIALLO-Amad_430822",
     dateOfBirth: "2002-07-11",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "amaddiallo19"
+    }
   },
   "430831": {
     fifaId: "430831",
@@ -6381,7 +7638,10 @@ var squads_default = {
     club: "Nice",
     pictureUrl: "https://digitalhub.fifa.com/transform/daeaedd3-2c74-4fef-a968-2247f5ac962e/SANGARE-Ibrahim_430831",
     dateOfBirth: "1997-12-02",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "ibrahim_sangare225"
+    }
   },
   "430834": {
     fifaId: "430834",
@@ -6393,7 +7653,10 @@ var squads_default = {
     club: "Konyaspor",
     pictureUrl: "https://digitalhub.fifa.com/transform/675938a7-c82b-4d9f-8cf8-6e7a42146489/GUIAGON-Parfait_430834",
     dateOfBirth: "2001-02-22",
-    height: 165
+    height: 165,
+    socials: {
+      instagram: "guiagon_parfait"
+    }
   },
   "430854": {
     fifaId: "430854",
@@ -6405,7 +7668,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/3b02f719-a68a-46ae-a249-e7b6538a5714/SINGO-Wilfried_430854",
     dateOfBirth: "2000-12-25",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "stephane_singo"
+    }
   },
   "430917": {
     fifaId: "430917",
@@ -6417,7 +7683,10 @@ var squads_default = {
     club: "Esp\xE9rance",
     pictureUrl: "https://digitalhub.fifa.com/transform/9c040766-d546-4007-9fa3-eb50206cd689/MAKGOPA-Evidence_430917",
     dateOfBirth: "2000-06-05",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "evidence___makgopa"
+    }
   },
   "431196": {
     fifaId: "431196",
@@ -6429,7 +7698,10 @@ var squads_default = {
     club: "Tottenham",
     pictureUrl: "https://digitalhub.fifa.com/transform/61d5d60a-7e5a-4a29-919d-c52bd80b9a5a/ROMERO-Cristian_431196",
     dateOfBirth: "1998-04-27",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "cutiromero2"
+    }
   },
   "431202": {
     fifaId: "431202",
@@ -6441,7 +7713,10 @@ var squads_default = {
     club: "Getafe",
     pictureUrl: "https://digitalhub.fifa.com/transform/2b408b3b-5027-445e-9b55-6139deed7bea/ALDERETE-Omar_431202",
     dateOfBirth: "1996-12-26",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "alderete.20"
+    }
   },
   "431208": {
     fifaId: "431208",
@@ -6453,7 +7728,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/14c04e8c-82ca-4feb-83ff-f89fa146d91f/MOHAMMAD-ABUZRAIQ_431208",
     dateOfBirth: "1997-12-30",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "shararh_99"
+    }
   },
   "431209": {
     fifaId: "431209",
@@ -6477,7 +7755,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/e999f9d2-7ca2-4d4d-b7ba-33c1ee96b375/MOUSA-ALTAMARI_431211",
     dateOfBirth: "1997-06-10",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "mousa_tamari_13"
+    }
   },
   "431212": {
     fifaId: "431212",
@@ -6489,7 +7770,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/f9806f7c-f81f-4653-a81a-9bbcfcd587c9/ALI-OLWAN_431212",
     dateOfBirth: "2000-03-26",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "ali_alwan9"
+    }
   },
   "431219": {
     fifaId: "431219",
@@ -6513,7 +7797,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/3f7678fc-eab6-4d7c-81a4-2341b7f3ab10/ABDALLAH-ALFAKHORI_431223",
     dateOfBirth: "2000-01-22",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "abdallah_fakhori"
+    }
   },
   "431225": {
     fifaId: "431225",
@@ -6525,7 +7812,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/f69b7b80-4362-431e-9e25-32c7d0a92c88/YAZAN-ALARAB_431225",
     dateOfBirth: "1996-01-31",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "yazanalarab5"
+    }
   },
   "431230": {
     fifaId: "431230",
@@ -6537,7 +7827,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/1d0f7594-2192-4227-9ad5-696e4212f0ee/NOOR-ALRAWABDEH_431230",
     dateOfBirth: "1997-02-24",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "nooralrawabdeh_8"
+    }
   },
   "431693": {
     fifaId: "431693",
@@ -6549,7 +7842,10 @@ var squads_default = {
     club: "Maccabi Haifa",
     pictureUrl: "https://digitalhub.fifa.com/transform/0faa5cdb-4727-42be-b2b8-cedf04a37dd6/PIERROT-Frantzdy_431693",
     dateOfBirth: "1995-03-29",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "frantzdy_9"
+    }
   },
   "431696": {
     fifaId: "431696",
@@ -6561,7 +7857,10 @@ var squads_default = {
     club: "Portland Timbers",
     pictureUrl: "https://digitalhub.fifa.com/transform/612f188f-bb60-45db-8932-fc7dd2ca13ec/LARYEA-Richie_431696",
     dateOfBirth: "1995-01-07",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "richielaryea"
+    }
   },
   "431698": {
     fifaId: "431698",
@@ -6573,7 +7872,10 @@ var squads_default = {
     club: "Go Ahead Eagles",
     pictureUrl: "https://digitalhub.fifa.com/transform/4744d27b-6a5c-48be-a849-48facb6f6d6e/GAARI-Jurien_431698",
     dateOfBirth: "1993-12-23",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "juriengaari"
+    }
   },
   "431781": {
     fifaId: "431781",
@@ -6585,7 +7887,10 @@ var squads_default = {
     club: "Violette AC",
     pictureUrl: "https://digitalhub.fifa.com/transform/00dad9f5-0949-43df-a856-1ce364adf673/DUVERNE-Jean-Kevin_431781",
     dateOfBirth: "1997-07-12",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "jk_duverne"
+    }
   },
   "431788": {
     fifaId: "431788",
@@ -6597,7 +7902,10 @@ var squads_default = {
     club: "G\xE9n\xE9ration Foot",
     pictureUrl: "https://digitalhub.fifa.com/transform/ce2a3833-450c-413b-990f-7c76132e4913/GUEYE-Pape_431788",
     dateOfBirth: "1999-01-24",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "p.gueye24"
+    }
   },
   "431858": {
     fifaId: "431858",
@@ -6609,7 +7917,10 @@ var squads_default = {
     club: "Montpellier",
     pictureUrl: "https://digitalhub.fifa.com/transform/7d7c26f5-81ee-4c6b-97b5-a8c6f67f0772/ZIZO_431858",
     dateOfBirth: "2001-06-06",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "r.aitnouri"
+    }
   },
   "431861": {
     fifaId: "431861",
@@ -6621,7 +7932,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/e1fe82ba-026b-4f05-87ba-c1fb49f670e5/CHERKI-Rayan_431861",
     dateOfBirth: "2003-08-17",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "rayan_cherki"
+    }
   },
   "431889": {
     fifaId: "431889",
@@ -6648,7 +7962,10 @@ var squads_default = {
     club: "Feyenoord",
     pictureUrl: "https://digitalhub.fifa.com/transform/15ebb030-92ea-4165-aa63-5136719b5c7f/MALEN-Donyell_433066",
     dateOfBirth: "1999-01-19",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "donyellmalen"
+    }
   },
   "433067": {
     fifaId: "433067",
@@ -6660,7 +7977,10 @@ var squads_default = {
     club: "FC Twente",
     pictureUrl: "https://digitalhub.fifa.com/transform/b1ea3949-8267-4285-b1ed-200204779d50/THORSBY-Morten_433067",
     dateOfBirth: "1996-05-05",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "mortenthorsby"
+    }
   },
   "433072": {
     fifaId: "433072",
@@ -6672,7 +7992,10 @@ var squads_default = {
     club: "Roma",
     pictureUrl: "https://digitalhub.fifa.com/transform/903b63c2-ab06-47b8-911c-bf4f026601fd/CELIK-Zeki_433072",
     dateOfBirth: "1997-02-17",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "zekicelik17"
+    }
   },
   "433074": {
     fifaId: "433074",
@@ -6696,7 +8019,10 @@ var squads_default = {
     club: "Nantes",
     pictureUrl: "https://digitalhub.fifa.com/transform/e22f732a-a001-4c41-96c8-138b79ed45b2/MOUTOUSSAMY-Samuel_433076",
     dateOfBirth: "1996-08-12",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "s_moutoussamy"
+    }
   },
   "433092": {
     fifaId: "433092",
@@ -6708,7 +8034,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/f4764c32-f702-4695-9658-28479916fa99/SAELEMAEKERS-Alexis_433092",
     dateOfBirth: "1999-06-27",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "alexis.saelemaekers"
+    }
   },
   "433097": {
     fifaId: "433097",
@@ -6720,7 +8049,10 @@ var squads_default = {
     club: "Arsenal",
     pictureUrl: "https://digitalhub.fifa.com/transform/acb98657-fa9b-4202-bc38-075a97b5bf78/RICE-Declan_433097",
     dateOfBirth: "1999-01-14",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "declanrice"
+    }
   },
   "433118": {
     fifaId: "433118",
@@ -6732,7 +8064,10 @@ var squads_default = {
     club: "Hoffenheim",
     pictureUrl: "https://digitalhub.fifa.com/transform/90a510ff-865f-4293-a59b-8a92e12a89b0/KOKCU-Orkun_433118",
     dateOfBirth: "2000-12-29",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "orkunkokcu"
+    }
   },
   "433147": {
     fifaId: "433147",
@@ -6744,7 +8079,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/33ced9ed-c3fd-4933-bc83-4a7a1465a94f/AEBISCHER-Michel_433147",
     dateOfBirth: "1997-01-06",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "michel.aebischer"
+    }
   },
   "433161": {
     fifaId: "433161",
@@ -6756,7 +8094,10 @@ var squads_default = {
     club: "Genk",
     pictureUrl: "https://digitalhub.fifa.com/transform/45763ec1-2979-4fe6-97f9-5e3f90b9c1ee/KAYEMBE-Edo_433161",
     dateOfBirth: "1998-06-03",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "edokayembe"
+    }
   },
   "433191": {
     fifaId: "433191",
@@ -6768,7 +8109,10 @@ var squads_default = {
     club: "Torino",
     pictureUrl: "https://digitalhub.fifa.com/transform/1a70c52f-9a4b-4dc1-813b-991877aa4758/ADAMS-Che_433191",
     dateOfBirth: "1996-07-13",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "cheadams_"
+    }
   },
   "433195": {
     fifaId: "433195",
@@ -6780,7 +8124,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/f8d5d7b8-bb64-4427-80d1-911d68b2dd1a/NUNO-MENDES_433195",
     dateOfBirth: "2002-06-19",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "nunomendes_5"
+    }
   },
   "433361": {
     fifaId: "433361",
@@ -6792,7 +8139,10 @@ var squads_default = {
     club: "Wydad Casablanca",
     pictureUrl: "https://digitalhub.fifa.com/transform/5a0e929e-a66f-4563-849e-c7bb62591b5d/SLIMANE-Anis_433361",
     dateOfBirth: "2001-03-16",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "anis_slimane10"
+    }
   },
   "433362": {
     fifaId: "433362",
@@ -6804,7 +8154,10 @@ var squads_default = {
     club: "Nice",
     pictureUrl: "https://digitalhub.fifa.com/transform/8ff3509c-8a73-40ea-ac0e-1beed4560b23/ABDI-Ali_433362",
     dateOfBirth: "1993-12-20",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "ali_abdi_officiel"
+    }
   },
   "433365": {
     fifaId: "433365",
@@ -6816,7 +8169,10 @@ var squads_default = {
     club: "Augsburg",
     pictureUrl: "https://digitalhub.fifa.com/transform/90030173-815d-4411-8eac-20fb42834f9d/DAHMEN-Aymen_433365",
     dateOfBirth: "1997-01-28",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "aymen_dahmen_30"
+    }
   },
   "433367": {
     fifaId: "433367",
@@ -6828,7 +8184,10 @@ var squads_default = {
     club: "Esp\xE9rance Sportive",
     pictureUrl: "https://digitalhub.fifa.com/transform/2f586126-6a63-4e5b-9f85-6e15800449d9/REKIK-Omar_433367",
     dateOfBirth: "2001-12-20",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "omarrekik"
+    }
   },
   "433378": {
     fifaId: "433378",
@@ -6840,7 +8199,10 @@ var squads_default = {
     club: "Burnley",
     pictureUrl: "https://digitalhub.fifa.com/transform/856f0cc0-6dcc-48bc-a8db-f4fe26d8ae06/MEJBRI-Hannibal_433378",
     dateOfBirth: "2003-01-21",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "hannibal.mj"
+    }
   },
   "433380": {
     fifaId: "433380",
@@ -6852,7 +8214,10 @@ var squads_default = {
     club: "Lorient",
     pictureUrl: "https://digitalhub.fifa.com/transform/253ef705-760c-457f-afde-067d2fb39010/TALBI-Montassar_433380",
     dateOfBirth: "1998-05-26",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "montassartalbi"
+    }
   },
   "433394": {
     fifaId: "433394",
@@ -6876,7 +8241,10 @@ var squads_default = {
     club: "Al-Qadsiah",
     pictureUrl: "https://digitalhub.fifa.com/transform/7de765a2-f6c6-4d70-badd-a929c4cab547/RAHIMI-Soufiane_433426",
     dateOfBirth: "1996-06-02",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "soufiane_rahimi"
+    }
   },
   "433439": {
     fifaId: "433439",
@@ -6888,7 +8256,10 @@ var squads_default = {
     club: "Al-Ittihad",
     pictureUrl: "https://digitalhub.fifa.com/transform/27fa9b34-d37d-4416-a35f-fb6d234e9e8c/ALI-LAJAMI_433439",
     dateOfBirth: "1996-04-24",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "alawi_78s"
+    }
   },
   "433461": {
     fifaId: "433461",
@@ -6900,7 +8271,10 @@ var squads_default = {
     club: "Zamalek",
     pictureUrl: "https://digitalhub.fifa.com/transform/93b944be-7bd7-4c1d-807e-7b8e2cbc2a12/ZIZO_433461",
     dateOfBirth: "1996-01-10",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "m.zizo17"
+    }
   },
   "433466": {
     fifaId: "433466",
@@ -6948,7 +8322,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/0f29b15d-1537-42c4-889b-ce58534b5b59/ABDALLAH-NASIB_433527",
     dateOfBirth: "1994-02-25",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "abdallah_nasib3"
+    }
   },
   "433534": {
     fifaId: "433534",
@@ -6960,7 +8337,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/59b03f3e-6636-4277-bca1-698bde2070b9/NIZAR-ALRASHDAN_433534",
     dateOfBirth: "1999-03-23",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "nizar_al_rashdan"
+    }
   },
   "433571": {
     fifaId: "433571",
@@ -6996,7 +8376,10 @@ var squads_default = {
     club: "Wolverhampton",
     pictureUrl: "https://digitalhub.fifa.com/transform/08ab7f46-1067-4c5a-9a23-64bda657aca0/TOUGAI-Mohamed-Amine_433600",
     dateOfBirth: "2000-01-22",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "tougai_med_amine"
+    }
   },
   "433631": {
     fifaId: "433631",
@@ -7008,7 +8391,10 @@ var squads_default = {
     club: "Lyon",
     pictureUrl: "https://digitalhub.fifa.com/transform/d5bf01cd-ba36-4a99-80c8-9287c6df0069/TITRAOUI-Yassine_433631",
     dateOfBirth: "2003-07-26",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "yacinetitraoui22"
+    }
   },
   "433635": {
     fifaId: "433635",
@@ -7020,7 +8406,10 @@ var squads_default = {
     club: "Porto",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c0650a1-bba7-4998-b6b6-ebddeed58058/EUSTAQUIO-Stephen_433635",
     dateOfBirth: "1996-12-21",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "stepheustaquio"
+    }
   },
   "433667": {
     fifaId: "433667",
@@ -7032,7 +8421,10 @@ var squads_default = {
     club: "Bayer Leverkusen",
     pictureUrl: "https://digitalhub.fifa.com/transform/c1f59cf4-db22-4b38-af85-ab5692105f95/STANISIC-Josip_433667",
     dateOfBirth: "2000-04-02",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "josip_stanisic"
+    }
   },
   "433668": {
     fifaId: "433668",
@@ -7044,7 +8436,10 @@ var squads_default = {
     club: "Feyenoord",
     pictureUrl: "https://digitalhub.fifa.com/transform/00599f60-d24b-4377-b1c2-03bda4f835be/SADILEK-Michal_433668",
     dateOfBirth: "1999-05-31",
-    height: 169
+    height: 169,
+    socials: {
+      instagram: "michalsadilek32"
+    }
   },
   "433679": {
     fifaId: "433679",
@@ -7056,7 +8451,10 @@ var squads_default = {
     club: "Villarreal",
     pictureUrl: "https://digitalhub.fifa.com/transform/48a3b28e-cee7-4c5b-87b9-6344b3977983/ZERROUKI-Ramiz_433679",
     dateOfBirth: "1998-05-26",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "rramizz_"
+    }
   },
   "433694": {
     fifaId: "433694",
@@ -7068,7 +8466,10 @@ var squads_default = {
     club: "Hearts",
     pictureUrl: "https://digitalhub.fifa.com/transform/3fc20068-ff61-482e-ae76-b63e24985f42/PATTERSON-Nathan_433694",
     dateOfBirth: "2001-10-16",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "nathan.patterson_"
+    }
   },
   "433724": {
     fifaId: "433724",
@@ -7080,7 +8481,10 @@ var squads_default = {
     club: "Al-Faisaly",
     pictureUrl: "https://digitalhub.fifa.com/transform/37b3a4c5-6899-487c-892a-1d9791945ba3/WILLY-SEMEDO_433724",
     dateOfBirth: "1994-04-27",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "wsemedo7"
+    }
   },
   "433754": {
     fifaId: "433754",
@@ -7092,7 +8496,10 @@ var squads_default = {
     club: "Hoffenheim",
     pictureUrl: "https://digitalhub.fifa.com/transform/530c1ea8-c013-4858-bb7d-0b71a763a1a1/HLOZEK-Adam_433754",
     dateOfBirth: "2002-07-25",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "ahlozek"
+    }
   },
   "433755": {
     fifaId: "433755",
@@ -7104,7 +8511,10 @@ var squads_default = {
     club: "West Ham",
     pictureUrl: "https://digitalhub.fifa.com/transform/945f505c-6f7b-4a43-acc1-5e3fa1bb52b3/ZIMA-David_433755",
     dateOfBirth: "2000-11-08",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "david_zima4"
+    }
   },
   "433787": {
     fifaId: "433787",
@@ -7116,7 +8526,10 @@ var squads_default = {
     club: "Napoli",
     pictureUrl: "https://digitalhub.fifa.com/transform/483440e3-5bdc-46e2-9b80-77e880b5fd85/McTOMINAY-Scott_433787",
     dateOfBirth: "1996-12-08",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "scottmctominay"
+    }
   },
   "433795": {
     fifaId: "433795",
@@ -7128,7 +8541,10 @@ var squads_default = {
     club: "Malm\xF6 FF",
     pictureUrl: "https://digitalhub.fifa.com/transform/0d003261-373c-46f2-90c6-34d700c027f6/SVANBERG-Mattias_433795",
     dateOfBirth: "1999-01-05",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "mattiasvanberg"
+    }
   },
   "433806": {
     fifaId: "433806",
@@ -7140,7 +8556,10 @@ var squads_default = {
     club: "Al-Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/9093beeb-51a2-4e1d-b700-73e094c6949c/MENDY-Edouard_433806",
     dateOfBirth: "1992-03-01",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "edou_mendy"
+    }
   },
   "433872": {
     fifaId: "433872",
@@ -7191,7 +8610,10 @@ var squads_default = {
     club: "Al-Kahraba",
     pictureUrl: "https://digitalhub.fifa.com/transform/d76ebe64-2228-4d03-9c39-fa6332d4d40a/ZIDANE-IQBAL_434026",
     dateOfBirth: "2003-04-27",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "zidaneiqbal"
+    }
   },
   "434029": {
     fifaId: "434029",
@@ -7215,7 +8637,10 @@ var squads_default = {
     club: "Al-Nassr",
     pictureUrl: "https://digitalhub.fifa.com/transform/c09997bc-1439-46be-a1f4-226d436e9eda/MUSAB-ALJUWAYR_436537",
     dateOfBirth: "2003-06-20",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "m.aljuwayr43"
+    }
   },
   "436538": {
     fifaId: "436538",
@@ -7227,7 +8652,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/401feff3-37fd-40a9-90f6-d987eb3a8e40/ZIYAD-ALJOHANI_436538",
     dateOfBirth: "2001-11-11",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "ziyad.m.30"
+    }
   },
   "436572": {
     fifaId: "436572",
@@ -7239,7 +8667,10 @@ var squads_default = {
     club: "Nice",
     pictureUrl: "https://digitalhub.fifa.com/transform/7c521f94-2538-45a0-a77e-4a529b9dfc8f/MASUAKU-Arthur_436572",
     dateOfBirth: "1993-11-07",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "masuaku26"
+    }
   },
   "436599": {
     fifaId: "436599",
@@ -7251,7 +8682,10 @@ var squads_default = {
     club: "New York City FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/30b49573-5890-4dc2-8e78-a8ab7d00d43e/ROBINSON-Miles_436599",
     dateOfBirth: "1997-03-14",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "_milesrobinson_"
+    }
   },
   "436612": {
     fifaId: "436612",
@@ -7263,7 +8697,10 @@ var squads_default = {
     club: "Inter de Mil\xE3o",
     pictureUrl: "https://digitalhub.fifa.com/transform/f2a2746b-7691-40c4-a052-60db3219a856/DUMFRIES-Denzel_436612",
     dateOfBirth: "1996-04-18",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "ddumfries2"
+    }
   },
   "436628": {
     fifaId: "436628",
@@ -7287,7 +8724,10 @@ var squads_default = {
     club: "Sassuolo",
     pictureUrl: "https://digitalhub.fifa.com/transform/b9e9f187-0936-4aba-9c70-2a4bcf2281e0/DEMIROVIC-Ermedin_436743",
     dateOfBirth: "1998-03-25",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "e.demirovic29"
+    }
   },
   "436863": {
     fifaId: "436863",
@@ -7299,7 +8739,10 @@ var squads_default = {
     club: "Al-Minaa",
     pictureUrl: "https://digitalhub.fifa.com/transform/e6406961-d495-4d2f-8851-539b32ab43a9/FRANS-PUTROS_436863",
     dateOfBirth: "1993-07-14",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "fransputros"
+    }
   },
   "439538": {
     fifaId: "439538",
@@ -7311,7 +8754,10 @@ var squads_default = {
     club: "Flamengo",
     pictureUrl: "https://digitalhub.fifa.com/transform/327d3db2-1e08-4b63-8026-90c136c51612/PIQUEREZ-Joaquin_439538",
     dateOfBirth: "1998-08-24",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "joacopiquerez"
+    }
   },
   "439641": {
     fifaId: "439641",
@@ -7323,7 +8769,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/1ffcc3c3-fdf3-4b61-9ac5-299213771a62/JAMES-Reece_439641",
     dateOfBirth: "1999-12-08",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "reece"
+    }
   },
   "439956": {
     fifaId: "439956",
@@ -7335,7 +8784,10 @@ var squads_default = {
     club: "Panathinaikos",
     pictureUrl: "https://digitalhub.fifa.com/transform/51b7eeb6-cac1-48cd-9ed3-4a18b34c5d90/PELLISTRI-Facundo_439956",
     dateOfBirth: "2001-12-20",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "facupellistri"
+    }
   },
   "440748": {
     fifaId: "440748",
@@ -7347,7 +8799,10 @@ var squads_default = {
     club: "Norwich City",
     pictureUrl: "https://digitalhub.fifa.com/transform/0f1a06e9-76d0-480c-950a-667f11d41171/DE-VRIES-Francis_440748",
     dateOfBirth: "1994-11-28",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "francisdevries12"
+    }
   },
   "441065": {
     fifaId: "441065",
@@ -7359,7 +8814,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/fee95866-9f5e-4663-b49f-3db6a86f0e80/PENTZ-Patrick_441065",
     dateOfBirth: "1997-01-02",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "patrickpentz"
+    }
   },
   "441067": {
     fifaId: "441067",
@@ -7371,7 +8829,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/c888b84b-0ddd-496f-b621-f281e4e54911/POSCH-Stefan_441067",
     dateOfBirth: "1997-05-14",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "stefanposxx"
+    }
   },
   "441068": {
     fifaId: "441068",
@@ -7383,7 +8844,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/a9966145-1cd8-429d-99a2-ccb9cda89e87/LJUBICIC-Dejan_441068",
     dateOfBirth: "1997-10-08",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "dejanljubicic"
+    }
   },
   "441088": {
     fifaId: "441088",
@@ -7395,7 +8859,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/fe3dce4a-3a64-48bd-bfd9-63614aa55336/SEIWALD-Nicolas_441088",
     dateOfBirth: "2001-05-04",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "nicolasseiwald"
+    }
   },
   "441132": {
     fifaId: "441132",
@@ -7407,7 +8874,10 @@ var squads_default = {
     club: "Midtjylland",
     pictureUrl: "https://digitalhub.fifa.com/transform/7c4b343c-446c-4d27-ab62-bb85ee559985/STARFELT-Carl_441132",
     dateOfBirth: "1995-06-01",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "lagerbielken"
+    }
   },
   "441135": {
     fifaId: "441135",
@@ -7419,7 +8889,10 @@ var squads_default = {
     club: "Sassuolo",
     pictureUrl: "https://digitalhub.fifa.com/transform/0ed50024-cb6d-4fa5-bc7c-ba8a9afa7fd3/KARLSTROM-Jesper_441135",
     dateOfBirth: "1995-06-21",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "jesperkarlstrom"
+    }
   },
   "441137": {
     fifaId: "441137",
@@ -7431,7 +8904,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/38e8d10e-aa56-4837-a589-35bc4dcc23a3/ELANGA-Anthony_441137",
     dateOfBirth: "2002-04-27",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "anthonyelanga"
+    }
   },
   "441146": {
     fifaId: "441146",
@@ -7443,7 +8919,10 @@ var squads_default = {
     club: "Sporting CP",
     pictureUrl: "https://digitalhub.fifa.com/transform/636fe280-77cd-4db8-8c43-e499e1489e31/GONCALO-INACIO_441146",
     dateOfBirth: "2001-08-25",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "goncaloinacio_25"
+    }
   },
   "441148": {
     fifaId: "441148",
@@ -7455,7 +8934,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/49ae9c75-e5f8-404a-8576-81e52d4c8338/MATHEUS-NUNES_441148",
     dateOfBirth: "1998-08-27",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "matheusnunes73"
+    }
   },
   "441149": {
     fifaId: "441149",
@@ -7467,7 +8949,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/8d21116d-608f-409b-932b-71c1ee1a043c/VITINHA_441149",
     dateOfBirth: "2000-02-13",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "vitinha"
+    }
   },
   "441162": {
     fifaId: "441162",
@@ -7479,7 +8964,10 @@ var squads_default = {
     club: "Hoffenheim",
     pictureUrl: "https://digitalhub.fifa.com/transform/9351d9a7-4be7-4c59-8e0e-3f5fbca8ac7d/STANEK-Jindrich_441162",
     dateOfBirth: "1996-04-27",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "stanek.js36"
+    }
   },
   "441166": {
     fifaId: "441166",
@@ -7491,7 +8979,10 @@ var squads_default = {
     club: "Slavia Praga",
     pictureUrl: "https://digitalhub.fifa.com/transform/33dbf631-0d45-4f04-9feb-bf0c76ad9f8e/ZELENY-Jaroslav_441166",
     dateOfBirth: "1992-08-20",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "jarinzeleny"
+    }
   },
   "441167": {
     fifaId: "441167",
@@ -7503,7 +8994,10 @@ var squads_default = {
     club: "Slavia Praga",
     pictureUrl: "https://digitalhub.fifa.com/transform/25d4147e-8cc2-4262-bba5-3e47680a3f23/HOLES-Tomas_441167",
     dateOfBirth: "1993-03-31",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "tomholes"
+    }
   },
   "441170": {
     fifaId: "441170",
@@ -7515,7 +9009,10 @@ var squads_default = {
     club: "Girona",
     pictureUrl: "https://digitalhub.fifa.com/transform/04ca9e4e-8ab3-458e-a689-2ac49094fb23/KREJCI-Ladislav_441170",
     dateOfBirth: "1999-04-20",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "lkrejci_"
+    }
   },
   "441171": {
     fifaId: "441171",
@@ -7527,7 +9024,10 @@ var squads_default = {
     club: "PSV",
     pictureUrl: "https://digitalhub.fifa.com/transform/e5ab58c0-de70-4e60-afdd-0cacec12decb/KUCHTA-Jan_441171",
     dateOfBirth: "1997-01-08",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "kuchti_cc"
+    }
   },
   "441179": {
     fifaId: "441179",
@@ -7539,7 +9039,10 @@ var squads_default = {
     club: "Al-Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/905e3e12-72e9-440d-96f5-0b3a48aebe92/DEMIRAL-Merih_441179",
     dateOfBirth: "1998-03-05",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "merihdemiral"
+    }
   },
   "441180": {
     fifaId: "441180",
@@ -7551,7 +9054,10 @@ var squads_default = {
     club: "Trabzonspor",
     pictureUrl: "https://digitalhub.fifa.com/transform/f8c86015-cce5-4965-9d7c-183ef908079a/BAYINDIR-Altay_441180",
     dateOfBirth: "1998-04-14",
-    height: 198
+    height: 198,
+    socials: {
+      instagram: "altaybayindir"
+    }
   },
   "441181": {
     fifaId: "441181",
@@ -7563,7 +9069,10 @@ var squads_default = {
     club: "Galatasaray",
     pictureUrl: "https://digitalhub.fifa.com/transform/6cedaf47-2a99-4e31-bb0d-46ce78df26a6/CAKIR-Ugurcan_441181",
     dateOfBirth: "1996-04-05",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "cakirugurcan"
+    }
   },
   "441188": {
     fifaId: "441188",
@@ -7575,7 +9084,10 @@ var squads_default = {
     club: "Benfica",
     pictureUrl: "https://digitalhub.fifa.com/transform/9cccf7c0-ebfc-4b65-8587-74742f5a9992/AKTURKOGLU-Kerem_441188",
     dateOfBirth: "1998-10-21",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "keremakturkoglu"
+    }
   },
   "441234": {
     fifaId: "441234",
@@ -7587,7 +9099,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/aa8ef158-6636-46a9-a6fb-185a2f92ad95/ENCISO-Julio_441234",
     dateOfBirth: "2004-01-23",
-    height: 168
+    height: 168,
+    socials: {
+      instagram: "julioenciso.33"
+    }
   },
   "441236": {
     fifaId: "441236",
@@ -7599,7 +9114,10 @@ var squads_default = {
     club: "Huracan",
     pictureUrl: "https://digitalhub.fifa.com/transform/679fc90e-2f98-4494-a4dd-f26442fae6d3/GALINDEZ-Hernan_441236",
     dateOfBirth: "1987-03-30",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "hernangalindez"
+    }
   },
   "441251": {
     fifaId: "441251",
@@ -7611,7 +9129,10 @@ var squads_default = {
     club: "Fulham",
     pictureUrl: "https://digitalhub.fifa.com/transform/62363054-d9e0-4926-9404-90b975d56647/ROBINSON-Antonee_441251",
     dateOfBirth: "1997-08-08",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "antonee_jedi"
+    }
   },
   "441252": {
     fifaId: "441252",
@@ -7623,7 +9144,10 @@ var squads_default = {
     club: "Celtic",
     pictureUrl: "https://digitalhub.fifa.com/transform/bd760593-4ed3-405e-b497-f508dbc8bbdf/JOHNSTON-Alistair_441252",
     dateOfBirth: "1998-10-08",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "alistairjohnston"
+    }
   },
   "441255": {
     fifaId: "441255",
@@ -7635,7 +9159,10 @@ var squads_default = {
     club: "LAFC",
     pictureUrl: "https://digitalhub.fifa.com/transform/0583604e-3974-45f0-ac6c-cdf0deaabe5c/ST-CLAIR-Dayne_441255",
     dateOfBirth: "1997-05-09",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "saintc17"
+    }
   },
   "441257": {
     fifaId: "441257",
@@ -7647,7 +9174,10 @@ var squads_default = {
     club: "CF Montr\xE9al",
     pictureUrl: "https://digitalhub.fifa.com/transform/97ad628a-b97d-4657-ac41-f2a667c534e6/DAVID-Jonathan_441257",
     dateOfBirth: "2000-01-14",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "jodavid"
+    }
   },
   "441258": {
     fifaId: "441258",
@@ -7659,7 +9189,10 @@ var squads_default = {
     club: "Vancouver Whitecaps",
     pictureUrl: "https://digitalhub.fifa.com/transform/51344b42-77de-4109-a167-7723dc1d4dd2/KONE-Ismael_441258",
     dateOfBirth: "2002-06-16",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "hollywood.ik"
+    }
   },
   "441259": {
     fifaId: "441259",
@@ -7671,7 +9204,10 @@ var squads_default = {
     club: "Villarreal",
     pictureUrl: "https://digitalhub.fifa.com/transform/3f5479a0-7d7d-408f-b9c8-b0185e1d8ae4/MILLAR-Liam_441259",
     dateOfBirth: "1999-09-27",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "liammillar11"
+    }
   },
   "441260": {
     fifaId: "441260",
@@ -7683,7 +9219,10 @@ var squads_default = {
     club: "Am\xE9rica",
     pictureUrl: "https://digitalhub.fifa.com/transform/b84beeec-be0c-493f-85fd-362bf0ead5c6/ACEVEDO-Carlos_441260",
     dateOfBirth: "1996-04-19",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "carlos_al1"
+    }
   },
   "441261": {
     fifaId: "441261",
@@ -7695,7 +9234,10 @@ var squads_default = {
     club: "Tigres",
     pictureUrl: "https://digitalhub.fifa.com/transform/1e7c7c32-135c-46ba-9aff-429bfb1478aa/REYES-Israel_441261",
     dateOfBirth: "2000-05-23",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "israelreyesr58"
+    }
   },
   "441307": {
     fifaId: "441307",
@@ -7707,7 +9249,10 @@ var squads_default = {
     club: "Panathinaikos",
     pictureUrl: "https://digitalhub.fifa.com/transform/f823c3da-d540-436c-9b56-bfccdc4b51bc/OUNAHI-Azzedine_441307",
     dateOfBirth: "2000-04-19",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "azzedine_ounahi"
+    }
   },
   "441313": {
     fifaId: "441313",
@@ -7719,7 +9264,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/93a9ca9a-b0db-41bb-80e6-878eb46f0c84/MPASI-Lionel_441313",
     dateOfBirth: "1994-08-01",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "mpasil16"
+    }
   },
   "441316": {
     fifaId: "441316",
@@ -7731,7 +9279,10 @@ var squads_default = {
     club: "Brentford",
     pictureUrl: "https://digitalhub.fifa.com/transform/df278077-1306-4bc3-99d3-0842d69fdec3/WISSA-Yoane_441316",
     dateOfBirth: "1996-09-03",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "yowissa"
+    }
   },
   "441317": {
     fifaId: "441317",
@@ -7743,7 +9294,10 @@ var squads_default = {
     club: "Genk",
     pictureUrl: "https://digitalhub.fifa.com/transform/33939502-486c-4dce-a21a-c5c86b0e08f0/BONGONDA-Theo_441317",
     dateOfBirth: "1995-11-20",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "theo_bongonda"
+    }
   },
   "441350": {
     fifaId: "441350",
@@ -7755,7 +9309,10 @@ var squads_default = {
     club: "Brest",
     pictureUrl: "https://digitalhub.fifa.com/transform/76a28e94-3869-40e2-a82e-9fb973181eb6/BOUDAOUI-Hicham_441350",
     dateOfBirth: "1999-09-23",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "hicham_boudaoui"
+    }
   },
   "441362": {
     fifaId: "441362",
@@ -7767,7 +9324,10 @@ var squads_default = {
     club: "\xC9toile du Sahel",
     pictureUrl: "https://digitalhub.fifa.com/transform/b9afdecd-b04d-4224-be9b-50643fc77299/BEN-OUANES-Mortadha_441362",
     dateOfBirth: "1994-07-02",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "mortadha_benouanes"
+    }
   },
   "441422": {
     fifaId: "441422",
@@ -7779,7 +9339,10 @@ var squads_default = {
     club: "Como 1907",
     pictureUrl: "https://digitalhub.fifa.com/transform/db59cb7d-9b9e-4cdc-be14-07e16631dbd8/PAZ-Nico_441422",
     dateOfBirth: "2004-09-08",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "nicopaz1o"
+    }
   },
   "441623": {
     fifaId: "441623",
@@ -7791,7 +9354,10 @@ var squads_default = {
     club: "Manchester United",
     pictureUrl: "https://digitalhub.fifa.com/transform/4ff94bd7-9c21-4338-be92-bad080e8d541/UGARTE-Manuel_441623",
     dateOfBirth: "2001-04-11",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "ugartemanu"
+    }
   },
   "442428": {
     fifaId: "442428",
@@ -7803,7 +9369,10 @@ var squads_default = {
     club: "Celtic",
     pictureUrl: "https://digitalhub.fifa.com/transform/36ab73b9-b07c-48d7-a2c2-da34b149b0d2/HICKEY-Aaron_442428",
     dateOfBirth: "2002-06-10",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "aaronhickey51"
+    }
   },
   "442429": {
     fifaId: "442429",
@@ -7815,7 +9384,10 @@ var squads_default = {
     club: "Hearts",
     pictureUrl: "https://digitalhub.fifa.com/transform/c1b8aa4f-e753-4748-915b-33661cc33845/KELLY-Liam_442429",
     dateOfBirth: "1996-01-23",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "liamkelly08"
+    }
   },
   "442430": {
     fifaId: "442430",
@@ -7827,7 +9399,10 @@ var squads_default = {
     club: "Las Palmas",
     pictureUrl: "https://digitalhub.fifa.com/transform/4b905694-87c7-4148-be4b-802e4dbcc7ba/SOUTTAR-John_442430",
     dateOfBirth: "1996-09-25",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "johnsouttar44"
+    }
   },
   "442431": {
     fifaId: "442431",
@@ -7839,7 +9414,10 @@ var squads_default = {
     club: "St Johnstone",
     pictureUrl: "https://digitalhub.fifa.com/transform/073ebe12-5ba9-4de4-8729-2a0b0e942b43/McKENNA-Scott_442431",
     dateOfBirth: "1996-11-12",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "scottmckenna19"
+    }
   },
   "442433": {
     fifaId: "442433",
@@ -7851,7 +9429,10 @@ var squads_default = {
     club: "Club Brugge",
     pictureUrl: "https://digitalhub.fifa.com/transform/c0ef417d-f1aa-48e4-b9c4-ddb006ec53f5/STEWART-Ross_442433",
     dateOfBirth: "1996-07-11",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "ross_stewart_96"
+    }
   },
   "442434": {
     fifaId: "442434",
@@ -7863,7 +9444,10 @@ var squads_default = {
     club: "Brentford",
     pictureUrl: "https://digitalhub.fifa.com/transform/d5d3101d-c2cb-4a29-bccf-914370459cfa/FERGUSON-Lewis_442434",
     dateOfBirth: "1999-08-24",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "lewisferguson6"
+    }
   },
   "447853": {
     fifaId: "447853",
@@ -7875,7 +9459,10 @@ var squads_default = {
     club: "Arsenal",
     pictureUrl: "https://digitalhub.fifa.com/transform/2a0b3279-e7c5-44c9-8f13-897d085e83bf/RAYA-David_447853",
     dateOfBirth: "1995-09-15",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "d.raya1"
+    }
   },
   "447855": {
     fifaId: "447855",
@@ -7887,7 +9474,10 @@ var squads_default = {
     club: "Real Sociedad",
     pictureUrl: "https://digitalhub.fifa.com/transform/1792665e-37cb-421d-969b-e6a3edbd8d76/WILLIAMS-Nico_447855",
     dateOfBirth: "2002-07-12",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "nicolas_williams9"
+    }
   },
   "447860": {
     fifaId: "447860",
@@ -7899,7 +9489,10 @@ var squads_default = {
     club: "Arsenal",
     pictureUrl: "https://digitalhub.fifa.com/transform/19c2a085-e986-4c5b-8af7-aa98f7adc36e/BAENA-Alex_447860",
     dateOfBirth: "2001-07-20",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "alexbbaena"
+    }
   },
   "447864": {
     fifaId: "447864",
@@ -7911,7 +9504,10 @@ var squads_default = {
     club: "Villarreal",
     pictureUrl: "https://digitalhub.fifa.com/transform/e90fda84-dae1-44e9-b030-9ce63b11b2d4/IGLESIAS-Borja_447864",
     dateOfBirth: "1993-01-17",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "borjaiglesias9"
+    }
   },
   "447866": {
     fifaId: "447866",
@@ -7923,7 +9519,10 @@ var squads_default = {
     club: "Betis",
     pictureUrl: "https://digitalhub.fifa.com/transform/4a8278cb-43c6-4a1a-8aa8-896c67daf977/GAVI_447866",
     dateOfBirth: "2004-08-05",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "pablogavi"
+    }
   },
   "447991": {
     fifaId: "447991",
@@ -7935,7 +9534,10 @@ var squads_default = {
     club: "Sol de Am\xE9rica",
     pictureUrl: "https://digitalhub.fifa.com/transform/732355e7-ab77-473e-b0eb-25ac3fcdaac2/OLVEIRA-Gaston_447991",
     dateOfBirth: "1993-04-21",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "gastonolveira1"
+    }
   },
   "448014": {
     fifaId: "448014",
@@ -7947,7 +9549,10 @@ var squads_default = {
     club: "Hearts",
     pictureUrl: "https://digitalhub.fifa.com/transform/0bbf6585-1c6b-4416-8a3f-31a1d8d1625b/CIRCATI-Alessandro_448014",
     dateOfBirth: "2003-10-10",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "alessandrocircati"
+    }
   },
   "448015": {
     fifaId: "448015",
@@ -7959,7 +9564,10 @@ var squads_default = {
     club: "Colorado Rapids",
     pictureUrl: "https://digitalhub.fifa.com/transform/e455ae41-95f0-454b-bd12-abdaffa68b7d/VOLPATO-Cristian_448015",
     dateOfBirth: "2003-11-15",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "cristianvolpato"
+    }
   },
   "448051": {
     fifaId: "448051",
@@ -7971,7 +9579,10 @@ var squads_default = {
     club: "D\xEDnamo Moscou",
     pictureUrl: "https://digitalhub.fifa.com/transform/a09b97d9-6b02-45d4-aae8-b8ed274e5634/CHAVEZ-Luis_448051",
     dateOfBirth: "1996-01-15",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "lc24"
+    }
   },
   "448081": {
     fifaId: "448081",
@@ -7983,7 +9594,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/040f6a55-0f54-430e-a03b-bb994ee40921/GONCALO-RAMOS_448081",
     dateOfBirth: "2001-06-20",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "goncaloramos88"
+    }
   },
   "448092": {
     fifaId: "448092",
@@ -7995,7 +9609,10 @@ var squads_default = {
     club: "Real Betis",
     pictureUrl: "https://digitalhub.fifa.com/transform/11360803-25b9-4af9-b4a1-5916e0cd03cb/RUI-SILVA_448092",
     dateOfBirth: "1994-02-07",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "ruisilva_1"
+    }
   },
   "448103": {
     fifaId: "448103",
@@ -8007,7 +9624,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/7e5b9fb5-dfcf-47e7-b185-ebd6d915e0be/RIEDER-Fabian_448103",
     dateOfBirth: "2002-02-16",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "fabianrieder32"
+    }
   },
   "448104": {
     fifaId: "448104",
@@ -8019,7 +9639,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/b9cc3593-aa7e-4f6f-b22b-2cdeae513a1e/ITTEN-Cedric_448104",
     dateOfBirth: "1996-12-27",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "cedricitten_13"
+    }
   },
   "448107": {
     fifaId: "448107",
@@ -8031,7 +9654,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/8c199208-00cd-46ca-877b-f0fd4fb08e31/KOBEL-Gregor_448107",
     dateOfBirth: "1997-12-06",
-    height: 196
+    height: 196,
+    socials: {
+      instagram: "gregorkobel"
+    }
   },
   "448112": {
     fifaId: "448112",
@@ -8043,7 +9669,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/64a9489f-28d0-40ca-9592-3cda9cb7cac5/AMDOUNI-Zeki_448112",
     dateOfBirth: "2000-12-04",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "zekiamdouni"
+    }
   },
   "448114": {
     fifaId: "448114",
@@ -8070,7 +9699,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/9e9fc9ed-5b8e-4c1e-a4e3-c29201d34dae/JASHARI-Ardon_448120",
     dateOfBirth: "2002-07-30",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "ardonjashari"
+    }
   },
   "448124": {
     fifaId: "448124",
@@ -8082,7 +9714,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/7ece88c1-0971-4298-a4f1-00547bf2c889/FASSNACHT-Christian_448124",
     dateOfBirth: "1993-11-11",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "fassnacht16"
+    }
   },
   "448127": {
     fifaId: "448127",
@@ -8136,7 +9771,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/9b17e0f6-f09e-417d-9829-857d7a7d1fa3/COEMERT-Eray_448136",
     dateOfBirth: "1998-02-04",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "eray_coemert"
+    }
   },
   "448140": {
     fifaId: "448140",
@@ -8148,7 +9786,10 @@ var squads_default = {
     club: "Feyenoord",
     pictureUrl: "https://digitalhub.fifa.com/transform/f9f50877-4cd1-4ab9-83d8-2908ad6fbc70/VAN-DE-VEN-Micky_448140",
     dateOfBirth: "2001-04-19",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "mickyvdven"
+    }
   },
   "448149": {
     fifaId: "448149",
@@ -8160,7 +9801,10 @@ var squads_default = {
     club: "Brentford",
     pictureUrl: "https://digitalhub.fifa.com/transform/dd457729-e889-46e1-9845-f6e1b194893e/KOOPMEINERS-Teun_448149",
     dateOfBirth: "1998-02-28",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "teunkoopmeiners"
+    }
   },
   "448151": {
     fifaId: "448151",
@@ -8172,7 +9816,10 @@ var squads_default = {
     club: "Arsenal",
     pictureUrl: "https://digitalhub.fifa.com/transform/c3d85e26-25ec-46df-957c-9e5feee3faf3/FLEKKEN-Mark_448151",
     dateOfBirth: "1993-06-13",
-    height: 195
+    height: 195,
+    socials: {
+      instagram: "markflekken"
+    }
   },
   "448152": {
     fifaId: "448152",
@@ -8184,7 +9831,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/bbb5637f-0587-4ddd-8a82-604c0d921bb3/GAKPO-Cody_448152",
     dateOfBirth: "1999-05-07",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "codymathesgakpo"
+    }
   },
   "448153": {
     fifaId: "448153",
@@ -8196,7 +9846,10 @@ var squads_default = {
     club: "Manchester United",
     pictureUrl: "https://digitalhub.fifa.com/transform/683cef55-109a-4bc3-a41a-8bb4d64d556f/LANG-Noa_448153",
     dateOfBirth: "1999-06-17",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "noano"
+    }
   },
   "448157": {
     fifaId: "448157",
@@ -8208,7 +9861,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/79d54014-e674-49c2-8b01-94958f41743a/TIL-Guus_448157",
     dateOfBirth: "1997-12-22",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "guustil"
+    }
   },
   "448159": {
     fifaId: "448159",
@@ -8220,7 +9876,10 @@ var squads_default = {
     club: "Ajax",
     pictureUrl: "https://digitalhub.fifa.com/transform/3b0de826-85e3-4404-9dbc-6e6ac7675ae3/WEGHORST-Wout_448159",
     dateOfBirth: "1992-08-07",
-    height: 197
+    height: 197,
+    socials: {
+      instagram: "wout.weghorst"
+    }
   },
   "448160": {
     fifaId: "448160",
@@ -8232,7 +9891,10 @@ var squads_default = {
     club: "RB Salzburg",
     pictureUrl: "https://digitalhub.fifa.com/transform/4f4c5521-6b60-46e0-b93b-4aaae66f28f7/SUCIC-Luka_448160",
     dateOfBirth: "2002-09-08",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "luka_sucic"
+    }
   },
   "448164": {
     fifaId: "448164",
@@ -8244,7 +9906,10 @@ var squads_default = {
     club: "Eintracht Frankfurt",
     pictureUrl: "https://digitalhub.fifa.com/transform/8fdebc61-0e5a-4d33-bf9f-3dcb4b413f21/JAKIC-Kristijan_448164",
     dateOfBirth: "1997-05-14",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "jakic97"
+    }
   },
   "448171": {
     fifaId: "448171",
@@ -8256,7 +9921,10 @@ var squads_default = {
     club: "Ajax",
     pictureUrl: "https://digitalhub.fifa.com/transform/5b23d028-3bf8-4355-8364-7838975c264f/SUTALO-Josip_448171",
     dateOfBirth: "2000-02-28",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "josip.sutalo"
+    }
   },
   "448174": {
     fifaId: "448174",
@@ -8268,7 +9936,10 @@ var squads_default = {
     club: "Fiorentina",
     pictureUrl: "https://digitalhub.fifa.com/transform/002f5150-852a-45f5-9a9b-46cd3dcaface/PONGRACIC-Marin_448174",
     dateOfBirth: "1997-09-11",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "marinpongracic"
+    }
   },
   "448179": {
     fifaId: "448179",
@@ -8280,7 +9951,10 @@ var squads_default = {
     club: "Dinamo Zagreb",
     pictureUrl: "https://digitalhub.fifa.com/transform/4fb248c2-8d15-4415-ab5f-19bf997447ae/KOTARSKI-Dominik_448179",
     dateOfBirth: "2000-02-10",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "dominikkotarski24"
+    }
   },
   "448180": {
     fifaId: "448180",
@@ -8292,7 +9966,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/18cba70e-f4ed-4f57-8e6a-5d4bfd3df8b0/GVARDIOL-Josko_448180",
     dateOfBirth: "2002-01-23",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "josko_gvardiol"
+    }
   },
   "448189": {
     fifaId: "448189",
@@ -8304,7 +9981,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/bb7bbfe0-791d-408e-a2c2-f33156fce3e8/GORDON-Anthony_448189",
     dateOfBirth: "2001-02-24",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "anthonygordon"
+    }
   },
   "448196": {
     fifaId: "448196",
@@ -8316,7 +9996,10 @@ var squads_default = {
     club: "Arsenal",
     pictureUrl: "https://digitalhub.fifa.com/transform/b1182d25-62ad-4ad8-8bae-2b7577569484/MUMIN-Abdul_441336",
     dateOfBirth: "2001-09-05",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "bukayosaka87"
+    }
   },
   "448198": {
     fifaId: "448198",
@@ -8328,7 +10011,10 @@ var squads_default = {
     club: "Al-Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/720c0b56-6b1c-49aa-8c9d-5aec2c23c673/TONEY-Ivan_448198",
     dateOfBirth: "1996-03-16",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "ivantoney1"
+    }
   },
   "448202": {
     fifaId: "448202",
@@ -8340,7 +10026,10 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/d711b37f-ec06-4ea7-bb52-50ba0a42ef67/BELLINGHAM-Jude_448202",
     dateOfBirth: "2003-06-29",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "judebellingham"
+    }
   },
   "448203": {
     fifaId: "448203",
@@ -8352,7 +10041,10 @@ var squads_default = {
     club: "Aston Villa",
     pictureUrl: "https://digitalhub.fifa.com/transform/876d6c91-be07-4b54-a86d-d73e2ef52d8f/WATKINS-Ollie_448203",
     dateOfBirth: "1995-12-30",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "olliewatkins"
+    }
   },
   "448214": {
     fifaId: "448214",
@@ -8364,7 +10056,10 @@ var squads_default = {
     club: "Seattle Sounders",
     pictureUrl: "https://digitalhub.fifa.com/transform/c8c38ca3-7100-4bca-88e7-4ea66fd86ff7/TILLMAN-Malik_448214",
     dateOfBirth: "2002-05-28",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "malik.tillman"
+    }
   },
   "448217": {
     fifaId: "448217",
@@ -8376,7 +10071,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/01fb042f-5de5-41df-8104-7445672fdca5/TURNER-Matt_448217",
     dateOfBirth: "1994-06-24",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "headdturnerr"
+    }
   },
   "448252": {
     fifaId: "448252",
@@ -8388,7 +10086,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/b88c6da2-28db-4d61-a668-ac8e84114063/FERNANDEZ-Enzo_448252",
     dateOfBirth: "2001-01-17",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "enzojfernandez"
+    }
   },
   "448290": {
     fifaId: "448290",
@@ -8400,7 +10101,10 @@ var squads_default = {
     club: "Aucas",
     pictureUrl: "https://digitalhub.fifa.com/transform/cda5e4c5-69a6-46ee-b6d1-230be57c4847/PACHO-Willian_448290",
     dateOfBirth: "2001-10-16",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "pachowillian"
+    }
   },
   "448295": {
     fifaId: "448295",
@@ -8412,7 +10116,10 @@ var squads_default = {
     club: "El Nacional",
     pictureUrl: "https://digitalhub.fifa.com/transform/d67ebe06-be17-4735-a8a7-9659eb37cf37/VALLE-Gonzalo_448295",
     dateOfBirth: "1996-02-28",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "jhegsonmendez"
+    }
   },
   "448299": {
     fifaId: "448299",
@@ -8436,7 +10143,10 @@ var squads_default = {
     club: "Sporting CP",
     pictureUrl: "https://digitalhub.fifa.com/transform/c35d8b13-4ad6-45d8-853e-8d7f6bd98214/RODRIGUEZ-Kevin_448310",
     dateOfBirth: "2000-03-04",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "kevin_larola9"
+    }
   },
   "448312": {
     fifaId: "448312",
@@ -8460,7 +10170,10 @@ var squads_default = {
     club: "West Ham",
     pictureUrl: "https://digitalhub.fifa.com/transform/3f92a933-a22d-4f58-8f4f-b51370aeacf4/MAIGNAN-Mike_448332",
     dateOfBirth: "1995-07-03",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "mike_maignan16"
+    }
   },
   "448341": {
     fifaId: "448341",
@@ -8472,7 +10185,10 @@ var squads_default = {
     club: "Arsenal",
     pictureUrl: "https://digitalhub.fifa.com/transform/df41be47-900d-41fe-90eb-b493f7609869/DOKU-Jeremy_448341",
     dateOfBirth: "2002-05-27",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "jeremydoku"
+    }
   },
   "448343": {
     fifaId: "448343",
@@ -8484,7 +10200,10 @@ var squads_default = {
     club: "Wolfsburg",
     pictureUrl: "https://digitalhub.fifa.com/transform/9018ca03-c5c1-4dc1-8d4f-7ee07308dc55/VANAKEN-Hans_448343",
     dateOfBirth: "1992-08-24",
-    height: 195
+    height: 195,
+    socials: {
+      instagram: "hansvanaken20"
+    }
   },
   "448346": {
     fifaId: "448346",
@@ -8496,7 +10215,10 @@ var squads_default = {
     club: "Eintracht Frankfurt",
     pictureUrl: "https://digitalhub.fifa.com/transform/34da124d-c474-4154-90e9-aa132a5df818/THEATE-Arthur_448346",
     dateOfBirth: "2000-05-25",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "arthurtheate"
+    }
   },
   "448355": {
     fifaId: "448355",
@@ -8508,7 +10230,10 @@ var squads_default = {
     club: "Roma",
     pictureUrl: "https://digitalhub.fifa.com/transform/78476568-5abb-4047-b6c0-fd9651e0f39d/TROSSARD-Leandro_448355",
     dateOfBirth: "1994-12-04",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "leandrotrossard"
+    }
   },
   "448360": {
     fifaId: "448360",
@@ -8520,7 +10245,10 @@ var squads_default = {
     club: "Leicester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/dda9e35d-eedf-403b-8953-a5dc213fbf67/MECHELE-Brandon_448360",
     dateOfBirth: "1993-01-28",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "brandonmechele"
+    }
   },
   "448362": {
     fifaId: "448362",
@@ -8532,7 +10260,10 @@ var squads_default = {
     club: "PSV",
     pictureUrl: "https://digitalhub.fifa.com/transform/2ce231c2-05f7-4353-921c-242c863a8d54/DE-KETELAERE-Charles_448362",
     dateOfBirth: "2001-03-10",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "charlesdeketelaere"
+    }
   },
   "448363": {
     fifaId: "448363",
@@ -8544,7 +10275,10 @@ var squads_default = {
     club: "Laval",
     pictureUrl: "https://digitalhub.fifa.com/transform/4b98bc6d-0a33-4ad0-b0fc-18ba00c15e1c/DELCROIX-Hannes_448363",
     dateOfBirth: "1999-02-28",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "hannes_delcroix"
+    }
   },
   "448364": {
     fifaId: "448364",
@@ -8556,7 +10290,10 @@ var squads_default = {
     club: "Aston Villa",
     pictureUrl: "https://digitalhub.fifa.com/transform/697ee4f8-3df1-4ce5-a8b9-c9dae1ed6aba/ONANA-Amadou_448364",
     dateOfBirth: "2001-08-16",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "its_onana"
+    }
   },
   "448366": {
     fifaId: "448366",
@@ -8568,7 +10305,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/a19702c3-a309-4e23-9957-dfbe0d9d5d43/DE-WINTER-Koni_448366",
     dateOfBirth: "2002-06-12",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "konidewinter"
+    }
   },
   "448373": {
     fifaId: "448373",
@@ -8580,7 +10320,10 @@ var squads_default = {
     club: "RSC Anderlecht",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c22dfc4-3eb2-4778-b310-ef4b62aef0c6/DE-CUYPER-Maxim_448373",
     dateOfBirth: "2000-12-22",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "maxim.decuyper"
+    }
   },
   "448377": {
     fifaId: "448377",
@@ -8592,7 +10335,10 @@ var squads_default = {
     club: "Sevilla",
     pictureUrl: "https://digitalhub.fifa.com/transform/5672576a-616d-45a3-8f06-95aa772bb821/LUKEBAKIO-Dodi_448377",
     dateOfBirth: "1997-09-24",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "lukebakio"
+    }
   },
   "448390": {
     fifaId: "448390",
@@ -8604,7 +10350,10 @@ var squads_default = {
     club: "Nashville SC",
     pictureUrl: "https://digitalhub.fifa.com/transform/d74aed0f-7268-4a91-8dc2-13a76e2cdf28/CHOINIERE-Mathieu_448390",
     dateOfBirth: "1999-02-07",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "mathieu_choiniere"
+    }
   },
   "448402": {
     fifaId: "448402",
@@ -8628,7 +10377,10 @@ var squads_default = {
     club: "Toronto FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/fd23f2a2-eb9d-4232-97ff-03c924d6b24e/SHAFFELBURG-Jacob_448411",
     dateOfBirth: "1999-11-26",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "jacobshaff"
+    }
   },
   "448420": {
     fifaId: "448420",
@@ -8670,7 +10422,10 @@ var squads_default = {
     club: "Dinamo Zagreb",
     pictureUrl: "https://digitalhub.fifa.com/transform/0357126d-f784-46a7-901d-33d54b66598b/HARDANI-Saleh_448505",
     dateOfBirth: "1998-12-26",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "saadat.hardani2"
+    }
   },
   "448507": {
     fifaId: "448507",
@@ -8682,7 +10437,10 @@ var squads_default = {
     club: "Anderlecht",
     pictureUrl: "https://digitalhub.fifa.com/transform/5a4d3867-6d31-4e40-8718-312350b29fb4/NIAZMAND-Payam_448507",
     dateOfBirth: "1995-04-06",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "payamniazmand"
+    }
   },
   "448557": {
     fifaId: "448557",
@@ -8694,7 +10452,10 @@ var squads_default = {
     club: "Nice",
     pictureUrl: "https://digitalhub.fifa.com/transform/40432f8c-1b4a-444e-b3a4-709164e708d6/KAMADA-Daichi_448557",
     dateOfBirth: "1996-08-05",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "kamadadaichi"
+    }
   },
   "448569": {
     fifaId: "448569",
@@ -8706,7 +10467,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/8d060ae7-d04d-4bc3-9b76-d4ad6b52a0c3/MACHINO-Shuto_448569",
     dateOfBirth: "1999-09-30",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "machino9.30"
+    }
   },
   "448580": {
     fifaId: "448580",
@@ -8730,7 +10494,10 @@ var squads_default = {
     club: "Al-Hilal",
     pictureUrl: "https://digitalhub.fifa.com/transform/537b866b-290c-4da9-a0bb-5984410d1509/YANG-Hyunjun_448585",
     dateOfBirth: "2002-05-25",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "yang.hyunjunx"
+    }
   },
   "448586": {
     fifaId: "448586",
@@ -8742,7 +10509,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/e273b84d-3432-4404-8c33-7ecaaa2bc214/OH-Hyeongyu_448586",
     dateOfBirth: "2001-04-12",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "oh.hyeongyu"
+    }
   },
   "448598": {
     fifaId: "448598",
@@ -8754,7 +10524,10 @@ var squads_default = {
     club: "Lorient",
     pictureUrl: "https://digitalhub.fifa.com/transform/250526c6-26b5-4425-8a21-231c7952e34d/SAIBARI-Ismael_448598",
     dateOfBirth: "2001-01-28",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "ismaelsaibari"
+    }
   },
   "448607": {
     fifaId: "448607",
@@ -8778,7 +10551,10 @@ var squads_default = {
     club: "Brest",
     pictureUrl: "https://digitalhub.fifa.com/transform/8e73a0cb-8200-4870-b0bc-12901de8076f/EL-KHANNOUSS-Bilal_448612",
     dateOfBirth: "2004-05-10",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "bilalekns_34"
+    }
   },
   "448662": {
     fifaId: "448662",
@@ -8802,7 +10578,10 @@ var squads_default = {
     club: "Anderlecht",
     pictureUrl: "https://digitalhub.fifa.com/transform/6e228075-d552-4471-80b9-6beb5f574ac6/NDIAYE-Iliman_448815",
     dateOfBirth: "2000-03-06",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "ilimanndiaye10"
+    }
   },
   "448821": {
     fifaId: "448821",
@@ -8826,7 +10605,10 @@ var squads_default = {
     club: "RB Leipzig",
     pictureUrl: "https://digitalhub.fifa.com/transform/fa3c3939-ed3d-46f5-9474-39fe481be534/CISS-Pathe_448825",
     dateOfBirth: "1994-03-16",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "papite8"
+    }
   },
   "461177": {
     fifaId: "461177",
@@ -8862,7 +10644,10 @@ var squads_default = {
     club: "Hurac\xE1n",
     pictureUrl: "https://digitalhub.fifa.com/transform/fb29327f-14b3-4b8f-af4e-3816404afaed/SOSA-Ramon_463125",
     dateOfBirth: "1999-08-31",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "ramon.sosa17"
+    }
   },
   "463127": {
     fifaId: "463127",
@@ -8874,7 +10659,10 @@ var squads_default = {
     club: "Libertad",
     pictureUrl: "https://digitalhub.fifa.com/transform/58eb53dc-567a-489a-b2f9-3a905f5841b7/AVALOS-Gabriel_463127",
     dateOfBirth: "1991-07-09",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "gabi.ava11"
+    }
   },
   "463128": {
     fifaId: "463128",
@@ -8886,7 +10674,10 @@ var squads_default = {
     club: "Club Olimpia",
     pictureUrl: "https://digitalhub.fifa.com/transform/88e45d01-241d-4d9d-8b40-3f2cb2963d4d/GOMEZ-Diego_463128",
     dateOfBirth: "2003-03-27",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "diegogomez08_"
+    }
   },
   "463218": {
     fifaId: "463218",
@@ -8898,7 +10689,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/29d0b36b-2727-4fc0-ab1e-4d21b5858f5a/MUDAU-Khuliso_463218",
     dateOfBirth: "1995-04-26",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "sailor_mudau"
+    }
   },
   "463221": {
     fifaId: "463221",
@@ -8910,7 +10704,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/1fb66990-444a-4e4b-9047-41c2542ea91a/SIBISI-Nkosinathi_463221",
     dateOfBirth: "1995-09-22",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "nkosinathi_sibisi29"
+    }
   },
   "463234": {
     fifaId: "463234",
@@ -8922,7 +10719,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/a8c4c69e-b074-4a10-9bfc-38c85175560d/MASEKO-Thapelo_463234",
     dateOfBirth: "2003-11-11",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "thapelo_maseko40"
+    }
   },
   "463236": {
     fifaId: "463236",
@@ -8934,7 +10734,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/d238f3d6-bc5d-44c6-b312-2989524bea12/ADAMS-Jayden_463236",
     dateOfBirth: "2001-05-05",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "jaydenadams_23"
+    }
   },
   "463282": {
     fifaId: "463282",
@@ -8946,7 +10749,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/be716fd1-7641-4a96-a618-5f2c2214c84f/PRASS-Alexander_463282",
     dateOfBirth: "2001-05-26",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "alex__prass"
+    }
   },
   "463283": {
     fifaId: "463283",
@@ -8958,7 +10764,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/558d5b09-0c44-4c7e-bccb-1bf9ac31ca72/SCHMID-Romano_463283",
     dateOfBirth: "2000-01-27",
-    height: 168
+    height: 168,
+    socials: {
+      instagram: "romano_schmid"
+    }
   },
   "463286": {
     fifaId: "463286",
@@ -8970,7 +10779,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/30760937-4e34-4c1b-b5a3-8b1375d79728/WIMMER-Patrick_463286",
     dateOfBirth: "2001-05-30",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "patrick_wimmer"
+    }
   },
   "463287": {
     fifaId: "463287",
@@ -8982,7 +10794,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/dfc45944-180c-4df6-96b2-ef69faee7ee7/FRIEDL-Marco_463287",
     dateOfBirth: "1998-03-16",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "marcofriedl_32"
+    }
   },
   "463288": {
     fifaId: "463288",
@@ -8994,7 +10809,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/c7b91eab-9cfc-4f0f-be61-71d31d1c4db8/MWENE-Phillip_463288",
     dateOfBirth: "1994-01-29",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "mwene"
+    }
   },
   "463465": {
     fifaId: "463465",
@@ -9006,7 +10824,10 @@ var squads_default = {
     club: "LAFC",
     pictureUrl: "https://digitalhub.fifa.com/transform/54a42d16-279a-4566-8c46-ac75d8ea095a/ORDONEZ-Joel_463465",
     dateOfBirth: "2004-04-21",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "joel_ordonez04"
+    }
   },
   "463468": {
     fifaId: "463468",
@@ -9018,7 +10839,10 @@ var squads_default = {
     club: "FC Dallas",
     pictureUrl: "https://digitalhub.fifa.com/transform/b43c46a0-9e62-4202-b9e4-c625b36afc16/MINDA-Alan_463468",
     dateOfBirth: "2003-05-14",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "mindaalan"
+    }
   },
   "463476": {
     fifaId: "463476",
@@ -9030,7 +10854,10 @@ var squads_default = {
     club: "Independiente del Valle",
     pictureUrl: "https://digitalhub.fifa.com/transform/60f9a338-e7cb-45a0-a0ae-926740080bec/CASTILLO-Denil_463476",
     dateOfBirth: "2004-03-24",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "denilcastillo_5"
+    }
   },
   "463489": {
     fifaId: "463489",
@@ -9042,7 +10869,10 @@ var squads_default = {
     club: "Emelec",
     pictureUrl: "https://digitalhub.fifa.com/transform/84400276-88b5-4054-b0fb-f8206f384291/MEDINA-Yaimar_463489",
     dateOfBirth: "2004-11-05",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "medina_yaimar"
+    }
   },
   "463495": {
     fifaId: "463495",
@@ -9054,7 +10884,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/ee18ba2f-5e31-4e33-8739-f0d59033c409/PAEZ-Kendry_463495",
     dateOfBirth: "2007-05-04",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "kendrypaez.10"
+    }
   },
   "463580": {
     fifaId: "463580",
@@ -9066,7 +10899,10 @@ var squads_default = {
     club: "NEC Nijmegen",
     pictureUrl: "https://digitalhub.fifa.com/transform/99c5d1bb-fd52-4ce3-a0e0-8f2e8b1083cf/SURMAN-Finn_463580",
     dateOfBirth: "2003-09-23",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "finn_surman"
+    }
   },
   "463661": {
     fifaId: "463661",
@@ -9078,7 +10914,10 @@ var squads_default = {
     club: "Brighton",
     pictureUrl: "https://digitalhub.fifa.com/transform/b3a01b61-2e37-439e-b277-5d37c89923ab/BARCO-Valentin_463661",
     dateOfBirth: "2004-07-23",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "colo.barco"
+    }
   },
   "463746": {
     fifaId: "463746",
@@ -9105,7 +10944,10 @@ var squads_default = {
     club: "Manchester United",
     pictureUrl: "https://digitalhub.fifa.com/transform/6a6be1c6-3496-49ba-81ca-354bdb2f404c/OREILLY-Nico_390761",
     dateOfBirth: "2005-03-21",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "nico33"
+    }
   },
   "463800": {
     fifaId: "463800",
@@ -9129,7 +10971,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/60c5fb68-c640-45dc-a493-75e1d9f3450c/QUANSAH-Jarell_463809",
     dateOfBirth: "2003-01-29",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "jarellquansah"
+    }
   },
   "463817": {
     fifaId: "463817",
@@ -9141,7 +10986,10 @@ var squads_default = {
     club: "Marselha",
     pictureUrl: "https://digitalhub.fifa.com/transform/a226584e-2566-49be-b8e7-b8e73d3aa127/GOODMAN-Owen_463817",
     dateOfBirth: "2003-11-27",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "owengoodman_"
+    }
   },
   "464055": {
     fifaId: "464055",
@@ -9153,7 +11001,10 @@ var squads_default = {
     club: "Inter Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/a747375e-cd17-4ef2-8241-fa7b9a7dab2b/GUSTO-Malo_464055",
     dateOfBirth: "2003-05-19",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "malogusto"
+    }
   },
   "464103": {
     fifaId: "464103",
@@ -9165,7 +11016,10 @@ var squads_default = {
     club: "Galatasaray",
     pictureUrl: "https://digitalhub.fifa.com/transform/c2bd7f75-2634-437d-9b8e-45d23380a755/BONNY-Ange-Yoan_464103",
     dateOfBirth: "2003-10-25",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "bonnyoan"
+    }
   },
   "464114": {
     fifaId: "464114",
@@ -9177,7 +11031,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/ca4e60df-4c45-48e9-89e4-70ce6ac3b3b1/DOUE-Desire_464114",
     dateOfBirth: "2005-06-03",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "desire.doue"
+    }
   },
   "464127": {
     fifaId: "464127",
@@ -9189,7 +11046,10 @@ var squads_default = {
     club: "Nantes",
     pictureUrl: "https://digitalhub.fifa.com/transform/834e2e38-78ec-4e02-98a8-dbc085a9637c/RISSER-Robin_464127",
     dateOfBirth: "2004-12-02",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "robin_ris40"
+    }
   },
   "464133": {
     fifaId: "464133",
@@ -9201,7 +11061,10 @@ var squads_default = {
     club: "Angers",
     pictureUrl: "https://digitalhub.fifa.com/transform/088ceea5-0bdc-4615-9fc2-a99fe888fe44/WAHI-Elye_464133",
     dateOfBirth: "2003-01-02",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "e.wahi7"
+    }
   },
   "464339": {
     fifaId: "464339",
@@ -9213,7 +11076,10 @@ var squads_default = {
     club: "Feyenoord",
     pictureUrl: "https://digitalhub.fifa.com/transform/389ec308-0914-4e7e-95e6-302c1d7bb0b0/GOTO-Keisuke_464339",
     dateOfBirth: "2005-06-03",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "keisuke.0603_42"
+    }
   },
   "464374": {
     fifaId: "464374",
@@ -9225,7 +11091,10 @@ var squads_default = {
     club: "Celtic",
     pictureUrl: "https://digitalhub.fifa.com/transform/58d034cc-0ae7-4caf-b6d1-41d12d129dd2/BAE-Junho_464374",
     dateOfBirth: "2003-08-21",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "x.xunho__"
+    }
   },
   "464457": {
     fifaId: "464457",
@@ -9249,7 +11118,10 @@ var squads_default = {
     club: "Colorado Rapids",
     pictureUrl: "https://digitalhub.fifa.com/transform/89fe671d-907a-47be-b4b0-4138dc878986/YOUSSEF-AMYN_464458",
     dateOfBirth: "2003-08-21",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "yaminio10"
+    }
   },
   "464484": {
     fifaId: "464484",
@@ -9261,7 +11133,10 @@ var squads_default = {
     club: "Copenhagen",
     pictureUrl: "https://digitalhub.fifa.com/transform/cd471dba-dc7d-4688-9021-e704b66cec76/GHARBI-Ismael_464484",
     dateOfBirth: "2004-04-10",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "i.gharbi10"
+    }
   },
   "464533": {
     fifaId: "464533",
@@ -9273,7 +11148,10 @@ var squads_default = {
     club: "Monterrey",
     pictureUrl: "https://digitalhub.fifa.com/transform/dbca9708-0922-4d1d-97cb-1aa53696d6bd/GUTIERREZ-Brian_464533",
     dateOfBirth: "2003-06-17",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "briangutierrez_11"
+    }
   },
   "464542": {
     fifaId: "464542",
@@ -9285,7 +11163,10 @@ var squads_default = {
     club: "FC Dallas",
     pictureUrl: "https://digitalhub.fifa.com/transform/554008b5-0520-4b67-8cab-c72ba087471f/FREEMAN-Alex_464542",
     dateOfBirth: "2004-08-09",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "_alexfreemann"
+    }
   },
   "464546": {
     fifaId: "464546",
@@ -9297,7 +11178,10 @@ var squads_default = {
     club: "Celtic",
     pictureUrl: "https://digitalhub.fifa.com/transform/843ccc00-8c38-4a4e-91ba-a25694677cf0/BRADY-Chris_464546",
     dateOfBirth: "2004-03-03",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "chrisbrady0"
+    }
   },
   "464566": {
     fifaId: "464566",
@@ -9309,7 +11193,10 @@ var squads_default = {
     club: "Atalanta",
     pictureUrl: "https://digitalhub.fifa.com/transform/6a74409c-c030-405e-a042-1c01f408eeff/BAJRAKTAREVIC-Esmir_464566",
     dateOfBirth: "2005-03-10",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "esmirbajraktarevic"
+    }
   },
   "464842": {
     fifaId: "464842",
@@ -9321,7 +11208,10 @@ var squads_default = {
     club: "Marselha",
     pictureUrl: "https://digitalhub.fifa.com/transform/b8bad481-9270-4f53-92fd-ec70fbb7a06e/CAMARA-Lamine_464842",
     dateOfBirth: "2004-01-01",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "lamine_camara_15"
+    }
   },
   "464865": {
     fifaId: "464865",
@@ -9333,7 +11223,10 @@ var squads_default = {
     club: "Olympiacos",
     pictureUrl: "https://digitalhub.fifa.com/transform/39400519-512a-43ef-97f2-7760d679aea5/DIOUF-El-Hadji-Malick_464865",
     dateOfBirth: "2004-12-29",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "el_hadji_malick_diouf26"
+    }
   },
   "466317": {
     fifaId: "466317",
@@ -9345,7 +11238,10 @@ var squads_default = {
     club: "Moreirense",
     pictureUrl: "https://digitalhub.fifa.com/transform/804768d8-badb-4492-9aef-1e523440aed4/BACUNA-Juninho_466317",
     dateOfBirth: "1997-08-07",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "jbacuna07"
+    }
   },
   "466340": {
     fifaId: "466340",
@@ -9357,7 +11253,10 @@ var squads_default = {
     club: "Groningen",
     pictureUrl: "https://digitalhub.fifa.com/transform/ae48f357-6b53-4d49-b62f-fbfb4a041b62/BACUNA-Leandro_466340",
     dateOfBirth: "1991-08-21",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "leandrobacuna07"
+    }
   },
   "466346": {
     fifaId: "466346",
@@ -9369,7 +11268,10 @@ var squads_default = {
     club: "Sabah FK",
     pictureUrl: "https://digitalhub.fifa.com/transform/e68cdb21-7918-4de8-8a37-8d3f1127184b/KUWAS-Brandley_466346",
     dateOfBirth: "1992-09-19",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "brandleykuwas"
+    }
   },
   "466350": {
     fifaId: "466350",
@@ -9381,7 +11283,10 @@ var squads_default = {
     club: "Al Rayyan",
     pictureUrl: "https://digitalhub.fifa.com/transform/8baacb6b-39cd-4a37-8999-58dd5a1d9fec/FLORANUS-Sherel_466350",
     dateOfBirth: "1998-08-23",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "sherellfloranus_"
+    }
   },
   "466352": {
     fifaId: "466352",
@@ -9393,7 +11298,10 @@ var squads_default = {
     club: "Los Angeles Galaxy",
     pictureUrl: "https://digitalhub.fifa.com/transform/115a2099-2406-4ca6-8905-91cc71efc98d/GORRE-Kenji_466352",
     dateOfBirth: "1994-09-29",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "kenjigorre"
+    }
   },
   "466359": {
     fifaId: "466359",
@@ -9405,7 +11313,10 @@ var squads_default = {
     club: "Willem II",
     pictureUrl: "https://digitalhub.fifa.com/transform/6ed36808-8d19-481f-acce-2a905fbc364c/ROEMERATOE-Godfried_466359",
     dateOfBirth: "1999-08-19",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "godfriedroemeratoe"
+    }
   },
   "466361": {
     fifaId: "466361",
@@ -9417,7 +11328,10 @@ var squads_default = {
     club: "NAC Breda",
     pictureUrl: "https://digitalhub.fifa.com/transform/f03c40c7-6eef-405c-a287-a1f7f1860a30/VAN-EIJMA-Roshon_466361",
     dateOfBirth: "1998-06-09",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "rvaneijma"
+    }
   },
   "466363": {
     fifaId: "466363",
@@ -9441,7 +11355,10 @@ var squads_default = {
     club: "Volendam",
     pictureUrl: "https://digitalhub.fifa.com/transform/f9ebf1d2-90fe-4748-8788-19259714fc40/FELIDA-Kevin_466365",
     dateOfBirth: "1999-11-11",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "kevinfelida"
+    }
   },
   "466370": {
     fifaId: "466370",
@@ -9465,7 +11382,10 @@ var squads_default = {
     club: "Almere City",
     pictureUrl: "https://digitalhub.fifa.com/transform/18bea3a9-68ef-4e35-ae04-2d494b39971e/KASTANEER-Gervane_466372",
     dateOfBirth: "1996-06-09",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "gervanek33"
+    }
   },
   "466382": {
     fifaId: "466382",
@@ -9477,7 +11397,10 @@ var squads_default = {
     club: "Molde",
     pictureUrl: "https://digitalhub.fifa.com/transform/f6d2d4d6-a63d-4278-a520-5edb0dc24e69/DOORNBUSCH-Trevor_466382",
     dateOfBirth: "1999-07-06",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "trevordoornbusch.24"
+    }
   },
   "466585": {
     fifaId: "466585",
@@ -9489,7 +11412,10 @@ var squads_default = {
     club: "Anderlecht",
     pictureUrl: "https://digitalhub.fifa.com/transform/2d2bbffa-0dcf-47c1-b681-706566867489/BOMBITO-Moise_466585",
     dateOfBirth: "2000-03-30",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "m.bombito_"
+    }
   },
   "466624": {
     fifaId: "466624",
@@ -9501,7 +11427,10 @@ var squads_default = {
     club: "Monaco",
     pictureUrl: "https://digitalhub.fifa.com/transform/bd47db79-966e-4eba-a8da-f6ba01148f27/BALOGUN-Folarin_466624",
     dateOfBirth: "2001-07-03",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "balogun"
+    }
   },
   "466687": {
     fifaId: "466687",
@@ -9513,7 +11442,10 @@ var squads_default = {
     club: "Juventus",
     pictureUrl: "https://digitalhub.fifa.com/transform/123bdaa9-e54b-4b1c-8fd4-5dac88de915e/AHMED-Ali_466687",
     dateOfBirth: "2000-10-10",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "aahmed22_"
+    }
   },
   "466835": {
     fifaId: "466835",
@@ -9525,7 +11457,10 @@ var squads_default = {
     club: "Le Mans",
     pictureUrl: "https://digitalhub.fifa.com/transform/68889bed-7acd-4e67-a3bd-a18a300e70a0/PIERRE-Alexandre_466835",
     dateOfBirth: "2001-02-25",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "pierrot.jr"
+    }
   },
   "466838": {
     fifaId: "466838",
@@ -9537,7 +11472,10 @@ var squads_default = {
     club: "Metz",
     pictureUrl: "https://digitalhub.fifa.com/transform/948f9361-348d-4c5d-a26f-83205cae2f6b/JEAN-JACQUES-Danley_466838",
     dateOfBirth: "2000-05-20",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "danley_jean_jacques27"
+    }
   },
   "466844": {
     fifaId: "466844",
@@ -9549,7 +11487,10 @@ var squads_default = {
     club: "Mirebalais",
     pictureUrl: "https://digitalhub.fifa.com/transform/d7492aa1-5f11-45df-9059-0075ef046a0a/LACROIX-Markhus_466844",
     dateOfBirth: "1993-10-14",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "duke.lacroix"
+    }
   },
   "466853": {
     fifaId: "466853",
@@ -9561,7 +11502,10 @@ var squads_default = {
     club: "Don Bosco",
     pictureUrl: "https://digitalhub.fifa.com/transform/7f30e7f0-2c85-4fa5-aa66-09d5bd74f435/DUVERGER-Josue_466853",
     dateOfBirth: "2000-04-27",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "josue_duverger01"
+    }
   },
   "466862": {
     fifaId: "466862",
@@ -9573,7 +11517,10 @@ var squads_default = {
     club: "Dunkerque",
     pictureUrl: null,
     dateOfBirth: "1999-12-31",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "garvenmtsa"
+    }
   },
   "466865": {
     fifaId: "466865",
@@ -9585,7 +11532,10 @@ var squads_default = {
     club: "Odense",
     pictureUrl: "https://digitalhub.fifa.com/transform/1ddc26ef-11b7-4086-8386-49f6c6bf027c/ETIENNE-Derrick_466865",
     dateOfBirth: "1996-11-25",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "detienne10"
+    }
   },
   "472877": {
     fifaId: "472877",
@@ -9597,7 +11547,10 @@ var squads_default = {
     club: "Inter de Mil\xE3o",
     pictureUrl: "https://digitalhub.fifa.com/transform/4661ea5f-9a56-4047-bbcf-6748250e0ebe/KAHVECI-Irfan-Can_472877",
     dateOfBirth: "1995-07-15",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "irfan"
+    }
   },
   "472908": {
     fifaId: "472908",
@@ -9609,7 +11562,10 @@ var squads_default = {
     club: "West Ham",
     pictureUrl: "https://digitalhub.fifa.com/transform/e013f16f-8ada-4532-b3c4-b674b0e08cc9/COUFAL-Vladimir_472908",
     dateOfBirth: "1992-08-22",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "cuf_5"
+    }
   },
   "473062": {
     fifaId: "473062",
@@ -9621,7 +11577,10 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/0cf69c75-fc91-401b-a1f3-f8f833c87eed/MARTINEZ-Emiliano_473062",
     dateOfBirth: "1999-08-17",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "emimartinez.32"
+    }
   },
   "473113": {
     fifaId: "473113",
@@ -9633,7 +11592,10 @@ var squads_default = {
     club: "Crystal Palace",
     pictureUrl: "https://digitalhub.fifa.com/transform/c08bf1d9-1dce-4862-b810-2f9e198a4950/EZE-Eberechi_473113",
     dateOfBirth: "1998-06-29",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "eze"
+    }
   },
   "474973": {
     fifaId: "474973",
@@ -9645,7 +11607,10 @@ var squads_default = {
     club: "Tottenham",
     pictureUrl: "https://digitalhub.fifa.com/transform/02b8f052-fa36-41a9-807e-e8f7c6a96d61/CUBARSI-Pau_474973",
     dateOfBirth: "2007-01-22",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "paucubarsi"
+    }
   },
   "475036": {
     fifaId: "475036",
@@ -9684,7 +11649,10 @@ var squads_default = {
     club: "Trabzonspor",
     pictureUrl: "https://digitalhub.fifa.com/transform/6526cdf8-5f63-4c78-b14d-9af4cdb862af/RAZAGHINIA-Amirmohammad_475921",
     dateOfBirth: "2006-04-11",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "amir_razaghinia8"
+    }
   },
   "476348": {
     fifaId: "476348",
@@ -9696,7 +11664,10 @@ var squads_default = {
     club: "Atletico Tucum\xE1n",
     pictureUrl: "https://digitalhub.fifa.com/transform/720524b9-bfc5-4139-a873-cba0a35bfa95/BOBADILLA-Damian_476348",
     dateOfBirth: "2001-07-11",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "damibobadilla_8"
+    }
   },
   "477470": {
     fifaId: "477470",
@@ -9708,7 +11679,10 @@ var squads_default = {
     club: "Union Berlin",
     pictureUrl: "https://digitalhub.fifa.com/transform/8cadf37e-ea31-43d7-bc0d-935e74adfe95/BOBB-Oscar_477470",
     dateOfBirth: "2003-07-12",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "oscarbobb"
+    }
   },
   "477536": {
     fifaId: "477536",
@@ -9720,7 +11694,10 @@ var squads_default = {
     club: "LAFC",
     pictureUrl: "https://digitalhub.fifa.com/transform/d89cb053-d9ce-4999-91da-7e9b58f2682a/VINAS-Federico_477536",
     dateOfBirth: "1998-06-30",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "federicovinas98"
+    }
   },
   "477770": {
     fifaId: "477770",
@@ -9732,7 +11709,10 @@ var squads_default = {
     club: "Toulouse",
     pictureUrl: "https://digitalhub.fifa.com/transform/aae92383-d5ce-4d00-8eb8-71891a619d11/PICO-LOPES_477770",
     dateOfBirth: "1992-06-17",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "pico_lopes"
+    }
   },
   "477777": {
     fifaId: "477777",
@@ -9756,7 +11736,10 @@ var squads_default = {
     club: "Kasimpasa",
     pictureUrl: "https://digitalhub.fifa.com/transform/ba7341af-8a89-4260-9711-37bec1618ff2/ADINGRA-Simon_477778",
     dateOfBirth: "2002-01-01",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "simon.adingra"
+    }
   },
   "477790": {
     fifaId: "477790",
@@ -9768,7 +11751,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/5aa32614-1ae5-49be-aed3-f9636a556385/AMOURA-Mohamed_477790",
     dateOfBirth: "2000-05-09",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "amoura_mohammed_el_amine"
+    }
   },
   "477795": {
     fifaId: "477795",
@@ -9780,7 +11766,10 @@ var squads_default = {
     club: "Twente",
     pictureUrl: "https://digitalhub.fifa.com/transform/81f29a61-d5a0-466a-86dd-d52b61f29462/CHAIBI-Fares_477795",
     dateOfBirth: "2002-11-28",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "fareschaibi28"
+    }
   },
   "477802": {
     fifaId: "477802",
@@ -9792,7 +11781,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/45b55597-6503-4470-a778-af125afb698a/DIOMANDE-Ousmane_477802",
     dateOfBirth: "2003-12-04",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "ousdiomande"
+    }
   },
   "477817": {
     fifaId: "477817",
@@ -9804,7 +11796,10 @@ var squads_default = {
     club: "Lens",
     pictureUrl: "https://digitalhub.fifa.com/transform/884914ab-5fde-4b43-a31a-99b35849afc8/BENBOT-Oussama_477817",
     dateOfBirth: "1994-10-11",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "oussama.benbot"
+    }
   },
   "477825": {
     fifaId: "477825",
@@ -9816,7 +11811,10 @@ var squads_default = {
     club: "Atalanta",
     pictureUrl: "https://digitalhub.fifa.com/transform/c3d01f63-7112-4a0d-a50b-0d85927676e9/KOSSOUNOU-Odilon_477825",
     dateOfBirth: "2001-01-04",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "odilonkossounou"
+    }
   },
   "477827": {
     fifaId: "477827",
@@ -9840,7 +11838,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/f5388f1a-825a-4a7d-9668-1f618b0686ea/BATUBINSIKA-Dylan_477829",
     dateOfBirth: "1996-02-15",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "d.batubinsika21"
+    }
   },
   "477831": {
     fifaId: "477831",
@@ -9852,7 +11853,10 @@ var squads_default = {
     club: "Omonia",
     pictureUrl: "https://digitalhub.fifa.com/transform/248677f0-fc09-4244-a18f-7ef9afb98dcc/LOGAN-COSTA_477831",
     dateOfBirth: "2001-04-01",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "l_costa01"
+    }
   },
   "477832": {
     fifaId: "477832",
@@ -9864,7 +11868,10 @@ var squads_default = {
     club: "Mar\xEDtimo",
     pictureUrl: "https://digitalhub.fifa.com/transform/4fd8eea9-a8fe-4571-8bbc-fe728f6160e7/SIDNY-LOPES-CABRAL_477832",
     dateOfBirth: "2002-09-18",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "sidnylc"
+    }
   },
   "477833": {
     fifaId: "477833",
@@ -9876,7 +11883,10 @@ var squads_default = {
     club: "Genk",
     pictureUrl: "https://digitalhub.fifa.com/transform/1bb4fcb6-fbfd-4f37-a827-eee403ed2a4f/KAYEMBE-Joris_477833",
     dateOfBirth: "1994-08-08",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "joriskayembe23"
+    }
   },
   "477835": {
     fifaId: "477835",
@@ -9888,7 +11898,10 @@ var squads_default = {
     club: "Sporting CP",
     pictureUrl: "https://digitalhub.fifa.com/transform/bea02c15-ba1f-4592-a3dd-80b301e94226/BANZA-Simon_477835",
     dateOfBirth: "1996-08-13",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "simbnz"
+    }
   },
   "477847": {
     fifaId: "477847",
@@ -9900,7 +11913,10 @@ var squads_default = {
     club: "Columbus Crew",
     pictureUrl: "https://digitalhub.fifa.com/transform/79a2bdd5-b9a9-41d1-8fdd-3dff50346705/STEVEN-MOREIRA_477847",
     dateOfBirth: "1994-08-13",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "s_moreira20"
+    }
   },
   "477849": {
     fifaId: "477849",
@@ -9912,7 +11928,10 @@ var squads_default = {
     club: "Penafiel",
     pictureUrl: "https://digitalhub.fifa.com/transform/8c4d8ef4-54e9-4144-84c4-d4933b752442/HELIO-VARELA_477849",
     dateOfBirth: "2002-05-03",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "helio_varela"
+    }
   },
   "477852": {
     fifaId: "477852",
@@ -9924,7 +11943,10 @@ var squads_default = {
     club: "Belenenses",
     pictureUrl: "https://digitalhub.fifa.com/transform/40e5a4a5-c7f0-4b0e-8a6e-d8ffbaa12d29/KEVIN-PINA_477852",
     dateOfBirth: "1997-01-27",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "kevinpina95"
+    }
   },
   "477853": {
     fifaId: "477853",
@@ -9936,7 +11958,10 @@ var squads_default = {
     club: "Lyon",
     pictureUrl: "https://digitalhub.fifa.com/transform/842e89cb-5c6f-4484-bbc2-b9e6d50c2de5/KALULU-Gedeon_477853",
     dateOfBirth: "1997-08-29",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "iam__k2"
+    }
   },
   "477855": {
     fifaId: "477855",
@@ -9948,7 +11973,10 @@ var squads_default = {
     club: "CSKA Sofia",
     pictureUrl: "https://digitalhub.fifa.com/transform/18ee15aa-604d-4dea-964e-7b0a73f3f710/JOAO-PAULO_477855",
     dateOfBirth: "1998-05-26",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "jpfernandes_18"
+    }
   },
   "477856": {
     fifaId: "477856",
@@ -9972,7 +12000,10 @@ var squads_default = {
     club: "Panathinaikos",
     pictureUrl: "https://digitalhub.fifa.com/transform/cfecc0dd-e887-4645-b9dc-b9d90296f314/MAYELE-Fiston_477859",
     dateOfBirth: "1994-06-24",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "mayelefiston"
+    }
   },
   "477862": {
     fifaId: "477862",
@@ -9984,7 +12015,10 @@ var squads_default = {
     club: "Vit\xF3ria SC",
     pictureUrl: "https://digitalhub.fifa.com/transform/11269eaf-5399-423a-9e27-934a7058a71d/GILSON-BENCHIMOL_477862",
     dateOfBirth: "2001-12-29",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "benchimol_tavares"
+    }
   },
   "477864": {
     fifaId: "477864",
@@ -9996,7 +12030,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/2a9cce05-2dd6-4f24-add3-7f4ad4232790/TSHIBOLA-Aaron_477864",
     dateOfBirth: "1995-01-02",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "aarontshibolaa"
+    }
   },
   "478364": {
     fifaId: "478364",
@@ -10008,7 +12045,10 @@ var squads_default = {
     club: "RB Leipzig",
     pictureUrl: "https://digitalhub.fifa.com/transform/a80059a3-3430-4e4a-b6c6-fecc2edf4627/KLUIVERT-Justin_478364",
     dateOfBirth: "1999-05-05",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "justinkluivert"
+    }
   },
   "479056": {
     fifaId: "479056",
@@ -10032,7 +12072,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/c2ac4751-fd73-4685-8bb6-de4c07266fda/MERCHAS-DOSKI_479072",
     dateOfBirth: "1999-12-07",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "merchas_doski"
+    }
   },
   "479294": {
     fifaId: "479294",
@@ -10044,7 +12087,10 @@ var squads_default = {
     club: "Leeds United",
     pictureUrl: "https://digitalhub.fifa.com/transform/f5caca4b-2a48-4d7d-906e-1c2c39a6f15c/SANO-Kaishu_479294",
     dateOfBirth: "2000-12-30",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "kaishusano_1230"
+    }
   },
   "479316": {
     fifaId: "479316",
@@ -10056,7 +12102,10 @@ var squads_default = {
     club: "FC Augsburg",
     pictureUrl: "https://digitalhub.fifa.com/transform/a335e21c-19b8-4406-a3fb-e40bc056bd9f/PARK-Jinseob_479316",
     dateOfBirth: "1995-10-23",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "jinseob.park6"
+    }
   },
   "479389": {
     fifaId: "479389",
@@ -10092,7 +12141,10 @@ var squads_default = {
     club: "Dynamo Moscow",
     pictureUrl: "https://digitalhub.fifa.com/transform/b465c59f-b480-4f3d-8f30-bb61a29aa6cb/CACERES-Juan-Jose_479601",
     dateOfBirth: "2000-06-01",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "caceres_j4"
+    }
   },
   "479781": {
     fifaId: "479781",
@@ -10104,7 +12156,10 @@ var squads_default = {
     club: "Esp\xE9rance Sportive",
     pictureUrl: "https://digitalhub.fifa.com/transform/bcdeb1a5-6411-40c5-bac8-576703796438/HADJ-MAHMOUD-Mohamed_479781",
     dateOfBirth: "2000-04-24",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "mouhamed_bel_haj_mahmoud"
+    }
   },
   "480322": {
     fifaId: "480322",
@@ -10116,7 +12171,10 @@ var squads_default = {
     club: "Nice",
     pictureUrl: "https://digitalhub.fifa.com/transform/5a74297e-1aa4-41fa-a151-782f1211d1a0/DE-FOUGEROLLES-Luc_480322",
     dateOfBirth: "2005-10-12",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "lucdefoug"
+    }
   },
   "480966": {
     fifaId: "480966",
@@ -10128,7 +12186,10 @@ var squads_default = {
     club: "Benfica",
     pictureUrl: "https://digitalhub.fifa.com/transform/2650fbd7-f8a2-409e-8b2d-85042a719c52/LAROS-DUARTE_480966",
     dateOfBirth: "1997-02-28",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "larosduarte_"
+    }
   },
   "480983": {
     fifaId: "480983",
@@ -10152,7 +12213,10 @@ var squads_default = {
     club: "Angers",
     pictureUrl: "https://digitalhub.fifa.com/transform/3838199f-c956-4b7c-a728-eef76a086a78/DEEDSON-Louicius_481027",
     dateOfBirth: "2001-02-11",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "louiciusdon"
+    }
   },
   "481180": {
     fifaId: "481180",
@@ -10164,7 +12228,10 @@ var squads_default = {
     club: "Shabab Al Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/b0036654-fcd0-4f2c-b924-468f7f63828e/MOGHANLOO-Shahriyar_481180",
     dateOfBirth: "1994-12-21",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "shahriyarmoghanlou10"
+    }
   },
   "481181": {
     fifaId: "481181",
@@ -10176,7 +12243,10 @@ var squads_default = {
     club: "Persepolis",
     pictureUrl: "https://digitalhub.fifa.com/transform/b648ca0d-4664-422c-af5f-da86c97e22b0/YOUSEFI-Arya_481181",
     dateOfBirth: "2002-04-22",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "ariayousefiii"
+    }
   },
   "481183": {
     fifaId: "481183",
@@ -10200,7 +12270,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/f13ebf2a-3cac-4af7-bd73-2b70ed5ecc1a/RAYNERS-Iqraam_481242",
     dateOfBirth: "1995-12-19",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "iqraamrayners"
+    }
   },
   "481610": {
     fifaId: "481610",
@@ -10212,7 +12285,10 @@ var squads_default = {
     club: "Newcastle United",
     pictureUrl: "https://digitalhub.fifa.com/transform/8da5855f-c957-4151-94a0-731e9714249f/ANDERSON-Elliot_481610",
     dateOfBirth: "2002-11-06",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "elliotandersonn"
+    }
   },
   "482621": {
     fifaId: "482621",
@@ -10224,7 +12300,10 @@ var squads_default = {
     club: "Manchester United",
     pictureUrl: "https://digitalhub.fifa.com/transform/add399f5-3af6-4ce6-b078-8595e805f1be/MAINOO-Kobbie_482621",
     dateOfBirth: "2005-04-19",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "kobbie"
+    }
   },
   "482670": {
     fifaId: "482670",
@@ -10263,7 +12342,10 @@ var squads_default = {
     club: "Reading",
     pictureUrl: "https://digitalhub.fifa.com/transform/14976514-36f8-43b9-80c8-67fb73d13d6b/BINDON-Tyler_482775",
     dateOfBirth: "2005-01-27",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "tylerbindonn"
+    }
   },
   "482780": {
     fifaId: "482780",
@@ -10287,7 +12369,10 @@ var squads_default = {
     club: "Pa\xE7os de Ferreira",
     pictureUrl: "https://digitalhub.fifa.com/transform/cded048a-5237-4aac-83d6-cbdbc3fec36f/DAILON-LIVRAMENTO_482782",
     dateOfBirth: "2001-05-04",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "dailonlivramento"
+    }
   },
   "482783": {
     fifaId: "482783",
@@ -10299,7 +12384,10 @@ var squads_default = {
     club: "Gil Vicente",
     pictureUrl: "https://digitalhub.fifa.com/transform/b0ebca3f-fcb5-4872-a5ce-a17d0d39a88c/WAGNER-PINA_482783",
     dateOfBirth: "2002-11-03",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "wagnerpina_"
+    }
   },
   "482869": {
     fifaId: "482869",
@@ -10311,7 +12399,10 @@ var squads_default = {
     club: "SPAL",
     pictureUrl: "https://digitalhub.fifa.com/transform/c24e6b93-736c-41a7-be57-2e165509ce5c/HADJAM-Jaouen_482869",
     dateOfBirth: "2003-03-26",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "jaouen.h3"
+    }
   },
   "482874": {
     fifaId: "482874",
@@ -10323,7 +12414,10 @@ var squads_default = {
     club: "Be\u015Fikta\u015F",
     pictureUrl: "https://digitalhub.fifa.com/transform/7446a4bb-0884-461c-8fd7-7ce4c93a0a46/HADJ-MOUSSA-Anis_482874",
     dateOfBirth: "2002-02-11",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "hadj.a20"
+    }
   },
   "482885": {
     fifaId: "482885",
@@ -10335,7 +12429,10 @@ var squads_default = {
     club: "Al-Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/2037123b-a7b7-4922-adcd-37607cd92c43/SAAD-Elias_482885",
     dateOfBirth: "1999-12-27",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "elias.a.saad"
+    }
   },
   "482931": {
     fifaId: "482931",
@@ -10347,7 +12444,10 @@ var squads_default = {
     club: "Hajduk Split",
     pictureUrl: "https://digitalhub.fifa.com/transform/ea070001-3892-4086-89c9-fe982a729f5d/PASALIC-Marco_482931",
     dateOfBirth: "2000-09-14",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "marco_pasalic"
+    }
   },
   "482969": {
     fifaId: "482969",
@@ -10359,7 +12459,10 @@ var squads_default = {
     club: "Benfica",
     pictureUrl: "https://digitalhub.fifa.com/transform/2722d62f-602e-4c37-8513-f74b7d11efe4/MUJAKIC-Nihad_482969",
     dateOfBirth: "1998-04-15",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "nihadmujakic18"
+    }
   },
   "482974": {
     fifaId: "482974",
@@ -10371,7 +12474,10 @@ var squads_default = {
     club: "Be\u015Fikta\u015F",
     pictureUrl: "https://digitalhub.fifa.com/transform/7ab9c56e-39f0-4d4a-b5c4-e0583fd57319/BASIC-Ivan_482974",
     dateOfBirth: "2002-04-30",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "basicivan1"
+    }
   },
   "482976": {
     fifaId: "482976",
@@ -10383,7 +12489,10 @@ var squads_default = {
     club: "Al Fateh",
     pictureUrl: "https://digitalhub.fifa.com/transform/87dcec5a-fbf4-45d7-8f1e-26e00140cce7/DEDIC-Amar_482976",
     dateOfBirth: "2002-08-18",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "amar_dc"
+    }
   },
   "482978": {
     fifaId: "482978",
@@ -10395,7 +12504,10 @@ var squads_default = {
     club: "Midtjylland",
     pictureUrl: "https://digitalhub.fifa.com/transform/be1c5819-9bc1-4bf3-b677-9172d1be6bea/VASILJ-Nikola_482978",
     dateOfBirth: "1995-12-02",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "nikolavasilj22"
+    }
   },
   "482984": {
     fifaId: "482984",
@@ -10407,7 +12519,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/b84ad80f-6b2b-455d-9c2e-f71195b5c2ba/TABAKOVIC-Haris_482984",
     dateOfBirth: "1994-06-20",
-    height: 196
+    height: 196,
+    socials: {
+      instagram: "_haristabakovic"
+    }
   },
   "483127": {
     fifaId: "483127",
@@ -10431,7 +12546,10 @@ var squads_default = {
     club: "Nantes",
     pictureUrl: "https://digitalhub.fifa.com/transform/f417b544-6a3c-46a9-af78-d43d6cedcad1/MOSTAFA-ZICO_483161",
     dateOfBirth: "1997-04-27",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "mostafamohamed.11"
+    }
   },
   "483182": {
     fifaId: "483182",
@@ -10455,7 +12573,10 @@ var squads_default = {
     club: "Zamalek",
     pictureUrl: "https://digitalhub.fifa.com/transform/f1c9f887-0fab-447c-9c91-33aba2c2dbe1/MAHMOUD-SABER_483183",
     dateOfBirth: "2001-07-30",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "mahmoudsaber_33"
+    }
   },
   "483264": {
     fifaId: "483264",
@@ -10467,7 +12588,10 @@ var squads_default = {
     club: "G\xF6ztepe",
     pictureUrl: "https://digitalhub.fifa.com/transform/c311a4ac-f9ad-48d3-99dc-b9c53345d0f9/JOHANSSON-Viktor_483264",
     dateOfBirth: "1998-09-14",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "viktorjohansson_"
+    }
   },
   "483276": {
     fifaId: "483276",
@@ -10479,7 +12603,10 @@ var squads_default = {
     club: "Wolfsburg",
     pictureUrl: "https://digitalhub.fifa.com/transform/43fd52e9-e3a9-46f6-8432-7bfbbb394678/GUDMUNDSSON-Gabriel_483276",
     dateOfBirth: "1999-04-29",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "gudmundsson_"
+    }
   },
   "483304": {
     fifaId: "483304",
@@ -10503,7 +12630,10 @@ var squads_default = {
     club: "Atalanta",
     pictureUrl: "https://digitalhub.fifa.com/transform/0daf43d1-2714-4cc3-ab8b-3cf2020bf150/HIEN-Isak_483312",
     dateOfBirth: "1999-01-13",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "isakhienz"
+    }
   },
   "483319": {
     fifaId: "483319",
@@ -10515,7 +12645,10 @@ var squads_default = {
     club: "Elfsborg",
     pictureUrl: "https://digitalhub.fifa.com/transform/23439c93-9021-4c30-b8b1-45141ad89e8c/EKDAL-Hjalmar_483319",
     dateOfBirth: "1998-10-21",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "hjalmarekdal"
+    }
   },
   "483327": {
     fifaId: "483327",
@@ -10527,7 +12660,10 @@ var squads_default = {
     club: "Sporting",
     pictureUrl: "https://digitalhub.fifa.com/transform/ca3d75bf-7e31-4269-9933-b296eb3f5bff/GYOKERES-Viktor_483327",
     dateOfBirth: "1998-06-04",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "viktorgyokeres"
+    }
   },
   "483442": {
     fifaId: "483442",
@@ -10539,7 +12675,10 @@ var squads_default = {
     club: "Rosenborg",
     pictureUrl: "https://digitalhub.fifa.com/transform/aa692fb8-40c4-4273-a583-46ca3f57c34c/BERG-Patrick_483442",
     dateOfBirth: "1997-11-24",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "patrickberg"
+    }
   },
   "483448": {
     fifaId: "483448",
@@ -10551,7 +12690,10 @@ var squads_default = {
     club: "RB Leipzig",
     pictureUrl: "https://digitalhub.fifa.com/transform/8522d4db-c622-4f88-9b98-62753ca74eec/NUSA-Antonio_483448",
     dateOfBirth: "2005-04-17",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "nusaantonio"
+    }
   },
   "483471": {
     fifaId: "483471",
@@ -10563,7 +12705,10 @@ var squads_default = {
     club: "AC Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/99fa69d0-8c6e-4c11-a78c-98a70aa322f8/SAMBA-Brice_483471",
     dateOfBirth: "1994-04-25",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "brice_samba1"
+    }
   },
   "483481": {
     fifaId: "483481",
@@ -10575,7 +12720,10 @@ var squads_default = {
     club: "Bayer Leverkusen",
     pictureUrl: "https://digitalhub.fifa.com/transform/df746a89-9b34-41d7-8d45-39dc4f010e12/WIEFFER-Mats_483481",
     dateOfBirth: "1999-11-16",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "matswieffer"
+    }
   },
   "483496": {
     fifaId: "483496",
@@ -10587,7 +12735,10 @@ var squads_default = {
     club: "Borussia Dortmund",
     pictureUrl: "https://digitalhub.fifa.com/transform/cf3ebe3b-012d-411b-af4e-ba0b59bb9e17/RYERSON-Julian_483496",
     dateOfBirth: "1997-11-17",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "julianryerson"
+    }
   },
   "483497": {
     fifaId: "483497",
@@ -10599,7 +12750,10 @@ var squads_default = {
     club: "Benfica",
     pictureUrl: "https://digitalhub.fifa.com/transform/5bf9f1d6-b7ec-4c50-9337-059f6eb0c097/AURSNES-Fredrik_483497",
     dateOfBirth: "1995-12-10",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "fredrikaurs18"
+    }
   },
   "483505": {
     fifaId: "483505",
@@ -10611,7 +12765,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/27678ee5-00fb-4d48-ac88-402cab97d566/MOLLER-WOLFE-David_483505",
     dateOfBirth: "2002-04-23",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "wolfemdavid"
+    }
   },
   "483512": {
     fifaId: "483512",
@@ -10623,7 +12780,10 @@ var squads_default = {
     club: "Brighton",
     pictureUrl: "https://digitalhub.fifa.com/transform/16b4bf89-fc63-492a-afd1-6f400e8eed92/HATO-Jorrel_483512",
     dateOfBirth: "2006-03-07",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "jorrelhato"
+    }
   },
   "483516": {
     fifaId: "483516",
@@ -10635,7 +12795,10 @@ var squads_default = {
     club: "Brentford",
     pictureUrl: "https://digitalhub.fifa.com/transform/28de8091-50a6-4c54-9e7b-62788b087a3a/AJER-Kristoffer_483516",
     dateOfBirth: "1998-04-17",
-    height: 198
+    height: 198,
+    socials: {
+      instagram: "kristoffer.v.ajer"
+    }
   },
   "483526": {
     fifaId: "483526",
@@ -10647,7 +12810,10 @@ var squads_default = {
     club: "Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/3f7090ee-2e95-4b6c-a098-729b07484fb2/REIJNDERS-Tijjani_483526",
     dateOfBirth: "1998-07-29",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "tijjanireijnders"
+    }
   },
   "483530": {
     fifaId: "483530",
@@ -10659,7 +12825,10 @@ var squads_default = {
     club: "Standard de Li\xE8ge",
     pictureUrl: "https://digitalhub.fifa.com/transform/d46985d1-90f0-4e2a-91f2-d00c0c98d796/BJORKAN-Fredrik-Andre_483530",
     dateOfBirth: "1998-08-21",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "fredrikbjorkan"
+    }
   },
   "483535": {
     fifaId: "483535",
@@ -10671,7 +12840,10 @@ var squads_default = {
     club: "Midtjylland",
     pictureUrl: "https://digitalhub.fifa.com/transform/b6e7f73a-c70c-4f7c-b0a4-37c8961fb019/SELVIK-Egil_483535",
     dateOfBirth: "1997-07-30",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "egil_s"
+    }
   },
   "483549": {
     fifaId: "483549",
@@ -10683,7 +12855,10 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/c4237ad3-cb10-4854-b9de-54126267d251/ZAIRE-EMERY-Warren_483549",
     dateOfBirth: "2006-03-08",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "wzairemery6"
+    }
   },
   "483553": {
     fifaId: "483553",
@@ -10695,7 +12870,10 @@ var squads_default = {
     club: "Girona",
     pictureUrl: "https://digitalhub.fifa.com/transform/1248c411-1f1f-436d-9731-3b1c3b6db0e6/GEERTRUIDA-Lutsharel_483553",
     dateOfBirth: "2000-07-18",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "lutshageertruida"
+    }
   },
   "483936": {
     fifaId: "483936",
@@ -10707,7 +12885,10 @@ var squads_default = {
     club: "Sparta Praga",
     pictureUrl: "https://digitalhub.fifa.com/transform/04fa0573-e1fa-4158-a14d-7129641cc700/DOUDERA-David_483936",
     dateOfBirth: "1998-05-31",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "david_doudera"
+    }
   },
   "483961": {
     fifaId: "483961",
@@ -10719,7 +12900,10 @@ var squads_default = {
     club: "Sparta Praga",
     pictureUrl: "https://digitalhub.fifa.com/transform/566b2c11-0ed7-4ad0-8e39-2e8a6fb4ba94/CHORY-Tomas_483961",
     dateOfBirth: "1995-01-26",
-    height: 199
+    height: 199,
+    socials: {
+      instagram: "tomascoro"
+    }
   },
   "483966": {
     fifaId: "483966",
@@ -10731,7 +12915,10 @@ var squads_default = {
     club: "Lugano",
     pictureUrl: "https://digitalhub.fifa.com/transform/998f85b6-06db-4822-99de-68010b6cdc61/TAHIROVIC-Benjamin_483966",
     dateOfBirth: "2003-03-03",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "b.tahirovic1"
+    }
   },
   "483990": {
     fifaId: "483990",
@@ -10743,7 +12930,10 @@ var squads_default = {
     club: "Slavia Praga",
     pictureUrl: "https://digitalhub.fifa.com/transform/4e32c53e-28e4-4757-ab4e-c7b18cee9bbf/JURASEK-David_483990",
     dateOfBirth: "2000-08-07",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "dava33__"
+    }
   },
   "484003": {
     fifaId: "484003",
@@ -10755,7 +12945,10 @@ var squads_default = {
     club: "Hoffenheim",
     pictureUrl: "https://digitalhub.fifa.com/transform/8b7fe7be-c13f-4245-9a48-470a88d95aa9/CHYTIL-Mojmir_484003",
     dateOfBirth: "1999-04-29",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "iam_mojma_"
+    }
   },
   "484011": {
     fifaId: "484011",
@@ -10767,7 +12960,10 @@ var squads_default = {
     club: "Rangers",
     pictureUrl: "https://digitalhub.fifa.com/transform/e5e6a265-9886-4e25-97c0-c4f2f230277d/PROVOD-Lukas_484011",
     dateOfBirth: "1996-10-23",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "lukas.provod"
+    }
   },
   "484012": {
     fifaId: "484012",
@@ -10779,7 +12975,10 @@ var squads_default = {
     club: "Slavia Praga",
     pictureUrl: "https://digitalhub.fifa.com/transform/06f2bdbf-6411-4f1c-885b-3c745e37363e/KOVAR-Matej_484012",
     dateOfBirth: "2000-05-17",
-    height: 196
+    height: 196,
+    socials: {
+      instagram: "mkovar1705"
+    }
   },
   "484022": {
     fifaId: "484022",
@@ -10791,7 +12990,10 @@ var squads_default = {
     club: "Dinamo Zagreb",
     pictureUrl: "https://digitalhub.fifa.com/transform/a230cb00-997c-4a8c-9983-b03fa2dbe2ad/MUHAREMOVIC-Tarik_484022",
     dateOfBirth: "2003-02-28",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "tarik.muharemovic"
+    }
   },
   "484045": {
     fifaId: "484045",
@@ -10803,7 +13005,10 @@ var squads_default = {
     club: "QPR",
     pictureUrl: "https://digitalhub.fifa.com/transform/6a373a65-ca0e-4c4b-a61b-b98c73fdefdd/SHANKLAND-Lawrence_484045",
     dateOfBirth: "1995-08-10",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "lawrenceshankland"
+    }
   },
   "484051": {
     fifaId: "484051",
@@ -10815,7 +13020,10 @@ var squads_default = {
     club: "Middlesbrough",
     pictureUrl: "https://digitalhub.fifa.com/transform/e1f470ca-8805-4250-8c30-39aa30a16ac9/McLEAN-Kenny_484051",
     dateOfBirth: "1992-01-08",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "kennymclean66"
+    }
   },
   "484065": {
     fifaId: "484065",
@@ -10827,7 +13035,10 @@ var squads_default = {
     club: "Trabzonspor",
     pictureUrl: "https://digitalhub.fifa.com/transform/9e9cf618-403b-4984-801d-3e82f0e11d3e/ELMALI-Eren_484065",
     dateOfBirth: "2000-07-07",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "elmali"
+    }
   },
   "484072": {
     fifaId: "484072",
@@ -10839,7 +13050,10 @@ var squads_default = {
     club: "Bayer Leverkusen",
     pictureUrl: "https://digitalhub.fifa.com/transform/72f4dcdb-4463-412b-8ea1-9cb25d4fe44d/AKAYDIN-Samet_484072",
     dateOfBirth: "1994-03-13",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "sametakaydin4"
+    }
   },
   "484073": {
     fifaId: "484073",
@@ -10851,7 +13065,10 @@ var squads_default = {
     club: "Bologna",
     pictureUrl: "https://digitalhub.fifa.com/transform/ab423ff9-7286-4242-8898-6d24bf8f1749/HYAM-Dominic_484073",
     dateOfBirth: "1995-12-20",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "domhyam_95"
+    }
   },
   "484082": {
     fifaId: "484082",
@@ -10863,7 +13080,10 @@ var squads_default = {
     club: "Galatasaray",
     pictureUrl: "https://digitalhub.fifa.com/transform/de2b1023-3aee-4233-b83d-07f94fd288d4/BARDAKCI-Abdulkerim_484082",
     dateOfBirth: "1994-09-07",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "abdulkerimbardakci"
+    }
   },
   "484087": {
     fifaId: "484087",
@@ -10875,7 +13095,10 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/e2f26175-13ac-4850-acd7-6408de06ce19/GULER-Arda_484087",
     dateOfBirth: "2005-02-25",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "ardaguler"
+    }
   },
   "484092": {
     fifaId: "484092",
@@ -10887,7 +13110,10 @@ var squads_default = {
     club: "Fenerbah\xE7e",
     pictureUrl: "https://digitalhub.fifa.com/transform/1f8b0453-0b84-4eea-9c24-9cd992611aed/YUKSEK-Ismail_484092",
     dateOfBirth: "1999-01-26",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "ismailyuksek"
+    }
   },
   "484112": {
     fifaId: "484112",
@@ -10899,7 +13125,10 @@ var squads_default = {
     club: "Juventus",
     pictureUrl: "https://digitalhub.fifa.com/transform/7dff809e-a965-4b36-a7b5-8da772fc96a5/YILDIZ-Kenan_484112",
     dateOfBirth: "2005-05-04",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "kenanyildiz"
+    }
   },
   "484113": {
     fifaId: "484113",
@@ -10911,7 +13140,10 @@ var squads_default = {
     club: "Brighton",
     pictureUrl: "https://digitalhub.fifa.com/transform/c69621e7-9ba5-438d-89dc-7871b6e0f611/KADIOGLU-Ferdi_484113",
     dateOfBirth: "1999-10-07",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "ferdikadioglu"
+    }
   },
   "484139": {
     fifaId: "484139",
@@ -10923,7 +13155,10 @@ var squads_default = {
     club: "Galatasaray",
     pictureUrl: "https://digitalhub.fifa.com/transform/49e46d17-bf69-41b1-a8df-5aeabf137c7d/YILMAZ-Baris-Alper_484139",
     dateOfBirth: "2000-05-23",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "barisalperyilmaz"
+    }
   },
   "484141": {
     fifaId: "484141",
@@ -10935,7 +13170,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/c79cf261-45b2-484b-860f-9adac3ed7d17/JOAO-NEVES_484141",
     dateOfBirth: "2004-09-27",
-    height: 171
+    height: 171,
+    socials: {
+      instagram: "joao_neves87"
+    }
   },
   "484262": {
     fifaId: "484262",
@@ -10983,7 +13221,10 @@ var squads_default = {
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/37b631d3-c340-4590-91a8-bb00bd5f1e89/YAMAL-Lamine_484320",
     dateOfBirth: "2007-07-13",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "lamineyamal"
+    }
   },
   "484691": {
     fifaId: "484691",
@@ -10995,7 +13236,10 @@ var squads_default = {
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/08439f96-c835-4b28-9fc5-7e90d4e82738/GARCIA-Joan_484691",
     dateOfBirth: "2001-05-04",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "__joangarcia"
+    }
   },
   "484698": {
     fifaId: "484698",
@@ -11007,7 +13251,10 @@ var squads_default = {
     club: "RC Lens",
     pictureUrl: "https://digitalhub.fifa.com/transform/2b8bf568-c645-4cbc-995a-5980c82e393b/DIAO-Assane_484698",
     dateOfBirth: "2005-09-07",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "assandiao.8"
+    }
   },
   "484728": {
     fifaId: "484728",
@@ -11019,7 +13266,10 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/fd21bf4f-bf7d-4917-8afd-3def8e7e5069/PUBILL-Marc_484728",
     dateOfBirth: "2003-06-20",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "markus_pubill27"
+    }
   },
   "484817": {
     fifaId: "484817",
@@ -11043,7 +13293,10 @@ var squads_default = {
     club: "Bayern Munique",
     pictureUrl: "https://digitalhub.fifa.com/transform/c7eaa0cd-48e1-4349-a6d9-dd00553b7913/GROSS-Pascal_484848",
     dateOfBirth: "1991-06-15",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "pascalgross_"
+    }
   },
   "484849": {
     fifaId: "484849",
@@ -11055,7 +13308,10 @@ var squads_default = {
     club: "Borussia Dortmund",
     pictureUrl: "https://digitalhub.fifa.com/transform/7cfb5f20-6f8a-4329-97a2-be3cb66fea0f/PAVLOVIC-Aleksandar_484849",
     dateOfBirth: "2004-05-03",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "alekspavlovic_"
+    }
   },
   "484850": {
     fifaId: "484850",
@@ -11067,7 +13323,10 @@ var squads_default = {
     club: "Borussia Dortmund",
     pictureUrl: "https://digitalhub.fifa.com/transform/34e90391-c4b4-4a96-9b57-71c45bb584c2/BEIER-Maximilian_484850",
     dateOfBirth: "2002-10-17",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "maxbeier.14"
+    }
   },
   "484851": {
     fifaId: "484851",
@@ -11079,7 +13338,10 @@ var squads_default = {
     club: "Borussia Dortmund",
     pictureUrl: "https://digitalhub.fifa.com/transform/3ec30e08-a7eb-4781-aea8-0e9ff86ebef1/UNDAV-Deniz_484851",
     dateOfBirth: "1996-07-19",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "denizundav"
+    }
   },
   "484859": {
     fifaId: "484859",
@@ -11091,7 +13353,10 @@ var squads_default = {
     club: "AZ Alkmaar",
     pictureUrl: "https://digitalhub.fifa.com/transform/ac98da17-3346-4d88-b52f-4ce34c82f587/TIMBER-Quinten_484859",
     dateOfBirth: "2001-06-17",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "quintentimber"
+    }
   },
   "484860": {
     fifaId: "484860",
@@ -11103,7 +13368,10 @@ var squads_default = {
     club: "AC Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/10e80ef7-3aa9-4c07-9639-e8bc04828d31/BARCOLA-Bradley_484860",
     dateOfBirth: "2002-09-02",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "bradley_dls"
+    }
   },
   "484862": {
     fifaId: "484862",
@@ -11115,7 +13383,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/4c9ca839-ca31-4d4c-a620-3a5117c5efa8/KELLER-Marvin_484862",
     dateOfBirth: "2002-07-03",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "marvinkeller1"
+    }
   },
   "484864": {
     fifaId: "484864",
@@ -11127,7 +13398,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/f38da0cf-fda0-4f52-838c-0bb40ab279c8/AMENDA-Aurele_484864",
     dateOfBirth: "2003-07-31",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "aureleamenda"
+    }
   },
   "485063": {
     fifaId: "485063",
@@ -11151,7 +13425,10 @@ var squads_default = {
     club: "Toronto FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/e0c93e53-1609-4a5c-95be-b4eb0c044003/SIGUR-Niko_485064",
     dateOfBirth: "2003-09-09",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "nikosigur"
+    }
   },
   "485065": {
     fifaId: "485065",
@@ -11163,7 +13440,10 @@ var squads_default = {
     club: "Dinamo Zagreb",
     pictureUrl: "https://digitalhub.fifa.com/transform/f71b54fc-4cf8-463c-b8cc-7837e3d9eca8/FRUK-Toni_390197",
     dateOfBirth: "2001-03-09",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "tonifruk"
+    }
   },
   "485066": {
     fifaId: "485066",
@@ -11175,7 +13455,10 @@ var squads_default = {
     club: "RB Leipzig",
     pictureUrl: "https://digitalhub.fifa.com/transform/89c383c2-39ba-413d-b945-e42dd2d47c6d/SUCIC-Petar_485066",
     dateOfBirth: "2003-10-25",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "petar_sucic"
+    }
   },
   "485068": {
     fifaId: "485068",
@@ -11187,7 +13470,10 @@ var squads_default = {
     club: "Eintracht Frankfurt",
     pictureUrl: "https://digitalhub.fifa.com/transform/72c82c16-da76-4f5a-a849-5b84343228eb/MATANOVIC-Igor_485068",
     dateOfBirth: "2003-03-31",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "igor.matanovic"
+    }
   },
   "485069": {
     fifaId: "485069",
@@ -11214,7 +13500,10 @@ var squads_default = {
     club: "Club Am\xE9rica",
     pictureUrl: "https://digitalhub.fifa.com/transform/3ea092ae-841d-4dc6-9ca0-78eb4dfb97c7/RANGEL-Raul_485070",
     dateOfBirth: "2000-02-25",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "raulra_22"
+    }
   },
   "485080": {
     fifaId: "485080",
@@ -11226,7 +13515,10 @@ var squads_default = {
     club: "Burnley",
     pictureUrl: "https://digitalhub.fifa.com/transform/f923135f-5d11-46cb-90a3-517f74cb4c76/TRAFFORD-James_485080",
     dateOfBirth: "2002-10-10",
-    height: 197
+    height: 197,
+    socials: {
+      instagram: "jamestrafford"
+    }
   },
   "485081": {
     fifaId: "485081",
@@ -11238,7 +13530,10 @@ var squads_default = {
     club: "Juventus",
     pictureUrl: "https://digitalhub.fifa.com/transform/1cb86e09-cf4e-4b60-8849-09d17dd1f8ad/FRANCISCO-CONCEICAO_485081",
     dateOfBirth: "2002-12-14",
-    height: 166
+    height: 166,
+    socials: {
+      instagram: "francisco.conceicao7"
+    }
   },
   "485131": {
     fifaId: "485131",
@@ -11250,7 +13545,10 @@ var squads_default = {
     club: "Rangers",
     pictureUrl: "https://digitalhub.fifa.com/transform/7cf469cc-72f7-4c4b-9312-817920757af3/GANNON-DOAK-Ben_485131",
     dateOfBirth: "2005-11-11",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "bendoak._"
+    }
   },
   "485324": {
     fifaId: "485324",
@@ -11274,7 +13572,10 @@ var squads_default = {
     club: "Charleroi",
     pictureUrl: "https://digitalhub.fifa.com/transform/402300d2-89f5-4c17-97be-494664b73565/CHONG-Tahith_485347",
     dateOfBirth: "1999-12-04",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "tahithchong"
+    }
   },
   "485379": {
     fifaId: "485379",
@@ -11286,7 +13587,10 @@ var squads_default = {
     club: "Al Hazem",
     pictureUrl: "https://digitalhub.fifa.com/transform/4d41ae09-f81a-44fc-a53b-6e1b3e46521b/SAMBO-Shurandy_485379",
     dateOfBirth: "2001-08-19",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "shurandysambo"
+    }
   },
   "485409": {
     fifaId: "485409",
@@ -11298,7 +13602,10 @@ var squads_default = {
     club: "Cavaly",
     pictureUrl: "https://digitalhub.fifa.com/transform/72f8c310-2cf0-4329-a479-f2b2871201d7/PIERRE-Woodensky_485409",
     dateOfBirth: "2004-12-30",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "woodensky06"
+    }
   },
   "485503": {
     fifaId: "485503",
@@ -11310,7 +13617,10 @@ var squads_default = {
     club: "Urawa Red Diamonds",
     pictureUrl: "https://digitalhub.fifa.com/transform/820d40f4-df00-46d9-a36f-3f7eb523d099/SUZUKI-Yuito_485503",
     dateOfBirth: "2001-10-25",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "yuiton.s"
+    }
   },
   "485595": {
     fifaId: "485595",
@@ -11322,7 +13632,10 @@ var squads_default = {
     club: "Atl\xE9tico Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/5d379193-ed78-498b-81c0-0e1a50f2f7c9/SIMEONE-Giuliano_485595",
     dateOfBirth: "2002-12-18",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "simeonegiovanni"
+    }
   },
   "485655": {
     fifaId: "485655",
@@ -11334,7 +13647,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/979cc206-e23b-4b21-8d40-843607ba8964/OLISE-Michael_485655",
     dateOfBirth: "2001-12-12",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "m.olise"
+    }
   },
   "485664": {
     fifaId: "485664",
@@ -11346,7 +13662,10 @@ var squads_default = {
     club: "Troyes",
     pictureUrl: "https://digitalhub.fifa.com/transform/c510536e-4614-459d-9780-060a5e3631ad/PROVIDENCE-Ruben_485664",
     dateOfBirth: "2001-07-07",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "r.providence7"
+    }
   },
   "485666": {
     fifaId: "485666",
@@ -11358,7 +13677,10 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/86a154a1-3ed6-46b8-977c-3a04925c39bc/AKLIOUCHE-Maghnes_485666",
     dateOfBirth: "2002-02-25",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "maghnes.a"
+    }
   },
   "485675": {
     fifaId: "485675",
@@ -11370,7 +13692,10 @@ var squads_default = {
     club: "Utrecht",
     pictureUrl: "https://digitalhub.fifa.com/transform/a5543d71-798f-42a0-aef9-201b86bc75c1/GUESSAND-Evann_485675",
     dateOfBirth: "2001-07-01",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "e.guessand"
+    }
   },
   "485676": {
     fifaId: "485676",
@@ -11382,7 +13707,10 @@ var squads_default = {
     club: "Niort",
     pictureUrl: "https://digitalhub.fifa.com/transform/ffcd4548-d3d0-42ca-a926-95fbda75d26a/JOSEPH-Lenny_485676",
     dateOfBirth: "2000-10-12",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "lenny.joseph19"
+    }
   },
   "485677": {
     fifaId: "485677",
@@ -11394,7 +13722,10 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/fab8dcfa-7c16-4c88-adeb-51cf932e3abc/KONE-Manu_485677",
     dateOfBirth: "2001-05-17",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "manu_kne"
+    }
   },
   "485740": {
     fifaId: "485740",
@@ -11406,7 +13737,10 @@ var squads_default = {
     club: "Racing Club",
     pictureUrl: "https://digitalhub.fifa.com/transform/3d04af2c-60a8-48c8-be3e-d13bf5373c0c/EL-AYNAOUI-Neil_485740",
     dateOfBirth: "2001-07-02",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "neilelaynaoui"
+    }
   },
   "485756": {
     fifaId: "485756",
@@ -11418,7 +13752,10 @@ var squads_default = {
     club: "Troyes",
     pictureUrl: "https://digitalhub.fifa.com/transform/beeb6801-c7ca-401a-b1ab-21db95f44198/EL-OUAHDI-Zakaria_485756",
     dateOfBirth: "2001-12-31",
-    height: 171
+    height: 171,
+    socials: {
+      instagram: "z.elouahdi"
+    }
   },
   "485760": {
     fifaId: "485760",
@@ -11430,7 +13767,10 @@ var squads_default = {
     club: "Wolverhampton",
     pictureUrl: "https://digitalhub.fifa.com/transform/37fafcb6-10c1-4e8d-b2a7-898ae14fa1a3/BOUADDI-Ayyoub_485760",
     dateOfBirth: "2007-10-02",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "ay.bouaddi"
+    }
   },
   "485767": {
     fifaId: "485767",
@@ -11442,7 +13782,10 @@ var squads_default = {
     club: "Wydad Casablanca",
     pictureUrl: "https://digitalhub.fifa.com/transform/e515f777-c663-46b0-87e3-9f467c48184f/HALHAL-Redouane_485767",
     dateOfBirth: "2003-03-05",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "r.halhal4"
+    }
   },
   "485802": {
     fifaId: "485802",
@@ -11454,7 +13797,10 @@ var squads_default = {
     club: "Cerro Porte\xF1o",
     pictureUrl: "https://digitalhub.fifa.com/transform/14209263-2bf9-442b-8d6b-485492f712dd/ARCE-Alex_485802",
     dateOfBirth: "1995-06-16",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "alexarce7785"
+    }
   },
   "485804": {
     fifaId: "485804",
@@ -11466,7 +13812,10 @@ var squads_default = {
     club: "Guaran\xED",
     pictureUrl: "https://digitalhub.fifa.com/transform/ccf6784f-8528-4d47-ba72-500d47ac51af/CABALLERO-Gustavo_485804",
     dateOfBirth: "2001-09-21",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "gustavocaballer0"
+    }
   },
   "486074": {
     fifaId: "486074",
@@ -11478,7 +13827,10 @@ var squads_default = {
     club: "Galatasaray",
     pictureUrl: "https://digitalhub.fifa.com/transform/18128593-2c01-460e-9db1-9212fa7dc369/UZUN-Can_486074",
     dateOfBirth: "2005-11-11",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "can.uzun10"
+    }
   },
   "486076": {
     fifaId: "486076",
@@ -11502,7 +13854,10 @@ var squads_default = {
     club: "Sparta Praga",
     pictureUrl: "https://digitalhub.fifa.com/transform/9550c125-89e2-497f-a098-bcdceb0243e7/HRANAC-Robin_486080",
     dateOfBirth: "2000-01-29",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "robinhranac"
+    }
   },
   "486081": {
     fifaId: "486081",
@@ -11514,7 +13869,10 @@ var squads_default = {
     club: "Sparta Praga",
     pictureUrl: "https://digitalhub.fifa.com/transform/87ce4b61-fd6d-4ca3-901d-6dfe039dd809/CERV-Lukas_486081",
     dateOfBirth: "2001-04-10",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "lukas_cerv"
+    }
   },
   "486082": {
     fifaId: "486082",
@@ -11526,7 +13884,10 @@ var squads_default = {
     club: "RB Salzburg",
     pictureUrl: "https://digitalhub.fifa.com/transform/a45ca4c8-04d9-4321-a100-1e57b2d7bbda/SULC-Pavel_486082",
     dateOfBirth: "2000-12-29",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "sulcik_10"
+    }
   },
   "486130": {
     fifaId: "486130",
@@ -11538,7 +13899,10 @@ var squads_default = {
     club: "Al-Arabi",
     pictureUrl: "https://digitalhub.fifa.com/transform/87016310-d872-4f1d-b60a-2c9e702190d7/DIARRA-Habib_486130",
     dateOfBirth: "2004-01-03",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "habib.diarra.38"
+    }
   },
   "486147": {
     fifaId: "486147",
@@ -11550,7 +13914,10 @@ var squads_default = {
     club: "Anderlecht",
     pictureUrl: "https://digitalhub.fifa.com/transform/3c5307a2-8894-44fc-a2d0-95c4500a6740/SADIKI-Noah_486147",
     dateOfBirth: "2004-12-17",
-    height: 165
+    height: 165,
+    socials: {
+      instagram: "noahjsad27"
+    }
   },
   "486161": {
     fifaId: "486161",
@@ -11562,7 +13929,10 @@ var squads_default = {
     club: "Qatar SC",
     pictureUrl: "https://digitalhub.fifa.com/transform/4946f2f8-a809-451e-962b-7b7426bbd633/MOFOKENG-Relebohile_486161",
     dateOfBirth: "2004-10-23",
-    height: 168
+    height: 168,
+    socials: {
+      instagram: "relebohile_ratomo_15"
+    }
   },
   "486168": {
     fifaId: "486168",
@@ -11574,7 +13944,10 @@ var squads_default = {
     club: "Stade Rennais",
     pictureUrl: "https://digitalhub.fifa.com/transform/7839c6fe-1ef4-4201-84d7-4540216e1588/NDIAYE-Cherif_486168",
     dateOfBirth: "1996-01-23",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "cherifrek_221"
+    }
   },
   "486196": {
     fifaId: "486196",
@@ -11586,7 +13959,10 @@ var squads_default = {
     club: "Club Brugge",
     pictureUrl: "https://digitalhub.fifa.com/transform/deee3a8c-2aea-43fd-80d4-18dfdf1fad94/FAYULU-Timothy_486196",
     dateOfBirth: "1999-07-24",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "timofayulu75"
+    }
   },
   "486259": {
     fifaId: "486259",
@@ -11598,7 +13974,10 @@ var squads_default = {
     club: "Lorient",
     pictureUrl: "https://digitalhub.fifa.com/transform/937ed103-c12b-4931-83f1-ee615a67858e/HASSAN-ALTAMBAKTI_403335",
     dateOfBirth: "2002-03-07",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "_mohamedkone1"
+    }
   },
   "486260": {
     fifaId: "486260",
@@ -11610,7 +13989,10 @@ var squads_default = {
     club: "Nice",
     pictureUrl: "https://digitalhub.fifa.com/transform/7ed2ec22-290b-40bb-a4a9-4c3374aa3e91/OPERI-Christopher_486260",
     dateOfBirth: "1997-04-29",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "agbadou_emmanuel"
+    }
   },
   "486268": {
     fifaId: "486268",
@@ -11634,7 +14016,10 @@ var squads_default = {
     club: "St. Mirren",
     pictureUrl: "https://digitalhub.fifa.com/transform/ebc599f9-d929-4c6c-a60e-7f081cfb7bd6/IRANKUNDA-Nestory_486306",
     dateOfBirth: "2006-02-09",
-    height: 165
+    height: 165,
+    socials: {
+      instagram: "nestory._"
+    }
   },
   "486317": {
     fifaId: "486317",
@@ -11646,7 +14031,10 @@ var squads_default = {
     club: "Galatasaray",
     pictureUrl: "https://digitalhub.fifa.com/transform/9c597f58-ad63-4248-ac8b-b36e71f7b811/DOUE-Guela_486317",
     dateOfBirth: "2002-10-17",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "guela.doue"
+    }
   },
   "486390": {
     fifaId: "486390",
@@ -11658,7 +14046,10 @@ var squads_default = {
     club: "Inter Miami",
     pictureUrl: "https://digitalhub.fifa.com/transform/3670d375-3a2f-41c8-8c5a-9c9bbd8f93f4/ARFSTEN-Max_486390",
     dateOfBirth: "2001-04-19",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "maxarfsten"
+    }
   },
   "486614": {
     fifaId: "486614",
@@ -11694,7 +14085,10 @@ var squads_default = {
     club: "River Plate",
     pictureUrl: "https://digitalhub.fifa.com/transform/3640b6b7-6993-46be-a35e-e6620579e3c7/VELAZQUEZ-Gustavo_486875",
     dateOfBirth: "1991-04-17",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "pituvelazquez"
+    }
   },
   "486929": {
     fifaId: "486929",
@@ -11706,7 +14100,10 @@ var squads_default = {
     club: "Toronto FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/c761fb38-4f2b-47a9-9ede-6bee5f09d6bd/OLUWASEYI-Tani_486929",
     dateOfBirth: "2000-05-15",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "tani.o14"
+    }
   },
   "489300": {
     fifaId: "489300",
@@ -11718,7 +14115,10 @@ var squads_default = {
     club: "Apollon Limassol",
     pictureUrl: "https://digitalhub.fifa.com/transform/d3101d94-a275-4ecc-9b0c-63688841159d/EXPERIENCE-Martin_489300",
     dateOfBirth: "1999-03-09",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "martin_experience"
+    }
   },
   "489417": {
     fifaId: "489417",
@@ -11730,7 +14130,10 @@ var squads_default = {
     club: "Cerro Porte\xF1o",
     pictureUrl: "https://digitalhub.fifa.com/transform/9b776bee-7e1b-47b0-b4ef-526ff72ac93f/PITTA-Isidro_489417",
     dateOfBirth: "1999-08-14",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "isidro_pitta09"
+    }
   },
   "489517": {
     fifaId: "489517",
@@ -11742,7 +14145,10 @@ var squads_default = {
     club: "Inter de Mil\xE3o",
     pictureUrl: "https://digitalhub.fifa.com/transform/eb113fdd-d066-44a9-a0dc-7bf075fdc57f/VAN-HECKE-Jan-Paul_489517",
     dateOfBirth: "2000-06-08",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "jpvanhecke"
+    }
   },
   "489518": {
     fifaId: "489518",
@@ -11754,7 +14160,10 @@ var squads_default = {
     club: "Sparta Rotterdam",
     pictureUrl: "https://digitalhub.fifa.com/transform/86e9f724-fc5f-4969-92e3-ac658dafacdd/SUMMERVILLE-Crysencio_489518",
     dateOfBirth: "2001-10-30",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "csummerville7"
+    }
   },
   "489520": {
     fifaId: "489520",
@@ -11766,7 +14175,10 @@ var squads_default = {
     club: "Rapid Wien",
     pictureUrl: "https://digitalhub.fifa.com/transform/71b1a703-25aa-4193-8bd7-daf0108e7009/KATIC-Nikola_489520",
     dateOfBirth: "1996-10-10",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "nikolakatic2"
+    }
   },
   "489521": {
     fifaId: "489521",
@@ -11790,7 +14202,10 @@ var squads_default = {
     club: "Standard de Li\xE8ge",
     pictureUrl: "https://digitalhub.fifa.com/transform/41529cf6-4725-4885-abc1-00dc358ca8b9/GIGOVIC-Armin_489523",
     dateOfBirth: "2002-04-06",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "armingigovic"
+    }
   },
   "489550": {
     fifaId: "489550",
@@ -11802,7 +14217,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/90bde687-8728-4d4d-aa72-524b2b251caa/HUSAM-ABUDAHAB_489550",
     dateOfBirth: "2000-05-13",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "husam.abudahab.5"
+    }
   },
   "489551": {
     fifaId: "489551",
@@ -11814,7 +14232,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/e4e0ffbc-e1af-44f4-8c2e-50bd2dffc4c4/MOHAMMAD-ABUALNADI_489551",
     dateOfBirth: "2001-02-08",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "moabualnadi"
+    }
   },
   "489603": {
     fifaId: "489603",
@@ -11841,7 +14262,10 @@ var squads_default = {
     club: "Aston Villa",
     pictureUrl: "https://digitalhub.fifa.com/transform/c93a418b-3456-4b0f-b0e0-8cb27004aebb/WIDELL-ZETTERSTROM-Jacob_489685",
     dateOfBirth: "1998-07-11",
-    height: 197
+    height: 197,
+    socials: {
+      instagram: "jacobwzetterstrom"
+    }
   },
   "489688": {
     fifaId: "489688",
@@ -11853,7 +14277,10 @@ var squads_default = {
     club: "AIK",
     pictureUrl: "https://digitalhub.fifa.com/transform/ac9ed8a6-7b39-4962-8245-b80556224ca0/AYARI-Yasin_489688",
     dateOfBirth: "2003-10-06",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "yasin_ayari"
+    }
   },
   "489689": {
     fifaId: "489689",
@@ -11865,7 +14292,10 @@ var squads_default = {
     club: "IFK G\xF6teborg",
     pictureUrl: "https://digitalhub.fifa.com/transform/bd927d6a-bb9d-4424-9e96-53c2ebc7220b/BERGVALL-Lucas_489689",
     dateOfBirth: "2006-02-02",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "lucasbergvall"
+    }
   },
   "489691": {
     fifaId: "489691",
@@ -11877,7 +14307,10 @@ var squads_default = {
     club: "Eintracht Frankfurt",
     pictureUrl: "https://digitalhub.fifa.com/transform/ba9d4008-fe99-49d2-afb3-c3a9d7a97da8/NILSSON-Gustaf_489691",
     dateOfBirth: "1997-05-23",
-    height: 197
+    height: 197,
+    socials: {
+      instagram: "gustafnilssonn"
+    }
   },
   "489696": {
     fifaId: "489696",
@@ -11889,7 +14322,10 @@ var squads_default = {
     club: "Groningen",
     pictureUrl: "https://digitalhub.fifa.com/transform/31dda581-ef96-4ab5-a82d-9f5f59a3dd31/LANGAS-Sondre_489696",
     dateOfBirth: "2001-02-02",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "sondrelangas"
+    }
   },
   "489704": {
     fifaId: "489704",
@@ -11901,7 +14337,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/556c6a9a-facb-4a04-8b68-15bee3974c9f/RENATO-VEIGA_489704",
     dateOfBirth: "2003-07-29",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "renatoveiga95"
+    }
   },
   "489732": {
     fifaId: "489732",
@@ -11913,7 +14352,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/115733f4-8e52-477a-867f-063f1e2c7752/MADUEKE-Noni_489732",
     dateOfBirth: "2002-03-10",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "nonzinoo10"
+    }
   },
   "491166": {
     fifaId: "491166",
@@ -11925,7 +14367,10 @@ var squads_default = {
     club: "Al-Wehda",
     pictureUrl: "https://digitalhub.fifa.com/transform/27f30c93-f04b-4195-b105-4504c81abf6e/VELUPILLAY-Nishan_491166",
     dateOfBirth: "2001-05-07",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "nishan.velupillay"
+    }
   },
   "491167": {
     fifaId: "491167",
@@ -11949,7 +14394,10 @@ var squads_default = {
     club: "Porto",
     pictureUrl: "https://digitalhub.fifa.com/transform/38256f2e-7139-4848-b609-051bb4623b71/SAMU-COSTA_491216",
     dateOfBirth: "2000-11-27",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "samucosta6"
+    }
   },
   "491218": {
     fifaId: "491218",
@@ -11961,7 +14409,10 @@ var squads_default = {
     club: "West Ham",
     pictureUrl: "https://digitalhub.fifa.com/transform/a53f7aa4-eaba-4bb1-9654-e563adb10d2e/LEWELING-Jamie_491218",
     dateOfBirth: "2001-02-26",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "jamieleweling"
+    }
   },
   "491228": {
     fifaId: "491228",
@@ -11985,7 +14436,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/e7b048fd-7217-470a-9820-eb8b6eab0286/HEGGEM-Torbjorn_491244",
     dateOfBirth: "1999-01-12",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "tlheggem"
+    }
   },
   "491255": {
     fifaId: "491255",
@@ -12009,7 +14463,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/f096e299-95db-4ab3-bcb4-ef15da6cda71/SVOBODA-Michael_491269",
     dateOfBirth: "1998-10-15",
-    height: 195
+    height: 195,
+    socials: {
+      instagram: "michaelsvoboda30"
+    }
   },
   "492315": {
     fifaId: "492315",
@@ -12045,7 +14502,10 @@ var squads_default = {
     club: "Bayern Munique",
     pictureUrl: "https://digitalhub.fifa.com/transform/9895941b-9be6-4900-a336-493f1237b0e6/NMECHA-Felix_492363",
     dateOfBirth: "2000-10-10",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "felix_nmecha"
+    }
   },
   "492716": {
     fifaId: "492716",
@@ -12057,7 +14517,10 @@ var squads_default = {
     club: "Aston Villa",
     pictureUrl: "https://digitalhub.fifa.com/transform/426bfdb9-3999-4826-81b8-dd33691a45a2/ROGERS-Morgan_492716",
     dateOfBirth: "2002-07-26",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "mrogers"
+    }
   },
   "492859": {
     fifaId: "492859",
@@ -12069,7 +14532,10 @@ var squads_default = {
     club: "Bayer Leverkusen",
     pictureUrl: "https://digitalhub.fifa.com/transform/73c58323-50f9-463b-88f0-abce4d69067c/MUNOZ-Victor_492859",
     dateOfBirth: "2003-07-13",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "victormunoz.7"
+    }
   },
   "493061": {
     fifaId: "493061",
@@ -12081,7 +14547,10 @@ var squads_default = {
     club: "Ipswich Town",
     pictureUrl: "https://digitalhub.fifa.com/transform/7f7bf320-92e1-4267-bc6b-56f2ec37e94f/SMITH-Eric_493061",
     dateOfBirth: "1997-01-08",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "ericsmith_8"
+    }
   },
   "493221": {
     fifaId: "493221",
@@ -12093,7 +14562,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/d3efd73b-690b-417d-a645-0a45b5c00bc8/MUHEIM-Miro_493221",
     dateOfBirth: "1998-03-24",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "mvromu"
+    }
   },
   "493970": {
     fifaId: "493970",
@@ -12105,7 +14577,10 @@ var squads_default = {
     club: "Nashville SC",
     pictureUrl: "https://digitalhub.fifa.com/transform/5e47f75f-c26f-4a7b-81e5-7957cc1027eb/DAVID-Promise_493970",
     dateOfBirth: "2001-07-03",
-    height: 195
+    height: 195,
+    socials: {
+      instagram: "txby.72"
+    }
   },
   "493983": {
     fifaId: "493983",
@@ -12129,7 +14604,10 @@ var squads_default = {
     club: "Club Brugge",
     pictureUrl: "https://digitalhub.fifa.com/transform/568ca230-b521-4f9c-9601-fb0cb6841fde/FERNANDEZ-PARDO-Matias_494025",
     dateOfBirth: "2005-02-03",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "m.fernandez_pardo"
+    }
   },
   "494246": {
     fifaId: "494246",
@@ -12141,7 +14619,10 @@ var squads_default = {
     club: "Kaizer Chiefs",
     pictureUrl: "https://digitalhub.fifa.com/transform/c06e5903-d546-4bc6-a558-5ce40b336b64/CHAINE-Sipho_494246",
     dateOfBirth: "1996-12-14",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "s__chaine31"
+    }
   },
   "494248": {
     fifaId: "494248",
@@ -12153,7 +14634,10 @@ var squads_default = {
     club: "AmaZulu",
     pictureUrl: "https://digitalhub.fifa.com/transform/5b2d0a1a-fe59-4136-90d3-4315c34b8500/MBATHA-Thalente_494248",
     dateOfBirth: "2000-03-06",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "thalentembatha04"
+    }
   },
   "494277": {
     fifaId: "494277",
@@ -12165,7 +14649,10 @@ var squads_default = {
     club: "Middlesbrough",
     pictureUrl: "https://digitalhub.fifa.com/transform/3b022d7d-d20e-42de-a08d-9e678dab3bc6/DIOUF-Yehvann_494277",
     dateOfBirth: "1999-11-16",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "yehvann"
+    }
   },
   "494279": {
     fifaId: "494279",
@@ -12177,7 +14664,10 @@ var squads_default = {
     club: "Stade Rennais",
     pictureUrl: "https://digitalhub.fifa.com/transform/6e92b02c-cd04-4c63-a901-36d050c5f772/MENDY-Antoine_494279",
     dateOfBirth: "2004-05-27",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "a.mendy27"
+    }
   },
   "494291": {
     fifaId: "494291",
@@ -12189,7 +14679,10 @@ var squads_default = {
     club: "Reims",
     pictureUrl: "https://digitalhub.fifa.com/transform/d1a9f2e9-3dda-4bdb-b2a1-f026bb97d9ce/MAZA-Ibrahim_494291",
     dateOfBirth: "2005-11-24",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "ibomaza"
+    }
   },
   "494293": {
     fifaId: "494293",
@@ -12201,7 +14694,10 @@ var squads_default = {
     club: "Galatasaray",
     pictureUrl: "https://digitalhub.fifa.com/transform/b6d54dcf-25e8-4e0f-a155-60e051b4a86e/TALBI-Chemsdine_494293",
     dateOfBirth: "2005-05-09",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "chemsdinetalbi"
+    }
   },
   "494313": {
     fifaId: "494313",
@@ -12225,7 +14721,10 @@ var squads_default = {
     club: "Sporting CP",
     pictureUrl: "https://digitalhub.fifa.com/transform/16e60922-64b4-40df-ae20-f53a44891fe9/TELMO-ARCANJO_494314",
     dateOfBirth: "2001-06-21",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "arcanjo__18"
+    }
   },
   "494345": {
     fifaId: "494345",
@@ -12237,7 +14736,10 @@ var squads_default = {
     club: "Newcastle United",
     pictureUrl: "https://digitalhub.fifa.com/transform/ac44e40e-162d-4459-94b6-8971a032e371/BURN-Dan_494345",
     dateOfBirth: "1992-05-09",
-    height: 201
+    height: 201,
+    socials: {
+      instagram: "bigdanburn"
+    }
   },
   "494374": {
     fifaId: "494374",
@@ -12249,7 +14751,10 @@ var squads_default = {
     club: "Zamalek",
     pictureUrl: "https://digitalhub.fifa.com/transform/2565fb18-c785-4773-8d83-81c6fd25da1d/MASTOURI-Hazem_494374",
     dateOfBirth: "1997-06-18",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "mastouri_hazem"
+    }
   },
   "494375": {
     fifaId: "494375",
@@ -12273,7 +14778,10 @@ var squads_default = {
     club: "Machida Zelvia",
     pictureUrl: "https://digitalhub.fifa.com/transform/5753796c-c01e-444e-8896-5c6c79dcd9fb/TREWIN-Kai_494411",
     dateOfBirth: "2001-05-18",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "kaitrewin"
+    }
   },
   "494429": {
     fifaId: "494429",
@@ -12285,7 +14793,10 @@ var squads_default = {
     club: "Persepolis",
     pictureUrl: "https://digitalhub.fifa.com/transform/4a94990d-e4cd-4291-922c-b5bbb8a3254f/IRI-Danial_494429",
     dateOfBirth: "2003-10-26",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "danialeiri"
+    }
   },
   "494458": {
     fifaId: "494458",
@@ -12297,7 +14808,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/72bed90f-aa3d-4f6f-8751-74689a06f326/MUKAU-Ngalayel_494458",
     dateOfBirth: "2004-11-03",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "ngalinhoo"
+    }
   },
   "494506": {
     fifaId: "494506",
@@ -12333,7 +14847,10 @@ var squads_default = {
     club: "Cadiz",
     pictureUrl: "https://digitalhub.fifa.com/transform/0ea3c68c-c425-41c4-b973-c60e2d5b4685/BEACH-Patrick_494557",
     dateOfBirth: "2003-08-06",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "patrickbeach"
+    }
   },
   "494625": {
     fifaId: "494625",
@@ -12345,7 +14862,10 @@ var squads_default = {
     club: "FC Nordsjaelland",
     pictureUrl: "https://digitalhub.fifa.com/transform/7c96cbed-5df4-46f9-b1f4-b9abbbe7e9d1/HOLMGREN-PEDERSEN-Marcus_494625",
     dateOfBirth: "2000-07-16",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "marcushpederseen"
+    }
   },
   "494626": {
     fifaId: "494626",
@@ -12357,7 +14877,10 @@ var squads_default = {
     club: "Hoffenheim",
     pictureUrl: "https://digitalhub.fifa.com/transform/22f44194-f9c4-46c1-8621-f9680f7d73bc/SCHJELDERUP-Andreas_494626",
     dateOfBirth: "2004-06-01",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "andreasschjelderup"
+    }
   },
   "494627": {
     fifaId: "494627",
@@ -12369,7 +14892,10 @@ var squads_default = {
     club: "Molde",
     pictureUrl: "https://digitalhub.fifa.com/transform/46e2bce8-3733-457f-8307-9fd06eeda4ce/AASGAARD-Thelo_494627",
     dateOfBirth: "2002-05-02",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "thelo.aasgaard"
+    }
   },
   "494639": {
     fifaId: "494639",
@@ -12381,7 +14907,10 @@ var squads_default = {
     club: "Boavista",
     pictureUrl: "https://digitalhub.fifa.com/transform/8b907cf5-e659-4584-acc5-5b0db0f85594/MALIC-Arjan_494639",
     dateOfBirth: "2005-08-28",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "arjanmalic"
+    }
   },
   "494640": {
     fifaId: "494640",
@@ -12405,7 +14934,10 @@ var squads_default = {
     club: "Fenerbah\xE7e",
     pictureUrl: "https://digitalhub.fifa.com/transform/616a2660-9465-4f4f-a565-e354f3890a81/BELAMMARI-Youssef_494742",
     dateOfBirth: "1998-09-20",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "youssef_belammari"
+    }
   },
   "494800": {
     fifaId: "494800",
@@ -12417,7 +14949,10 @@ var squads_default = {
     club: "Al-Ahli",
     pictureUrl: "https://digitalhub.fifa.com/transform/f360115a-08e8-451c-9fb0-2af3944cd37a/SULTAN-MANDASH_494800",
     dateOfBirth: "1994-10-17",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "sultan_mandash27"
+    }
   },
   "494989": {
     fifaId: "494989",
@@ -12429,7 +14964,10 @@ var squads_default = {
     club: "Al Wehda",
     pictureUrl: "https://digitalhub.fifa.com/transform/860cc6e0-a995-485f-ae21-56b451017adf/COMENENCIA-Livano_494989",
     dateOfBirth: "2004-02-03",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "livano076"
+    }
   },
   "495046": {
     fifaId: "495046",
@@ -12441,7 +14979,10 @@ var squads_default = {
     club: "Juventus",
     pictureUrl: "https://digitalhub.fifa.com/transform/20e6d2dd-4d4a-418b-ae0f-0cbcb299d61b/MAURICIO_495046",
     dateOfBirth: "2001-06-22",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "mauriciomp7"
+    }
   },
   "495054": {
     fifaId: "495054",
@@ -12465,7 +15006,10 @@ var squads_default = {
     club: "Fenerbah\xE7e",
     pictureUrl: "https://digitalhub.fifa.com/transform/92368352-f3ab-459f-bb72-4a7e432dd39a/GUL-Deniz_495347",
     dateOfBirth: "2004-07-02",
-    height: 192
+    height: 192,
+    socials: {
+      instagram: "denizgul_9"
+    }
   },
   "495348": {
     fifaId: "495348",
@@ -12477,7 +15021,10 @@ var squads_default = {
     club: "Club Brugge",
     pictureUrl: "https://digitalhub.fifa.com/transform/9e407610-b85c-45d8-847a-2bae1d24e699/LAMMENS-Senne_495348",
     dateOfBirth: "2002-07-07",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "senne_lammens"
+    }
   },
   "495349": {
     fifaId: "495349",
@@ -12489,7 +15036,10 @@ var squads_default = {
     club: "Al-Qadsiah",
     pictureUrl: "https://digitalhub.fifa.com/transform/2a366682-88f4-4d6f-ae54-e474030615cc/RASKIN-Nicolas_495349",
     dateOfBirth: "2001-02-23",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "n.raskin"
+    }
   },
   "495431": {
     fifaId: "495431",
@@ -12501,7 +15051,10 @@ var squads_default = {
     club: "Real Sociedad",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c9c7ecc-b678-43e6-b8a3-8155776dd003/HIRST-George_495431",
     dateOfBirth: "1999-02-15",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "george_hirst"
+    }
   },
   "495488": {
     fifaId: "495488",
@@ -12513,7 +15066,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/e8c1e0e0-66da-4bfb-ace2-e040710da50c/HAMZA-ABDELKARIM_495488",
     dateOfBirth: "2008-01-01",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "hamzabdelkarim"
+    }
   },
   "496358": {
     fifaId: "496358",
@@ -12525,7 +15081,10 @@ var squads_default = {
     club: "Valencia",
     pictureUrl: "https://digitalhub.fifa.com/transform/1583bcf3-3a11-4ebe-a9ef-18aba9e7f32b/MBAYE-Ibrahim_496358",
     dateOfBirth: "2008-01-24",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "mbayediagne909"
+    }
   },
   "497902": {
     fifaId: "497902",
@@ -12537,7 +15096,10 @@ var squads_default = {
     club: "Roma",
     pictureUrl: "https://digitalhub.fifa.com/transform/dfe97726-1409-4cc2-8463-39184fab3a04/MOREIRA-Diego_497902",
     dateOfBirth: "2004-08-06",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "diegzyyy"
+    }
   },
   "498416": {
     fifaId: "498416",
@@ -12549,7 +15111,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/e93d4ee5-827d-47bc-b3d5-3f1c38e7293e/WOLTEMADE-Nick_498416",
     dateOfBirth: "2002-02-14",
-    height: 198
+    height: 198,
+    socials: {
+      instagram: "nickwoltemade"
+    }
   },
   "498421": {
     fifaId: "498421",
@@ -12573,7 +15138,10 @@ var squads_default = {
     club: "Racing Club Ha\xEFtien",
     pictureUrl: "https://digitalhub.fifa.com/transform/7f7dae44-300a-405b-81be-f29cef6c0670/PAUGAIN-Wilguens_419172",
     dateOfBirth: "2001-08-24",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "_wilpaug_"
+    }
   },
   "498455": {
     fifaId: "498455",
@@ -12609,7 +15177,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/1097b48f-74a2-4506-97b3-2dd48364441a/ALI-AZAIZEH_498514",
     dateOfBirth: "2004-04-13",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "ali_azaizeh11"
+    }
   },
   "498806": {
     fifaId: "498806",
@@ -12621,7 +15192,10 @@ var squads_default = {
     club: "Melbourne City",
     pictureUrl: "https://digitalhub.fifa.com/transform/069af350-e4d8-4b30-af2d-6938b9a379fa/TOURE-Mohamed_498806",
     dateOfBirth: "2004-03-26",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "mohamed.2re"
+    }
   },
   "499102": {
     fifaId: "499102",
@@ -12633,7 +15207,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/647ecc0e-11c2-4d0e-9b48-2d8137a00b85/SALEEM-OBAID_499102",
     dateOfBirth: "1992-01-17",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "saleemo_obaid_18"
+    }
   },
   "499290": {
     fifaId: "499290",
@@ -12645,7 +15222,10 @@ var squads_default = {
     club: "Tottenham",
     pictureUrl: "https://digitalhub.fifa.com/transform/c905e324-dc60-4e79-a2a1-c06412f27aed/VUSKOVIC-Luka_499290",
     dateOfBirth: "2007-02-24",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "lukavuskovic"
+    }
   },
   "499800": {
     fifaId: "499800",
@@ -12657,7 +15237,10 @@ var squads_default = {
     club: "Real Betis",
     pictureUrl: "https://digitalhub.fifa.com/transform/3abb3fa8-05e3-4973-adb7-ef4b941b8ec1/SARR-Mamadou_499800",
     dateOfBirth: "2005-08-29",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "msarr6_"
+    }
   },
   "499803": {
     fifaId: "499803",
@@ -12669,7 +15252,10 @@ var squads_default = {
     club: "RB Leipzig",
     pictureUrl: "https://digitalhub.fifa.com/transform/88da8ae8-d4af-47b1-8f4c-e3ac46fbc226/PENDERS-Mike_499803",
     dateOfBirth: "2005-07-31",
-    height: 200
+    height: 200,
+    socials: {
+      instagram: "mike.penders"
+    }
   },
   "499912": {
     fifaId: "499912",
@@ -12681,7 +15267,10 @@ var squads_default = {
     club: "FC Cincinnati",
     pictureUrl: "https://digitalhub.fifa.com/transform/ef9aedbe-e6e8-4eba-9e62-beac982879ef/BERHALTER-Sebastian_499912",
     dateOfBirth: "2001-05-10",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "sebastianberhalter"
+    }
   },
   "499913": {
     fifaId: "499913",
@@ -12693,7 +15282,10 @@ var squads_default = {
     club: "West Brom",
     pictureUrl: "https://digitalhub.fifa.com/transform/c46f695b-3acc-4360-abf4-3110ff60d86e/FREESE-Matt_499913",
     dateOfBirth: "1998-09-02",
-    height: 198
+    height: 198,
+    socials: {
+      instagram: "mattyicefreese"
+    }
   },
   "500037": {
     fifaId: "500037",
@@ -12705,7 +15297,10 @@ var squads_default = {
     club: "Tigres",
     pictureUrl: "https://digitalhub.fifa.com/transform/028c85e0-509a-43c4-904a-58ce2d4f6f24/MORA-Gilberto_500037",
     dateOfBirth: "2008-10-14",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "gil_morita"
+    }
   },
   "500038": {
     fifaId: "500038",
@@ -12717,7 +15312,10 @@ var squads_default = {
     club: "Chivas",
     pictureUrl: "https://digitalhub.fifa.com/transform/8e8884ee-8964-4fb7-82d8-8a5d341e79a6/CHAVEZ-Mateo_500038",
     dateOfBirth: "2004-05-12",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "mateo.chaveez"
+    }
   },
   "502245": {
     fifaId: "502245",
@@ -12729,7 +15327,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/97ff80ac-588e-4b15-8c20-5a3cbd7f30f8/MAKHANYA-Olwethu_502245",
     dateOfBirth: "2004-04-30",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "makhanya_29"
+    }
   },
   "502727": {
     fifaId: "502727",
@@ -12756,7 +15357,10 @@ var squads_default = {
     club: "Tottenham",
     pictureUrl: "https://digitalhub.fifa.com/transform/165d5004-48b5-4a8c-86ee-d7c982b9b96c/BERNHARDSSON-Alexander_502945",
     dateOfBirth: "1998-09-08",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "alexbernhardsson"
+    }
   },
   "502946": {
     fifaId: "502946",
@@ -12768,7 +15372,10 @@ var squads_default = {
     club: "New York Red Bulls",
     pictureUrl: "https://digitalhub.fifa.com/transform/e464be99-48c1-41a9-b5aa-2c5760f1d302/NYGREN-Benjamin_502946",
     dateOfBirth: "2001-07-08",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "benjamin_nygren"
+    }
   },
   "503047": {
     fifaId: "503047",
@@ -12780,7 +15387,10 @@ var squads_default = {
     club: "Djurg\xE5rdens IF",
     pictureUrl: "https://digitalhub.fifa.com/transform/7bd98883-dd6c-4e8f-954e-af31d070eac7/ZENELI-Besfort_503047",
     dateOfBirth: "2002-11-21",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "besfortzenelii"
+    }
   },
   "504192": {
     fifaId: "504192",
@@ -12804,7 +15414,10 @@ var squads_default = {
     club: "Rangers",
     pictureUrl: "https://digitalhub.fifa.com/transform/5579f48c-4b61-4def-b314-75e873c36961/MOREMI-Tshepang_504193",
     dateOfBirth: "2000-10-02",
-    height: 169
+    height: 169,
+    socials: {
+      instagram: "tshepang_moremii"
+    }
   },
   "504199": {
     fifaId: "504199",
@@ -12816,7 +15429,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/978b666d-f320-4d49-b717-a08fa7ae456f/MBOKAZI-Mbekezeli_504199",
     dateOfBirth: "2005-09-19",
-    height: 177
+    height: 177,
+    socials: {
+      instagram: "mbekezel05"
+    }
   },
   "504200": {
     fifaId: "504200",
@@ -12828,7 +15444,10 @@ var squads_default = {
     club: "NYCFC",
     pictureUrl: "https://digitalhub.fifa.com/transform/29044a18-4871-49d0-af81-0b0887b148dd/KABINI-Samukelo_504200",
     dateOfBirth: "2004-03-15",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "samu.kabini_3"
+    }
   },
   "504329": {
     fifaId: "504329",
@@ -12840,7 +15459,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/60a4ad81-dbaa-4276-b291-f002ec98ddfc/KAPUADI-Steve_504329",
     dateOfBirth: "1998-04-30",
-    height: 196
+    height: 196,
+    socials: {
+      instagram: "steve.kapuadi"
+    }
   },
   "504502": {
     fifaId: "504502",
@@ -12852,7 +15474,10 @@ var squads_default = {
     club: "\xC9toile du Sahel",
     pictureUrl: "https://digitalhub.fifa.com/transform/29d9d0d2-28ec-4c0c-9861-a9d8062d5f9d/TOUNEKTI-Sebastian_504502",
     dateOfBirth: "2002-07-13",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "sebastiantounekti"
+    }
   },
   "504931": {
     fifaId: "504931",
@@ -12864,7 +15489,10 @@ var squads_default = {
     club: "Western United",
     pictureUrl: "https://digitalhub.fifa.com/transform/b0e45418-ff7e-4fdf-a7ac-8e7bf2d63624/HERRINGTON-Lucas_504931",
     dateOfBirth: "2007-09-05",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "lucasherrington5"
+    }
   },
   "504990": {
     fifaId: "504990",
@@ -12876,7 +15504,10 @@ var squads_default = {
     club: "Toulouse",
     pictureUrl: "https://digitalhub.fifa.com/transform/9587bf1f-6c8f-4b8d-80c7-799edc4a7036/ALAJBEGOVIC-Kerim_504990",
     dateOfBirth: "2007-09-21",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "kerim.sa10"
+    }
   },
   "505097": {
     fifaId: "505097",
@@ -12888,7 +15519,10 @@ var squads_default = {
     club: "Al Qadsiah",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c4672ea-a846-45f7-ae85-85ec7559a30c/EL-MOURABET-Samir_505097",
     dateOfBirth: "2005-10-06",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "s_elmourabet"
+    }
   },
   "505112": {
     fifaId: "505112",
@@ -12900,7 +15534,10 @@ var squads_default = {
     club: "Wydad Casablanca",
     pictureUrl: "https://digitalhub.fifa.com/transform/dd763e4f-0cfe-44b1-8e18-ea842260c807/YASSINE-Gessime_505112",
     dateOfBirth: "2005-11-22",
-    height: 172
+    height: 172,
+    socials: {
+      instagram: "gessime.yassine"
+    }
   },
   "505495": {
     fifaId: "505495",
@@ -12912,7 +15549,10 @@ var squads_default = {
     club: "Cruz Azul",
     pictureUrl: "https://digitalhub.fifa.com/transform/e9ad29de-acf1-4cfd-b387-7edf7f480db4/MAIDANA-Alexandro_505495",
     dateOfBirth: "2005-07-26",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "alexmaidana10"
+    }
   },
   "506028": {
     fifaId: "506028",
@@ -12924,7 +15564,10 @@ var squads_default = {
     club: "Atalanta",
     pictureUrl: "https://digitalhub.fifa.com/transform/557e5592-2bf9-4d43-8d51-ee7e2881cb65/ROEFS-Robin_506028",
     dateOfBirth: "2003-01-17",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "robinroefs_"
+    }
   },
   "506038": {
     fifaId: "506038",
@@ -12936,7 +15579,10 @@ var squads_default = {
     club: "Stellenbosch FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/dcd49deb-cb7f-4620-8f79-98a802624026/SEBELEBELE-Kamogelo_506038",
     dateOfBirth: "2002-07-21",
-    height: 166
+    height: 166,
+    socials: {
+      instagram: "mikemamosha07"
+    }
   },
   "506039": {
     fifaId: "506039",
@@ -12948,7 +15594,10 @@ var squads_default = {
     club: "FCSB",
     pictureUrl: "https://digitalhub.fifa.com/transform/5f5d2eb3-3964-486f-9faa-800200078576/OKON-Ime_506039",
     dateOfBirth: "2004-02-20",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "i.am.ime"
+    }
   },
   "506069": {
     fifaId: "506069",
@@ -12960,7 +15609,10 @@ var squads_default = {
     club: "FC Eindhoven",
     pictureUrl: "https://digitalhub.fifa.com/transform/c9912381-f7e5-4059-a630-ccbee68ebb7f/KEVIN-YAKOB_506069",
     dateOfBirth: "2000-10-10",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "kevinyakob"
+    }
   },
   "506088": {
     fifaId: "506088",
@@ -12972,7 +15624,10 @@ var squads_default = {
     club: "Club Brugge",
     pictureUrl: "https://digitalhub.fifa.com/transform/33c2b9de-5ae7-4fa1-8db8-6cff8e2b02f0/SEYS-Joaquin_506088",
     dateOfBirth: "2005-03-28",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "joaquinseys65"
+    }
   },
   "506124": {
     fifaId: "506124",
@@ -12984,7 +15639,10 @@ var squads_default = {
     club: "Zamalek",
     pictureUrl: "https://digitalhub.fifa.com/transform/9bbd4a65-1d5e-4383-b5d5-cf60bbdcec1d/TAREK-ALAA_506124",
     dateOfBirth: "2002-01-05",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "tarek_alaa_3"
+    }
   },
   "506202": {
     fifaId: "506202",
@@ -12996,7 +15654,10 @@ var squads_default = {
     club: "Toulouse",
     pictureUrl: "https://digitalhub.fifa.com/transform/fa213cf7-928a-49ab-acc9-b6f5059b188c/TOURE-Bazoumana_506202",
     dateOfBirth: "2006-03-02",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "zoumtoure96"
+    }
   },
   "506329": {
     fifaId: "506329",
@@ -13008,7 +15669,10 @@ var squads_default = {
     club: "Crystal Palace",
     pictureUrl: "https://digitalhub.fifa.com/transform/03356baa-b368-4192-bf86-ad3033e57ad2/SPENCE-Djed_506329",
     dateOfBirth: "2000-08-09",
-    height: 184
+    height: 184,
+    socials: {
+      instagram: "djedspence"
+    }
   },
   "506335": {
     fifaId: "506335",
@@ -13020,7 +15684,10 @@ var squads_default = {
     club: "Club Africain",
     pictureUrl: "https://digitalhub.fifa.com/transform/0f6a863a-959a-40ec-a07f-0c77d7c5a322/NEFFATI-Moutaz_506335",
     dateOfBirth: "2004-09-04",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "moutazneffati"
+    }
   },
   "506471": {
     fifaId: "506471",
@@ -13044,7 +15711,10 @@ var squads_default = {
     club: "NAC Breda",
     pictureUrl: "https://digitalhub.fifa.com/transform/5a1d79e4-2beb-4cc4-aa5d-adea0d32896c/NOSLIN-Tyrese_506473",
     dateOfBirth: "2002-09-11",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "tyresenoslin"
+    }
   },
   "506481": {
     fifaId: "506481",
@@ -13056,7 +15726,10 @@ var squads_default = {
     club: "Figueirense",
     pictureUrl: "https://digitalhub.fifa.com/transform/012553fc-773a-4fca-a30d-468777a287de/THERMONCY-Keeto_506481",
     dateOfBirth: "2006-03-29",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "keeto.thermoncy"
+    }
   },
   "506483": {
     fifaId: "506483",
@@ -13068,7 +15741,10 @@ var squads_default = {
     club: "Guadeloupe",
     pictureUrl: "https://digitalhub.fifa.com/transform/8c508739-1d44-49e5-8395-dbba0ff45072/FORTUNE-Yassin_506483",
     dateOfBirth: "1999-01-30",
-    height: 186
+    height: 186,
+    socials: {
+      instagram: "yassin_fortune_afc"
+    }
   },
   "506775": {
     fifaId: "506775",
@@ -13092,7 +15768,10 @@ var squads_default = {
     club: "Cosmos Haiti",
     pictureUrl: "https://digitalhub.fifa.com/transform/4a02cdae-6685-4a04-a779-8472e1b0ee39/CASIMIR-Josue_510757",
     dateOfBirth: "2001-09-24",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "j.casimir_"
+    }
   },
   "510850": {
     fifaId: "510850",
@@ -13104,7 +15783,10 @@ var squads_default = {
     club: "Mamelodi Sundowns",
     pictureUrl: "https://digitalhub.fifa.com/transform/33d0c67e-6bf5-41cb-a8ab-ad1cb098d166/MATULUDI-Thabang_510850",
     dateOfBirth: "1999-01-14",
-    height: 189
+    height: 189,
+    socials: {
+      instagram: "thabang_matuludi"
+    }
   },
   "510908": {
     fifaId: "510908",
@@ -13116,7 +15798,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/2f3d611d-71c6-40ac-bc76-fdad78fe3c5e/JAQUEZ-Luca_510908",
     dateOfBirth: "2003-06-02",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "luca_jaquez"
+    }
   },
   "510922": {
     fifaId: "510922",
@@ -13128,7 +15813,10 @@ var squads_default = {
     club: "Villarreal",
     pictureUrl: "https://digitalhub.fifa.com/transform/4218dafb-b39b-4640-ac2f-e1d9f104aa6a/DIOMANDE-Yan_510922",
     dateOfBirth: "2006-11-14",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "yandiomande"
+    }
   },
   "510989": {
     fifaId: "510989",
@@ -13164,7 +15852,10 @@ var squads_default = {
     club: "Nice",
     pictureUrl: "https://digitalhub.fifa.com/transform/0007b754-4911-4f39-8c81-df2c156f7aa5/BELGHALI-Rafik_511009",
     dateOfBirth: "2002-06-07",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "rafikbelghali17"
+    }
   },
   "511010": {
     fifaId: "511010",
@@ -13176,7 +15867,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/5a1d62d5-a732-4036-b925-d011389a66fb/CHERGUI-Samir_511010",
     dateOfBirth: "1999-02-06",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "chergui31_"
+    }
   },
   "511015": {
     fifaId: "511015",
@@ -13188,7 +15882,10 @@ var squads_default = {
     club: "RB Leipzig",
     pictureUrl: "https://digitalhub.fifa.com/transform/68e13808-182e-46b6-a6ec-a54136a57c1b/BROWN-Nathaniel_511015",
     dateOfBirth: "2003-06-16",
-    height: 176
+    height: 176,
+    socials: {
+      instagram: "nene.brown27"
+    }
   },
   "511118": {
     fifaId: "511118",
@@ -13200,7 +15897,10 @@ var squads_default = {
     club: "Olympiacos",
     pictureUrl: "https://digitalhub.fifa.com/transform/d76a995c-dcd7-4219-a555-3336ac87b052/HORNICEK-Lukas_511118",
     dateOfBirth: "2002-07-13",
-    height: 198
+    height: 198,
+    socials: {
+      instagram: "l_hornicek91"
+    }
   },
   "511141": {
     fifaId: "511141",
@@ -13212,7 +15912,10 @@ var squads_default = {
     club: "Cambuur",
     pictureUrl: "https://digitalhub.fifa.com/transform/c2384459-9ca9-4dce-b232-5bbfbcd07316/OBISPO-Armando_511141",
     dateOfBirth: "1999-03-05",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "armandoobispo_"
+    }
   },
   "511710": {
     fifaId: "511710",
@@ -13224,7 +15927,10 @@ var squads_default = {
     club: "Urawa Red Diamonds",
     pictureUrl: "https://digitalhub.fifa.com/transform/d81ad421-1126-4549-a89f-3fafd8db2a97/HAYAKAWA-Tomoki_511710",
     dateOfBirth: "1999-03-03",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "tomoki.hayakawa_official"
+    }
   },
   "511828": {
     fifaId: "511828",
@@ -13236,7 +15942,10 @@ var squads_default = {
     club: "Girona",
     pictureUrl: "https://digitalhub.fifa.com/transform/d758ee8c-58aa-4562-8b5c-96612458f567/CASTROP-Jens_511828",
     dateOfBirth: "2003-07-29",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "jenscastrop"
+    }
   },
   "511875": {
     fifaId: "511875",
@@ -13248,7 +15957,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/07e6d74d-1e09-4278-97e4-4b0bfcba2de8/ODEH-FAKHOURY_511875",
     dateOfBirth: "2005-11-22",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "odehfakhoury10"
+    }
   },
   "511889": {
     fifaId: "511889",
@@ -13260,7 +15972,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/c5fbd430-c7f3-4d67-9d16-e7f4e17a872a/ANAS-BADAWI_511889",
     dateOfBirth: "1997-09-13",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "anas_badawi97"
+    }
   },
   "512039": {
     fifaId: "512039",
@@ -13272,7 +15987,10 @@ var squads_default = {
     club: "Al Wakrah",
     pictureUrl: "https://digitalhub.fifa.com/transform/9b51ba77-1740-47cc-93f1-1529287d27ea/AYARI-Khalil_512039",
     dateOfBirth: "2005-02-02",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "khalilayari.10"
+    }
   },
   "512079": {
     fifaId: "512079",
@@ -13296,7 +16014,10 @@ var squads_default = {
     club: "Borussia Dortmund",
     pictureUrl: "https://digitalhub.fifa.com/transform/8b3d3f92-a378-40d7-92d2-85eed4a732d3/ABADA-Achraf_512127",
     dateOfBirth: "1999-06-15",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "abada_achraf_23"
+    }
   },
   "512132": {
     fifaId: "512132",
@@ -13308,7 +16029,10 @@ var squads_default = {
     club: "Lyon",
     pictureUrl: "https://digitalhub.fifa.com/transform/167d2400-d78c-4931-8a84-7b27284bd386/BOULBINA-Adil_512132",
     dateOfBirth: "2003-05-02",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "adel_boulbina10"
+    }
   },
   "512183": {
     fifaId: "512183",
@@ -13344,7 +16068,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/59f64291-f9e7-4d71-82cd-e15eb9a91a1c/JONES-Alfie_514070",
     dateOfBirth: "1997-10-07",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "alfiejon35"
+    }
   },
   "514166": {
     fifaId: "514166",
@@ -13356,7 +16083,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/77bea513-328c-4af6-a1b6-89efdfeb03ae/NGOY-Nathan_514166",
     dateOfBirth: "2003-06-10",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "ngoy_nathan"
+    }
   },
   "514171": {
     fifaId: "514171",
@@ -13368,7 +16098,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/5b3aa99c-c19f-4087-9230-fcc1023e6baa/EPOLO-Matthieu_514171",
     dateOfBirth: "2005-01-15",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "matthieuepolo"
+    }
   },
   "514188": {
     fifaId: "514188",
@@ -13380,7 +16113,10 @@ var squads_default = {
     club: "Borussia Dortmund",
     pictureUrl: "https://digitalhub.fifa.com/transform/eaa37355-0eca-4954-845c-437aa602db42/THIAW-Malick_514188",
     dateOfBirth: "2001-08-08",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "malick.laye"
+    }
   },
   "514202": {
     fifaId: "514202",
@@ -13392,7 +16128,10 @@ var squads_default = {
     club: "Atalanta",
     pictureUrl: "https://digitalhub.fifa.com/transform/9a70800c-37c4-4cd9-b195-f307dbaad09b/ALI-Taha_514202",
     dateOfBirth: "1998-07-01",
-    height: 174
+    height: 174,
+    socials: {
+      instagram: "daha.10"
+    }
   },
   "514208": {
     fifaId: "514208",
@@ -13404,7 +16143,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/a1bae10b-b280-4234-81c1-063fa931cd02/OULAI-Christ-Inao_514208",
     dateOfBirth: "2006-04-06",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "inao_christ"
+    }
   },
   "514326": {
     fifaId: "514326",
@@ -13416,7 +16158,10 @@ var squads_default = {
     club: "Porto",
     pictureUrl: "https://digitalhub.fifa.com/transform/9c839f83-e77a-4938-a764-95685591b367/AREVALO-Jeremy_514326",
     dateOfBirth: "2005-03-19",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "jeeremyarevalo"
+    }
   },
   "514334": {
     fifaId: "514334",
@@ -13428,7 +16173,10 @@ var squads_default = {
     club: "Girona",
     pictureUrl: "https://digitalhub.fifa.com/transform/35d513e7-429b-44eb-b1bd-671a6a22bc83/CHALOUPEK-Stepan_514334",
     dateOfBirth: "2003-03-08",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "chalyyy.4"
+    }
   },
   "514336": {
     fifaId: "514336",
@@ -13440,7 +16188,10 @@ var squads_default = {
     club: "Braga",
     pictureUrl: "https://digitalhub.fifa.com/transform/81ce3e70-d37d-4109-b423-8cc7732527a1/GONZALEZ-Armando_514336",
     dateOfBirth: "2003-04-20",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "hormiga_glez"
+    }
   },
   "514479": {
     fifaId: "514479",
@@ -13452,7 +16203,10 @@ var squads_default = {
     club: "Viking",
     pictureUrl: "https://digitalhub.fifa.com/transform/c7cb7af6-fa0d-4795-bdba-c53bed58e3fa/TANGVIK-Sander_514479",
     dateOfBirth: "2002-11-29",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "sandertangvik_"
+    }
   },
   "514526": {
     fifaId: "514526",
@@ -13464,7 +16218,10 @@ var squads_default = {
     club: "Levante",
     pictureUrl: "https://digitalhub.fifa.com/transform/5a32b76f-ee60-4eb1-a2e0-b12bc86e41e0/PANDUR-Ivor_514526",
     dateOfBirth: "2000-03-25",
-    height: 187
+    height: 187,
+    socials: {
+      instagram: "ivorpandur"
+    }
   },
   "514639": {
     fifaId: "514639",
@@ -13476,7 +16233,10 @@ var squads_default = {
     club: "Anderlecht",
     pictureUrl: "https://digitalhub.fifa.com/transform/58eb2743-907e-4e6d-8020-28c8767e5cdc/JOHANSSON-Herman_514639",
     dateOfBirth: "1997-10-16",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "hermanjohansson"
+    }
   },
   "516043": {
     fifaId: "516043",
@@ -13488,7 +16248,10 @@ var squads_default = {
     club: "Esp\xE9rance Sportive",
     pictureUrl: "https://digitalhub.fifa.com/transform/7cbb37f5-5dcd-4fa9-919e-f3fe4f843868/AROUS-Adam_516043",
     dateOfBirth: "2004-07-17",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "adem_arous"
+    }
   },
   "518200": {
     fifaId: "518200",
@@ -13500,7 +16263,10 @@ var squads_default = {
     club: "St Pauli",
     pictureUrl: "https://digitalhub.fifa.com/transform/e581f23a-032d-448c-b389-d49738c8e9c1/YENGI-Tete_518200",
     dateOfBirth: "2000-11-28",
-    height: 197
+    height: 197,
+    socials: {
+      instagram: "teteyengi"
+    }
   },
   "519836": {
     fifaId: "519836",
@@ -13527,7 +16293,10 @@ var squads_default = {
     club: "Sepahan",
     pictureUrl: "https://digitalhub.fifa.com/transform/11560f08-8fe3-4acb-b30f-cf1a0b2e83ad/DARGAHI-Dennis_519837",
     dateOfBirth: "1997-01-09",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "dennis_yerai"
+    }
   },
   "519954": {
     fifaId: "519954",
@@ -13539,7 +16308,10 @@ var squads_default = {
     club: "FC Z\xFCrich",
     pictureUrl: "https://digitalhub.fifa.com/transform/8fc08945-7c3e-4e0f-95b4-0c94a72a718d/LUKIC-Jovo_519954",
     dateOfBirth: "1998-11-28",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "jovolukic9"
+    }
   },
   "519958": {
     fifaId: "519958",
@@ -13551,7 +16323,10 @@ var squads_default = {
     club: "Union Berlin",
     pictureUrl: "https://digitalhub.fifa.com/transform/12d24b4c-5628-4013-8f4d-bddea4ae2258/STROUD-Elliot_519958",
     dateOfBirth: "2002-06-22",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "stroud_elliot"
+    }
   },
   "519985": {
     fifaId: "519985",
@@ -13563,7 +16338,10 @@ var squads_default = {
     club: "Slavia Praga",
     pictureUrl: "https://digitalhub.fifa.com/transform/60b4e376-f163-4918-8742-a2f6ada5fc84/VISINSKY-Denis_519985",
     dateOfBirth: "2003-03-21",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "denis_visinsky"
+    }
   },
   "520034": {
     fifaId: "520034",
@@ -13575,7 +16353,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/7feedee9-3390-40e2-a9aa-8867abd8b89e/WIEGELE-Florian_520034",
     dateOfBirth: "2001-03-21",
-    height: 205
+    height: 205,
+    socials: {
+      instagram: "florianwiegele"
+    }
   },
   "520035": {
     fifaId: "520035",
@@ -13587,7 +16368,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/cc8957b4-30b2-4559-9ae1-c8d14a3260a5/AFFENGRUBER-David_520035",
     dateOfBirth: "2001-03-19",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "davidaffengruber"
+    }
   },
   "520036": {
     fifaId: "520036",
@@ -13599,7 +16383,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/b0954793-5e15-4708-9ed0-ea59e3501b8c/WANNER-Paul_520036",
     dateOfBirth: "2005-12-23",
-    height: 185
+    height: 185,
+    socials: {
+      instagram: "paul_wanner_"
+    }
   },
   "520066": {
     fifaId: "520066",
@@ -13623,7 +16410,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/5ee84ee8-8e6a-4a6d-aff9-42538c323659/MOHAMMAD-ABUGHOUSH_520068",
     dateOfBirth: "2005-07-13",
-    height: 182
+    height: 182,
+    socials: {
+      instagram: "mohammadabughoush95"
+    }
   },
   "520070": {
     fifaId: "520070",
@@ -13647,7 +16437,10 @@ var squads_default = {
     club: "MC Oran",
     pictureUrl: "https://digitalhub.fifa.com/transform/9e9811da-2a8a-48cd-9088-1a45b6f90e0a/BENBOUALI-Nadhir_520071",
     dateOfBirth: "2000-04-17",
-    height: 190
+    height: 190,
+    socials: {
+      instagram: "nadirbenbouali45"
+    }
   },
   "520072": {
     fifaId: "520072",
@@ -13659,7 +16452,10 @@ var squads_default = {
     club: "Belouizdad",
     pictureUrl: "https://digitalhub.fifa.com/transform/39118134-164a-4baa-9884-de4f4821a0b7/GHEDJEMIS-Fares_520072",
     dateOfBirth: "2002-09-06",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "fares.ghedjemis"
+    }
   },
   "520112": {
     fifaId: "520112",
@@ -13671,7 +16467,10 @@ var squads_default = {
     club: "Celta Vigo",
     pictureUrl: "https://digitalhub.fifa.com/transform/2990fade-76fd-431e-b7ec-6551ca61de8c/FALCHENER-Henrik_520112",
     dateOfBirth: "2003-05-08",
-    height: 194
+    height: 194,
+    socials: {
+      instagram: "falchener1"
+    }
   },
   "520217": {
     fifaId: "520217",
@@ -13683,7 +16482,10 @@ var squads_default = {
     club: "Sheffield Wednesday",
     pictureUrl: "https://digitalhub.fifa.com/transform/a6c805c6-37f9-44e9-80a8-e43118e78762/CURTIS-Findlay_520217",
     dateOfBirth: "2006-06-09",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "findlaycurtis_"
+    }
   },
   "520218": {
     fifaId: "520218",
@@ -13695,7 +16497,10 @@ var squads_default = {
     club: "Borussia Monchengladbach",
     pictureUrl: "https://digitalhub.fifa.com/transform/86999b3c-aa5d-46d6-b42e-1601dd197182/SHIOGAI-Kento_520218",
     dateOfBirth: "2005-03-26",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "shio_kenken"
+    }
   },
   "520245": {
     fifaId: "520245",
@@ -13719,7 +16524,10 @@ var squads_default = {
     club: "CS Sfaxien",
     pictureUrl: "https://digitalhub.fifa.com/transform/8ecb6694-a3aa-4efe-b13d-64a020109ec2/CHIKHAOUI-Raed_520246",
     dateOfBirth: "2004-06-09",
-    height: 191
+    height: 191,
+    socials: {
+      instagram: "raed.chikhaoui"
+    }
   },
   "520247": {
     fifaId: "520247",
@@ -13731,7 +16539,10 @@ var squads_default = {
     club: "Esp\xE9rance Sportive",
     pictureUrl: "https://digitalhub.fifa.com/transform/15445a99-9bc9-41c4-8d6f-c46ac25b3d5d/ELLOUMI-Rayan_520247",
     dateOfBirth: "2007-09-17",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "rayanelloumi"
+    }
   },
   "522282": {
     fifaId: "522282",
@@ -13755,7 +16566,10 @@ var squads_default = {
     club: "Sloboda Tuzla",
     pictureUrl: "https://digitalhub.fifa.com/transform/d568a177-8466-4ef0-89d6-990d70cac911/JURKAS-Mladen_522842",
     dateOfBirth: "2007-10-07",
-    height: 193
+    height: 193,
+    socials: {
+      instagram: "jurkassss"
+    }
   },
   "522846": {
     fifaId: "522846",
@@ -13782,7 +16596,10 @@ var squads_default = {
     club: "Napoli",
     pictureUrl: "https://digitalhub.fifa.com/transform/eb1788f3-b3b1-41f9-b746-85ce1b077c14/FLETCHER-Tyler_523007",
     dateOfBirth: "2007-03-19",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "tylerfletch24"
+    }
   },
   "523097": {
     fifaId: "523097",
@@ -13794,7 +16611,10 @@ var squads_default = {
     club: "Jablonec",
     pictureUrl: "https://digitalhub.fifa.com/transform/f8e5df75-7de8-4950-bb53-b1d950621d33/SOJKA-Alexandr_523097",
     dateOfBirth: "2003-04-02",
-    height: 188
+    height: 188,
+    socials: {
+      instagram: "sojky.17"
+    }
   },
   "523215": {
     fifaId: "523215",
@@ -13806,7 +16626,10 @@ var squads_default = {
     club: "Tourbillon",
     pictureUrl: "https://digitalhub.fifa.com/transform/a6ab25e1-5ffa-478b-9a8b-e33411873483/SIMON-Dominique_523215",
     dateOfBirth: "2000-07-29",
-    height: 178
+    height: 178,
+    socials: {
+      instagram: "d.simon29"
+    }
   },
   "523236": {
     fifaId: "523236",
@@ -13830,7 +16653,10 @@ var squads_default = {
     club: "AEK Athens",
     pictureUrl: "https://digitalhub.fifa.com/transform/54730a6f-bb75-4909-b3c3-37441159d78e/AMAIMOUNI-Ayoub_523288",
     dateOfBirth: "2004-11-30",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "ayoube.aa"
+    }
   },
   "523333": {
     fifaId: "523333",
@@ -13854,7 +16680,10 @@ var squads_default = {
     club: "Metz",
     pictureUrl: "https://digitalhub.fifa.com/transform/957881a0-4f0a-4ff8-baf4-e0c73f844244/NDIAYE-Bara-Sapoko_523354",
     dateOfBirth: "2007-12-31",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "barasapoko39"
+    }
   },
   "524320": {
     fifaId: "524320",
@@ -13866,7 +16695,10 @@ var squads_default = {
     club: "Leicester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/d75890bc-bbe6-46a2-ab20-5655effe3479/AMINE-SBAI_524320",
     dateOfBirth: "2000-11-05",
-    height: 175
+    height: 175,
+    socials: {
+      instagram: "aminesbai10"
+    }
   }
 };
 
