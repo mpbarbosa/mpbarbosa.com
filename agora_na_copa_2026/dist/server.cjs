@@ -768,7 +768,6 @@ var squads_default = {
     position: "FW",
     club: "Wolverhampton",
     pictureUrl: "https://digitalhub.fifa.com/transform/9189da72-e1b5-4e7b-800d-7eeca119f08c/MATHEUS-CUNHA_430609",
-    instagramPostUrl: "https://www.instagram.com/cunha/",
     dateOfBirth: "1999-05-27",
     height: 183
   },
