@@ -2504,6 +2504,7 @@ var squads_default = {
     position: "MF",
     club: "Gr\xEAmio",
     pictureUrl: "https://digitalhub.fifa.com/transform/ce774da7-eea7-475e-8526-8227b5068dc3/GALARZA-Matias_424422",
+    socials: { instagram: "matigalarzaf" },
     dateOfBirth: "2002-02-11",
     height: 175
   },
@@ -14719,7 +14720,8 @@ var matches_default = [
           x: 50,
           y: 12,
           club: "Mamelodi Sundowns",
-          pictureUrl: "https://digitalhub.fifa.com/transform/b95f9142-251c-4943-911c-9c8d7ad8dd1c/WILLIAMS-Ronwen_395986"
+          pictureUrl: "https://digitalhub.fifa.com/transform/b95f9142-251c-4943-911c-9c8d7ad8dd1c/WILLIAMS-Ronwen_395986",
+          instagramHandle: "ronwen30"
         },
         {
           id: "sa2",
