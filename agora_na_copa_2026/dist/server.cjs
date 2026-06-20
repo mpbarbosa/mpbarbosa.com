@@ -17004,18 +17004,25 @@ var buildFifaPlayerMap = (team2) => {
   const players = team2?.Players || [];
   return new Map(players.map((player) => [player.IdPlayer, player]));
 };
-var toIncidentPlayerMention = (fifaPlayer, fallbackName) => ({
-  id: fifaPlayer?.IdPlayer,
-  name: fallbackName,
-  number: typeof fifaPlayer?.ShirtNumber === "number" ? fifaPlayer.ShirtNumber : void 0,
-  position: typeof fifaPlayer?.Position === "number" ? FIFA_POSITION_TO_LOCAL[fifaPlayer.Position] ?? "MF" /* MF */ : void 0,
-  pictureUrl: getFifaPlayerPictureUrl(fifaPlayer)
-});
-var getIncidentsFromLiveFifa = (fifaMatch) => {
+var toIncidentPlayerMention = (fifaPlayer, fallbackName, teamCode) => {
+  const fifaNumber = typeof fifaPlayer?.ShirtNumber === "number" ? fifaPlayer.ShirtNumber : void 0;
+  const fifaPosition = typeof fifaPlayer?.Position === "number" ? FIFA_POSITION_TO_LOCAL[fifaPlayer.Position] ?? "MF" /* MF */ : void 0;
+  const fifaPicture = getFifaPlayerPictureUrl(fifaPlayer);
+  const registryEntry = fifaNumber === void 0 || fifaPosition === void 0 || !fifaPicture ? resolvePlayerEntry(teamCode ?? "", fallbackName, fifaNumber ?? -1, fifaPlayer?.IdPlayer) : null;
+  return {
+    id: fifaPlayer?.IdPlayer ?? registryEntry?.fifaId,
+    name: fallbackName,
+    number: fifaNumber ?? registryEntry?.number ?? void 0,
+    position: fifaPosition ?? registryEntry?.position ?? void 0,
+    pictureUrl: fifaPicture ?? registryEntry?.pictureUrl
+  };
+};
+var getIncidentsFromLiveFifa = (fifaMatch, homeTeamCode, awayTeamCode) => {
   const homePlayerNames = buildPlayerNameMap(fifaMatch.HomeTeam);
   const awayPlayerNames = buildPlayerNameMap(fifaMatch.AwayTeam);
   const homePlayers = buildFifaPlayerMap(fifaMatch.HomeTeam);
   const awayPlayers = buildFifaPlayerMap(fifaMatch.AwayTeam);
+  const teamCodeFor = (team2) => team2 === "A" ? homeTeamCode : awayTeamCode;
   const buildGoalIncidents = (goals, playerNames, players, team2) => (goals || []).map((goal, index) => {
     const playerName = goal.IdPlayer ? playerNames.get(goal.IdPlayer) || "Jogador" : "Jogador";
     return {
@@ -17024,7 +17031,7 @@ var getIncidentsFromLiveFifa = (fifaMatch) => {
       type: "GOAL",
       text: `${playerName} marcou.`,
       team: team2,
-      playerMentions: [toIncidentPlayerMention(goal.IdPlayer ? players.get(goal.IdPlayer) : void 0, playerName)],
+      playerMentions: [toIncidentPlayerMention(goal.IdPlayer ? players.get(goal.IdPlayer) : void 0, playerName, teamCodeFor(team2))],
       period: goal.Period
     };
   });
@@ -17040,7 +17047,8 @@ var getIncidentsFromLiveFifa = (fifaMatch) => {
       playerMentions: [
         toIncidentPlayerMention(
           booking.IdPlayer ? players.get(booking.IdPlayer) : void 0,
-          playerName
+          playerName,
+          teamCodeFor(team2)
         )
       ],
       period: booking.Period
@@ -17064,11 +17072,13 @@ var getIncidentsFromLiveFifa = (fifaMatch) => {
       playerMentions: [
         toIncidentPlayerMention(
           substitution.IdPlayerOff ? players.get(substitution.IdPlayerOff) : void 0,
-          playerOffName
+          playerOffName,
+          teamCodeFor(team2)
         ),
         toIncidentPlayerMention(
           substitution.IdPlayerOn ? players.get(substitution.IdPlayerOn) : void 0,
-          playerOnName
+          playerOnName,
+          teamCodeFor(team2)
         )
       ],
       period: substitution.Period
@@ -17111,7 +17121,7 @@ var buildMatchStateEntry = (localMatch, fifaMatch, fifaLiveMatch) => {
   }
   const fifaScore = getScoreFromFifa(fifaMatch);
   const liveScore = fifaLiveMatch ? getScoreFromLiveFifa(fifaLiveMatch) : void 0;
-  const incidents = fifaLiveMatch ? getIncidentsFromLiveFifa(fifaLiveMatch) : void 0;
+  const incidents = fifaLiveMatch ? getIncidentsFromLiveFifa(fifaLiveMatch, localMatch.teamA.code, localMatch.teamB.code) : void 0;
   const status = fifaLiveMatch ? getMatchStatusFromFifa(localMatch, {
     ...fifaMatch,
     Date: fifaLiveMatch.Date || fifaMatch.Date,
