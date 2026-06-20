@@ -17204,44 +17204,49 @@ var buildTeamLineupEntry = (teamCode, fallbackLineup, fifaMatch, fifaTeam) => {
 };
 
 // trends-core.ts
-var buildGoogleTrendsRssUrl = (geo = "BR") => `https://trends.google.com/trending/rss?geo=${encodeURIComponent(geo)}`;
-var XML_ENTITIES = {
-  "&amp;": "&",
-  "&lt;": "<",
-  "&gt;": ">",
-  "&quot;": '"',
-  "&apos;": "'",
-  "&#39;": "'"
+var TRENDS_RPC_ID = "i0OFE";
+var GOOGLE_TRENDS_BATCH_URL = "https://trends.google.com/_/TrendsUi/data/batchexecute?rpcids=" + TRENDS_RPC_ID + "&source-path=%2Ftrending&hl=pt-BR";
+var buildGoogleTrendsRequestBody = (geo = "BR", hours = 24) => {
+  const innerArgs = JSON.stringify([null, null, geo, 0, "", hours, 1]);
+  const fReq = JSON.stringify([[[TRENDS_RPC_ID, innerArgs]]]);
+  return "f.req=" + encodeURIComponent(fReq);
 };
-var decodeXml = (value) => value.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").replace(/&(amp|lt|gt|quot|apos|#39);/g, (match) => XML_ENTITIES[match] ?? match).trim();
-var firstMatch = (block, tag) => {
-  const match = block.match(new RegExp(`<${tag}>([\\s\\S]*?)</${tag}>`));
-  return match ? decodeXml(match[1]) : null;
+var formatTrafficPtBr = (volume) => {
+  if (typeof volume !== "number" || !Number.isFinite(volume) || volume <= 0) {
+    return null;
+  }
+  const trim = (n) => Number(n.toFixed(1)).toLocaleString("pt-BR");
+  if (volume >= 1e6) return `${trim(volume / 1e6)} mi+`;
+  if (volume >= 1e3) return `${trim(volume / 1e3)} mil+`;
+  return `${volume}+`;
 };
-var parseFirstNewsItem = (itemBlock) => {
-  const newsBlock = itemBlock.match(/<ht:news_item>([\s\S]*?)<\/ht:news_item>/);
-  if (!newsBlock) return null;
-  const title = firstMatch(newsBlock[1], "ht:news_item_title");
-  const url = firstMatch(newsBlock[1], "ht:news_item_url");
-  if (!title || !url) return null;
-  return { title, url, source: firstMatch(newsBlock[1], "ht:news_item_source") };
-};
-var parseGoogleTrendsRss = (xml, limit = 12) => {
-  if (typeof xml !== "string" || !xml.includes("<item>")) {
+var parseGoogleTrendsBatch = (raw, limit = 12) => {
+  if (typeof raw !== "string" || !raw.includes(TRENDS_RPC_ID)) {
+    return [];
+  }
+  let entries;
+  try {
+    const body = raw.replace(/^\)\]\}'\s*/, "");
+    const outer = JSON.parse(body);
+    const row = outer.find(
+      (r) => Array.isArray(r) && r[1] === TRENDS_RPC_ID && typeof r[2] === "string"
+    );
+    if (!row) return [];
+    const inner = JSON.parse(row[2]);
+    entries = Array.isArray(inner[1]) ? inner[1] : [];
+  } catch {
     return [];
   }
   const topics = [];
-  const itemRegex = /<item>([\s\S]*?)<\/item>/g;
-  let match;
-  while ((match = itemRegex.exec(xml)) !== null) {
-    const block = match[1];
-    const title = firstMatch(block, "title");
-    if (!title) continue;
+  for (const entry of entries) {
+    if (!Array.isArray(entry)) continue;
+    const title = entry[0];
+    if (typeof title !== "string" || !title.trim()) continue;
     topics.push({
-      title,
-      traffic: firstMatch(block, "ht:approx_traffic"),
-      pictureUrl: firstMatch(block, "ht:picture"),
-      news: parseFirstNewsItem(block)
+      title: title.trim(),
+      traffic: formatTrafficPtBr(entry[6]),
+      pictureUrl: null,
+      news: null
     });
     if (topics.length >= limit) break;
   }
@@ -25285,23 +25290,25 @@ var fetchGoogleTrends = async () => {
   const timeout = setTimeout(() => controller.abort(), GOOGLE_TRENDS_FETCH_TIMEOUT_MS);
   let response;
   try {
-    response = await fetch(buildGoogleTrendsRssUrl("BR"), {
+    response = await fetch(GOOGLE_TRENDS_BATCH_URL, {
+      method: "POST",
       signal: controller.signal,
       headers: {
-        "User-Agent": "agora-na-copa-2026/1.0",
-        Accept: "application/rss+xml, application/xml, text/xml"
-      }
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+      },
+      body: buildGoogleTrendsRequestBody("BR", 24)
     });
   } finally {
     clearTimeout(timeout);
   }
   if (!response.ok) {
-    throw new Error(`Google Trends RSS request failed (${response.status})`);
+    throw new Error(`Google Trends request failed (${response.status})`);
   }
-  const xml = await response.text();
-  const topics = parseGoogleTrendsRss(xml, 12);
+  const raw = await response.text();
+  const topics = parseGoogleTrendsBatch(raw, 12);
   if (topics.length === 0) {
-    throw new Error("Google Trends RSS returned no topics");
+    throw new Error("Google Trends returned no topics");
   }
   return {
     source: "google-trends",
