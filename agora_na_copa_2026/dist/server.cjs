@@ -17242,11 +17242,13 @@ var parseGoogleTrendsBatch = (raw, limit = 12) => {
     if (!Array.isArray(entry)) continue;
     const title = entry[0];
     if (typeof title !== "string" || !title.trim()) continue;
+    const categories = Array.isArray(entry[10]) ? entry[10].filter((c) => typeof c === "number") : [];
     topics.push({
       title: title.trim(),
       traffic: formatTrafficPtBr(entry[6]),
       pictureUrl: null,
-      news: null
+      news: null,
+      categories
     });
     if (topics.length >= limit) break;
   }
