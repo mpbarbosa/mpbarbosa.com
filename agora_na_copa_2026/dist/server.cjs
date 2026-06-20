@@ -17203,6 +17203,51 @@ var buildTeamLineupEntry = (teamCode, fallbackLineup, fifaMatch, fifaTeam) => {
   };
 };
 
+// trends-core.ts
+var buildGoogleTrendsRssUrl = (geo = "BR") => `https://trends.google.com/trending/rss?geo=${encodeURIComponent(geo)}`;
+var XML_ENTITIES = {
+  "&amp;": "&",
+  "&lt;": "<",
+  "&gt;": ">",
+  "&quot;": '"',
+  "&apos;": "'",
+  "&#39;": "'"
+};
+var decodeXml = (value) => value.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").replace(/&(amp|lt|gt|quot|apos|#39);/g, (match) => XML_ENTITIES[match] ?? match).trim();
+var firstMatch = (block, tag) => {
+  const match = block.match(new RegExp(`<${tag}>([\\s\\S]*?)</${tag}>`));
+  return match ? decodeXml(match[1]) : null;
+};
+var parseFirstNewsItem = (itemBlock) => {
+  const newsBlock = itemBlock.match(/<ht:news_item>([\s\S]*?)<\/ht:news_item>/);
+  if (!newsBlock) return null;
+  const title = firstMatch(newsBlock[1], "ht:news_item_title");
+  const url = firstMatch(newsBlock[1], "ht:news_item_url");
+  if (!title || !url) return null;
+  return { title, url, source: firstMatch(newsBlock[1], "ht:news_item_source") };
+};
+var parseGoogleTrendsRss = (xml, limit = 12) => {
+  if (typeof xml !== "string" || !xml.includes("<item>")) {
+    return [];
+  }
+  const topics = [];
+  const itemRegex = /<item>([\s\S]*?)<\/item>/g;
+  let match;
+  while ((match = itemRegex.exec(xml)) !== null) {
+    const block = match[1];
+    const title = firstMatch(block, "title");
+    if (!title) continue;
+    topics.push({
+      title,
+      traffic: firstMatch(block, "ht:approx_traffic"),
+      pictureUrl: firstMatch(block, "ht:picture"),
+      news: parseFirstNewsItem(block)
+    });
+    if (topics.length >= limit) break;
+  }
+  return topics;
+};
+
 // src/matches.json
 var matches_default = [
   {
@@ -23939,6 +23984,7 @@ var WIKIPEDIA_API_BASE = "https://pt.wikipedia.org/api/rest_v1";
 var WIKIDATA_API_BASE = "https://www.wikidata.org/w/api.php";
 var COUNTRY_INFO_CACHE_TTL_MS = 24 * 60 * 60 * 1e3;
 var WIKIPEDIA_USER_AGENT = "agora-na-copa-2026 (https://github.com/mpbarbosa/agora_na_copa_2026)";
+var GOOGLE_TRENDS_CACHE_TTL_MS = 20 * 60 * 1e3;
 var APP_MATCHES_BY_ID = new Map(APP_MATCHES.map((match) => [match.id, match]));
 var GOAL_INCIDENT_SUFFIX = " marcou.";
 var YELLOW_CARD_INCIDENT_SUFFIX = " recebeu amarelo.";
@@ -25232,6 +25278,76 @@ app.get("/api/country-info/:code", async (req, res) => {
     res.json(fallback);
   }
 });
+var googleTrendsCache = null;
+var GOOGLE_TRENDS_FETCH_TIMEOUT_MS = 6e3;
+var fetchGoogleTrends = async () => {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), GOOGLE_TRENDS_FETCH_TIMEOUT_MS);
+  let response;
+  try {
+    response = await fetch(buildGoogleTrendsRssUrl("BR"), {
+      signal: controller.signal,
+      headers: {
+        "User-Agent": "agora-na-copa-2026/1.0",
+        Accept: "application/rss+xml, application/xml, text/xml"
+      }
+    });
+  } finally {
+    clearTimeout(timeout);
+  }
+  if (!response.ok) {
+    throw new Error(`Google Trends RSS request failed (${response.status})`);
+  }
+  const xml = await response.text();
+  const topics = parseGoogleTrendsRss(xml, 12);
+  if (topics.length === 0) {
+    throw new Error("Google Trends RSS returned no topics");
+  }
+  return {
+    source: "google-trends",
+    note: "Buscas em alta no Brasil \u2022 Google Trends",
+    updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
+    topics
+  };
+};
+var googleTrendsRefreshing = false;
+var refreshGoogleTrendsCache = async () => {
+  if (googleTrendsRefreshing) return;
+  googleTrendsRefreshing = true;
+  try {
+    const payload = await fetchGoogleTrends();
+    googleTrendsCache = { payload, expiresAt: Date.now() + GOOGLE_TRENDS_CACHE_TTL_MS };
+  } catch (error) {
+    console.error("Google Trends background refresh failed:", error);
+  } finally {
+    googleTrendsRefreshing = false;
+  }
+};
+app.get("/api/google-trends", (_req, res) => {
+  if (googleTrendsCache && googleTrendsCache.expiresAt > Date.now()) {
+    res.set("Cache-Control", "public, max-age=600");
+    res.json(googleTrendsCache.payload);
+    return;
+  }
+  void refreshGoogleTrendsCache();
+  if (googleTrendsCache) {
+    res.set("Cache-Control", "public, max-age=60");
+    res.json({
+      ...googleTrendsCache.payload,
+      source: "fallback",
+      note: "Atualizando tend\xEAncias do Google\u2026"
+    });
+    return;
+  }
+  res.set("Cache-Control", "public, max-age=60");
+  res.json({
+    source: "fallback",
+    note: "Tend\xEAncias indispon\xEDveis no momento.",
+    updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
+    topics: []
+  });
+});
+void refreshGoogleTrendsCache();
 app.get("/api/fifa-sync-status", (_req, res) => {
   const now = Date.now();
   const broadcastGuideFallbackCount = broadcastGuideCache ? Object.values(broadcastGuideCache.payload.guides).filter(
