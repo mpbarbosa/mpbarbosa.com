@@ -22,6 +22,7 @@ Node.js and npm for package management
 
 /* SITE */
 
+Version: 1.0.0
 Last update: 2025/01/15
 Language: English / Portuguese
 Doctype: HTML5
