@@ -20780,6 +20780,25 @@ function computeStandings(matches = APP_MATCHES) {
     };
   });
 }
+function haveMutualRemainingMatch(codeA, codeB, allMatches) {
+  return allMatches.some(
+    (m) => m.stageName === "Group Stage" && m.status !== "FINISHED" && (m.teamA.code === codeA && m.teamB.code === codeB || m.teamA.code === codeB && m.teamB.code === codeA)
+  );
+}
+function canPairReachTogether(A, B, targetPts, remaining, allMatches) {
+  if (!haveMutualRemainingMatch(A.code, B.code, allMatches)) {
+    return true;
+  }
+  const aOther = (remaining.get(A.code) ?? 0) - 1;
+  const bOther = (remaining.get(B.code) ?? 0) - 1;
+  if (A.points + 3 + aOther * 3 >= targetPts && B.points + 0 + bOther * 3 >= targetPts)
+    return true;
+  if (B.points + 3 + bOther * 3 >= targetPts && A.points + 0 + aOther * 3 >= targetPts)
+    return true;
+  if (A.points + 1 + aOther * 3 >= targetPts && B.points + 1 + bOther * 3 >= targetPts)
+    return true;
+  return false;
+}
 function computeGroupQualification(sortedRows, allMatches) {
   const codes = new Set(sortedRows.map((r) => r.code));
   const remaining = new Map(sortedRows.map((r) => [r.code, 0]));
@@ -20803,8 +20822,14 @@ function computeGroupQualification(sortedRows, allMatches) {
     const myPts = row.points;
     const myRem = remaining.get(row.code) ?? 0;
     const myMax = myPts + myRem * 3;
-    const rivalMaxes = rivals.map((r) => r.points + (remaining.get(r.code) ?? 0) * 3).sort((a, b) => b - a);
-    const qualified = rivalMaxes[1] < myPts;
+    const threats = rivals.filter(
+      (r) => r.points + (remaining.get(r.code) ?? 0) * 3 >= myPts
+    );
+    const qualified = threats.length <= 1 || !threats.some(
+      (a, ai) => threats.some(
+        (b, bi) => bi > ai && canPairReachTogether(a, b, myPts, remaining, allMatches)
+      )
+    );
     const eliminated = rivals.filter((r) => r.points > myMax).length >= 3;
     result.set(row.code, qualified ? "qualified" : eliminated ? "eliminated" : "contention");
   }
