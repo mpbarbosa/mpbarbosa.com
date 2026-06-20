@@ -1740,7 +1740,8 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "franckkessie"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZMvpiQCP7q/"
   },
   "371736": {
     fifaId: "371736",
