@@ -781,6 +781,7 @@ var squads_default = {
     position: "FW",
     club: "Barcelona",
     pictureUrl: "https://digitalhub.fifa.com/transform/b4def0b2-7d6f-4f3a-bcde-600b292096d6/RAPHINHA_433872",
+    instagramPostUrl: "https://www.instagram.com/raphinha/",
     dateOfBirth: "1996-12-14",
     height: 176
   },
@@ -20776,19 +20777,108 @@ function computeStandings(matches = APP_MATCHES) {
     };
   });
 }
-function sortGroupTable(rows) {
+function computeH2H(teamCode, opponents, matches) {
+  let points = 0, gd = 0, gf = 0;
+  for (const match of matches) {
+    if (match.stageName !== "Group Stage") continue;
+    if (match.status !== "LIVE" && match.status !== "FINISHED") continue;
+    if (!match.score) continue;
+    let scored, conceded;
+    if (match.teamA.code === teamCode && opponents.has(match.teamB.code)) {
+      scored = match.score.teamA;
+      conceded = match.score.teamB;
+    } else if (match.teamB.code === teamCode && opponents.has(match.teamA.code)) {
+      scored = match.score.teamB;
+      conceded = match.score.teamA;
+    } else {
+      continue;
+    }
+    gf += scored;
+    gd += scored - conceded;
+    if (scored > conceded) points += POINTS_FOR_WIN;
+    else if (scored === conceded) points += POINTS_FOR_DRAW;
+  }
+  return { points, gd, gf };
+}
+function cmpH2H(a, b) {
+  return b.points - a.points || b.gd - a.gd || b.gf - a.gf;
+}
+function sortByOverall(rows) {
   return [...rows].sort(
-    (a, b) => b.points - a.points || b.goalDifference - a.goalDifference || b.goalsFor - a.goalsFor
+    (a, b) => b.goalDifference - a.goalDifference || b.goalsFor - a.goalsFor
   );
 }
-function groupStandings(rows) {
+function sortSubcluster(rows, matches) {
+  if (rows.length === 1) return rows;
+  const codes = new Set(rows.map((r) => r.code));
+  const h2h = new Map(
+    rows.map((r) => [
+      r.code,
+      computeH2H(r.code, new Set([...codes].filter((c) => c !== r.code)), matches)
+    ])
+  );
+  const sorted = [...rows].sort((a, b) => cmpH2H(h2h.get(a.code), h2h.get(b.code)));
+  const result = [];
+  let i = 0;
+  while (i < sorted.length) {
+    const ha = h2h.get(sorted[i].code);
+    let j = i + 1;
+    while (j < sorted.length && cmpH2H(h2h.get(sorted[j].code), ha) === 0) j++;
+    const sub = sorted.slice(i, j);
+    result.push(...sub.length === 1 ? sub : sortByOverall(sub));
+    i = j;
+  }
+  return result;
+}
+function sortTiedCluster(rows, matches) {
+  if (rows.length === 1) return rows;
+  const codes = new Set(rows.map((r) => r.code));
+  const h2h = new Map(
+    rows.map((r) => [
+      r.code,
+      computeH2H(r.code, new Set([...codes].filter((c) => c !== r.code)), matches)
+    ])
+  );
+  const sorted = [...rows].sort((a, b) => cmpH2H(h2h.get(a.code), h2h.get(b.code)));
+  const result = [];
+  let i = 0;
+  while (i < sorted.length) {
+    const ha = h2h.get(sorted[i].code);
+    let j = i + 1;
+    while (j < sorted.length && cmpH2H(h2h.get(sorted[j].code), ha) === 0) j++;
+    const cluster = sorted.slice(i, j);
+    if (cluster.length === 1) {
+      result.push(cluster[0]);
+    } else if (cluster.length < rows.length) {
+      result.push(...sortSubcluster(cluster, matches));
+    } else {
+      result.push(...sortByOverall(cluster));
+    }
+    i = j;
+  }
+  return result;
+}
+function sortGroupTable(rows, matches) {
+  const byPoints = [...rows].sort((a, b) => b.points - a.points);
+  const result = [];
+  let i = 0;
+  while (i < byPoints.length) {
+    let j = i + 1;
+    while (j < byPoints.length && byPoints[j].points === byPoints[i].points) j++;
+    const cluster = byPoints.slice(i, j);
+    result.push(...cluster.length === 1 ? cluster : sortTiedCluster(cluster, matches));
+    i = j;
+  }
+  return result;
+}
+function groupStandings(rows, matches = APP_MATCHES) {
   const byGroup = /* @__PURE__ */ new Map();
   for (const row of rows) {
     const existing = byGroup.get(row.group);
     if (existing) existing.push(row);
     else byGroup.set(row.group, [row]);
   }
-  return Array.from(byGroup.entries()).sort(([a], [b]) => a.localeCompare(b)).map(([group, groupRows]) => ({ group, rows: sortGroupTable(groupRows) }));
+  return Array.from(byGroup.entries()).sort(([a], [b]) => a.localeCompare(b)).map(([group, groupRows]) => ({ group, rows: sortGroupTable(groupRows, matches) }));
 }
 
 // server.ts
