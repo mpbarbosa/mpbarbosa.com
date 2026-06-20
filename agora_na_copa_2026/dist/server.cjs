@@ -24875,6 +24875,13 @@ var buildTeamViewPayload = async (teamCode, country, language) => {
     matchStatesPayload.states[lastMatchReference.match.id],
     broadcastGuidePayload.guides[lastMatchReference.match.id]
   ) : null;
+  const matchHistory = teamMatches.map(
+    (reference) => buildTeamViewMatchSummary(
+      reference,
+      matchStatesPayload.states[reference.match.id],
+      broadcastGuidePayload.guides[reference.match.id]
+    )
+  );
   const lineupReference = currentMatchReference ?? nextMatchReference ?? lastMatchReference ?? teamMatches[0] ?? null;
   const lineup = lineupReference ? lineupReference.isTeamA ? teamLineupsPayload.lineups[lineupReference.match.id]?.teamA ?? buildFallbackLineupEntry(lineupReference.team.lineup) : teamLineupsPayload.lineups[lineupReference.match.id]?.teamB ?? buildFallbackLineupEntry(lineupReference.team.lineup) : null;
   const featuredGuideReference = currentMatchReference ?? nextMatchReference ?? null;
@@ -24922,6 +24929,7 @@ var buildTeamViewPayload = async (teamCode, country, language) => {
     currentMatch,
     nextMatch,
     lastMatch,
+    matchHistory,
     lineup,
     leaders: {
       topScorers,
