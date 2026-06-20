@@ -20785,6 +20785,32 @@ function haveMutualRemainingMatch(codeA, codeB, allMatches) {
     (m) => m.stageName === "Group Stage" && m.status !== "FINISHED" && (m.teamA.code === codeA && m.teamB.code === codeB || m.teamA.code === codeB && m.teamB.code === codeA)
   );
 }
+function cannotPossiblyFinishTop2(team2, allRows, groupRemainingMatches) {
+  const n = groupRemainingMatches.length;
+  const totalScenarios = 3 ** n;
+  for (let scenario = 0; scenario < totalScenarios; scenario++) {
+    const pts = new Map(allRows.map((r) => [r.code, r.points]));
+    let s = scenario;
+    for (const match of groupRemainingMatches) {
+      const outcome = s % 3;
+      s = Math.floor(s / 3);
+      const a = match.teamA.code;
+      const b = match.teamB.code;
+      if (outcome === 0) pts.set(a, (pts.get(a) ?? 0) + 3);
+      else if (outcome === 1) pts.set(b, (pts.get(b) ?? 0) + 3);
+      else {
+        pts.set(a, (pts.get(a) ?? 0) + 1);
+        pts.set(b, (pts.get(b) ?? 0) + 1);
+      }
+    }
+    const teamPts = pts.get(team2.code) ?? 0;
+    const rivalsAbove = allRows.filter(
+      (r) => r.code !== team2.code && (pts.get(r.code) ?? 0) > teamPts
+    ).length;
+    if (rivalsAbove < 2) return false;
+  }
+  return true;
+}
 function canPairReachTogether(A, B, targetPts, remaining, allMatches) {
   if (!haveMutualRemainingMatch(A.code, B.code, allMatches)) {
     return true;
@@ -20816,12 +20842,13 @@ function computeGroupQualification(sortedRows, allMatches) {
       ])
     );
   }
+  const groupRemainingMatches = allMatches.filter(
+    (m) => m.stageName === "Group Stage" && m.status !== "FINISHED" && codes.has(m.teamA.code) && codes.has(m.teamB.code)
+  );
   const result = /* @__PURE__ */ new Map();
   for (const row of sortedRows) {
     const rivals = sortedRows.filter((r) => r.code !== row.code);
     const myPts = row.points;
-    const myRem = remaining.get(row.code) ?? 0;
-    const myMax = myPts + myRem * 3;
     const threats = rivals.filter(
       (r) => r.points + (remaining.get(r.code) ?? 0) * 3 >= myPts
     );
@@ -20830,7 +20857,7 @@ function computeGroupQualification(sortedRows, allMatches) {
         (b, bi) => bi > ai && canPairReachTogether(a, b, myPts, remaining, allMatches)
       )
     );
-    const eliminated = rivals.filter((r) => r.points > myMax).length >= 3;
+    const eliminated = !qualified && cannotPossiblyFinishTop2(row, sortedRows, groupRemainingMatches);
     result.set(row.code, qualified ? "qualified" : eliminated ? "eliminated" : "contention");
   }
   return result;
