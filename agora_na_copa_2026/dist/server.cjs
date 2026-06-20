@@ -20775,6 +20775,36 @@ function computeStandings(matches = APP_MATCHES) {
     };
   });
 }
+function computeGroupQualification(sortedRows, allMatches) {
+  const codes = new Set(sortedRows.map((r) => r.code));
+  const remaining = new Map(sortedRows.map((r) => [r.code, 0]));
+  for (const m of allMatches) {
+    if (m.stageName !== "Group Stage" || m.status === "FINISHED") continue;
+    if (codes.has(m.teamA.code)) remaining.set(m.teamA.code, remaining.get(m.teamA.code) + 1);
+    if (codes.has(m.teamB.code)) remaining.set(m.teamB.code, remaining.get(m.teamB.code) + 1);
+  }
+  const totalRemaining = [...remaining.values()].reduce((a, b) => a + b, 0);
+  if (totalRemaining === 0) {
+    return new Map(
+      sortedRows.map((row, i) => [
+        row.code,
+        i < 2 ? "qualified" : i === 3 ? "eliminated" : "contention"
+      ])
+    );
+  }
+  const result = /* @__PURE__ */ new Map();
+  for (const row of sortedRows) {
+    const rivals = sortedRows.filter((r) => r.code !== row.code);
+    const myPts = row.points;
+    const myRem = remaining.get(row.code) ?? 0;
+    const myMax = myPts + myRem * 3;
+    const rivalMaxes = rivals.map((r) => r.points + (remaining.get(r.code) ?? 0) * 3).sort((a, b) => b - a);
+    const qualified = rivalMaxes[1] < myPts;
+    const eliminated = rivals.filter((r) => r.points > myMax).length >= 3;
+    result.set(row.code, qualified ? "qualified" : eliminated ? "eliminated" : "contention");
+  }
+  return result;
+}
 function computeH2H(teamCode, opponents, matches) {
   let points = 0, gd = 0, gf = 0;
   for (const match of matches) {
@@ -20876,7 +20906,14 @@ function groupStandings(rows, matches = APP_MATCHES) {
     if (existing) existing.push(row);
     else byGroup.set(row.group, [row]);
   }
-  return Array.from(byGroup.entries()).sort(([a], [b]) => a.localeCompare(b)).map(([group, groupRows]) => ({ group, rows: sortGroupTable(groupRows, matches) }));
+  return Array.from(byGroup.entries()).sort(([a], [b]) => a.localeCompare(b)).map(([group, groupRows]) => {
+    const sortedRows = sortGroupTable(groupRows, matches);
+    return {
+      group,
+      rows: sortedRows,
+      qualification: computeGroupQualification(sortedRows, matches)
+    };
+  });
 }
 
 // server.ts
