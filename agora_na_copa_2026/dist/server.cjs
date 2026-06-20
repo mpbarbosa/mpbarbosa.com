@@ -19975,9 +19975,9 @@ var matches_default = [
     kickoffTime: "17:00",
     kickoffDate: "17 Junho, 2026",
     kickoffTimestamp: "2026-06-17T17:00:00-03:00",
-    status: "LIVE",
+    status: "FINISHED",
     score: {
-      teamA: 2,
+      teamA: 4,
       teamB: 2
     },
     countdownTargetSeconds: 0,
@@ -20065,24 +20065,24 @@ var FIFA_MATCH_VENUES = {
 var v = (teamA, teamB) => FIFA_MATCH_VENUES[`${teamA.toLowerCase()}-${teamB.toLowerCase()}-2026`] ?? { stadiumName: "A confirmar", city: "A confirmar" };
 var FIFA_SCHEDULED_MATCHES = [
   // ── Grupo A ───────────────────────────────────────────────────────────────
-  { teamA: "CZE", teamB: "RSA", kickoffTimestamp: "2026-06-18T13:00:00-03:00", status: "PRE_GAME", ...v("CZE", "RSA") },
-  { teamA: "MEX", teamB: "KOR", kickoffTimestamp: "2026-06-18T22:00:00-03:00", status: "PRE_GAME", ...v("MEX", "KOR") },
+  { teamA: "CZE", teamB: "RSA", kickoffTimestamp: "2026-06-18T13:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 1 }, ...v("CZE", "RSA") },
+  { teamA: "MEX", teamB: "KOR", kickoffTimestamp: "2026-06-18T22:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 0 }, ...v("MEX", "KOR") },
   { teamA: "CZE", teamB: "MEX", kickoffTimestamp: "2026-06-24T22:00:00-03:00", status: "PRE_GAME", ...v("CZE", "MEX") },
   { teamA: "RSA", teamB: "KOR", kickoffTimestamp: "2026-06-24T22:00:00-03:00", status: "PRE_GAME", ...v("RSA", "KOR") },
   // ── Grupo B ───────────────────────────────────────────────────────────────
   { teamA: "QAT", teamB: "SUI", kickoffTimestamp: "2026-06-13T16:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 1 }, ...v("QAT", "SUI") },
-  { teamA: "SUI", teamB: "BIH", kickoffTimestamp: "2026-06-18T16:00:00-03:00", status: "PRE_GAME", ...v("SUI", "BIH") },
-  { teamA: "CAN", teamB: "QAT", kickoffTimestamp: "2026-06-18T19:00:00-03:00", status: "PRE_GAME", ...v("CAN", "QAT") },
+  { teamA: "SUI", teamB: "BIH", kickoffTimestamp: "2026-06-18T16:00:00-03:00", status: "FINISHED", score: { teamA: 4, teamB: 1 }, ...v("SUI", "BIH") },
+  { teamA: "CAN", teamB: "QAT", kickoffTimestamp: "2026-06-18T19:00:00-03:00", status: "FINISHED", score: { teamA: 6, teamB: 0 }, ...v("CAN", "QAT") },
   { teamA: "BIH", teamB: "QAT", kickoffTimestamp: "2026-06-24T16:00:00-03:00", status: "PRE_GAME", ...v("BIH", "QAT") },
   { teamA: "SUI", teamB: "CAN", kickoffTimestamp: "2026-06-24T16:00:00-03:00", status: "PRE_GAME", ...v("SUI", "CAN") },
   // ── Grupo C ───────────────────────────────────────────────────────────────
-  { teamA: "SCO", teamB: "MAR", kickoffTimestamp: "2026-06-19T19:00:00-03:00", status: "PRE_GAME", ...v("SCO", "MAR") },
-  { teamA: "BRA", teamB: "HAI", kickoffTimestamp: "2026-06-19T21:30:00-03:00", status: "PRE_GAME", ...v("BRA", "HAI") },
+  { teamA: "SCO", teamB: "MAR", kickoffTimestamp: "2026-06-19T19:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 1 }, ...v("SCO", "MAR") },
+  { teamA: "BRA", teamB: "HAI", kickoffTimestamp: "2026-06-19T21:30:00-03:00", status: "FINISHED", score: { teamA: 3, teamB: 0 }, ...v("BRA", "HAI") },
   { teamA: "MAR", teamB: "HAI", kickoffTimestamp: "2026-06-24T19:00:00-03:00", status: "PRE_GAME", ...v("MAR", "HAI") },
   { teamA: "SCO", teamB: "BRA", kickoffTimestamp: "2026-06-24T19:00:00-03:00", status: "PRE_GAME", ...v("SCO", "BRA") },
   // ── Grupo D ───────────────────────────────────────────────────────────────
-  { teamA: "USA", teamB: "AUS", kickoffTimestamp: "2026-06-19T16:00:00-03:00", status: "PRE_GAME", ...v("USA", "AUS") },
-  { teamA: "TUR", teamB: "PAR", kickoffTimestamp: "2026-06-20T00:00:00-03:00", status: "PRE_GAME", ...v("TUR", "PAR") },
+  { teamA: "USA", teamB: "AUS", kickoffTimestamp: "2026-06-19T16:00:00-03:00", status: "FINISHED", score: { teamA: 2, teamB: 0 }, ...v("USA", "AUS") },
+  { teamA: "TUR", teamB: "PAR", kickoffTimestamp: "2026-06-20T00:00:00-03:00", status: "LIVE", score: { teamA: 0, teamB: 1 }, ...v("TUR", "PAR") },
   { teamA: "PAR", teamB: "AUS", kickoffTimestamp: "2026-06-25T23:00:00-03:00", status: "PRE_GAME", ...v("PAR", "AUS") },
   { teamA: "TUR", teamB: "USA", kickoffTimestamp: "2026-06-25T23:00:00-03:00", status: "PRE_GAME", ...v("TUR", "USA") },
   // ── Grupo E ───────────────────────────────────────────────────────────────
@@ -20106,7 +20106,7 @@ var FIFA_SCHEDULED_MATCHES = [
   { teamA: "CPV", teamB: "KSA", kickoffTimestamp: "2026-06-26T21:00:00-03:00", status: "PRE_GAME", ...v("CPV", "KSA") },
   { teamA: "URU", teamB: "ESP", kickoffTimestamp: "2026-06-26T21:00:00-03:00", status: "PRE_GAME", ...v("URU", "ESP") },
   // ── Grupo I ───────────────────────────────────────────────────────────────
-  { teamA: "IRQ", teamB: "NOR", kickoffTimestamp: "2026-06-16T19:00:00-03:00", status: "PRE_GAME", ...v("IRQ", "NOR") },
+  { teamA: "IRQ", teamB: "NOR", kickoffTimestamp: "2026-06-16T19:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 4 }, ...v("IRQ", "NOR") },
   { teamA: "FRA", teamB: "IRQ", kickoffTimestamp: "2026-06-22T18:00:00-03:00", status: "PRE_GAME", ...v("FRA", "IRQ") },
   { teamA: "NOR", teamB: "SEN", kickoffTimestamp: "2026-06-22T21:00:00-03:00", status: "PRE_GAME", ...v("NOR", "SEN") },
   { teamA: "NOR", teamB: "FRA", kickoffTimestamp: "2026-06-26T16:00:00-03:00", status: "PRE_GAME", ...v("NOR", "FRA") },
@@ -20118,15 +20118,15 @@ var FIFA_SCHEDULED_MATCHES = [
   { teamA: "ALG", teamB: "AUT", kickoffTimestamp: "2026-06-27T23:00:00-03:00", status: "PRE_GAME", ...v("ALG", "AUT") },
   { teamA: "JOR", teamB: "ARG", kickoffTimestamp: "2026-06-27T23:00:00-03:00", status: "PRE_GAME", ...v("JOR", "ARG") },
   // ── Grupo K ───────────────────────────────────────────────────────────────
-  { teamA: "POR", teamB: "COD", kickoffTimestamp: "2026-06-17T14:00:00-03:00", status: "PRE_GAME", ...v("POR", "COD") },
-  { teamA: "UZB", teamB: "COL", kickoffTimestamp: "2026-06-17T23:00:00-03:00", status: "LIVE", ...v("UZB", "COL") },
+  { teamA: "POR", teamB: "COD", kickoffTimestamp: "2026-06-17T14:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 1 }, ...v("POR", "COD") },
+  { teamA: "UZB", teamB: "COL", kickoffTimestamp: "2026-06-17T23:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 3 }, ...v("UZB", "COL") },
   { teamA: "POR", teamB: "UZB", kickoffTimestamp: "2026-06-23T14:00:00-03:00", status: "PRE_GAME", ...v("POR", "UZB") },
   { teamA: "COL", teamB: "COD", kickoffTimestamp: "2026-06-23T23:00:00-03:00", status: "PRE_GAME", ...v("COL", "COD") },
   { teamA: "COL", teamB: "POR", kickoffTimestamp: "2026-06-27T20:30:00-03:00", status: "PRE_GAME", ...v("COL", "POR") },
   { teamA: "COD", teamB: "UZB", kickoffTimestamp: "2026-06-27T20:30:00-03:00", status: "PRE_GAME", ...v("COD", "UZB") },
   // ── Grupo L ───────────────────────────────────────────────────────────────
-  { teamA: "ENG", teamB: "CRO", kickoffTimestamp: "2026-06-17T17:00:00-03:00", status: "PRE_GAME", ...v("ENG", "CRO") },
-  { teamA: "GHA", teamB: "PAN", kickoffTimestamp: "2026-06-17T20:00:00-03:00", status: "PRE_GAME", ...v("GHA", "PAN") },
+  { teamA: "ENG", teamB: "CRO", kickoffTimestamp: "2026-06-17T17:00:00-03:00", status: "FINISHED", score: { teamA: 4, teamB: 2 }, ...v("ENG", "CRO") },
+  { teamA: "GHA", teamB: "PAN", kickoffTimestamp: "2026-06-17T20:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 0 }, ...v("GHA", "PAN") },
   { teamA: "ENG", teamB: "GHA", kickoffTimestamp: "2026-06-23T17:00:00-03:00", status: "PRE_GAME", ...v("ENG", "GHA") },
   { teamA: "PAN", teamB: "CRO", kickoffTimestamp: "2026-06-23T20:00:00-03:00", status: "PRE_GAME", ...v("PAN", "CRO") },
   { teamA: "CRO", teamB: "GHA", kickoffTimestamp: "2026-06-27T18:00:00-03:00", status: "PRE_GAME", ...v("CRO", "GHA") },
