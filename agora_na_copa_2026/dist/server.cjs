@@ -12820,7 +12820,8 @@ var squads_default = {
     socials: {
       instagram: "kevinpina95",
       wikipedia: "https://en.wikipedia.org/wiki/Kevin_Pina_(footballer)"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/reel/CfyagZcoaWw/"
   },
   "477853": {
     fifaId: "477853",
