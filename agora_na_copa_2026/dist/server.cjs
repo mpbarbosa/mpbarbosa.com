@@ -4192,7 +4192,7 @@ var squads_default = {
   "402876": {
     fifaId: "402876",
     teamCode: "URU",
-    name: "A. Cannobio",
+    name: "A. Canobbio",
     fullName: "Agustin Canobbio",
     number: 14,
     position: "MF",
@@ -4203,7 +4203,8 @@ var squads_default = {
     socials: {
       instagram: "agus_cano7",
       wikipedia: "https://pt.wikipedia.org/wiki/Agust%C3%ADn_Canobbio"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/reel/DZ2ZDoSIGay/"
   },
   "402884": {
     fifaId: "402884",
@@ -6125,13 +6126,15 @@ var squads_default = {
     fullName: "Maxi Araujo",
     number: 20,
     position: "MF",
-    club: "Sporting",
+    club: "Sporting CP",
     pictureUrl: "https://digitalhub.fifa.com/transform/f1a7af03-ada1-4642-927c-5fe06844c89c/ARAUJO-Maxi_419100",
     socials: {
-      instagram: "maximilianoaraujo6"
+      instagram: "maximilianoaraujo6",
+      wikipedia: "https://pt.wikipedia.org/wiki/Maxi_Ara\xFAjo"
     },
     dateOfBirth: "2000-02-15",
-    height: 176
+    height: 176,
+    worldCupNote: "## Leitura\nMaximiliano Ara\xFAjo virou a principal arma ofensiva do Uruguai de Bielsa no in\xEDcio do Mundial. Ponta-esquerda veloz que brilha no Sporting de Portugal \u2014 onde foi campe\xE3o portugu\xEAs e chegou a marcar sobre o Manchester City na Liga dos Campe\xF5es \u2014, o camisa 20 j\xE1 \xE9 o artilheiro da Celeste na competi\xE7\xE3o, dando profundidade e gols a um time que ainda busca o ritmo ideal.\n## Desempenho\nMaxi Ara\xFAjo abriu sua conta logo na estreia, marcando o gol uruguaio no 1 a 1 com a Ar\xE1bia Saudita, e seguiu como o jogador mais incisivo da equipe. R\xE1pido pelo lado e perigoso na finaliza\xE7\xE3o, tem sido a refer\xEAncia ofensiva de um Uruguai que peca na pontaria \u2014 quando a Celeste cria, \xE9 quase sempre por ele.\n## N\xFAmeros\nArtilheiro do Uruguai na Copa at\xE9 aqui, com 2 gols \u2014 entre eles o da estreia contra a Ar\xE1bia Saudita. Montevideano formado no Wanderers, passou por Puebla e Toluca, no M\xE9xico, antes de se firmar no Sporting CP. O Uruguai, em 2\xBA no Grupo H, conta com ele para deslanchar diante de Cabo Verde e Espanha."
   },
   "419108": {
     fifaId: "419108",
