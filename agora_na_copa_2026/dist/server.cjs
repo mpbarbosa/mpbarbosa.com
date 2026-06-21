@@ -2830,7 +2830,8 @@ var squads_default = {
     height: 190,
     socials: {
       instagram: "eloyroom"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/CqXEaZqKWN9/"
   },
   "390670": {
     fifaId: "390670",
