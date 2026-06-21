@@ -24250,6 +24250,52 @@ var matches_default = [
     },
     countdownTargetSeconds: 0,
     broadcasters: []
+  },
+  {
+    id: "aut-jor-2026",
+    teamA: {
+      name: "\xC1USTRIA",
+      code: "AUT",
+      flagSvg: "austria",
+      primaryColor: "#ed2939",
+      secondaryColor: "#ffffff",
+      group: "Grupo J",
+      lineup: [
+        { id: "aut1", name: "Schlager", number: 1, position: "GK", x: 50, y: 88 },
+        { id: "aut16", name: "Phillip Mwene", number: 16, position: "DF", x: 15, y: 70 },
+        { id: "aut8", name: "Alaba", number: 8, position: "DF", x: 38, y: 75 },
+        { id: "aut3", name: "Kevin Danso", number: 3, position: "DF", x: 62, y: 75 },
+        { id: "aut5", name: "Stefan Posch", number: 5, position: "DF", x: 85, y: 70 },
+        { id: "aut6", name: "Nicolas Seiwald", number: 6, position: "MF", x: 35, y: 48 },
+        { id: "aut4", name: "Xaver Schlager", number: 4, position: "MF", x: 65, y: 48 },
+        { id: "aut21", name: "Patrick Wimmer", number: 21, position: "FW", x: 15, y: 26 },
+        { id: "aut9", name: "Sabitzer", number: 9, position: "MF", x: 50, y: 32 },
+        { id: "aut20", name: "Laimer", number: 20, position: "MF", x: 85, y: 26 },
+        { id: "aut7", name: "Arnautovic", number: 7, position: "FW", x: 50, y: 12, captain: true }
+      ]
+    },
+    teamB: {
+      name: "JORD\xC2NIA",
+      code: "JOR",
+      flagSvg: "jordan",
+      primaryColor: "#007a3d",
+      secondaryColor: "#ce1126",
+      group: "Grupo J",
+      lineup: []
+    },
+    stadiumName: "Est\xE1dio da Ba\xEDa de S\xE3o Francisco",
+    city: "\xC1rea da ba\xEDa de S\xE3o Francisco",
+    stageName: "Group Stage",
+    kickoffTime: "01:00",
+    kickoffDate: "17 Junho, 2026",
+    kickoffTimestamp: "2026-06-17T01:00:00-03:00",
+    status: "FINISHED",
+    score: {
+      teamA: 3,
+      teamB: 1
+    },
+    countdownTargetSeconds: 0,
+    broadcasters: []
   }
 ];
 
@@ -24965,6 +25011,7 @@ var wikipediaCountries_default = WIKIPEDIA_COUNTRIES;
 
 // src/data/teamAnalysis.json
 var teamAnalysis_default = {
+  AUT: "## Leitura\nA \xC1ustria de Ralf Rangnick come\xE7ou a Copa fazendo o dever de casa e mostrando a intensidade que virou marca da equipe: muita press\xE3o, transi\xE7\xF5es r\xE1pidas e efici\xEAncia. A vit\xF3ria na estreia colocou os austr\xEDacos lado a lado com a Argentina na ponta do Grupo J, separados apenas pelo saldo de gols. \xC9 uma sele\xE7\xE3o organizada e perigosa, que chega embalada para o confronto direto que pode definir a lideran\xE7a.\n## Desempenho\nNa estreia, a \xC1ustria venceu a Jord\xE2nia por 3 a 1, impondo seu ritmo de jogo e levando perigo com a movimenta\xE7\xE3o ofensiva t\xEDpica do estilo Rangnick. O time sofreu um gol, mas controlou as a\xE7\xF5es e construiu o resultado com tranquilidade. O pr\xF3ximo compromisso, contra a Argentina, \xE9 o grande teste: um duelo entre duas equipes que abriram a competi\xE7\xE3o vencendo.\n## N\xFAmeros\nJ1 \xB7 1 vit\xF3ria \xB7 3 gols marcados \xB7 1 sofrido. A \xC1ustria divide a lideran\xE7a do Grupo J com a Argentina (ambas com 3 pontos), em segundo pelo saldo de gols (SG +2 contra +3). Pr\xF3ximos desafios: Argentina (22/06) e Arg\xE9lia (27/06).",
   BRA: "## Leitura\nO Brasil de Carlo Ancelotti avan\xE7a na fase de grupos com a defesa em dia, mas ainda buscando o melhor do seu ataque. Depois de um empate sem brilho na estreia, a Sele\xE7\xE3o respondeu com uma vit\xF3ria convincente e assumiu a lideran\xE7a do Grupo C pelo saldo de gols. Com Alisson seguro no gol e o trio ofensivo de Vinicius Jr, Raphinha e Rodrygo, o potencial \xE9 alto \u2014 falta o time engrenar para valer e confirmar o favoritismo nas pr\xF3ximas rodadas.\n## Desempenho\nNa estreia, o Brasil ficou no 1 a 1 com o Marrocos, num jogo travado em que faltou capricho na finaliza\xE7\xE3o. Veio ent\xE3o a rea\xE7\xE3o: 3 a 0 no Haiti, com a equipe mais solta e eficiente, controlando o jogo do in\xEDcio ao fim. O meio-campo de Bruno Guimar\xE3es e Jo\xE3o Gomes deu equil\xEDbrio, enquanto a defesa, liderada por Marquinhos, sofreu apenas o gol do Marrocos em duas partidas.\n## N\xFAmeros\nJ2 \xB7 1 vit\xF3ria \xB7 1 empate \xB7 4 gols marcados \xB7 1 sofrido \xB7 1 clean sheet. O Brasil lidera o Grupo C com 4 pontos e o melhor saldo da chave (SG +3), \xE0 frente do Marrocos pelo crit\xE9rio de gols. Pr\xF3ximo desafio: Esc\xF3cia, em 24/06.",
   MEX: "## Leitura\nO pa\xEDs-sede come\xE7ou a Copa em casa do jeito dos sonhos: 100% de aproveitamento, duas vit\xF3rias e a defesa intranspon\xEDvel. Sob o comando experiente de Javier Aguirre, o M\xE9xico juntou solidez defensiva e efici\xEAncia ofensiva para abrir a competi\xE7\xE3o na lideran\xE7a do Grupo A, com a torcida empurrando em todos os est\xE1dios. A classifica\xE7\xE3o j\xE1 est\xE1 bem encaminhada e o time joga com a confian\xE7a de quem se sente em casa.\n## Desempenho\nNa abertura do Mundial, o M\xE9xico venceu a \xC1frica do Sul por 2 a 0 com autoridade; na sequ\xEAncia, bateu a Coreia do Sul por 1 a 0 num jogo mais truncado, mostrando capacidade de segurar o resultado. Malag\xF3n pouco foi exigido no gol, a dupla de zaga Montes\u2013V\xE1squez deu seguran\xE7a, e Edson \xC1lvarez comandou o meio-campo. Na frente, Santiago Gim\xE9nez e Hirving Lozano s\xE3o os nomes de refer\xEAncia de um ataque que tem sido objetivo.\n## N\xFAmeros\nJ2 \xB7 2 vit\xF3rias \xB7 3 gols marcados \xB7 0 sofridos \xB7 2 clean sheets. O M\xE9xico lidera o Grupo A com 6 pontos e o melhor saldo da chave (SG +3), defesa ainda invicta. Pr\xF3ximo desafio: Rep\xFAblica Tcheca, em 24/06.",
   ARG: "## Leitura\nA atual campe\xE3 do mundo entrou na Copa do jeito que se esperava de uma sele\xE7\xE3o comandada por Lionel Scaloni: madura, equilibrada e mortal nos detalhes. A estreia com goleada e meta zerada sobre a Arg\xE9lia confirmou que a base de 2022 segue afiada, com Messi orquestrando e a defesa de Otamendi e Romero pouco amea\xE7ada. \xC9 candidata natural ao t\xEDtulo e larga na lideran\xE7a do Grupo J.\n## Desempenho\nNo primeiro jogo, a Argentina goleou a Arg\xE9lia por 3 a 0 com autoridade: dominou a posse, criou as melhores chances e n\xE3o deu espa\xE7o para o advers\xE1rio. Emiliano Mart\xEDnez mal trabalhou no gol, e o trio De Paul\u2013Mac Allister\u2013Enzo Fern\xE1ndez controlou o meio-campo. Messi, Lautaro e Juli\xE1n \xC1lvarez formaram um ataque de peso, dando o tom de uma campanha que come\xE7a sem sustos.\n## N\xFAmeros\nJ1 \xB7 1 vit\xF3ria \xB7 3 gols marcados \xB7 0 sofridos \xB7 clean sheet. A Argentina lidera o Grupo J com 3 pontos e o melhor saldo da chave (SG +3), \xE0 frente da \xC1ustria pelo crit\xE9rio de gols. Pr\xF3ximos desafios: \xC1ustria (22/06) e Jord\xE2nia (27/06)."
