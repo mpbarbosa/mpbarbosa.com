@@ -1506,14 +1506,14 @@ var squads_default = {
     fullName: "Vozinha",
     number: 1,
     position: "GK",
-    club: "Gil Vicente",
+    club: "G.D. Chaves",
     pictureUrl: "https://digitalhub.fifa.com/transform/b8286230-b161-484e-87a9-ce5a20e6f7d1/VOZINHA_364752",
     socials: {
       instagram: "vozinha1",
       wikipedia: "https://pt.wikipedia.org/wiki/Vozinha"
     },
     instagramPostUrl: "https://www.instagram.com/reel/DZno5Zsxo6V/",
-    worldCupNote: "Segurar o 0 a 0 com a Espanha na estreia foi o grande destaque: rendeu o primeiro ponto de Cabo Verde e mostrou solidez defensiva num grupo dur\xEDssimo (Espanha, Uruguai e Ar\xE1bia Saudita). Titular e dono da camisa 1, Vozinha n\xE3o foi vazado no \xFAnico jogo disputado \u2014 1 jogo sem sofrer gols. Na tabela, Cabo Verde aparece em 4\xBA por crit\xE9rio de desempate, mas com tudo em aberto: o goleiro ser\xE1 pe\xE7a-chave diante de Uruguai e Ar\xE1bia Saudita para a sele\xE7\xE3o brigar por uma vaga no mata-mata.",
+    worldCupNote: "## Leitura\nAos 40 anos, o veterano Josimar Dias \u2014 o Vozinha \u2014 virou o s\xEDmbolo da campanha hist\xF3rica de Cabo Verde. Nascido em Mindelo e com quase 90 jogos pela sele\xE7\xE3o, \xE9 o dono absoluto da camisa 1 e a muralha em que os cabo-verdianos se apoiam para sonhar com uma classifica\xE7\xE3o in\xE9dita num grupo dur\xED\xEDssimo. A atua\xE7\xE3o heroica na estreia o transformou em \xEDdolo nacional e fen\xF4meno mundial.\n## Desempenho\nContra a Espanha, Vozinha foi gigante: fez sete defesas e garantiu o empate sem gols, levando o pr\xEAmio de melhor jogador da partida e o primeiro ponto cabo-verdiano em Copas do Mundo. A exibi\xE7\xE3o o transformou em fen\xF4meno nas redes sociais, com milh\xF5es de novos seguidores em poucas horas. Reflexos apurados e seguran\xE7a nas sa\xEDdas marcaram o jogo do experiente goleiro.\n## N\xFAmeros\nJ1 \xB7 1 jogo sem sofrer gols (clean sheet) \xB7 7 defesas \xB7 craque da partida diante da Espanha. Cabo Verde soma 1 ponto no Grupo H, em 4\xBA apenas pelos crit\xE9rios de desempate, mas segue vivo. Pela frente: Uruguai (21/06) e Ar\xE1bia Saudita (26/06), jogos em que Vozinha deve seguir decisivo.",
     dateOfBirth: "1986-06-03",
     height: 189
   },
