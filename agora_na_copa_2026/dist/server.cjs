@@ -5039,6 +5039,7 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c2722c3-a70b-49d8-bdb4-77109161f533/VINICIUS-JUNIOR_405742",
     instagramPostUrl: "https://www.instagram.com/p/DZjBZ9UjVG6/",
+    worldCupNote: "## Leitura\nIn\xEDcio consistente e produtivo. Vini divide a artilharia da sele\xE7\xE3o e foi pe\xE7a da recupera\xE7\xE3o ap\xF3s a estreia travada contra Marrocos. Com o Brasil j\xE1 em vantagem no grupo, ele entra contra a Esc\xF3cia em boa fase, podendo assumir a artilharia isolada e encaminhar a classifica\xE7\xE3o.\n## Desempenho\n2 gols em 2 jogos: come\xE7ou decisivo e \xE9 artilheiro do Brasil ao lado de Igor Jesus (2 a 2). Participou da rea\xE7\xE3o que goleou o Haiti por 3 a 0 ap\xF3s o empate em 1 a 1 com Marrocos. Substitu\xEDdo uma vez (poupado) e com ficha limpa \u2014 0 cart\xF5es.\n## N\xFAmeros\nJ2 \xB7 2 gols \xB7 0 cart\xF5es \xB7 1 substitui\xE7\xE3o (sa\xEDda). Brasil em 1\xBA lugar, com 4 pontos (1 vit\xF3ria, 1 empate), 4 gols marcados e 1 sofrido \u2014 Vini responde por metade dos gols da sele\xE7\xE3o na competi\xE7\xE3o.",
     dateOfBirth: "2000-07-12",
     height: 176,
     socials: {
