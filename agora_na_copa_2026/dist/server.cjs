@@ -139,6 +139,7 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Lionel_Messi"
     },
     instagramPostUrl: "https://www.instagram.com/reel/DZ0RteXxomP/",
+    worldCupNote: "## Leitura\nN\xE3o dava pra come\xE7ar melhor: o hat-trick na estreia coloca Messi como protagonista absoluto e a Argentina como favorita do grupo, j\xE1 encaminhando a vaga no mata-mata. A comiss\xE3o deve dosar os minutos do capit\xE3o; contra \xC1ustria e Jord\xE2nia, ele ter\xE1 vitrine para ampliar a artilharia.\n## Desempenho\nHat-trick na estreia: marcou os 3 gols da vit\xF3ria por 3 a 0 sobre a Arg\xE9lia e decidiu o jogo sozinho. Substitu\xEDdo no segundo tempo (poupado) e com ficha limpa \u2014 0 amarelos, 0 vermelhos.\n## N\xFAmeros\nJ1 \xB7 3 gols \xB7 0 cart\xF5es \xB7 aproveitamento m\xE1ximo. Argentina em 1\xBA lugar, com clean sheet (0 gols sofridos) e o melhor saldo da rodada. Artilheiro isolado neste in\xEDcio de Copa.",
     dateOfBirth: "1987-06-24",
     height: 170
   },
