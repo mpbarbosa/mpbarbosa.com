@@ -17979,7 +17979,7 @@ var resolvePlayerEntry = (teamCode, name, number, fifaId) => {
   }
   const squad = getTeamSquad(teamCode);
   const normalizedName = normalizeText(name);
-  return squad.find((p) => p.number === number) ?? squad.find((p) => normalizeText(p.name) === normalizedName) ?? null;
+  return squad.find((p) => normalizeText(p.name) === normalizedName) ?? squad.find((p) => p.number === number) ?? null;
 };
 
 // fifa-sync-core.ts
@@ -18226,20 +18226,23 @@ var mergeLineupWithLocalMetadata = (players, fallbackLineup, teamCode) => player
   };
 });
 var enrichFallbackLineupWithFifaPictures = (fallbackLineup, fifaTeam, teamCode) => {
-  const fifaPlayers = fifaTeam?.Players;
-  if (!fifaPlayers || fifaPlayers.length === 0) return fallbackLineup;
+  const fifaPlayers = fifaTeam?.Players ?? [];
   return fallbackLineup.map((player) => {
-    const fifaPlayer = findMatchingFifaPlayer(player, fifaPlayers);
-    const pictureUrl = getFifaPlayerPictureUrl(fifaPlayer);
-    if (!fifaPlayer) {
-      return player;
-    }
-    const entry = resolvePlayerEntry(teamCode, player.name, player.number, fifaPlayer.IdPlayer);
+    const fifaPlayer = fifaPlayers.length ? findMatchingFifaPlayer(player, fifaPlayers) : void 0;
+    const fifaPicture = getFifaPlayerPictureUrl(fifaPlayer);
+    const resolved = resolvePlayerEntry(
+      teamCode,
+      player.name,
+      player.number,
+      player.fifaId ?? fifaPlayer?.IdPlayer
+    );
+    const entry = resolved && (normalizeText2(resolved.name) === normalizeText2(player.name) || player.fifaId !== void 0 && resolved.fifaId === player.fifaId || fifaPlayer?.IdPlayer !== void 0 && resolved.fifaId === fifaPlayer.IdPlayer) ? resolved : null;
     return {
       ...player,
-      fifaId: fifaPlayer.IdPlayer,
-      number: fifaPlayer.ShirtNumber || player.number,
-      pictureUrl: pictureUrl ?? player.pictureUrl,
+      fifaId: player.fifaId ?? fifaPlayer?.IdPlayer ?? entry?.fifaId,
+      number: fifaPlayer?.ShirtNumber || player.number,
+      club: player.club ?? entry?.club,
+      pictureUrl: fifaPicture ?? player.pictureUrl ?? entry?.pictureUrl,
       socials: player.socials ?? entry?.socials,
       instagramPostUrl: player.instagramPostUrl ?? entry?.instagramPostUrl,
       worldCupNote: player.worldCupNote ?? entry?.worldCupNote,
@@ -26030,8 +26033,26 @@ var getTeamViewNote = (source) => {
   }
   return "Painel da sele\xE7\xE3o combinando dados oficiais da FIFA com fallback local do aplicativo.";
 };
-var buildFallbackLineupEntry = (players) => ({
-  players,
+var buildFallbackLineupEntry = (players, teamCode) => ({
+  // Enrich the local lineup from the squad registry so editorial/profile fields
+  // (worldCupNote, instagramPostUrl, socials, picture, metadata) reach the player
+  // card even when no live FIFA lineup is available (finished/upcoming matches).
+  players: players.map((player) => {
+    const entry = resolvePlayerEntry(teamCode, player.name, player.number, player.fifaId);
+    if (!entry) return player;
+    return {
+      ...player,
+      club: player.club ?? entry.club,
+      pictureUrl: player.pictureUrl ?? entry.pictureUrl,
+      socials: player.socials ?? entry.socials,
+      instagramPostUrl: player.instagramPostUrl ?? entry.instagramPostUrl,
+      worldCupNote: player.worldCupNote ?? entry.worldCupNote,
+      fullName: player.fullName ?? entry.fullName,
+      dateOfBirth: player.dateOfBirth ?? entry.dateOfBirth,
+      height: player.height ?? entry.height,
+      fifaId: player.fifaId ?? entry.fifaId
+    };
+  }),
   source: "fallback",
   note: "Escala\xE7\xE3o estimada a partir da base local do aplicativo.",
   updatedAt: (/* @__PURE__ */ new Date()).toISOString()
@@ -26152,7 +26173,7 @@ var buildTeamViewPayload = async (teamCode, country, language) => {
     )
   );
   const lineupReference = currentMatchReference ?? nextMatchReference ?? lastMatchReference ?? teamMatches[0] ?? null;
-  const lineup = lineupReference ? lineupReference.isTeamA ? teamLineupsPayload.lineups[lineupReference.match.id]?.teamA ?? buildFallbackLineupEntry(lineupReference.team.lineup) : teamLineupsPayload.lineups[lineupReference.match.id]?.teamB ?? buildFallbackLineupEntry(lineupReference.team.lineup) : null;
+  const lineup = lineupReference ? lineupReference.isTeamA ? teamLineupsPayload.lineups[lineupReference.match.id]?.teamA ?? buildFallbackLineupEntry(lineupReference.team.lineup, lineupReference.team.code) : teamLineupsPayload.lineups[lineupReference.match.id]?.teamB ?? buildFallbackLineupEntry(lineupReference.team.lineup, lineupReference.team.code) : null;
   const featuredGuideReference = currentMatchReference ?? nextMatchReference ?? null;
   const broadcastGuide = featuredGuideReference ? broadcastGuidePayload.guides[featuredGuideReference.match.id] ?? null : null;
   const topScorers = sortPlayerLeaders(
