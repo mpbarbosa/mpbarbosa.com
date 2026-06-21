@@ -74,6 +74,7 @@ var squads_default = {
       instagram: "cristiano",
       wikipedia: "https://pt.wikipedia.org/wiki/Cristiano_Ronaldo"
     },
+    worldCupNote: "## Leitura\nEstreia abaixo do esperado \u2014 para Portugal e para o capit\xE3o. Diante de uma RD Congo aguerrida, a sele\xE7\xE3o n\xE3o passou de um empate e Cristiano n\xE3o conseguiu deixar sua marca. O cen\xE1rio ainda \xE9 totalmente recuper\xE1vel: contra Uzbequist\xE3o e Col\xF4mbia, Portugal entra pressionado a vencer e CR7 ter\xE1 a chance de reagir e abrir sua conta de gols na Copa.\n## Desempenho\nFicou em branco na estreia: no empate em 1 a 1 com a RD Congo, n\xE3o marcou e n\xE3o recebeu cart\xF5es, e esteve em campo durante a partida. O gol portugu\xEAs saiu com o jovem Jo\xE3o Neves, n\xE3o com o capit\xE3o.\n## N\xFAmeros\nJ1 \xB7 0 gols \xB7 0 cart\xF5es. Portugal trope\xE7ou na estreia (empate 1 a 1), fica em 2\xBA do grupo com 1 ponto e saldo zerado (1 GP, 1 GC).",
     dateOfBirth: "1985-02-05",
     height: 185
   },
