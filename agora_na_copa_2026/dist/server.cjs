@@ -5047,6 +5047,21 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Vin%C3%ADcius_J%C3%BAnior"
     }
   },
+  "1443021717": {
+    fifaId: "1443021717",
+    teamCode: "BRA",
+    name: "Igor Jesus",
+    fullName: "Igor Jesus",
+    number: 9,
+    position: "FW",
+    club: "Botafogo",
+    pictureUrl: "https://digitalhub.fifa.com/transform/a3fba875-a9c9-4d5b-aa92-ff7319d1177a/1443021717",
+    socials: {
+      instagram: "igorjesus0"
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZMvpiQCP7q/",
+    worldCupNote: "## Leitura\nGrande surpresa positiva da Amarelinha. Pouco badalado antes do torneio, Igor Jesus aproveitou as oportunidades e j\xE1 \xE9 coartilheiro do Brasil, eficiente mesmo em minutagem fracionada. Contra a Esc\xF3cia, briga para manter a sequ\xEAncia goleadora e firmar a vaga no ataque.\n## Desempenho\n2 gols em 2 jogos, dividindo a artilharia do Brasil com Vin\xEDcius J\xFAnior (2 a 2). Decisivo em papel de rota\xE7\xE3o \u2014 entrou como substituto em um jogo e foi substitu\xEDdo em outro \u2014, marcando mesmo sem ser presen\xE7a fixa nos 90 minutos. Ficha limpa: 0 cart\xF5es.\n## N\xFAmeros\nJ2 \xB7 2 gols \xB7 0 cart\xF5es \xB7 1 entrada + 1 sa\xEDda (substitui\xE7\xF5es). Brasil em 1\xBA lugar com 4 pontos e 4 gols marcados \u2014 Igor Jesus responde por metade deles."
+  },
   "405841": {
     fifaId: "405841",
     teamCode: "ENG",
