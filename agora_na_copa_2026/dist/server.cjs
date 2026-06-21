@@ -2829,7 +2829,8 @@ var squads_default = {
     dateOfBirth: "1989-02-06",
     height: 190,
     socials: {
-      instagram: "eloyroom"
+      instagram: "eloyroom",
+      wikipedia: "https://en.wikipedia.org/wiki/Eloy_Room"
     },
     instagramPostUrl: "https://www.instagram.com/p/CqXEaZqKWN9/"
   },
