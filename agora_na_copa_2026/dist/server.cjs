@@ -55,7 +55,8 @@ var squads_default = {
     club: "Al Hilal",
     pictureUrl: "",
     socials: {
-      instagram: "neymarjr"
+      instagram: "neymarjr",
+      wikipedia: "https://pt.wikipedia.org/wiki/Neymar"
     },
     dateOfBirth: "1992-02-05",
     height: 175
@@ -70,7 +71,8 @@ var squads_default = {
     club: "Al Nassr",
     pictureUrl: "https://digitalhub.fifa.com/transform/7b63f223-fda2-4d56-b218-f143f0abd2d8/CRISTIANO-RONALDO_201200",
     socials: {
-      instagram: "cristiano"
+      instagram: "cristiano",
+      wikipedia: "https://pt.wikipedia.org/wiki/Cristiano_Ronaldo"
     },
     dateOfBirth: "1985-02-05",
     height: 185
@@ -87,7 +89,8 @@ var squads_default = {
     dateOfBirth: "1985-07-13",
     height: 185,
     socials: {
-      instagram: "yosoy8a"
+      instagram: "yosoy8a",
+      wikipedia: "https://pt.wikipedia.org/wiki/Guillermo_Ochoa"
     }
   },
   "215553": {
@@ -102,7 +105,8 @@ var squads_default = {
     dateOfBirth: "1982-12-31",
     height: 193,
     socials: {
-      instagram: "craig_gordon1"
+      instagram: "craig_gordon1",
+      wikipedia: "https://pt.wikipedia.org/wiki/Craig_Gordon"
     }
   },
   "228912": {
@@ -117,7 +121,8 @@ var squads_default = {
     dateOfBirth: "1986-03-27",
     height: 193,
     socials: {
-      instagram: "manuelneuer"
+      instagram: "manuelneuer",
+      wikipedia: "https://pt.wikipedia.org/wiki/Manuel_Neuer"
     }
   },
   "229397": {
@@ -130,7 +135,8 @@ var squads_default = {
     club: "Inter Miami",
     pictureUrl: "https://digitalhub.fifa.com/transform/19823774-fac0-485a-8a8f-572e7324c6c2/MESSI-Lionel_229397",
     socials: {
-      instagram: "leomessi"
+      instagram: "leomessi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lionel_Messi"
     },
     instagramPostUrl: "https://www.instagram.com/reel/DZ0RteXxomP/",
     dateOfBirth: "1987-06-24",
@@ -148,7 +154,8 @@ var squads_default = {
     dateOfBirth: "1986-06-16",
     height: 190,
     socials: {
-      instagram: "muslera"
+      instagram: "muslera",
+      wikipedia: "https://pt.wikipedia.org/wiki/Fernando_Muslera"
     }
   },
   "241559": {
@@ -161,7 +168,8 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/cbff6a19-cce4-45ee-9869-84cf30ce5676/MODRIC-Luka_241559",
     socials: {
-      instagram: "lukamodric10"
+      instagram: "lukamodric10",
+      wikipedia: "https://pt.wikipedia.org/wiki/Luka_Modri%C4%87"
     },
     dateOfBirth: "1985-09-09",
     height: 172
@@ -176,7 +184,10 @@ var squads_default = {
     club: "Minnesota United",
     pictureUrl: "https://digitalhub.fifa.com/transform/e4d41670-878d-4717-b07c-84d09a5f6938/BOXALL-Michael_261367",
     dateOfBirth: "1988-08-18",
-    height: 191
+    height: 191,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Michael_Boxall"
+    }
   },
   "269592": {
     fifaId: "269592",
@@ -190,7 +201,8 @@ var squads_default = {
     dateOfBirth: "1990-02-19",
     height: 171,
     socials: {
-      instagram: "kostabarbarouses9"
+      instagram: "kostabarbarouses9",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kosta_Barbarouses"
     }
   },
   "274078": {
@@ -205,7 +217,8 @@ var squads_default = {
     dateOfBirth: "1991-12-07",
     height: 191,
     socials: {
-      instagram: "woodsy39"
+      instagram: "woodsy39",
+      wikipedia: "https://pt.wikipedia.org/wiki/Chris_Wood"
     }
   },
   "274102": {
@@ -218,7 +231,10 @@ var squads_default = {
     club: "New York Red Bulls",
     pictureUrl: "https://digitalhub.fifa.com/transform/a0a2def6-be1c-4394-973e-25d82ed70792/SMITH-Tommy_274102",
     dateOfBirth: "1990-03-31",
-    height: 188
+    height: 188,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Tommy_Smith_(futebolista_neozeland%C3%AAs)"
+    }
   },
   "274281": {
     fifaId: "274281",
@@ -244,7 +260,8 @@ var squads_default = {
     dateOfBirth: "1990-05-21",
     height: 190,
     socials: {
-      instagram: "adericardo4"
+      instagram: "adericardo4",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ricardo_Ad%C3%A9"
     }
   },
   "284190": {
@@ -289,7 +306,8 @@ var squads_default = {
     dateOfBirth: "1989-01-12",
     height: 186,
     socials: {
-      instagram: "axelwitsel28"
+      instagram: "axelwitsel28",
+      wikipedia: "https://pt.wikipedia.org/wiki/Axel_Witsel"
     }
   },
   "291372": {
@@ -304,7 +322,8 @@ var squads_default = {
     dateOfBirth: "1986-09-12",
     height: 170,
     socials: {
-      instagram: "yutonagatomo55"
+      instagram: "yutonagatomo55",
+      wikipedia: "https://pt.wikipedia.org/wiki/Y%C5%ABto_Nagatomo"
     }
   },
   "295922": {
@@ -319,7 +338,8 @@ var squads_default = {
     dateOfBirth: "1988-01-29",
     height: 181,
     socials: {
-      instagram: "johny_placide"
+      instagram: "johny_placide",
+      wikipedia: "https://pt.wikipedia.org/wiki/Johny_Placide"
     }
   },
   "297266": {
@@ -334,7 +354,8 @@ var squads_default = {
     dateOfBirth: "1988-05-20",
     height: 178,
     socials: {
-      instagram: "stopy22"
+      instagram: "stopy22",
+      wikipedia: "https://pt.wikipedia.org/wiki/Stopira"
     }
   },
   "299200": {
@@ -349,7 +370,8 @@ var squads_default = {
     dateOfBirth: "1989-04-19",
     height: 192,
     socials: {
-      instagram: "m.arnautovic7"
+      instagram: "m.arnautovic7",
+      wikipedia: "https://pt.wikipedia.org/wiki/Marko_Arnautovi%C4%87"
     }
   },
   "300409": {
@@ -364,7 +386,8 @@ var squads_default = {
     dateOfBirth: "1986-03-17",
     height: 192,
     socials: {
-      instagram: "edindzeko"
+      instagram: "edindzeko",
+      wikipedia: "https://pt.wikipedia.org/wiki/Edin_D%C5%BEeko"
     }
   },
   "306538": {
@@ -379,7 +402,8 @@ var squads_default = {
     dateOfBirth: "1990-06-02",
     height: 187,
     socials: {
-      instagram: "olibaumann90"
+      instagram: "olibaumann90",
+      wikipedia: "https://pt.wikipedia.org/wiki/Oliver_Baumann"
     }
   },
   "307849": {
@@ -392,7 +416,8 @@ var squads_default = {
     club: "Tottenham",
     pictureUrl: "https://digitalhub.fifa.com/transform/f9694bf1-eb42-4d26-9503-e988bd32a435/SON-Heungmin_307849",
     socials: {
-      instagram: "hm_son7"
+      instagram: "hm_son7",
+      wikipedia: "https://pt.wikipedia.org/wiki/Son_Heung-min"
     },
     dateOfBirth: "1992-07-08",
     height: 183
@@ -409,7 +434,8 @@ var squads_default = {
     dateOfBirth: "1992-09-02",
     height: 195,
     socials: {
-      instagram: "emimartinezz1"
+      instagram: "emimartinezz1",
+      wikipedia: "https://pt.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez"
     }
   },
   "308322": {
@@ -424,7 +450,8 @@ var squads_default = {
     dateOfBirth: "1992-08-31",
     height: 172,
     socials: {
-      instagram: "tagliafico3"
+      instagram: "tagliafico3",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nicol%C3%A1s_Tagliafico"
     }
   },
   "308370": {
@@ -437,7 +464,8 @@ var squads_default = {
     club: "Liverpool",
     pictureUrl: "https://digitalhub.fifa.com/transform/6b051628-d407-41ce-8a60-dc354ac4ccb8/ALISSON_308370",
     socials: {
-      instagram: "alissonbecker"
+      instagram: "alissonbecker",
+      wikipedia: "https://en.wikipedia.org/wiki/Alisson_(footballer,_born_1995)"
     },
     dateOfBirth: "1992-10-02",
     height: 193
@@ -454,7 +482,8 @@ var squads_default = {
     dateOfBirth: "1992-02-23",
     height: 185,
     socials: {
-      instagram: "casemiro"
+      instagram: "casemiro",
+      wikipedia: "https://pt.wikipedia.org/wiki/Casemiro"
     }
   },
   "310116": {
@@ -469,7 +498,8 @@ var squads_default = {
     dateOfBirth: "1988-02-12",
     height: 182,
     socials: {
-      instagram: "nicolasotamendi30"
+      instagram: "nicolasotamendi30",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nicol%C3%A1s_Otamendi"
     }
   },
   "311558": {
@@ -482,7 +512,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/a6c333cc-3042-4094-9ec0-094479b8ca3a/XHAKA-Granit_311558",
     socials: {
-      instagram: "granit_xhaka"
+      instagram: "granit_xhaka",
+      wikipedia: "https://pt.wikipedia.org/wiki/Granit_Xhaka"
     },
     dateOfBirth: "1992-09-27",
     height: 183
@@ -499,7 +530,8 @@ var squads_default = {
     dateOfBirth: "1992-08-25",
     height: 182,
     socials: {
-      instagram: "rrodriguez.68"
+      instagram: "rrodriguez.68",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ricardo_Rodr%C3%ADguez_(futebolista)"
     }
   },
   "314255": {
@@ -514,7 +546,8 @@ var squads_default = {
     dateOfBirth: "1992-06-30",
     height: 189,
     socials: {
-      instagram: "hosseini21"
+      instagram: "hosseini21",
+      wikipedia: "https://pt.wikipedia.org/wiki/Hossein_Hosseini"
     }
   },
   "316002": {
@@ -529,7 +562,8 @@ var squads_default = {
     dateOfBirth: "1992-06-24",
     height: 180,
     socials: {
-      instagram: "davidalaba"
+      instagram: "davidalaba",
+      wikipedia: "https://pt.wikipedia.org/wiki/David_Alaba"
     }
   },
   "318647": {
@@ -544,7 +578,8 @@ var squads_default = {
     dateOfBirth: "1988-03-29",
     height: 191,
     socials: {
-      instagram: "gatitofernandez"
+      instagram: "gatitofernandez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gatito_Fern%C3%A1ndez"
     }
   },
   "321697": {
@@ -559,7 +594,8 @@ var squads_default = {
     dateOfBirth: "1991-02-04",
     height: 181,
     socials: {
-      instagram: "lecks.7"
+      instagram: "lecks.7",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mathew_Leckie"
     }
   },
   "331135": {
@@ -572,7 +608,10 @@ var squads_default = {
     club: "Genk",
     pictureUrl: "https://digitalhub.fifa.com/transform/b64e66f2-6c65-4a90-8f28-6fc699fcf5ce/IZZO-Paul_331135",
     dateOfBirth: "1995-01-06",
-    height: 184
+    height: 184,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Paul_Izzo"
+    }
   },
   "331149": {
     fifaId: "331149",
@@ -586,7 +625,8 @@ var squads_default = {
     dateOfBirth: "1994-04-28",
     height: 187,
     socials: {
-      instagram: "milosdegenek"
+      instagram: "milosdegenek",
+      wikipedia: "https://pt.wikipedia.org/wiki/Milo%C5%A1_Degenek"
     }
   },
   "331463": {
@@ -601,7 +641,8 @@ var squads_default = {
     dateOfBirth: "1994-01-10",
     height: 179,
     socials: {
-      instagram: "timpayne__"
+      instagram: "timpayne__",
+      wikipedia: "https://pt.wikipedia.org/wiki/Tim_Payne"
     }
   },
   "331732": {
@@ -616,7 +657,8 @@ var squads_default = {
     dateOfBirth: "1994-05-11",
     height: 185,
     socials: {
-      instagram: "mcrepeau"
+      instagram: "mcrepeau",
+      wikipedia: "https://en.wikipedia.org/wiki/Maxime_Cr%C3%A9peau"
     }
   },
   "332314": {
@@ -631,7 +673,8 @@ var squads_default = {
     dateOfBirth: "1989-09-26",
     height: 174,
     socials: {
-      instagram: "iganagueye"
+      instagram: "iganagueye",
+      wikipedia: "https://pt.wikipedia.org/wiki/Idrissa_Gueye"
     }
   },
   "332847": {
@@ -646,7 +689,8 @@ var squads_default = {
     dateOfBirth: "1994-06-29",
     height: 182,
     socials: {
-      instagram: "leoparedes20"
+      instagram: "leoparedes20",
+      wikipedia: "https://pt.wikipedia.org/wiki/Leandro_Paredes"
     }
   },
   "332897": {
@@ -661,7 +705,8 @@ var squads_default = {
     dateOfBirth: "1994-10-01",
     height: 182,
     socials: {
-      instagram: "aguirrerodrigo21"
+      instagram: "aguirrerodrigo21",
+      wikipedia: "https://pt.wikipedia.org/wiki/Rodrigo_Aguirre"
     }
   },
   "332946": {
@@ -674,7 +719,8 @@ var squads_default = {
     club: "PSG",
     pictureUrl: "https://digitalhub.fifa.com/transform/30069661-f88d-4ff7-9c4e-071a5cf3c093/MARQUINHOS_332946",
     socials: {
-      instagram: "marquinhosm5"
+      instagram: "marquinhosm5",
+      wikipedia: "https://pt.wikipedia.org/wiki/Marcos_Ao%C3%A1s_Corr%C3%AAa"
     },
     dateOfBirth: "1994-05-14",
     height: 183
@@ -691,7 +737,8 @@ var squads_default = {
     dateOfBirth: "1991-07-15",
     height: 184,
     socials: {
-      instagram: "daniluiz2"
+      instagram: "daniluiz2",
+      wikipedia: "https://pt.wikipedia.org/wiki/Danilo_Luiz_da_Silva"
     }
   },
   "335658": {
@@ -706,7 +753,8 @@ var squads_default = {
     dateOfBirth: "1991-01-26",
     height: 180,
     socials: {
-      instagram: "alxsndro12"
+      instagram: "alxsndro12",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alex_Sandro"
     }
   },
   "335807": {
@@ -721,7 +769,8 @@ var squads_default = {
     dateOfBirth: "1991-07-19",
     height: 168,
     socials: {
-      instagram: "mika_seri6"
+      instagram: "mika_seri6",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jean_Seri"
     }
   },
   "335999": {
@@ -736,7 +785,8 @@ var squads_default = {
     dateOfBirth: "1994-05-27",
     height: 191,
     socials: {
-      instagram: "laporte"
+      instagram: "laporte",
+      wikipedia: "https://pt.wikipedia.org/wiki/Aymeric_Laporte"
     }
   },
   "336022": {
@@ -751,7 +801,8 @@ var squads_default = {
     dateOfBirth: "1994-03-07",
     height: 185,
     socials: {
-      instagram: "jpickford1"
+      instagram: "jpickford1",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jordan_Pickford"
     }
   },
   "336088": {
@@ -766,7 +817,8 @@ var squads_default = {
     dateOfBirth: "1995-02-18",
     height: 180,
     socials: {
-      instagram: "nathanake"
+      instagram: "nathanake",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nathan_Ak%C3%A9"
     }
   },
   "336098": {
@@ -781,7 +833,8 @@ var squads_default = {
     dateOfBirth: "1994-02-13",
     height: 178,
     socials: {
-      instagram: "memphisdepay"
+      instagram: "memphisdepay",
+      wikipedia: "https://pt.wikipedia.org/wiki/Memphis_Depay"
     }
   },
   "336170": {
@@ -796,7 +849,8 @@ var squads_default = {
     dateOfBirth: "1994-11-10",
     height: 185,
     socials: {
-      instagram: "kaanayhan"
+      instagram: "kaanayhan",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kaan_Ayhan"
     }
   },
   "336425": {
@@ -811,7 +865,8 @@ var squads_default = {
     dateOfBirth: "1991-04-11",
     height: 182,
     socials: {
-      instagram: "bakambu17"
+      instagram: "bakambu17",
+      wikipedia: "https://pt.wikipedia.org/wiki/C%C3%A9dric_Bakambu"
     }
   },
   "336439": {
@@ -824,7 +879,10 @@ var squads_default = {
     club: "Amiens",
     pictureUrl: "https://digitalhub.fifa.com/transform/201587e3-e8f9-4201-9ee5-23931fd0f016/KAKUTA-Gael_336439",
     dateOfBirth: "1991-06-21",
-    height: 174
+    height: 174,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Ga%C3%ABl_Kakuta"
+    }
   },
   "336459": {
     fifaId: "336459",
@@ -838,7 +896,8 @@ var squads_default = {
     dateOfBirth: "1994-01-27",
     height: 188,
     socials: {
-      instagram: "wahbi_khazri_8"
+      instagram: "wahbi_khazri_8",
+      wikipedia: "https://en.wikipedia.org/wiki/Rani_Khedira"
     }
   },
   "336472": {
@@ -853,7 +912,8 @@ var squads_default = {
     dateOfBirth: "1991-06-19",
     height: 177,
     socials: {
-      instagram: "andrejkramaric"
+      instagram: "andrejkramaric",
+      wikipedia: "https://pt.wikipedia.org/wiki/Andrej_Kramari%C4%87"
     }
   },
   "336641": {
@@ -866,7 +926,10 @@ var squads_default = {
     club: "Auckland FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/daf68d11-59d7-46f3-98ec-25a359c8a3a9/THOMAS-Ryan_336641",
     dateOfBirth: "1994-12-20",
-    height: 176
+    height: 176,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Ryan_Thomas"
+    }
   },
   "337389": {
     fifaId: "337389",
@@ -880,7 +943,8 @@ var squads_default = {
     dateOfBirth: "1998-11-16",
     height: 178,
     socials: {
-      instagram: "anthony_ralston1"
+      instagram: "anthony_ralston1",
+      wikipedia: "https://en.wikipedia.org/wiki/Anthony_Ralston"
     }
   },
   "339112": {
@@ -893,7 +957,10 @@ var squads_default = {
     club: "Hibernian",
     pictureUrl: "https://digitalhub.fifa.com/transform/33a991a9-eb66-43b2-ad39-2718a8147c51/GERIA-Jason_339112",
     dateOfBirth: "1993-05-10",
-    height: 181
+    height: 181,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Jason_Geria"
+    }
   },
   "339117": {
     fifaId: "339117",
@@ -907,7 +974,8 @@ var squads_default = {
     dateOfBirth: "1992-04-08",
     height: 184,
     socials: {
-      instagram: "matthew_ryan_gk25"
+      instagram: "matthew_ryan_gk25",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mathew_Ryan"
     }
   },
   "339510": {
@@ -922,7 +990,8 @@ var squads_default = {
     dateOfBirth: "1987-10-05",
     height: 186,
     socials: {
-      instagram: "tim.ream13"
+      instagram: "tim.ream13",
+      wikipedia: "https://pt.wikipedia.org/wiki/Tim_Ream"
     }
   },
   "339745": {
@@ -964,7 +1033,8 @@ var squads_default = {
     dateOfBirth: "1991-06-20",
     height: 186,
     socials: {
-      instagram: "kkoulibaly26"
+      instagram: "kkoulibaly26",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kalidou_Koulibaly"
     }
   },
   "339987": {
@@ -979,7 +1049,8 @@ var squads_default = {
     dateOfBirth: "1994-05-06",
     height: 178,
     socials: {
-      instagram: "mateokovacic8"
+      instagram: "mateokovacic8",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mateo_Kova%C4%8Di%C4%87"
     }
   },
   "344654": {
@@ -994,7 +1065,8 @@ var squads_default = {
     dateOfBirth: "1992-06-15",
     height: 175,
     socials: {
-      instagram: "mosalah"
+      instagram: "mosalah",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mohamed_Salah"
     }
   },
   "344661": {
@@ -1009,7 +1081,8 @@ var squads_default = {
     dateOfBirth: "1993-05-20",
     height: 183,
     socials: {
-      instagram: "ramyrabia"
+      instagram: "ramyrabia",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ramy_Rabia"
     }
   },
   "345059": {
@@ -1039,7 +1112,8 @@ var squads_default = {
     dateOfBirth: "1989-05-14",
     height: 183,
     socials: {
-      instagram: "shoja_khalilzadeh"
+      instagram: "shoja_khalilzadeh",
+      wikipedia: "https://pt.wikipedia.org/wiki/Shojae_Khalilzadeh"
     }
   },
   "347085": {
@@ -1052,7 +1126,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/a7f7a32a-4968-462b-9c34-e8a0d0530b99/JALAL-HASSAN_347085",
     dateOfBirth: "1991-05-18",
-    height: 188
+    height: 188,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Jalal_Hassan"
+    }
   },
   "349342": {
     fifaId: "349342",
@@ -1066,7 +1143,8 @@ var squads_default = {
     dateOfBirth: "1990-12-16",
     height: 170,
     socials: {
-      instagram: "azizbehich"
+      instagram: "azizbehich",
+      wikipedia: "https://pt.wikipedia.org/wiki/Aziz_Behich"
     }
   },
   "353251": {
@@ -1079,7 +1157,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/7a0a40ba-22fe-4585-8c3a-6bb981c6dfb4/AHMED-ALAAELDIN_353251",
     dateOfBirth: "1993-01-31",
-    height: 179
+    height: 179,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Ahmed_Alaaeldin"
+    }
   },
   "353790": {
     fifaId: "353790",
@@ -1093,7 +1174,8 @@ var squads_default = {
     dateOfBirth: "1992-04-10",
     height: 175,
     socials: {
-      instagram: "sadiomaneofficiel"
+      instagram: "sadiomaneofficiel",
+      wikipedia: "https://pt.wikipedia.org/wiki/Sadio_Man%C3%A9"
     }
   },
   "354861": {
@@ -1106,7 +1188,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/d73feeea-8ce1-447c-a008-c9b71e1e6295/KARIM-BOUDIAF_354861",
     dateOfBirth: "1990-09-16",
-    height: 190
+    height: 190,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Karim_Boudiaf"
+    }
   },
   "355642": {
     fifaId: "355642",
@@ -1118,7 +1203,10 @@ var squads_default = {
     club: "Rio Ave",
     pictureUrl: "https://digitalhub.fifa.com/transform/69224c23-3cb2-4d08-967c-0c318328366a/RYAN-MENDES_355642",
     dateOfBirth: "1990-01-08",
-    height: 178
+    height: 178,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Ryan_Mendes"
+    }
   },
   "355775": {
     fifaId: "355775",
@@ -1132,7 +1220,8 @@ var squads_default = {
     dateOfBirth: "1993-03-07",
     height: 189,
     socials: {
-      instagram: "jacksonirvine_"
+      instagram: "jacksonirvine_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jackson_Irvine"
     }
   },
   "356189": {
@@ -1147,7 +1236,8 @@ var squads_default = {
     dateOfBirth: "1990-06-17",
     height: 183,
     socials: {
-      instagram: "jordanhenderson"
+      instagram: "jordanhenderson",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jordan_Henderson"
     }
   },
   "356412": {
@@ -1162,7 +1252,8 @@ var squads_default = {
     dateOfBirth: "1993-03-05",
     height: 183,
     socials: {
-      instagram: "silvanwidmer"
+      instagram: "silvanwidmer",
+      wikipedia: "https://pt.wikipedia.org/wiki/Silvan_Widmer"
     }
   },
   "356532": {
@@ -1177,7 +1268,8 @@ var squads_default = {
     dateOfBirth: "1994-08-08",
     height: 182,
     socials: {
-      instagram: "chancel22"
+      instagram: "chancel22",
+      wikipedia: "https://pt.wikipedia.org/wiki/Chancel_Mbemba"
     }
   },
   "356673": {
@@ -1190,7 +1282,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/49a8906a-91a9-4527-b453-dbb1fe508c61/LUCAS-MENDES_356673",
     dateOfBirth: "1990-07-03",
-    height: 179
+    height: 179,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Lucas_Michel_Mendes"
+    }
   },
   "356731": {
     fifaId: "356731",
@@ -1204,7 +1299,8 @@ var squads_default = {
     dateOfBirth: "1991-05-05",
     height: 188,
     socials: {
-      instagram: "raulalonsojimenez9"
+      instagram: "raulalonsojimenez9",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ra%C3%BAl_Jim%C3%A9nez"
     }
   },
   "356956": {
@@ -1219,7 +1315,8 @@ var squads_default = {
     dateOfBirth: "1991-04-05",
     height: 192,
     socials: {
-      instagram: "bounouyassine_bono"
+      instagram: "bounouyassine_bono",
+      wikipedia: "https://pt.wikipedia.org/wiki/Yassine_Bounou"
     }
   },
   "358003": {
@@ -1234,7 +1331,8 @@ var squads_default = {
     dateOfBirth: "1990-08-08",
     height: 172,
     socials: {
-      instagram: "v_dary"
+      instagram: "v_dary",
+      wikipedia: "https://pt.wikipedia.org/wiki/Vladim%C3%ADr_Darida"
     }
   },
   "358106": {
@@ -1249,7 +1347,8 @@ var squads_default = {
     dateOfBirth: "1992-05-11",
     height: 199,
     socials: {
-      instagram: "thibautcourtois"
+      instagram: "thibautcourtois",
+      wikipedia: "https://pt.wikipedia.org/wiki/Thibaut_Courtois"
     }
   },
   "358112": {
@@ -1264,7 +1363,8 @@ var squads_default = {
     dateOfBirth: "1993-05-13",
     height: 190,
     socials: {
-      instagram: "romelulukaku"
+      instagram: "romelulukaku",
+      wikipedia: "https://pt.wikipedia.org/wiki/Romelu_Lukaku"
     }
   },
   "358120": {
@@ -1279,7 +1379,8 @@ var squads_default = {
     dateOfBirth: "1991-06-28",
     height: 181,
     socials: {
-      instagram: "kevindebruyne"
+      instagram: "kevindebruyne",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kevin_De_Bruyne"
     }
   },
   "358122": {
@@ -1294,7 +1395,8 @@ var squads_default = {
     dateOfBirth: "1991-09-12",
     height: 190,
     socials: {
-      instagram: "thomas12meunier"
+      instagram: "thomas12meunier",
+      wikipedia: "https://pt.wikipedia.org/wiki/Thomas_Meunier"
     }
   },
   "358241": {
@@ -1309,7 +1411,8 @@ var squads_default = {
     dateOfBirth: "1994-03-17",
     height: 178,
     socials: {
-      instagram: "marcel7sabitzer"
+      instagram: "marcel7sabitzer",
+      wikipedia: "https://pt.wikipedia.org/wiki/Marcel_Sabitzer"
     }
   },
   "359381": {
@@ -1324,7 +1427,8 @@ var squads_default = {
     dateOfBirth: "1989-02-02",
     height: 186,
     socials: {
-      instagram: "ivanperisic444"
+      instagram: "ivanperisic444",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ivan_Peri%C5%A1i%C4%87"
     }
   },
   "359634": {
@@ -1339,7 +1443,8 @@ var squads_default = {
     dateOfBirth: "1991-11-20",
     height: 188,
     socials: {
-      instagram: "ghanley__"
+      instagram: "ghanley__",
+      wikipedia: "https://en.wikipedia.org/wiki/Grant_Hanley"
     }
   },
   "360496": {
@@ -1354,7 +1459,8 @@ var squads_default = {
     dateOfBirth: "1989-06-23",
     height: 190,
     socials: {
-      instagram: "krisnordfeldt"
+      instagram: "krisnordfeldt",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kristoffer_Nordfeldt"
     }
   },
   "360498": {
@@ -1369,7 +1475,8 @@ var squads_default = {
     dateOfBirth: "1989-03-01",
     height: 196,
     socials: {
-      instagram: "mertgunok_34"
+      instagram: "mertgunok_34",
+      wikipedia: "https://en.wikipedia.org/wiki/Mert_G%C3%BCnok"
     }
   },
   "363863": {
@@ -1384,7 +1491,8 @@ var squads_default = {
     dateOfBirth: "1994-10-01",
     height: 181,
     socials: {
-      instagram: "mahmoudtrezeguet"
+      instagram: "mahmoudtrezeguet",
+      wikipedia: "https://pt.wikipedia.org/wiki/Tr%C3%A9z%C3%A9guet"
     }
   },
   "364752": {
@@ -1397,7 +1505,8 @@ var squads_default = {
     club: "Gil Vicente",
     pictureUrl: "https://digitalhub.fifa.com/transform/b8286230-b161-484e-87a9-ce5a20e6f7d1/VOZINHA_364752",
     socials: {
-      instagram: "vozinha1"
+      instagram: "vozinha1",
+      wikipedia: "https://pt.wikipedia.org/wiki/Vozinha"
     },
     instagramPostUrl: "https://www.instagram.com/reel/DZno5Zsxo6V/",
     dateOfBirth: "1986-06-03",
@@ -1415,7 +1524,8 @@ var squads_default = {
     dateOfBirth: "1994-03-22",
     height: 173,
     socials: {
-      instagram: "douglassantos06"
+      instagram: "douglassantos06",
+      wikipedia: "https://pt.wikipedia.org/wiki/Douglas_Santos"
     }
   },
   "368535": {
@@ -1430,7 +1540,8 @@ var squads_default = {
     dateOfBirth: "1993-08-12",
     height: 190,
     socials: {
-      instagram: "maximecrocombe"
+      instagram: "maximecrocombe",
+      wikipedia: "https://en.wikipedia.org/wiki/Max_Crocombe"
     }
   },
   "368649": {
@@ -1445,7 +1556,8 @@ var squads_default = {
     dateOfBirth: "1994-05-27",
     height: 173,
     socials: {
-      instagram: "jpcancelo"
+      instagram: "jpcancelo",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Cancelo"
     }
   },
   "368655": {
@@ -1460,7 +1572,8 @@ var squads_default = {
     dateOfBirth: "1995-01-20",
     height: 186,
     socials: {
-      instagram: "josemariagimenez"
+      instagram: "josemariagimenez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jos%C3%A9_Gim%C3%A9nez"
     }
   },
   "368660": {
@@ -1475,7 +1588,8 @@ var squads_default = {
     dateOfBirth: "1993-03-24",
     height: 174,
     socials: {
-      instagram: "guillermovarela4"
+      instagram: "guillermovarela4",
+      wikipedia: "https://pt.wikipedia.org/wiki/Guillermo_Varela"
     }
   },
   "368664": {
@@ -1490,7 +1604,8 @@ var squads_default = {
     dateOfBirth: "1993-03-23",
     height: 189,
     socials: {
-      instagram: "chinorochet93"
+      instagram: "chinorochet93",
+      wikipedia: "https://pt.wikipedia.org/wiki/Sergio_Rochet"
     }
   },
   "368689": {
@@ -1505,7 +1620,8 @@ var squads_default = {
     dateOfBirth: "1993-01-17",
     height: 192,
     socials: {
-      instagram: "josesaoficial"
+      instagram: "josesaoficial",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%A1"
     }
   },
   "368744": {
@@ -1518,7 +1634,10 @@ var squads_default = {
     club: "Al-Zawraa",
     pictureUrl: "https://digitalhub.fifa.com/transform/70d6d7cd-dcf4-4952-bee5-0f0b869aead7/FAHAD-TALIB_368744",
     dateOfBirth: "1994-10-21",
-    height: 192
+    height: 192,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Fahad_Talib"
+    }
   },
   "368860": {
     fifaId: "368860",
@@ -1532,7 +1651,8 @@ var squads_default = {
     dateOfBirth: "1993-07-20",
     height: 178,
     socials: {
-      instagram: "lucasdigne"
+      instagram: "lucasdigne",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lucas_Digne"
     }
   },
   "369029": {
@@ -1547,7 +1667,8 @@ var squads_default = {
     dateOfBirth: "1995-01-09",
     height: 188,
     socials: {
-      instagram: "dominiklivakovic40"
+      instagram: "dominiklivakovic40",
+      wikipedia: "https://pt.wikipedia.org/wiki/Dominik_Livakovi%C4%87"
     }
   },
   "369267": {
@@ -1562,7 +1683,8 @@ var squads_default = {
     dateOfBirth: "1993-02-10",
     height: 185,
     socials: {
-      instagram: "yasserebrahim5"
+      instagram: "yasserebrahim5",
+      wikipedia: "https://pt.wikipedia.org/wiki/Yasser_Ibrahim"
     }
   },
   "369304": {
@@ -1577,7 +1699,8 @@ var squads_default = {
     dateOfBirth: "1994-02-08",
     height: 178,
     socials: {
-      instagram: "hakancalhanoglu"
+      instagram: "hakancalhanoglu",
+      wikipedia: "https://pt.wikipedia.org/wiki/Hakan_%C3%87alhano%C4%9Flu"
     }
   },
   "369419": {
@@ -1590,7 +1713,8 @@ var squads_default = {
     club: "Bayern M\xFCnchen",
     pictureUrl: "https://digitalhub.fifa.com/transform/5ad83fe6-1139-4f92-a97c-669052eb1755/KANE-Harry_369419",
     socials: {
-      instagram: "harrykane"
+      instagram: "harrykane",
+      wikipedia: "https://pt.wikipedia.org/wiki/Harry_Kane"
     },
     dateOfBirth: "1993-07-28",
     height: 190
@@ -1607,7 +1731,8 @@ var squads_default = {
     dateOfBirth: "1994-05-28",
     height: 188,
     socials: {
-      instagram: "johnstones5"
+      instagram: "johnstones5",
+      wikipedia: "https://pt.wikipedia.org/wiki/John_Stones"
     }
   },
   "369744": {
@@ -1622,7 +1747,8 @@ var squads_default = {
     dateOfBirth: "1993-05-06",
     height: 179,
     socials: {
-      instagram: "gustavogomez462"
+      instagram: "gustavogomez462",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gustavo_G%C3%B3mez"
     }
   },
   "369749": {
@@ -1637,7 +1763,8 @@ var squads_default = {
     dateOfBirth: "1993-02-09",
     height: 184,
     socials: {
-      instagram: "junioralonso_"
+      instagram: "junioralonso_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Junior_Alonso"
     }
   },
   "369761": {
@@ -1652,7 +1779,8 @@ var squads_default = {
     dateOfBirth: "1994-02-10",
     height: 178,
     socials: {
-      instagram: "miguel_almiron"
+      instagram: "miguel_almiron",
+      wikipedia: "https://pt.wikipedia.org/wiki/Miguel_Almir%C3%B3n"
     }
   },
   "369768": {
@@ -1667,7 +1795,8 @@ var squads_default = {
     dateOfBirth: "1996-03-04",
     height: 180,
     socials: {
-      instagram: "tsanabria9"
+      instagram: "tsanabria9",
+      wikipedia: "https://pt.wikipedia.org/wiki/Antonio_Sanabria"
     }
   },
   "370171": {
@@ -1680,7 +1809,10 @@ var squads_default = {
     club: "Everton",
     pictureUrl: "https://digitalhub.fifa.com/transform/d8107e3c-87b1-452f-9f6a-a704145d2d51/SECK-Abdoulaye_370171",
     dateOfBirth: "1992-06-04",
-    height: 192
+    height: 192,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Abdoulaye_Seck_(footballer,_born_1992)"
+    }
   },
   "370986": {
     fifaId: "370986",
@@ -1694,7 +1826,8 @@ var squads_default = {
     dateOfBirth: "1992-06-12",
     height: 175,
     socials: {
-      instagram: "j.oso21"
+      instagram: "j.oso21",
+      wikipedia: "https://en.wikipedia.org/wiki/Jonathan_Osorio"
     }
   },
   "371142": {
@@ -1709,7 +1842,8 @@ var squads_default = {
     dateOfBirth: "1996-06-12",
     height: 180,
     socials: {
-      instagram: "alexrufer"
+      instagram: "alexrufer",
+      wikipedia: "https://en.wikipedia.org/wiki/Alex_Rufer"
     }
   },
   "371553": {
@@ -1724,7 +1858,8 @@ var squads_default = {
     dateOfBirth: "1996-04-05",
     height: 194,
     socials: {
-      instagram: "reda_tagnaouti"
+      instagram: "reda_tagnaouti",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ahmed_Reda_Tagnaouti"
     }
   },
   "371609": {
@@ -1739,7 +1874,8 @@ var squads_default = {
     dateOfBirth: "1996-12-19",
     height: 183,
     socials: {
-      instagram: "franckkessie"
+      instagram: "franckkessie",
+      wikipedia: "https://pt.wikipedia.org/wiki/Franck_Kessi%C3%A9"
     },
     instagramPostUrl: "https://www.instagram.com/p/DZMvpiQCP7q/"
   },
@@ -1755,7 +1891,8 @@ var squads_default = {
     dateOfBirth: "1996-10-01",
     height: 189,
     socials: {
-      instagram: "saeedezatolahi"
+      instagram: "saeedezatolahi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Saeid_Ezatolahi"
     }
   },
   "371739": {
@@ -1770,7 +1907,8 @@ var squads_default = {
     dateOfBirth: "1996-02-01",
     height: 188,
     socials: {
-      instagram: "xav_er_"
+      instagram: "xav_er_",
+      wikipedia: "https://en.wikipedia.org/wiki/Alexander_Schlager"
     }
   },
   "371956": {
@@ -1785,7 +1923,8 @@ var squads_default = {
     dateOfBirth: "1996-01-31",
     height: 189,
     socials: {
-      instagram: "leopereira4"
+      instagram: "leopereira4",
+      wikipedia: "https://pt.wikipedia.org/wiki/L%C3%A9o_Pereira"
     }
   },
   "371958": {
@@ -1800,7 +1939,8 @@ var squads_default = {
     dateOfBirth: "1997-11-25",
     height: 186,
     socials: {
-      instagram: "dcornelius13"
+      instagram: "dcornelius13",
+      wikipedia: "https://en.wikipedia.org/wiki/Derek_Cornelius"
     }
   },
   "372090": {
@@ -1815,7 +1955,8 @@ var squads_default = {
     dateOfBirth: "1996-03-24",
     height: 169,
     socials: {
-      instagram: "orbelin7pineda"
+      instagram: "orbelin7pineda",
+      wikipedia: "https://pt.wikipedia.org/wiki/Orbel%C3%ADn_Pineda"
     }
   },
   "372243": {
@@ -1830,7 +1971,8 @@ var squads_default = {
     dateOfBirth: "1996-07-11",
     height: 189,
     socials: {
-      instagram: "philipp_lienhart"
+      instagram: "philipp_lienhart",
+      wikipedia: "https://pt.wikipedia.org/wiki/Philipp_Lienhart"
     }
   },
   "372266": {
@@ -1845,7 +1987,8 @@ var squads_default = {
     dateOfBirth: "1996-08-21",
     height: 185,
     socials: {
-      instagram: "sofyanamrabat"
+      instagram: "sofyanamrabat",
+      wikipedia: "https://pt.wikipedia.org/wiki/Sofyan_Amrabat"
     }
   },
   "372294": {
@@ -1858,7 +2001,10 @@ var squads_default = {
     club: "Hannover 96",
     pictureUrl: "https://digitalhub.fifa.com/transform/69fa6a49-0e30-42d4-afe1-83d6e38c1eed/BEN-HESSEN-Sabri_372294",
     dateOfBirth: "1996-06-13",
-    height: 189
+    height: 189,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Sabri_Ben_Hessen"
+    }
   },
   "372424": {
     fifaId: "372424",
@@ -1872,7 +2018,8 @@ var squads_default = {
     dateOfBirth: "1996-09-17",
     height: 193,
     socials: {
-      instagram: "dujecar_5"
+      instagram: "dujecar_5",
+      wikipedia: "https://pt.wikipedia.org/wiki/Duje_%C4%86aleta-Car"
     }
   },
   "372436": {
@@ -1887,7 +2034,8 @@ var squads_default = {
     dateOfBirth: "1996-10-09",
     height: 183,
     socials: {
-      instagram: "ivan_sunjic34"
+      instagram: "ivan_sunjic34",
+      wikipedia: "https://en.wikipedia.org/wiki/Ivan_%C5%A0unji%C4%87"
     }
   },
   "373235": {
@@ -1902,7 +2050,8 @@ var squads_default = {
     dateOfBirth: "1990-09-10",
     height: 192,
     socials: {
-      instagram: "orjanhnyland1"
+      instagram: "orjanhnyland1",
+      wikipedia: "https://en.wikipedia.org/wiki/%C3%98rjan_Nyland"
     }
   },
   "373344": {
@@ -1915,7 +2064,10 @@ var squads_default = {
     club: "Sivasspor",
     pictureUrl: "https://digitalhub.fifa.com/transform/c8ad756c-e6dc-4458-ad13-d34d2b668c63/GARRY-RODRIGUES_373344",
     dateOfBirth: "1990-11-27",
-    height: 173
+    height: 173,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Garry_Rodrigues"
+    }
   },
   "373400": {
     fifaId: "373400",
@@ -1929,7 +2081,8 @@ var squads_default = {
     dateOfBirth: "1989-11-04",
     height: 177,
     socials: {
-      instagram: "ennervalencia1"
+      instagram: "ennervalencia1",
+      wikipedia: "https://pt.wikipedia.org/wiki/Enner_Valencia"
     }
   },
   "375600": {
@@ -1959,7 +2112,8 @@ var squads_default = {
     dateOfBirth: "1993-06-20",
     height: 183,
     socials: {
-      instagram: "seadk6"
+      instagram: "seadk6",
+      wikipedia: "https://pt.wikipedia.org/wiki/Sead_Kola%C5%A1inac"
     }
   },
   "376285": {
@@ -1974,7 +2128,8 @@ var squads_default = {
     dateOfBirth: "1991-10-22",
     height: 184,
     socials: {
-      instagram: "aissamandi23"
+      instagram: "aissamandi23",
+      wikipedia: "https://pt.wikipedia.org/wiki/A%C3%AFssa_Mandi"
     }
   },
   "379886": {
@@ -1989,7 +2144,8 @@ var squads_default = {
     dateOfBirth: "1993-08-11",
     height: 180,
     socials: {
-      instagram: "alirezajb_official"
+      instagram: "alirezajb_official",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alireza_Jahanbakhsh"
     }
   },
   "379939": {
@@ -2004,7 +2160,8 @@ var squads_default = {
     dateOfBirth: "1994-11-24",
     height: 189,
     socials: {
-      instagram: "nabilbentaleb"
+      instagram: "nabilbentaleb",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nabil_Bentaleb"
     }
   },
   "379942": {
@@ -2019,7 +2176,8 @@ var squads_default = {
     dateOfBirth: "1991-02-21",
     height: 179,
     socials: {
-      instagram: "riyadmahrez26.7"
+      instagram: "riyadmahrez26.7",
+      wikipedia: "https://pt.wikipedia.org/wiki/Riyad_Mahrez"
     }
   },
   "379953": {
@@ -2034,7 +2192,8 @@ var squads_default = {
     dateOfBirth: "1995-02-06",
     height: 189,
     socials: {
-      instagram: "leon_goretzka"
+      instagram: "leon_goretzka",
+      wikipedia: "https://pt.wikipedia.org/wiki/Leon_Goretzka"
     }
   },
   "379955": {
@@ -2049,7 +2208,8 @@ var squads_default = {
     dateOfBirth: "1993-03-03",
     height: 190,
     socials: {
-      instagram: "toniruediger"
+      instagram: "toniruediger",
+      wikipedia: "https://pt.wikipedia.org/wiki/Antonio_R%C3%BCdiger"
     }
   },
   "380005": {
@@ -2064,7 +2224,8 @@ var squads_default = {
     dateOfBirth: "1995-02-09",
     height: 188,
     socials: {
-      instagram: "pasalicmario"
+      instagram: "pasalicmario",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mario_Pa%C5%A1ali%C4%87"
     }
   },
   "380007": {
@@ -2079,7 +2240,8 @@ var squads_default = {
     dateOfBirth: "1992-09-21",
     height: 195,
     socials: {
-      instagram: "alirezabeyranvand.official"
+      instagram: "alirezabeyranvand.official",
+      wikipedia: "https://en.wikipedia.org/wiki/Alireza_Beiranvand"
     }
   },
   "382312": {
@@ -2094,7 +2256,8 @@ var squads_default = {
     dateOfBirth: "1995-10-21",
     height: 194,
     socials: {
-      instagram: "cburgess95"
+      instagram: "cburgess95",
+      wikipedia: "https://en.wikipedia.org/wiki/Cameron_Burgess"
     }
   },
   "382739": {
@@ -2109,7 +2272,8 @@ var squads_default = {
     dateOfBirth: "1995-01-30",
     height: 183,
     socials: {
-      instagram: "marcosllorente"
+      instagram: "marcosllorente",
+      wikipedia: "https://pt.wikipedia.org/wiki/Marcos_Llorente"
     }
   },
   "384751": {
@@ -2124,7 +2288,8 @@ var squads_default = {
     dateOfBirth: "1996-11-29",
     height: 179,
     socials: {
-      instagram: "goncaloguedes17"
+      instagram: "goncaloguedes17",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gon%C3%A7alo_Guedes"
     }
   },
   "384752": {
@@ -2139,7 +2304,8 @@ var squads_default = {
     dateOfBirth: "1997-05-14",
     height: 187,
     socials: {
-      instagram: "rubendias"
+      instagram: "rubendias",
+      wikipedia: "https://pt.wikipedia.org/wiki/R%C3%BAben_Dias"
     }
   },
   "384797": {
@@ -2154,7 +2320,8 @@ var squads_default = {
     dateOfBirth: "1990-03-21",
     height: 184,
     socials: {
-      instagram: "raminrezaeian"
+      instagram: "raminrezaeian",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ramin_Rezaeian"
     }
   },
   "384850": {
@@ -2169,7 +2336,8 @@ var squads_default = {
     dateOfBirth: "1993-07-25",
     height: 175,
     socials: {
-      instagram: "rajaei.ayed"
+      instagram: "rajaei.ayed",
+      wikipedia: "https://en.wikipedia.org/wiki/Rajaei_Ayed"
     }
   },
   "385067": {
@@ -2184,7 +2352,8 @@ var squads_default = {
     dateOfBirth: "1990-07-09",
     height: 185,
     socials: {
-      instagram: "khoukhi1616"
+      instagram: "khoukhi1616",
+      wikipedia: "https://pt.wikipedia.org/wiki/Boualem_Khoukhi"
     }
   },
   "385070": {
@@ -2197,7 +2366,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/8a9260d2-027a-4716-af4b-7e5f2983e652/MOHAMMED-MUNTARI_385070",
     dateOfBirth: "1993-12-20",
-    height: 192
+    height: 192,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Mohammed_Muntari"
+    }
   },
   "385248": {
     fifaId: "385248",
@@ -2211,7 +2383,8 @@ var squads_default = {
     dateOfBirth: "1995-08-07",
     height: 186,
     socials: {
-      instagram: "floriangrillitsch"
+      instagram: "floriangrillitsch",
+      wikipedia: "https://pt.wikipedia.org/wiki/Florian_Grillitsch"
     }
   },
   "385259": {
@@ -2226,7 +2399,8 @@ var squads_default = {
     dateOfBirth: "1997-05-27",
     height: 180,
     socials: {
-      instagram: "konradlaimer"
+      instagram: "konradlaimer",
+      wikipedia: "https://pt.wikipedia.org/wiki/Konrad_Laimer"
     }
   },
   "385306": {
@@ -2241,7 +2415,8 @@ var squads_default = {
     dateOfBirth: "1996-05-11",
     height: 166,
     socials: {
-      instagram: "andrescubas08"
+      instagram: "andrescubas08",
+      wikipedia: "https://pt.wikipedia.org/wiki/Adri%C3%A1n_Cubas"
     }
   },
   "385531": {
@@ -2256,7 +2431,8 @@ var squads_default = {
     dateOfBirth: "1997-09-28",
     height: 174,
     socials: {
-      instagram: "xav_er_"
+      instagram: "xav_er_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Xaver_Schlager"
     }
   },
   "385994": {
@@ -2271,7 +2447,8 @@ var squads_default = {
     dateOfBirth: "1995-06-03",
     height: 173,
     socials: {
-      instagram: "cristianroldan_"
+      instagram: "cristianroldan_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Cristian_Roldan"
     }
   },
   "386339": {
@@ -2284,7 +2461,10 @@ var squads_default = {
     club: "San Diego FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/7f04e2d8-1f0b-491e-8551-5a856979bc97/MARTINEZ-Guillermo_386339",
     dateOfBirth: "1995-03-15",
-    height: 191
+    height: 191,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Guillermo_Mart%C3%ADnez_(footballer)"
+    }
   },
   "386347": {
     fifaId: "386347",
@@ -2298,7 +2478,8 @@ var squads_default = {
     dateOfBirth: "1996-11-18",
     height: 176,
     socials: {
-      instagram: "akramafif"
+      instagram: "akramafif",
+      wikipedia: "https://pt.wikipedia.org/wiki/Akram_Afif"
     }
   },
   "386348": {
@@ -2313,7 +2494,8 @@ var squads_default = {
     dateOfBirth: "1996-10-22",
     height: 168,
     socials: {
-      instagram: "madibo_96"
+      instagram: "madibo_96",
+      wikipedia: "https://pt.wikipedia.org/wiki/Assim_Madibo"
     }
   },
   "386366": {
@@ -2328,7 +2510,8 @@ var squads_default = {
     dateOfBirth: "1996-08-19",
     height: 180,
     socials: {
-      instagram: "ali.almoez"
+      instagram: "ali.almoez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Almoez_Ali"
     }
   },
   "386387": {
@@ -2355,7 +2538,8 @@ var squads_default = {
     dateOfBirth: "1995-02-08",
     height: 177,
     socials: {
-      instagram: "joshua.kimmich"
+      instagram: "joshua.kimmich",
+      wikipedia: "https://pt.wikipedia.org/wiki/Joshua_Kimmich"
     }
   },
   "386458": {
@@ -2370,7 +2554,8 @@ var squads_default = {
     dateOfBirth: "1995-01-11",
     height: 165,
     socials: {
-      instagram: "kaku_romero17"
+      instagram: "kaku_romero17",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alejandro_Romero"
     }
   },
   "386538": {
@@ -2385,7 +2570,8 @@ var squads_default = {
     dateOfBirth: "1997-06-25",
     height: 187,
     socials: {
-      instagram: "rodrigo_bentancur"
+      instagram: "rodrigo_bentancur",
+      wikipedia: "https://pt.wikipedia.org/wiki/Rodrigo_Bentancur"
     }
   },
   "388475": {
@@ -2400,7 +2586,8 @@ var squads_default = {
     dateOfBirth: "1992-07-18",
     height: 187,
     socials: {
-      instagram: "mehditaremiofficial9"
+      instagram: "mehditaremiofficial9",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mehdi_Taremi"
     }
   },
   "389437": {
@@ -2430,7 +2617,8 @@ var squads_default = {
     dateOfBirth: "1998-10-05",
     height: 177,
     socials: {
-      instagram: "exepalaciosok"
+      instagram: "exepalaciosok",
+      wikipedia: "https://pt.wikipedia.org/wiki/Exequiel_Palacios"
     }
   },
   "389740": {
@@ -2445,7 +2633,8 @@ var squads_default = {
     dateOfBirth: "1998-01-24",
     height: 192,
     socials: {
-      instagram: "martin.erlic"
+      instagram: "martin.erlic",
+      wikipedia: "https://en.wikipedia.org/wiki/Martin_Erli%C4%87"
     }
   },
   "389753": {
@@ -2460,7 +2649,8 @@ var squads_default = {
     dateOfBirth: "1998-03-12",
     height: 183,
     socials: {
-      instagram: "moronikola"
+      instagram: "moronikola",
+      wikipedia: "https://en.wikipedia.org/wiki/Nikola_Moro"
     }
   },
   "389754": {
@@ -2475,7 +2665,8 @@ var squads_default = {
     dateOfBirth: "1998-03-04",
     height: 190,
     socials: {
-      instagram: "petarmusa"
+      instagram: "petarmusa",
+      wikipedia: "https://pt.wikipedia.org/wiki/Petar_Musa"
     }
   },
   "389782": {
@@ -2490,7 +2681,8 @@ var squads_default = {
     dateOfBirth: "1998-01-21",
     height: 175,
     socials: {
-      instagram: "pervisestupinan_oficial"
+      instagram: "pervisestupinan_oficial",
+      wikipedia: "https://pt.wikipedia.org/wiki/Pervis_Estupi%C3%B1%C3%A1n"
     }
   },
   "389784": {
@@ -2503,7 +2695,10 @@ var squads_default = {
     club: "Atletico Mineiro",
     pictureUrl: "https://digitalhub.fifa.com/transform/59ffe3d1-0963-44f5-861e-9eb6590d8fce/FRANCO-Alan_389784",
     dateOfBirth: "1998-08-21",
-    height: 175
+    height: 175,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Alan_Franco_Palma"
+    }
   },
   "389867": {
     fifaId: "389867",
@@ -2515,7 +2710,8 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/66f6087d-9563-4644-8f10-5614ef6e1e51/MBAPPE-Kylian_389867",
     socials: {
-      instagram: "k.mbappe"
+      instagram: "k.mbappe",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kylian_Mbapp%C3%A9"
     },
     dateOfBirth: "1998-12-20",
     height: 180
@@ -2532,7 +2728,8 @@ var squads_default = {
     dateOfBirth: "1998-10-27",
     height: 186,
     socials: {
-      instagram: "upamecano"
+      instagram: "upamecano",
+      wikipedia: "https://pt.wikipedia.org/wiki/Dayot_Upamecano"
     }
   },
   "389879": {
@@ -2547,7 +2744,8 @@ var squads_default = {
     dateOfBirth: "1998-05-13",
     height: 183,
     socials: {
-      instagram: "luca"
+      instagram: "luca",
+      wikipedia: "https://en.wikipedia.org/wiki/Luca_Zidane"
     }
   },
   "389886": {
@@ -2562,7 +2760,8 @@ var squads_default = {
     dateOfBirth: "1998-05-22",
     height: 182,
     socials: {
-      instagram: "dz.burnic"
+      instagram: "dz.burnic",
+      wikipedia: "https://pt.wikipedia.org/wiki/D%C5%BEenis_Burni%C4%87"
     }
   },
   "389907": {
@@ -2577,7 +2776,8 @@ var squads_default = {
     dateOfBirth: "1998-01-11",
     height: 182,
     socials: {
-      instagram: "salihoezcan"
+      instagram: "salihoezcan",
+      wikipedia: "https://pt.wikipedia.org/wiki/Salih_%C3%96zcan"
     }
   },
   "390181": {
@@ -2590,7 +2790,10 @@ var squads_default = {
     club: "Viking FK",
     pictureUrl: "https://digitalhub.fifa.com/transform/37f084e5-faf4-4447-bdf1-c7ac8b0fa6e8/BELL-Joe_390181",
     dateOfBirth: "1999-04-27",
-    height: 182
+    height: 182,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Joe_Bell_(footballer)"
+    }
   },
   "390196": {
     fifaId: "390196",
@@ -2604,7 +2807,8 @@ var squads_default = {
     dateOfBirth: "1999-04-30",
     height: 180,
     socials: {
-      instagram: "callum_mccowatt"
+      instagram: "callum_mccowatt",
+      wikipedia: "https://en.wikipedia.org/wiki/Callum_McCowatt"
     }
   },
   "390209": {
@@ -2619,7 +2823,8 @@ var squads_default = {
     dateOfBirth: "1999-02-20",
     height: 180,
     socials: {
-      instagram: "sarpreet.singh11"
+      instagram: "sarpreet.singh11",
+      wikipedia: "https://en.wikipedia.org/wiki/Sarpreet_Singh"
     }
   },
   "390218": {
@@ -2634,7 +2839,8 @@ var squads_default = {
     dateOfBirth: "1999-01-16",
     height: 196,
     socials: {
-      instagram: "michaelwoud32"
+      instagram: "michaelwoud32",
+      wikipedia: "https://en.wikipedia.org/wiki/Michael_Woud"
     }
   },
   "390238": {
@@ -2649,7 +2855,8 @@ var squads_default = {
     dateOfBirth: "1999-02-14",
     height: 175,
     socials: {
-      instagram: "tyler.adams"
+      instagram: "tyler.adams",
+      wikipedia: "https://pt.wikipedia.org/wiki/Tyler_Adams"
     }
   },
   "390259": {
@@ -2664,7 +2871,8 @@ var squads_default = {
     dateOfBirth: "1998-08-28",
     height: 180,
     socials: {
-      instagram: "west.mckennie"
+      instagram: "west.mckennie",
+      wikipedia: "https://pt.wikipedia.org/wiki/Weston_McKennie"
     }
   },
   "390267": {
@@ -2679,7 +2887,8 @@ var squads_default = {
     dateOfBirth: "1998-09-18",
     height: 177,
     socials: {
-      instagram: "cmpulisic"
+      instagram: "cmpulisic",
+      wikipedia: "https://pt.wikipedia.org/wiki/Christian_Pulisic"
     }
   },
   "390272": {
@@ -2694,7 +2903,8 @@ var squads_default = {
     dateOfBirth: "1998-08-12",
     height: 190,
     socials: {
-      instagram: "austontrusty3"
+      instagram: "austontrusty3",
+      wikipedia: "https://en.wikipedia.org/wiki/Auston_Trusty"
     }
   },
   "390276": {
@@ -2709,7 +2919,8 @@ var squads_default = {
     dateOfBirth: "1998-03-27",
     height: 191,
     socials: {
-      instagram: "hajiwright"
+      instagram: "hajiwright",
+      wikipedia: "https://pt.wikipedia.org/wiki/Haji_Wright"
     }
   },
   "390278": {
@@ -2724,7 +2935,8 @@ var squads_default = {
     dateOfBirth: "1998-02-07",
     height: 167,
     socials: {
-      instagram: "alex_zendejas"
+      instagram: "alex_zendejas",
+      wikipedia: "https://en.wikipedia.org/wiki/Alejandro_Zendejas"
     }
   },
   "390475": {
@@ -2739,7 +2951,8 @@ var squads_default = {
     dateOfBirth: "1999-03-03",
     height: 197,
     socials: {
-      instagram: "yaya_sithole_42"
+      instagram: "yaya_sithole_42",
+      wikipedia: "https://en.wikipedia.org/wiki/Sphephelo_Sithole"
     }
   },
   "390525": {
@@ -2752,7 +2965,8 @@ var squads_default = {
     club: "Jeonbuk Hyundai",
     pictureUrl: "https://digitalhub.fifa.com/transform/daa227b2-f837-4fc4-bdc3-b5436c92b2e6/LEE-Jaesung_390525",
     socials: {
-      instagram: "jaesung17"
+      instagram: "jaesung17",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lee_Jae-sung"
     },
     dateOfBirth: "1992-08-10",
     height: 180
@@ -2784,7 +2998,8 @@ var squads_default = {
     dateOfBirth: "1994-09-10",
     height: 185,
     socials: {
-      instagram: "mahditorabi.m"
+      instagram: "mahditorabi.m",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mehdi_Torabi"
     }
   },
   "390537": {
@@ -2799,7 +3014,8 @@ var squads_default = {
     dateOfBirth: "1993-09-29",
     height: 175,
     socials: {
-      instagram: "miladmohammadi.official"
+      instagram: "miladmohammadi.official",
+      wikipedia: "https://pt.wikipedia.org/wiki/Milad_Mohammadi"
     }
   },
   "390541": {
@@ -2814,7 +3030,8 @@ var squads_default = {
     dateOfBirth: "1991-07-15",
     height: 185,
     socials: {
-      instagram: "shogo_taniguchi_5"
+      instagram: "shogo_taniguchi_5",
+      wikipedia: "https://pt.wikipedia.org/wiki/Sh%C5%8Dgo_Taniguchi"
     }
   },
   "390650": {
@@ -2846,7 +3063,8 @@ var squads_default = {
     dateOfBirth: "1995-04-17",
     height: 188,
     socials: {
-      instagram: "cylelarin"
+      instagram: "cylelarin",
+      wikipedia: "https://pt.wikipedia.org/wiki/Cyle_Larin"
     }
   },
   "391297": {
@@ -2861,7 +3079,8 @@ var squads_default = {
     dateOfBirth: "1995-09-20",
     height: 171,
     socials: {
-      instagram: "grimaldo35"
+      instagram: "grimaldo35",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alejandro_Grimaldo"
     }
   },
   "391646": {
@@ -2876,7 +3095,8 @@ var squads_default = {
     dateOfBirth: "1998-06-16",
     height: 172,
     socials: {
-      instagram: "doanritsu"
+      instagram: "doanritsu",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ritsu_D%C5%8Dan"
     }
   },
   "393480": {
@@ -2889,7 +3109,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/b2483096-041c-489b-a1c5-6d930f380909/EMBOLO-Breel_393480",
     socials: {
-      instagram: "breel.embolo"
+      instagram: "breel.embolo",
+      wikipedia: "https://pt.wikipedia.org/wiki/Breel_Embolo"
     },
     dateOfBirth: "1997-02-14",
     height: 184
@@ -2906,7 +3127,8 @@ var squads_default = {
     dateOfBirth: "1993-10-23",
     height: 188,
     socials: {
-      instagram: "fabinho"
+      instagram: "fabinho",
+      wikipedia: "https://pt.wikipedia.org/wiki/Fabinho_(futebolista,_1993)"
     }
   },
   "394824": {
@@ -2921,7 +3143,8 @@ var squads_default = {
     dateOfBirth: "1992-05-20",
     height: 189,
     socials: {
-      instagram: "gerorulli"
+      instagram: "gerorulli",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ger%C3%B3nimo_Rulli"
     }
   },
   "394829": {
@@ -2936,7 +3159,8 @@ var squads_default = {
     dateOfBirth: "1991-08-23",
     height: 188,
     socials: {
-      instagram: "fbalbuenito"
+      instagram: "fbalbuenito",
+      wikipedia: "https://pt.wikipedia.org/wiki/Fabi%C3%A1n_Balbuena"
     }
   },
   "394993": {
@@ -2951,7 +3175,8 @@ var squads_default = {
     dateOfBirth: "1994-04-07",
     height: 181,
     socials: {
-      instagram: "nazon.official"
+      instagram: "nazon.official",
+      wikipedia: "https://en.wikipedia.org/wiki/Duckens_Nazon"
     }
   },
   "395050": {
@@ -2966,7 +3191,8 @@ var squads_default = {
     dateOfBirth: "1995-07-22",
     height: 171,
     socials: {
-      instagram: "modiba_16"
+      instagram: "modiba_16",
+      wikipedia: "https://pt.wikipedia.org/wiki/Aubrey_Modiba"
     }
   },
   "395059": {
@@ -2981,7 +3207,8 @@ var squads_default = {
     dateOfBirth: "1994-04-02",
     height: 181,
     socials: {
-      instagram: "ricardogoss13"
+      instagram: "ricardogoss13",
+      wikipedia: "https://en.wikipedia.org/wiki/Ricardo_Goss"
     }
   },
   "395083": {
@@ -2994,7 +3221,8 @@ var squads_default = {
     club: "Wolverhampton",
     pictureUrl: "https://digitalhub.fifa.com/transform/8460686d-d2c7-4d3e-98a5-f797400470ed/HWANG-Heechan_395083",
     socials: {
-      instagram: "hwangheechan"
+      instagram: "hwangheechan",
+      wikipedia: "https://pt.wikipedia.org/wiki/Hwang_Hee-chan"
     },
     dateOfBirth: "1996-01-26",
     height: 177
@@ -3011,7 +3239,8 @@ var squads_default = {
     dateOfBirth: "1996-09-20",
     height: 177,
     socials: {
-      instagram: "inbeom_hwang6"
+      instagram: "inbeom_hwang6",
+      wikipedia: "https://pt.wikipedia.org/wiki/Hwang_In-beom"
     }
   },
   "395088": {
@@ -3024,7 +3253,8 @@ var squads_default = {
     club: "Bayern Munique",
     pictureUrl: "https://digitalhub.fifa.com/transform/743f3b76-7c6e-484c-8f62-4f4e22c082ae/KIM-Minjae_395088",
     socials: {
-      instagram: "kimmin.jae"
+      instagram: "kimmin.jae",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kim_Min-jae_(futebolista)"
     },
     dateOfBirth: "1996-11-15",
     height: 190
@@ -3041,7 +3271,8 @@ var squads_default = {
     dateOfBirth: "1995-04-16",
     height: 187,
     socials: {
-      instagram: "rbens.official"
+      instagram: "rbens.official",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ramy_Bensebaini"
     }
   },
   "395186": {
@@ -3054,7 +3285,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/388e5207-980c-407a-828c-270fbd4fdff6/AYMEN-HUSSEIN_395186",
     dateOfBirth: "1996-03-22",
-    height: 190
+    height: 190,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Aymen_Hussein"
+    }
   },
   "395205": {
     fifaId: "395205",
@@ -3068,7 +3302,8 @@ var squads_default = {
     dateOfBirth: "1994-08-10",
     height: 173,
     socials: {
-      instagram: "bernardocarvalhosilva"
+      instagram: "bernardocarvalhosilva",
+      wikipedia: "https://pt.wikipedia.org/wiki/Bernardo_Silva"
     }
   },
   "395206": {
@@ -3083,7 +3318,8 @@ var squads_default = {
     dateOfBirth: "1994-09-08",
     height: 183,
     socials: {
-      instagram: "brunofernandes8"
+      instagram: "brunofernandes8",
+      wikipedia: "https://pt.wikipedia.org/wiki/Bruno_Fernandes"
     }
   },
   "395212": {
@@ -3098,7 +3334,8 @@ var squads_default = {
     dateOfBirth: "1993-11-16",
     height: 179,
     socials: {
-      instagram: "nelsonsemedo50"
+      instagram: "nelsonsemedo50",
+      wikipedia: "https://pt.wikipedia.org/wiki/N%C3%A9lson_Semedo"
     }
   },
   "395216": {
@@ -3113,7 +3350,8 @@ var squads_default = {
     dateOfBirth: "1997-03-13",
     height: 183,
     socials: {
-      instagram: "rubendsneves"
+      instagram: "rubendsneves",
+      wikipedia: "https://pt.wikipedia.org/wiki/R%C3%BAben_Neves"
     }
   },
   "395283": {
@@ -3128,7 +3366,8 @@ var squads_default = {
     dateOfBirth: "1994-07-17",
     height: 187,
     socials: {
-      instagram: "victorlindelof"
+      instagram: "victorlindelof",
+      wikipedia: "https://pt.wikipedia.org/wiki/Victor_Lindel%C3%B6f"
     }
   },
   "395286": {
@@ -3143,7 +3382,8 @@ var squads_default = {
     dateOfBirth: "1993-09-30",
     height: 180,
     socials: {
-      instagram: "kenzema12"
+      instagram: "kenzema12",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ken_Sema"
     }
   },
   "395321": {
@@ -3158,7 +3398,8 @@ var squads_default = {
     dateOfBirth: "1993-03-09",
     height: 177,
     socials: {
-      instagram: "1409junya"
+      instagram: "1409junya",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jun%27ya_It%C5%8D"
     }
   },
   "395414": {
@@ -3173,7 +3414,8 @@ var squads_default = {
     dateOfBirth: "1996-04-09",
     height: 177,
     socials: {
-      instagram: "locelsogiovani"
+      instagram: "locelsogiovani",
+      wikipedia: "https://pt.wikipedia.org/wiki/Giovani_Lo_Celso"
     }
   },
   "395427": {
@@ -3186,7 +3428,8 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/2a1d5731-391b-4644-a926-1bc899b86c81/EDERSON_395427",
     socials: {
-      instagram: "ederson93"
+      instagram: "ederson93",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ederson_Moraes"
     },
     dateOfBirth: "1993-08-17",
     height: 188
@@ -3203,7 +3446,8 @@ var squads_default = {
     dateOfBirth: "1996-10-27",
     height: 178,
     socials: {
-      instagram: "nadiemamiri10"
+      instagram: "nadiemamiri10",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nadiem_Amiri"
     }
   },
   "395516": {
@@ -3218,7 +3462,8 @@ var squads_default = {
     dateOfBirth: "1997-02-24",
     height: 191,
     socials: {
-      instagram: "cjasib"
+      instagram: "cjasib",
+      wikipedia: "https://pt.wikipedia.org/wiki/C%C3%A9sar_Montes"
     }
   },
   "395755": {
@@ -3231,7 +3476,10 @@ var squads_default = {
     club: "Lorient",
     pictureUrl: "https://digitalhub.fifa.com/transform/20f762ed-3248-4b2d-8a4c-5f1e3891291f/EL-KAJOUI-Munir_395755",
     dateOfBirth: "1989-05-10",
-    height: 190
+    height: 190,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Munir_Mohand_Mohamedi"
+    }
   },
   "395760": {
     fifaId: "395760",
@@ -3243,7 +3491,10 @@ var squads_default = {
     club: "West Ham",
     pictureUrl: "https://digitalhub.fifa.com/transform/d46e989c-a503-485f-b507-57705654cd55/MARWANE-SAADANE_395760",
     dateOfBirth: "1992-01-17",
-    height: 185
+    height: 185,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Marwane_Sa%C3%A2dane"
+    }
   },
   "395860": {
     fifaId: "395860",
@@ -3269,7 +3520,8 @@ var squads_default = {
     dateOfBirth: "1989-08-03",
     height: 178,
     socials: {
-      instagram: "mshishi18"
+      instagram: "mshishi18",
+      wikipedia: "https://pt.wikipedia.org/wiki/Themba_Zwane"
     }
   },
   "395986": {
@@ -3284,7 +3536,8 @@ var squads_default = {
     dateOfBirth: "1992-01-21",
     height: 184,
     socials: {
-      instagram: "ronwen30"
+      instagram: "ronwen30",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ronwen_Williams"
     }
   },
   "396158": {
@@ -3297,7 +3550,10 @@ var squads_default = {
     club: "Al-Shorta",
     pictureUrl: "https://digitalhub.fifa.com/transform/0e08174c-879f-4de0-9709-8fdc59357236/REBIN-GHAREEB_396158",
     dateOfBirth: "1992-04-12",
-    height: 193
+    height: 193,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Rebin_Sulaka"
+    }
   },
   "396315": {
     fifaId: "396315",
@@ -3309,7 +3565,8 @@ var squads_default = {
     club: "Palmeiras",
     pictureUrl: "https://digitalhub.fifa.com/transform/c66a5712-81fa-4527-9e5a-8221f11b3274/WEVERTON_396315",
     socials: {
-      instagram: "weverton010"
+      instagram: "weverton010",
+      wikipedia: "https://pt.wikipedia.org/wiki/Weverton"
     },
     dateOfBirth: "1987-12-13",
     height: 189
@@ -3354,7 +3611,10 @@ var squads_default = {
     club: "Suwon Bluewings",
     pictureUrl: "https://digitalhub.fifa.com/transform/15bfe432-3e69-4900-b736-50ee6fd20cb5/JO-Hyeonwoo_397753",
     dateOfBirth: "1991-09-25",
-    height: 189
+    height: 189,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Jo_Hyeon-woo"
+    }
   },
   "397775": {
     fifaId: "397775",
@@ -3366,7 +3626,10 @@ var squads_default = {
     club: "Angers",
     pictureUrl: "https://digitalhub.fifa.com/transform/924dd9c4-2333-4662-be95-df5d3d551368/ARCUS-Carlens_397775",
     dateOfBirth: "1996-06-28",
-    height: 180
+    height: 180,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Carlens_Arcus"
+    }
   },
   "397786": {
     fifaId: "397786",
@@ -3380,7 +3643,8 @@ var squads_default = {
     dateOfBirth: "1991-07-08",
     height: 195,
     socials: {
-      instagram: "virgilvandijk"
+      instagram: "virgilvandijk",
+      wikipedia: "https://pt.wikipedia.org/wiki/Virgil_van_Dijk"
     }
   },
   "397894": {
@@ -3395,7 +3659,8 @@ var squads_default = {
     dateOfBirth: "1993-01-08",
     height: 188,
     socials: {
-      instagram: "yazeed.abulaila"
+      instagram: "yazeed.abulaila",
+      wikipedia: "https://en.wikipedia.org/wiki/Yazeed_Abulaila"
     }
   },
   "398509": {
@@ -3410,7 +3675,8 @@ var squads_default = {
     dateOfBirth: "1996-09-30",
     height: 189,
     socials: {
-      instagram: "nicoelvedi30"
+      instagram: "nicoelvedi30",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nico_Elvedi"
     }
   },
   "398569": {
@@ -3425,7 +3691,8 @@ var squads_default = {
     dateOfBirth: "1996-10-12",
     height: 184,
     socials: {
-      instagram: "riechedly"
+      instagram: "riechedly",
+      wikipedia: "https://pt.wikipedia.org/wiki/Riechedly_Bazoer"
     }
   },
   "398588": {
@@ -3440,7 +3707,8 @@ var squads_default = {
     dateOfBirth: "1995-12-05",
     height: 196,
     socials: {
-      instagram: "asorloth"
+      instagram: "asorloth",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alexander_S%C3%B8rloth"
     }
   },
   "398680": {
@@ -3455,7 +3723,8 @@ var squads_default = {
     dateOfBirth: "1997-05-15",
     height: 179,
     socials: {
-      instagram: "o.dembele7"
+      instagram: "o.dembele7",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ousmane_Demb%C3%A9l%C3%A9"
     }
   },
   "398681": {
@@ -3470,7 +3739,8 @@ var squads_default = {
     dateOfBirth: "1991-03-29",
     height: 171,
     socials: {
-      instagram: "nglkante"
+      instagram: "nglkante",
+      wikipedia: "https://pt.wikipedia.org/wiki/N%27Golo_Kant%C3%A9"
     }
   },
   "400511": {
@@ -3485,7 +3755,8 @@ var squads_default = {
     dateOfBirth: "1997-01-27",
     height: 188,
     socials: {
-      instagram: "koitakura"
+      instagram: "koitakura",
+      wikipedia: "https://pt.wikipedia.org/wiki/K%C5%8D_Itakura"
     }
   },
   "400514": {
@@ -3500,7 +3771,8 @@ var squads_default = {
     dateOfBirth: "1998-09-10",
     height: 180,
     socials: {
-      instagram: "tnk_0910"
+      instagram: "tnk_0910",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ao_Tanaka"
     }
   },
   "400634": {
@@ -3515,7 +3787,8 @@ var squads_default = {
     dateOfBirth: "1997-10-24",
     height: 180,
     socials: {
-      instagram: "edsonnalvarez"
+      instagram: "edsonnalvarez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Edson_%C3%81lvarez"
     }
   },
   "400716": {
@@ -3530,7 +3803,8 @@ var squads_default = {
     dateOfBirth: "1998-12-17",
     height: 178,
     socials: {
-      instagram: "odegaard.98"
+      instagram: "odegaard.98",
+      wikipedia: "https://pt.wikipedia.org/wiki/Martin_%C3%98degaard"
     }
   },
   "400721": {
@@ -3545,7 +3819,8 @@ var squads_default = {
     dateOfBirth: "1998-11-04",
     height: 180,
     socials: {
-      instagram: "achrafhakimi"
+      instagram: "achrafhakimi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Achraf_Hakimi"
     }
   },
   "401023": {
@@ -3558,7 +3833,10 @@ var squads_default = {
     club: "RKC Waalwijk",
     pictureUrl: "https://digitalhub.fifa.com/transform/2069bb09-aaf0-41dc-81e4-a8f4df33b4e5/BRENET-Joshua_401023",
     dateOfBirth: "1994-03-20",
-    height: 181
+    height: 181,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Joshua_Brenet"
+    }
   },
   "401131": {
     fifaId: "401131",
@@ -3572,7 +3850,8 @@ var squads_default = {
     dateOfBirth: "1994-04-18",
     height: 193,
     socials: {
-      instagram: "mgregerl"
+      instagram: "mgregerl",
+      wikipedia: "https://pt.wikipedia.org/wiki/Michael_Gregoritsch"
     }
   },
   "401167": {
@@ -3587,7 +3866,8 @@ var squads_default = {
     dateOfBirth: "1996-05-23",
     height: 185,
     socials: {
-      instagram: "syncaglar"
+      instagram: "syncaglar",
+      wikipedia: "https://pt.wikipedia.org/wiki/%C3%87a%C4%9Flar_S%C3%B6y%C3%BCnc%C3%BC"
     }
   },
   "401334": {
@@ -3602,7 +3882,8 @@ var squads_default = {
     dateOfBirth: "1994-10-18",
     height: 178,
     socials: {
-      instagram: "johnmcginn7"
+      instagram: "johnmcginn7",
+      wikipedia: "https://pt.wikipedia.org/wiki/John_McGinn"
     }
   },
   "401339": {
@@ -3617,7 +3898,8 @@ var squads_default = {
     dateOfBirth: "1994-03-11",
     height: 178,
     socials: {
-      instagram: "andyrobertson94"
+      instagram: "andyrobertson94",
+      wikipedia: "https://pt.wikipedia.org/wiki/Andy_Robertson"
     }
   },
   "401378": {
@@ -3632,7 +3914,8 @@ var squads_default = {
     dateOfBirth: "1996-02-11",
     height: 195,
     socials: {
-      instagram: "jonathantah"
+      instagram: "jonathantah",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jonathan_Tah"
     }
   },
   "401444": {
@@ -3647,7 +3930,8 @@ var squads_default = {
     dateOfBirth: "1997-05-07",
     height: 176,
     socials: {
-      instagram: "youritielemans"
+      instagram: "youritielemans",
+      wikipedia: "https://pt.wikipedia.org/wiki/Youri_Tielemans"
     }
   },
   "401448": {
@@ -3662,7 +3946,8 @@ var squads_default = {
     dateOfBirth: "1996-11-20",
     height: 189,
     socials: {
-      instagram: "deniszakaria"
+      instagram: "deniszakaria",
+      wikipedia: "https://pt.wikipedia.org/wiki/Denis_Zakaria"
     }
   },
   "401470": {
@@ -3677,7 +3962,8 @@ var squads_default = {
     dateOfBirth: "1997-10-31",
     height: 180,
     socials: {
-      instagram: "marcusrashford"
+      instagram: "marcusrashford",
+      wikipedia: "https://pt.wikipedia.org/wiki/Marcus_Rashford"
     }
   },
   "401481": {
@@ -3692,7 +3978,8 @@ var squads_default = {
     dateOfBirth: "1996-01-24",
     height: 191,
     socials: {
-      instagram: "p_schicky"
+      instagram: "p_schicky",
+      wikipedia: "https://pt.wikipedia.org/wiki/Patrik_Schick"
     }
   },
   "401712": {
@@ -3707,7 +3994,8 @@ var squads_default = {
     dateOfBirth: "1997-06-05",
     height: 180,
     socials: {
-      instagram: "kierantierney"
+      instagram: "kierantierney",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kieran_Tierney"
     }
   },
   "401889": {
@@ -3722,7 +4010,8 @@ var squads_default = {
     dateOfBirth: "1998-02-25",
     height: 185,
     socials: {
-      instagram: "ismaila_sarr_18"
+      instagram: "ismaila_sarr_18",
+      wikipedia: "https://pt.wikipedia.org/wiki/Isma%C3%AFla_Sarr"
     }
   },
   "401893": {
@@ -3735,7 +4024,10 @@ var squads_default = {
     club: "Racing Ferrol",
     pictureUrl: "https://digitalhub.fifa.com/transform/a9555196-ece6-4f39-8c07-103e12f4c900/NUNO-DA-COSTA_401893",
     dateOfBirth: "1991-02-10",
-    height: 182
+    height: 182,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Nuno_da_Costa"
+    }
   },
   "401894": {
     fifaId: "401894",
@@ -3749,7 +4041,8 @@ var squads_default = {
     dateOfBirth: "1993-11-23",
     height: 175,
     socials: {
-      instagram: "jamiromonteiro"
+      instagram: "jamiromonteiro",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jamiro_Monteiro"
     }
   },
   "401924": {
@@ -3776,7 +4069,8 @@ var squads_default = {
     dateOfBirth: "1992-04-15",
     height: 181,
     socials: {
-      instagram: "remo_freuler"
+      instagram: "remo_freuler",
+      wikipedia: "https://pt.wikipedia.org/wiki/Remo_Freuler"
     }
   },
   "402022": {
@@ -3791,7 +4085,8 @@ var squads_default = {
     dateOfBirth: "1994-06-06",
     height: 190,
     socials: {
-      instagram: "ymvogo"
+      instagram: "ymvogo",
+      wikipedia: "https://pt.wikipedia.org/wiki/Yvon_Mvogo"
     }
   },
   "402044": {
@@ -3806,7 +4101,8 @@ var squads_default = {
     dateOfBirth: "1991-03-29",
     height: 186,
     socials: {
-      instagram: "martenderoon15"
+      instagram: "martenderoon15",
+      wikipedia: "https://pt.wikipedia.org/wiki/Marten_de_Roon"
     }
   },
   "402047": {
@@ -3821,7 +4117,8 @@ var squads_default = {
     dateOfBirth: "1995-04-03",
     height: 191,
     socials: {
-      instagram: "adrienrabiot_25"
+      instagram: "adrienrabiot_25",
+      wikipedia: "https://pt.wikipedia.org/wiki/Adrien_Rabiot"
     }
   },
   "402261": {
@@ -3836,7 +4133,8 @@ var squads_default = {
     dateOfBirth: "1995-05-29",
     height: 183,
     socials: {
-      instagram: "nicolas.pepe19"
+      instagram: "nicolas.pepe19",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nicolas_P%C3%A9p%C3%A9"
     }
   },
   "402772": {
@@ -3851,7 +4149,8 @@ var squads_default = {
     dateOfBirth: "1994-08-15",
     height: 174,
     socials: {
-      instagram: "jesusgallardo17"
+      instagram: "jesusgallardo17",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jes%C3%BAs_Gallardo"
     }
   },
   "402817": {
@@ -3866,7 +4165,8 @@ var squads_default = {
     dateOfBirth: "1997-03-17",
     height: 182,
     socials: {
-      instagram: "seungho_paik"
+      instagram: "seungho_paik",
+      wikipedia: "https://pt.wikipedia.org/wiki/Paik_Seung-ho"
     }
   },
   "402820": {
@@ -3881,7 +4181,8 @@ var squads_default = {
     dateOfBirth: "1997-10-15",
     height: 196,
     socials: {
-      instagram: "bumkeun_song"
+      instagram: "bumkeun_song",
+      wikipedia: "https://en.wikipedia.org/wiki/Song_Bum-keun"
     }
   },
   "402876": {
@@ -3896,7 +4197,8 @@ var squads_default = {
     dateOfBirth: "1998-10-01",
     height: 176,
     socials: {
-      instagram: "agus_cano7"
+      instagram: "agus_cano7",
+      wikipedia: "https://pt.wikipedia.org/wiki/Agust%C3%ADn_Canobbio"
     }
   },
   "402884": {
@@ -3911,7 +4213,8 @@ var squads_default = {
     dateOfBirth: "1998-07-22",
     height: 182,
     socials: {
-      instagram: "fedevalverde"
+      instagram: "fedevalverde",
+      wikipedia: "https://pt.wikipedia.org/wiki/Federico_Valverde"
     }
   },
   "402893": {
@@ -3926,7 +4229,8 @@ var squads_default = {
     dateOfBirth: "1997-10-31",
     height: 174,
     socials: {
-      instagram: "mathiasolivera5"
+      instagram: "mathiasolivera5",
+      wikipedia: "https://pt.wikipedia.org/wiki/Math%C3%ADas_Olivera"
     }
   },
   "402895": {
@@ -3941,7 +4245,8 @@ var squads_default = {
     dateOfBirth: "1997-11-09",
     height: 180,
     socials: {
-      instagram: "matiasv17"
+      instagram: "matiasv17",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mat%C3%ADas_Vi%C3%B1a"
     }
   },
   "402897": {
@@ -3956,7 +4261,8 @@ var squads_default = {
     dateOfBirth: "1997-09-06",
     height: 185,
     socials: {
-      instagram: "santimele1"
+      instagram: "santimele1",
+      wikipedia: "https://en.wikipedia.org/wiki/Santiago_Mele"
     }
   },
   "402898": {
@@ -3971,7 +4277,8 @@ var squads_default = {
     dateOfBirth: "1997-06-01",
     height: 167,
     socials: {
-      instagram: "nicodelacruz10"
+      instagram: "nicodelacruz10",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nicol%C3%A1s_de_la_Cruz"
     }
   },
   "402904": {
@@ -3986,7 +4293,8 @@ var squads_default = {
     dateOfBirth: "1998-11-09",
     height: 191,
     socials: {
-      instagram: "santibuenoo"
+      instagram: "santibuenoo",
+      wikipedia: "https://en.wikipedia.org/wiki/Santiago_Bueno"
     }
   },
   "402920": {
@@ -4001,7 +4309,8 @@ var squads_default = {
     dateOfBirth: "1997-08-22",
     height: 175,
     socials: {
-      instagram: "lautaromartinez"
+      instagram: "lautaromartinez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lautaro_Mart%C3%ADnez"
     }
   },
   "402921": {
@@ -4016,7 +4325,8 @@ var squads_default = {
     dateOfBirth: "1998-01-18",
     height: 175,
     socials: {
-      instagram: "lisandromartinez"
+      instagram: "lisandromartinez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lisandro_Mart%C3%ADnez"
     }
   },
   "402925": {
@@ -4031,7 +4341,8 @@ var squads_default = {
     dateOfBirth: "1998-04-06",
     height: 179,
     socials: {
-      instagram: "nahuelmolina35"
+      instagram: "nahuelmolina35",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nahuel_Molina"
     }
   },
   "402926": {
@@ -4046,7 +4357,8 @@ var squads_default = {
     dateOfBirth: "1997-01-01",
     height: 175,
     socials: {
-      instagram: "gonzalo_montiel29"
+      instagram: "gonzalo_montiel29",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gonzalo_Montiel"
     }
   },
   "402934": {
@@ -4061,7 +4373,8 @@ var squads_default = {
     dateOfBirth: "1997-05-10",
     height: 185,
     socials: {
-      instagram: "marcosenesi"
+      instagram: "marcosenesi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Marcos_Senesi"
     }
   },
   "402974": {
@@ -4076,7 +4389,8 @@ var squads_default = {
     dateOfBirth: "1998-02-18",
     height: 174,
     socials: {
-      instagram: "angelothy_preciado17"
+      instagram: "angelothy_preciado17",
+      wikipedia: "https://pt.wikipedia.org/wiki/%C3%81ngelo_Preciado"
     }
   },
   "402979": {
@@ -4091,7 +4405,8 @@ var squads_default = {
     dateOfBirth: "1997-01-11",
     height: 187,
     socials: {
-      instagram: "felix_torres_s_c"
+      instagram: "felix_torres_s_c",
+      wikipedia: "https://pt.wikipedia.org/wiki/F%C3%A9lix_Torres"
     }
   },
   "402985": {
@@ -4106,7 +4421,8 @@ var squads_default = {
     dateOfBirth: "1997-11-18",
     height: 186,
     socials: {
-      instagram: "moises_caicedo55"
+      instagram: "moises_caicedo55",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jordy_Caicedo"
     }
   },
   "403001": {
@@ -4121,7 +4437,8 @@ var squads_default = {
     dateOfBirth: "1999-09-19",
     height: 188,
     socials: {
-      instagram: "diogomcosta99"
+      instagram: "diogomcosta99",
+      wikipedia: "https://pt.wikipedia.org/wiki/Diogo_Costa"
     }
   },
   "403002": {
@@ -4136,7 +4453,8 @@ var squads_default = {
     dateOfBirth: "1999-03-18",
     height: 184,
     socials: {
-      instagram: "diogodalot"
+      instagram: "diogodalot",
+      wikipedia: "https://pt.wikipedia.org/wiki/Diogo_Dalot"
     }
   },
   "403046": {
@@ -4151,7 +4469,8 @@ var squads_default = {
     dateOfBirth: "1997-03-12",
     height: 188,
     socials: {
-      instagram: "deanhenderson"
+      instagram: "deanhenderson",
+      wikipedia: "https://pt.wikipedia.org/wiki/Dean_Henderson"
     }
   },
   "403049": {
@@ -4166,7 +4485,8 @@ var squads_default = {
     dateOfBirth: "1997-10-23",
     height: 180,
     socials: {
-      instagram: "ezrikonsa"
+      instagram: "ezrikonsa",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ezri_Konsa"
     }
   },
   "403063": {
@@ -4181,7 +4501,8 @@ var squads_default = {
     dateOfBirth: "1997-11-14",
     height: 188,
     socials: {
-      instagram: "axeltuanzebe_38"
+      instagram: "axeltuanzebe_38",
+      wikipedia: "https://pt.wikipedia.org/wiki/Axel_Tuanzebe"
     }
   },
   "403083": {
@@ -4196,7 +4517,8 @@ var squads_default = {
     dateOfBirth: "1997-01-09",
     height: 194,
     socials: {
-      instagram: "sofiane_diop"
+      instagram: "sofiane_diop",
+      wikipedia: "https://pt.wikipedia.org/wiki/Issa_Diop"
     }
   },
   "403090": {
@@ -4211,7 +4533,8 @@ var squads_default = {
     dateOfBirth: "1999-01-23",
     height: 196,
     socials: {
-      instagram: "alban_lafont"
+      instagram: "alban_lafont",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alban_Lafont"
     }
   },
   "403094": {
@@ -4226,7 +4549,8 @@ var squads_default = {
     dateOfBirth: "1997-06-28",
     height: 192,
     socials: {
-      instagram: "iammateta"
+      instagram: "iammateta",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jean-Philippe_Mateta"
     }
   },
   "403109": {
@@ -4241,7 +4565,8 @@ var squads_default = {
     dateOfBirth: "1997-08-06",
     height: 192,
     socials: {
-      instagram: "thuram"
+      instagram: "thuram",
+      wikipedia: "https://pt.wikipedia.org/wiki/Marcus_Thuram"
     }
   },
   "403236": {
@@ -4256,7 +4581,8 @@ var squads_default = {
     dateOfBirth: "1998-12-05",
     height: 166,
     socials: {
-      instagram: "mehdighayedi10"
+      instagram: "mehdighayedi10",
+      wikipedia: "https://en.wikipedia.org/wiki/Mehdi_Ghayedi"
     }
   },
   "403274": {
@@ -4271,7 +4597,8 @@ var squads_default = {
     dateOfBirth: "1999-05-12",
     height: 188,
     socials: {
-      instagram: "hiroki_ito38"
+      instagram: "hiroki_ito38",
+      wikipedia: "https://pt.wikipedia.org/wiki/Hiroki_It%C5%8D"
     }
   },
   "403289": {
@@ -4286,7 +4613,8 @@ var squads_default = {
     dateOfBirth: "1998-11-05",
     height: 187,
     socials: {
-      instagram: "tomiyasu.t"
+      instagram: "tomiyasu.t",
+      wikipedia: "https://pt.wikipedia.org/wiki/Takehiro_Tomiyasu"
     }
   },
   "403293": {
@@ -4299,7 +4627,10 @@ var squads_default = {
     club: "Nagoya Grampus",
     pictureUrl: "https://digitalhub.fifa.com/transform/3b346456-0904-4429-ac8d-1acb2c2a1934/OGAWA-Koki_403293",
     dateOfBirth: "1997-08-08",
-    height: 186
+    height: 186,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/K%C5%8Dki_Ogawa_(footballer)"
+    }
   },
   "403304": {
     fifaId: "403304",
@@ -4313,7 +4644,8 @@ var squads_default = {
     dateOfBirth: "2001-06-04",
     height: 173,
     socials: {
-      instagram: "takefusa.kubo"
+      instagram: "takefusa.kubo",
+      wikipedia: "https://pt.wikipedia.org/wiki/Takefusa_Kubo"
     }
   },
   "403305": {
@@ -4328,7 +4660,8 @@ var squads_default = {
     dateOfBirth: "1999-07-28",
     height: 188,
     socials: {
-      instagram: "keisuke.osako"
+      instagram: "keisuke.osako",
+      wikipedia: "https://en.wikipedia.org/wiki/Keisuke_%C5%8Csako"
     }
   },
   "403312": {
@@ -4385,7 +4718,8 @@ var squads_default = {
     dateOfBirth: "1998-09-07",
     height: 176,
     socials: {
-      instagram: "piojo.13"
+      instagram: "piojo.13",
+      wikipedia: "https://pt.wikipedia.org/wiki/Roberto_Alvarado"
     }
   },
   "403596": {
@@ -4400,7 +4734,8 @@ var squads_default = {
     dateOfBirth: "1997-12-10",
     height: 176,
     socials: {
-      instagram: "sanchezjorgie4"
+      instagram: "sanchezjorgie4",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jorge_S%C3%A1nchez"
     }
   },
   "403616": {
@@ -4415,7 +4750,8 @@ var squads_default = {
     dateOfBirth: "1997-01-24",
     height: 177,
     socials: {
-      instagram: "mokoena_28"
+      instagram: "mokoena_28",
+      wikipedia: "https://en.wikipedia.org/wiki/Teboho_Mokoena_(soccer,_born_1997)"
     }
   },
   "403642": {
@@ -4430,7 +4766,8 @@ var squads_default = {
     dateOfBirth: "1999-02-25",
     height: 173,
     socials: {
-      instagram: "krepindiatta"
+      instagram: "krepindiatta",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kr%C3%A9pin_Diatta"
     }
   },
   "404319": {
@@ -4445,7 +4782,8 @@ var squads_default = {
     dateOfBirth: "1996-07-05",
     height: 180,
     socials: {
-      instagram: "ajdinhrustic"
+      instagram: "ajdinhrustic",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ajdin_Hrustic"
     }
   },
   "404353": {
@@ -4460,7 +4798,8 @@ var squads_default = {
     dateOfBirth: "1996-01-11",
     height: 183,
     socials: {
-      instagram: "leroysane"
+      instagram: "leroysane",
+      wikipedia: "https://pt.wikipedia.org/wiki/Leroy_San%C3%A9"
     }
   },
   "404645": {
@@ -4475,7 +4814,8 @@ var squads_default = {
     dateOfBirth: "1998-02-14",
     height: 195,
     socials: {
-      instagram: "sanderberge8"
+      instagram: "sanderberge8",
+      wikipedia: "https://en.wikipedia.org/wiki/Sander_Berge"
     }
   },
   "404885": {
@@ -4490,7 +4830,8 @@ var squads_default = {
     dateOfBirth: "1995-02-27",
     height: 192,
     socials: {
-      instagram: "tomassoucek28"
+      instagram: "tomassoucek28",
+      wikipedia: "https://pt.wikipedia.org/wiki/Tom%C3%A1%C5%A1_Sou%C4%8Dek"
     }
   },
   "405175": {
@@ -4505,7 +4846,8 @@ var squads_default = {
     dateOfBirth: "1995-05-07",
     height: 185,
     socials: {
-      instagram: "sekofofana"
+      instagram: "sekofofana",
+      wikipedia: "https://en.wikipedia.org/wiki/Seko_Fofana"
     }
   },
   "405178": {
@@ -4518,7 +4860,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/3a90610e-9f70-434a-b8b0-450a1ea81d75/AKANJI-Manuel_405178",
     socials: {
-      instagram: "akanji.manu"
+      instagram: "akanji.manu",
+      wikipedia: "https://pt.wikipedia.org/wiki/Manuel_Akanji"
     },
     dateOfBirth: "1995-07-19",
     height: 188
@@ -4535,7 +4878,8 @@ var squads_default = {
     dateOfBirth: "1998-09-19",
     height: 190,
     socials: {
-      instagram: "kevin.danso"
+      instagram: "kevin.danso",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kevin_Danso"
     }
   },
   "405454": {
@@ -4548,7 +4892,8 @@ var squads_default = {
     club: "SKN St. Polten",
     pictureUrl: "https://digitalhub.fifa.com/transform/fe32736f-5d5f-4870-8db3-5b4560835f53/JUST-Elijah_405454",
     socials: {
-      instagram: "elijah_just"
+      instagram: "elijah_just",
+      wikipedia: "https://pt.wikipedia.org/wiki/Elijah_Just"
     },
     dateOfBirth: "2000-05-01",
     height: 176
@@ -4565,7 +4910,8 @@ var squads_default = {
     dateOfBirth: "2000-09-27",
     height: 182,
     socials: {
-      instagram: "liberatocacace27"
+      instagram: "liberatocacace27",
+      wikipedia: "https://en.wikipedia.org/wiki/Liberato_Cacace"
     }
   },
   "405522": {
@@ -4580,7 +4926,8 @@ var squads_default = {
     dateOfBirth: "2000-07-28",
     height: 180,
     socials: {
-      instagram: "nakamura.keito"
+      instagram: "nakamura.keito",
+      wikipedia: "https://pt.wikipedia.org/wiki/Keito_Nakamura"
     }
   },
   "405527": {
@@ -4595,7 +4942,8 @@ var squads_default = {
     dateOfBirth: "2000-06-07",
     height: 186,
     socials: {
-      instagram: "ayumuseko_00"
+      instagram: "ayumuseko_00",
+      wikipedia: "https://en.wikipedia.org/wiki/Ayumu_Seko"
     }
   },
   "405528": {
@@ -4610,7 +4958,8 @@ var squads_default = {
     dateOfBirth: "2000-06-28",
     height: 179,
     socials: {
-      instagram: "yukinarisugawara"
+      instagram: "yukinarisugawara",
+      wikipedia: "https://pt.wikipedia.org/wiki/Yukinari_Sugawara"
     }
   },
   "405530": {
@@ -4625,7 +4974,8 @@ var squads_default = {
     dateOfBirth: "2002-08-21",
     height: 190,
     socials: {
-      instagram: "zionsuzuki"
+      instagram: "zionsuzuki",
+      wikipedia: "https://pt.wikipedia.org/wiki/Zion_Suzuki"
     }
   },
   "405545": {
@@ -4640,7 +4990,8 @@ var squads_default = {
     dateOfBirth: "2000-02-29",
     height: 183,
     socials: {
-      instagram: "ferrantorres"
+      instagram: "ferrantorres",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ferran_Torres"
     }
   },
   "405562": {
@@ -4655,7 +5006,8 @@ var squads_default = {
     dateOfBirth: "2001-01-09",
     height: 183,
     socials: {
-      instagram: "ericgm3"
+      instagram: "ericgm3",
+      wikipedia: "https://pt.wikipedia.org/wiki/Eric_Garc%C3%ADa"
     }
   },
   "405639": {
@@ -4670,7 +5022,8 @@ var squads_default = {
     dateOfBirth: "2000-10-30",
     height: 178,
     socials: {
-      instagram: "amirhossein_.hosseinzadeh"
+      instagram: "amirhossein_.hosseinzadeh",
+      wikipedia: "https://en.wikipedia.org/wiki/Amirhossein_Hosseinzadeh"
     }
   },
   "405742": {
@@ -4686,7 +5039,8 @@ var squads_default = {
     dateOfBirth: "2000-07-12",
     height: 176,
     socials: {
-      instagram: "vinijr"
+      instagram: "vinijr",
+      wikipedia: "https://pt.wikipedia.org/wiki/Vin%C3%ADcius_J%C3%BAnior"
     }
   },
   "405841": {
@@ -4701,7 +5055,8 @@ var squads_default = {
     dateOfBirth: "2000-07-13",
     height: 183,
     socials: {
-      instagram: "marcguehi"
+      instagram: "marcguehi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Marc_Gu%C3%A9hi"
     }
   },
   "405873": {
@@ -4716,7 +5071,8 @@ var squads_default = {
     dateOfBirth: "2000-08-21",
     height: 194,
     socials: {
-      instagram: "yahia.fofana_"
+      instagram: "yahia.fofana_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Yahia_Fofana"
     }
   },
   "405877": {
@@ -4731,7 +5087,8 @@ var squads_default = {
     dateOfBirth: "2000-02-16",
     height: 180,
     socials: {
-      instagram: "amine_gouiri"
+      instagram: "amine_gouiri",
+      wikipedia: "https://pt.wikipedia.org/wiki/Amine_Gouiri"
     }
   },
   "405879": {
@@ -4746,7 +5103,8 @@ var squads_default = {
     dateOfBirth: "2000-08-27",
     height: 184,
     socials: {
-      instagram: "wilsonisidor21"
+      instagram: "wilsonisidor21",
+      wikipedia: "https://en.wikipedia.org/wiki/Wilson_Isidor"
     }
   },
   "405881": {
@@ -4761,7 +5119,8 @@ var squads_default = {
     dateOfBirth: "2000-04-06",
     height: 192,
     socials: {
-      instagram: "lacroix_maxence"
+      instagram: "lacroix_maxence",
+      wikipedia: "https://pt.wikipedia.org/wiki/Maxence_Lacroix"
     }
   },
   "405893": {
@@ -4776,7 +5135,8 @@ var squads_default = {
     dateOfBirth: "2000-01-27",
     height: 188,
     socials: {
-      instagram: "aurelientchm"
+      instagram: "aurelientchm",
+      wikipedia: "https://pt.wikipedia.org/wiki/Aur%C3%A9lien_Tchouam%C3%A9ni"
     }
   },
   "405920": {
@@ -4791,7 +5151,8 @@ var squads_default = {
     dateOfBirth: "2000-06-23",
     height: 170,
     socials: {
-      instagram: "john_yeboahjr"
+      instagram: "john_yeboahjr",
+      wikipedia: "https://en.wikipedia.org/wiki/John_Yeboah"
     }
   },
   "406135": {
@@ -4806,7 +5167,8 @@ var squads_default = {
     dateOfBirth: "2000-12-03",
     height: 171,
     socials: {
-      instagram: "cesarh_33"
+      instagram: "cesarh_33",
+      wikipedia: "https://pt.wikipedia.org/wiki/C%C3%A9sar_Huerta"
     }
   },
   "406205": {
@@ -4821,7 +5183,8 @@ var squads_default = {
     dateOfBirth: "2000-06-27",
     height: 173,
     socials: {
-      instagram: "braian_ojeda06"
+      instagram: "braian_ojeda06",
+      wikipedia: "https://en.wikipedia.org/wiki/Braian_Ojeda"
     }
   },
   "406231": {
@@ -4836,7 +5199,8 @@ var squads_default = {
     dateOfBirth: "2000-07-07",
     height: 173,
     socials: {
-      instagram: "yunusakgun17"
+      instagram: "yunusakgun17",
+      wikipedia: "https://en.wikipedia.org/wiki/Yunus_Akg%C3%BCn"
     }
   },
   "406249": {
@@ -4851,7 +5215,8 @@ var squads_default = {
     dateOfBirth: "2000-03-25",
     height: 187,
     socials: {
-      instagram: "ozankabak4"
+      instagram: "ozankabak4",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ozan_Kabak"
     }
   },
   "406280": {
@@ -4866,7 +5231,8 @@ var squads_default = {
     dateOfBirth: "2000-11-03",
     height: 173,
     socials: {
-      instagram: "sgd_2"
+      instagram: "sgd_2",
+      wikipedia: "https://pt.wikipedia.org/wiki/Sergi%C3%B1o_Dest"
     }
   },
   "406281": {
@@ -4881,7 +5247,8 @@ var squads_default = {
     dateOfBirth: "2000-08-24",
     height: 189,
     socials: {
-      instagram: "cj_dos_santos"
+      instagram: "cj_dos_santos",
+      wikipedia: "https://en.wikipedia.org/wiki/CJ_dos_Santos"
     }
   },
   "406304": {
@@ -4896,7 +5263,8 @@ var squads_default = {
     dateOfBirth: "2000-02-22",
     height: 183,
     socials: {
-      instagram: "timothyweah"
+      instagram: "timothyweah",
+      wikipedia: "https://pt.wikipedia.org/wiki/Timothy_Weah"
     }
   },
   "406595": {
@@ -4911,7 +5279,8 @@ var squads_default = {
     dateOfBirth: "1993-07-24",
     height: 192,
     socials: {
-      instagram: "roozbeh.cheshmi4"
+      instagram: "roozbeh.cheshmi4",
+      wikipedia: "https://pt.wikipedia.org/wiki/Rouzbeh_Cheshmi"
     }
   },
   "406606": {
@@ -4926,7 +5295,8 @@ var squads_default = {
     dateOfBirth: "1995-09-15",
     height: 178,
     socials: {
-      instagram: "awermabil10"
+      instagram: "awermabil10",
+      wikipedia: "https://pt.wikipedia.org/wiki/Awer_Mabil"
     }
   },
   "407022": {
@@ -4941,7 +5311,8 @@ var squads_default = {
     dateOfBirth: "1996-03-12",
     height: 174,
     socials: {
-      instagram: "karimhafez23"
+      instagram: "karimhafez23",
+      wikipedia: "https://pt.wikipedia.org/wiki/Karim_Hafez"
     }
   },
   "407114": {
@@ -4954,7 +5325,10 @@ var squads_default = {
     club: "Santa Cruz FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/fcc402a3-4dbd-4c2e-9856-c8a3104ce221/MARCIO-ROSA_407114",
     dateOfBirth: "1997-02-23",
-    height: 186
+    height: 186,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/M%C3%A1rcio_Rosa"
+    }
   },
   "407343": {
     fifaId: "407343",
@@ -4968,7 +5342,8 @@ var squads_default = {
     dateOfBirth: "1995-12-27",
     height: 176,
     socials: {
-      instagram: "konan_ghislain_3"
+      instagram: "konan_ghislain_3",
+      wikipedia: "https://en.wikipedia.org/wiki/Ghislain_Konan"
     }
   },
   "407680": {
@@ -4998,7 +5373,8 @@ var squads_default = {
     dateOfBirth: "1994-09-22",
     height: 191,
     socials: {
-      instagram: "kannoo18"
+      instagram: "kannoo18",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mohamed_Kanno"
     }
   },
   "408042": {
@@ -5013,7 +5389,8 @@ var squads_default = {
     dateOfBirth: "1997-10-06",
     height: 184,
     socials: {
-      instagram: "theo3hernandez"
+      instagram: "theo3hernandez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Theo_Hern%C3%A1ndez"
     }
   },
   "408948": {
@@ -5043,7 +5420,8 @@ var squads_default = {
     dateOfBirth: "1996-02-02",
     height: 175,
     socials: {
-      instagram: "mohany30"
+      instagram: "mohany30",
+      wikipedia: "https://en.wikipedia.org/wiki/Mohamed_Hany"
     }
   },
   "409191": {
@@ -5058,7 +5436,8 @@ var squads_default = {
     dateOfBirth: "1997-10-04",
     height: 179,
     socials: {
-      instagram: "niksivlasic_"
+      instagram: "niksivlasic_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nikola_Vla%C5%A1i%C4%87"
     }
   },
   "409241": {
@@ -5071,7 +5450,10 @@ var squads_default = {
     club: "Shamrock Rovers",
     pictureUrl: "https://digitalhub.fifa.com/transform/9bffceda-d572-41b1-917b-06196bbffb3c/DINEY-BORGES_409241",
     dateOfBirth: "1995-01-17",
-    height: 185
+    height: 185,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Diney_(footballer,_born_1995)"
+    }
   },
   "411226": {
     fifaId: "411226",
@@ -5085,7 +5467,8 @@ var squads_default = {
     dateOfBirth: "1997-02-06",
     height: 183,
     socials: {
-      instagram: "dsow8"
+      instagram: "dsow8",
+      wikipedia: "https://pt.wikipedia.org/wiki/Djibril_Sow"
     }
   },
   "411301": {
@@ -5100,7 +5483,8 @@ var squads_default = {
     dateOfBirth: "1996-01-22",
     height: 196,
     socials: {
-      instagram: "angusgunn01"
+      instagram: "angusgunn01",
+      wikipedia: "https://pt.wikipedia.org/wiki/Angus_Gunn"
     }
   },
   "411367": {
@@ -5115,7 +5499,8 @@ var squads_default = {
     dateOfBirth: "1999-06-11",
     height: 190,
     socials: {
-      instagram: "kaihavertz29"
+      instagram: "kaihavertz29",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kai_Havertz"
     }
   },
   "411375": {
@@ -5128,7 +5513,10 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/295ab5b2-4dbf-42b9-918b-04fb4ae0ec0a/RODRI_411375",
     dateOfBirth: "1996-06-22",
-    height: 190
+    height: 190,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Rodri"
+    }
   },
   "411443": {
     fifaId: "411443",
@@ -5142,7 +5530,8 @@ var squads_default = {
     dateOfBirth: "1995-12-05",
     height: 185,
     socials: {
-      instagram: "timothycastagne"
+      instagram: "timothycastagne",
+      wikipedia: "https://pt.wikipedia.org/wiki/Timothy_Castagne"
     }
   },
   "411470": {
@@ -5157,7 +5546,8 @@ var squads_default = {
     dateOfBirth: "1996-02-14",
     height: 184,
     socials: {
-      instagram: "lucashernandez5"
+      instagram: "lucashernandez5",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lucas_Hern%C3%A1ndez"
     }
   },
   "411624": {
@@ -5184,7 +5574,8 @@ var squads_default = {
     dateOfBirth: "1993-09-06",
     height: 176,
     socials: {
-      instagram: "saman.ghoddos"
+      instagram: "saman.ghoddos",
+      wikipedia: "https://pt.wikipedia.org/wiki/Saman_Ghoddos"
     }
   },
   "411653": {
@@ -5199,7 +5590,8 @@ var squads_default = {
     dateOfBirth: "1995-06-19",
     height: 186,
     socials: {
-      instagram: "dylanbronnofficiel"
+      instagram: "dylanbronnofficiel",
+      wikipedia: "https://pt.wikipedia.org/wiki/Dylan_Bronn"
     }
   },
   "411658": {
@@ -5214,7 +5606,8 @@ var squads_default = {
     dateOfBirth: "1995-05-10",
     height: 185,
     socials: {
-      instagram: "ellyes_skhiri"
+      instagram: "ellyes_skhiri",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ellyes_Skhiri"
     }
   },
   "411678": {
@@ -5229,7 +5622,8 @@ var squads_default = {
     dateOfBirth: "1993-06-25",
     height: 182,
     socials: {
-      instagram: "ayoub_elkaabii"
+      instagram: "ayoub_elkaabii",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ayoub_El_Kaabi"
     }
   },
   "411680": {
@@ -5244,7 +5638,8 @@ var squads_default = {
     dateOfBirth: "1997-11-14",
     height: 183,
     socials: {
-      instagram: "nousmaz97"
+      instagram: "nousmaz97",
+      wikipedia: "https://pt.wikipedia.org/wiki/Noussair_Mazraoui"
     }
   },
   "411726": {
@@ -5259,7 +5654,8 @@ var squads_default = {
     dateOfBirth: "1997-08-27",
     height: 183,
     socials: {
-      instagram: "lucaspaqueta"
+      instagram: "lucaspaqueta",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lucas_Paquet%C3%A1"
     }
   },
   "412144": {
@@ -5274,7 +5670,8 @@ var squads_default = {
     dateOfBirth: "2000-11-02",
     height: 183,
     socials: {
-      instagram: "alphonsodavies"
+      instagram: "alphonsodavies",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alphonso_Davies"
     }
   },
   "416051": {
@@ -5289,7 +5686,8 @@ var squads_default = {
     dateOfBirth: "1990-08-06",
     height: 180,
     socials: {
-      instagram: "pedrororocorreia22"
+      instagram: "pedrororocorreia22",
+      wikipedia: "https://pt.wikipedia.org/wiki/R%C3%B3-R%C3%B3"
     }
   },
   "416056": {
@@ -5304,7 +5702,8 @@ var squads_default = {
     dateOfBirth: "1998-02-14",
     height: 180,
     socials: {
-      instagram: "barsham01"
+      instagram: "barsham01",
+      wikipedia: "https://pt.wikipedia.org/wiki/Meshaal_Barsham"
     }
   },
   "416081": {
@@ -5319,7 +5718,8 @@ var squads_default = {
     dateOfBirth: "2000-01-31",
     height: 170,
     socials: {
-      instagram: "juliaanalvarez"
+      instagram: "juliaanalvarez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Juli%C3%A1n_Alvarez"
     }
   },
   "416576": {
@@ -5334,7 +5734,8 @@ var squads_default = {
     dateOfBirth: "1997-04-09",
     height: 175,
     socials: {
-      instagram: "alvarofidalgo"
+      instagram: "alvarofidalgo",
+      wikipedia: "https://pt.wikipedia.org/wiki/%C3%81lvaro_Fidalgo"
     }
   },
   "416652": {
@@ -5349,7 +5750,8 @@ var squads_default = {
     dateOfBirth: "2002-08-19",
     height: 176,
     socials: {
-      instagram: "jesserandall10"
+      instagram: "jesserandall10",
+      wikipedia: "https://en.wikipedia.org/wiki/Jesse_Randall"
     }
   },
   "416902": {
@@ -5392,7 +5794,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/8d61af68-9b44-4ee7-8cc0-a8fd6707a019/ALIPOUR-Ali_416989",
     dateOfBirth: "1995-11-11",
-    height: 181
+    height: 181,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Ali_Alipour"
+    }
   },
   "418485": {
     fifaId: "418485",
@@ -5416,7 +5821,8 @@ var squads_default = {
     club: "Gangwon FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/a54e995b-caa3-43c4-981f-b54ada7f678d/LEE-Kangin_418490",
     socials: {
-      instagram: "kanginleeoficial"
+      instagram: "kanginleeoficial",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lee_Kang-in"
     },
     dateOfBirth: "2001-02-19",
     height: 174
@@ -5433,7 +5839,8 @@ var squads_default = {
     dateOfBirth: "1999-11-10",
     height: 179,
     socials: {
-      instagram: "joaofelix79"
+      instagram: "joaofelix79",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jo%C3%A3o_F%C3%A9lix"
     }
   },
   "418548": {
@@ -5448,7 +5855,8 @@ var squads_default = {
     dateOfBirth: "2000-03-09",
     height: 174,
     socials: {
-      instagram: "pedroneto_30"
+      instagram: "pedroneto_30",
+      wikipedia: "https://pt.wikipedia.org/wiki/Pedro_Neto"
     }
   },
   "418550": {
@@ -5463,7 +5871,8 @@ var squads_default = {
     dateOfBirth: "1999-06-10",
     height: 188,
     socials: {
-      instagram: "iamrafaeleao93"
+      instagram: "iamrafaeleao93",
+      wikipedia: "https://pt.wikipedia.org/wiki/Rafael_Le%C3%A3o"
     }
   },
   "418561": {
@@ -5478,7 +5887,8 @@ var squads_default = {
     dateOfBirth: "1999-12-29",
     height: 184,
     socials: {
-      instagram: "trincao"
+      instagram: "trincao",
+      wikipedia: "https://pt.wikipedia.org/wiki/Francisco_Trinc%C3%A3o"
     }
   },
   "418781": {
@@ -5493,7 +5903,8 @@ var squads_default = {
     dateOfBirth: "2000-03-23",
     height: 178,
     socials: {
-      instagram: "dieng_ahmadou_bamba"
+      instagram: "dieng_ahmadou_bamba",
+      wikipedia: "https://pt.wikipedia.org/wiki/Bamba_Dieng"
     }
   },
   "418795": {
@@ -5508,7 +5919,8 @@ var squads_default = {
     dateOfBirth: "2001-06-20",
     height: 187,
     socials: {
-      instagram: "jackson.nj1"
+      instagram: "jackson.nj1",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nicolas_Jackson"
     }
   },
   "418798": {
@@ -5523,7 +5935,8 @@ var squads_default = {
     dateOfBirth: "2002-09-14",
     height: 185,
     socials: {
-      instagram: "pape"
+      instagram: "pape",
+      wikipedia: "https://pt.wikipedia.org/wiki/Pape_Matar_Sarr"
     }
   },
   "418963": {
@@ -5538,7 +5951,8 @@ var squads_default = {
     dateOfBirth: "1999-05-28",
     height: 184,
     socials: {
-      instagram: "facumedina99_"
+      instagram: "facumedina99_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Facundo_Medina"
     }
   },
   "418975": {
@@ -5553,7 +5967,8 @@ var squads_default = {
     dateOfBirth: "2001-04-26",
     height: 171,
     socials: {
-      instagram: "thiago_almada23"
+      instagram: "thiago_almada23",
+      wikipedia: "https://pt.wikipedia.org/wiki/Thiago_Almada"
     }
   },
   "419002": {
@@ -5566,7 +5981,10 @@ var squads_default = {
     club: "Liga de Quito",
     pictureUrl: "https://digitalhub.fifa.com/transform/3a641146-b759-48d0-983f-b85bb1232cc4/RAMIREZ-Moises_419002",
     dateOfBirth: "2000-09-09",
-    height: 185
+    height: 185,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Mois%C3%A9s_Ram%C3%ADrez"
+    }
   },
   "419003": {
     fifaId: "419003",
@@ -5580,7 +5998,8 @@ var squads_default = {
     dateOfBirth: "2000-08-04",
     height: 192,
     socials: {
-      instagram: "jacksonporozo"
+      instagram: "jacksonporozo",
+      wikipedia: "https://en.wikipedia.org/wiki/Jackson_Porozo"
     }
   },
   "419005": {
@@ -5595,7 +6014,8 @@ var squads_default = {
     dateOfBirth: "1999-08-05",
     height: 168,
     socials: {
-      instagram: "jordy_alcivar13"
+      instagram: "jordy_alcivar13",
+      wikipedia: "https://en.wikipedia.org/wiki/Jordy_Alc%C3%ADvar"
     }
   },
   "419020": {
@@ -5610,7 +6030,8 @@ var squads_default = {
     dateOfBirth: "2000-11-01",
     height: 178,
     socials: {
-      instagram: "gonzaloplata"
+      instagram: "gonzaloplata",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gonzalo_Plata"
     }
   },
   "419055": {
@@ -5625,7 +6046,8 @@ var squads_default = {
     dateOfBirth: "2000-10-22",
     height: 177,
     socials: {
-      instagram: "baaronson7"
+      instagram: "baaronson7",
+      wikipedia: "https://pt.wikipedia.org/wiki/Brenden_Aaronson"
     }
   },
   "419062": {
@@ -5640,7 +6062,8 @@ var squads_default = {
     dateOfBirth: "2000-03-28",
     height: 189,
     socials: {
-      instagram: "eastmamba"
+      instagram: "eastmamba",
+      wikipedia: "https://pt.wikipedia.org/wiki/Chris_Richards"
     }
   },
   "419068": {
@@ -5655,7 +6078,8 @@ var squads_default = {
     dateOfBirth: "2002-11-13",
     height: 187,
     socials: {
-      instagram: "gioareyna"
+      instagram: "gioareyna",
+      wikipedia: "https://pt.wikipedia.org/wiki/Giovanni_Reyna"
     }
   },
   "419077": {
@@ -5670,7 +6094,8 @@ var squads_default = {
     dateOfBirth: "1999-02-25",
     height: 186,
     socials: {
-      instagram: "markmckenzie4"
+      instagram: "markmckenzie4",
+      wikipedia: "https://en.wikipedia.org/wiki/Mark_McKenzie_(soccer,_born_1999)"
     }
   },
   "419082": {
@@ -5685,7 +6110,8 @@ var squads_default = {
     dateOfBirth: "2003-01-09",
     height: 185,
     socials: {
-      instagram: "pepi_ricardo"
+      instagram: "pepi_ricardo",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ricardo_Pepi"
     }
   },
   "419100": {
@@ -5715,7 +6141,8 @@ var squads_default = {
     dateOfBirth: "1999-08-18",
     height: 180,
     socials: {
-      instagram: "seba4caceres"
+      instagram: "seba4caceres",
+      wikipedia: "https://en.wikipedia.org/wiki/Sebasti%C3%A1n_C%C3%A1ceres"
     }
   },
   "419126": {
@@ -5730,7 +6157,8 @@ var squads_default = {
     dateOfBirth: "1999-06-24",
     height: 185,
     socials: {
-      instagram: "darwin_n9"
+      instagram: "darwin_n9",
+      wikipedia: "https://pt.wikipedia.org/wiki/Darwin_N%C3%BA%C3%B1ez"
     }
   },
   "419132": {
@@ -5745,7 +6173,8 @@ var squads_default = {
     dateOfBirth: "2000-05-20",
     height: 175,
     socials: {
-      instagram: "brianrodriguez_10"
+      instagram: "brianrodriguez_10",
+      wikipedia: "https://pt.wikipedia.org/wiki/Brian_Rodr%C3%ADguez"
     }
   },
   "419134": {
@@ -5760,7 +6189,8 @@ var squads_default = {
     dateOfBirth: "2000-03-29",
     height: 170,
     socials: {
-      instagram: "juanma_sanabria7"
+      instagram: "juanma_sanabria7",
+      wikipedia: "https://en.wikipedia.org/wiki/Juan_Manuel_Sanabria"
     }
   },
   "419142": {
@@ -5775,7 +6205,8 @@ var squads_default = {
     dateOfBirth: "1999-08-12",
     height: 175,
     socials: {
-      instagram: "rodrigozalazar"
+      instagram: "rodrigozalazar",
+      wikipedia: "https://pt.wikipedia.org/wiki/Rodrigo_Zalazar"
     }
   },
   "419166": {
@@ -5790,7 +6221,8 @@ var squads_default = {
     dateOfBirth: "1999-05-25",
     height: 194,
     socials: {
-      instagram: "ibrahimakonate"
+      instagram: "ibrahimakonate",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ibrahima_Konat%C3%A9"
     }
   },
   "419172": {
@@ -5805,7 +6237,8 @@ var squads_default = {
     dateOfBirth: "1999-08-20",
     height: 192,
     socials: {
-      instagram: "evanndicka"
+      instagram: "evanndicka",
+      wikipedia: "https://pt.wikipedia.org/wiki/Evan_Ndicka"
     }
   },
   "419177": {
@@ -5820,7 +6253,8 @@ var squads_default = {
     dateOfBirth: "2001-03-24",
     height: 192,
     socials: {
-      instagram: "w.saliba4"
+      instagram: "w.saliba4",
+      wikipedia: "https://pt.wikipedia.org/wiki/William_Saliba"
     }
   },
   "419189": {
@@ -5835,7 +6269,8 @@ var squads_default = {
     dateOfBirth: "1999-02-22",
     height: 181,
     socials: {
-      instagram: "yan.valery"
+      instagram: "yan.valery",
+      wikipedia: "https://pt.wikipedia.org/wiki/Yan_Valery"
     }
   },
   "419211": {
@@ -5850,7 +6285,8 @@ var squads_default = {
     dateOfBirth: "2000-09-03",
     height: 185,
     socials: {
-      instagram: "lyle.foster17"
+      instagram: "lyle.foster17",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lyle_Foster"
     }
   },
   "419223": {
@@ -5865,7 +6301,8 @@ var squads_default = {
     dateOfBirth: "2001-08-25",
     height: 171,
     socials: {
-      instagram: "oswinappollis_11"
+      instagram: "oswinappollis_11",
+      wikipedia: "https://pt.wikipedia.org/wiki/Oswin_Appollis"
     }
   },
   "419225": {
@@ -5880,7 +6317,8 @@ var squads_default = {
     dateOfBirth: "2001-01-30",
     height: 175,
     socials: {
-      instagram: "brxd.cross"
+      instagram: "brxd.cross",
+      wikipedia: "https://en.wikipedia.org/wiki/Bradley_Cross_(soccer)"
     }
   },
   "419281": {
@@ -5895,7 +6333,8 @@ var squads_default = {
     dateOfBirth: "1999-07-18",
     height: 172,
     socials: {
-      instagram: "s.abdualhamed66"
+      instagram: "s.abdualhamed66",
+      wikipedia: "https://pt.wikipedia.org/wiki/Saud_Abdulhamid"
     }
   },
   "419287": {
@@ -5925,7 +6364,8 @@ var squads_default = {
     dateOfBirth: "2000-05-14",
     height: 185,
     socials: {
-      instagram: "frr9_"
+      instagram: "frr9_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Firas_Al-Buraikan"
     }
   },
   "419300": {
@@ -6009,7 +6449,8 @@ var squads_default = {
     dateOfBirth: "1999-08-25",
     height: 188,
     socials: {
-      instagram: "homam_99"
+      instagram: "homam_99",
+      wikipedia: "https://pt.wikipedia.org/wiki/Homam_Ahmed"
     }
   },
   "419459": {
@@ -6037,7 +6478,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/92c49982-ca93-4853-93ea-5f5a3d6a256d/SALAH-ZAKARIA_419461",
     dateOfBirth: "1999-04-24",
-    height: 186
+    height: 186,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Salah_Zakaria"
+    }
   },
   "419463": {
     fifaId: "419463",
@@ -6051,7 +6495,8 @@ var squads_default = {
     dateOfBirth: "1999-08-06",
     height: 171,
     socials: {
-      instagram: "yosefyrs"
+      instagram: "yosefyrs",
+      wikipedia: "https://en.wikipedia.org/wiki/Yusuf_Abdurisag"
     }
   },
   "419473": {
@@ -6066,7 +6511,8 @@ var squads_default = {
     dateOfBirth: "2002-02-20",
     height: 181,
     socials: {
-      instagram: "jassim.gaber"
+      instagram: "jassim.gaber",
+      wikipedia: "https://en.wikipedia.org/wiki/Jassem_Gaber"
     }
   },
   "419518": {
@@ -6081,7 +6527,8 @@ var squads_default = {
     dateOfBirth: "2000-05-08",
     height: 172,
     socials: {
-      instagram: "eriklira"
+      instagram: "eriklira",
+      wikipedia: "https://en.wikipedia.org/wiki/%C3%89rik_Lira"
     }
   },
   "419567": {
@@ -6096,7 +6543,8 @@ var squads_default = {
     dateOfBirth: "1999-07-07",
     height: 177,
     socials: {
-      instagram: "callan_elliot"
+      instagram: "callan_elliot",
+      wikipedia: "https://en.wikipedia.org/wiki/Callan_Elliot"
     }
   },
   "419572": {
@@ -6111,7 +6559,8 @@ var squads_default = {
     dateOfBirth: "1999-02-25",
     height: 185,
     socials: {
-      instagram: "nandopijnaker"
+      instagram: "nandopijnaker",
+      wikipedia: "https://en.wikipedia.org/wiki/Nando_Pijnaker"
     }
   },
   "419577": {
@@ -6126,7 +6575,8 @@ var squads_default = {
     dateOfBirth: "2001-06-11",
     height: 185,
     socials: {
-      instagram: "_waineo"
+      instagram: "_waineo",
+      wikipedia: "https://en.wikipedia.org/wiki/Ben_Waine"
     }
   },
   "419652": {
@@ -6139,7 +6589,8 @@ var squads_default = {
     club: "Manchester City",
     pictureUrl: "https://digitalhub.fifa.com/transform/ee269811-9f84-401f-99b8-e953a2704ebb/HAALAND-Erling_419652",
     socials: {
-      instagram: "erling"
+      instagram: "erling",
+      wikipedia: "https://pt.wikipedia.org/wiki/Erling_Haaland"
     },
     dateOfBirth: "2000-07-21",
     height: 195
@@ -6156,7 +6607,8 @@ var squads_default = {
     dateOfBirth: "1999-10-12",
     height: 184,
     socials: {
-      instagram: "jenspetterhauge"
+      instagram: "jenspetterhauge",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jens_Petter_Hauge"
     }
   },
   "419662": {
@@ -6171,7 +6623,8 @@ var squads_default = {
     dateOfBirth: "2000-02-06",
     height: 193,
     socials: {
-      instagram: "strandlarsen"
+      instagram: "strandlarsen",
+      wikipedia: "https://en.wikipedia.org/wiki/J%C3%B8rgen_Strand_Larsen"
     }
   },
   "419672": {
@@ -6186,7 +6639,8 @@ var squads_default = {
     dateOfBirth: "1999-11-28",
     height: 183,
     socials: {
-      instagram: "leoskirio"
+      instagram: "leoskirio",
+      wikipedia: "https://en.wikipedia.org/wiki/Leo_%C3%98stig%C3%A5rd"
     }
   },
   "419681": {
@@ -6201,7 +6655,8 @@ var squads_default = {
     dateOfBirth: "1999-03-13",
     height: 189,
     socials: {
-      instagram: "kristianthorstvedt"
+      instagram: "kristianthorstvedt",
+      wikipedia: "https://en.wikipedia.org/wiki/Kristian_Thorstvedt"
     }
   },
   "422657": {
@@ -6216,7 +6671,8 @@ var squads_default = {
     dateOfBirth: "1997-05-12",
     height: 181,
     socials: {
-      instagram: "frenkiedejong"
+      instagram: "frenkiedejong",
+      wikipedia: "https://pt.wikipedia.org/wiki/Frenkie_de_Jong"
     }
   },
   "422968": {
@@ -6229,7 +6685,10 @@ var squads_default = {
     club: "Al-Shorta",
     pictureUrl: "https://digitalhub.fifa.com/transform/b71272b5-a898-49b9-9de5-35b59168f050/MOHANAD-ALI_422968",
     dateOfBirth: "2000-06-20",
-    height: 183
+    height: 183,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Mohanad_Ali"
+    }
   },
   "423522": {
     fifaId: "423522",
@@ -6243,7 +6702,8 @@ var squads_default = {
     dateOfBirth: "2002-10-29",
     height: 180,
     socials: {
-      instagram: "jordanbos__"
+      instagram: "jordanbos__",
+      wikipedia: "https://en.wikipedia.org/wiki/Jordan_Bos"
     }
   },
   "423574": {
@@ -6256,7 +6716,10 @@ var squads_default = {
     club: "Vancouver Whitecaps",
     pictureUrl: "https://digitalhub.fifa.com/transform/10106faa-f53a-4898-b03a-6688ff48cf53/PAULSEN-Alex_423574",
     dateOfBirth: "2002-07-04",
-    height: 193
+    height: 193,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Alex_Paulsen"
+    }
   },
   "423575": {
     fifaId: "423575",
@@ -6268,7 +6731,10 @@ var squads_default = {
     club: "Melbourne City",
     pictureUrl: "https://digitalhub.fifa.com/transform/40fc67b2-858c-4985-9db3-ef1e32b864e9/OLD-Ben_423575",
     dateOfBirth: "2002-08-13",
-    height: 173
+    height: 173,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Ben_Old"
+    }
   },
   "423595": {
     fifaId: "423595",
@@ -6282,7 +6748,8 @@ var squads_default = {
     dateOfBirth: "2002-02-19",
     height: 188,
     socials: {
-      instagram: "markos_stamenic"
+      instagram: "markos_stamenic",
+      wikipedia: "https://en.wikipedia.org/wiki/Marko_Stameni%C4%87"
     }
   },
   "423646": {
@@ -6297,7 +6764,8 @@ var squads_default = {
     dateOfBirth: "2002-11-25",
     height: 174,
     socials: {
-      instagram: "pedri"
+      instagram: "pedri",
+      wikipedia: "https://pt.wikipedia.org/wiki/Pedri"
     }
   },
   "423658": {
@@ -6312,7 +6780,8 @@ var squads_default = {
     dateOfBirth: "2002-10-20",
     height: 174,
     socials: {
-      instagram: "yeresantos10"
+      instagram: "yeresantos10",
+      wikipedia: "https://pt.wikipedia.org/wiki/Y%C3%A9remy_Pino"
     }
   },
   "423700": {
@@ -6327,7 +6796,8 @@ var squads_default = {
     dateOfBirth: "2002-12-31",
     height: 184,
     socials: {
-      instagram: "jjscally_3"
+      instagram: "jjscally_3",
+      wikipedia: "https://en.wikipedia.org/wiki/Joe_Scally"
     }
   },
   "423855": {
@@ -6381,7 +6851,8 @@ var squads_default = {
     dateOfBirth: "2002-09-26",
     height: 170,
     socials: {
-      instagram: "jaydennelsonn"
+      instagram: "jaydennelsonn",
+      wikipedia: "https://en.wikipedia.org/wiki/Jayden_Nelson"
     }
   },
   "423941": {
@@ -6411,7 +6882,8 @@ var squads_default = {
     dateOfBirth: "2002-01-09",
     height: 183,
     socials: {
-      instagram: "pierohincapie"
+      instagram: "pierohincapie",
+      wikipedia: "https://pt.wikipedia.org/wiki/Piero_Hincapi%C3%A9"
     }
   },
   "424036": {
@@ -6426,7 +6898,8 @@ var squads_default = {
     dateOfBirth: "2002-03-09",
     height: 172,
     socials: {
-      instagram: "pedro_vite45"
+      instagram: "pedro_vite45",
+      wikipedia: "https://en.wikipedia.org/wiki/Pedro_Vite"
     }
   },
   "424047": {
@@ -6439,7 +6912,10 @@ var squads_default = {
     club: "Melbourne Knights",
     pictureUrl: "https://digitalhub.fifa.com/transform/cd0b7ee9-50b8-4043-a957-44df5860e935/ANTONISSE-Jeremy_424047",
     dateOfBirth: "2002-03-29",
-    height: 164
+    height: 164,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Jeremy_Antonisse"
+    }
   },
   "424051": {
     fifaId: "424051",
@@ -6453,7 +6929,8 @@ var squads_default = {
     dateOfBirth: "2002-02-01",
     height: 181,
     socials: {
-      instagram: "brianbrobbeyy"
+      instagram: "brianbrobbeyy",
+      wikipedia: "https://pt.wikipedia.org/wiki/Brian_Brobbey"
     }
   },
   "424056": {
@@ -6468,7 +6945,8 @@ var squads_default = {
     dateOfBirth: "2002-05-18",
     height: 176,
     socials: {
-      instagram: "sontje.hansen"
+      instagram: "sontje.hansen",
+      wikipedia: "https://en.wikipedia.org/wiki/Sontje_Hansen"
     }
   },
   "424071": {
@@ -6483,7 +6961,8 @@ var squads_default = {
     dateOfBirth: "2002-01-18",
     height: 181,
     socials: {
-      instagram: "asedi_"
+      instagram: "asedi_",
+      wikipedia: "https://en.wikipedia.org/wiki/Anass_Salah-Eddine"
     }
   },
   "424081": {
@@ -6498,7 +6977,8 @@ var squads_default = {
     dateOfBirth: "2002-08-18",
     height: 193,
     socials: {
-      instagram: "bartverbruggen1"
+      instagram: "bartverbruggen1",
+      wikipedia: "https://pt.wikipedia.org/wiki/Bart_Verbruggen"
     }
   },
   "424106": {
@@ -6513,7 +6993,8 @@ var squads_default = {
     dateOfBirth: "2002-02-08",
     height: 175,
     socials: {
-      instagram: "haissemhassan"
+      instagram: "haissemhassan",
+      wikipedia: "https://en.wikipedia.org/wiki/Haissem_Hassan"
     }
   },
   "424119": {
@@ -6528,7 +7009,8 @@ var squads_default = {
     dateOfBirth: "2002-03-16",
     height: 170,
     socials: {
-      instagram: "n.mbuku"
+      instagram: "n.mbuku",
+      wikipedia: "https://en.wikipedia.org/wiki/Nathana%C3%ABl_Mbuku"
     }
   },
   "424422": {
@@ -6541,7 +7023,8 @@ var squads_default = {
     club: "Gr\xEAmio",
     pictureUrl: "https://digitalhub.fifa.com/transform/ce774da7-eea7-475e-8526-8227b5068dc3/GALARZA-Matias_424422",
     socials: {
-      instagram: "matigalarzaf"
+      instagram: "matigalarzaf",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mat%C3%ADas_Galarza"
     },
     dateOfBirth: "2002-02-11",
     height: 175
@@ -6558,7 +7041,8 @@ var squads_default = {
     dateOfBirth: "2002-08-09",
     height: 182,
     socials: {
-      instagram: "carlfredsainte"
+      instagram: "carlfredsainte",
+      wikipedia: "https://en.wikipedia.org/wiki/Carl_Saint%C3%A9"
     }
   },
   "425607": {
@@ -6573,7 +7057,8 @@ var squads_default = {
     dateOfBirth: "1995-12-15",
     height: 181,
     socials: {
-      instagram: "ghaylen_chaaleli"
+      instagram: "ghaylen_chaaleli",
+      wikipedia: "https://en.wikipedia.org/wiki/Mohamed_Amine_Ben_Hamida"
     }
   },
   "425701": {
@@ -6588,7 +7073,8 @@ var squads_default = {
     dateOfBirth: "1998-10-22",
     height: 182,
     socials: {
-      instagram: "johan_pipe"
+      instagram: "johan_pipe",
+      wikipedia: "https://pt.wikipedia.org/wiki/Johan_V%C3%A1squez"
     }
   },
   "425804": {
@@ -6618,7 +7104,8 @@ var squads_default = {
     dateOfBirth: "1997-11-26",
     height: 183,
     socials: {
-      instagram: "awbissaka"
+      instagram: "awbissaka",
+      wikipedia: "https://pt.wikipedia.org/wiki/Aaron_Wan-Bissaka"
     }
   },
   "426506": {
@@ -6633,7 +7120,8 @@ var squads_default = {
     dateOfBirth: "1997-08-06",
     height: 173,
     socials: {
-      instagram: "meschackelialina"
+      instagram: "meschackelialina",
+      wikipedia: "https://pt.wikipedia.org/wiki/Meschack_Elia"
     }
   },
   "428882": {
@@ -6648,7 +7136,8 @@ var squads_default = {
     dateOfBirth: "1994-05-24",
     height: 178,
     socials: {
-      instagram: "rodridepaul"
+      instagram: "rodridepaul",
+      wikipedia: "https://pt.wikipedia.org/wiki/Rodrigo_de_Paul"
     }
   },
   "428885": {
@@ -6661,7 +7150,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/ae32bbc5-09f0-4743-ae0a-5b80461bdc79/CAICEDO-Moises_428885",
     dateOfBirth: "2001-11-02",
-    height: 178
+    height: 178,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Mois%C3%A9s_Caicedo"
+    }
   },
   "429063": {
     fifaId: "429063",
@@ -6675,7 +7167,8 @@ var squads_default = {
     dateOfBirth: "1994-08-19",
     height: 180,
     socials: {
-      instagram: "edmilsonjunior22"
+      instagram: "edmilsonjunior22",
+      wikipedia: "https://en.wikipedia.org/wiki/Edmilson_Junior"
     }
   },
   "429095": {
@@ -6690,7 +7183,8 @@ var squads_default = {
     dateOfBirth: "1994-09-29",
     height: 183,
     socials: {
-      instagram: "hamdyfathy_8"
+      instagram: "hamdyfathy_8",
+      wikipedia: "https://en.wikipedia.org/wiki/Hamdy_Fathy"
     }
   },
   "429157": {
@@ -6703,7 +7197,8 @@ var squads_default = {
     club: "Cruz Azul",
     pictureUrl: "https://digitalhub.fifa.com/transform/ea06becb-97b2-4f89-8464-5e0854cb7f81/QUINONES-Julian_429157",
     socials: {
-      instagram: "julianquinones33"
+      instagram: "julianquinones33",
+      wikipedia: "https://pt.wikipedia.org/wiki/Juli%C3%A1n_Qui%C3%B1ones"
     },
     dateOfBirth: "1997-03-24",
     height: 177
@@ -6733,7 +7228,10 @@ var squads_default = {
     club: "Girondin Bordeaux",
     pictureUrl: "https://digitalhub.fifa.com/transform/5bef6cf8-e976-4ab2-89e1-6f8a886712f9/LEE-Donggyeong_429600",
     dateOfBirth: "1997-09-20",
-    height: 175
+    height: 175,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Lee_Dong-gyeong"
+    }
   },
   "429608": {
     fifaId: "429608",
@@ -6774,7 +7272,8 @@ var squads_default = {
     dateOfBirth: "2001-04-04",
     height: 183,
     socials: {
-      instagram: "angelo.stiller"
+      instagram: "angelo.stiller",
+      wikipedia: "https://pt.wikipedia.org/wiki/Angelo_Stiller"
     }
   },
   "429642": {
@@ -6789,7 +7288,8 @@ var squads_default = {
     dateOfBirth: "2003-02-26",
     height: 180,
     socials: {
-      instagram: "jamalmusiala10"
+      instagram: "jamalmusiala10",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jamal_Musiala"
     }
   },
   "430070": {
@@ -6804,7 +7304,8 @@ var squads_default = {
     dateOfBirth: "1991-07-22",
     height: 190,
     socials: {
-      instagram: "budimir__ante"
+      instagram: "budimir__ante",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ante_Budimir"
     }
   },
   "430097": {
@@ -6819,7 +7320,8 @@ var squads_default = {
     dateOfBirth: "1995-02-22",
     height: 178,
     socials: {
-      instagram: "ryanchristie2"
+      instagram: "ryanchristie2",
+      wikipedia: "https://en.wikipedia.org/wiki/Ryan_Christie"
     }
   },
   "430098": {
@@ -6832,7 +7334,10 @@ var squads_default = {
     club: "Millwall",
     pictureUrl: "https://digitalhub.fifa.com/transform/e3a5c73f-1dd8-4e90-941a-f903ef96d7cc/DYKES-Lyndon_430098",
     dateOfBirth: "1995-10-07",
-    height: 188
+    height: 188,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Lyndon_Dykes"
+    }
   },
   "430100": {
     fifaId: "430100",
@@ -6846,7 +7351,8 @@ var squads_default = {
     dateOfBirth: "1997-07-07",
     height: 200,
     socials: {
-      instagram: "sasakalajdzic"
+      instagram: "sasakalajdzic",
+      wikipedia: "https://pt.wikipedia.org/wiki/Sa%C5%A1a_Kalajd%C5%BEi%C4%87"
     }
   },
   "430120": {
@@ -6861,7 +7367,8 @@ var squads_default = {
     dateOfBirth: "1999-04-03",
     height: 184,
     socials: {
-      instagram: "mert.m99"
+      instagram: "mert.m99",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mert_M%C3%BCld%C3%BCr"
     }
   },
   "430138": {
@@ -6876,7 +7383,8 @@ var squads_default = {
     dateOfBirth: "1999-02-08",
     height: 183,
     socials: {
-      instagram: "tajonbuchanan"
+      instagram: "tajonbuchanan",
+      wikipedia: "https://pt.wikipedia.org/wiki/Tajon_Buchanan"
     }
   },
   "430144": {
@@ -6891,7 +7399,8 @@ var squads_default = {
     dateOfBirth: "1999-09-13",
     height: 173,
     socials: {
-      instagram: "pedroporro29_"
+      instagram: "pedroporro29_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Pedro_Porro"
     }
   },
   "430147": {
@@ -6906,7 +7415,8 @@ var squads_default = {
     dateOfBirth: "1995-05-07",
     height: 192,
     socials: {
-      instagram: "jackhendry22"
+      instagram: "jackhendry22",
+      wikipedia: "https://en.wikipedia.org/wiki/Jack_Hendry_(footballer,_born_1995)"
     }
   },
   "430150": {
@@ -6921,7 +7431,8 @@ var squads_default = {
     dateOfBirth: "1999-09-21",
     height: 190,
     socials: {
-      instagram: "alex_isak"
+      instagram: "alex_isak",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alexander_Isak"
     }
   },
   "430176": {
@@ -6936,7 +7447,8 @@ var squads_default = {
     dateOfBirth: "2002-05-16",
     height: 190,
     socials: {
-      instagram: "ryanjiro_"
+      instagram: "ryanjiro_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ryan_Gravenberch"
     }
   },
   "430194": {
@@ -6951,7 +7463,8 @@ var squads_default = {
     dateOfBirth: "1998-07-09",
     height: 191,
     socials: {
-      instagram: "dennis.hadzi"
+      instagram: "dennis.hadzi",
+      wikipedia: "https://en.wikipedia.org/wiki/Dennis_Had%C5%BEikaduni%C4%87"
     }
   },
   "430196": {
@@ -6966,7 +7479,8 @@ var squads_default = {
     dateOfBirth: "1997-03-08",
     height: 179,
     socials: {
-      instagram: "a_hadzi18"
+      instagram: "a_hadzi18",
+      wikipedia: "https://en.wikipedia.org/wiki/Amir_Had%C5%BEiahmetovi%C4%87"
     }
   },
   "430385": {
@@ -6993,7 +7507,8 @@ var squads_default = {
     dateOfBirth: "1998-01-25",
     height: 188,
     socials: {
-      instagram: "whrbtjd"
+      instagram: "whrbtjd",
+      wikipedia: "https://pt.wikipedia.org/wiki/Cho_Gue-sung"
     }
   },
   "430401": {
@@ -7008,7 +7523,8 @@ var squads_default = {
     dateOfBirth: "1997-02-05",
     height: 184,
     socials: {
-      instagram: "tys_w0205"
+      instagram: "tys_w0205",
+      wikipedia: "https://en.wikipedia.org/wiki/Tsuyoshi_Watanabe"
     }
   },
   "430407": {
@@ -7023,7 +7539,8 @@ var squads_default = {
     dateOfBirth: "1997-10-20",
     height: 173,
     socials: {
-      instagram: "m_daizen0827"
+      instagram: "m_daizen0827",
+      wikipedia: "https://pt.wikipedia.org/wiki/Daizen_Maeda"
     }
   },
   "430413": {
@@ -7038,7 +7555,8 @@ var squads_default = {
     dateOfBirth: "1998-08-28",
     height: 182,
     socials: {
-      instagram: "bee18_official"
+      instagram: "bee18_official",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ayase_Ueda"
     }
   },
   "430437": {
@@ -7053,7 +7571,8 @@ var squads_default = {
     dateOfBirth: "1998-06-07",
     height: 170,
     socials: {
-      instagram: "cameron.devlin"
+      instagram: "cameron.devlin",
+      wikipedia: "https://en.wikipedia.org/wiki/Cammy_Devlin"
     }
   },
   "430440": {
@@ -7083,7 +7602,8 @@ var squads_default = {
     dateOfBirth: "1998-10-22",
     height: 198,
     socials: {
-      instagram: "harry_souttar"
+      instagram: "harry_souttar",
+      wikipedia: "https://pt.wikipedia.org/wiki/Harry_Souttar"
     }
   },
   "430450": {
@@ -7098,7 +7618,8 @@ var squads_default = {
     dateOfBirth: "2001-07-30",
     height: 177,
     socials: {
-      instagram: "jacobitaliano"
+      instagram: "jacobitaliano",
+      wikipedia: "https://en.wikipedia.org/wiki/Jacob_Italiano"
     }
   },
   "430452": {
@@ -7113,7 +7634,8 @@ var squads_default = {
     dateOfBirth: "1999-11-05",
     height: 183,
     socials: {
-      instagram: "connor_metcalfe"
+      instagram: "connor_metcalfe",
+      wikipedia: "https://pt.wikipedia.org/wiki/Connor_Metcalfe"
     }
   },
   "430465": {
@@ -7128,7 +7650,8 @@ var squads_default = {
     dateOfBirth: "2001-04-23",
     height: 178,
     socials: {
-      instagram: "ibrahim_adel_30"
+      instagram: "ibrahim_adel_30",
+      wikipedia: "https://en.wikipedia.org/wiki/Ibrahim_Adel"
     }
   },
   "430476": {
@@ -7143,7 +7666,8 @@ var squads_default = {
     dateOfBirth: "1999-02-07",
     height: 180,
     socials: {
-      instagram: "marmoush"
+      instagram: "marmoush",
+      wikipedia: "https://pt.wikipedia.org/wiki/Omar_Marmoush"
     }
   },
   "430477": {
@@ -7168,7 +7692,10 @@ var squads_default = {
     club: "Al Wakrah",
     pictureUrl: "https://digitalhub.fifa.com/transform/6d203b10-285b-4800-b448-e34d2b3a3e09/EMAM-ASHOUR_430482",
     dateOfBirth: "1998-02-20",
-    height: 180
+    height: 180,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Emam_Ashour"
+    }
   },
   "430512": {
     fifaId: "430512",
@@ -7212,7 +7739,8 @@ var squads_default = {
     dateOfBirth: "1998-11-23",
     height: 186,
     socials: {
-      instagram: "ibanez41oficial"
+      instagram: "ibanez41oficial",
+      wikipedia: "https://pt.wikipedia.org/wiki/Roger_Iba%C3%B1ez"
     }
   },
   "430597": {
@@ -7227,7 +7755,8 @@ var squads_default = {
     dateOfBirth: "2001-06-18",
     height: 178,
     socials: {
-      instagram: "gabriel.martinelli"
+      instagram: "gabriel.martinelli",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gabriel_Martinelli"
     }
   },
   "430601": {
@@ -7242,7 +7771,8 @@ var squads_default = {
     dateOfBirth: "1997-12-19",
     height: 190,
     socials: {
-      instagram: "_gabrielmagalhaes"
+      instagram: "_gabrielmagalhaes",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gabriel_Magalh%C3%A3es"
     }
   },
   "430605": {
@@ -7257,7 +7787,8 @@ var squads_default = {
     dateOfBirth: "1997-11-16",
     height: 182,
     socials: {
-      instagram: "brunoguimaraes"
+      instagram: "brunoguimaraes",
+      wikipedia: "https://pt.wikipedia.org/wiki/Bruno_Guimar%C3%A3es"
     }
   },
   "430609": {
@@ -7272,7 +7803,8 @@ var squads_default = {
     dateOfBirth: "1999-05-27",
     height: 183,
     socials: {
-      instagram: "cunha"
+      instagram: "cunha",
+      wikipedia: "https://pt.wikipedia.org/wiki/Matheus_Cunha"
     }
   },
   "430624": {
@@ -7287,7 +7819,8 @@ var squads_default = {
     dateOfBirth: "1994-05-06",
     height: 193,
     socials: {
-      instagram: "juanmusso"
+      instagram: "juanmusso",
+      wikipedia: "https://pt.wikipedia.org/wiki/Juan_Musso"
     }
   },
   "430628": {
@@ -7302,7 +7835,8 @@ var squads_default = {
     dateOfBirth: "1998-12-24",
     height: 176,
     socials: {
-      instagram: "alemacallister"
+      instagram: "alemacallister",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alexis_Mac_Allister"
     }
   },
   "430631": {
@@ -7317,7 +7851,8 @@ var squads_default = {
     dateOfBirth: "1998-04-06",
     height: 180,
     socials: {
-      instagram: "nicoigonzalez"
+      instagram: "nicoigonzalez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nicol%C3%A1s_Gonz%C3%A1lez"
     }
   },
   "430657": {
@@ -7332,7 +7867,8 @@ var squads_default = {
     dateOfBirth: "1998-04-22",
     height: 180,
     socials: {
-      instagram: "david.raum"
+      instagram: "david.raum",
+      wikipedia: "https://pt.wikipedia.org/wiki/David_Raum"
     }
   },
   "430658": {
@@ -7347,7 +7883,8 @@ var squads_default = {
     dateOfBirth: "1996-07-20",
     height: 189,
     socials: {
-      instagram: "wowaanton31"
+      instagram: "wowaanton31",
+      wikipedia: "https://pt.wikipedia.org/wiki/Waldemar_Anton"
     }
   },
   "430667": {
@@ -7362,7 +7899,8 @@ var squads_default = {
     dateOfBirth: "1999-12-01",
     height: 191,
     socials: {
-      instagram: "nico.schlotterbeck"
+      instagram: "nico.schlotterbeck",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nico_Schlotterbeck"
     }
   },
   "430669": {
@@ -7377,7 +7915,8 @@ var squads_default = {
     dateOfBirth: "2003-05-03",
     height: 176,
     socials: {
-      instagram: "flowirtz"
+      instagram: "flowirtz",
+      wikipedia: "https://pt.wikipedia.org/wiki/Florian_Wirtz"
     }
   },
   "430671": {
@@ -7392,7 +7931,8 @@ var squads_default = {
     dateOfBirth: "1999-08-17",
     height: 184,
     socials: {
-      instagram: "ismailjakobs"
+      instagram: "ismailjakobs",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ismail_Jakobs"
     }
   },
   "430690": {
@@ -7407,7 +7947,8 @@ var squads_default = {
     dateOfBirth: "1996-03-08",
     height: 190,
     socials: {
-      instagram: "niakhate"
+      instagram: "niakhate",
+      wikipedia: "https://en.wikipedia.org/wiki/Moussa_Niakhat%C3%A9"
     }
   },
   "430697": {
@@ -7422,7 +7963,8 @@ var squads_default = {
     dateOfBirth: "1998-06-27",
     height: 170,
     socials: {
-      instagram: "bellegardejr"
+      instagram: "bellegardejr",
+      wikipedia: "https://en.wikipedia.org/wiki/Jean-Ricner_Bellegarde"
     }
   },
   "430698": {
@@ -7437,7 +7979,8 @@ var squads_default = {
     dateOfBirth: "1998-06-30",
     height: 175,
     socials: {
-      instagram: "houssem_aouar"
+      instagram: "houssem_aouar",
+      wikipedia: "https://pt.wikipedia.org/wiki/Houssem_Aouar"
     }
   },
   "430707": {
@@ -7452,7 +7995,8 @@ var squads_default = {
     dateOfBirth: "1998-11-12",
     height: 178,
     socials: {
-      instagram: "jkeey4"
+      instagram: "jkeey4",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jules_Kound%C3%A9"
     }
   },
   "430718": {
@@ -7467,7 +8011,8 @@ var squads_default = {
     dateOfBirth: "1996-04-03",
     height: 188,
     socials: {
-      instagram: "fabianruiz52"
+      instagram: "fabianruiz52",
+      wikipedia: "https://pt.wikipedia.org/wiki/Fabi%C3%A1n_Ruiz"
     }
   },
   "430733": {
@@ -7482,7 +8027,8 @@ var squads_default = {
     dateOfBirth: "1996-06-22",
     height: 188,
     socials: {
-      instagram: "mikelmerino"
+      instagram: "mikelmerino",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mikel_Merino"
     }
   },
   "430735": {
@@ -7497,7 +8043,8 @@ var squads_default = {
     dateOfBirth: "1998-07-22",
     height: 173,
     socials: {
-      instagram: "cucurella3"
+      instagram: "cucurella3",
+      wikipedia: "https://pt.wikipedia.org/wiki/Marc_Cucurella"
     }
   },
   "430740": {
@@ -7512,7 +8059,8 @@ var squads_default = {
     dateOfBirth: "1999-08-03",
     height: 170,
     socials: {
-      instagram: "brahim"
+      instagram: "brahim",
+      wikipedia: "https://pt.wikipedia.org/wiki/Brahim_D%C3%ADaz"
     }
   },
   "430750": {
@@ -7527,7 +8075,8 @@ var squads_default = {
     dateOfBirth: "1998-05-07",
     height: 179,
     socials: {
-      instagram: "daniolmo"
+      instagram: "daniolmo",
+      wikipedia: "https://pt.wikipedia.org/wiki/Dani_Olmo"
     }
   },
   "430751": {
@@ -7542,7 +8091,8 @@ var squads_default = {
     dateOfBirth: "1997-04-21",
     height: 181,
     socials: {
-      instagram: "mikel10oyar"
+      instagram: "mikel10oyar",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mikel_Oyarzabal"
     }
   },
   "430753": {
@@ -7555,7 +8105,10 @@ var squads_default = {
     club: "Athletic Club",
     pictureUrl: "https://digitalhub.fifa.com/transform/41e0f920-bd7d-4bd6-882b-c83ed33e3f26/SIMON-Unai_430753",
     dateOfBirth: "1997-06-11",
-    height: 190
+    height: 190,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Unai_Sim%C3%B3n"
+    }
   },
   "430754": {
     fifaId: "430754",
@@ -7569,7 +8122,8 @@ var squads_default = {
     dateOfBirth: "1999-02-02",
     height: 181,
     socials: {
-      instagram: "martin_zubimendi"
+      instagram: "martin_zubimendi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mart%C3%ADn_Zubimendi"
     }
   },
   "430759": {
@@ -7584,7 +8138,8 @@ var squads_default = {
     dateOfBirth: "2001-04-18",
     height: 180,
     socials: {
-      instagram: "sant.gimenez"
+      instagram: "sant.gimenez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Santiago_Gim%C3%A9nez"
     }
   },
   "430763": {
@@ -7597,7 +8152,8 @@ var squads_default = {
     club: "Houston Dynamo",
     pictureUrl: "https://digitalhub.fifa.com/transform/bc7f864e-c553-4995-9eb3-62139e29a7d7/ROMO-Luis_430763",
     socials: {
-      instagram: "luis.romo3"
+      instagram: "luis.romo3",
+      wikipedia: "https://pt.wikipedia.org/wiki/Luis_Romo"
     },
     dateOfBirth: "1995-06-05",
     height: 183
@@ -7614,7 +8170,8 @@ var squads_default = {
     dateOfBirth: "1997-11-25",
     height: 175,
     socials: {
-      instagram: "alexisvega.9"
+      instagram: "alexisvega.9",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alexis_Vega"
     }
   },
   "430822": {
@@ -7629,7 +8186,8 @@ var squads_default = {
     dateOfBirth: "2002-07-11",
     height: 173,
     socials: {
-      instagram: "amaddiallo19"
+      instagram: "amaddiallo19",
+      wikipedia: "https://pt.wikipedia.org/wiki/Amad_Diallo"
     }
   },
   "430831": {
@@ -7644,7 +8202,8 @@ var squads_default = {
     dateOfBirth: "1997-12-02",
     height: 191,
     socials: {
-      instagram: "ibrahim_sangare225"
+      instagram: "ibrahim_sangare225",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ibrahim_Sangar%C3%A9"
     }
   },
   "430834": {
@@ -7659,7 +8218,8 @@ var squads_default = {
     dateOfBirth: "2001-02-22",
     height: 165,
     socials: {
-      instagram: "guiagon_parfait"
+      instagram: "guiagon_parfait",
+      wikipedia: "https://en.wikipedia.org/wiki/Parfait_Guiagon"
     }
   },
   "430854": {
@@ -7674,7 +8234,8 @@ var squads_default = {
     dateOfBirth: "2000-12-25",
     height: 182,
     socials: {
-      instagram: "stephane_singo"
+      instagram: "stephane_singo",
+      wikipedia: "https://pt.wikipedia.org/wiki/Wilfried_Singo"
     }
   },
   "430917": {
@@ -7689,7 +8250,8 @@ var squads_default = {
     dateOfBirth: "2000-06-05",
     height: 183,
     socials: {
-      instagram: "evidence___makgopa"
+      instagram: "evidence___makgopa",
+      wikipedia: "https://en.wikipedia.org/wiki/Evidence_Makgopa"
     }
   },
   "431196": {
@@ -7704,7 +8266,8 @@ var squads_default = {
     dateOfBirth: "1998-04-27",
     height: 185,
     socials: {
-      instagram: "cutiromero2"
+      instagram: "cutiromero2",
+      wikipedia: "https://pt.wikipedia.org/wiki/Cristian_Romero"
     }
   },
   "431202": {
@@ -7719,7 +8282,8 @@ var squads_default = {
     dateOfBirth: "1996-12-26",
     height: 190,
     socials: {
-      instagram: "alderete.20"
+      instagram: "alderete.20",
+      wikipedia: "https://pt.wikipedia.org/wiki/Omar_Alderete"
     }
   },
   "431208": {
@@ -7747,7 +8311,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/e6579a9e-8548-4bdb-bbef-36f3fb6c1b81/IBRAHIM-SADEH_431209",
     dateOfBirth: "2000-04-27",
-    height: 175
+    height: 175,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Ibrahim_Sadeh"
+    }
   },
   "431211": {
     fifaId: "431211",
@@ -7776,7 +8343,8 @@ var squads_default = {
     dateOfBirth: "2000-03-26",
     height: 182,
     socials: {
-      instagram: "ali_alwan9"
+      instagram: "ali_alwan9",
+      wikipedia: "https://en.wikipedia.org/wiki/Ali_Olwan"
     }
   },
   "431219": {
@@ -7848,7 +8416,8 @@ var squads_default = {
     dateOfBirth: "1995-03-29",
     height: 194,
     socials: {
-      instagram: "frantzdy_9"
+      instagram: "frantzdy_9",
+      wikipedia: "https://en.wikipedia.org/wiki/Frantzdy_Pierrot"
     }
   },
   "431696": {
@@ -7863,7 +8432,8 @@ var squads_default = {
     dateOfBirth: "1995-01-07",
     height: 175,
     socials: {
-      instagram: "richielaryea"
+      instagram: "richielaryea",
+      wikipedia: "https://en.wikipedia.org/wiki/Richie_Laryea"
     }
   },
   "431698": {
@@ -7878,7 +8448,8 @@ var squads_default = {
     dateOfBirth: "1993-12-23",
     height: 183,
     socials: {
-      instagram: "juriengaari"
+      instagram: "juriengaari",
+      wikipedia: "https://pt.wikipedia.org/wiki/Juri%C3%ABn_Gaari"
     }
   },
   "431781": {
@@ -7893,7 +8464,8 @@ var squads_default = {
     dateOfBirth: "1997-07-12",
     height: 184,
     socials: {
-      instagram: "jk_duverne"
+      instagram: "jk_duverne",
+      wikipedia: "https://en.wikipedia.org/wiki/Jean-K%C3%A9vin_Duverne"
     }
   },
   "431788": {
@@ -7908,7 +8480,8 @@ var squads_default = {
     dateOfBirth: "1999-01-24",
     height: 189,
     socials: {
-      instagram: "p.gueye24"
+      instagram: "p.gueye24",
+      wikipedia: "https://pt.wikipedia.org/wiki/Pape_Gueye"
     }
   },
   "431858": {
@@ -7923,7 +8496,8 @@ var squads_default = {
     dateOfBirth: "2001-06-06",
     height: 180,
     socials: {
-      instagram: "r.aitnouri"
+      instagram: "r.aitnouri",
+      wikipedia: "https://pt.wikipedia.org/wiki/Rayan_A%C3%AFt-Nouri"
     }
   },
   "431861": {
@@ -7938,7 +8512,8 @@ var squads_default = {
     dateOfBirth: "2003-08-17",
     height: 180,
     socials: {
-      instagram: "rayan_cherki"
+      instagram: "rayan_cherki",
+      wikipedia: "https://pt.wikipedia.org/wiki/Rayan_Cherki"
     }
   },
   "431889": {
@@ -7953,7 +8528,8 @@ var squads_default = {
     dateOfBirth: "1997-03-18",
     height: 188,
     socials: {
-      instagram: "bremer"
+      instagram: "bremer",
+      wikipedia: "https://pt.wikipedia.org/wiki/Bremer"
     }
   },
   "433066": {
@@ -7968,7 +8544,8 @@ var squads_default = {
     dateOfBirth: "1999-01-19",
     height: 178,
     socials: {
-      instagram: "donyellmalen"
+      instagram: "donyellmalen",
+      wikipedia: "https://pt.wikipedia.org/wiki/Donyell_Malen"
     }
   },
   "433067": {
@@ -7983,7 +8560,8 @@ var squads_default = {
     dateOfBirth: "1996-05-05",
     height: 188,
     socials: {
-      instagram: "mortenthorsby"
+      instagram: "mortenthorsby",
+      wikipedia: "https://en.wikipedia.org/wiki/Morten_Thorsby"
     }
   },
   "433072": {
@@ -7998,7 +8576,8 @@ var squads_default = {
     dateOfBirth: "1997-02-17",
     height: 180,
     socials: {
-      instagram: "zekicelik17"
+      instagram: "zekicelik17",
+      wikipedia: "https://pt.wikipedia.org/wiki/Zeki_%C3%87elik"
     }
   },
   "433074": {
@@ -8025,7 +8604,8 @@ var squads_default = {
     dateOfBirth: "1996-08-12",
     height: 176,
     socials: {
-      instagram: "s_moutoussamy"
+      instagram: "s_moutoussamy",
+      wikipedia: "https://en.wikipedia.org/wiki/Samuel_Moutoussamy"
     }
   },
   "433092": {
@@ -8040,7 +8620,8 @@ var squads_default = {
     dateOfBirth: "1999-06-27",
     height: 180,
     socials: {
-      instagram: "alexis.saelemaekers"
+      instagram: "alexis.saelemaekers",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alexis_Saelemaekers"
     }
   },
   "433097": {
@@ -8055,7 +8636,8 @@ var squads_default = {
     dateOfBirth: "1999-01-14",
     height: 185,
     socials: {
-      instagram: "declanrice"
+      instagram: "declanrice",
+      wikipedia: "https://pt.wikipedia.org/wiki/Declan_Rice"
     }
   },
   "433118": {
@@ -8070,7 +8652,8 @@ var squads_default = {
     dateOfBirth: "2000-12-29",
     height: 175,
     socials: {
-      instagram: "orkunkokcu"
+      instagram: "orkunkokcu",
+      wikipedia: "https://pt.wikipedia.org/wiki/Orkun_K%C3%B6k%C3%A7%C3%BC"
     }
   },
   "433147": {
@@ -8085,7 +8668,8 @@ var squads_default = {
     dateOfBirth: "1997-01-06",
     height: 183,
     socials: {
-      instagram: "michel.aebischer"
+      instagram: "michel.aebischer",
+      wikipedia: "https://en.wikipedia.org/wiki/Michel_Aebischer"
     }
   },
   "433161": {
@@ -8100,7 +8684,8 @@ var squads_default = {
     dateOfBirth: "1998-06-03",
     height: 183,
     socials: {
-      instagram: "edokayembe"
+      instagram: "edokayembe",
+      wikipedia: "https://en.wikipedia.org/wiki/Edo_Kayembe"
     }
   },
   "433191": {
@@ -8115,7 +8700,8 @@ var squads_default = {
     dateOfBirth: "1996-07-13",
     height: 175,
     socials: {
-      instagram: "cheadams_"
+      instagram: "cheadams_",
+      wikipedia: "https://en.wikipedia.org/wiki/Ch%C3%A9_Adams"
     }
   },
   "433195": {
@@ -8130,7 +8716,8 @@ var squads_default = {
     dateOfBirth: "2002-06-19",
     height: 177,
     socials: {
-      instagram: "nunomendes_5"
+      instagram: "nunomendes_5",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nuno_Mendes_(futebolista)"
     }
   },
   "433361": {
@@ -8145,7 +8732,8 @@ var squads_default = {
     dateOfBirth: "2001-03-16",
     height: 188,
     socials: {
-      instagram: "anis_slimane10"
+      instagram: "anis_slimane10",
+      wikipedia: "https://en.wikipedia.org/wiki/Anis_Ben_Slimane"
     }
   },
   "433362": {
@@ -8160,7 +8748,8 @@ var squads_default = {
     dateOfBirth: "1993-12-20",
     height: 177,
     socials: {
-      instagram: "ali_abdi_officiel"
+      instagram: "ali_abdi_officiel",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ali_Abdi"
     }
   },
   "433365": {
@@ -8175,7 +8764,8 @@ var squads_default = {
     dateOfBirth: "1997-01-28",
     height: 188,
     socials: {
-      instagram: "aymen_dahmen_30"
+      instagram: "aymen_dahmen_30",
+      wikipedia: "https://en.wikipedia.org/wiki/Aymen_Dahmen"
     }
   },
   "433367": {
@@ -8190,7 +8780,8 @@ var squads_default = {
     dateOfBirth: "2001-12-20",
     height: 188,
     socials: {
-      instagram: "omarrekik"
+      instagram: "omarrekik",
+      wikipedia: "https://en.wikipedia.org/wiki/Omar_Rekik"
     }
   },
   "433378": {
@@ -8205,7 +8796,8 @@ var squads_default = {
     dateOfBirth: "2003-01-21",
     height: 177,
     socials: {
-      instagram: "hannibal.mj"
+      instagram: "hannibal.mj",
+      wikipedia: "https://pt.wikipedia.org/wiki/Hannibal_Mejbri"
     }
   },
   "433380": {
@@ -8220,7 +8812,8 @@ var squads_default = {
     dateOfBirth: "1998-05-26",
     height: 190,
     socials: {
-      instagram: "montassartalbi"
+      instagram: "montassartalbi",
+      wikipedia: "https://en.wikipedia.org/wiki/Montassar_Talbi"
     }
   },
   "433394": {
@@ -8233,7 +8826,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/f465c1f2-aa85-4bc7-bf8d-4d5805b19cd9/AHMED-FATHY_433394",
     dateOfBirth: "1993-01-25",
-    height: 171
+    height: 171,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Ahmed_Fathy_(Qatari_footballer)"
+    }
   },
   "433426": {
     fifaId: "433426",
@@ -8247,7 +8843,8 @@ var squads_default = {
     dateOfBirth: "1996-06-02",
     height: 180,
     socials: {
-      instagram: "soufiane_rahimi"
+      instagram: "soufiane_rahimi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Soufiane_Rahimi"
     }
   },
   "433439": {
@@ -8277,7 +8874,8 @@ var squads_default = {
     dateOfBirth: "1996-01-10",
     height: 175,
     socials: {
-      instagram: "m.zizo17"
+      instagram: "m.zizo17",
+      wikipedia: "https://en.wikipedia.org/wiki/Zizo_(footballer)"
     }
   },
   "433466": {
@@ -8328,7 +8926,8 @@ var squads_default = {
     dateOfBirth: "1994-02-25",
     height: 184,
     socials: {
-      instagram: "abdallah_nasib3"
+      instagram: "abdallah_nasib3",
+      wikipedia: "https://en.wikipedia.org/wiki/Abdallah_Nasib"
     }
   },
   "433534": {
@@ -8368,7 +8967,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/390fdc3f-232a-445d-a80e-1c9cc8a67df7/IBRAHIM-BAYESH_433585",
     dateOfBirth: "2000-05-01",
-    height: 180
+    height: 180,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Ibrahim_Bayesh"
+    }
   },
   "433600": {
     fifaId: "433600",
@@ -8382,7 +8984,8 @@ var squads_default = {
     dateOfBirth: "2000-01-22",
     height: 186,
     socials: {
-      instagram: "tougai_med_amine"
+      instagram: "tougai_med_amine",
+      wikipedia: "https://en.wikipedia.org/wiki/Mohamed_Amine_Tougai"
     }
   },
   "433631": {
@@ -8412,7 +9015,8 @@ var squads_default = {
     dateOfBirth: "1996-12-21",
     height: 175,
     socials: {
-      instagram: "stepheustaquio"
+      instagram: "stepheustaquio",
+      wikipedia: "https://pt.wikipedia.org/wiki/Stephen_Eust%C3%A1quio"
     }
   },
   "433667": {
@@ -8427,7 +9031,8 @@ var squads_default = {
     dateOfBirth: "2000-04-02",
     height: 186,
     socials: {
-      instagram: "josip_stanisic"
+      instagram: "josip_stanisic",
+      wikipedia: "https://pt.wikipedia.org/wiki/Josip_Stani%C5%A1i%C4%87"
     }
   },
   "433668": {
@@ -8442,7 +9047,8 @@ var squads_default = {
     dateOfBirth: "1999-05-31",
     height: 169,
     socials: {
-      instagram: "michalsadilek32"
+      instagram: "michalsadilek32",
+      wikipedia: "https://pt.wikipedia.org/wiki/Michal_Sad%C3%ADlek"
     }
   },
   "433679": {
@@ -8457,7 +9063,8 @@ var squads_default = {
     dateOfBirth: "1998-05-26",
     height: 183,
     socials: {
-      instagram: "rramizz_"
+      instagram: "rramizz_",
+      wikipedia: "https://en.wikipedia.org/wiki/Ramiz_Zerrouki"
     }
   },
   "433694": {
@@ -8472,7 +9079,8 @@ var squads_default = {
     dateOfBirth: "2001-10-16",
     height: 183,
     socials: {
-      instagram: "nathan.patterson_"
+      instagram: "nathan.patterson_",
+      wikipedia: "https://en.wikipedia.org/wiki/Nathan_Patterson_(footballer)"
     }
   },
   "433724": {
@@ -8487,7 +9095,8 @@ var squads_default = {
     dateOfBirth: "1994-04-27",
     height: 185,
     socials: {
-      instagram: "wsemedo7"
+      instagram: "wsemedo7",
+      wikipedia: "https://en.wikipedia.org/wiki/Willy_Semedo"
     }
   },
   "433754": {
@@ -8502,7 +9111,8 @@ var squads_default = {
     dateOfBirth: "2002-07-25",
     height: 188,
     socials: {
-      instagram: "ahlozek"
+      instagram: "ahlozek",
+      wikipedia: "https://pt.wikipedia.org/wiki/Adam_Hlo%C5%BEek"
     }
   },
   "433755": {
@@ -8517,7 +9127,8 @@ var squads_default = {
     dateOfBirth: "2000-11-08",
     height: 190,
     socials: {
-      instagram: "david_zima4"
+      instagram: "david_zima4",
+      wikipedia: "https://en.wikipedia.org/wiki/David_Zima"
     }
   },
   "433787": {
@@ -8532,7 +9143,8 @@ var squads_default = {
     dateOfBirth: "1996-12-08",
     height: 193,
     socials: {
-      instagram: "scottmctominay"
+      instagram: "scottmctominay",
+      wikipedia: "https://pt.wikipedia.org/wiki/Scott_McTominay"
     }
   },
   "433795": {
@@ -8547,7 +9159,8 @@ var squads_default = {
     dateOfBirth: "1999-01-05",
     height: 186,
     socials: {
-      instagram: "mattiasvanberg"
+      instagram: "mattiasvanberg",
+      wikipedia: "https://en.wikipedia.org/wiki/Mattias_Svanberg"
     }
   },
   "433806": {
@@ -8562,7 +9175,8 @@ var squads_default = {
     dateOfBirth: "1992-03-01",
     height: 194,
     socials: {
-      instagram: "edou_mendy"
+      instagram: "edou_mendy",
+      wikipedia: "https://pt.wikipedia.org/wiki/%C3%89douard_Mendy"
     }
   },
   "433872": {
@@ -8577,7 +9191,8 @@ var squads_default = {
     dateOfBirth: "1996-12-14",
     height: 176,
     socials: {
-      instagram: "raphinha"
+      instagram: "raphinha",
+      wikipedia: "https://pt.wikipedia.org/wiki/Raphinha"
     }
   },
   "434024": {
@@ -8602,7 +9217,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/84a4d1c5-8fe9-4d23-bb47-5dddfdf566bf/ZAID-TAHSEEN_434025",
     dateOfBirth: "2001-01-29",
-    height: 187
+    height: 187,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Zaid_Tahseen"
+    }
   },
   "434026": {
     fifaId: "434026",
@@ -8616,7 +9234,8 @@ var squads_default = {
     dateOfBirth: "2003-04-27",
     height: 183,
     socials: {
-      instagram: "zidaneiqbal"
+      instagram: "zidaneiqbal",
+      wikipedia: "https://pt.wikipedia.org/wiki/Zidane_Iqbal"
     }
   },
   "434029": {
@@ -8629,7 +9248,10 @@ var squads_default = {
     club: "Al-Zawraa",
     pictureUrl: "https://digitalhub.fifa.com/transform/e9b9b7b4-162e-40c5-91a3-f573cd6a5d39/ALI-YOUSIF_434029",
     dateOfBirth: "1996-01-19",
-    height: 180
+    height: 180,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Ali_Yousif"
+    }
   },
   "436537": {
     fifaId: "436537",
@@ -8673,7 +9295,8 @@ var squads_default = {
     dateOfBirth: "1993-11-07",
     height: 179,
     socials: {
-      instagram: "masuaku26"
+      instagram: "masuaku26",
+      wikipedia: "https://en.wikipedia.org/wiki/Arthur_Masuaku"
     }
   },
   "436599": {
@@ -8688,7 +9311,8 @@ var squads_default = {
     dateOfBirth: "1997-03-14",
     height: 187,
     socials: {
-      instagram: "_milesrobinson_"
+      instagram: "_milesrobinson_",
+      wikipedia: "https://en.wikipedia.org/wiki/Miles_Robinson_(soccer)"
     }
   },
   "436612": {
@@ -8703,7 +9327,8 @@ var squads_default = {
     dateOfBirth: "1996-04-18",
     height: 188,
     socials: {
-      instagram: "ddumfries2"
+      instagram: "ddumfries2",
+      wikipedia: "https://pt.wikipedia.org/wiki/Denzel_Dumfries"
     }
   },
   "436628": {
@@ -8730,7 +9355,8 @@ var squads_default = {
     dateOfBirth: "1998-03-25",
     height: 185,
     socials: {
-      instagram: "e.demirovic29"
+      instagram: "e.demirovic29",
+      wikipedia: "https://en.wikipedia.org/wiki/Ermedin_Demirovi%C4%87"
     }
   },
   "436863": {
@@ -8745,7 +9371,8 @@ var squads_default = {
     dateOfBirth: "1993-07-14",
     height: 182,
     socials: {
-      instagram: "fransputros"
+      instagram: "fransputros",
+      wikipedia: "https://en.wikipedia.org/wiki/Frans_Putros"
     }
   },
   "439538": {
@@ -8760,7 +9387,8 @@ var squads_default = {
     dateOfBirth: "1998-08-24",
     height: 185,
     socials: {
-      instagram: "joacopiquerez"
+      instagram: "joacopiquerez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Joaqu%C3%ADn_Piquerez"
     }
   },
   "439641": {
@@ -8775,7 +9403,8 @@ var squads_default = {
     dateOfBirth: "1999-12-08",
     height: 180,
     socials: {
-      instagram: "reece"
+      instagram: "reece",
+      wikipedia: "https://pt.wikipedia.org/wiki/Reece_James"
     }
   },
   "439956": {
@@ -8790,7 +9419,8 @@ var squads_default = {
     dateOfBirth: "2001-12-20",
     height: 174,
     socials: {
-      instagram: "facupellistri"
+      instagram: "facupellistri",
+      wikipedia: "https://pt.wikipedia.org/wiki/Facundo_Pellistri"
     }
   },
   "440748": {
@@ -8805,7 +9435,8 @@ var squads_default = {
     dateOfBirth: "1994-11-28",
     height: 181,
     socials: {
-      instagram: "francisdevries12"
+      instagram: "francisdevries12",
+      wikipedia: "https://en.wikipedia.org/wiki/Francis_de_Vries"
     }
   },
   "441065": {
@@ -8820,7 +9451,8 @@ var squads_default = {
     dateOfBirth: "1997-01-02",
     height: 183,
     socials: {
-      instagram: "patrickpentz"
+      instagram: "patrickpentz",
+      wikipedia: "https://en.wikipedia.org/wiki/Patrick_Pentz"
     }
   },
   "441067": {
@@ -8835,7 +9467,8 @@ var squads_default = {
     dateOfBirth: "1997-05-14",
     height: 188,
     socials: {
-      instagram: "stefanposxx"
+      instagram: "stefanposxx",
+      wikipedia: "https://en.wikipedia.org/wiki/Stefan_Posch"
     }
   },
   "441068": {
@@ -8850,7 +9483,8 @@ var squads_default = {
     dateOfBirth: "1997-10-08",
     height: 187,
     socials: {
-      instagram: "dejanljubicic"
+      instagram: "dejanljubicic",
+      wikipedia: "https://en.wikipedia.org/wiki/Dejan_Ljubi%C4%8Di%C4%87"
     }
   },
   "441088": {
@@ -8865,7 +9499,8 @@ var squads_default = {
     dateOfBirth: "2001-05-04",
     height: 179,
     socials: {
-      instagram: "nicolasseiwald"
+      instagram: "nicolasseiwald",
+      wikipedia: "https://en.wikipedia.org/wiki/Nicolas_Seiwald"
     }
   },
   "441132": {
@@ -8880,7 +9515,8 @@ var squads_default = {
     dateOfBirth: "1995-06-01",
     height: 185,
     socials: {
-      instagram: "lagerbielken"
+      instagram: "lagerbielken",
+      wikipedia: "https://pt.wikipedia.org/wiki/Carl_Starfelt"
     }
   },
   "441135": {
@@ -8895,7 +9531,8 @@ var squads_default = {
     dateOfBirth: "1995-06-21",
     height: 182,
     socials: {
-      instagram: "jesperkarlstrom"
+      instagram: "jesperkarlstrom",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jesper_Karlstr%C3%B6m"
     }
   },
   "441137": {
@@ -8910,7 +9547,8 @@ var squads_default = {
     dateOfBirth: "2002-04-27",
     height: 178,
     socials: {
-      instagram: "anthonyelanga"
+      instagram: "anthonyelanga",
+      wikipedia: "https://pt.wikipedia.org/wiki/Anthony_Elanga"
     }
   },
   "441146": {
@@ -8925,7 +9563,8 @@ var squads_default = {
     dateOfBirth: "2001-08-25",
     height: 185,
     socials: {
-      instagram: "goncaloinacio_25"
+      instagram: "goncaloinacio_25",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gon%C3%A7alo_In%C3%A1cio"
     }
   },
   "441148": {
@@ -8940,7 +9579,8 @@ var squads_default = {
     dateOfBirth: "1998-08-27",
     height: 183,
     socials: {
-      instagram: "matheusnunes73"
+      instagram: "matheusnunes73",
+      wikipedia: "https://pt.wikipedia.org/wiki/Matheus_Nunes"
     }
   },
   "441149": {
@@ -8955,7 +9595,8 @@ var squads_default = {
     dateOfBirth: "2000-02-13",
     height: 170,
     socials: {
-      instagram: "vitinha"
+      instagram: "vitinha",
+      wikipedia: "https://pt.wikipedia.org/wiki/Vitinha"
     }
   },
   "441162": {
@@ -8970,7 +9611,8 @@ var squads_default = {
     dateOfBirth: "1996-04-27",
     height: 192,
     socials: {
-      instagram: "stanek.js36"
+      instagram: "stanek.js36",
+      wikipedia: "https://en.wikipedia.org/wiki/Jind%C5%99ich_Stan%C4%9Bk"
     }
   },
   "441166": {
@@ -8985,7 +9627,8 @@ var squads_default = {
     dateOfBirth: "1992-08-20",
     height: 190,
     socials: {
-      instagram: "jarinzeleny"
+      instagram: "jarinzeleny",
+      wikipedia: "https://en.wikipedia.org/wiki/Jaroslav_Zelen%C3%BD"
     }
   },
   "441167": {
@@ -9000,7 +9643,8 @@ var squads_default = {
     dateOfBirth: "1993-03-31",
     height: 180,
     socials: {
-      instagram: "tomholes"
+      instagram: "tomholes",
+      wikipedia: "https://pt.wikipedia.org/wiki/Tom%C3%A1%C5%A1_Hole%C5%A1"
     }
   },
   "441170": {
@@ -9015,7 +9659,8 @@ var squads_default = {
     dateOfBirth: "1999-04-20",
     height: 191,
     socials: {
-      instagram: "lkrejci_"
+      instagram: "lkrejci_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ladislav_Krej%C4%8D%C3%AD_(1999)"
     }
   },
   "441171": {
@@ -9030,7 +9675,8 @@ var squads_default = {
     dateOfBirth: "1997-01-08",
     height: 185,
     socials: {
-      instagram: "kuchti_cc"
+      instagram: "kuchti_cc",
+      wikipedia: "https://en.wikipedia.org/wiki/Jan_Kuchta"
     }
   },
   "441179": {
@@ -9045,7 +9691,8 @@ var squads_default = {
     dateOfBirth: "1998-03-05",
     height: 190,
     socials: {
-      instagram: "merihdemiral"
+      instagram: "merihdemiral",
+      wikipedia: "https://pt.wikipedia.org/wiki/Merih_Demiral"
     }
   },
   "441180": {
@@ -9060,7 +9707,8 @@ var squads_default = {
     dateOfBirth: "1998-04-14",
     height: 198,
     socials: {
-      instagram: "altaybayindir"
+      instagram: "altaybayindir",
+      wikipedia: "https://pt.wikipedia.org/wiki/Altay_Bay%C4%B1nd%C4%B1r"
     }
   },
   "441181": {
@@ -9075,7 +9723,8 @@ var squads_default = {
     dateOfBirth: "1996-04-05",
     height: 191,
     socials: {
-      instagram: "cakirugurcan"
+      instagram: "cakirugurcan",
+      wikipedia: "https://en.wikipedia.org/wiki/U%C4%9Furcan_%C3%87ak%C4%B1r"
     }
   },
   "441188": {
@@ -9090,7 +9739,8 @@ var squads_default = {
     dateOfBirth: "1998-10-21",
     height: 172,
     socials: {
-      instagram: "keremakturkoglu"
+      instagram: "keremakturkoglu",
+      wikipedia: "https://en.wikipedia.org/wiki/Kerem_Akt%C3%BCrko%C4%9Flu"
     }
   },
   "441234": {
@@ -9105,7 +9755,8 @@ var squads_default = {
     dateOfBirth: "2004-01-23",
     height: 168,
     socials: {
-      instagram: "julioenciso.33"
+      instagram: "julioenciso.33",
+      wikipedia: "https://pt.wikipedia.org/wiki/Julio_Enciso"
     }
   },
   "441236": {
@@ -9120,7 +9771,8 @@ var squads_default = {
     dateOfBirth: "1987-03-30",
     height: 189,
     socials: {
-      instagram: "hernangalindez"
+      instagram: "hernangalindez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Hern%C3%A1n_Gal%C3%ADndez"
     }
   },
   "441251": {
@@ -9135,7 +9787,8 @@ var squads_default = {
     dateOfBirth: "1997-08-08",
     height: 183,
     socials: {
-      instagram: "antonee_jedi"
+      instagram: "antonee_jedi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Antonee_Robinson"
     }
   },
   "441252": {
@@ -9150,7 +9803,8 @@ var squads_default = {
     dateOfBirth: "1998-10-08",
     height: 180,
     socials: {
-      instagram: "alistairjohnston"
+      instagram: "alistairjohnston",
+      wikipedia: "https://en.wikipedia.org/wiki/Alistair_Johnston"
     }
   },
   "441255": {
@@ -9165,7 +9819,8 @@ var squads_default = {
     dateOfBirth: "1997-05-09",
     height: 191,
     socials: {
-      instagram: "saintc17"
+      instagram: "saintc17",
+      wikipedia: "https://en.wikipedia.org/wiki/Dayne_St._Clair"
     }
   },
   "441257": {
@@ -9180,7 +9835,8 @@ var squads_default = {
     dateOfBirth: "2000-01-14",
     height: 175,
     socials: {
-      instagram: "jodavid"
+      instagram: "jodavid",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jonathan_David"
     }
   },
   "441258": {
@@ -9195,7 +9851,8 @@ var squads_default = {
     dateOfBirth: "2002-06-16",
     height: 188,
     socials: {
-      instagram: "hollywood.ik"
+      instagram: "hollywood.ik",
+      wikipedia: "https://en.wikipedia.org/wiki/Isma%C3%ABl_Kon%C3%A9"
     }
   },
   "441259": {
@@ -9210,7 +9867,8 @@ var squads_default = {
     dateOfBirth: "1999-09-27",
     height: 176,
     socials: {
-      instagram: "liammillar11"
+      instagram: "liammillar11",
+      wikipedia: "https://pt.wikipedia.org/wiki/Liam_Millar"
     }
   },
   "441260": {
@@ -9225,7 +9883,8 @@ var squads_default = {
     dateOfBirth: "1996-04-19",
     height: 185,
     socials: {
-      instagram: "carlos_al1"
+      instagram: "carlos_al1",
+      wikipedia: "https://en.wikipedia.org/wiki/Carlos_Acevedo"
     }
   },
   "441261": {
@@ -9240,7 +9899,8 @@ var squads_default = {
     dateOfBirth: "2000-05-23",
     height: 181,
     socials: {
-      instagram: "israelreyesr58"
+      instagram: "israelreyesr58",
+      wikipedia: "https://pt.wikipedia.org/wiki/Israel_Reyes"
     }
   },
   "441307": {
@@ -9255,7 +9915,8 @@ var squads_default = {
     dateOfBirth: "2000-04-19",
     height: 182,
     socials: {
-      instagram: "azzedine_ounahi"
+      instagram: "azzedine_ounahi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Azzedine_Ounahi"
     }
   },
   "441313": {
@@ -9270,7 +9931,8 @@ var squads_default = {
     dateOfBirth: "1994-08-01",
     height: 182,
     socials: {
-      instagram: "mpasil16"
+      instagram: "mpasil16",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lionel_Mpasi"
     }
   },
   "441316": {
@@ -9285,7 +9947,8 @@ var squads_default = {
     dateOfBirth: "1996-09-03",
     height: 176,
     socials: {
-      instagram: "yowissa"
+      instagram: "yowissa",
+      wikipedia: "https://pt.wikipedia.org/wiki/Yoane_Wissa"
     }
   },
   "441317": {
@@ -9300,7 +9963,8 @@ var squads_default = {
     dateOfBirth: "1995-11-20",
     height: 176,
     socials: {
-      instagram: "theo_bongonda"
+      instagram: "theo_bongonda",
+      wikipedia: "https://pt.wikipedia.org/wiki/Theo_Bongonda"
     }
   },
   "441350": {
@@ -9315,7 +9979,8 @@ var squads_default = {
     dateOfBirth: "1999-09-23",
     height: 175,
     socials: {
-      instagram: "hicham_boudaoui"
+      instagram: "hicham_boudaoui",
+      wikipedia: "https://en.wikipedia.org/wiki/Hicham_Boudaoui"
     }
   },
   "441362": {
@@ -9330,7 +9995,8 @@ var squads_default = {
     dateOfBirth: "1994-07-02",
     height: 188,
     socials: {
-      instagram: "mortadha_benouanes"
+      instagram: "mortadha_benouanes",
+      wikipedia: "https://en.wikipedia.org/wiki/Mortadha_Ben_Ouanes"
     }
   },
   "441422": {
@@ -9345,7 +10011,8 @@ var squads_default = {
     dateOfBirth: "2004-09-08",
     height: 185,
     socials: {
-      instagram: "nicopaz1o"
+      instagram: "nicopaz1o",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nico_Paz"
     }
   },
   "441623": {
@@ -9360,7 +10027,8 @@ var squads_default = {
     dateOfBirth: "2001-04-11",
     height: 182,
     socials: {
-      instagram: "ugartemanu"
+      instagram: "ugartemanu",
+      wikipedia: "https://pt.wikipedia.org/wiki/Manuel_Ugarte"
     }
   },
   "442428": {
@@ -9375,7 +10043,8 @@ var squads_default = {
     dateOfBirth: "2002-06-10",
     height: 185,
     socials: {
-      instagram: "aaronhickey51"
+      instagram: "aaronhickey51",
+      wikipedia: "https://en.wikipedia.org/wiki/Aaron_Hickey"
     }
   },
   "442429": {
@@ -9390,7 +10059,8 @@ var squads_default = {
     dateOfBirth: "1996-01-23",
     height: 184,
     socials: {
-      instagram: "liamkelly08"
+      instagram: "liamkelly08",
+      wikipedia: "https://en.wikipedia.org/wiki/Liam_Kelly_(footballer,_born_1996)"
     }
   },
   "442430": {
@@ -9405,7 +10075,8 @@ var squads_default = {
     dateOfBirth: "1996-09-25",
     height: 186,
     socials: {
-      instagram: "johnsouttar44"
+      instagram: "johnsouttar44",
+      wikipedia: "https://en.wikipedia.org/wiki/John_Souttar"
     }
   },
   "442431": {
@@ -9420,7 +10091,8 @@ var squads_default = {
     dateOfBirth: "1996-11-12",
     height: 189,
     socials: {
-      instagram: "scottmckenna19"
+      instagram: "scottmckenna19",
+      wikipedia: "https://en.wikipedia.org/wiki/Scott_McKenna"
     }
   },
   "442433": {
@@ -9435,7 +10107,8 @@ var squads_default = {
     dateOfBirth: "1996-07-11",
     height: 188,
     socials: {
-      instagram: "ross_stewart_96"
+      instagram: "ross_stewart_96",
+      wikipedia: "https://en.wikipedia.org/wiki/Ross_Stewart_(footballer,_born_1996)"
     }
   },
   "442434": {
@@ -9450,7 +10123,8 @@ var squads_default = {
     dateOfBirth: "1999-08-24",
     height: 181,
     socials: {
-      instagram: "lewisferguson6"
+      instagram: "lewisferguson6",
+      wikipedia: "https://en.wikipedia.org/wiki/Lewis_Ferguson"
     }
   },
   "447853": {
@@ -9465,7 +10139,8 @@ var squads_default = {
     dateOfBirth: "1995-09-15",
     height: 186,
     socials: {
-      instagram: "d.raya1"
+      instagram: "d.raya1",
+      wikipedia: "https://pt.wikipedia.org/wiki/David_Raya"
     }
   },
   "447855": {
@@ -9480,7 +10155,8 @@ var squads_default = {
     dateOfBirth: "2002-07-12",
     height: 181,
     socials: {
-      instagram: "nicolas_williams9"
+      instagram: "nicolas_williams9",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nico_Williams"
     }
   },
   "447860": {
@@ -9495,7 +10171,8 @@ var squads_default = {
     dateOfBirth: "2001-07-20",
     height: 172,
     socials: {
-      instagram: "alexbbaena"
+      instagram: "alexbbaena",
+      wikipedia: "https://pt.wikipedia.org/wiki/%C3%81lex_Baena"
     }
   },
   "447864": {
@@ -9510,7 +10187,8 @@ var squads_default = {
     dateOfBirth: "1993-01-17",
     height: 187,
     socials: {
-      instagram: "borjaiglesias9"
+      instagram: "borjaiglesias9",
+      wikipedia: "https://pt.wikipedia.org/wiki/Borja_Iglesias"
     }
   },
   "447866": {
@@ -9525,7 +10203,8 @@ var squads_default = {
     dateOfBirth: "2004-08-05",
     height: 173,
     socials: {
-      instagram: "pablogavi"
+      instagram: "pablogavi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gavi_(futebolista)"
     }
   },
   "447991": {
@@ -9540,7 +10219,8 @@ var squads_default = {
     dateOfBirth: "1993-04-21",
     height: 191,
     socials: {
-      instagram: "gastonolveira1"
+      instagram: "gastonolveira1",
+      wikipedia: "https://en.wikipedia.org/wiki/Gast%C3%B3n_Olveira"
     }
   },
   "448014": {
@@ -9555,7 +10235,8 @@ var squads_default = {
     dateOfBirth: "2003-10-10",
     height: 191,
     socials: {
-      instagram: "alessandrocircati"
+      instagram: "alessandrocircati",
+      wikipedia: "https://en.wikipedia.org/wiki/Alessandro_Circati"
     }
   },
   "448015": {
@@ -9570,7 +10251,8 @@ var squads_default = {
     dateOfBirth: "2003-11-15",
     height: 187,
     socials: {
-      instagram: "cristianvolpato"
+      instagram: "cristianvolpato",
+      wikipedia: "https://en.wikipedia.org/wiki/Cristian_Volpato"
     }
   },
   "448051": {
@@ -9585,7 +10267,8 @@ var squads_default = {
     dateOfBirth: "1996-01-15",
     height: 178,
     socials: {
-      instagram: "lc24"
+      instagram: "lc24",
+      wikipedia: "https://pt.wikipedia.org/wiki/Luis_Ch%C3%A1vez"
     }
   },
   "448081": {
@@ -9600,7 +10283,8 @@ var squads_default = {
     dateOfBirth: "2001-06-20",
     height: 185,
     socials: {
-      instagram: "goncaloramos88"
+      instagram: "goncaloramos88",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gon%C3%A7alo_Ramos"
     }
   },
   "448092": {
@@ -9615,7 +10299,8 @@ var squads_default = {
     dateOfBirth: "1994-02-07",
     height: 191,
     socials: {
-      instagram: "ruisilva_1"
+      instagram: "ruisilva_1",
+      wikipedia: "https://pt.wikipedia.org/wiki/Rui_Silva_(futebolista)"
     }
   },
   "448103": {
@@ -9630,7 +10315,8 @@ var squads_default = {
     dateOfBirth: "2002-02-16",
     height: 181,
     socials: {
-      instagram: "fabianrieder32"
+      instagram: "fabianrieder32",
+      wikipedia: "https://pt.wikipedia.org/wiki/Fabian_Rieder"
     }
   },
   "448104": {
@@ -9645,7 +10331,8 @@ var squads_default = {
     dateOfBirth: "1996-12-27",
     height: 190,
     socials: {
-      instagram: "cedricitten_13"
+      instagram: "cedricitten_13",
+      wikipedia: "https://en.wikipedia.org/wiki/Cedric_Itten"
     }
   },
   "448107": {
@@ -9660,7 +10347,8 @@ var squads_default = {
     dateOfBirth: "1997-12-06",
     height: 196,
     socials: {
-      instagram: "gregorkobel"
+      instagram: "gregorkobel",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gregor_Kobel"
     }
   },
   "448112": {
@@ -9675,7 +10363,8 @@ var squads_default = {
     dateOfBirth: "2000-12-04",
     height: 183,
     socials: {
-      instagram: "zekiamdouni"
+      instagram: "zekiamdouni",
+      wikipedia: "https://en.wikipedia.org/wiki/Zeki_Amdouni"
     }
   },
   "448114": {
@@ -9688,7 +10377,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/b536dbbe-88a2-4caf-97c0-6baac25c43fe/NDOYE-Dan_448114",
     socials: {
-      instagram: "dandan_ndoye"
+      instagram: "dandan_ndoye",
+      wikipedia: "https://pt.wikipedia.org/wiki/Dan_Ndoye"
     },
     dateOfBirth: "2000-10-25",
     height: 184
@@ -9705,7 +10395,8 @@ var squads_default = {
     dateOfBirth: "2002-07-30",
     height: 181,
     socials: {
-      instagram: "ardonjashari"
+      instagram: "ardonjashari",
+      wikipedia: "https://en.wikipedia.org/wiki/Ardon_Jashari"
     }
   },
   "448124": {
@@ -9720,7 +10411,8 @@ var squads_default = {
     dateOfBirth: "1993-11-11",
     height: 185,
     socials: {
-      instagram: "fassnacht16"
+      instagram: "fassnacht16",
+      wikipedia: "https://en.wikipedia.org/wiki/Christian_Fassnacht"
     }
   },
   "448127": {
@@ -9733,7 +10425,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/dd8abcd7-7775-4f67-9e25-eaa6e7cb2b97/OKAFOR-Noah_448127",
     socials: {
-      instagram: "noah.okafor"
+      instagram: "noah.okafor",
+      wikipedia: "https://pt.wikipedia.org/wiki/Noah_Okafor"
     },
     dateOfBirth: "2000-05-24",
     height: 185
@@ -9748,7 +10441,10 @@ var squads_default = {
     club: "Lausanne-Sport",
     pictureUrl: "https://digitalhub.fifa.com/transform/1a0ecb32-cde2-4987-a0e0-2bf8ee4376c5/PICKEL-Charles_448128",
     dateOfBirth: "1997-05-15",
-    height: 187
+    height: 187,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Charles_Pickel"
+    }
   },
   "448131": {
     fifaId: "448131",
@@ -9760,7 +10456,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/625f7ce0-81a9-4bab-9b18-c9ec395b5096/VARGAS-Ruben_448131",
     socials: {
-      instagram: "rubenvargas11"
+      instagram: "rubenvargas11",
+      wikipedia: "https://pt.wikipedia.org/wiki/Rub%C3%A9n_Vargas"
     },
     dateOfBirth: "1998-08-05",
     height: 179
@@ -9792,7 +10489,8 @@ var squads_default = {
     dateOfBirth: "2001-04-19",
     height: 193,
     socials: {
-      instagram: "mickyvdven"
+      instagram: "mickyvdven",
+      wikipedia: "https://pt.wikipedia.org/wiki/Micky_van_de_Ven"
     }
   },
   "448149": {
@@ -9807,7 +10505,8 @@ var squads_default = {
     dateOfBirth: "1998-02-28",
     height: 185,
     socials: {
-      instagram: "teunkoopmeiners"
+      instagram: "teunkoopmeiners",
+      wikipedia: "https://pt.wikipedia.org/wiki/Teun_Koopmeiners"
     }
   },
   "448151": {
@@ -9822,7 +10521,8 @@ var squads_default = {
     dateOfBirth: "1993-06-13",
     height: 195,
     socials: {
-      instagram: "markflekken"
+      instagram: "markflekken",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mark_Flekken"
     }
   },
   "448152": {
@@ -9837,7 +10537,8 @@ var squads_default = {
     dateOfBirth: "1999-05-07",
     height: 193,
     socials: {
-      instagram: "codymathesgakpo"
+      instagram: "codymathesgakpo",
+      wikipedia: "https://pt.wikipedia.org/wiki/Cody_Gakpo"
     }
   },
   "448153": {
@@ -9852,7 +10553,8 @@ var squads_default = {
     dateOfBirth: "1999-06-17",
     height: 176,
     socials: {
-      instagram: "noano"
+      instagram: "noano",
+      wikipedia: "https://pt.wikipedia.org/wiki/Noa_Lang"
     }
   },
   "448157": {
@@ -9867,7 +10569,8 @@ var squads_default = {
     dateOfBirth: "1997-12-22",
     height: 188,
     socials: {
-      instagram: "guustil"
+      instagram: "guustil",
+      wikipedia: "https://pt.wikipedia.org/wiki/Guus_Til"
     }
   },
   "448159": {
@@ -9882,7 +10585,8 @@ var squads_default = {
     dateOfBirth: "1992-08-07",
     height: 197,
     socials: {
-      instagram: "wout.weghorst"
+      instagram: "wout.weghorst",
+      wikipedia: "https://pt.wikipedia.org/wiki/Wout_Weghorst"
     }
   },
   "448160": {
@@ -9897,7 +10601,8 @@ var squads_default = {
     dateOfBirth: "2002-09-08",
     height: 185,
     socials: {
-      instagram: "luka_sucic"
+      instagram: "luka_sucic",
+      wikipedia: "https://pt.wikipedia.org/wiki/Luka_Su%C4%8Di%C4%87"
     }
   },
   "448164": {
@@ -9912,7 +10617,8 @@ var squads_default = {
     dateOfBirth: "1997-05-14",
     height: 181,
     socials: {
-      instagram: "jakic97"
+      instagram: "jakic97",
+      wikipedia: "https://en.wikipedia.org/wiki/Kristijan_Jaki%C4%87"
     }
   },
   "448171": {
@@ -9927,7 +10633,8 @@ var squads_default = {
     dateOfBirth: "2000-02-28",
     height: 185,
     socials: {
-      instagram: "josip.sutalo"
+      instagram: "josip.sutalo",
+      wikipedia: "https://pt.wikipedia.org/wiki/Josip_%C5%A0utalo"
     }
   },
   "448174": {
@@ -9942,7 +10649,8 @@ var squads_default = {
     dateOfBirth: "1997-09-11",
     height: 193,
     socials: {
-      instagram: "marinpongracic"
+      instagram: "marinpongracic",
+      wikipedia: "https://en.wikipedia.org/wiki/Marin_Pongra%C4%8Di%C4%87"
     }
   },
   "448179": {
@@ -9957,7 +10665,8 @@ var squads_default = {
     dateOfBirth: "2000-02-10",
     height: 190,
     socials: {
-      instagram: "dominikkotarski24"
+      instagram: "dominikkotarski24",
+      wikipedia: "https://en.wikipedia.org/wiki/Dominik_Kotarski"
     }
   },
   "448180": {
@@ -9972,7 +10681,8 @@ var squads_default = {
     dateOfBirth: "2002-01-23",
     height: 185,
     socials: {
-      instagram: "josko_gvardiol"
+      instagram: "josko_gvardiol",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jo%C5%A1ko_Gvardiol"
     }
   },
   "448189": {
@@ -9987,7 +10697,8 @@ var squads_default = {
     dateOfBirth: "2001-02-24",
     height: 182,
     socials: {
-      instagram: "anthonygordon"
+      instagram: "anthonygordon",
+      wikipedia: "https://pt.wikipedia.org/wiki/Anthony_Gordon"
     }
   },
   "448196": {
@@ -10002,7 +10713,8 @@ var squads_default = {
     dateOfBirth: "2001-09-05",
     height: 178,
     socials: {
-      instagram: "bukayosaka87"
+      instagram: "bukayosaka87",
+      wikipedia: "https://pt.wikipedia.org/wiki/Bukayo_Saka"
     }
   },
   "448198": {
@@ -10017,7 +10729,8 @@ var squads_default = {
     dateOfBirth: "1996-03-16",
     height: 185,
     socials: {
-      instagram: "ivantoney1"
+      instagram: "ivantoney1",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ivan_Toney"
     }
   },
   "448202": {
@@ -10032,7 +10745,8 @@ var squads_default = {
     dateOfBirth: "2003-06-29",
     height: 183,
     socials: {
-      instagram: "judebellingham"
+      instagram: "judebellingham",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jude_Bellingham"
     }
   },
   "448203": {
@@ -10047,7 +10761,8 @@ var squads_default = {
     dateOfBirth: "1995-12-30",
     height: 180,
     socials: {
-      instagram: "olliewatkins"
+      instagram: "olliewatkins",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ollie_Watkins"
     }
   },
   "448214": {
@@ -10062,7 +10777,8 @@ var squads_default = {
     dateOfBirth: "2002-05-28",
     height: 187,
     socials: {
-      instagram: "malik.tillman"
+      instagram: "malik.tillman",
+      wikipedia: "https://pt.wikipedia.org/wiki/Malik_Tillman"
     }
   },
   "448217": {
@@ -10077,7 +10793,8 @@ var squads_default = {
     dateOfBirth: "1994-06-24",
     height: 190,
     socials: {
-      instagram: "headdturnerr"
+      instagram: "headdturnerr",
+      wikipedia: "https://pt.wikipedia.org/wiki/Matt_Turner"
     }
   },
   "448252": {
@@ -10092,7 +10809,8 @@ var squads_default = {
     dateOfBirth: "2001-01-17",
     height: 178,
     socials: {
-      instagram: "enzojfernandez"
+      instagram: "enzojfernandez",
+      wikipedia: "https://pt.wikipedia.org/wiki/Enzo_Fern%C3%A1ndez"
     }
   },
   "448290": {
@@ -10107,7 +10825,8 @@ var squads_default = {
     dateOfBirth: "2001-10-16",
     height: 188,
     socials: {
-      instagram: "pachowillian"
+      instagram: "pachowillian",
+      wikipedia: "https://pt.wikipedia.org/wiki/Willian_Pacho"
     }
   },
   "448295": {
@@ -10122,7 +10841,8 @@ var squads_default = {
     dateOfBirth: "1996-02-28",
     height: 186,
     socials: {
-      instagram: "jhegsonmendez"
+      instagram: "jhegsonmendez",
+      wikipedia: "https://en.wikipedia.org/wiki/Gonzalo_Valle"
     }
   },
   "448299": {
@@ -10135,7 +10855,10 @@ var squads_default = {
     club: "Pachuca",
     pictureUrl: "https://digitalhub.fifa.com/transform/b21d23fa-c045-4f5d-9721-59740e4006b2/VALENCIA-Anthony_448299",
     dateOfBirth: "2003-07-21",
-    height: 173
+    height: 173,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Anthony_Valencia"
+    }
   },
   "448310": {
     fifaId: "448310",
@@ -10149,7 +10872,8 @@ var squads_default = {
     dateOfBirth: "2000-03-04",
     height: 190,
     socials: {
-      instagram: "kevin_larola9"
+      instagram: "kevin_larola9",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kevin_Rodr%C3%ADguez"
     }
   },
   "448312": {
@@ -10162,7 +10886,10 @@ var squads_default = {
     club: "Independiente del Valle",
     pictureUrl: "https://digitalhub.fifa.com/transform/b90df9f2-8054-4d40-b375-f7728a31a069/ANGULO-Nilson_448312",
     dateOfBirth: "2003-06-19",
-    height: 184
+    height: 184,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Nilson_Angulo"
+    }
   },
   "448332": {
     fifaId: "448332",
@@ -10176,7 +10903,8 @@ var squads_default = {
     dateOfBirth: "1995-07-03",
     height: 191,
     socials: {
-      instagram: "mike_maignan16"
+      instagram: "mike_maignan16",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mike_Maignan"
     }
   },
   "448341": {
@@ -10191,7 +10919,8 @@ var squads_default = {
     dateOfBirth: "2002-05-27",
     height: 173,
     socials: {
-      instagram: "jeremydoku"
+      instagram: "jeremydoku",
+      wikipedia: "https://pt.wikipedia.org/wiki/J%C3%A9r%C3%A9my_Doku"
     }
   },
   "448343": {
@@ -10206,7 +10935,8 @@ var squads_default = {
     dateOfBirth: "1992-08-24",
     height: 195,
     socials: {
-      instagram: "hansvanaken20"
+      instagram: "hansvanaken20",
+      wikipedia: "https://pt.wikipedia.org/wiki/Hans_Vanaken"
     }
   },
   "448346": {
@@ -10221,7 +10951,8 @@ var squads_default = {
     dateOfBirth: "2000-05-25",
     height: 185,
     socials: {
-      instagram: "arthurtheate"
+      instagram: "arthurtheate",
+      wikipedia: "https://pt.wikipedia.org/wiki/Arthur_Theate"
     }
   },
   "448355": {
@@ -10236,7 +10967,8 @@ var squads_default = {
     dateOfBirth: "1994-12-04",
     height: 172,
     socials: {
-      instagram: "leandrotrossard"
+      instagram: "leandrotrossard",
+      wikipedia: "https://pt.wikipedia.org/wiki/Leandro_Trossard"
     }
   },
   "448360": {
@@ -10251,7 +10983,8 @@ var squads_default = {
     dateOfBirth: "1993-01-28",
     height: 190,
     socials: {
-      instagram: "brandonmechele"
+      instagram: "brandonmechele",
+      wikipedia: "https://en.wikipedia.org/wiki/Brandon_Mechele"
     }
   },
   "448362": {
@@ -10266,7 +10999,8 @@ var squads_default = {
     dateOfBirth: "2001-03-10",
     height: 192,
     socials: {
-      instagram: "charlesdeketelaere"
+      instagram: "charlesdeketelaere",
+      wikipedia: "https://pt.wikipedia.org/wiki/Charles_De_Ketelaere"
     }
   },
   "448363": {
@@ -10281,7 +11015,8 @@ var squads_default = {
     dateOfBirth: "1999-02-28",
     height: 183,
     socials: {
-      instagram: "hannes_delcroix"
+      instagram: "hannes_delcroix",
+      wikipedia: "https://en.wikipedia.org/wiki/Hannes_Delcroix"
     }
   },
   "448364": {
@@ -10296,7 +11031,8 @@ var squads_default = {
     dateOfBirth: "2001-08-16",
     height: 192,
     socials: {
-      instagram: "its_onana"
+      instagram: "its_onana",
+      wikipedia: "https://pt.wikipedia.org/wiki/Amadou_Onana"
     }
   },
   "448366": {
@@ -10311,7 +11047,8 @@ var squads_default = {
     dateOfBirth: "2002-06-12",
     height: 191,
     socials: {
-      instagram: "konidewinter"
+      instagram: "konidewinter",
+      wikipedia: "https://en.wikipedia.org/wiki/Koni_De_Winter"
     }
   },
   "448373": {
@@ -10326,7 +11063,8 @@ var squads_default = {
     dateOfBirth: "2000-12-22",
     height: 182,
     socials: {
-      instagram: "maxim.decuyper"
+      instagram: "maxim.decuyper",
+      wikipedia: "https://en.wikipedia.org/wiki/Maxim_De_Cuyper"
     }
   },
   "448377": {
@@ -10341,7 +11079,8 @@ var squads_default = {
     dateOfBirth: "1997-09-24",
     height: 184,
     socials: {
-      instagram: "lukebakio"
+      instagram: "lukebakio",
+      wikipedia: "https://pt.wikipedia.org/wiki/Dodi_Lukebakio"
     }
   },
   "448390": {
@@ -10356,7 +11095,8 @@ var squads_default = {
     dateOfBirth: "1999-02-07",
     height: 173,
     socials: {
-      instagram: "mathieu_choiniere"
+      instagram: "mathieu_choiniere",
+      wikipedia: "https://en.wikipedia.org/wiki/Mathieu_Choini%C3%A8re"
     }
   },
   "448402": {
@@ -10369,7 +11109,10 @@ var squads_default = {
     club: "Panathinaikos",
     pictureUrl: "https://digitalhub.fifa.com/transform/f5b31eb7-c506-4ad3-b857-06c22e1bb263/WATERMAN-Joel_448402",
     dateOfBirth: "1996-01-24",
-    height: 185
+    height: 185,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Joel_Waterman"
+    }
   },
   "448411": {
     fifaId: "448411",
@@ -10383,7 +11126,8 @@ var squads_default = {
     dateOfBirth: "1999-11-26",
     height: 181,
     socials: {
-      instagram: "jacobshaff"
+      instagram: "jacobshaff",
+      wikipedia: "https://en.wikipedia.org/wiki/Jacob_Shaffelburg"
     }
   },
   "448420": {
@@ -10398,7 +11142,8 @@ var squads_default = {
     dateOfBirth: "2001-01-02",
     height: 182,
     socials: {
-      instagram: "luizhenrique_07"
+      instagram: "luizhenrique_07",
+      wikipedia: "https://pt.wikipedia.org/wiki/Luiz_Henrique_(futebolista)"
     }
   },
   "448497": {
@@ -10443,7 +11188,8 @@ var squads_default = {
     dateOfBirth: "1995-04-06",
     height: 193,
     socials: {
-      instagram: "payamniazmand"
+      instagram: "payamniazmand",
+      wikipedia: "https://en.wikipedia.org/wiki/Payam_Niazmand"
     }
   },
   "448557": {
@@ -10458,7 +11204,8 @@ var squads_default = {
     dateOfBirth: "1996-08-05",
     height: 180,
     socials: {
-      instagram: "kamadadaichi"
+      instagram: "kamadadaichi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Daichi_Kamada"
     }
   },
   "448569": {
@@ -10473,7 +11220,8 @@ var squads_default = {
     dateOfBirth: "1999-09-30",
     height: 185,
     socials: {
-      instagram: "machino9.30"
+      instagram: "machino9.30",
+      wikipedia: "https://en.wikipedia.org/wiki/Sh%C5%ABto_Machino"
     }
   },
   "448580": {
@@ -10486,7 +11234,10 @@ var squads_default = {
     club: "Al-Wasl",
     pictureUrl: "https://digitalhub.fifa.com/transform/352f1315-e0c8-46fd-b0f4-5f56cac5ff18/KIM-Moonhwan_448580",
     dateOfBirth: "1995-08-01",
-    height: 173
+    height: 173,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Kim_Moon-hwan"
+    }
   },
   "448585": {
     fifaId: "448585",
@@ -10500,7 +11251,8 @@ var squads_default = {
     dateOfBirth: "2002-05-25",
     height: 179,
     socials: {
-      instagram: "yang.hyunjunx"
+      instagram: "yang.hyunjunx",
+      wikipedia: "https://en.wikipedia.org/wiki/Yang_Hyun-jun"
     }
   },
   "448586": {
@@ -10515,7 +11267,8 @@ var squads_default = {
     dateOfBirth: "2001-04-12",
     height: 183,
     socials: {
-      instagram: "oh.hyeongyu"
+      instagram: "oh.hyeongyu",
+      wikipedia: "https://en.wikipedia.org/wiki/Oh_Hyeon-gyu"
     }
   },
   "448598": {
@@ -10530,7 +11283,8 @@ var squads_default = {
     dateOfBirth: "2001-01-28",
     height: 185,
     socials: {
-      instagram: "ismaelsaibari"
+      instagram: "ismaelsaibari",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ismael_Saibari"
     }
   },
   "448607": {
@@ -10543,7 +11297,10 @@ var squads_default = {
     club: "Parma",
     pictureUrl: "https://digitalhub.fifa.com/transform/074f7da4-2459-4f56-b245-0b496782d067/RIAD-Chadi_448607",
     dateOfBirth: "2003-06-17",
-    height: 186
+    height: 186,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Chadi_Riad"
+    }
   },
   "448612": {
     fifaId: "448612",
@@ -10557,7 +11314,8 @@ var squads_default = {
     dateOfBirth: "2004-05-10",
     height: 180,
     socials: {
-      instagram: "bilalekns_34"
+      instagram: "bilalekns_34",
+      wikipedia: "https://pt.wikipedia.org/wiki/Bilal_El_Khannouss"
     }
   },
   "448662": {
@@ -10570,7 +11328,10 @@ var squads_default = {
     club: "Al Arabi",
     pictureUrl: "https://digitalhub.fifa.com/transform/5ffd95df-83a5-4768-9331-0842c3f433b6/ACHOURI-Elias_448662",
     dateOfBirth: "1999-02-10",
-    height: 187
+    height: 187,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Elias_Achouri"
+    }
   },
   "448815": {
     fifaId: "448815",
@@ -10584,7 +11345,8 @@ var squads_default = {
     dateOfBirth: "2000-03-06",
     height: 180,
     socials: {
-      instagram: "ilimanndiaye10"
+      instagram: "ilimanndiaye10",
+      wikipedia: "https://pt.wikipedia.org/wiki/Iliman_Ndiaye"
     }
   },
   "448821": {
@@ -10597,7 +11359,10 @@ var squads_default = {
     club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/79100f28-7542-4023-b782-e40ecd748f93/DIAW-Mory_448821",
     dateOfBirth: "1993-06-22",
-    height: 197
+    height: 197,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Mory_Diaw"
+    }
   },
   "448825": {
     fifaId: "448825",
@@ -10611,7 +11376,8 @@ var squads_default = {
     dateOfBirth: "1994-03-16",
     height: 186,
     socials: {
-      instagram: "papite8"
+      instagram: "papite8",
+      wikipedia: "https://pt.wikipedia.org/wiki/Path%C3%A9_Ciss"
     }
   },
   "461177": {
@@ -10624,7 +11390,10 @@ var squads_default = {
     club: "Tigres",
     pictureUrl: "https://digitalhub.fifa.com/transform/c0990d50-6120-459c-a66a-bd91ee7e46bc/VARGAS-Obed_461177",
     dateOfBirth: "2005-08-05",
-    height: 175
+    height: 175,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Obed_Vargas"
+    }
   },
   "461788": {
     fifaId: "461788",
@@ -10650,7 +11419,8 @@ var squads_default = {
     dateOfBirth: "1999-08-31",
     height: 178,
     socials: {
-      instagram: "ramon.sosa17"
+      instagram: "ramon.sosa17",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ram%C3%B3n_Sosa"
     }
   },
   "463127": {
@@ -10695,7 +11465,8 @@ var squads_default = {
     dateOfBirth: "1995-04-26",
     height: 179,
     socials: {
-      instagram: "sailor_mudau"
+      instagram: "sailor_mudau",
+      wikipedia: "https://en.wikipedia.org/wiki/Khuliso_Mudau"
     }
   },
   "463221": {
@@ -10725,7 +11496,8 @@ var squads_default = {
     dateOfBirth: "2003-11-11",
     height: 178,
     socials: {
-      instagram: "thapelo_maseko40"
+      instagram: "thapelo_maseko40",
+      wikipedia: "https://en.wikipedia.org/wiki/Thapelo_Maseko"
     }
   },
   "463236": {
@@ -10740,7 +11512,8 @@ var squads_default = {
     dateOfBirth: "2001-05-05",
     height: 177,
     socials: {
-      instagram: "jaydenadams_23"
+      instagram: "jaydenadams_23",
+      wikipedia: "https://en.wikipedia.org/wiki/Jayden_Adams"
     }
   },
   "463282": {
@@ -10755,7 +11528,8 @@ var squads_default = {
     dateOfBirth: "2001-05-26",
     height: 180,
     socials: {
-      instagram: "alex__prass"
+      instagram: "alex__prass",
+      wikipedia: "https://en.wikipedia.org/wiki/Alexander_Prass"
     }
   },
   "463283": {
@@ -10770,7 +11544,8 @@ var squads_default = {
     dateOfBirth: "2000-01-27",
     height: 168,
     socials: {
-      instagram: "romano_schmid"
+      instagram: "romano_schmid",
+      wikipedia: "https://en.wikipedia.org/wiki/Romano_Schmid"
     }
   },
   "463286": {
@@ -10785,7 +11560,8 @@ var squads_default = {
     dateOfBirth: "2001-05-30",
     height: 182,
     socials: {
-      instagram: "patrick_wimmer"
+      instagram: "patrick_wimmer",
+      wikipedia: "https://en.wikipedia.org/wiki/Patrick_Wimmer"
     }
   },
   "463287": {
@@ -10800,7 +11576,8 @@ var squads_default = {
     dateOfBirth: "1998-03-16",
     height: 187,
     socials: {
-      instagram: "marcofriedl_32"
+      instagram: "marcofriedl_32",
+      wikipedia: "https://en.wikipedia.org/wiki/Marco_Friedl"
     }
   },
   "463288": {
@@ -10815,7 +11592,8 @@ var squads_default = {
     dateOfBirth: "1994-01-29",
     height: 170,
     socials: {
-      instagram: "mwene"
+      instagram: "mwene",
+      wikipedia: "https://pt.wikipedia.org/wiki/Phillipp_Mwene"
     }
   },
   "463465": {
@@ -10830,7 +11608,8 @@ var squads_default = {
     dateOfBirth: "2004-04-21",
     height: 188,
     socials: {
-      instagram: "joel_ordonez04"
+      instagram: "joel_ordonez04",
+      wikipedia: "https://en.wikipedia.org/wiki/Joel_Ord%C3%B3%C3%B1ez"
     }
   },
   "463468": {
@@ -10845,7 +11624,8 @@ var squads_default = {
     dateOfBirth: "2003-05-14",
     height: 174,
     socials: {
-      instagram: "mindaalan"
+      instagram: "mindaalan",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alan_Minda"
     }
   },
   "463476": {
@@ -10860,7 +11640,8 @@ var squads_default = {
     dateOfBirth: "2004-03-24",
     height: 189,
     socials: {
-      instagram: "denilcastillo_5"
+      instagram: "denilcastillo_5",
+      wikipedia: "https://en.wikipedia.org/wiki/Denil_Castillo"
     }
   },
   "463489": {
@@ -10875,7 +11656,8 @@ var squads_default = {
     dateOfBirth: "2004-11-05",
     height: 173,
     socials: {
-      instagram: "medina_yaimar"
+      instagram: "medina_yaimar",
+      wikipedia: "https://en.wikipedia.org/wiki/Yaimar_Medina"
     }
   },
   "463495": {
@@ -10890,7 +11672,8 @@ var squads_default = {
     dateOfBirth: "2007-05-04",
     height: 178,
     socials: {
-      instagram: "kendrypaez.10"
+      instagram: "kendrypaez.10",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kendry_P%C3%A1ez"
     }
   },
   "463580": {
@@ -10905,7 +11688,8 @@ var squads_default = {
     dateOfBirth: "2003-09-23",
     height: 190,
     socials: {
-      instagram: "finn_surman"
+      instagram: "finn_surman",
+      wikipedia: "https://en.wikipedia.org/wiki/Finn_Surman"
     }
   },
   "463661": {
@@ -10920,7 +11704,8 @@ var squads_default = {
     dateOfBirth: "2004-07-23",
     height: 172,
     socials: {
-      instagram: "colo.barco"
+      instagram: "colo.barco",
+      wikipedia: "https://pt.wikipedia.org/wiki/Valent%C3%ADn_Barco"
     }
   },
   "463746": {
@@ -10935,7 +11720,8 @@ var squads_default = {
     dateOfBirth: "2006-07-21",
     height: 172,
     socials: {
-      instagram: "endrick"
+      instagram: "endrick",
+      wikipedia: "https://pt.wikipedia.org/wiki/Endrick"
     }
   },
   "463780": {
@@ -10963,7 +11749,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/469aeffb-5ff1-4782-87c4-b3791f045384/CHUKWUEMEKA-Carney_463800",
     dateOfBirth: "2003-10-20",
-    height: 187
+    height: 187,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Carney_Chukwuemeka"
+    }
   },
   "463809": {
     fifaId: "463809",
@@ -10977,7 +11766,8 @@ var squads_default = {
     dateOfBirth: "2003-01-29",
     height: 190,
     socials: {
-      instagram: "jarellquansah"
+      instagram: "jarellquansah",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jarell_Quansah"
     }
   },
   "463817": {
@@ -10992,7 +11782,8 @@ var squads_default = {
     dateOfBirth: "2003-11-27",
     height: 193,
     socials: {
-      instagram: "owengoodman_"
+      instagram: "owengoodman_",
+      wikipedia: "https://en.wikipedia.org/wiki/Owen_Goodman"
     }
   },
   "464055": {
@@ -11007,7 +11798,8 @@ var squads_default = {
     dateOfBirth: "2003-05-19",
     height: 179,
     socials: {
-      instagram: "malogusto"
+      instagram: "malogusto",
+      wikipedia: "https://pt.wikipedia.org/wiki/Malo_Gusto"
     }
   },
   "464103": {
@@ -11022,7 +11814,8 @@ var squads_default = {
     dateOfBirth: "2003-10-25",
     height: 189,
     socials: {
-      instagram: "bonnyoan"
+      instagram: "bonnyoan",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ange-Yoan_Bonny"
     }
   },
   "464114": {
@@ -11037,7 +11830,8 @@ var squads_default = {
     dateOfBirth: "2005-06-03",
     height: 182,
     socials: {
-      instagram: "desire.doue"
+      instagram: "desire.doue",
+      wikipedia: "https://pt.wikipedia.org/wiki/D%C3%A9sir%C3%A9_Dou%C3%A9"
     }
   },
   "464127": {
@@ -11052,7 +11846,8 @@ var squads_default = {
     dateOfBirth: "2004-12-02",
     height: 193,
     socials: {
-      instagram: "robin_ris40"
+      instagram: "robin_ris40",
+      wikipedia: "https://pt.wikipedia.org/wiki/Robin_Risser"
     }
   },
   "464133": {
@@ -11067,7 +11862,8 @@ var squads_default = {
     dateOfBirth: "2003-01-02",
     height: 181,
     socials: {
-      instagram: "e.wahi7"
+      instagram: "e.wahi7",
+      wikipedia: "https://en.wikipedia.org/wiki/Elye_Wahi"
     }
   },
   "464339": {
@@ -11082,7 +11878,8 @@ var squads_default = {
     dateOfBirth: "2005-06-03",
     height: 191,
     socials: {
-      instagram: "keisuke.0603_42"
+      instagram: "keisuke.0603_42",
+      wikipedia: "https://en.wikipedia.org/wiki/Keisuke_Got%C5%8D"
     }
   },
   "464374": {
@@ -11097,7 +11894,8 @@ var squads_default = {
     dateOfBirth: "2003-08-21",
     height: 180,
     socials: {
-      instagram: "x.xunho__"
+      instagram: "x.xunho__",
+      wikipedia: "https://en.wikipedia.org/wiki/Bae_Jun-ho"
     }
   },
   "464457": {
@@ -11110,7 +11908,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/75d61654-11c8-4646-8e47-7c4c977b29b6/ALI-JASIM_464457",
     dateOfBirth: "2004-01-20",
-    height: 178
+    height: 178,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Ali_Jasim"
+    }
   },
   "464458": {
     fifaId: "464458",
@@ -11124,7 +11925,8 @@ var squads_default = {
     dateOfBirth: "2003-08-21",
     height: 172,
     socials: {
-      instagram: "yaminio10"
+      instagram: "yaminio10",
+      wikipedia: "https://en.wikipedia.org/wiki/Youssef_Amyn"
     }
   },
   "464484": {
@@ -11139,7 +11941,8 @@ var squads_default = {
     dateOfBirth: "2004-04-10",
     height: 180,
     socials: {
-      instagram: "i.gharbi10"
+      instagram: "i.gharbi10",
+      wikipedia: "https://en.wikipedia.org/wiki/Isma%C3%ABl_Gharbi"
     }
   },
   "464533": {
@@ -11154,7 +11957,8 @@ var squads_default = {
     dateOfBirth: "2003-06-17",
     height: 178,
     socials: {
-      instagram: "briangutierrez_11"
+      instagram: "briangutierrez_11",
+      wikipedia: "https://en.wikipedia.org/wiki/Brian_Guti%C3%A9rrez"
     }
   },
   "464542": {
@@ -11169,7 +11973,8 @@ var squads_default = {
     dateOfBirth: "2004-08-09",
     height: 188,
     socials: {
-      instagram: "_alexfreemann"
+      instagram: "_alexfreemann",
+      wikipedia: "https://en.wikipedia.org/wiki/Alex_Freeman"
     }
   },
   "464546": {
@@ -11184,7 +11989,8 @@ var squads_default = {
     dateOfBirth: "2004-03-03",
     height: 193,
     socials: {
-      instagram: "chrisbrady0"
+      instagram: "chrisbrady0",
+      wikipedia: "https://en.wikipedia.org/wiki/Chris_Brady_(soccer)"
     }
   },
   "464566": {
@@ -11199,7 +12005,8 @@ var squads_default = {
     dateOfBirth: "2005-03-10",
     height: 175,
     socials: {
-      instagram: "esmirbajraktarevic"
+      instagram: "esmirbajraktarevic",
+      wikipedia: "https://en.wikipedia.org/wiki/Esmir_Bajraktarevi%C4%87"
     }
   },
   "464842": {
@@ -11214,7 +12021,8 @@ var squads_default = {
     dateOfBirth: "2004-01-01",
     height: 174,
     socials: {
-      instagram: "lamine_camara_15"
+      instagram: "lamine_camara_15",
+      wikipedia: "https://en.wikipedia.org/wiki/Lamine_Camara"
     }
   },
   "464865": {
@@ -11244,7 +12052,8 @@ var squads_default = {
     dateOfBirth: "1997-08-07",
     height: 178,
     socials: {
-      instagram: "jbacuna07"
+      instagram: "jbacuna07",
+      wikipedia: "https://pt.wikipedia.org/wiki/Juninho_Bacuna"
     }
   },
   "466340": {
@@ -11259,7 +12068,8 @@ var squads_default = {
     dateOfBirth: "1991-08-21",
     height: 180,
     socials: {
-      instagram: "leandrobacuna07"
+      instagram: "leandrobacuna07",
+      wikipedia: "https://pt.wikipedia.org/wiki/Leandro_Bacuna"
     }
   },
   "466346": {
@@ -11274,7 +12084,8 @@ var squads_default = {
     dateOfBirth: "1992-09-19",
     height: 181,
     socials: {
-      instagram: "brandleykuwas"
+      instagram: "brandleykuwas",
+      wikipedia: "https://en.wikipedia.org/wiki/Brandley_Kuwas"
     }
   },
   "466350": {
@@ -11289,7 +12100,8 @@ var squads_default = {
     dateOfBirth: "1998-08-23",
     height: 181,
     socials: {
-      instagram: "sherellfloranus_"
+      instagram: "sherellfloranus_",
+      wikipedia: "https://en.wikipedia.org/wiki/Sherel_Floranus"
     }
   },
   "466352": {
@@ -11304,7 +12116,8 @@ var squads_default = {
     dateOfBirth: "1994-09-29",
     height: 174,
     socials: {
-      instagram: "kenjigorre"
+      instagram: "kenjigorre",
+      wikipedia: "https://en.wikipedia.org/wiki/Kenji_Gorr%C3%A9"
     }
   },
   "466359": {
@@ -11319,7 +12132,8 @@ var squads_default = {
     dateOfBirth: "1999-08-19",
     height: 178,
     socials: {
-      instagram: "godfriedroemeratoe"
+      instagram: "godfriedroemeratoe",
+      wikipedia: "https://en.wikipedia.org/wiki/Godfried_Roemeratoe"
     }
   },
   "466361": {
@@ -11334,7 +12148,8 @@ var squads_default = {
     dateOfBirth: "1998-06-09",
     height: 186,
     socials: {
-      instagram: "rvaneijma"
+      instagram: "rvaneijma",
+      wikipedia: "https://en.wikipedia.org/wiki/Roshon_van_Eijma"
     }
   },
   "466363": {
@@ -11347,7 +12162,10 @@ var squads_default = {
     club: "Go Ahead Eagles",
     pictureUrl: "https://digitalhub.fifa.com/transform/c0d47ad2-fcb1-4d7f-b854-99b99cc0cadf/MARGARITHA-Jearl_466363",
     dateOfBirth: "2000-04-10",
-    height: 181
+    height: 181,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Jearl_Margaritha"
+    }
   },
   "466365": {
     fifaId: "466365",
@@ -11361,7 +12179,8 @@ var squads_default = {
     dateOfBirth: "1999-11-11",
     height: 174,
     socials: {
-      instagram: "kevinfelida"
+      instagram: "kevinfelida",
+      wikipedia: "https://en.wikipedia.org/wiki/Kevin_Felida"
     }
   },
   "466370": {
@@ -11374,7 +12193,10 @@ var squads_default = {
     club: "Dordrecht",
     pictureUrl: "https://digitalhub.fifa.com/transform/c806d05b-ee7a-482f-beb5-b9a6b5871a11/BODAK-Tyrick_466370",
     dateOfBirth: "2002-05-15",
-    height: 190
+    height: 190,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Tyrick_Bodak"
+    }
   },
   "466372": {
     fifaId: "466372",
@@ -11388,7 +12210,8 @@ var squads_default = {
     dateOfBirth: "1996-06-09",
     height: 189,
     socials: {
-      instagram: "gervanek33"
+      instagram: "gervanek33",
+      wikipedia: "https://en.wikipedia.org/wiki/Gervane_Kastaneer"
     }
   },
   "466382": {
@@ -11403,7 +12226,8 @@ var squads_default = {
     dateOfBirth: "1999-07-06",
     height: 188,
     socials: {
-      instagram: "trevordoornbusch.24"
+      instagram: "trevordoornbusch.24",
+      wikipedia: "https://en.wikipedia.org/wiki/Trevor_Doornbusch"
     }
   },
   "466585": {
@@ -11418,7 +12242,8 @@ var squads_default = {
     dateOfBirth: "2000-03-30",
     height: 190,
     socials: {
-      instagram: "m.bombito_"
+      instagram: "m.bombito_",
+      wikipedia: "https://en.wikipedia.org/wiki/Mo%C3%AFse_Bombito"
     }
   },
   "466624": {
@@ -11433,7 +12258,8 @@ var squads_default = {
     dateOfBirth: "2001-07-03",
     height: 179,
     socials: {
-      instagram: "balogun"
+      instagram: "balogun",
+      wikipedia: "https://pt.wikipedia.org/wiki/Folarin_Balogun"
     }
   },
   "466687": {
@@ -11448,7 +12274,8 @@ var squads_default = {
     dateOfBirth: "2000-10-10",
     height: 180,
     socials: {
-      instagram: "aahmed22_"
+      instagram: "aahmed22_",
+      wikipedia: "https://en.wikipedia.org/wiki/Ali_Ahmed_(soccer)"
     }
   },
   "466835": {
@@ -11463,7 +12290,8 @@ var squads_default = {
     dateOfBirth: "2001-02-25",
     height: 190,
     socials: {
-      instagram: "pierrot.jr"
+      instagram: "pierrot.jr",
+      wikipedia: "https://en.wikipedia.org/wiki/Alexandre_Pierre"
     }
   },
   "466838": {
@@ -11478,7 +12306,8 @@ var squads_default = {
     dateOfBirth: "2000-05-20",
     height: 182,
     socials: {
-      instagram: "danley_jean_jacques27"
+      instagram: "danley_jean_jacques27",
+      wikipedia: "https://en.wikipedia.org/wiki/Danley_Jean_Jacques"
     }
   },
   "466844": {
@@ -11493,7 +12322,8 @@ var squads_default = {
     dateOfBirth: "1993-10-14",
     height: 175,
     socials: {
-      instagram: "duke.lacroix"
+      instagram: "duke.lacroix",
+      wikipedia: "https://en.wikipedia.org/wiki/Duke_Lacroix"
     }
   },
   "466853": {
@@ -11508,7 +12338,8 @@ var squads_default = {
     dateOfBirth: "2000-04-27",
     height: 187,
     socials: {
-      instagram: "josue_duverger01"
+      instagram: "josue_duverger01",
+      wikipedia: "https://en.wikipedia.org/wiki/Josu%C3%A9_Duverger"
     }
   },
   "466862": {
@@ -11523,7 +12354,8 @@ var squads_default = {
     dateOfBirth: "1999-12-31",
     height: 186,
     socials: {
-      instagram: "garvenmtsa"
+      instagram: "garvenmtsa",
+      wikipedia: "https://en.wikipedia.org/wiki/Garven_Metusala"
     }
   },
   "466865": {
@@ -11538,7 +12370,8 @@ var squads_default = {
     dateOfBirth: "1996-11-25",
     height: 178,
     socials: {
-      instagram: "detienne10"
+      instagram: "detienne10",
+      wikipedia: "https://en.wikipedia.org/wiki/Derrick_Etienne_Jr."
     }
   },
   "472877": {
@@ -11553,7 +12386,8 @@ var squads_default = {
     dateOfBirth: "1995-07-15",
     height: 180,
     socials: {
-      instagram: "irfan"
+      instagram: "irfan",
+      wikipedia: "https://pt.wikipedia.org/wiki/%C4%B0rfan_Kahveci"
     }
   },
   "472908": {
@@ -11568,7 +12402,8 @@ var squads_default = {
     dateOfBirth: "1992-08-22",
     height: 175,
     socials: {
-      instagram: "cuf_5"
+      instagram: "cuf_5",
+      wikipedia: "https://pt.wikipedia.org/wiki/Vladim%C3%ADr_Coufal"
     }
   },
   "473062": {
@@ -11583,7 +12418,8 @@ var squads_default = {
     dateOfBirth: "1999-08-17",
     height: 184,
     socials: {
-      instagram: "emimartinez.32"
+      instagram: "emimartinez.32",
+      wikipedia: "https://pt.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez_(futebolista)"
     }
   },
   "473113": {
@@ -11598,7 +12434,8 @@ var squads_default = {
     dateOfBirth: "1998-06-29",
     height: 178,
     socials: {
-      instagram: "eze"
+      instagram: "eze",
+      wikipedia: "https://pt.wikipedia.org/wiki/Eberechi_Eze"
     }
   },
   "474973": {
@@ -11613,7 +12450,8 @@ var squads_default = {
     dateOfBirth: "2007-01-22",
     height: 183,
     socials: {
-      instagram: "paucubarsi"
+      instagram: "paucubarsi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Pau_Cubars%C3%AD"
     }
   },
   "475036": {
@@ -11628,7 +12466,8 @@ var squads_default = {
     dateOfBirth: "2006-08-03",
     height: 187,
     socials: {
-      instagram: "rayann"
+      instagram: "rayann",
+      wikipedia: "https://pt.wikipedia.org/wiki/Rayan"
     }
   },
   "475195": {
@@ -11641,7 +12480,10 @@ var squads_default = {
     club: "Borussia Dortmund",
     pictureUrl: "https://digitalhub.fifa.com/transform/3bdd0feb-2965-4dff-9aa1-22b6d769e90d/OUEDRAOGO-Assan_475195",
     dateOfBirth: "2006-05-09",
-    height: 191
+    height: 191,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Assan_Ou%C3%A9draogo"
+    }
   },
   "475921": {
     fifaId: "475921",
@@ -11670,7 +12512,8 @@ var squads_default = {
     dateOfBirth: "2001-07-11",
     height: 180,
     socials: {
-      instagram: "damibobadilla_8"
+      instagram: "damibobadilla_8",
+      wikipedia: "https://pt.wikipedia.org/wiki/Dami%C3%A1n_Bobadilla"
     }
   },
   "477470": {
@@ -11685,7 +12528,8 @@ var squads_default = {
     dateOfBirth: "2003-07-12",
     height: 177,
     socials: {
-      instagram: "oscarbobb"
+      instagram: "oscarbobb",
+      wikipedia: "https://pt.wikipedia.org/wiki/Oscar_Bobb"
     }
   },
   "477536": {
@@ -11700,7 +12544,8 @@ var squads_default = {
     dateOfBirth: "1998-06-30",
     height: 181,
     socials: {
-      instagram: "federicovinas98"
+      instagram: "federicovinas98",
+      wikipedia: "https://en.wikipedia.org/wiki/Federico_Vi%C3%B1as"
     }
   },
   "477770": {
@@ -11715,7 +12560,8 @@ var squads_default = {
     dateOfBirth: "1992-06-17",
     height: 186,
     socials: {
-      instagram: "pico_lopes"
+      instagram: "pico_lopes",
+      wikipedia: "https://pt.wikipedia.org/wiki/Roberto_Lopes_(futebolista_nascido_em_1992)"
     }
   },
   "477777": {
@@ -11728,7 +12574,10 @@ var squads_default = {
     club: "Angers",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c9072f7-1c82-483b-9f41-a749332fff71/DIAKITE-Oumar_477777",
     dateOfBirth: "2003-12-20",
-    height: 182
+    height: 182,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Oumar_Diakit%C3%A9"
+    }
   },
   "477778": {
     fifaId: "477778",
@@ -11742,7 +12591,8 @@ var squads_default = {
     dateOfBirth: "2002-01-01",
     height: 175,
     socials: {
-      instagram: "simon.adingra"
+      instagram: "simon.adingra",
+      wikipedia: "https://pt.wikipedia.org/wiki/Simon_Adingra"
     }
   },
   "477790": {
@@ -11757,7 +12607,8 @@ var squads_default = {
     dateOfBirth: "2000-05-09",
     height: 170,
     socials: {
-      instagram: "amoura_mohammed_el_amine"
+      instagram: "amoura_mohammed_el_amine",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mohamed_Amoura"
     }
   },
   "477795": {
@@ -11772,7 +12623,8 @@ var squads_default = {
     dateOfBirth: "2002-11-28",
     height: 183,
     socials: {
-      instagram: "fareschaibi28"
+      instagram: "fareschaibi28",
+      wikipedia: "https://en.wikipedia.org/wiki/Far%C3%A8s_Cha%C3%AFbi"
     }
   },
   "477802": {
@@ -11787,7 +12639,8 @@ var squads_default = {
     dateOfBirth: "2003-12-04",
     height: 190,
     socials: {
-      instagram: "ousdiomande"
+      instagram: "ousdiomande",
+      wikipedia: "https://en.wikipedia.org/wiki/Ousmane_Diomande"
     }
   },
   "477817": {
@@ -11802,7 +12655,8 @@ var squads_default = {
     dateOfBirth: "1994-10-11",
     height: 188,
     socials: {
-      instagram: "oussama.benbot"
+      instagram: "oussama.benbot",
+      wikipedia: "https://en.wikipedia.org/wiki/Oussama_Benbot"
     }
   },
   "477825": {
@@ -11817,7 +12671,8 @@ var squads_default = {
     dateOfBirth: "2001-01-04",
     height: 191,
     socials: {
-      instagram: "odilonkossounou"
+      instagram: "odilonkossounou",
+      wikipedia: "https://pt.wikipedia.org/wiki/Odilon_Kossounou"
     }
   },
   "477827": {
@@ -11830,7 +12685,10 @@ var squads_default = {
     club: "Fortuna Sittard",
     pictureUrl: "https://digitalhub.fifa.com/transform/c2a1dda5-24bd-4ef1-8ef4-cde9f3f3b644/DEROY-DUARTE_477827",
     dateOfBirth: "1999-07-04",
-    height: 177
+    height: 177,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Deroy_Duarte"
+    }
   },
   "477829": {
     fifaId: "477829",
@@ -11844,7 +12702,8 @@ var squads_default = {
     dateOfBirth: "1996-02-15",
     height: 185,
     socials: {
-      instagram: "d.batubinsika21"
+      instagram: "d.batubinsika21",
+      wikipedia: "https://en.wikipedia.org/wiki/Dylan_Batubinsika"
     }
   },
   "477831": {
@@ -11859,7 +12718,8 @@ var squads_default = {
     dateOfBirth: "2001-04-01",
     height: 190,
     socials: {
-      instagram: "l_costa01"
+      instagram: "l_costa01",
+      wikipedia: "https://pt.wikipedia.org/wiki/Logan_Costa"
     }
   },
   "477832": {
@@ -11874,7 +12734,8 @@ var squads_default = {
     dateOfBirth: "2002-09-18",
     height: 176,
     socials: {
-      instagram: "sidnylc"
+      instagram: "sidnylc",
+      wikipedia: "https://en.wikipedia.org/wiki/Sidny_Lopes_Cabral"
     }
   },
   "477833": {
@@ -11889,7 +12750,8 @@ var squads_default = {
     dateOfBirth: "1994-08-08",
     height: 180,
     socials: {
-      instagram: "joriskayembe23"
+      instagram: "joriskayembe23",
+      wikipedia: "https://en.wikipedia.org/wiki/Joris_Kayembe"
     }
   },
   "477835": {
@@ -11904,7 +12766,8 @@ var squads_default = {
     dateOfBirth: "1996-08-13",
     height: 189,
     socials: {
-      instagram: "simbnz"
+      instagram: "simbnz",
+      wikipedia: "https://pt.wikipedia.org/wiki/Simon_Banza"
     }
   },
   "477847": {
@@ -11919,7 +12782,8 @@ var squads_default = {
     dateOfBirth: "1994-08-13",
     height: 178,
     socials: {
-      instagram: "s_moreira20"
+      instagram: "s_moreira20",
+      wikipedia: "https://pt.wikipedia.org/wiki/Steven_Moreira"
     }
   },
   "477849": {
@@ -11934,7 +12798,8 @@ var squads_default = {
     dateOfBirth: "2002-05-03",
     height: 176,
     socials: {
-      instagram: "helio_varela"
+      instagram: "helio_varela",
+      wikipedia: "https://en.wikipedia.org/wiki/H%C3%A9lio_Varela"
     }
   },
   "477852": {
@@ -11949,7 +12814,8 @@ var squads_default = {
     dateOfBirth: "1997-01-27",
     height: 177,
     socials: {
-      instagram: "kevinpina95"
+      instagram: "kevinpina95",
+      wikipedia: "https://en.wikipedia.org/wiki/Kevin_Pina_(footballer)"
     }
   },
   "477853": {
@@ -11964,7 +12830,8 @@ var squads_default = {
     dateOfBirth: "1997-08-29",
     height: 178,
     socials: {
-      instagram: "iam__k2"
+      instagram: "iam__k2",
+      wikipedia: "https://en.wikipedia.org/wiki/G%C3%A9d%C3%A9on_Kalulu"
     }
   },
   "477855": {
@@ -11992,7 +12859,10 @@ var squads_default = {
     club: "Olympiacos",
     pictureUrl: "https://digitalhub.fifa.com/transform/4bc8360c-8ddd-4449-9e5f-a100502763b7/JOVANE-CABRAL_477856",
     dateOfBirth: "1998-06-14",
-    height: 174
+    height: 174,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Jovane_Cabral"
+    }
   },
   "477859": {
     fifaId: "477859",
@@ -12006,7 +12876,8 @@ var squads_default = {
     dateOfBirth: "1994-06-24",
     height: 185,
     socials: {
-      instagram: "mayelefiston"
+      instagram: "mayelefiston",
+      wikipedia: "https://en.wikipedia.org/wiki/Fiston_Mayele"
     }
   },
   "477862": {
@@ -12021,7 +12892,8 @@ var squads_default = {
     dateOfBirth: "2001-12-29",
     height: 187,
     socials: {
-      instagram: "benchimol_tavares"
+      instagram: "benchimol_tavares",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gilson_Tavares"
     }
   },
   "477864": {
@@ -12036,7 +12908,8 @@ var squads_default = {
     dateOfBirth: "1995-01-02",
     height: 184,
     socials: {
-      instagram: "aarontshibolaa"
+      instagram: "aarontshibolaa",
+      wikipedia: "https://en.wikipedia.org/wiki/Aaron_Tshibola"
     }
   },
   "478364": {
@@ -12051,7 +12924,8 @@ var squads_default = {
     dateOfBirth: "1999-05-05",
     height: 173,
     socials: {
-      instagram: "justinkluivert"
+      instagram: "justinkluivert",
+      wikipedia: "https://pt.wikipedia.org/wiki/Justin_Kluivert"
     }
   },
   "479056": {
@@ -12064,7 +12938,10 @@ var squads_default = {
     club: "Al-Naft",
     pictureUrl: "https://digitalhub.fifa.com/transform/0a9bb9d5-b94d-4978-9fee-6d6baf634c05/MUSTAFA-SAADOON_479056",
     dateOfBirth: "2001-05-25",
-    height: 181
+    height: 181,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Mustafa_Saadoon_(footballer,_born_2001)"
+    }
   },
   "479072": {
     fifaId: "479072",
@@ -12078,7 +12955,8 @@ var squads_default = {
     dateOfBirth: "1999-12-07",
     height: 173,
     socials: {
-      instagram: "merchas_doski"
+      instagram: "merchas_doski",
+      wikipedia: "https://en.wikipedia.org/wiki/Merchas_Doski"
     }
   },
   "479294": {
@@ -12093,7 +12971,8 @@ var squads_default = {
     dateOfBirth: "2000-12-30",
     height: 176,
     socials: {
-      instagram: "kaishusano_1230"
+      instagram: "kaishusano_1230",
+      wikipedia: "https://en.wikipedia.org/wiki/Kaish%C5%AB_Sano"
     }
   },
   "479316": {
@@ -12133,7 +13012,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/9c065420-c134-4227-aef3-d6d07f0a9b8d/HUSSEIN-ALI_479553",
     dateOfBirth: "2002-03-01",
-    height: 182
+    height: 182,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Hussein_Ali_(footballer,_born_2002)"
+    }
   },
   "479601": {
     fifaId: "479601",
@@ -12147,7 +13029,8 @@ var squads_default = {
     dateOfBirth: "2000-06-01",
     height: 187,
     socials: {
-      instagram: "caceres_j4"
+      instagram: "caceres_j4",
+      wikipedia: "https://pt.wikipedia.org/wiki/Juan_Jos%C3%A9_C%C3%A1ceres"
     }
   },
   "479781": {
@@ -12177,7 +13060,8 @@ var squads_default = {
     dateOfBirth: "2005-10-12",
     height: 183,
     socials: {
-      instagram: "lucdefoug"
+      instagram: "lucdefoug",
+      wikipedia: "https://en.wikipedia.org/wiki/Luc_de_Fougerolles"
     }
   },
   "480966": {
@@ -12192,7 +13076,8 @@ var squads_default = {
     dateOfBirth: "1997-02-28",
     height: 180,
     socials: {
-      instagram: "larosduarte_"
+      instagram: "larosduarte_",
+      wikipedia: "https://en.wikipedia.org/wiki/Laros_Duarte"
     }
   },
   "480983": {
@@ -12205,7 +13090,10 @@ var squads_default = {
     club: "Be\u015Fikta\u015F",
     pictureUrl: "https://digitalhub.fifa.com/transform/f638bd61-6020-4634-bb13-4c19e3b209de/BELAID-Zineddine_480983",
     dateOfBirth: "1999-03-20",
-    height: 186
+    height: 186,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Zineddine_Bela%C3%AFd"
+    }
   },
   "481027": {
     fifaId: "481027",
@@ -12219,7 +13107,8 @@ var squads_default = {
     dateOfBirth: "2001-02-11",
     height: 178,
     socials: {
-      instagram: "louiciusdon"
+      instagram: "louiciusdon",
+      wikipedia: "https://en.wikipedia.org/wiki/Louicius_Deedson"
     }
   },
   "481180": {
@@ -12262,7 +13151,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/a0dea4f6-7d64-4613-bdd0-558480ddbc80/AKAM-HASHIM_481183_",
     dateOfBirth: "1998-08-16",
-    height: 184
+    height: 184,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Akam_Hashim"
+    }
   },
   "481242": {
     fifaId: "481242",
@@ -12276,7 +13168,8 @@ var squads_default = {
     dateOfBirth: "1995-12-19",
     height: 174,
     socials: {
-      instagram: "iqraamrayners"
+      instagram: "iqraamrayners",
+      wikipedia: "https://en.wikipedia.org/wiki/Iqraam_Rayners"
     }
   },
   "481610": {
@@ -12291,7 +13184,8 @@ var squads_default = {
     dateOfBirth: "2002-11-06",
     height: 179,
     socials: {
-      instagram: "elliotandersonn"
+      instagram: "elliotandersonn",
+      wikipedia: "https://pt.wikipedia.org/wiki/Elliot_Anderson"
     }
   },
   "482621": {
@@ -12306,7 +13200,8 @@ var squads_default = {
     dateOfBirth: "2005-04-19",
     height: 183,
     socials: {
-      instagram: "kobbie"
+      instagram: "kobbie",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kobbie_Mainoo"
     }
   },
   "482670": {
@@ -12319,7 +13214,10 @@ var squads_default = {
     club: "Bayer Leverkusen",
     pictureUrl: "https://digitalhub.fifa.com/transform/814c55cf-f0a4-4191-bb6d-81c14881ad72/GHORBANI-Mohammad_482670",
     dateOfBirth: "2001-10-07",
-    height: 190
+    height: 190,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Mohammad_Ghorbani_(footballer)"
+    }
   },
   "482774": {
     fifaId: "482774",
@@ -12331,7 +13229,8 @@ var squads_default = {
     club: "Dinamo Zagreb",
     pictureUrl: "https://digitalhub.fifa.com/transform/b9125a74-a920-4ffc-922b-68d57c524f4e/BATURINA-Martin_482774",
     socials: {
-      instagram: "martinbaturina"
+      instagram: "martinbaturina",
+      wikipedia: "https://en.wikipedia.org/wiki/Martin_Baturina"
     },
     dateOfBirth: "2003-02-16",
     height: 172
@@ -12348,7 +13247,8 @@ var squads_default = {
     dateOfBirth: "2005-01-27",
     height: 190,
     socials: {
-      instagram: "tylerbindonn"
+      instagram: "tylerbindonn",
+      wikipedia: "https://en.wikipedia.org/wiki/Tyler_Bindon"
     }
   },
   "482780": {
@@ -12361,7 +13261,10 @@ var squads_default = {
     club: "Acad\xE9mica",
     pictureUrl: "https://digitalhub.fifa.com/transform/612ea8e3-613d-4c06-a13b-d7a1de98a43d/KELVIN-PIRES_482780",
     dateOfBirth: "2000-06-05",
-    height: 193
+    height: 193,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Kelvin_Pires"
+    }
   },
   "482782": {
     fifaId: "482782",
@@ -12375,7 +13278,8 @@ var squads_default = {
     dateOfBirth: "2001-05-04",
     height: 185,
     socials: {
-      instagram: "dailonlivramento"
+      instagram: "dailonlivramento",
+      wikipedia: "https://pt.wikipedia.org/wiki/Dailon_Livramento"
     }
   },
   "482783": {
@@ -12390,7 +13294,8 @@ var squads_default = {
     dateOfBirth: "2002-11-03",
     height: 180,
     socials: {
-      instagram: "wagnerpina_"
+      instagram: "wagnerpina_",
+      wikipedia: "https://en.wikipedia.org/wiki/Wagner_Pina"
     }
   },
   "482869": {
@@ -12405,7 +13310,8 @@ var squads_default = {
     dateOfBirth: "2003-03-26",
     height: 185,
     socials: {
-      instagram: "jaouen.h3"
+      instagram: "jaouen.h3",
+      wikipedia: "https://en.wikipedia.org/wiki/Jaouen_Hadjam"
     }
   },
   "482874": {
@@ -12420,7 +13326,8 @@ var squads_default = {
     dateOfBirth: "2002-02-11",
     height: 176,
     socials: {
-      instagram: "hadj.a20"
+      instagram: "hadj.a20",
+      wikipedia: "https://en.wikipedia.org/wiki/Anis_Hadj_Moussa"
     }
   },
   "482885": {
@@ -12435,7 +13342,8 @@ var squads_default = {
     dateOfBirth: "1999-12-27",
     height: 185,
     socials: {
-      instagram: "elias.a.saad"
+      instagram: "elias.a.saad",
+      wikipedia: "https://en.wikipedia.org/wiki/Elias_Saad"
     }
   },
   "482931": {
@@ -12450,7 +13358,8 @@ var squads_default = {
     dateOfBirth: "2000-09-14",
     height: 177,
     socials: {
-      instagram: "marco_pasalic"
+      instagram: "marco_pasalic",
+      wikipedia: "https://en.wikipedia.org/wiki/Marco_Pa%C5%A1ali%C4%87"
     }
   },
   "482969": {
@@ -12465,7 +13374,8 @@ var squads_default = {
     dateOfBirth: "1998-04-15",
     height: 189,
     socials: {
-      instagram: "nihadmujakic18"
+      instagram: "nihadmujakic18",
+      wikipedia: "https://en.wikipedia.org/wiki/Nihad_Mujaki%C4%87"
     }
   },
   "482974": {
@@ -12480,7 +13390,8 @@ var squads_default = {
     dateOfBirth: "2002-04-30",
     height: 178,
     socials: {
-      instagram: "basicivan1"
+      instagram: "basicivan1",
+      wikipedia: "https://en.wikipedia.org/wiki/Ivan_Ba%C5%A1i%C4%87"
     }
   },
   "482976": {
@@ -12495,7 +13406,8 @@ var squads_default = {
     dateOfBirth: "2002-08-18",
     height: 180,
     socials: {
-      instagram: "amar_dc"
+      instagram: "amar_dc",
+      wikipedia: "https://en.wikipedia.org/wiki/Amar_Dedi%C4%87"
     }
   },
   "482978": {
@@ -12510,7 +13422,8 @@ var squads_default = {
     dateOfBirth: "1995-12-02",
     height: 193,
     socials: {
-      instagram: "nikolavasilj22"
+      instagram: "nikolavasilj22",
+      wikipedia: "https://en.wikipedia.org/wiki/Nikola_Vasilj"
     }
   },
   "482984": {
@@ -12525,7 +13438,8 @@ var squads_default = {
     dateOfBirth: "1994-06-20",
     height: 196,
     socials: {
-      instagram: "_haristabakovic"
+      instagram: "_haristabakovic",
+      wikipedia: "https://en.wikipedia.org/wiki/Haris_Tabakovi%C4%87"
     }
   },
   "483127": {
@@ -12565,7 +13479,10 @@ var squads_default = {
     club: "Al Ahly",
     pictureUrl: "https://digitalhub.fifa.com/transform/406ef52d-c003-4108-b9c2-126b4ad8354b/HOSSAM-ABDELMAGUID_483182",
     dateOfBirth: "2001-04-30",
-    height: 193
+    height: 193,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Hossam_Abdelmaguid"
+    }
   },
   "483183": {
     fifaId: "483183",
@@ -12579,7 +13496,8 @@ var squads_default = {
     dateOfBirth: "2001-07-30",
     height: 170,
     socials: {
-      instagram: "mahmoudsaber_33"
+      instagram: "mahmoudsaber_33",
+      wikipedia: "https://en.wikipedia.org/wiki/Mahmoud_Saber"
     }
   },
   "483264": {
@@ -12594,7 +13512,8 @@ var squads_default = {
     dateOfBirth: "1998-09-14",
     height: 187,
     socials: {
-      instagram: "viktorjohansson_"
+      instagram: "viktorjohansson_",
+      wikipedia: "https://en.wikipedia.org/wiki/Viktor_Johansson"
     }
   },
   "483276": {
@@ -12609,7 +13528,8 @@ var squads_default = {
     dateOfBirth: "1999-04-29",
     height: 181,
     socials: {
-      instagram: "gudmundsson_"
+      instagram: "gudmundsson_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Gabriel_Gudmundsson"
     }
   },
   "483304": {
@@ -12622,7 +13542,10 @@ var squads_default = {
     club: "Newcastle",
     pictureUrl: "https://digitalhub.fifa.com/transform/12a80a14-c33d-480f-8742-315485c114c1/LAGERBIELKE-Gustaf_483304",
     dateOfBirth: "2000-04-10",
-    height: 193
+    height: 193,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Gustaf_Lagerbielke_(footballer)"
+    }
   },
   "483312": {
     fifaId: "483312",
@@ -12636,7 +13559,8 @@ var squads_default = {
     dateOfBirth: "1999-01-13",
     height: 191,
     socials: {
-      instagram: "isakhienz"
+      instagram: "isakhienz",
+      wikipedia: "https://pt.wikipedia.org/wiki/Isak_Hien"
     }
   },
   "483319": {
@@ -12651,7 +13575,8 @@ var squads_default = {
     dateOfBirth: "1998-10-21",
     height: 187,
     socials: {
-      instagram: "hjalmarekdal"
+      instagram: "hjalmarekdal",
+      wikipedia: "https://en.wikipedia.org/wiki/Hjalmar_Ekdal"
     }
   },
   "483327": {
@@ -12666,7 +13591,8 @@ var squads_default = {
     dateOfBirth: "1998-06-04",
     height: 189,
     socials: {
-      instagram: "viktorgyokeres"
+      instagram: "viktorgyokeres",
+      wikipedia: "https://pt.wikipedia.org/wiki/Viktor_Gy%C3%B6keres"
     }
   },
   "483442": {
@@ -12681,7 +13607,8 @@ var squads_default = {
     dateOfBirth: "1997-11-24",
     height: 178,
     socials: {
-      instagram: "patrickberg"
+      instagram: "patrickberg",
+      wikipedia: "https://en.wikipedia.org/wiki/Patrick_Berg"
     }
   },
   "483448": {
@@ -12696,7 +13623,8 @@ var squads_default = {
     dateOfBirth: "2005-04-17",
     height: 183,
     socials: {
-      instagram: "nusaantonio"
+      instagram: "nusaantonio",
+      wikipedia: "https://pt.wikipedia.org/wiki/Antonio_Nusa"
     }
   },
   "483471": {
@@ -12711,7 +13639,8 @@ var squads_default = {
     dateOfBirth: "1994-04-25",
     height: 187,
     socials: {
-      instagram: "brice_samba1"
+      instagram: "brice_samba1",
+      wikipedia: "https://pt.wikipedia.org/wiki/Brice_Samba"
     }
   },
   "483481": {
@@ -12726,7 +13655,8 @@ var squads_default = {
     dateOfBirth: "1999-11-16",
     height: 189,
     socials: {
-      instagram: "matswieffer"
+      instagram: "matswieffer",
+      wikipedia: "https://en.wikipedia.org/wiki/Mats_Wieffer"
     }
   },
   "483496": {
@@ -12741,7 +13671,8 @@ var squads_default = {
     dateOfBirth: "1997-11-17",
     height: 186,
     socials: {
-      instagram: "julianryerson"
+      instagram: "julianryerson",
+      wikipedia: "https://pt.wikipedia.org/wiki/Julian_Ryerson"
     }
   },
   "483497": {
@@ -12756,7 +13687,8 @@ var squads_default = {
     dateOfBirth: "1995-12-10",
     height: 181,
     socials: {
-      instagram: "fredrikaurs18"
+      instagram: "fredrikaurs18",
+      wikipedia: "https://pt.wikipedia.org/wiki/Fredrik_Aursnes"
     }
   },
   "483505": {
@@ -12771,7 +13703,8 @@ var squads_default = {
     dateOfBirth: "2002-04-23",
     height: 185,
     socials: {
-      instagram: "wolfemdavid"
+      instagram: "wolfemdavid",
+      wikipedia: "https://en.wikipedia.org/wiki/David_M%C3%B8ller_Wolfe"
     }
   },
   "483512": {
@@ -12786,7 +13719,8 @@ var squads_default = {
     dateOfBirth: "2006-03-07",
     height: 182,
     socials: {
-      instagram: "jorrelhato"
+      instagram: "jorrelhato",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jorrel_Hato"
     }
   },
   "483516": {
@@ -12801,7 +13735,8 @@ var squads_default = {
     dateOfBirth: "1998-04-17",
     height: 198,
     socials: {
-      instagram: "kristoffer.v.ajer"
+      instagram: "kristoffer.v.ajer",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kristoffer_Ajer"
     }
   },
   "483526": {
@@ -12816,7 +13751,8 @@ var squads_default = {
     dateOfBirth: "1998-07-29",
     height: 178,
     socials: {
-      instagram: "tijjanireijnders"
+      instagram: "tijjanireijnders",
+      wikipedia: "https://pt.wikipedia.org/wiki/Tijjani_Reijnders"
     }
   },
   "483530": {
@@ -12831,7 +13767,8 @@ var squads_default = {
     dateOfBirth: "1998-08-21",
     height: 180,
     socials: {
-      instagram: "fredrikbjorkan"
+      instagram: "fredrikbjorkan",
+      wikipedia: "https://en.wikipedia.org/wiki/Fredrik_Andr%C3%A9_Bj%C3%B8rkan"
     }
   },
   "483535": {
@@ -12846,7 +13783,8 @@ var squads_default = {
     dateOfBirth: "1997-07-30",
     height: 187,
     socials: {
-      instagram: "egil_s"
+      instagram: "egil_s",
+      wikipedia: "https://en.wikipedia.org/wiki/Egil_Selvik"
     }
   },
   "483549": {
@@ -12861,7 +13799,8 @@ var squads_default = {
     dateOfBirth: "2006-03-08",
     height: 176,
     socials: {
-      instagram: "wzairemery6"
+      instagram: "wzairemery6",
+      wikipedia: "https://pt.wikipedia.org/wiki/Warren_Za%C3%AFre-Emery"
     }
   },
   "483553": {
@@ -12876,7 +13815,8 @@ var squads_default = {
     dateOfBirth: "2000-07-18",
     height: 185,
     socials: {
-      instagram: "lutshageertruida"
+      instagram: "lutshageertruida",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lutsharel_Geertruida"
     }
   },
   "483936": {
@@ -12891,7 +13831,8 @@ var squads_default = {
     dateOfBirth: "1998-05-31",
     height: 175,
     socials: {
-      instagram: "david_doudera"
+      instagram: "david_doudera",
+      wikipedia: "https://en.wikipedia.org/wiki/David_Doud%C4%9Bra"
     }
   },
   "483961": {
@@ -12906,7 +13847,8 @@ var squads_default = {
     dateOfBirth: "1995-01-26",
     height: 199,
     socials: {
-      instagram: "tomascoro"
+      instagram: "tomascoro",
+      wikipedia: "https://en.wikipedia.org/wiki/Tom%C3%A1%C5%A1_Chor%C3%BD"
     }
   },
   "483966": {
@@ -12921,7 +13863,8 @@ var squads_default = {
     dateOfBirth: "2003-03-03",
     height: 191,
     socials: {
-      instagram: "b.tahirovic1"
+      instagram: "b.tahirovic1",
+      wikipedia: "https://en.wikipedia.org/wiki/Benjamin_Tahirovi%C4%87"
     }
   },
   "483990": {
@@ -12936,7 +13879,8 @@ var squads_default = {
     dateOfBirth: "2000-08-07",
     height: 183,
     socials: {
-      instagram: "dava33__"
+      instagram: "dava33__",
+      wikipedia: "https://pt.wikipedia.org/wiki/David_Jur%C3%A1sek"
     }
   },
   "484003": {
@@ -12951,7 +13895,8 @@ var squads_default = {
     dateOfBirth: "1999-04-29",
     height: 187,
     socials: {
-      instagram: "iam_mojma_"
+      instagram: "iam_mojma_",
+      wikipedia: "https://en.wikipedia.org/wiki/Mojm%C3%ADr_Chytil"
     }
   },
   "484011": {
@@ -12966,7 +13911,8 @@ var squads_default = {
     dateOfBirth: "1996-10-23",
     height: 191,
     socials: {
-      instagram: "lukas.provod"
+      instagram: "lukas.provod",
+      wikipedia: "https://en.wikipedia.org/wiki/Luk%C3%A1%C5%A1_Provod"
     }
   },
   "484012": {
@@ -12981,7 +13927,8 @@ var squads_default = {
     dateOfBirth: "2000-05-17",
     height: 196,
     socials: {
-      instagram: "mkovar1705"
+      instagram: "mkovar1705",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mat%C4%9Bj_Kov%C3%A1%C5%99"
     }
   },
   "484022": {
@@ -12996,7 +13943,8 @@ var squads_default = {
     dateOfBirth: "2003-02-28",
     height: 192,
     socials: {
-      instagram: "tarik.muharemovic"
+      instagram: "tarik.muharemovic",
+      wikipedia: "https://en.wikipedia.org/wiki/Tarik_Muharemovi%C4%87"
     }
   },
   "484045": {
@@ -13011,7 +13959,8 @@ var squads_default = {
     dateOfBirth: "1995-08-10",
     height: 185,
     socials: {
-      instagram: "lawrenceshankland"
+      instagram: "lawrenceshankland",
+      wikipedia: "https://en.wikipedia.org/wiki/Lawrence_Shankland"
     }
   },
   "484051": {
@@ -13026,7 +13975,8 @@ var squads_default = {
     dateOfBirth: "1992-01-08",
     height: 183,
     socials: {
-      instagram: "kennymclean66"
+      instagram: "kennymclean66",
+      wikipedia: "https://en.wikipedia.org/wiki/Kenny_McLean"
     }
   },
   "484065": {
@@ -13041,7 +13991,8 @@ var squads_default = {
     dateOfBirth: "2000-07-07",
     height: 181,
     socials: {
-      instagram: "elmali"
+      instagram: "elmali",
+      wikipedia: "https://en.wikipedia.org/wiki/Eren_Elmal%C4%B1"
     }
   },
   "484072": {
@@ -13056,7 +14007,8 @@ var squads_default = {
     dateOfBirth: "1994-03-13",
     height: 190,
     socials: {
-      instagram: "sametakaydin4"
+      instagram: "sametakaydin4",
+      wikipedia: "https://en.wikipedia.org/wiki/Samet_Akaydin"
     }
   },
   "484073": {
@@ -13071,7 +14023,8 @@ var squads_default = {
     dateOfBirth: "1995-12-20",
     height: 188,
     socials: {
-      instagram: "domhyam_95"
+      instagram: "domhyam_95",
+      wikipedia: "https://en.wikipedia.org/wiki/Dominic_Hyam"
     }
   },
   "484082": {
@@ -13086,7 +14039,8 @@ var squads_default = {
     dateOfBirth: "1994-09-07",
     height: 185,
     socials: {
-      instagram: "abdulkerimbardakci"
+      instagram: "abdulkerimbardakci",
+      wikipedia: "https://en.wikipedia.org/wiki/Abd%C3%BClkerim_Bardakc%C4%B1"
     }
   },
   "484087": {
@@ -13101,7 +14055,8 @@ var squads_default = {
     dateOfBirth: "2005-02-25",
     height: 175,
     socials: {
-      instagram: "ardaguler"
+      instagram: "ardaguler",
+      wikipedia: "https://pt.wikipedia.org/wiki/Arda_G%C3%BCler"
     }
   },
   "484092": {
@@ -13116,7 +14071,8 @@ var squads_default = {
     dateOfBirth: "1999-01-26",
     height: 183,
     socials: {
-      instagram: "ismailyuksek"
+      instagram: "ismailyuksek",
+      wikipedia: "https://en.wikipedia.org/wiki/%C4%B0smail_Y%C3%BCksek"
     }
   },
   "484112": {
@@ -13131,7 +14087,8 @@ var squads_default = {
     dateOfBirth: "2005-05-04",
     height: 187,
     socials: {
-      instagram: "kenanyildiz"
+      instagram: "kenanyildiz",
+      wikipedia: "https://pt.wikipedia.org/wiki/Kenan_Y%C4%B1ld%C4%B1z"
     }
   },
   "484113": {
@@ -13146,7 +14103,8 @@ var squads_default = {
     dateOfBirth: "1999-10-07",
     height: 174,
     socials: {
-      instagram: "ferdikadioglu"
+      instagram: "ferdikadioglu",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ferdi_Kad%C4%B1o%C4%9Flu"
     }
   },
   "484139": {
@@ -13161,7 +14119,8 @@ var squads_default = {
     dateOfBirth: "2000-05-23",
     height: 186,
     socials: {
-      instagram: "barisalperyilmaz"
+      instagram: "barisalperyilmaz",
+      wikipedia: "https://en.wikipedia.org/wiki/Bar%C4%B1%C5%9F_Alper_Y%C4%B1lmaz"
     }
   },
   "484141": {
@@ -13176,7 +14135,8 @@ var squads_default = {
     dateOfBirth: "2004-09-27",
     height: 171,
     socials: {
-      instagram: "joao_neves87"
+      instagram: "joao_neves87",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Neves"
     }
   },
   "484262": {
@@ -13189,7 +14149,10 @@ var squads_default = {
     club: "Hoverla Uzhhorod",
     pictureUrl: "https://digitalhub.fifa.com/transform/97055547-246e-4bc9-8130-5903cd33077d/MARKO-FARJI_484262",
     dateOfBirth: "2004-03-16",
-    height: 185
+    height: 185,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Marko_Farji"
+    }
   },
   "484270": {
     fifaId: "484270",
@@ -13227,7 +14190,8 @@ var squads_default = {
     dateOfBirth: "2007-07-13",
     height: 183,
     socials: {
-      instagram: "lamineyamal"
+      instagram: "lamineyamal",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lamine_Yamal"
     }
   },
   "484691": {
@@ -13242,7 +14206,8 @@ var squads_default = {
     dateOfBirth: "2001-05-04",
     height: 194,
     socials: {
-      instagram: "__joangarcia"
+      instagram: "__joangarcia",
+      wikipedia: "https://pt.wikipedia.org/wiki/Joan_Garc%C3%ADa"
     }
   },
   "484698": {
@@ -13257,7 +14222,8 @@ var squads_default = {
     dateOfBirth: "2005-09-07",
     height: 185,
     socials: {
-      instagram: "assandiao.8"
+      instagram: "assandiao.8",
+      wikipedia: "https://pt.wikipedia.org/wiki/Assane_Diao"
     }
   },
   "484728": {
@@ -13272,7 +14238,8 @@ var squads_default = {
     dateOfBirth: "2003-06-20",
     height: 191,
     socials: {
-      instagram: "markus_pubill27"
+      instagram: "markus_pubill27",
+      wikipedia: "https://pt.wikipedia.org/wiki/Marc_Pubill"
     }
   },
   "484817": {
@@ -13285,7 +14252,10 @@ var squads_default = {
     club: "Auckland FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/d63e6762-f433-47f1-82b3-be3627b12941/BAYLISS-Lachlan_484817",
     dateOfBirth: "2002-07-24",
-    height: 178
+    height: 178,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Lachlan_Bayliss"
+    }
   },
   "484848": {
     fifaId: "484848",
@@ -13299,7 +14269,8 @@ var squads_default = {
     dateOfBirth: "1991-06-15",
     height: 181,
     socials: {
-      instagram: "pascalgross_"
+      instagram: "pascalgross_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Pascal_Gro%C3%9F"
     }
   },
   "484849": {
@@ -13314,7 +14285,8 @@ var squads_default = {
     dateOfBirth: "2004-05-03",
     height: 188,
     socials: {
-      instagram: "alekspavlovic_"
+      instagram: "alekspavlovic_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Aleksandar_Pavlovi%C4%87"
     }
   },
   "484850": {
@@ -13329,7 +14301,8 @@ var squads_default = {
     dateOfBirth: "2002-10-17",
     height: 185,
     socials: {
-      instagram: "maxbeier.14"
+      instagram: "maxbeier.14",
+      wikipedia: "https://pt.wikipedia.org/wiki/Maximilian_Beier"
     }
   },
   "484851": {
@@ -13344,7 +14317,8 @@ var squads_default = {
     dateOfBirth: "1996-07-19",
     height: 179,
     socials: {
-      instagram: "denizundav"
+      instagram: "denizundav",
+      wikipedia: "https://pt.wikipedia.org/wiki/Deniz_Undav"
     }
   },
   "484859": {
@@ -13359,7 +14333,8 @@ var squads_default = {
     dateOfBirth: "2001-06-17",
     height: 176,
     socials: {
-      instagram: "quintentimber"
+      instagram: "quintentimber",
+      wikipedia: "https://en.wikipedia.org/wiki/Quinten_Timber"
     }
   },
   "484860": {
@@ -13374,7 +14349,8 @@ var squads_default = {
     dateOfBirth: "2002-09-02",
     height: 187,
     socials: {
-      instagram: "bradley_dls"
+      instagram: "bradley_dls",
+      wikipedia: "https://pt.wikipedia.org/wiki/Bradley_Barcola"
     }
   },
   "484862": {
@@ -13389,7 +14365,8 @@ var squads_default = {
     dateOfBirth: "2002-07-03",
     height: 189,
     socials: {
-      instagram: "marvinkeller1"
+      instagram: "marvinkeller1",
+      wikipedia: "https://en.wikipedia.org/wiki/Marvin_Keller_(footballer)"
     }
   },
   "484864": {
@@ -13404,7 +14381,8 @@ var squads_default = {
     dateOfBirth: "2003-07-31",
     height: 194,
     socials: {
-      instagram: "aureleamenda"
+      instagram: "aureleamenda",
+      wikipedia: "https://en.wikipedia.org/wiki/Aur%C3%A8le_Amenda"
     }
   },
   "485063": {
@@ -13417,7 +14395,10 @@ var squads_default = {
     club: "Stuttgart",
     pictureUrl: "https://digitalhub.fifa.com/transform/5bd9c46f-fb55-4097-ae91-9c7e4f6bb308/BAZDAR-Samed_485063",
     dateOfBirth: "2004-01-31",
-    height: 189
+    height: 189,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Samed_Ba%C5%BEdar"
+    }
   },
   "485064": {
     fifaId: "485064",
@@ -13431,7 +14412,8 @@ var squads_default = {
     dateOfBirth: "2003-09-09",
     height: 178,
     socials: {
-      instagram: "nikosigur"
+      instagram: "nikosigur",
+      wikipedia: "https://en.wikipedia.org/wiki/Niko_Sigur"
     }
   },
   "485065": {
@@ -13446,7 +14428,8 @@ var squads_default = {
     dateOfBirth: "2001-03-09",
     height: 177,
     socials: {
-      instagram: "tonifruk"
+      instagram: "tonifruk",
+      wikipedia: "https://en.wikipedia.org/wiki/Toni_Fruk"
     }
   },
   "485066": {
@@ -13461,7 +14444,8 @@ var squads_default = {
     dateOfBirth: "2003-10-25",
     height: 183,
     socials: {
-      instagram: "petar_sucic"
+      instagram: "petar_sucic",
+      wikipedia: "https://en.wikipedia.org/wiki/Petar_Su%C4%8Di%C4%87"
     }
   },
   "485068": {
@@ -13476,7 +14460,8 @@ var squads_default = {
     dateOfBirth: "2003-03-31",
     height: 194,
     socials: {
-      instagram: "igor.matanovic"
+      instagram: "igor.matanovic",
+      wikipedia: "https://en.wikipedia.org/wiki/Igor_Matanovi%C4%87"
     }
   },
   "485069": {
@@ -13491,7 +14476,8 @@ var squads_default = {
     dateOfBirth: "1999-07-07",
     height: 184,
     socials: {
-      instagram: "ederson99"
+      instagram: "ederson99",
+      wikipedia: "https://pt.wikipedia.org/wiki/%C3%89derson_Jos%C3%A9_dos_Santos_Louren%C3%A7o_da_Silva"
     }
   },
   "485070": {
@@ -13506,7 +14492,8 @@ var squads_default = {
     dateOfBirth: "2000-02-25",
     height: 190,
     socials: {
-      instagram: "raulra_22"
+      instagram: "raulra_22",
+      wikipedia: "https://en.wikipedia.org/wiki/Ra%C3%BAl_Rangel_(footballer)"
     }
   },
   "485080": {
@@ -13521,7 +14508,8 @@ var squads_default = {
     dateOfBirth: "2002-10-10",
     height: 197,
     socials: {
-      instagram: "jamestrafford"
+      instagram: "jamestrafford",
+      wikipedia: "https://pt.wikipedia.org/wiki/James_Trafford"
     }
   },
   "485081": {
@@ -13536,7 +14524,8 @@ var squads_default = {
     dateOfBirth: "2002-12-14",
     height: 166,
     socials: {
-      instagram: "francisco.conceicao7"
+      instagram: "francisco.conceicao7",
+      wikipedia: "https://pt.wikipedia.org/wiki/Francisco_Concei%C3%A7%C3%A3o"
     }
   },
   "485131": {
@@ -13551,7 +14540,8 @@ var squads_default = {
     dateOfBirth: "2005-11-11",
     height: 173,
     socials: {
-      instagram: "bendoak._"
+      instagram: "bendoak._",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ben_Gannon-Doak"
     }
   },
   "485324": {
@@ -13578,7 +14568,8 @@ var squads_default = {
     dateOfBirth: "1999-12-04",
     height: 185,
     socials: {
-      instagram: "tahithchong"
+      instagram: "tahithchong",
+      wikipedia: "https://pt.wikipedia.org/wiki/Tahith_Chong"
     }
   },
   "485379": {
@@ -13593,7 +14584,8 @@ var squads_default = {
     dateOfBirth: "2001-08-19",
     height: 174,
     socials: {
-      instagram: "shurandysambo"
+      instagram: "shurandysambo",
+      wikipedia: "https://en.wikipedia.org/wiki/Shurandy_Sambo"
     }
   },
   "485409": {
@@ -13608,7 +14600,8 @@ var squads_default = {
     dateOfBirth: "2004-12-30",
     height: 177,
     socials: {
-      instagram: "woodensky06"
+      instagram: "woodensky06",
+      wikipedia: "https://en.wikipedia.org/wiki/Woodensky_Pierre"
     }
   },
   "485503": {
@@ -13623,7 +14616,8 @@ var squads_default = {
     dateOfBirth: "2001-10-25",
     height: 175,
     socials: {
-      instagram: "yuiton.s"
+      instagram: "yuiton.s",
+      wikipedia: "https://en.wikipedia.org/wiki/Yuito_Suzuki"
     }
   },
   "485595": {
@@ -13638,7 +14632,8 @@ var squads_default = {
     dateOfBirth: "2002-12-18",
     height: 174,
     socials: {
-      instagram: "simeonegiovanni"
+      instagram: "simeonegiovanni",
+      wikipedia: "https://pt.wikipedia.org/wiki/Giuliano_Simeone"
     }
   },
   "485655": {
@@ -13653,7 +14648,8 @@ var squads_default = {
     dateOfBirth: "2001-12-12",
     height: 184,
     socials: {
-      instagram: "m.olise"
+      instagram: "m.olise",
+      wikipedia: "https://pt.wikipedia.org/wiki/Michael_Olise"
     }
   },
   "485664": {
@@ -13668,7 +14664,8 @@ var squads_default = {
     dateOfBirth: "2001-07-07",
     height: 178,
     socials: {
-      instagram: "r.providence7"
+      instagram: "r.providence7",
+      wikipedia: "https://en.wikipedia.org/wiki/Ruben_Providence"
     }
   },
   "485666": {
@@ -13683,7 +14680,8 @@ var squads_default = {
     dateOfBirth: "2002-02-25",
     height: 183,
     socials: {
-      instagram: "maghnes.a"
+      instagram: "maghnes.a",
+      wikipedia: "https://pt.wikipedia.org/wiki/Maghnes_Akliouche"
     }
   },
   "485675": {
@@ -13698,7 +14696,8 @@ var squads_default = {
     dateOfBirth: "2001-07-01",
     height: 188,
     socials: {
-      instagram: "e.guessand"
+      instagram: "e.guessand",
+      wikipedia: "https://en.wikipedia.org/wiki/Evann_Guessand"
     }
   },
   "485676": {
@@ -13713,7 +14712,8 @@ var squads_default = {
     dateOfBirth: "2000-10-12",
     height: 182,
     socials: {
-      instagram: "lenny.joseph19"
+      instagram: "lenny.joseph19",
+      wikipedia: "https://en.wikipedia.org/wiki/Lenny_Joseph"
     }
   },
   "485677": {
@@ -13728,7 +14728,8 @@ var squads_default = {
     dateOfBirth: "2001-05-17",
     height: 185,
     socials: {
-      instagram: "manu_kne"
+      instagram: "manu_kne",
+      wikipedia: "https://pt.wikipedia.org/wiki/Manu_Kon%C3%A9"
     }
   },
   "485740": {
@@ -13743,7 +14744,8 @@ var squads_default = {
     dateOfBirth: "2001-07-02",
     height: 185,
     socials: {
-      instagram: "neilelaynaoui"
+      instagram: "neilelaynaoui",
+      wikipedia: "https://en.wikipedia.org/wiki/Neil_El_Aynaoui"
     }
   },
   "485756": {
@@ -13758,7 +14760,8 @@ var squads_default = {
     dateOfBirth: "2001-12-31",
     height: 171,
     socials: {
-      instagram: "z.elouahdi"
+      instagram: "z.elouahdi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Zakaria_El_Ouahdi"
     }
   },
   "485760": {
@@ -13773,7 +14776,8 @@ var squads_default = {
     dateOfBirth: "2007-10-02",
     height: 185,
     socials: {
-      instagram: "ay.bouaddi"
+      instagram: "ay.bouaddi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ayyoub_Bouaddi"
     }
   },
   "485767": {
@@ -13788,7 +14792,8 @@ var squads_default = {
     dateOfBirth: "2003-03-05",
     height: 189,
     socials: {
-      instagram: "r.halhal4"
+      instagram: "r.halhal4",
+      wikipedia: "https://en.wikipedia.org/wiki/Redouane_Halhal"
     }
   },
   "485802": {
@@ -13803,7 +14808,8 @@ var squads_default = {
     dateOfBirth: "1995-06-16",
     height: 188,
     socials: {
-      instagram: "alexarce7785"
+      instagram: "alexarce7785",
+      wikipedia: "https://en.wikipedia.org/wiki/%C3%81lex_Arce"
     }
   },
   "485804": {
@@ -13818,7 +14824,8 @@ var squads_default = {
     dateOfBirth: "2001-09-21",
     height: 189,
     socials: {
-      instagram: "gustavocaballer0"
+      instagram: "gustavocaballer0",
+      wikipedia: "https://en.wikipedia.org/wiki/Gustavo_Caballero"
     }
   },
   "486074": {
@@ -13833,7 +14840,8 @@ var squads_default = {
     dateOfBirth: "2005-11-11",
     height: 186,
     socials: {
-      instagram: "can.uzun10"
+      instagram: "can.uzun10",
+      wikipedia: "https://en.wikipedia.org/wiki/Can_Uzun"
     }
   },
   "486076": {
@@ -13846,7 +14854,10 @@ var squads_default = {
     club: "Roma",
     pictureUrl: "https://digitalhub.fifa.com/transform/b29233e3-0131-45eb-96e4-ad77044a1959/AYDIN-Oguz_486076",
     dateOfBirth: "2000-10-27",
-    height: 183
+    height: 183,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/O%C4%9Fuz_Ayd%C4%B1n"
+    }
   },
   "486080": {
     fifaId: "486080",
@@ -13860,7 +14871,8 @@ var squads_default = {
     dateOfBirth: "2000-01-29",
     height: 189,
     socials: {
-      instagram: "robinhranac"
+      instagram: "robinhranac",
+      wikipedia: "https://en.wikipedia.org/wiki/Robin_Hran%C3%A1%C4%8D"
     }
   },
   "486081": {
@@ -13875,7 +14887,8 @@ var squads_default = {
     dateOfBirth: "2001-04-10",
     height: 182,
     socials: {
-      instagram: "lukas_cerv"
+      instagram: "lukas_cerv",
+      wikipedia: "https://en.wikipedia.org/wiki/Luk%C3%A1%C5%A1_%C4%8Cerv"
     }
   },
   "486082": {
@@ -13890,7 +14903,8 @@ var squads_default = {
     dateOfBirth: "2000-12-29",
     height: 177,
     socials: {
-      instagram: "sulcik_10"
+      instagram: "sulcik_10",
+      wikipedia: "https://pt.wikipedia.org/wiki/Pavel_%C5%A0ulc"
     }
   },
   "486130": {
@@ -13905,7 +14919,8 @@ var squads_default = {
     dateOfBirth: "2004-01-03",
     height: 178,
     socials: {
-      instagram: "habib.diarra.38"
+      instagram: "habib.diarra.38",
+      wikipedia: "https://en.wikipedia.org/wiki/Habib_Diarra"
     }
   },
   "486147": {
@@ -13920,7 +14935,8 @@ var squads_default = {
     dateOfBirth: "2004-12-17",
     height: 165,
     socials: {
-      instagram: "noahjsad27"
+      instagram: "noahjsad27",
+      wikipedia: "https://en.wikipedia.org/wiki/Noah_Sadiki"
     }
   },
   "486161": {
@@ -13935,7 +14951,8 @@ var squads_default = {
     dateOfBirth: "2004-10-23",
     height: 168,
     socials: {
-      instagram: "relebohile_ratomo_15"
+      instagram: "relebohile_ratomo_15",
+      wikipedia: "https://en.wikipedia.org/wiki/Relebohile_Mofokeng"
     }
   },
   "486168": {
@@ -13950,7 +14967,8 @@ var squads_default = {
     dateOfBirth: "1996-01-23",
     height: 190,
     socials: {
-      instagram: "cherifrek_221"
+      instagram: "cherifrek_221",
+      wikipedia: "https://en.wikipedia.org/wiki/Cherif_Ndiaye"
     }
   },
   "486196": {
@@ -13965,7 +14983,8 @@ var squads_default = {
     dateOfBirth: "1999-07-24",
     height: 192,
     socials: {
-      instagram: "timofayulu75"
+      instagram: "timofayulu75",
+      wikipedia: "https://en.wikipedia.org/wiki/Timothy_Fayulu"
     }
   },
   "486259": {
@@ -13980,7 +14999,8 @@ var squads_default = {
     dateOfBirth: "2002-03-07",
     height: 186,
     socials: {
-      instagram: "_mohamedkone1"
+      instagram: "_mohamedkone1",
+      wikipedia: "https://en.wikipedia.org/wiki/Mohamed_Kon%C3%A9_(footballer,_born_2002)"
     }
   },
   "486260": {
@@ -13995,7 +15015,8 @@ var squads_default = {
     dateOfBirth: "1997-04-29",
     height: 183,
     socials: {
-      instagram: "agbadou_emmanuel"
+      instagram: "agbadou_emmanuel",
+      wikipedia: "https://en.wikipedia.org/wiki/Christopher_Op%C3%A9ri"
     }
   },
   "486268": {
@@ -14008,7 +15029,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/d092f8c9-f80e-40e0-ad73-bfa861784408/AGBADOU-Emmanuel_486268",
     dateOfBirth: "1997-06-17",
-    height: 185
+    height: 185,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Emmanuel_Agbadou"
+    }
   },
   "486306": {
     fifaId: "486306",
@@ -14022,7 +15046,8 @@ var squads_default = {
     dateOfBirth: "2006-02-09",
     height: 165,
     socials: {
-      instagram: "nestory._"
+      instagram: "nestory._",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nestory_Irankunda"
     }
   },
   "486317": {
@@ -14037,7 +15062,8 @@ var squads_default = {
     dateOfBirth: "2002-10-17",
     height: 187,
     socials: {
-      instagram: "guela.doue"
+      instagram: "guela.doue",
+      wikipedia: "https://en.wikipedia.org/wiki/Gu%C3%A9la_Dou%C3%A9"
     }
   },
   "486390": {
@@ -14052,7 +15078,8 @@ var squads_default = {
     dateOfBirth: "2001-04-19",
     height: 185,
     socials: {
-      instagram: "maxarfsten"
+      instagram: "maxarfsten",
+      wikipedia: "https://en.wikipedia.org/wiki/Max_Arfsten"
     }
   },
   "486614": {
@@ -14091,7 +15118,8 @@ var squads_default = {
     dateOfBirth: "1991-04-17",
     height: 189,
     socials: {
-      instagram: "pituvelazquez"
+      instagram: "pituvelazquez",
+      wikipedia: "https://en.wikipedia.org/wiki/Gustavo_Vel%C3%A1zquez"
     }
   },
   "486929": {
@@ -14106,7 +15134,8 @@ var squads_default = {
     dateOfBirth: "2000-05-15",
     height: 187,
     socials: {
-      instagram: "tani.o14"
+      instagram: "tani.o14",
+      wikipedia: "https://en.wikipedia.org/wiki/Tani_Oluwaseyi"
     }
   },
   "489300": {
@@ -14136,7 +15165,8 @@ var squads_default = {
     dateOfBirth: "1999-08-14",
     height: 185,
     socials: {
-      instagram: "isidro_pitta09"
+      instagram: "isidro_pitta09",
+      wikipedia: "https://pt.wikipedia.org/wiki/Isidro_Pitta"
     }
   },
   "489517": {
@@ -14151,7 +15181,8 @@ var squads_default = {
     dateOfBirth: "2000-06-08",
     height: 189,
     socials: {
-      instagram: "jpvanhecke"
+      instagram: "jpvanhecke",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jan_Paul_van_Hecke"
     }
   },
   "489518": {
@@ -14166,7 +15197,8 @@ var squads_default = {
     dateOfBirth: "2001-10-30",
     height: 172,
     socials: {
-      instagram: "csummerville7"
+      instagram: "csummerville7",
+      wikipedia: "https://pt.wikipedia.org/wiki/Crysencio_Summerville"
     }
   },
   "489520": {
@@ -14181,7 +15213,8 @@ var squads_default = {
     dateOfBirth: "1996-10-10",
     height: 194,
     socials: {
-      instagram: "nikolakatic2"
+      instagram: "nikolakatic2",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nikola_Kati%C4%87"
     }
   },
   "489521": {
@@ -14194,7 +15227,10 @@ var squads_default = {
     club: "Toulouse",
     pictureUrl: "https://digitalhub.fifa.com/transform/d1b9ca91-fc68-44ee-8548-8f2fb4d10a46/RADELJIC-Stjepan_489521",
     dateOfBirth: "1997-09-05",
-    height: 201
+    height: 201,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Stjepan_Radelji%C4%87"
+    }
   },
   "489523": {
     fifaId: "489523",
@@ -14208,7 +15244,8 @@ var squads_default = {
     dateOfBirth: "2002-04-06",
     height: 187,
     socials: {
-      instagram: "armingigovic"
+      instagram: "armingigovic",
+      wikipedia: "https://en.wikipedia.org/wiki/Armin_Gigovi%C4%87"
     }
   },
   "489550": {
@@ -14268,7 +15305,8 @@ var squads_default = {
     dateOfBirth: "1998-07-11",
     height: 197,
     socials: {
-      instagram: "jacobwzetterstrom"
+      instagram: "jacobwzetterstrom",
+      wikipedia: "https://en.wikipedia.org/wiki/Jacob_Widell_Zetterstr%C3%B6m"
     }
   },
   "489688": {
@@ -14283,7 +15321,8 @@ var squads_default = {
     dateOfBirth: "2003-10-06",
     height: 172,
     socials: {
-      instagram: "yasin_ayari"
+      instagram: "yasin_ayari",
+      wikipedia: "https://pt.wikipedia.org/wiki/Yasin_Ayari"
     }
   },
   "489689": {
@@ -14298,7 +15337,8 @@ var squads_default = {
     dateOfBirth: "2006-02-02",
     height: 187,
     socials: {
-      instagram: "lucasbergvall"
+      instagram: "lucasbergvall",
+      wikipedia: "https://pt.wikipedia.org/wiki/Lucas_Bergvall"
     }
   },
   "489691": {
@@ -14313,7 +15353,8 @@ var squads_default = {
     dateOfBirth: "1997-05-23",
     height: 197,
     socials: {
-      instagram: "gustafnilssonn"
+      instagram: "gustafnilssonn",
+      wikipedia: "https://en.wikipedia.org/wiki/Gustaf_Nilsson_(footballer,_born_1997)"
     }
   },
   "489696": {
@@ -14328,7 +15369,8 @@ var squads_default = {
     dateOfBirth: "2001-02-02",
     height: 190,
     socials: {
-      instagram: "sondrelangas"
+      instagram: "sondrelangas",
+      wikipedia: "https://en.wikipedia.org/wiki/Sondre_Lang%C3%A5s"
     }
   },
   "489704": {
@@ -14343,7 +15385,8 @@ var squads_default = {
     dateOfBirth: "2003-07-29",
     height: 188,
     socials: {
-      instagram: "renatoveiga95"
+      instagram: "renatoveiga95",
+      wikipedia: "https://pt.wikipedia.org/wiki/Renato_Veiga"
     }
   },
   "489732": {
@@ -14358,7 +15401,8 @@ var squads_default = {
     dateOfBirth: "2002-03-10",
     height: 182,
     socials: {
-      instagram: "nonzinoo10"
+      instagram: "nonzinoo10",
+      wikipedia: "https://pt.wikipedia.org/wiki/Noni_Madueke"
     }
   },
   "491166": {
@@ -14373,7 +15417,8 @@ var squads_default = {
     dateOfBirth: "2001-05-07",
     height: 181,
     socials: {
-      instagram: "nishan.velupillay"
+      instagram: "nishan.velupillay",
+      wikipedia: "https://en.wikipedia.org/wiki/Nishan_Velupillay"
     }
   },
   "491167": {
@@ -14386,7 +15431,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/554abed3-9771-464a-a75d-ac4c1f550eca/AMER-JAMOUS_491167",
     dateOfBirth: "2002-07-03",
-    height: 177
+    height: 177,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Amer_Jamous"
+    }
   },
   "491216": {
     fifaId: "491216",
@@ -14400,7 +15448,8 @@ var squads_default = {
     dateOfBirth: "2000-11-27",
     height: 185,
     socials: {
-      instagram: "samucosta6"
+      instagram: "samucosta6",
+      wikipedia: "https://pt.wikipedia.org/wiki/Sam%C3%BA_Costa"
     }
   },
   "491218": {
@@ -14415,7 +15464,8 @@ var squads_default = {
     dateOfBirth: "2001-02-26",
     height: 185,
     socials: {
-      instagram: "jamieleweling"
+      instagram: "jamieleweling",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jamie_Leweling"
     }
   },
   "491228": {
@@ -14428,7 +15478,10 @@ var squads_default = {
     club: "Tuzla City",
     pictureUrl: "https://digitalhub.fifa.com/transform/c2bf5ce5-0160-4561-a0e0-4508621e1820/ZLOMISLIC-Martin_491228",
     dateOfBirth: "1998-08-16",
-    height: 189
+    height: 189,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Martin_Zlomisli%C4%87"
+    }
   },
   "491244": {
     fifaId: "491244",
@@ -14442,7 +15495,8 @@ var squads_default = {
     dateOfBirth: "1999-01-12",
     height: 192,
     socials: {
-      instagram: "tlheggem"
+      instagram: "tlheggem",
+      wikipedia: "https://en.wikipedia.org/wiki/Torbj%C3%B8rn_Heggem"
     }
   },
   "491255": {
@@ -14455,7 +15509,10 @@ var squads_default = {
     club: "Sampdoria",
     pictureUrl: "https://digitalhub.fifa.com/transform/49dbfd16-1871-40c2-94d5-995f9e38cc04/SVENSSON-Daniel_491255",
     dateOfBirth: "2002-02-12",
-    height: 183
+    height: 183,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Daniel_Svensson_(footballer,_born_2002)"
+    }
   },
   "491269": {
     fifaId: "491269",
@@ -14469,7 +15526,8 @@ var squads_default = {
     dateOfBirth: "1998-10-15",
     height: 195,
     socials: {
-      instagram: "michaelsvoboda30"
+      instagram: "michaelsvoboda30",
+      wikipedia: "https://en.wikipedia.org/wiki/Michael_Svoboda"
     }
   },
   "492315": {
@@ -14494,7 +15552,10 @@ var squads_default = {
     club: "Chelsea",
     pictureUrl: "https://digitalhub.fifa.com/transform/e8840a7f-2bc5-44fb-a7bc-15d7a605691c/TOMAS-ARAUJO_492358",
     dateOfBirth: "2002-05-16",
-    height: 187
+    height: 187,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Tom%C3%A1s_Ara%C3%BAjo"
+    }
   },
   "492363": {
     fifaId: "492363",
@@ -14508,7 +15569,8 @@ var squads_default = {
     dateOfBirth: "2000-10-10",
     height: 190,
     socials: {
-      instagram: "felix_nmecha"
+      instagram: "felix_nmecha",
+      wikipedia: "https://en.wikipedia.org/wiki/Felix_Nmecha"
     }
   },
   "492716": {
@@ -14523,7 +15585,8 @@ var squads_default = {
     dateOfBirth: "2002-07-26",
     height: 187,
     socials: {
-      instagram: "mrogers"
+      instagram: "mrogers",
+      wikipedia: "https://pt.wikipedia.org/wiki/Morgan_Rogers"
     }
   },
   "492859": {
@@ -14538,7 +15601,8 @@ var squads_default = {
     dateOfBirth: "2003-07-13",
     height: 173,
     socials: {
-      instagram: "victormunoz.7"
+      instagram: "victormunoz.7",
+      wikipedia: "https://pt.wikipedia.org/wiki/V%C3%ADctor_Mu%C3%B1oz_(futebolista,_2003)"
     }
   },
   "493061": {
@@ -14553,7 +15617,8 @@ var squads_default = {
     dateOfBirth: "1997-01-08",
     height: 192,
     socials: {
-      instagram: "ericsmith_8"
+      instagram: "ericsmith_8",
+      wikipedia: "https://en.wikipedia.org/wiki/Eric_Smith_(Swedish_footballer)"
     }
   },
   "493221": {
@@ -14568,7 +15633,8 @@ var squads_default = {
     dateOfBirth: "1998-03-24",
     height: 182,
     socials: {
-      instagram: "mvromu"
+      instagram: "mvromu",
+      wikipedia: "https://en.wikipedia.org/wiki/Miro_Muheim"
     }
   },
   "493970": {
@@ -14583,7 +15649,8 @@ var squads_default = {
     dateOfBirth: "2001-07-03",
     height: 195,
     socials: {
-      instagram: "txby.72"
+      instagram: "txby.72",
+      wikipedia: "https://en.wikipedia.org/wiki/Promise_David"
     }
   },
   "493983": {
@@ -14596,7 +15663,10 @@ var squads_default = {
     club: "Al-Quwa Al-Jawiya",
     pictureUrl: "https://digitalhub.fifa.com/transform/254f7d31-32e2-472f-8c9a-97c37d2a41c8/AIMAR-SHER_493983",
     dateOfBirth: "2002-12-20",
-    height: 180
+    height: 180,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Aimar_Sher"
+    }
   },
   "494025": {
     fifaId: "494025",
@@ -14610,7 +15680,8 @@ var squads_default = {
     dateOfBirth: "2005-02-03",
     height: 188,
     socials: {
-      instagram: "m.fernandez_pardo"
+      instagram: "m.fernandez_pardo",
+      wikipedia: "https://en.wikipedia.org/wiki/Matias_Fernandez-Pardo"
     }
   },
   "494246": {
@@ -14625,7 +15696,8 @@ var squads_default = {
     dateOfBirth: "1996-12-14",
     height: 186,
     socials: {
-      instagram: "s__chaine31"
+      instagram: "s__chaine31",
+      wikipedia: "https://en.wikipedia.org/wiki/Sipho_Chaine"
     }
   },
   "494248": {
@@ -14640,7 +15712,8 @@ var squads_default = {
     dateOfBirth: "2000-03-06",
     height: 179,
     socials: {
-      instagram: "thalentembatha04"
+      instagram: "thalentembatha04",
+      wikipedia: "https://en.wikipedia.org/wiki/Thalente_Mbatha"
     }
   },
   "494277": {
@@ -14655,7 +15728,8 @@ var squads_default = {
     dateOfBirth: "1999-11-16",
     height: 188,
     socials: {
-      instagram: "yehvann"
+      instagram: "yehvann",
+      wikipedia: "https://pt.wikipedia.org/wiki/Yehvann_Diouf"
     }
   },
   "494279": {
@@ -14670,7 +15744,8 @@ var squads_default = {
     dateOfBirth: "2004-05-27",
     height: 187,
     socials: {
-      instagram: "a.mendy27"
+      instagram: "a.mendy27",
+      wikipedia: "https://en.wikipedia.org/wiki/Antoine_Mendy_(footballer)"
     }
   },
   "494291": {
@@ -14685,7 +15760,8 @@ var squads_default = {
     dateOfBirth: "2005-11-24",
     height: 180,
     socials: {
-      instagram: "ibomaza"
+      instagram: "ibomaza",
+      wikipedia: "https://en.wikipedia.org/wiki/Ibrahim_Maza"
     }
   },
   "494293": {
@@ -14700,7 +15776,8 @@ var squads_default = {
     dateOfBirth: "2005-05-09",
     height: 175,
     socials: {
-      instagram: "chemsdinetalbi"
+      instagram: "chemsdinetalbi",
+      wikipedia: "https://en.wikipedia.org/wiki/Chemsdine_Talbi"
     }
   },
   "494313": {
@@ -14713,7 +15790,10 @@ var squads_default = {
     club: "Porto B",
     pictureUrl: "https://digitalhub.fifa.com/transform/7d0c9c98-3bbe-4379-a6e4-df45573f6e90/YANNICK-SEMEDO_494313",
     dateOfBirth: "1995-12-29",
-    height: 176
+    height: 176,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Yannick_Semedo"
+    }
   },
   "494314": {
     fifaId: "494314",
@@ -14727,7 +15807,8 @@ var squads_default = {
     dateOfBirth: "2001-06-21",
     height: 180,
     socials: {
-      instagram: "arcanjo__18"
+      instagram: "arcanjo__18",
+      wikipedia: "https://en.wikipedia.org/wiki/Telmo_Arcanjo"
     }
   },
   "494345": {
@@ -14742,7 +15823,8 @@ var squads_default = {
     dateOfBirth: "1992-05-09",
     height: 201,
     socials: {
-      instagram: "bigdanburn"
+      instagram: "bigdanburn",
+      wikipedia: "https://pt.wikipedia.org/wiki/Dan_Burn"
     }
   },
   "494374": {
@@ -14757,7 +15839,8 @@ var squads_default = {
     dateOfBirth: "1997-06-18",
     height: 191,
     socials: {
-      instagram: "mastouri_hazem"
+      instagram: "mastouri_hazem",
+      wikipedia: "https://en.wikipedia.org/wiki/Hazem_Mastouri"
     }
   },
   "494375": {
@@ -14770,7 +15853,10 @@ var squads_default = {
     club: "Stade Tunisien",
     pictureUrl: "https://digitalhub.fifa.com/transform/cf52c447-03a8-450b-a4b8-e238b1e3c071/CHAOUAT-Firas_494375",
     dateOfBirth: "1996-05-08",
-    height: 185
+    height: 185,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Firas_Chaouat"
+    }
   },
   "494411": {
     fifaId: "494411",
@@ -14784,7 +15870,8 @@ var squads_default = {
     dateOfBirth: "2001-05-18",
     height: 183,
     socials: {
-      instagram: "kaitrewin"
+      instagram: "kaitrewin",
+      wikipedia: "https://en.wikipedia.org/wiki/Kai_Trewin"
     }
   },
   "494429": {
@@ -14839,7 +15926,10 @@ var squads_default = {
     club: "Guaran\xED",
     pictureUrl: "https://digitalhub.fifa.com/transform/29bae713-62ca-48da-8655-9c2caa0e728d/GILL-Orlando_494531",
     dateOfBirth: "2000-06-11",
-    height: 190
+    height: 190,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Orlando_Gill"
+    }
   },
   "494557": {
     fifaId: "494557",
@@ -14853,7 +15943,8 @@ var squads_default = {
     dateOfBirth: "2003-08-06",
     height: 189,
     socials: {
-      instagram: "patrickbeach"
+      instagram: "patrickbeach",
+      wikipedia: "https://en.wikipedia.org/wiki/Patrick_Beach"
     }
   },
   "494625": {
@@ -14868,7 +15959,8 @@ var squads_default = {
     dateOfBirth: "2000-07-16",
     height: 184,
     socials: {
-      instagram: "marcushpederseen"
+      instagram: "marcushpederseen",
+      wikipedia: "https://en.wikipedia.org/wiki/Marcus_Holmgren_Pedersen"
     }
   },
   "494626": {
@@ -14883,7 +15975,8 @@ var squads_default = {
     dateOfBirth: "2004-06-01",
     height: 177,
     socials: {
-      instagram: "andreasschjelderup"
+      instagram: "andreasschjelderup",
+      wikipedia: "https://pt.wikipedia.org/wiki/Andreas_Schjelderup"
     }
   },
   "494627": {
@@ -14898,7 +15991,8 @@ var squads_default = {
     dateOfBirth: "2002-05-02",
     height: 188,
     socials: {
-      instagram: "thelo.aasgaard"
+      instagram: "thelo.aasgaard",
+      wikipedia: "https://en.wikipedia.org/wiki/Thelo_Aasgaard"
     }
   },
   "494639": {
@@ -14913,7 +16007,8 @@ var squads_default = {
     dateOfBirth: "2005-08-28",
     height: 188,
     socials: {
-      instagram: "arjanmalic"
+      instagram: "arjanmalic",
+      wikipedia: "https://en.wikipedia.org/wiki/Arjan_Mali%C4%87"
     }
   },
   "494640": {
@@ -14926,7 +16021,10 @@ var squads_default = {
     club: "Lokomotiva Zagreb",
     pictureUrl: "https://digitalhub.fifa.com/transform/c57e2c22-f510-4109-b3e7-72b5a6b862a9/MEMIC-Amar_494640",
     dateOfBirth: "2001-01-20",
-    height: 176
+    height: 176,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Amar_Memi%C4%87"
+    }
   },
   "494742": {
     fifaId: "494742",
@@ -14940,7 +16038,8 @@ var squads_default = {
     dateOfBirth: "1998-09-20",
     height: 175,
     socials: {
-      instagram: "youssef_belammari"
+      instagram: "youssef_belammari",
+      wikipedia: "https://en.wikipedia.org/wiki/Youssef_Belammari"
     }
   },
   "494800": {
@@ -14955,7 +16054,8 @@ var squads_default = {
     dateOfBirth: "1994-10-17",
     height: 172,
     socials: {
-      instagram: "sultan_mandash27"
+      instagram: "sultan_mandash27",
+      wikipedia: "https://en.wikipedia.org/wiki/Sultan_Mandash"
     }
   },
   "494989": {
@@ -14970,7 +16070,8 @@ var squads_default = {
     dateOfBirth: "2004-02-03",
     height: 185,
     socials: {
-      instagram: "livano076"
+      instagram: "livano076",
+      wikipedia: "https://pt.wikipedia.org/wiki/Livano_Comenencia"
     }
   },
   "495046": {
@@ -14998,7 +16099,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/fe5c273f-95e7-49c7-b9a5-a332e4da801b/LOPEZ-Jose-Manuel_495054",
     dateOfBirth: "2000-12-06",
-    height: 190
+    height: 190,
+    socials: {
+      wikipedia: "https://pt.wikipedia.org/wiki/Flaco_L%C3%B3pez"
+    }
   },
   "495347": {
     fifaId: "495347",
@@ -15012,7 +16116,8 @@ var squads_default = {
     dateOfBirth: "2004-07-02",
     height: 192,
     socials: {
-      instagram: "denizgul_9"
+      instagram: "denizgul_9",
+      wikipedia: "https://en.wikipedia.org/wiki/Deniz_G%C3%BCl"
     }
   },
   "495348": {
@@ -15027,7 +16132,8 @@ var squads_default = {
     dateOfBirth: "2002-07-07",
     height: 193,
     socials: {
-      instagram: "senne_lammens"
+      instagram: "senne_lammens",
+      wikipedia: "https://pt.wikipedia.org/wiki/Senne_Lammens"
     }
   },
   "495349": {
@@ -15042,7 +16148,8 @@ var squads_default = {
     dateOfBirth: "2001-02-23",
     height: 178,
     socials: {
-      instagram: "n.raskin"
+      instagram: "n.raskin",
+      wikipedia: "https://en.wikipedia.org/wiki/Nicolas_Raskin"
     }
   },
   "495431": {
@@ -15057,7 +16164,8 @@ var squads_default = {
     dateOfBirth: "1999-02-15",
     height: 191,
     socials: {
-      instagram: "george_hirst"
+      instagram: "george_hirst",
+      wikipedia: "https://en.wikipedia.org/wiki/George_Hirst_(footballer)"
     }
   },
   "495488": {
@@ -15072,7 +16180,8 @@ var squads_default = {
     dateOfBirth: "2008-01-01",
     height: 182,
     socials: {
-      instagram: "hamzabdelkarim"
+      instagram: "hamzabdelkarim",
+      wikipedia: "https://pt.wikipedia.org/wiki/Hamza_Abdelkarim"
     }
   },
   "496358": {
@@ -15087,7 +16196,8 @@ var squads_default = {
     dateOfBirth: "2008-01-24",
     height: 175,
     socials: {
-      instagram: "mbayediagne909"
+      instagram: "mbayediagne909",
+      wikipedia: "https://pt.wikipedia.org/wiki/Ibrahim_Mbaye"
     }
   },
   "497902": {
@@ -15102,7 +16212,8 @@ var squads_default = {
     dateOfBirth: "2004-08-06",
     height: 179,
     socials: {
-      instagram: "diegzyyy"
+      instagram: "diegzyyy",
+      wikipedia: "https://en.wikipedia.org/wiki/Diego_Moreira"
     }
   },
   "498416": {
@@ -15117,7 +16228,8 @@ var squads_default = {
     dateOfBirth: "2002-02-14",
     height: 198,
     socials: {
-      instagram: "nickwoltemade"
+      instagram: "nickwoltemade",
+      wikipedia: "https://pt.wikipedia.org/wiki/Nick_Woltemade"
     }
   },
   "498421": {
@@ -15130,7 +16242,10 @@ var squads_default = {
     club: "Melbourne Victory",
     pictureUrl: "https://digitalhub.fifa.com/transform/c010f6a9-53af-4d79-b16d-f25b96670225/OKON-ENGSTLER-Paul_498421",
     dateOfBirth: "2005-01-24",
-    height: 185
+    height: 185,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Paul_Okon-Engstler"
+    }
   },
   "498439": {
     fifaId: "498439",
@@ -15144,7 +16259,8 @@ var squads_default = {
     dateOfBirth: "2001-08-24",
     height: 180,
     socials: {
-      instagram: "_wilpaug_"
+      instagram: "_wilpaug_",
+      wikipedia: "https://en.wikipedia.org/wiki/Wilguens_Paugain"
     }
   },
   "498455": {
@@ -15157,7 +16273,10 @@ var squads_default = {
     club: "Kawasaki Frontale",
     pictureUrl: "https://digitalhub.fifa.com/transform/8c87dc57-4626-4945-a93a-b6f5a5620947/SUZUKI-Junnosuke_498455",
     dateOfBirth: "2003-07-12",
-    height: 180
+    height: 180,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Junnosuke_Suzuki"
+    }
   },
   "498458": {
     fifaId: "498458",
@@ -15183,7 +16302,8 @@ var squads_default = {
     dateOfBirth: "2004-04-13",
     height: 178,
     socials: {
-      instagram: "ali_azaizeh11"
+      instagram: "ali_azaizeh11",
+      wikipedia: "https://en.wikipedia.org/wiki/Ali_Azaizeh"
     }
   },
   "498806": {
@@ -15198,7 +16318,8 @@ var squads_default = {
     dateOfBirth: "2004-03-26",
     height: 186,
     socials: {
-      instagram: "mohamed.2re"
+      instagram: "mohamed.2re",
+      wikipedia: "https://en.wikipedia.org/wiki/Mohamed_Tour%C3%A9_(soccer,_born_2004)"
     }
   },
   "499102": {
@@ -15213,7 +16334,8 @@ var squads_default = {
     dateOfBirth: "1992-01-17",
     height: 187,
     socials: {
-      instagram: "saleemo_obaid_18"
+      instagram: "saleemo_obaid_18",
+      wikipedia: "https://en.wikipedia.org/wiki/Salim_Obaid"
     }
   },
   "499290": {
@@ -15228,7 +16350,8 @@ var squads_default = {
     dateOfBirth: "2007-02-24",
     height: 193,
     socials: {
-      instagram: "lukavuskovic"
+      instagram: "lukavuskovic",
+      wikipedia: "https://en.wikipedia.org/wiki/Luka_Vu%C5%A1kovi%C4%87"
     }
   },
   "499800": {
@@ -15243,7 +16366,8 @@ var squads_default = {
     dateOfBirth: "2005-08-29",
     height: 194,
     socials: {
-      instagram: "msarr6_"
+      instagram: "msarr6_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mamadou_Sarr"
     }
   },
   "499803": {
@@ -15258,7 +16382,8 @@ var squads_default = {
     dateOfBirth: "2005-07-31",
     height: 200,
     socials: {
-      instagram: "mike.penders"
+      instagram: "mike.penders",
+      wikipedia: "https://pt.wikipedia.org/wiki/Mike_Penders"
     }
   },
   "499912": {
@@ -15273,7 +16398,8 @@ var squads_default = {
     dateOfBirth: "2001-05-10",
     height: 175,
     socials: {
-      instagram: "sebastianberhalter"
+      instagram: "sebastianberhalter",
+      wikipedia: "https://pt.wikipedia.org/wiki/Sebastian_Berhalter"
     }
   },
   "499913": {
@@ -15288,7 +16414,8 @@ var squads_default = {
     dateOfBirth: "1998-09-02",
     height: 198,
     socials: {
-      instagram: "mattyicefreese"
+      instagram: "mattyicefreese",
+      wikipedia: "https://en.wikipedia.org/wiki/Matt_Freese"
     }
   },
   "500037": {
@@ -15303,7 +16430,8 @@ var squads_default = {
     dateOfBirth: "2008-10-14",
     height: 175,
     socials: {
-      instagram: "gil_morita"
+      instagram: "gil_morita",
+      wikipedia: "https://en.wikipedia.org/wiki/Gilberto_Mora_(footballer,_born_2008)"
     }
   },
   "500038": {
@@ -15318,7 +16446,8 @@ var squads_default = {
     dateOfBirth: "2004-05-12",
     height: 178,
     socials: {
-      instagram: "mateo.chaveez"
+      instagram: "mateo.chaveez",
+      wikipedia: "https://en.wikipedia.org/wiki/Mateo_Ch%C3%A1vez"
     }
   },
   "502245": {
@@ -15333,7 +16462,8 @@ var squads_default = {
     dateOfBirth: "2004-04-30",
     height: 185,
     socials: {
-      instagram: "makhanya_29"
+      instagram: "makhanya_29",
+      wikipedia: "https://en.wikipedia.org/wiki/Olwethu_Makhanya"
     }
   },
   "502727": {
@@ -15346,7 +16476,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/a0cb9413-32ea-4b8f-9801-55474cb12b77/MANZAMBI-Johan_502727",
     socials: {
-      instagram: "jkmanzambi"
+      instagram: "jkmanzambi",
+      wikipedia: "https://pt.wikipedia.org/wiki/Johan_Manzambi"
     },
     dateOfBirth: "2005-10-14",
     height: 182
@@ -15363,7 +16494,8 @@ var squads_default = {
     dateOfBirth: "1998-09-08",
     height: 184,
     socials: {
-      instagram: "alexbernhardsson"
+      instagram: "alexbernhardsson",
+      wikipedia: "https://pt.wikipedia.org/wiki/Alexander_Bernhardsson"
     }
   },
   "502946": {
@@ -15378,7 +16510,8 @@ var squads_default = {
     dateOfBirth: "2001-07-08",
     height: 187,
     socials: {
-      instagram: "benjamin_nygren"
+      instagram: "benjamin_nygren",
+      wikipedia: "https://pt.wikipedia.org/wiki/Benjamin_Nygren"
     }
   },
   "503047": {
@@ -15393,7 +16526,8 @@ var squads_default = {
     dateOfBirth: "2002-11-21",
     height: 187,
     socials: {
-      instagram: "besfortzenelii"
+      instagram: "besfortzenelii",
+      wikipedia: "https://en.wikipedia.org/wiki/Besfort_Zeneli"
     }
   },
   "504192": {
@@ -15406,7 +16540,10 @@ var squads_default = {
     club: "Kaizer Chiefs",
     pictureUrl: "https://digitalhub.fifa.com/transform/a3360ef3-4418-4f0a-9f74-318bdfa4ffd8/NDAMANE-Khulumani_504192",
     dateOfBirth: "2004-02-05",
-    height: 183
+    height: 183,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Khulumani_Ndamane"
+    }
   },
   "504193": {
     fifaId: "504193",
@@ -15420,7 +16557,8 @@ var squads_default = {
     dateOfBirth: "2000-10-02",
     height: 169,
     socials: {
-      instagram: "tshepang_moremii"
+      instagram: "tshepang_moremii",
+      wikipedia: "https://en.wikipedia.org/wiki/Tshepang_Moremi"
     }
   },
   "504199": {
@@ -15435,7 +16573,8 @@ var squads_default = {
     dateOfBirth: "2005-09-19",
     height: 177,
     socials: {
-      instagram: "mbekezel05"
+      instagram: "mbekezel05",
+      wikipedia: "https://en.wikipedia.org/wiki/Mbekezeli_Mbokazi"
     }
   },
   "504200": {
@@ -15450,7 +16589,8 @@ var squads_default = {
     dateOfBirth: "2004-03-15",
     height: 179,
     socials: {
-      instagram: "samu.kabini_3"
+      instagram: "samu.kabini_3",
+      wikipedia: "https://en.wikipedia.org/wiki/Samukele_Kabini"
     }
   },
   "504329": {
@@ -15465,7 +16605,8 @@ var squads_default = {
     dateOfBirth: "1998-04-30",
     height: 196,
     socials: {
-      instagram: "steve.kapuadi"
+      instagram: "steve.kapuadi",
+      wikipedia: "https://en.wikipedia.org/wiki/Steve_Kapuadi"
     }
   },
   "504502": {
@@ -15480,7 +16621,8 @@ var squads_default = {
     dateOfBirth: "2002-07-13",
     height: 182,
     socials: {
-      instagram: "sebastiantounekti"
+      instagram: "sebastiantounekti",
+      wikipedia: "https://en.wikipedia.org/wiki/Sebastian_Tounekti"
     }
   },
   "504931": {
@@ -15495,7 +16637,8 @@ var squads_default = {
     dateOfBirth: "2007-09-05",
     height: 193,
     socials: {
-      instagram: "lucasherrington5"
+      instagram: "lucasherrington5",
+      wikipedia: "https://en.wikipedia.org/wiki/Lucas_Herrington"
     }
   },
   "504990": {
@@ -15510,7 +16653,8 @@ var squads_default = {
     dateOfBirth: "2007-09-21",
     height: 186,
     socials: {
-      instagram: "kerim.sa10"
+      instagram: "kerim.sa10",
+      wikipedia: "https://en.wikipedia.org/wiki/Kerim_Alajbegovi%C4%87"
     }
   },
   "505097": {
@@ -15525,7 +16669,8 @@ var squads_default = {
     dateOfBirth: "2005-10-06",
     height: 187,
     socials: {
-      instagram: "s_elmourabet"
+      instagram: "s_elmourabet",
+      wikipedia: "https://en.wikipedia.org/wiki/Samir_El_Mourabet"
     }
   },
   "505112": {
@@ -15540,7 +16685,8 @@ var squads_default = {
     dateOfBirth: "2005-11-22",
     height: 172,
     socials: {
-      instagram: "gessime.yassine"
+      instagram: "gessime.yassine",
+      wikipedia: "https://en.wikipedia.org/wiki/Gessime_Yassine"
     }
   },
   "505495": {
@@ -15555,7 +16701,8 @@ var squads_default = {
     dateOfBirth: "2005-07-26",
     height: 173,
     socials: {
-      instagram: "alexmaidana10"
+      instagram: "alexmaidana10",
+      wikipedia: "https://en.wikipedia.org/wiki/Alexandro_Maidana"
     }
   },
   "506028": {
@@ -15570,7 +16717,8 @@ var squads_default = {
     dateOfBirth: "2003-01-17",
     height: 193,
     socials: {
-      instagram: "robinroefs_"
+      instagram: "robinroefs_",
+      wikipedia: "https://en.wikipedia.org/wiki/Robin_Roefs"
     }
   },
   "506038": {
@@ -15585,7 +16733,8 @@ var squads_default = {
     dateOfBirth: "2002-07-21",
     height: 166,
     socials: {
-      instagram: "mikemamosha07"
+      instagram: "mikemamosha07",
+      wikipedia: "https://en.wikipedia.org/wiki/Kamogelo_Sebelebele"
     }
   },
   "506039": {
@@ -15600,7 +16749,8 @@ var squads_default = {
     dateOfBirth: "2004-02-20",
     height: 187,
     socials: {
-      instagram: "i.am.ime"
+      instagram: "i.am.ime",
+      wikipedia: "https://en.wikipedia.org/wiki/Ime_Okon"
     }
   },
   "506069": {
@@ -15615,7 +16765,8 @@ var squads_default = {
     dateOfBirth: "2000-10-10",
     height: 180,
     socials: {
-      instagram: "kevinyakob"
+      instagram: "kevinyakob",
+      wikipedia: "https://en.wikipedia.org/wiki/Kevin_Yakob"
     }
   },
   "506088": {
@@ -15630,7 +16781,8 @@ var squads_default = {
     dateOfBirth: "2005-03-28",
     height: 178,
     socials: {
-      instagram: "joaquinseys65"
+      instagram: "joaquinseys65",
+      wikipedia: "https://en.wikipedia.org/wiki/Joaquin_Seys"
     }
   },
   "506124": {
@@ -15645,7 +16797,8 @@ var squads_default = {
     dateOfBirth: "2002-01-05",
     height: 178,
     socials: {
-      instagram: "tarek_alaa_3"
+      instagram: "tarek_alaa_3",
+      wikipedia: "https://en.wikipedia.org/wiki/Tarek_Alaa_(footballer,_born_2002)"
     }
   },
   "506202": {
@@ -15660,7 +16813,8 @@ var squads_default = {
     dateOfBirth: "2006-03-02",
     height: 178,
     socials: {
-      instagram: "zoumtoure96"
+      instagram: "zoumtoure96",
+      wikipedia: "https://en.wikipedia.org/wiki/Bazoumana_Tour%C3%A9"
     }
   },
   "506329": {
@@ -15675,7 +16829,8 @@ var squads_default = {
     dateOfBirth: "2000-08-09",
     height: 184,
     socials: {
-      instagram: "djedspence"
+      instagram: "djedspence",
+      wikipedia: "https://en.wikipedia.org/wiki/Djed_Spence"
     }
   },
   "506335": {
@@ -15690,7 +16845,8 @@ var squads_default = {
     dateOfBirth: "2004-09-04",
     height: 182,
     socials: {
-      instagram: "moutazneffati"
+      instagram: "moutazneffati",
+      wikipedia: "https://en.wikipedia.org/wiki/Moutaz_Neffati"
     }
   },
   "506471": {
@@ -15703,7 +16859,10 @@ var squads_default = {
     club: "Helmond Sport",
     pictureUrl: "https://digitalhub.fifa.com/transform/29abb3b9-0b95-4101-ae19-0aa95d77e362/FONVILLE-Deveron_506471",
     dateOfBirth: "2003-05-16",
-    height: 188
+    height: 188,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Deveron_Fonville"
+    }
   },
   "506473": {
     fifaId: "506473",
@@ -15717,7 +16876,8 @@ var squads_default = {
     dateOfBirth: "2002-09-11",
     height: 182,
     socials: {
-      instagram: "tyresenoslin"
+      instagram: "tyresenoslin",
+      wikipedia: "https://en.wikipedia.org/wiki/Tyrese_Noslin"
     }
   },
   "506481": {
@@ -15732,7 +16892,8 @@ var squads_default = {
     dateOfBirth: "2006-03-29",
     height: 179,
     socials: {
-      instagram: "keeto.thermoncy"
+      instagram: "keeto.thermoncy",
+      wikipedia: "https://en.wikipedia.org/wiki/Keeto_Thermoncy"
     }
   },
   "506483": {
@@ -15747,7 +16908,8 @@ var squads_default = {
     dateOfBirth: "1999-01-30",
     height: 186,
     socials: {
-      instagram: "yassin_fortune_afc"
+      instagram: "yassin_fortune_afc",
+      wikipedia: "https://en.wikipedia.org/wiki/Yassin_Fortun%C3%A9"
     }
   },
   "506775": {
@@ -15760,7 +16922,10 @@ var squads_default = {
     club: "Slavia Praga",
     pictureUrl: "https://digitalhub.fifa.com/transform/72b960f8-5b10-4a9d-8726-6525e2ee6796/SOCHUREK-Hugo_506775",
     dateOfBirth: "2008-06-07",
-    height: 183
+    height: 183,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Hugo_Soch%C5%AFrek"
+    }
   },
   "510757": {
     fifaId: "510757",
@@ -15774,7 +16939,8 @@ var squads_default = {
     dateOfBirth: "2001-09-24",
     height: 178,
     socials: {
-      instagram: "j.casimir_"
+      instagram: "j.casimir_",
+      wikipedia: "https://en.wikipedia.org/wiki/Josu%C3%A9_Casimir"
     }
   },
   "510850": {
@@ -15789,7 +16955,8 @@ var squads_default = {
     dateOfBirth: "1999-01-14",
     height: 189,
     socials: {
-      instagram: "thabang_matuludi"
+      instagram: "thabang_matuludi",
+      wikipedia: "https://en.wikipedia.org/wiki/Thabang_Matuludi"
     }
   },
   "510908": {
@@ -15804,7 +16971,8 @@ var squads_default = {
     dateOfBirth: "2003-06-02",
     height: 187,
     socials: {
-      instagram: "luca_jaquez"
+      instagram: "luca_jaquez",
+      wikipedia: "https://en.wikipedia.org/wiki/Luca_Jaquez"
     }
   },
   "510922": {
@@ -15819,7 +16987,8 @@ var squads_default = {
     dateOfBirth: "2006-11-14",
     height: 180,
     socials: {
-      instagram: "yandiomande"
+      instagram: "yandiomande",
+      wikipedia: "https://pt.wikipedia.org/wiki/Yan_Diomand%C3%A9"
     }
   },
   "510989": {
@@ -15858,7 +17027,8 @@ var squads_default = {
     dateOfBirth: "2002-06-07",
     height: 180,
     socials: {
-      instagram: "rafikbelghali17"
+      instagram: "rafikbelghali17",
+      wikipedia: "https://en.wikipedia.org/wiki/Rafik_Belghali"
     }
   },
   "511010": {
@@ -15873,7 +17043,8 @@ var squads_default = {
     dateOfBirth: "1999-02-06",
     height: 185,
     socials: {
-      instagram: "chergui31_"
+      instagram: "chergui31_",
+      wikipedia: "https://en.wikipedia.org/wiki/Samir_Chergui"
     }
   },
   "511015": {
@@ -15903,7 +17074,8 @@ var squads_default = {
     dateOfBirth: "2002-07-13",
     height: 198,
     socials: {
-      instagram: "l_hornicek91"
+      instagram: "l_hornicek91",
+      wikipedia: "https://en.wikipedia.org/wiki/Luk%C3%A1%C5%A1_Horn%C3%AD%C4%8Dek"
     }
   },
   "511141": {
@@ -15918,7 +17090,8 @@ var squads_default = {
     dateOfBirth: "1999-03-05",
     height: 185,
     socials: {
-      instagram: "armandoobispo_"
+      instagram: "armandoobispo_",
+      wikipedia: "https://pt.wikipedia.org/wiki/Armando_Obispo"
     }
   },
   "511710": {
@@ -15933,7 +17106,8 @@ var squads_default = {
     dateOfBirth: "1999-03-03",
     height: 187,
     socials: {
-      instagram: "tomoki.hayakawa_official"
+      instagram: "tomoki.hayakawa_official",
+      wikipedia: "https://en.wikipedia.org/wiki/Tomoki_Hayakawa"
     }
   },
   "511828": {
@@ -15948,7 +17122,8 @@ var squads_default = {
     dateOfBirth: "2003-07-29",
     height: 178,
     socials: {
-      instagram: "jenscastrop"
+      instagram: "jenscastrop",
+      wikipedia: "https://en.wikipedia.org/wiki/Jens_Castrop"
     }
   },
   "511875": {
@@ -15978,7 +17153,8 @@ var squads_default = {
     dateOfBirth: "1997-09-13",
     height: 174,
     socials: {
-      instagram: "anas_badawi97"
+      instagram: "anas_badawi97",
+      wikipedia: "https://en.wikipedia.org/wiki/Anas_Badawi"
     }
   },
   "512039": {
@@ -15993,7 +17169,8 @@ var squads_default = {
     dateOfBirth: "2005-02-02",
     height: 174,
     socials: {
-      instagram: "khalilayari.10"
+      instagram: "khalilayari.10",
+      wikipedia: "https://en.wikipedia.org/wiki/Khalil_Ayari"
     }
   },
   "512079": {
@@ -16006,7 +17183,10 @@ var squads_default = {
     club: "Zamalek",
     pictureUrl: "https://digitalhub.fifa.com/transform/6a209a18-784b-401d-af68-4c768a814a36/MOHAMED-ALAA_512079",
     dateOfBirth: "1999-01-01",
-    height: 188
+    height: 188,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Mohamed_Alaa"
+    }
   },
   "512127": {
     fifaId: "512127",
@@ -16020,7 +17200,8 @@ var squads_default = {
     dateOfBirth: "1999-06-15",
     height: 185,
     socials: {
-      instagram: "abada_achraf_23"
+      instagram: "abada_achraf_23",
+      wikipedia: "https://en.wikipedia.org/wiki/Achref_Abada"
     }
   },
   "512132": {
@@ -16035,7 +17216,8 @@ var squads_default = {
     dateOfBirth: "2003-05-02",
     height: 183,
     socials: {
-      instagram: "adel_boulbina10"
+      instagram: "adel_boulbina10",
+      wikipedia: "https://en.wikipedia.org/wiki/Adil_Boulbina"
     }
   },
   "512183": {
@@ -16060,7 +17242,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/542d2f64-858e-4597-8f77-719b40da16dd/ISSA-LAYE_512791",
     dateOfBirth: "1997-12-22",
-    height: 178
+    height: 178,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Issa_Laye"
+    }
   },
   "514070": {
     fifaId: "514070",
@@ -16074,7 +17259,8 @@ var squads_default = {
     dateOfBirth: "1997-10-07",
     height: 191,
     socials: {
-      instagram: "alfiejon35"
+      instagram: "alfiejon35",
+      wikipedia: "https://en.wikipedia.org/wiki/Alfie_Jones"
     }
   },
   "514166": {
@@ -16089,7 +17275,8 @@ var squads_default = {
     dateOfBirth: "2003-06-10",
     height: 183,
     socials: {
-      instagram: "ngoy_nathan"
+      instagram: "ngoy_nathan",
+      wikipedia: "https://en.wikipedia.org/wiki/Nathan_Ngoy"
     }
   },
   "514171": {
@@ -16104,7 +17291,8 @@ var squads_default = {
     dateOfBirth: "2005-01-15",
     height: 183,
     socials: {
-      instagram: "matthieuepolo"
+      instagram: "matthieuepolo",
+      wikipedia: "https://en.wikipedia.org/wiki/Matthieu_Epolo"
     }
   },
   "514188": {
@@ -16119,7 +17307,8 @@ var squads_default = {
     dateOfBirth: "2001-08-08",
     height: 194,
     socials: {
-      instagram: "malick.laye"
+      instagram: "malick.laye",
+      wikipedia: "https://pt.wikipedia.org/wiki/Malick_Thiaw"
     }
   },
   "514202": {
@@ -16134,7 +17323,8 @@ var squads_default = {
     dateOfBirth: "1998-07-01",
     height: 174,
     socials: {
-      instagram: "daha.10"
+      instagram: "daha.10",
+      wikipedia: "https://en.wikipedia.org/wiki/Taha_Ali"
     }
   },
   "514208": {
@@ -16149,7 +17339,8 @@ var squads_default = {
     dateOfBirth: "2006-04-06",
     height: 173,
     socials: {
-      instagram: "inao_christ"
+      instagram: "inao_christ",
+      wikipedia: "https://en.wikipedia.org/wiki/Christ_Inao_Oula%C3%AF"
     }
   },
   "514326": {
@@ -16164,7 +17355,8 @@ var squads_default = {
     dateOfBirth: "2005-03-19",
     height: 182,
     socials: {
-      instagram: "jeeremyarevalo"
+      instagram: "jeeremyarevalo",
+      wikipedia: "https://en.wikipedia.org/wiki/Jeremy_Ar%C3%A9valo"
     }
   },
   "514334": {
@@ -16179,7 +17371,8 @@ var squads_default = {
     dateOfBirth: "2003-03-08",
     height: 188,
     socials: {
-      instagram: "chalyyy.4"
+      instagram: "chalyyy.4",
+      wikipedia: "https://en.wikipedia.org/wiki/%C5%A0t%C4%9Bp%C3%A1n_Chaloupek"
     }
   },
   "514336": {
@@ -16194,7 +17387,8 @@ var squads_default = {
     dateOfBirth: "2003-04-20",
     height: 182,
     socials: {
-      instagram: "hormiga_glez"
+      instagram: "hormiga_glez",
+      wikipedia: "https://en.wikipedia.org/wiki/Armando_Gonz%C3%A1lez_(footballer,_born_2003)"
     }
   },
   "514479": {
@@ -16209,7 +17403,8 @@ var squads_default = {
     dateOfBirth: "2002-11-29",
     height: 193,
     socials: {
-      instagram: "sandertangvik_"
+      instagram: "sandertangvik_",
+      wikipedia: "https://en.wikipedia.org/wiki/Sander_Tangvik"
     }
   },
   "514526": {
@@ -16224,7 +17419,8 @@ var squads_default = {
     dateOfBirth: "2000-03-25",
     height: 187,
     socials: {
-      instagram: "ivorpandur"
+      instagram: "ivorpandur",
+      wikipedia: "https://en.wikipedia.org/wiki/Ivor_Pandur"
     }
   },
   "514639": {
@@ -16239,7 +17435,8 @@ var squads_default = {
     dateOfBirth: "1997-10-16",
     height: 190,
     socials: {
-      instagram: "hermanjohansson"
+      instagram: "hermanjohansson",
+      wikipedia: "https://en.wikipedia.org/wiki/Herman_Johansson"
     }
   },
   "516043": {
@@ -16254,7 +17451,8 @@ var squads_default = {
     dateOfBirth: "2004-07-17",
     height: 188,
     socials: {
-      instagram: "adem_arous"
+      instagram: "adem_arous",
+      wikipedia: "https://en.wikipedia.org/wiki/Adem_Arous"
     }
   },
   "518200": {
@@ -16269,7 +17467,8 @@ var squads_default = {
     dateOfBirth: "2000-11-28",
     height: 197,
     socials: {
-      instagram: "teteyengi"
+      instagram: "teteyengi",
+      wikipedia: "https://en.wikipedia.org/wiki/Tete_Yengi"
     }
   },
   "519836": {
@@ -16284,7 +17483,8 @@ var squads_default = {
     dateOfBirth: "2001-06-26",
     height: 190,
     socials: {
-      instagram: "thiago01"
+      instagram: "thiago01",
+      wikipedia: "https://pt.wikipedia.org/wiki/Igor_Thiago"
     }
   },
   "519837": {
@@ -16299,7 +17499,8 @@ var squads_default = {
     dateOfBirth: "1997-01-09",
     height: 182,
     socials: {
-      instagram: "dennis_yerai"
+      instagram: "dennis_yerai",
+      wikipedia: "https://en.wikipedia.org/wiki/Dennis_Eckert"
     }
   },
   "519954": {
@@ -16314,7 +17515,8 @@ var squads_default = {
     dateOfBirth: "1998-11-28",
     height: 190,
     socials: {
-      instagram: "jovolukic9"
+      instagram: "jovolukic9",
+      wikipedia: "https://pt.wikipedia.org/wiki/Jovo_Luki%C4%87"
     }
   },
   "519958": {
@@ -16329,7 +17531,8 @@ var squads_default = {
     dateOfBirth: "2002-06-22",
     height: 185,
     socials: {
-      instagram: "stroud_elliot"
+      instagram: "stroud_elliot",
+      wikipedia: "https://en.wikipedia.org/wiki/Elliot_Stroud"
     }
   },
   "519985": {
@@ -16344,7 +17547,8 @@ var squads_default = {
     dateOfBirth: "2003-03-21",
     height: 178,
     socials: {
-      instagram: "denis_visinsky"
+      instagram: "denis_visinsky",
+      wikipedia: "https://en.wikipedia.org/wiki/Denis_Vi%C5%A1insk%C3%BD"
     }
   },
   "520034": {
@@ -16359,7 +17563,8 @@ var squads_default = {
     dateOfBirth: "2001-03-21",
     height: 205,
     socials: {
-      instagram: "florianwiegele"
+      instagram: "florianwiegele",
+      wikipedia: "https://en.wikipedia.org/wiki/Florian_Wiegele"
     }
   },
   "520035": {
@@ -16374,7 +17579,8 @@ var squads_default = {
     dateOfBirth: "2001-03-19",
     height: 185,
     socials: {
-      instagram: "davidaffengruber"
+      instagram: "davidaffengruber",
+      wikipedia: "https://pt.wikipedia.org/wiki/David_Affengruber"
     }
   },
   "520036": {
@@ -16389,7 +17595,8 @@ var squads_default = {
     dateOfBirth: "2005-12-23",
     height: 185,
     socials: {
-      instagram: "paul_wanner_"
+      instagram: "paul_wanner_",
+      wikipedia: "https://en.wikipedia.org/wiki/Paul_Wanner"
     }
   },
   "520066": {
@@ -16402,7 +17609,10 @@ var squads_default = {
     club: "Olimpia",
     pictureUrl: "https://digitalhub.fifa.com/transform/2039b54f-7036-444c-90d0-da1f89780077/CANALE-Jose_520066",
     dateOfBirth: "1996-07-20",
-    height: 192
+    height: 192,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Jos%C3%A9_Canale"
+    }
   },
   "520068": {
     fifaId: "520068",
@@ -16429,7 +17639,10 @@ var squads_default = {
     club: "Al-Ettifaq",
     pictureUrl: "https://digitalhub.fifa.com/transform/6d85724d-c5a6-400d-acb9-df73451a4bf4/MASTIL-Melvin_520070",
     dateOfBirth: "2000-02-19",
-    height: 194
+    height: 194,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Melvin_Mastil"
+    }
   },
   "520071": {
     fifaId: "520071",
@@ -16443,7 +17656,8 @@ var squads_default = {
     dateOfBirth: "2000-04-17",
     height: 190,
     socials: {
-      instagram: "nadirbenbouali45"
+      instagram: "nadirbenbouali45",
+      wikipedia: "https://en.wikipedia.org/wiki/Nadhir_Benbouali"
     }
   },
   "520072": {
@@ -16458,7 +17672,8 @@ var squads_default = {
     dateOfBirth: "2002-09-06",
     height: 183,
     socials: {
-      instagram: "fares.ghedjemis"
+      instagram: "fares.ghedjemis",
+      wikipedia: "https://en.wikipedia.org/wiki/Far%C3%A8s_Ghedjemis"
     }
   },
   "520112": {
@@ -16473,7 +17688,8 @@ var squads_default = {
     dateOfBirth: "2003-05-08",
     height: 194,
     socials: {
-      instagram: "falchener1"
+      instagram: "falchener1",
+      wikipedia: "https://en.wikipedia.org/wiki/Henrik_Falchener"
     }
   },
   "520217": {
@@ -16488,7 +17704,8 @@ var squads_default = {
     dateOfBirth: "2006-06-09",
     height: 180,
     socials: {
-      instagram: "findlaycurtis_"
+      instagram: "findlaycurtis_",
+      wikipedia: "https://en.wikipedia.org/wiki/Findlay_Curtis"
     }
   },
   "520218": {
@@ -16503,7 +17720,8 @@ var squads_default = {
     dateOfBirth: "2005-03-26",
     height: 180,
     socials: {
-      instagram: "shio_kenken"
+      instagram: "shio_kenken",
+      wikipedia: "https://en.wikipedia.org/wiki/Kento_Shiogai"
     }
   },
   "520245": {
@@ -16516,7 +17734,10 @@ var squads_default = {
     club: "Club Africain",
     pictureUrl: "https://digitalhub.fifa.com/transform/7047e775-2f2c-4ea2-9ca6-6fc23363c591/CHAMAKH-Mouhib_520245",
     dateOfBirth: "2001-08-25",
-    height: 189
+    height: 189,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Mouhib_Chamakh"
+    }
   },
   "520246": {
     fifaId: "520246",
@@ -16530,7 +17751,8 @@ var squads_default = {
     dateOfBirth: "2004-06-09",
     height: 191,
     socials: {
-      instagram: "raed.chikhaoui"
+      instagram: "raed.chikhaoui",
+      wikipedia: "https://en.wikipedia.org/wiki/Raed_Chikhaoui"
     }
   },
   "520247": {
@@ -16545,7 +17767,8 @@ var squads_default = {
     dateOfBirth: "2007-09-17",
     height: 180,
     socials: {
-      instagram: "rayanelloumi"
+      instagram: "rayanelloumi",
+      wikipedia: "https://en.wikipedia.org/wiki/Rayan_Elloumi"
     }
   },
   "522282": {
@@ -16572,7 +17795,8 @@ var squads_default = {
     dateOfBirth: "2007-10-07",
     height: 193,
     socials: {
-      instagram: "jurkassss"
+      instagram: "jurkassss",
+      wikipedia: "https://en.wikipedia.org/wiki/Mladen_Jurkas"
     }
   },
   "522846": {
@@ -16585,7 +17809,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/ef292137-a5b1-44b8-b329-031d23320552/MAHMIC-Ermin_522846",
     socials: {
-      instagram: "erminmahmiic"
+      instagram: "erminmahmiic",
+      wikipedia: "https://en.wikipedia.org/wiki/Ermin_Mahmi%C4%87"
     },
     dateOfBirth: "2005-03-14",
     height: 182
@@ -16602,7 +17827,8 @@ var squads_default = {
     dateOfBirth: "2007-03-19",
     height: 183,
     socials: {
-      instagram: "tylerfletch24"
+      instagram: "tylerfletch24",
+      wikipedia: "https://en.wikipedia.org/wiki/Tyler_Fletcher"
     }
   },
   "523097": {
@@ -16617,7 +17843,8 @@ var squads_default = {
     dateOfBirth: "2003-04-02",
     height: 188,
     socials: {
-      instagram: "sojky.17"
+      instagram: "sojky.17",
+      wikipedia: "https://en.wikipedia.org/wiki/Alexandr_Sojka"
     }
   },
   "523215": {
@@ -16632,7 +17859,8 @@ var squads_default = {
     dateOfBirth: "2000-07-29",
     height: 178,
     socials: {
-      instagram: "d.simon29"
+      instagram: "d.simon29",
+      wikipedia: "https://en.wikipedia.org/wiki/Dominique_Simon"
     }
   },
   "523236": {
@@ -16645,7 +17873,10 @@ var squads_default = {
     club: "Hoverla Uzhhorod",
     pictureUrl: "https://digitalhub.fifa.com/transform/66155853-6cb6-47af-84e6-f8c492fd1b6a/AHMED-QASIM_523236",
     dateOfBirth: "2003-07-12",
-    height: 183
+    height: 183,
+    socials: {
+      wikipedia: "https://en.wikipedia.org/wiki/Ahmed_Qasem"
+    }
   },
   "523288": {
     fifaId: "523288",
@@ -16659,7 +17890,8 @@ var squads_default = {
     dateOfBirth: "2004-11-30",
     height: 179,
     socials: {
-      instagram: "ayoube.aa"
+      instagram: "ayoube.aa",
+      wikipedia: "https://en.wikipedia.org/wiki/Ayoube_Amaimouni"
     }
   },
   "523333": {
@@ -16686,7 +17918,8 @@ var squads_default = {
     dateOfBirth: "2007-12-31",
     height: 180,
     socials: {
-      instagram: "barasapoko39"
+      instagram: "barasapoko39",
+      wikipedia: "https://en.wikipedia.org/wiki/Bara_Sapoko_Ndiaye"
     }
   },
   "524320": {
@@ -16701,7 +17934,8 @@ var squads_default = {
     dateOfBirth: "2000-11-05",
     height: 175,
     socials: {
-      instagram: "aminesbai10"
+      instagram: "aminesbai10",
+      wikipedia: "https://en.wikipedia.org/wiki/Amine_Sba%C3%AF"
     }
   }
 };
