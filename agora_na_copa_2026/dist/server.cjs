@@ -470,7 +470,8 @@ var squads_default = {
       wikipedia: "https://en.wikipedia.org/wiki/Alisson_(footballer,_born_1995)"
     },
     dateOfBirth: "1992-10-02",
-    height: 193
+    height: 193,
+    worldCupNote: "## Leitura\nSeguran\xE7a de sobra debaixo das traves. Titular absoluto, Alisson come\xE7ou as duas partidas e passou a fase de grupos transmitindo a tranquilidade de sempre \u2014 o \xFAnico gol que o Brasil sofreu at\xE9 aqui veio num lance de bola parada contra Marrocos, sem responsabilidade do goleiro. Aos 33 anos e em alto n\xEDvel no Liverpool, \xE9 o seguro de vida de uma sele\xE7\xE3o que, na frente, ainda busca o ritmo ideal. Contra a Esc\xF3cia, a expectativa \xE9 de mais um trabalho s\xF3lido para encaminhar a lideran\xE7a do grupo.\n## Desempenho\nDois jogos como titular: no empate em 1 a 1 com Marrocos foi vazado uma vez, mas seguiu firme no resto da partida; na vit\xF3ria por 3 a 0 sobre o Haiti, manteve a meta zerada e comandou a linha defensiva com a serenidade habitual. N\xE3o recebeu cart\xF5es e participou da constru\xE7\xE3o de jogo com os p\xE9s, como j\xE1 \xE9 marca registrada.\n## N\xFAmeros\nJ2 \xB7 1 gol sofrido \xB7 1 jogo sem sofrer gols (50%) \xB7 0 cart\xF5es. Brasil lidera o Grupo C com 4 pontos (1 vit\xF3ria, 1 empate) e o melhor saldo da chave (SG +3, 4 GP e apenas 1 GC). Pr\xF3ximo desafio: Esc\xF3cia, em 24/06."
   },
   "308386": {
     fifaId: "308386",
@@ -486,7 +487,8 @@ var squads_default = {
     socials: {
       instagram: "casemiro",
       wikipedia: "https://pt.wikipedia.org/wiki/Casemiro"
-    }
+    },
+    worldCupNote: "## Leitura\nAos 34 anos, Casemiro chega \xE0 Copa como pe\xE7a de experi\xEAncia e lideran\xE7a, mas come\xE7ou a competi\xE7\xE3o em papel coadjuvante. Na estreia diante do Marrocos, a comiss\xE3o t\xE9cnica apostou na dupla de volantes Bruno Guimar\xE3es\u2013Jo\xE3o Gomes, e o camisa 5 n\xE3o esteve entre os titulares. \xC9 o tipo de jogador guardado para os jogos de maior peso f\xEDsico e para o mata-mata, quando a conten\xE7\xE3o e a leitura de um volante posicional pesam mais.\n## Desempenho\nSem atua\xE7\xE3o de destaque na fase de grupos: o Brasil empatou com o Marrocos (1 a 1) e goleou o Haiti (3 a 0) com o meio-campo comandado por Bruno Guimar\xE3es e Jo\xE3o Gomes. Casemiro segue como alternativa de experi\xEAncia no elenco, sem gols nem cart\xF5es anotados at\xE9 aqui.\n## N\xFAmeros\nSem participa\xE7\xE3o registrada na escala\xE7\xE3o dispon\xEDvel \xB7 0 gols \xB7 0 cart\xF5es. O Brasil lidera o Grupo C com 4 pontos (1 vit\xF3ria, 1 empate) e o melhor saldo da chave (SG +3, 4 GP, 1 GC). Pr\xF3ximo desafio: Esc\xF3cia, em 24/06."
   },
   "310116": {
     fifaId: "310116",
