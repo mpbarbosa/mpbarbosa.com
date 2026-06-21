@@ -1509,6 +1509,7 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Vozinha"
     },
     instagramPostUrl: "https://www.instagram.com/reel/DZno5Zsxo6V/",
+    worldCupNote: "Segurar o 0 a 0 com a Espanha na estreia foi o grande destaque: rendeu o primeiro ponto de Cabo Verde e mostrou solidez defensiva num grupo dur\xEDssimo (Espanha, Uruguai e Ar\xE1bia Saudita). Titular e dono da camisa 1, Vozinha n\xE3o foi vazado no \xFAnico jogo disputado \u2014 1 jogo sem sofrer gols. Na tabela, Cabo Verde aparece em 4\xBA por crit\xE9rio de desempate, mas com tudo em aberto: o goleiro ser\xE1 pe\xE7a-chave diante de Uruguai e Ar\xE1bia Saudita para a sele\xE7\xE3o brigar por uma vaga no mata-mata.",
     dateOfBirth: "1986-06-03",
     height: 189
   },
@@ -18186,6 +18187,7 @@ var mergeLineupWithLocalMetadata = (players, fallbackLineup, teamCode) => player
       number: player.number || entry?.number || player.number,
       socials: player.socials ?? entry?.socials,
       instagramPostUrl: player.instagramPostUrl ?? entry?.instagramPostUrl,
+      worldCupNote: player.worldCupNote ?? entry?.worldCupNote,
       fullName: player.fullName ?? entry?.fullName,
       dateOfBirth: player.dateOfBirth ?? entry?.dateOfBirth,
       height: player.height ?? entry?.height
@@ -18199,6 +18201,7 @@ var mergeLineupWithLocalMetadata = (players, fallbackLineup, teamCode) => player
     pictureUrl: player.pictureUrl ?? fallbackPlayer.pictureUrl,
     socials: player.socials ?? fallbackPlayer.socials ?? entry?.socials,
     instagramPostUrl: player.instagramPostUrl ?? fallbackPlayer.instagramPostUrl ?? entry?.instagramPostUrl,
+    worldCupNote: player.worldCupNote ?? fallbackPlayer.worldCupNote ?? entry?.worldCupNote,
     fullName: player.fullName ?? fallbackPlayer.fullName ?? entry?.fullName,
     dateOfBirth: player.dateOfBirth ?? fallbackPlayer.dateOfBirth ?? entry?.dateOfBirth,
     height: player.height ?? fallbackPlayer.height ?? entry?.height
@@ -18221,6 +18224,7 @@ var enrichFallbackLineupWithFifaPictures = (fallbackLineup, fifaTeam, teamCode) 
       pictureUrl: pictureUrl ?? player.pictureUrl,
       socials: player.socials ?? entry?.socials,
       instagramPostUrl: player.instagramPostUrl ?? entry?.instagramPostUrl,
+      worldCupNote: player.worldCupNote ?? entry?.worldCupNote,
       fullName: player.fullName ?? entry?.fullName,
       dateOfBirth: player.dateOfBirth ?? entry?.dateOfBirth,
       height: player.height ?? entry?.height
