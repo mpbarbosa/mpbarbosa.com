@@ -14211,7 +14211,8 @@ var squads_default = {
     socials: {
       instagram: "lamineyamal",
       wikipedia: "https://pt.wikipedia.org/wiki/Lamine_Yamal"
-    }
+    },
+    worldCupNote: "## Leitura\nIn\xEDcio discreto e abaixo do potencial \u2014 mais pela situa\xE7\xE3o da equipe do que por um erro individual. Saindo do banco num jogo travado, Yamal teve pouco espa\xE7o para decidir. O cen\xE1rio \xE9 de oportunidade imediata: contra Ar\xE1bia Saudita e Uruguai, a Espanha precisa acordar ofensivamente, e o camisa 19 \xE9 exatamente o tipo de jogador que pode destravar. Espera-se uma evolu\xE7\xE3o forte nas pr\xF3ximas rodadas.\n## Desempenho\nEntrou como substituto na estreia (1 entrada, nenhuma sa\xEDda): come\xE7ou no banco e teve participa\xE7\xE3o parcial no empate sem gols com Cabo Verde. N\xE3o marcou e n\xE3o recebeu cart\xF5es, num jogo em que toda a Espanha passou em branco.\n## N\xFAmeros\nJ1 \xB7 0 gols \xB7 0 cart\xF5es \xB7 1 entrada (substitui\xE7\xE3o). Espanha em 3\xBA do grupo, com 1 ponto e saldo zerado (0 GP, 0 GC) \u2014 nenhum espanhol balan\xE7ou as redes at\xE9 aqui."
   },
   "484691": {
     fifaId: "484691",
