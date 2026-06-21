@@ -24963,6 +24963,11 @@ var WIKIPEDIA_COUNTRIES = {
 };
 var wikipediaCountries_default = WIKIPEDIA_COUNTRIES;
 
+// src/data/teamAnalysis.json
+var teamAnalysis_default = {
+  ARG: "## Leitura\nA atual campe\xE3 do mundo entrou na Copa do jeito que se esperava de uma sele\xE7\xE3o comandada por Lionel Scaloni: madura, equilibrada e mortal nos detalhes. A estreia com goleada e meta zerada sobre a Arg\xE9lia confirmou que a base de 2022 segue afiada, com Messi orquestrando e a defesa de Otamendi e Romero pouco amea\xE7ada. \xC9 candidata natural ao t\xEDtulo e larga na lideran\xE7a do Grupo J.\n## Desempenho\nNo primeiro jogo, a Argentina goleou a Arg\xE9lia por 3 a 0 com autoridade: dominou a posse, criou as melhores chances e n\xE3o deu espa\xE7o para o advers\xE1rio. Emiliano Mart\xEDnez mal trabalhou no gol, e o trio De Paul\u2013Mac Allister\u2013Enzo Fern\xE1ndez controlou o meio-campo. Messi, Lautaro e Juli\xE1n \xC1lvarez formaram um ataque de peso, dando o tom de uma campanha que come\xE7a sem sustos.\n## N\xFAmeros\nJ1 \xB7 1 vit\xF3ria \xB7 3 gols marcados \xB7 0 sofridos \xB7 clean sheet. A Argentina lidera o Grupo J com 3 pontos e o melhor saldo da chave (SG +3), \xE0 frente da \xC1ustria pelo crit\xE9rio de gols. Pr\xF3ximos desafios: \xC1ustria (22/06) e Jord\xE2nia (27/06)."
+};
+
 // src/standings.ts
 var POINTS_FOR_WIN = 3;
 var POINTS_FOR_DRAW = 1;
@@ -25241,6 +25246,7 @@ function groupStandings(rows, matches = APP_MATCHES) {
 }
 
 // server.ts
+var TEAM_ANALYSIS_BY_CODE = teamAnalysis_default;
 import_dotenv.default.config();
 var APP_VERSION = (() => {
   try {
@@ -26223,6 +26229,7 @@ var buildTeamViewPayload = async (teamCode, country, language) => {
     nextMatch,
     lastMatch,
     matchHistory,
+    teamAnalysis: TEAM_ANALYSIS_BY_CODE[normalizedTeamCode] ?? null,
     lineup,
     leaders: {
       topScorers,
