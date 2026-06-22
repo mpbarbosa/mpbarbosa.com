@@ -117,7 +117,7 @@ var squads_default = {
     fullName: "Manuel Neuer",
     number: 1,
     position: "GK",
-    club: "Barcelona",
+    club: "Bayern Munich",
     pictureUrl: "https://digitalhub.fifa.com/transform/e3701d06-66b5-4728-8bad-fea05319b6b8/NEUER-Manuel_228912",
     dateOfBirth: "1986-03-27",
     height: 193,
@@ -3048,7 +3048,7 @@ var squads_default = {
     fullName: "Eloy Room",
     number: 1,
     position: "GK",
-    club: "Columbus Crew",
+    club: "Miami FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/5bd9ff87-6801-46d2-8f10-ca9eb3ea2ea4/ROOM-Eloy_390650",
     dateOfBirth: "1989-02-06",
     height: 190,
@@ -3057,7 +3057,7 @@ var squads_default = {
       wikipedia: "https://en.wikipedia.org/wiki/Eloy_Room"
     },
     instagramPostUrl: "https://www.instagram.com/p/CqXEaZqKWN9/",
-    worldCupNote: "## Leitura\nEloy Room \xE9 o dono da camisa 1 e a experi\xEAncia no gol de uma Cura\xE7ao que vive sua hist\xF3ria in\xE9dita em Copas do Mundo. Veterano e l\xEDder, o goleiro carrega a miss\xE3o de segurar a defesa de uma das menores na\xE7\xF5es a disputar um Mundial \u2014 e foi pe\xE7a-chave no ponto hist\xF3rico conquistado diante do Equador, mantendo viva a esperan\xE7a de uma classifica\xE7\xE3o \xE9pica no Grupo E.\n## Desempenho\nA estreia foi dura: Cura\xE7ao levou 7 a 1 da poderosa Alemanha, e Room pouco p\xF4de fazer diante do massacre. Mas a resposta veio na rodada seguinte \u2014 no 0 a 0 com o Equador, o goleiro segurou as pontas, garantiu o clean sheet e ajudou a sele\xE7\xE3o a somar um ponto valioso e hist\xF3rico. Jogou os 180 minutos da fase de grupos at\xE9 aqui, sem ser substitu\xEDdo.\n## N\xFAmeros\nJ2 \xB7 1 clean sheet (no 0 a 0 com o Equador) \xB7 7 gols sofridos, todos no rev\xE9s diante da Alemanha. Cura\xE7ao \xE9 o 4\xBA colocado do Grupo E com 1 ponto e saldo -6, mas segue vivo na briga. Pela frente, a chance de Room voltar a ser her\xF3i por algo in\xE9dito."
+    worldCupNote: "## Leitura\nEloy Room \xE9 o dono da camisa 1 e o grande her\xF3i da hist\xF3ria in\xE9dita de Cura\xE7ao em Copas do Mundo. Aos 37 anos, o goleiro entrou para os livros com uma atua\xE7\xE3o monumental diante do Equador e mant\xE9m viva a esperan\xE7a de classifica\xE7\xE3o de uma das menores na\xE7\xF5es a disputar um Mundial, no Grupo E.\n## Desempenho\nA estreia foi dura \u2014 7 a 1 para a Alemanha, e Room pouco p\xF4de fazer diante do massacre. Mas a resposta foi para a hist\xF3ria: no 0 a 0 com o Equador, fez 15 defesas, o maior n\xFAmero j\xE1 registrado em um jogo de Copa do Mundo dentro dos 90 minutos (desde 1966), segurando 28 finaliza\xE7\xF5es equatorianas \u2014 15 no alvo \u2014 e garantindo o primeiro ponto de Cura\xE7ao em Mundiais. Jogou os 180 minutos da fase de grupos sem ser substitu\xEDdo.\n## N\xFAmeros\nJ2 \xB7 1 clean sheet hist\xF3rico \xB7 15 defesas no 0 a 0 com o Equador (recorde de defesas em 90 minutos de uma Copa) \xB7 7 gols sofridos, todos diante da Alemanha. Cura\xE7ao \xE9 o 4\xBA colocado do Grupo E com 1 ponto, mas segue vivo \u2014 e Room virou s\xEDmbolo mundial da campanha."
   },
   "390670": {
     fifaId: "390670",
@@ -6935,7 +6935,7 @@ var squads_default = {
     fullName: "Brian Brobbey",
     number: 19,
     position: "FW",
-    club: "PSV",
+    club: "Sunderland",
     pictureUrl: "https://digitalhub.fifa.com/transform/15246275-ff97-404c-bac3-ce793d98c744/BROBBEY-Brian_424051",
     dateOfBirth: "2002-02-01",
     height: 181,
@@ -7562,7 +7562,7 @@ var squads_default = {
     fullName: "Ayase Ueda",
     number: 18,
     position: "FW",
-    club: "Kashima Antlers",
+    club: "Feyenoord",
     pictureUrl: "https://digitalhub.fifa.com/transform/1b05e82f-94e8-470d-9c12-f9bdf1a0e080/UEDA-Ayase_430413",
     dateOfBirth: "1998-08-28",
     height: 182,
@@ -9843,7 +9843,7 @@ var squads_default = {
     fullName: "Jonathan David",
     number: 10,
     position: "FW",
-    club: "CF Montr\xE9al",
+    club: "Juventus",
     pictureUrl: "https://digitalhub.fifa.com/transform/97ad628a-b97d-4657-ac41-f2a667c534e6/DAVID-Jonathan_441257",
     dateOfBirth: "2000-01-14",
     height: 175,
@@ -14328,7 +14328,7 @@ var squads_default = {
     fullName: "Deniz Undav",
     number: 26,
     position: "FW",
-    club: "Borussia Dortmund",
+    club: "VfB Stuttgart",
     pictureUrl: "https://digitalhub.fifa.com/transform/3ec30e08-a7eb-4781-aea8-0e9ff86ebef1/UNDAV-Deniz_484851",
     dateOfBirth: "1996-07-19",
     height: 179,
@@ -17961,7 +17961,7 @@ var squads_default = {
     fullName: "Igor Jesus",
     number: 9,
     position: "FW",
-    club: "Botafogo",
+    club: "Nottingham Forest",
     pictureUrl: "https://digitalhub.fifa.com/transform/a3fba875-a9c9-4d5b-aa92-ff7319d1177a/1443021717",
     socials: {
       instagram: "igorjesus0"
@@ -24506,7 +24506,7 @@ var FIFA_SCHEDULED_MATCHES = [
   { teamA: "SEN", teamB: "IRQ", kickoffTimestamp: "2026-06-26T16:00:00-03:00", status: "PRE_GAME", ...v("SEN", "IRQ") },
   // ── Grupo J ───────────────────────────────────────────────────────────────
   { teamA: "AUT", teamB: "JOR", kickoffTimestamp: "2026-06-17T01:00:00-03:00", status: "FINISHED", score: { teamA: 3, teamB: 1 }, ...v("AUT", "JOR") },
-  { teamA: "ARG", teamB: "AUT", kickoffTimestamp: "2026-06-22T14:00:00-03:00", status: "PRE_GAME", ...v("ARG", "AUT") },
+  { teamA: "ARG", teamB: "AUT", kickoffTimestamp: "2026-06-22T14:00:00-03:00", status: "FINISHED", score: { teamA: 2, teamB: 0 }, ...v("ARG", "AUT") },
   { teamA: "JOR", teamB: "ALG", kickoffTimestamp: "2026-06-23T00:00:00-03:00", status: "PRE_GAME", ...v("JOR", "ALG") },
   { teamA: "ALG", teamB: "AUT", kickoffTimestamp: "2026-06-27T23:00:00-03:00", status: "PRE_GAME", ...v("ALG", "AUT") },
   { teamA: "JOR", teamB: "ARG", kickoffTimestamp: "2026-06-27T23:00:00-03:00", status: "PRE_GAME", ...v("JOR", "ARG") },
