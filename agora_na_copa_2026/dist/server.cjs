@@ -18139,6 +18139,68 @@ var getMatchStatusFromFifa = (localMatch, fifaMatch) => {
   }
   return localMatch.status;
 };
+var FIFA_PERIOD = {
+  UNKNOWN: 0,
+  SCHEDULED: 1,
+  PRE_MATCH: 2,
+  FIRST_HALF: 3,
+  HALF_TIME: 4,
+  SECOND_HALF: 5,
+  EXTRA_TIME: 6,
+  EXTRA_FIRST_HALF: 7,
+  EXTRA_HALF_TIME: 8,
+  EXTRA_SECOND_HALF: 9,
+  FULL_TIME: 10,
+  PENALTY_SHOOTOUT: 11,
+  POST_MATCH: 12,
+  ABANDONED: 13
+};
+var FIFA_PERIOD_LABELS = {
+  [FIFA_PERIOD.SCHEDULED]: "Agendado",
+  [FIFA_PERIOD.PRE_MATCH]: "Pr\xE9-jogo",
+  [FIFA_PERIOD.FIRST_HALF]: "1\xBA tempo",
+  [FIFA_PERIOD.HALF_TIME]: "Intervalo",
+  [FIFA_PERIOD.SECOND_HALF]: "2\xBA tempo",
+  [FIFA_PERIOD.EXTRA_TIME]: "Prorroga\xE7\xE3o",
+  [FIFA_PERIOD.EXTRA_FIRST_HALF]: "Prorroga\xE7\xE3o \xB7 1\xBA tempo",
+  [FIFA_PERIOD.EXTRA_HALF_TIME]: "Intervalo da prorroga\xE7\xE3o",
+  [FIFA_PERIOD.EXTRA_SECOND_HALF]: "Prorroga\xE7\xE3o \xB7 2\xBA tempo",
+  [FIFA_PERIOD.FULL_TIME]: "Fim de jogo",
+  [FIFA_PERIOD.PENALTY_SHOOTOUT]: "P\xEAnaltis",
+  [FIFA_PERIOD.POST_MATCH]: "P\xF3s-jogo",
+  [FIFA_PERIOD.ABANDONED]: "Abandonado"
+};
+var FIFA_STATUS_LABELS = {
+  [FIFA_MATCH_STATUS.PLAYED]: "Encerrado",
+  [FIFA_MATCH_STATUS.FUTURE]: "Agendado",
+  [FIFA_MATCH_STATUS.LINE_UPS]: "Escala\xE7\xF5es divulgadas",
+  [FIFA_MATCH_STATUS.ABANDONED]: "Abandonado",
+  [FIFA_MATCH_STATUS.POSTPONED]: "Adiado",
+  [FIFA_MATCH_STATUS.CANCELLED]: "Cancelado",
+  [FIFA_MATCH_STATUS.SUSPENDED]: "Paralisado"
+};
+var TERMINAL_OR_ABNORMAL_STATUS = /* @__PURE__ */ new Set([
+  FIFA_MATCH_STATUS.PLAYED,
+  FIFA_MATCH_STATUS.SUSPENDED,
+  FIFA_MATCH_STATUS.ABANDONED,
+  FIFA_MATCH_STATUS.POSTPONED,
+  FIFA_MATCH_STATUS.CANCELLED
+]);
+var getOfficialFifaStatusLabel = (matchStatus, period) => {
+  if (typeof matchStatus === "number" && TERMINAL_OR_ABNORMAL_STATUS.has(matchStatus)) {
+    return FIFA_STATUS_LABELS[matchStatus];
+  }
+  if (typeof period === "number" && FIFA_PERIOD_LABELS[period]) {
+    return FIFA_PERIOD_LABELS[period];
+  }
+  if (typeof matchStatus === "number" && FIFA_STATUS_LABELS[matchStatus]) {
+    return FIFA_STATUS_LABELS[matchStatus];
+  }
+  if (matchStatus === FIFA_MATCH_STATUS.LIVE) {
+    return "Em andamento";
+  }
+  return void 0;
+};
 var getScoreFromFifa = (fifaMatch) => {
   if (typeof fifaMatch.HomeTeamScore === "number" && typeof fifaMatch.AwayTeamScore === "number") {
     return {
@@ -18426,10 +18488,15 @@ var buildMatchStateEntry = (localMatch, fifaMatch, fifaLiveMatch) => {
     HomeTeamScore: liveScore?.teamA ?? fifaMatch.HomeTeamScore,
     AwayTeamScore: liveScore?.teamB ?? fifaMatch.AwayTeamScore
   }) : getMatchStatusFromFifa(localMatch, fifaMatch);
+  const officialStatus = getOfficialFifaStatusLabel(
+    fifaLiveMatch?.MatchStatus ?? fifaMatch.MatchStatus,
+    fifaLiveMatch?.Period
+  );
   return {
     status,
     score: liveScore || fifaScore || (status === "PRE_GAME" ? void 0 : localMatch.score),
     matchTime: status === "LIVE" && fifaLiveMatch?.MatchTime ? fifaLiveMatch.MatchTime : void 0,
+    officialStatus,
     incidents: incidents && incidents.length > 0 ? incidents : void 0,
     source: "fifa",
     note: status === "SUSPENDED" ? "Jogo paralisado \u2014 placar e situa\xE7\xE3o oficiais da FIFA." : fifaLiveMatch ? incidents && incidents.length > 0 ? "Placar, status e lances oficiais da FIFA com atualiza\xE7\xE3o ao vivo." : "Placar e status oficiais da FIFA com atualiza\xE7\xE3o ao vivo." : "Placar e status oficiais da FIFA.",
