@@ -2721,7 +2721,9 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Kylian_Mbapp%C3%A9"
     },
     dateOfBirth: "1998-12-20",
-    height: 180
+    height: 180,
+    instagramPostUrl: "https://www.instagram.com/p/DZqaoeeAhUg/",
+    worldCupNote: "## Leitura\nComo sempre, Mbapp\xE9 \xE9 o farol da Fran\xE7a e come\xE7ou a Copa decidindo. Capit\xE3o e principal estrela, o camisa 10 brilhou na estreia e segue protagonista de uma sele\xE7\xE3o candidata ao t\xEDtulo, brigando pela ponta do Grupo I.\n## Desempenho\nNa estreia, foi o nome do jogo: marcou duas vezes na vit\xF3ria por 3 a 1 sobre o Senegal, aos 66 e nos acr\xE9scimos (90+6), confirmando a etiqueta de craque. No duelo seguinte, contra o Iraque, voltou a aparecer cedo e abriu o placar aos 14 \u2014 mais uma demonstra\xE7\xE3o de seu faro de gol. Ficha disciplinar limpa, sem cart\xF5es.\n## N\xFAmeros\nBrace na estreia diante do Senegal e gol logo no in\xEDcio do jogo com o Iraque. A Fran\xE7a aparece entre as primeiras do Grupo I, na briga direta com a Noruega pela lideran\xE7a. Mbapp\xE9, como esperado, \xE9 a refer\xEAncia ofensiva e o grande nome a ser observado entre os favoritos."
   },
   "389876": {
     fifaId: "389876",
