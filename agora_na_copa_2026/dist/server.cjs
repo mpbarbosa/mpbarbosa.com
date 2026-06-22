@@ -18548,6 +18548,79 @@ var parseGoogleTrendsBatch = (raw, limit = 12) => {
   return topics;
 };
 
+// weather-core.ts
+var OPEN_METEO_BASE_URL = "https://api.open-meteo.com/v1/forecast";
+function buildOpenMeteoUrl(lat, lng) {
+  const params = new URLSearchParams({
+    latitude: lat.toFixed(4),
+    longitude: lng.toFixed(4),
+    current: "temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m,is_day",
+    wind_speed_unit: "kmh",
+    timezone: "auto"
+  });
+  return `${OPEN_METEO_BASE_URL}?${params.toString()}`;
+}
+var WMO_CODES = {
+  0: { description: "C\xE9u limpo", emoji: "\u2600\uFE0F", nightEmoji: "\u{1F319}" },
+  1: { description: "Predominantemente limpo", emoji: "\u{1F324}\uFE0F", nightEmoji: "\u{1F319}" },
+  2: { description: "Parcialmente nublado", emoji: "\u26C5", nightEmoji: "\u2601\uFE0F" },
+  3: { description: "Nublado", emoji: "\u2601\uFE0F" },
+  45: { description: "N\xE9voa", emoji: "\u{1F32B}\uFE0F" },
+  48: { description: "N\xE9voa com geada", emoji: "\u{1F32B}\uFE0F" },
+  51: { description: "Garoa leve", emoji: "\u{1F326}\uFE0F" },
+  53: { description: "Garoa", emoji: "\u{1F326}\uFE0F" },
+  55: { description: "Garoa intensa", emoji: "\u{1F326}\uFE0F" },
+  56: { description: "Garoa congelante", emoji: "\u{1F327}\uFE0F" },
+  57: { description: "Garoa congelante intensa", emoji: "\u{1F327}\uFE0F" },
+  61: { description: "Chuva fraca", emoji: "\u{1F326}\uFE0F" },
+  63: { description: "Chuva", emoji: "\u{1F327}\uFE0F" },
+  65: { description: "Chuva forte", emoji: "\u{1F327}\uFE0F" },
+  66: { description: "Chuva congelante", emoji: "\u{1F327}\uFE0F" },
+  67: { description: "Chuva congelante forte", emoji: "\u{1F327}\uFE0F" },
+  71: { description: "Neve fraca", emoji: "\u{1F328}\uFE0F" },
+  73: { description: "Neve", emoji: "\u{1F328}\uFE0F" },
+  75: { description: "Neve forte", emoji: "\u2744\uFE0F" },
+  77: { description: "Gr\xE3os de neve", emoji: "\u{1F328}\uFE0F" },
+  80: { description: "Pancadas de chuva", emoji: "\u{1F326}\uFE0F" },
+  81: { description: "Pancadas de chuva", emoji: "\u{1F327}\uFE0F" },
+  82: { description: "Pancadas de chuva fortes", emoji: "\u26C8\uFE0F" },
+  85: { description: "Pancadas de neve", emoji: "\u{1F328}\uFE0F" },
+  86: { description: "Pancadas de neve fortes", emoji: "\u2744\uFE0F" },
+  95: { description: "Tempestade", emoji: "\u26C8\uFE0F" },
+  96: { description: "Tempestade com granizo", emoji: "\u26C8\uFE0F" },
+  99: { description: "Tempestade com granizo", emoji: "\u26C8\uFE0F" }
+};
+var UNKNOWN_LABEL = { description: "Tempo inst\xE1vel", emoji: "\u{1F321}\uFE0F" };
+function describeWeatherCode(code, isDay) {
+  const label = WMO_CODES[code] ?? UNKNOWN_LABEL;
+  const emoji = !isDay && label.nightEmoji ? label.nightEmoji : label.emoji;
+  return { description: label.description, emoji };
+}
+function toFiniteNumber(value) {
+  return typeof value === "number" && Number.isFinite(value) ? value : null;
+}
+function parseOpenMeteoCurrent(raw) {
+  if (!raw || typeof raw !== "object") return null;
+  const current = raw.current;
+  if (!current || typeof current !== "object") return null;
+  const c = current;
+  const temperatureC = toFiniteNumber(c.temperature_2m);
+  if (temperatureC === null) return null;
+  const weatherCode = toFiniteNumber(c.weather_code) ?? 0;
+  const isDay = c.is_day === 1 || c.is_day === true;
+  const { description, emoji } = describeWeatherCode(weatherCode, isDay);
+  return {
+    temperatureC: Math.round(temperatureC),
+    apparentC: Math.round(toFiniteNumber(c.apparent_temperature) ?? temperatureC),
+    weatherCode,
+    description,
+    emoji,
+    windKmh: Math.round(toFiniteNumber(c.wind_speed_10m) ?? 0),
+    humidity: Math.round(toFiniteNumber(c.relative_humidity_2m) ?? 0),
+    isDay
+  };
+}
+
 // src/matches.json
 var matches_default = [
   {
@@ -25454,6 +25527,8 @@ var WIKIDATA_API_BASE = "https://www.wikidata.org/w/api.php";
 var COUNTRY_INFO_CACHE_TTL_MS = 24 * 60 * 60 * 1e3;
 var WIKIPEDIA_USER_AGENT = "agora-na-copa-2026 (https://github.com/mpbarbosa/agora_na_copa_2026)";
 var GOOGLE_TRENDS_CACHE_TTL_MS = 20 * 60 * 1e3;
+var WEATHER_CACHE_TTL_MS = 15 * 60 * 1e3;
+var WEATHER_FETCH_TIMEOUT_MS = 6e3;
 var APP_MATCHES_BY_ID = new Map(APP_MATCHES.map((match) => [match.id, match]));
 var GOAL_INCIDENT_SUFFIX = " marcou.";
 var YELLOW_CARD_INCIDENT_SUFFIX = " recebeu amarelo.";
@@ -26846,6 +26921,76 @@ app.get("/api/google-trends", (_req, res) => {
   });
 });
 void refreshGoogleTrendsCache();
+var weatherCache = /* @__PURE__ */ new Map();
+var parseCoordinate = (value, max) => {
+  if (typeof value !== "string") return null;
+  const n = Number(value);
+  if (!Number.isFinite(n) || Math.abs(n) > max) return null;
+  return n;
+};
+var fetchVenueWeather = async (lat, lng) => {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), WEATHER_FETCH_TIMEOUT_MS);
+  let response;
+  try {
+    response = await fetch(buildOpenMeteoUrl(lat, lng), { signal: controller.signal });
+  } finally {
+    clearTimeout(timeout);
+  }
+  if (!response.ok) {
+    throw new Error(`Open-Meteo request failed (${response.status})`);
+  }
+  const snapshot = parseOpenMeteoCurrent(await response.json());
+  if (!snapshot) {
+    throw new Error("Open-Meteo returned no current weather");
+  }
+  return {
+    source: "open-meteo",
+    note: "Condi\xE7\xF5es no est\xE1dio \u2022 Open-Meteo",
+    updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
+    weather: snapshot
+  };
+};
+app.get("/api/match-weather", async (req, res) => {
+  const lat = parseCoordinate(req.query.lat, 90);
+  const lng = parseCoordinate(req.query.lng, 180);
+  if (lat === null || lng === null) {
+    res.status(400).json({
+      source: "fallback",
+      note: "Coordenadas do est\xE1dio inv\xE1lidas.",
+      updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
+      weather: null
+    });
+    return;
+  }
+  const key = `${lat.toFixed(2)},${lng.toFixed(2)}`;
+  const cached = weatherCache.get(key);
+  if (cached && cached.expiresAt > Date.now()) {
+    res.set("Cache-Control", "public, max-age=300");
+    res.json(cached.payload);
+    return;
+  }
+  try {
+    const payload = await fetchVenueWeather(lat, lng);
+    weatherCache.set(key, { payload, expiresAt: Date.now() + WEATHER_CACHE_TTL_MS });
+    res.set("Cache-Control", "public, max-age=300");
+    res.json(payload);
+  } catch (error) {
+    console.error("Weather fetch failed:", error);
+    if (cached) {
+      res.set("Cache-Control", "public, max-age=60");
+      res.json({ ...cached.payload, source: "fallback", note: "Atualizando o clima\u2026" });
+      return;
+    }
+    res.set("Cache-Control", "public, max-age=60");
+    res.json({
+      source: "fallback",
+      note: "Clima indispon\xEDvel no momento.",
+      updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
+      weather: null
+    });
+  }
+});
 app.get("/api/fifa-sync-status", (_req, res) => {
   const now = Date.now();
   const broadcastGuideFallbackCount = broadcastGuideCache ? Object.values(broadcastGuideCache.payload.guides).filter(
