@@ -1072,7 +1072,8 @@ var squads_default = {
       instagram: "mosalah",
       wikipedia: "https://pt.wikipedia.org/wiki/Mohamed_Salah"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DZn4QqYjQg0/"
+    instagramPostUrl: "https://www.instagram.com/p/DZn4QqYjQg0/",
+    worldCupNote: "## Leitura\nSalah \xE9 o farol do Egito e j\xE1 mostrou por qu\xEA: o gol da virada sobre a Nova Zel\xE2ndia colocou o capit\xE3o como protagonista da lideran\xE7a eg\xEDpcia no Grupo G. Astro do Liverpool e principal nome dos Fara\xF3s, ele carrega a miss\xE3o de levar a sele\xE7\xE3o ao mata-mata \u2014 e contra o Ir\xE3 ter\xE1 nova vitrine para decidir.\n## Desempenho\nCome\xE7ou discreto no empate em 1 a 1 com a B\xE9lgica, substitu\xEDdo aos 76 e sem balan\xE7ar as redes. Mas respondeu na hora certa: contra a Nova Zel\xE2ndia, marcou aos 67 o gol que completou a virada e encaminhou o triunfo por 3 a 1. Ficha limpa \u2014 0 amarelos, 0 vermelhos \u2014 e influ\xEAncia crescente no time.\n## N\xFAmeros\nJ2 \xB7 1 gol \xB7 0 cart\xF5es. O Egito lidera o Grupo G com 4 pontos (1 vit\xF3ria e 1 empate) e saldo +2. Salah \xE9 o nome mais perigoso de uma sele\xE7\xE3o que sonha alto e depende do seu faro de gol na reta final da fase de grupos."
   },
   "344661": {
     fifaId: "344661",
@@ -6939,7 +6940,8 @@ var squads_default = {
     socials: {
       instagram: "brianbrobbeyy",
       wikipedia: "https://pt.wikipedia.org/wiki/Brian_Brobbey"
-    }
+    },
+    worldCupNote: "## Leitura\nBrian Brobbey assumiu a refer\xEAncia ofensiva da Holanda e respondeu na hora certa. Com 2 gols, ajuda a Laranja Mec\xE2nica a liderar o Grupo F e a encaminhar a classifica\xE7\xE3o \xE0s oitavas.\n## Desempenho\nDepois de entrar no fim do empate com o Jap\xE3o (2 a 2), foi decisivo contra a Su\xE9cia: marcou duas vezes logo no in\xEDcio, aos 5 e aos 17, abrindo o caminho da goleada por 5 a 1. Saiu aos 72 aplaudido. Sem cart\xF5es.\n## N\xFAmeros\nJ2 \xB7 2 gols \xB7 0 cart\xF5es. A Holanda lidera o Grupo F com 4 pontos e saldo +4, \xE0 frente do Jap\xE3o pelos crit\xE9rios de desempate. Brobbey \xE9 um dos trunfos de um ataque pulverizado e perigoso."
   },
   "424056": {
     fifaId: "424056",
@@ -7565,7 +7567,8 @@ var squads_default = {
     socials: {
       instagram: "bee18_official",
       wikipedia: "https://pt.wikipedia.org/wiki/Ayase_Ueda"
-    }
+    },
+    worldCupNote: "## Leitura\nAyase Ueda \xE9 o homem-gol do Jap\xE3o e pe\xE7a central de uma campanha consistente. Com 2 gols, lidera o ataque dos Samurais Azuis, que est\xE3o muito perto da classifica\xE7\xE3o no equilibrado Grupo F.\n## Desempenho\nDepois da estreia movimentada no 2 a 2 com a Holanda, brilhou na goleada por 4 a 0 sobre a Tun\xEDsia, marcando duas vezes, aos 31 e aos 83. Eficiente e de boa movimenta\xE7\xE3o, transformou o dom\xEDnio japon\xEAs em gols. Ficha limpa.\n## N\xFAmeros\nJ2 \xB7 2 gols \xB7 0 cart\xF5es. O Jap\xE3o soma 4 pontos e aparece em 2\xBA no Grupo F, na cola da Holanda pelos crit\xE9rios de desempate (saldo +4). Uma vit\xF3ria sobre a Su\xE9cia garante a vaga nas oitavas."
   },
   "430437": {
     fifaId: "430437",
@@ -9845,7 +9848,8 @@ var squads_default = {
     socials: {
       instagram: "jodavid",
       wikipedia: "https://pt.wikipedia.org/wiki/Jonathan_David"
-    }
+    },
+    worldCupNote: "## Leitura\nJonathan David comanda o ataque do anfitri\xE3o Canad\xE1 e divide a artilharia da Copa com 3 gols. O centroavante carrega o time da casa, que lidera o Grupo B com o melhor ataque da chave, e vive grande fase no Mundial em solo canadense.\n## Desempenho\nDiscreto e substitu\xEDdo na estreia (empate em 1 a 1 com a B\xF3snia), explodiu na rodada seguinte: hat-trick na goleada por 6 a 0 sobre o Catar, com gols aos 29, aos 45+3 e aos 90+2. Decidiu sozinho e disparou entre os goleadores. Sem cart\xF5es.\n## N\xFAmeros\nJ2 \xB7 3 gols (um hat-trick) \xB7 0 cart\xF5es. O Canad\xE1 lidera o Grupo B com 4 pontos, saldo +6 e o melhor ataque do grupo. David \xE9 o grande nome dos anfitri\xF5es neste in\xEDcio de Copa."
   },
   "441258": {
     fifaId: "441258",
@@ -14329,7 +14333,8 @@ var squads_default = {
     socials: {
       instagram: "denizundav",
       wikipedia: "https://pt.wikipedia.org/wiki/Deniz_Undav"
-    }
+    },
+    worldCupNote: "## Leitura\nDeniz Undav virou a arma secreta da Alemanha. Mesmo sem ser titular, j\xE1 soma 3 gols \u2014 todos saindo do banco \u2014 e foi o her\xF3i da virada sobre a Costa do Marfim. Consolidou-se como o trunfo de luxo de uma sele\xE7\xE3o que lidera o Grupo E com 100% de aproveitamento.\n## Desempenho\nContra Cura\xE7ao (7 a 1), entrou aos 64 e marcou aos 78. Diante da Costa do Marfim, foi decisivo: lan\xE7ado aos 60 com a Alemanha atr\xE1s no placar, empatou aos 68 e fez o gol da vit\xF3ria nos acr\xE9scimos, aos 90+4 \u2014 uma virada por 2 a 1 praticamente constru\xEDda por ele. Ficha limpa, sem cart\xF5es.\n## N\xFAmeros\nJ2 (ambos como substituto) \xB7 3 gols \xB7 0 cart\xF5es. A Alemanha lidera o Grupo E com 6 pontos, 100% de aproveitamento e saldo +7. Undav \xE9 a prova viva da profundidade do elenco alem\xE3o."
   },
   "484859": {
     fifaId: "484859",
