@@ -1071,7 +1071,8 @@ var squads_default = {
     socials: {
       instagram: "mosalah",
       wikipedia: "https://pt.wikipedia.org/wiki/Mohamed_Salah"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZn4QqYjQg0/"
   },
   "344661": {
     fifaId: "344661",
