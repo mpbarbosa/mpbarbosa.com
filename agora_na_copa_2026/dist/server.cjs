@@ -1732,7 +1732,9 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Harry_Kane"
     },
     dateOfBirth: "1993-07-28",
-    height: 190
+    height: 190,
+    worldCupNote: "## Leitura\nCapit\xE3o e principal refer\xEAncia ofensiva da Inglaterra, Harry Kane \xE9 um dos grandes nomes desta Copa e desponta como s\xE9rio candidato \xE0 artilharia. Maior goleador da hist\xF3ria da sele\xE7\xE3o inglesa, ele carrega a responsabilidade de transformar o favoritismo do English Team em gols \u2014 e come\xE7ou o torneio fazendo exatamente isso.\n## Desempenho\nEstreia de gala: na vit\xF3ria por 4 a 2 sobre a Cro\xE1cia, Kane marcou duas vezes ainda no primeiro tempo (aos 12 e aos 42 minutos), comandando a virada e a goleada parcial que colocou a Inglaterra no controle do jogo. Um brace de centroavante cl\xE1ssico, decisivo para os tr\xEAs pontos na abertura do Grupo L.\n## N\xFAmeros\nJ1 \xB7 2 gols \xB7 0 cart\xF5es \xB7 Inglaterra l\xEDder do Grupo L (3 pontos, saldo +2)",
+    worldCupNoteUpdatedAt: "2026-06-17T20:00:00.000Z"
   },
   "369434": {
     fifaId: "369434",
