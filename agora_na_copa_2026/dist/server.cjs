@@ -6606,7 +6606,8 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Erling_Haaland"
     },
     dateOfBirth: "2000-07-21",
-    height: 195
+    height: 195,
+    worldCupNote: "## Leitura\nErling Haaland chegou \xE0 Copa como uma das maiores for\xE7as de ataque do mundo e n\xE3o decepcionou na estreia. O centroavante \xE9 o farol ofensivo da Noruega \u2014 quando ele engrena, os escandinavos viram candidatos a surpreender. J\xE1 balan\xE7ou as redes duas vezes e coloca a Noruega na lideran\xE7a do Grupo I, com a classifica\xE7\xE3o no horizonte.\n## Desempenho\nFoi o nome da goleada por 4 a 1 sobre o Iraque na estreia: marcou duas vezes ainda no primeiro tempo, aos 29 e aos 43 minutos, e desmontou a resist\xEAncia iraquiana antes do intervalo. Lideran\xE7a t\xE9cnica e faro de gol de quem decide \u2014 exatamente o que a Noruega espera dele para sonhar alto no Mundial.\n## N\xFAmeros\nJ1 \xB7 2 gols \xB7 0 cart\xF5es. A Noruega lidera o Grupo I com 3 pontos e saldo +3, \xE0 frente da Fran\xE7a pelo crit\xE9rio de desempate. Haaland aparece entre os artilheiros da Copa logo na primeira rodada \u2014 e ainda tem muito ch\xE3o pela frente."
   },
   "419654": {
     fifaId: "419654",
@@ -24664,7 +24665,7 @@ var FIFA_SCHEDULED_MATCHES = [
   { teamA: "URU", teamB: "ESP", kickoffTimestamp: "2026-06-26T21:00:00-03:00", status: "PRE_GAME", ...v("URU", "ESP") },
   // ── Grupo I ───────────────────────────────────────────────────────────────
   { teamA: "IRQ", teamB: "NOR", kickoffTimestamp: "2026-06-16T19:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 4 }, ...v("IRQ", "NOR") },
-  { teamA: "FRA", teamB: "IRQ", kickoffTimestamp: "2026-06-22T18:00:00-03:00", status: "PRE_GAME", ...v("FRA", "IRQ") },
+  { teamA: "FRA", teamB: "IRQ", kickoffTimestamp: "2026-06-22T18:00:00-03:00", status: "FINISHED", score: { teamA: 3, teamB: 0 }, ...v("FRA", "IRQ") },
   { teamA: "NOR", teamB: "SEN", kickoffTimestamp: "2026-06-22T21:00:00-03:00", status: "PRE_GAME", ...v("NOR", "SEN") },
   { teamA: "NOR", teamB: "FRA", kickoffTimestamp: "2026-06-26T16:00:00-03:00", status: "PRE_GAME", ...v("NOR", "FRA") },
   { teamA: "SEN", teamB: "IRQ", kickoffTimestamp: "2026-06-26T16:00:00-03:00", status: "PRE_GAME", ...v("SEN", "IRQ") },
