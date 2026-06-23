@@ -18489,6 +18489,25 @@ var getIncidentsFromLiveFifa = (fifaMatch, homeTeamCode, awayTeamCode) => {
     return getMinuteSortValue(a.time) - getMinuteSortValue(b.time);
   }).map(({ period: _period, ...incident }) => incident);
 };
+var FIFA_OFFICIAL_TYPE = {
+  REFEREE: 1,
+  ASSISTANT_1: 2,
+  ASSISTANT_2: 3,
+  FOURTH_OFFICIAL: 4
+};
+var getRefereeFromFifa = (fifaMatch, language = "pt") => {
+  const referee = fifaMatch?.Officials?.find(
+    (official) => official.OfficialType === FIFA_OFFICIAL_TYPE.REFEREE
+  );
+  if (!referee) return void 0;
+  const name = getLocalizedDescription(referee.Name, language) || getLocalizedDescription(referee.NameShort, language);
+  if (!name) return void 0;
+  return {
+    name,
+    country: referee.IdCountry || void 0,
+    fifaOfficialId: referee.OfficialId || void 0
+  };
+};
 var buildMatchStateEntry = (localMatch, fifaMatch, fifaLiveMatch) => {
   if (!fifaMatch) {
     return {
@@ -18518,6 +18537,7 @@ var buildMatchStateEntry = (localMatch, fifaMatch, fifaLiveMatch) => {
     score: liveScore || fifaScore || (status === "PRE_GAME" ? void 0 : localMatch.score),
     matchTime: status === "LIVE" && fifaLiveMatch?.MatchTime ? fifaLiveMatch.MatchTime : void 0,
     officialStatus,
+    referee: getRefereeFromFifa(fifaMatch),
     incidents: incidents && incidents.length > 0 ? incidents : void 0,
     source: "fifa",
     note: status === "SUSPENDED" ? "Jogo paralisado \u2014 placar e situa\xE7\xE3o oficiais da FIFA." : fifaLiveMatch ? incidents && incidents.length > 0 ? "Placar, status e lances oficiais da FIFA com atualiza\xE7\xE3o ao vivo." : "Placar e status oficiais da FIFA com atualiza\xE7\xE3o ao vivo." : "Placar e status oficiais da FIFA.",
