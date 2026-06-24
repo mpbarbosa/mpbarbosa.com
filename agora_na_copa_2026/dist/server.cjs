@@ -24667,14 +24667,14 @@ var FIFA_SCHEDULED_MATCHES = [
   { teamA: "POR", teamB: "COD", kickoffTimestamp: "2026-06-17T14:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 1 }, ...v("POR", "COD") },
   { teamA: "UZB", teamB: "COL", kickoffTimestamp: "2026-06-17T23:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 3 }, ...v("UZB", "COL") },
   { teamA: "POR", teamB: "UZB", kickoffTimestamp: "2026-06-23T14:00:00-03:00", status: "FINISHED", score: { teamA: 5, teamB: 0 }, ...v("POR", "UZB") },
-  { teamA: "COL", teamB: "COD", kickoffTimestamp: "2026-06-23T23:00:00-03:00", status: "PRE_GAME", ...v("COL", "COD") },
+  { teamA: "COL", teamB: "COD", kickoffTimestamp: "2026-06-23T23:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 0 }, ...v("COL", "COD") },
   { teamA: "COL", teamB: "POR", kickoffTimestamp: "2026-06-27T20:30:00-03:00", status: "PRE_GAME", ...v("COL", "POR") },
   { teamA: "COD", teamB: "UZB", kickoffTimestamp: "2026-06-27T20:30:00-03:00", status: "PRE_GAME", ...v("COD", "UZB") },
   // ── Grupo L ───────────────────────────────────────────────────────────────
   { teamA: "ENG", teamB: "CRO", kickoffTimestamp: "2026-06-17T17:00:00-03:00", status: "FINISHED", score: { teamA: 4, teamB: 2 }, ...v("ENG", "CRO") },
   { teamA: "GHA", teamB: "PAN", kickoffTimestamp: "2026-06-17T20:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 0 }, ...v("GHA", "PAN") },
   { teamA: "ENG", teamB: "GHA", kickoffTimestamp: "2026-06-23T17:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 0 }, ...v("ENG", "GHA") },
-  { teamA: "PAN", teamB: "CRO", kickoffTimestamp: "2026-06-23T20:00:00-03:00", status: "PRE_GAME", ...v("PAN", "CRO") },
+  { teamA: "PAN", teamB: "CRO", kickoffTimestamp: "2026-06-23T20:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 1 }, ...v("PAN", "CRO") },
   { teamA: "CRO", teamB: "GHA", kickoffTimestamp: "2026-06-27T18:00:00-03:00", status: "PRE_GAME", ...v("CRO", "GHA") },
   { teamA: "PAN", teamB: "ENG", kickoffTimestamp: "2026-06-27T18:00:00-03:00", status: "PRE_GAME", ...v("PAN", "ENG") }
 ];
@@ -24691,7 +24691,9 @@ function team(id, name, code, flagSvg, primaryColor, secondaryColor, group, stat
     secondaryColor,
     group,
     ...stats ?? zero,
-    dataSource: stats ? "result" : "seed"
+    dataSource: stats ? "result" : "seed",
+    // Seed rows carry no card data; real fair-play points are summed in computeStandings.
+    fairPlayPoints: 0
   };
 }
 var standings = [
@@ -25244,36 +25246,36 @@ var wikipediaCountries_default = WIKIPEDIA_COUNTRIES;
 // src/data/teamAnalysis.json
 var teamAnalysis_default = {
   COL: {
-    text: "## Leitura\nA Col\xF4mbia de N\xE9stor Lorenzo estreou com autoridade e lidera o Grupo K. Bateu o Uzbequist\xE3o por 3 a 1, mostrando o talento ofensivo de uma gera\xE7\xE3o badalada, com Luis D\xEDaz \xE0 frente. Embalada por um longo per\xEDodo de bons resultados nos \xFAltimos anos, a sele\xE7\xE3o cafetera larga como favorita \xE0 classifica\xE7\xE3o e confirma o \xF3timo momento do futebol colombiano.\n## Desempenho\nDiante do Uzbequist\xE3o, a Col\xF4mbia foi eficiente e construiu uma vit\xF3ria por 3 a 1, com gols de Daniel Mu\xF1oz, Jaminton Campaz e Luis D\xEDaz. O time controlou o jogo, criou chances com qualidade e administrou a vantagem na reta final. Foi uma estreia convincente de uma sele\xE7\xE3o candidata a brigar pelas fases finais.\n## N\xFAmeros\nJ1 \xB7 1 vit\xF3ria \xB7 3 gols marcados \xB7 1 sofrido (SG +2) \xB7 l\xEDder do Grupo K. Pr\xF3ximos desafios: RD Congo (23/06) e Portugal (27/06) \u2014 o duelo com os portugueses promete decidir a ponta do grupo.",
-    updatedAt: "2026-06-18T02:00:00.000Z"
+    text: "## Leitura\nA Col\xF4mbia de N\xE9stor Lorenzo confirmou o favoritismo e lidera o Grupo K com 100% de aproveitamento. Depois de bater o Uzbequist\xE3o na estreia, superou a RD Congo por 1 a 0 e chegou aos 6 pontos, mostrando a for\xE7a de uma gera\xE7\xE3o badalada, com Luis D\xEDaz \xE0 frente. A sele\xE7\xE3o cafetera est\xE1 perto da classifica\xE7\xE3o e disputa a ponta com Portugal.\n## Desempenho\nContra a RD Congo, a Col\xF4mbia encontrou mais dificuldade do que na estreia, mas foi premiada pela insist\xEAncia: Daniel Mu\xF1oz marcou aos 76 minutos e garantiu o 1 a 0. Somada \xE0 vit\xF3ria por 3 a 1 sobre o Uzbequist\xE3o (gols de Daniel Mu\xF1oz, Jaminton Campaz e Luis D\xEDaz), a campanha \xE9 de duas vit\xF3rias e regularidade defensiva.\n## N\xFAmeros\nJ2 \xB7 2 vit\xF3rias \xB7 4 gols marcados \xB7 1 sofrido (SG +3) \xB7 l\xEDder do Grupo K com 6 pontos. Pr\xF3ximo desafio: Portugal (27/06) \u2014 o confronto direto vale a lideran\xE7a do grupo.",
+    updatedAt: "2026-06-24T09:06:00-03:00"
   },
   POR: {
-    text: "## Leitura\nPortugal de Roberto Mart\xEDnez decepcionou na estreia e ligou o sinal de alerta no Grupo K. Mesmo com um elenco estrelado liderado por Cristiano Ronaldo, ficou no 1 a 1 com a RD Congo, deixando dois pontos pelo caminho. Favorita ao t\xEDtulo, a sele\xE7\xE3o lusa precisa reagir r\xE1pido para n\xE3o complicar uma classifica\xE7\xE3o que se esperava tranquila.\n## Desempenho\nContra a RD Congo, Portugal teve a posse de bola e criou chances, mas esbarrou na defesa congolesa e na pr\xF3pria falta de capricho, ficando no empate em 1 a 1, com gol de Jo\xE3o Neves. A equipe mostrou volume, mas pouca efici\xEAncia \u2014 um problema que a comiss\xE3o t\xE9cnica precisar\xE1 resolver nas pr\xF3ximas rodadas.\n## N\xFAmeros\nJ1 \xB7 1 empate \xB7 1 gol marcado \xB7 1 sofrido (SG 0), em 2\xBA no Grupo K. Pr\xF3ximos desafios: Uzbequist\xE3o (23/06) e Col\xF4mbia (27/06) \u2014 vencer o Uzbequist\xE3o \xE9 fundamental para recuperar o controle do grupo.",
-    updatedAt: "2026-06-17T17:00:00.000Z"
+    text: "## Leitura\nPortugal de Roberto Mart\xEDnez se recuperou da estreia decepcionante e voltou a sorrir no Grupo K. Depois do empate com a RD Congo, goleou o Uzbequist\xE3o por 5 a 0 e chegou aos 4 pontos, com Cristiano Ronaldo enfim desencantando. A sele\xE7\xE3o lusa, favorita ao t\xEDtulo, est\xE1 bem encaminhada e mira a lideran\xE7a no duelo contra a Col\xF4mbia.\n## Desempenho\nDiante do Uzbequist\xE3o, Portugal fez o que faltou na estreia: foi eficiente e goleou por 5 a 0. Cristiano Ronaldo marcou duas vezes (aos 6 e aos 39 minutos), Nuno Mendes e Rafael Le\xE3o tamb\xE9m balan\xE7aram as redes, numa exibi\xE7\xE3o de ataque avassalador que devolveu a confian\xE7a \xE0 equipe.\n## N\xFAmeros\nJ2 \xB7 1 vit\xF3ria \xB7 1 empate \xB7 6 gols marcados \xB7 1 sofrido (SG +5), em 2\xBA no Grupo K com 4 pontos. Artilheiro: Cristiano Ronaldo (2 gols). Pr\xF3ximo desafio: Col\xF4mbia (27/06) \u2014 vencer significa terminar na ponta do grupo.",
+    updatedAt: "2026-06-24T09:06:00-03:00"
   },
   COD: {
-    text: "## Leitura\nA RD Congo de S\xE9bastien Desabre fez uma estreia de muito m\xE9rito no Grupo K. Segurou um empate em 1 a 1 com a poderosa Portugal, mostrando organiza\xE7\xE3o defensiva e coragem diante de uma das favoritas ao t\xEDtulo. Com 1 ponto e a confian\xE7a l\xE1 em cima, os Leopardos provam que podem incomodar e sonham com uma classifica\xE7\xE3o hist\xF3rica.\n## Desempenho\nDiante de Portugal, a RD Congo se defendeu com disciplina, soube sofrer e ainda foi premiada com o gol de Yoane Wissa, garantindo um empate valioso por 1 a 1. A equipe mostrou solidez e aproveitou bem suas chances, fazendo um jogo maduro contra um advers\xE1rio de elite.\n## N\xFAmeros\nJ1 \xB7 1 empate \xB7 1 gol marcado \xB7 1 sofrido (SG 0), em 3\xBA no Grupo K apenas pelos crit\xE9rios de desempate. Pr\xF3ximos desafios: Col\xF4mbia (23/06) e Uzbequist\xE3o (27/06) \u2014 pontuar de novo manteria viva a esperan\xE7a das oitavas.",
-    updatedAt: "2026-06-17T17:00:00.000Z"
+    text: "## Leitura\nA RD Congo de S\xE9bastien Desabre trope\xE7ou na segunda rodada e complicou suas contas no Grupo K. Depois do empate de muito m\xE9rito com Portugal, perdeu para a Col\xF4mbia por 1 a 0 e segue com apenas 1 ponto. Os Leopardos ainda sonham com uma classifica\xE7\xE3o hist\xF3rica, mas agora dependem de vencer o Uzbequist\xE3o e torcer por combina\xE7\xF5es.\n## Desempenho\nContra a Col\xF4mbia, a RD Congo se defendeu bem por boa parte do jogo, mas cedeu o gol decisivo de Daniel Mu\xF1oz aos 76 minutos e saiu derrotada por 1 a 0. Faltou capricho ofensivo para transformar a boa organiza\xE7\xE3o em pontos, repetindo a dificuldade de furar defesas mais qualificadas.\n## N\xFAmeros\nJ2 \xB7 1 empate \xB7 1 derrota \xB7 1 gol marcado \xB7 2 sofridos (SG -1), em 3\xBA no Grupo K com 1 ponto. Pr\xF3ximo desafio: Uzbequist\xE3o (27/06) \u2014 uma vit\xF3ria mant\xE9m viva a esperan\xE7a das oitavas.",
+    updatedAt: "2026-06-24T09:06:00-03:00"
   },
   UZB: {
-    text: "## Leitura\nO Uzbequist\xE3o de Fabio Cannavaro vive sua estreia hist\xF3rica em Copas do Mundo, mas come\xE7ou com derrota no Grupo K. Caiu para a Col\xF4mbia por 3 a 1, sentindo a diferen\xE7a de experi\xEAncia, ainda que tenha conseguido balan\xE7ar as redes. Sem pontos e na lanterna, a sele\xE7\xE3o uzbeque tenta agora aprender r\xE1pido para buscar um resultado positivo na sequ\xEAncia.\n## Desempenho\nContra a Col\xF4mbia, o Uzbequist\xE3o at\xE9 marcou com Abbosbek Fayzullaev, mas n\xE3o conseguiu conter o ataque colombiano e foi superado por 3 a 1. A equipe mostrou organiza\xE7\xE3o em alguns momentos, mas pagou caro por falhas defensivas. Ficou a experi\xEAncia preciosa de um primeiro jogo em Mundiais.\n## N\xFAmeros\nJ1 \xB7 1 derrota \xB7 1 gol marcado \xB7 3 sofridos (SG -2) \xB7 lanterna do Grupo K. Artilheiro: Abbosbek Fayzullaev (1 gol). Pr\xF3ximos desafios: Portugal (23/06) e RD Congo (27/06) \u2014 diante de Portugal, a miss\xE3o \xE9 das mais dif\xEDceis.",
-    updatedAt: "2026-06-18T02:00:00.000Z"
+    text: "## Leitura\nO Uzbequist\xE3o de Fabio Cannavaro vive sua estreia hist\xF3rica em Copas do Mundo, mas a realidade tem sido dura no Grupo K. Depois da derrota para a Col\xF4mbia, foi goleado por Portugal por 5 a 0 e segue sem pontos, na lanterna e j\xE1 sem chances de classifica\xE7\xE3o. Resta agora se despedir com dignidade.\n## Desempenho\nContra Portugal, o Uzbequist\xE3o n\xE3o conseguiu conter o ataque advers\xE1rio e foi atropelado por 5 a 0, sofrendo com a categoria de Cristiano Ronaldo e companhia. Ap\xF3s tamb\xE9m ceder tr\xEAs gols \xE0 Col\xF4mbia na estreia, a equipe exp\xF4s a diferen\xE7a de experi\xEAncia para os favoritos do grupo.\n## N\xFAmeros\nJ2 \xB7 2 derrotas \xB7 1 gol marcado \xB7 8 sofridos (SG -7) \xB7 lanterna do Grupo K, sem pontos. Pr\xF3ximo desafio: RD Congo (27/06) \u2014 a chance de buscar um resultado positivo de despedida.",
+    updatedAt: "2026-06-24T09:06:00-03:00"
   },
   ENG: {
-    text: "## Leitura\nA Inglaterra de Thomas Tuchel estreou em ritmo de festa e lidera o Grupo L. Venceu a Cro\xE1cia por 4 a 2 num jogo movimentado, com Harry Kane marcando duas vezes e mostrando todo o seu faro de gol. Candidata ao t\xEDtulo e em busca de acabar com um longo jejum, a sele\xE7\xE3o inglesa come\xE7ou bem, ainda que tenha deixado d\xFAvidas na defesa.\n## Desempenho\nContra a Cro\xE1cia, a Inglaterra foi eficiente no ataque e construiu uma vit\xF3ria por 4 a 2, com Kane (2), Bellingham e Rashford balan\xE7ando as redes. O ataque funcionou muito bem, mas os dois gols sofridos acenderam um alerta defensivo. De todo modo, foi uma estreia positiva e cheia de gols.\n## N\xFAmeros\nJ1 \xB7 1 vit\xF3ria \xB7 4 gols marcados \xB7 2 sofridos (SG +2) \xB7 l\xEDder do Grupo L. Artilheiro: Harry Kane (2 gols). Pr\xF3ximos desafios: Gana (23/06) e Panam\xE1 (27/06) \u2014 vencer Gana praticamente garante a classifica\xE7\xE3o.",
-    updatedAt: "2026-06-17T20:00:00.000Z"
+    text: "## Leitura\nA Inglaterra de Thomas Tuchel segue invicta e lidera o Grupo L, mas saiu de campo com gosto amargo na segunda rodada. Depois de golear a Cro\xE1cia na estreia, ficou no 0 a 0 com Gana, num jogo travado em que faltou capricho. Com 4 pontos e o melhor saldo do grupo, a sele\xE7\xE3o inglesa est\xE1 perto das oitavas, faltando apenas confirmar a vaga.\n## Desempenho\nDiante de Gana, a Inglaterra controlou a posse, mas esbarrou na defesa advers\xE1ria e n\xE3o conseguiu furar o bloqueio, ficando no 0 a 0. Foi um contraste com a estreia movimentada (4 a 2 sobre a Cro\xE1cia, com Kane marcando duas vezes): o ataque, t\xE3o eficiente no primeiro jogo, pecou na pontaria.\n## N\xFAmeros\nJ2 \xB7 1 vit\xF3ria \xB7 1 empate \xB7 4 gols marcados \xB7 2 sofridos (SG +2) \xB7 l\xEDder do Grupo L com 4 pontos. Artilheiro: Harry Kane (2 gols). Pr\xF3ximo desafio: Panam\xE1 (27/06) \u2014 um simples ponto confirma a classifica\xE7\xE3o.",
+    updatedAt: "2026-06-24T09:06:00-03:00"
   },
   GHA: {
-    text: "## Leitura\nGana de Otto Addo fez uma estreia s\xF3lida e dividiu a lideran\xE7a do Grupo L. Bateu o Panam\xE1 por 1 a 0, com defesa segura e efici\xEAncia na hora certa, somando tr\xEAs pontos importantes. As Estrelas Negras mostram que vieram para brigar por uma vaga e chegam confiantes para o duelo de peso contra a Inglaterra.\n## Desempenho\nDiante do Panam\xE1, Gana fez um jogo disciplinado, soube se defender e aproveitou sua oportunidade com o gol de Caleb Yirenkyi, garantindo a vit\xF3ria por 1 a 0 e um clean sheet. Faltou capricho para ampliar, mas a solidez defensiva foi a marca de uma estreia eficiente.\n## N\xFAmeros\nJ1 \xB7 1 vit\xF3ria \xB7 1 gol marcado \xB7 0 sofridos (SG +1) \xB7 clean sheet, na cola da lideran\xE7a do Grupo L. Pr\xF3ximos desafios: Inglaterra (23/06) e Cro\xE1cia (27/06) \u2014 pontuar contra os ingleses seria um grande passo rumo \xE0s oitavas.",
-    updatedAt: "2026-06-17T23:00:00.000Z"
+    text: "## Leitura\nGana de Otto Addo fez valer sua solidez defensiva e divide a lideran\xE7a do Grupo L. Depois de bater o Panam\xE1, segurou um empate sem gols com a poderosa Inglaterra e chegou aos 4 pontos, sem sofrer gols em dois jogos. As Estrelas Negras provam que vieram para brigar por uma vaga e est\xE3o muito perto das oitavas.\n## Desempenho\nContra a Inglaterra, Gana fez um jogo disciplinado, defendeu-se com organiza\xE7\xE3o e segurou o 0 a 0, conquistando um ponto valioso diante de uma candidata ao t\xEDtulo. A marca da equipe segue sendo a defesa: dois jogos, nenhum gol sofrido, somando o clean sheet ao 1 a 0 sobre o Panam\xE1 (gol de Caleb Yirenkyi).\n## N\xFAmeros\nJ2 \xB7 1 vit\xF3ria \xB7 1 empate \xB7 1 gol marcado \xB7 0 sofridos (SG +1) \xB7 2\xBA no Grupo L com 4 pontos, invicto e sem sofrer gols. Pr\xF3ximo desafio: Cro\xE1cia (27/06) \u2014 um empate basta para garantir a classifica\xE7\xE3o.",
+    updatedAt: "2026-06-24T09:06:00-03:00"
   },
   PAN: {
-    text: "## Leitura\nO Panam\xE1 de Thomas Christiansen teve uma estreia dura no Grupo L. Perdeu para Gana por 1 a 0, num jogo equilibrado decidido em um detalhe, e ainda n\xE3o pontuou. Apesar do rev\xE9s, os panamenhos mostraram competitividade e seguem com chances, dependendo de bons resultados contra Cro\xE1cia e Inglaterra para sonhar com uma classifica\xE7\xE3o in\xE9dita.\n## Desempenho\nContra Gana, o Panam\xE1 equilibrou as a\xE7\xF5es, mas faltou pontaria no ataque e o time acabou batido por 1 a 0. A equipe se defendeu bem por boa parte do jogo, mas n\xE3o conseguiu transformar suas chances em gol. Ficou a sensa\xE7\xE3o de que dava para sair com um resultado melhor.\n## N\xFAmeros\nJ1 \xB7 1 derrota \xB7 0 gols marcados \xB7 1 sofrido (SG -1), em 3\xBA no Grupo L. Pr\xF3ximos desafios: Cro\xE1cia (23/06) e Inglaterra (27/06) \u2014 vencer a Cro\xE1cia \xE9 fundamental para manter vivas as esperan\xE7as.",
-    updatedAt: "2026-06-17T23:00:00.000Z"
+    text: "## Leitura\nO Panam\xE1 de Thomas Christiansen teve uma campanha dura no Grupo L e est\xE1 eliminado. Depois de perder para Gana, voltou a ser batido, desta vez pela Cro\xE1cia por 1 a 0, e segue sem pontos nem gols marcados. Apesar da entrega, faltou poder de fogo aos panamenhos, que se despedem antes da hora de uma classifica\xE7\xE3o in\xE9dita.\n## Desempenho\nContra a Cro\xE1cia, o Panam\xE1 equilibrou as a\xE7\xF5es, mas voltou a esbarrar na pr\xF3pria falta de pontaria e cedeu o gol de Ante Budimir aos 54 minutos, perdendo por 1 a 0. Repetiu o roteiro da estreia: competitivo e organizado, mas incapaz de transformar volume em gols.\n## N\xFAmeros\nJ2 \xB7 2 derrotas \xB7 0 gols marcados \xB7 2 sofridos (SG -2) \xB7 lanterna do Grupo L, sem pontos e eliminado. Pr\xF3ximo desafio: Inglaterra (27/06) \u2014 jogo apenas para cumprir tabela.",
+    updatedAt: "2026-06-24T09:06:00-03:00"
   },
   CRO: {
-    text: "## Leitura\nA Cro\xE1cia de Zlatko Dali\u0107 come\xE7ou o Mundial com o p\xE9 esquerdo no Grupo L. Foi derrotada pela Inglaterra por 4 a 2, expondo a fragilidade de uma defesa que sofreu demais. A vice-campe\xE3 de 2018, ainda apoiada na experi\xEAncia de Luka Modri\u0107, precisa reagir com urg\xEAncia para n\xE3o dar adeus precocemente a mais uma Copa.\n## Desempenho\nDiante da Inglaterra, a Cro\xE1cia at\xE9 marcou duas vezes, com Martin Baturina e Petar Musa, mostrando poder de rea\xE7\xE3o, mas a defesa n\xE3o segurou o ataque ingl\xEAs e o time levou quatro gols. Faltou equil\xEDbrio: o ataque produziu, mas a fragilidade defensiva custou caro num jogo aberto.\n## N\xFAmeros\nJ1 \xB7 1 derrota \xB7 2 gols marcados \xB7 4 sofridos (SG -2) \xB7 lanterna do Grupo L. Pr\xF3ximos desafios: Panam\xE1 (23/06) e Gana (27/06) \u2014 vencer o Panam\xE1 \xE9 obrigat\xF3rio para seguir vivo no torneio.",
-    updatedAt: "2026-06-17T20:00:00.000Z"
+    text: "## Leitura\nA Cro\xE1cia de Zlatko Dali\u0107 reagiu na hora certa e segue viva no Grupo L. Depois da derrota na estreia para a Inglaterra, venceu o Panam\xE1 por 1 a 0 e chegou aos 3 pontos, recolocando-se na briga pela vaga. A vice-campe\xE3 de 2018, apoiada na experi\xEAncia de Luka Modri\u0107, agora depende de um bom resultado contra Gana para avan\xE7ar.\n## Desempenho\nDiante do Panam\xE1, a Cro\xE1cia foi mais objetiva e premiada pela insist\xEAncia: Ante Budimir marcou aos 54 minutos e garantiu o 1 a 0. Ap\xF3s a defesa fr\xE1gil da estreia (4 gols sofridos contra a Inglaterra), a equipe equilibrou-se, segurou o resultado e somou uma vit\xF3ria que reanimou suas esperan\xE7as.\n## N\xFAmeros\nJ2 \xB7 1 vit\xF3ria \xB7 1 derrota \xB7 3 gols marcados \xB7 4 sofridos (SG -1), em 3\xBA no Grupo L com 3 pontos. Pr\xF3ximo desafio: Gana (27/06) \u2014 precisa vencer para alcan\xE7ar as oitavas.",
+    updatedAt: "2026-06-24T09:06:00-03:00"
   },
   FRA: {
     text: "## Leitura\nA Fran\xE7a de Didier Deschamps estreou com autoridade no Grupo I e confirmou o favoritismo. Bateu o Senegal por 3 a 1 num jogo em que Kylian Mbapp\xE9 brilhou com dois gols, mostrando todo o poderio de um elenco recheado de estrelas. Vice-l\xEDder apenas pelo saldo, atr\xE1s da Noruega, a sele\xE7\xE3o francesa larga como uma das grandes candidatas ao t\xEDtulo e j\xE1 d\xE1 passos firmes rumo \xE0s oitavas.\n## Desempenho\nDiante do Senegal, a Fran\xE7a foi eficiente e contou com a genialidade de Mbapp\xE9, autor de dois gols, al\xE9m de Barcola. O time controlou as a\xE7\xF5es, soube sofrer nos momentos de press\xE3o senegalesa e construiu uma vit\xF3ria tranquila por 3 a 1. A qualidade individual fez a diferen\xE7a, como de costume.\n## N\xFAmeros\nJ1 \xB7 1 vit\xF3ria \xB7 3 gols marcados \xB7 1 sofrido (SG +2), em 2\xBA no Grupo I, atr\xE1s da Noruega pelo saldo. Artilheiro: Kylian Mbapp\xE9 (2 gols). Pr\xF3ximos desafios: Iraque (22/06) e Noruega (26/06) \u2014 este \xFAltimo, um duelo de l\xEDderes.",
@@ -25446,6 +25448,599 @@ function isAnalysisUpToDate(analysisUpdatedAt, lastEventDate) {
   return stampTime >= eventTime;
 }
 
+// src/data/matchDisciplinary.json
+var matchDisciplinary_default = {
+  "arg-aut-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "aus-tur-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "aut-jor-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "bel-egy-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "bel-irn-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 1,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "bra-hai-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "bra-mar-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "can-bih-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "can-qat-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 2,
+      yellowAndDirectRed: 0
+    }
+  },
+  "civ-ecu-2026": {
+    teamA: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "col-cod-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "cze-rsa-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ecu-cuw-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 5,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "eng-gha-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "esp-cpv-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "esp-ksa-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "fra-irq-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "gha-pan-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "hai-sco-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "irn-nzl-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "irq-nor-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "jor-alg-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "kor-cze-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ksa-uru-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "mex-kor-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "mex-rsa-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 1,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 2,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ned-jpn-2026": {
+    teamA: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ned-swe-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "nzl-egy-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "pan-cro-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "por-cod-2026": {
+    teamA: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "por-uzb-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "qat-sui-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "sco-mar-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "sui-bih-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 1,
+      yellowAndDirectRed: 0
+    }
+  },
+  "swe-tun-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "tur-par-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 1,
+      yellowAndDirectRed: 0
+    }
+  },
+  "uru-cpv-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "usa-aus-2026": {
+    teamA: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 4,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "usa-par-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 5,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "uzb-col-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  }
+};
+
+// src/disciplinary.ts
+var DATA = matchDisciplinary_default;
+var WEIGHT_YELLOW = -1;
+var WEIGHT_SECOND_YELLOW = -3;
+var WEIGHT_DIRECT_RED = -4;
+var WEIGHT_YELLOW_AND_DIRECT_RED = -5;
+function fairPlayPointsFromCounts(counts) {
+  const total = counts.yellow * WEIGHT_YELLOW + counts.secondYellow * WEIGHT_SECOND_YELLOW + counts.directRed * WEIGHT_DIRECT_RED + counts.yellowAndDirectRed * WEIGHT_YELLOW_AND_DIRECT_RED;
+  return total || 0;
+}
+function fairPlayPointsForSide(matchId, side) {
+  const counts = DATA[matchId]?.[side];
+  return counts ? fairPlayPointsFromCounts(counts) : 0;
+}
+
 // src/standings.ts
 var POINTS_FOR_WIN = 3;
 var POINTS_FOR_DRAW = 1;
@@ -25477,7 +26072,8 @@ function createSeedRowFromMatchTeam(team2) {
     goalsFor: 0,
     goalsAgainst: 0,
     goalDifference: 0,
-    dataSource: "seed"
+    dataSource: "seed",
+    fairPlayPoints: 0
   };
 }
 function getCanonicalSeedStandings(matches = APP_MATCHES) {
@@ -25509,6 +26105,7 @@ function computeStandings(matches = APP_MATCHES) {
     canonicalSeedStandings.map((row) => [row.code, row.group])
   );
   const tallies = /* @__PURE__ */ new Map();
+  const fairPlay = /* @__PURE__ */ new Map();
   for (const match of matches) {
     if (!countsForStandings(match, groupByCode)) continue;
     const tallyA = tallies.get(match.teamA.code) ?? emptyTally();
@@ -25517,6 +26114,14 @@ function computeStandings(matches = APP_MATCHES) {
     addResult(tallyB, match.score.teamB, match.score.teamA);
     tallies.set(match.teamA.code, tallyA);
     tallies.set(match.teamB.code, tallyB);
+    fairPlay.set(
+      match.teamA.code,
+      (fairPlay.get(match.teamA.code) ?? 0) + fairPlayPointsForSide(match.id, "teamA")
+    );
+    fairPlay.set(
+      match.teamB.code,
+      (fairPlay.get(match.teamB.code) ?? 0) + fairPlayPointsForSide(match.id, "teamB")
+    );
   }
   return canonicalSeedStandings.map((row) => {
     const tally = tallies.get(row.code);
@@ -25526,6 +26131,7 @@ function computeStandings(matches = APP_MATCHES) {
       ...tally,
       goalDifference: tally.goalsFor - tally.goalsAgainst,
       points: tally.won * POINTS_FOR_WIN + tally.drawn * POINTS_FOR_DRAW,
+      fairPlayPoints: fairPlay.get(row.code) ?? 0,
       dataSource: "result"
     };
   });
@@ -25640,7 +26246,7 @@ function cmpH2H(a, b) {
 }
 function sortByOverall(rows) {
   return [...rows].sort(
-    (a, b) => b.goalDifference - a.goalDifference || b.goalsFor - a.goalsFor
+    (a, b) => b.goalDifference - a.goalDifference || b.goalsFor - a.goalsFor || b.fairPlayPoints - a.fairPlayPoints
   );
 }
 function sortSubcluster(rows, matches) {
