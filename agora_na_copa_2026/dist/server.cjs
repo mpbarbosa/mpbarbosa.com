@@ -5057,7 +5057,7 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c2722c3-a70b-49d8-bdb4-77109161f533/VINICIUS-JUNIOR_405742",
     instagramPostUrl: "https://www.instagram.com/p/DZjBZ9UjVG6/",
-    worldCupNote: "## Leitura\nIn\xEDcio consistente e produtivo. Vini divide a artilharia da sele\xE7\xE3o e foi pe\xE7a da recupera\xE7\xE3o ap\xF3s a estreia travada contra Marrocos. Com o Brasil j\xE1 em vantagem no grupo, ele entra contra a Esc\xF3cia em boa fase, podendo assumir a artilharia isolada e encaminhar a classifica\xE7\xE3o.\n## Desempenho\n2 gols em 2 jogos: come\xE7ou decisivo e \xE9 artilheiro do Brasil ao lado de Igor Jesus (2 a 2). Participou da rea\xE7\xE3o que goleou o Haiti por 3 a 0 ap\xF3s o empate em 1 a 1 com Marrocos. Substitu\xEDdo uma vez (poupado) e com ficha limpa \u2014 0 cart\xF5es.\n## N\xFAmeros\nJ2 \xB7 2 gols \xB7 0 cart\xF5es \xB7 1 substitui\xE7\xE3o (sa\xEDda). Brasil em 1\xBA lugar, com 4 pontos (1 vit\xF3ria, 1 empate), 4 gols marcados e 1 sofrido \u2014 Vini responde por metade dos gols da sele\xE7\xE3o na competi\xE7\xE3o.",
+    worldCupNote: "## Leitura\nIn\xEDcio consistente e produtivo. Vini divide a artilharia da sele\xE7\xE3o e foi pe\xE7a da recupera\xE7\xE3o ap\xF3s a estreia travada contra Marrocos. Com o Brasil j\xE1 em vantagem no grupo, ele entra contra a Esc\xF3cia em boa fase, podendo assumir a artilharia isolada e encaminhar a classifica\xE7\xE3o.\n## Desempenho\n2 gols em 2 jogos: come\xE7ou decisivo e \xE9 artilheiro do Brasil ao lado de Matheus Cunha (2 a 2). Participou da rea\xE7\xE3o que goleou o Haiti por 3 a 0 ap\xF3s o empate em 1 a 1 com Marrocos. Substitu\xEDdo uma vez (poupado) e com ficha limpa \u2014 0 cart\xF5es.\n## N\xFAmeros\nJ2 \xB7 2 gols \xB7 0 cart\xF5es \xB7 1 substitui\xE7\xE3o (sa\xEDda). Brasil em 1\xBA lugar, com 4 pontos (1 vit\xF3ria, 1 empate), 4 gols marcados e 1 sofrido \u2014 Vini responde por metade dos gols da sele\xE7\xE3o na competi\xE7\xE3o.",
     worldCupNoteUpdatedAt: "2026-06-20T00:30:00.000Z",
     dateOfBirth: "2000-07-12",
     height: 176,
@@ -17975,22 +17975,6 @@ var squads_default = {
       instagram: "aminesbai10",
       wikipedia: "https://en.wikipedia.org/wiki/Amine_Sba%C3%AF"
     }
-  },
-  "1443021717": {
-    fifaId: "1443021717",
-    teamCode: "BRA",
-    name: "Igor Jesus",
-    fullName: "Igor Jesus",
-    number: 9,
-    position: "FW",
-    club: "Nottingham Forest",
-    pictureUrl: "https://digitalhub.fifa.com/transform/a3fba875-a9c9-4d5b-aa92-ff7319d1177a/1443021717",
-    socials: {
-      instagram: "igorjesus0"
-    },
-    instagramPostUrl: "https://www.instagram.com/p/DZMvpiQCP7q/",
-    worldCupNote: "## Leitura\nGrande surpresa positiva da Amarelinha. Pouco badalado antes do torneio, Igor Jesus aproveitou as oportunidades e j\xE1 \xE9 coartilheiro do Brasil, eficiente mesmo em minutagem fracionada. Contra a Esc\xF3cia, briga para manter a sequ\xEAncia goleadora e firmar a vaga no ataque.\n## Desempenho\n2 gols em 2 jogos, dividindo a artilharia do Brasil com Vin\xEDcius J\xFAnior (2 a 2). Decisivo em papel de rota\xE7\xE3o \u2014 entrou como substituto em um jogo e foi substitu\xEDdo em outro \u2014, marcando mesmo sem ser presen\xE7a fixa nos 90 minutos. Ficha limpa: 0 cart\xF5es.\n## N\xFAmeros\nJ2 \xB7 2 gols \xB7 0 cart\xF5es \xB7 1 entrada + 1 sa\xEDda (substitui\xE7\xF5es). Brasil em 1\xBA lugar com 4 pontos e 4 gols marcados \u2014 Igor Jesus responde por metade deles.",
-    worldCupNoteUpdatedAt: "2026-06-20T00:30:00.000Z"
   }
 };
 
@@ -20052,15 +20036,15 @@ var matches_default = [
         },
         {
           id: "b11",
-          name: "Igor Jesus",
+          name: "Matheus Cunha",
           number: 9,
           position: "FW",
           x: 50,
           y: 10,
-          club: "Botafogo",
-          pictureUrl: "https://digitalhub.fifa.com/transform/a3fba875-a9c9-4d5b-aa92-ff7319d1177a/1443021717",
+          club: "Wolverhampton",
+          pictureUrl: "https://digitalhub.fifa.com/transform/9189da72-e1b5-4e7b-800d-7eeca119f08c/MATHEUS-CUNHA_430609",
           socials: {
-            instagram: "https://instagram.com/igorjesus0"
+            instagram: "https://instagram.com/cunha"
           }
         },
         {
@@ -24725,7 +24709,7 @@ var FIFA_SCHEDULED_MATCHES = [
   // ── Grupo L ───────────────────────────────────────────────────────────────
   { teamA: "ENG", teamB: "CRO", kickoffTimestamp: "2026-06-17T17:00:00-03:00", status: "FINISHED", score: { teamA: 4, teamB: 2 }, ...v("ENG", "CRO") },
   { teamA: "GHA", teamB: "PAN", kickoffTimestamp: "2026-06-17T20:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 0 }, ...v("GHA", "PAN") },
-  { teamA: "ENG", teamB: "GHA", kickoffTimestamp: "2026-06-23T17:00:00-03:00", status: "PRE_GAME", ...v("ENG", "GHA") },
+  { teamA: "ENG", teamB: "GHA", kickoffTimestamp: "2026-06-23T17:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 0 }, ...v("ENG", "GHA") },
   { teamA: "PAN", teamB: "CRO", kickoffTimestamp: "2026-06-23T20:00:00-03:00", status: "PRE_GAME", ...v("PAN", "CRO") },
   { teamA: "CRO", teamB: "GHA", kickoffTimestamp: "2026-06-27T18:00:00-03:00", status: "PRE_GAME", ...v("CRO", "GHA") },
   { teamA: "PAN", teamB: "ENG", kickoffTimestamp: "2026-06-27T18:00:00-03:00", status: "PRE_GAME", ...v("PAN", "ENG") }
