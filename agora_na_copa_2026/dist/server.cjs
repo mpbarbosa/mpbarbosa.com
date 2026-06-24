@@ -19915,21 +19915,20 @@ var matches_default = [
           club: "Liverpool",
           pictureUrl: "https://digitalhub.fifa.com/transform/6b051628-d407-41ce-8a60-dc354ac4ccb8/ALISSON_308370",
           socials: {
-            instagram: "https://instagram.com/alisson_becker",
-            instagramPostUrl: "https://www.instagram.com/p/DZRPjhwFGT-/?img_index=1"
+            instagram: "https://instagram.com/alissonbecker"
           }
         },
         {
           id: "b2",
-          name: "Danilo",
-          number: 13,
+          name: "Douglas Santos",
+          number: 16,
           position: "DF",
           x: 15,
-          y: 70,
-          club: "Juventus",
-          pictureUrl: "https://digitalhub.fifa.com/transform/364f443f-83df-4e8e-803c-765feae146a3/DANILO_335656",
+          y: 72,
+          club: "FC Zenit Saint Petersburg",
+          pictureUrl: "https://digitalhub.fifa.com/transform/7cef9b58-da05-42ba-afe9-aebcd4d40a0e/DOUGLAS-SANTOS_367981",
           socials: {
-            instagram: "https://instagram.com/danilo"
+            instagram: "https://instagram.com/douglassantos06"
           }
         },
         {
@@ -19942,7 +19941,7 @@ var matches_default = [
           club: "PSG",
           pictureUrl: "https://digitalhub.fifa.com/transform/30069661-f88d-4ff7-9c4e-071a5cf3c093/MARQUINHOS_332946",
           socials: {
-            instagram: "https://instagram.com/marquinhos_m5"
+            instagram: "https://instagram.com/marquinhosm5"
           }
         },
         {
@@ -19955,79 +19954,68 @@ var matches_default = [
           club: "Arsenal",
           pictureUrl: "https://digitalhub.fifa.com/transform/b5870a76-5391-40b7-a348-e2b17995637b/GABRIEL-MAGALHAES_430601",
           socials: {
-            instagram: "https://instagram.com/gmagalhaes4"
+            instagram: "https://instagram.com/_gabrielmagalhaes"
           }
         },
         {
           id: "b5",
-          name: "Abner",
-          number: 6,
+          name: "Roger Iba\xF1ez",
+          number: 24,
           position: "DF",
           x: 85,
-          y: 70,
-          club: "Lyon",
+          y: 72,
+          club: "Al-Ahli",
+          pictureUrl: "https://digitalhub.fifa.com/transform/0b88bb57-5b4b-448f-9af1-44869f36172a/ROGER-IBANEZ_430594",
           socials: {
-            instagram: "https://instagram.com/abner_vinicius6"
+            instagram: "https://instagram.com/ibanez41oficial"
           }
         },
         {
           id: "b6",
-          name: "B. Guimar\xE3es",
-          number: 8,
+          name: "Casemiro",
+          number: 5,
           position: "MF",
-          x: 30,
-          y: 45,
-          club: "Newcastle",
-          pictureUrl: "https://digitalhub.fifa.com/transform/0215cb23-c389-4c5a-9bb0-c7044ae7059a/BRUNO-GUIMARAES_430605",
+          x: 50,
+          y: 52,
+          club: "Manchester United",
+          pictureUrl: "https://digitalhub.fifa.com/transform/49558d20-3d5d-4afb-bf2a-9dc1ab60a6e6/CASEMIRO_308386",
           socials: {
-            instagram: "https://instagram.com/brunoguimaraes97"
+            instagram: "https://instagram.com/casemiro"
           }
         },
         {
           id: "b7",
-          name: "Jo\xE3o Gomes",
-          number: 15,
+          name: "B. Guimar\xE3es",
+          number: 8,
           position: "MF",
-          x: 70,
-          y: 45,
-          club: "Wolverhampton",
+          x: 30,
+          y: 44,
+          club: "Newcastle",
+          pictureUrl: "https://digitalhub.fifa.com/transform/0215cb23-c389-4c5a-9bb0-c7044ae7059a/BRUNO-GUIMARAES_430605",
           socials: {
-            instagram: "https://instagram.com/joaogomes08"
+            instagram: "https://instagram.com/brunoguimaraes"
           }
         },
         {
           id: "b8",
-          name: "Raphinha",
-          number: 11,
-          position: "FW",
-          x: 15,
-          y: 22,
-          club: "Barcelona",
-          pictureUrl: "https://digitalhub.fifa.com/transform/b4def0b2-7d6f-4f3a-bcde-600b292096d6/RAPHINHA_433872",
+          name: "Paquet\xE1",
+          number: 20,
+          position: "MF",
+          x: 70,
+          y: 44,
+          club: "West Ham",
+          pictureUrl: "https://digitalhub.fifa.com/transform/7d7fce96-8d80-43c3-aa72-c45c44d370c5/LUCAS-PAQUETA_411726",
           socials: {
-            instagram: "https://instagram.com/raphainha"
+            instagram: "https://instagram.com/lucaspaqueta"
           }
         },
         {
           id: "b9",
-          name: "Rodrygo",
-          number: 21,
-          position: "FW",
-          x: 50,
-          y: 28,
-          club: "Real Madrid",
-          pictureUrl: "https://digitalhub.fifa.com/transform/f03a612a-1563-4fd2-93d4-85f2b53da0b3/1443021592",
-          socials: {
-            instagram: "https://instagram.com/rodrygogoes"
-          }
-        },
-        {
-          id: "b10",
           name: "Vinicius Jr",
           number: 7,
           position: "FW",
-          x: 85,
-          y: 22,
+          x: 15,
+          y: 20,
           club: "Real Madrid",
           pictureUrl: "https://digitalhub.fifa.com/transform/1c2722c3-a70b-49d8-bdb4-77109161f533/VINICIUS-JUNIOR_405742",
           socials: {
@@ -20035,53 +20023,29 @@ var matches_default = [
           }
         },
         {
-          id: "b11",
-          name: "Matheus Cunha",
-          number: 9,
+          id: "b10",
+          name: "Igor Thiago",
+          number: 25,
           position: "FW",
           x: 50,
-          y: 10,
-          club: "Wolverhampton",
-          pictureUrl: "https://digitalhub.fifa.com/transform/9189da72-e1b5-4e7b-800d-7eeca119f08c/MATHEUS-CUNHA_430609",
+          y: 15,
+          club: "Club Brugge",
+          pictureUrl: "https://digitalhub.fifa.com/transform/d547cc13-69d0-4204-91bf-baf63bbb7328/IGOR-THIAGO_519836",
           socials: {
-            instagram: "https://instagram.com/cunha"
+            instagram: "https://instagram.com/thiago01"
           }
         },
         {
-          id: "b14",
-          name: "Gabriel Jesus",
-          number: 23,
-          position: "FW",
-          x: 15,
-          y: 10,
-          club: "Arsenal",
-          socials: {
-            instagram: "https://instagram.com/gabrieljesus9"
-          }
-        },
-        {
-          id: "b13",
-          name: "Vitinho",
-          number: 22,
+          id: "b11",
+          name: "Raphinha",
+          number: 11,
           position: "FW",
           x: 85,
-          y: 10,
-          club: "Flamengo",
+          y: 20,
+          club: "Barcelona",
+          pictureUrl: "https://digitalhub.fifa.com/transform/b4def0b2-7d6f-4f3a-bcde-600b292096d6/RAPHINHA_433872",
           socials: {
-            instagram: "https://instagram.com/vitao_oficial"
-          }
-        },
-        {
-          id: "b12",
-          name: "Neymar Jr",
-          number: 10,
-          position: "FW",
-          x: 15,
-          y: 10,
-          club: "Al Hilal",
-          pictureUrl: "https://digitalhub.fifa.com/transform/4f7b2e5a-1c3d-4a8b-9e6f-2d5c7b3e1a4f/NEYMAR-Jr_190460",
-          socials: {
-            instagram: "https://instagram.com/neymarjr"
+            instagram: "https://instagram.com/raphinha"
           }
         }
       ]
