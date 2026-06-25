@@ -18740,8 +18740,8 @@ function parseOpenMeteoCurrent(raw) {
 }
 
 // presence-core.ts
-function recordHeartbeat(store, id, nowMs) {
-  if (id) store.set(id, nowMs);
+function recordHeartbeat(store, key, nowMs) {
+  if (key) store.set(key, nowMs);
 }
 function countOnline(store, nowMs, windowMs) {
   let online = 0;
@@ -27944,9 +27944,11 @@ var PRESENCE_WINDOW_MS = 45 * 1e3;
 var presenceStore = /* @__PURE__ */ new Map();
 app.post("/api/presence", (req, res) => {
   const now = Date.now();
+  const ip = req.ip ?? "";
   const rawId = req.body?.id;
-  const id = typeof rawId === "string" ? rawId.slice(0, 64) : "";
-  recordHeartbeat(presenceStore, id, now);
+  const clientId = typeof rawId === "string" ? rawId.slice(0, 64) : "";
+  const key = clientId ? `${ip}|${clientId}` : ip;
+  recordHeartbeat(presenceStore, key, now);
   res.set("Cache-Control", "no-store");
   res.json({
     online: countOnline(presenceStore, now, PRESENCE_WINDOW_MS),
