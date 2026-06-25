@@ -18755,6 +18755,90 @@ function countOnline(store, nowMs, windowMs) {
   return online;
 }
 
+// chat-core.ts
+var CHAT_LIMITS = {
+  /** Max characters in a nickname (clamped, then validated non-empty). */
+  maxNicknameLength: 24,
+  /** Max characters in a message body. */
+  maxTextLength: 280,
+  /** Max retained messages per match; older ones are FIFO-evicted. */
+  maxMessagesPerMatch: 200,
+  /** Minimum gap between two posts from the same client. */
+  minGapMs: 3e3,
+  /** Max posts per client within the trailing 60s window. */
+  perMinute: 15
+};
+var CONTROL_CHARS = /[\x00-\x1f\x7f]/g;
+var URL_PATTERN = /(https?:\/\/|www\.|\b[a-z0-9-]+\.[a-z]{2,}(?:\/|\b))/i;
+var valid = (value) => ({ ok: true, value, reason: "" });
+var invalid = (reason) => ({ ok: false, value: "", reason });
+function clean(raw) {
+  return raw.replace(CONTROL_CHARS, " ").replace(/\s+/g, " ").trim();
+}
+function validateNickname(raw) {
+  if (typeof raw !== "string") return invalid("Apelido inv\xE1lido.");
+  const cleaned = clean(raw).slice(0, CHAT_LIMITS.maxNicknameLength);
+  if (!cleaned) return invalid("Escolha um apelido para participar.");
+  if (URL_PATTERN.test(cleaned)) return invalid("O apelido n\xE3o pode conter links.");
+  return valid(cleaned);
+}
+function validateText(raw) {
+  if (typeof raw !== "string") return invalid("Mensagem inv\xE1lida.");
+  const cleaned = clean(raw);
+  if (!cleaned) return invalid("Digite uma mensagem.");
+  if (cleaned.length > CHAT_LIMITS.maxTextLength) {
+    return invalid(`A mensagem passa de ${CHAT_LIMITS.maxTextLength} caracteres.`);
+  }
+  if (URL_PATTERN.test(cleaned)) return invalid("A mensagem n\xE3o pode conter links.");
+  return valid(cleaned);
+}
+function passesRateLimit(rateMap, key, nowMs, limits = CHAT_LIMITS) {
+  if (!key) return false;
+  const recent = (rateMap.get(key) ?? []).filter((t) => nowMs - t < 6e4);
+  const last = recent[recent.length - 1];
+  if (last !== void 0 && nowMs - last < limits.minGapMs) {
+    rateMap.set(key, recent);
+    return false;
+  }
+  if (recent.length >= limits.perMinute) {
+    rateMap.set(key, recent);
+    return false;
+  }
+  recent.push(nowMs);
+  rateMap.set(key, recent);
+  return true;
+}
+function appendMessage(store, matchId, fields, nowMs, maxPerMatch = CHAT_LIMITS.maxMessagesPerMatch) {
+  const buffer = store.get(matchId) ?? [];
+  const lastId = buffer.length ? buffer[buffer.length - 1].id : 0;
+  const message = {
+    id: lastId + 1,
+    nickname: fields.nickname,
+    text: fields.text,
+    at: nowMs
+  };
+  buffer.push(message);
+  if (buffer.length > maxPerMatch) buffer.splice(0, buffer.length - maxPerMatch);
+  store.set(matchId, buffer);
+  return message;
+}
+function getMessages(store, matchId, sinceId) {
+  const buffer = store.get(matchId) ?? [];
+  if (sinceId === void 0) return buffer.slice();
+  return buffer.filter((m) => m.id > sinceId);
+}
+function pruneIdleMatches(store, liveIds) {
+  const live = new Set(liveIds);
+  let removed = 0;
+  for (const matchId of store.keys()) {
+    if (!live.has(matchId)) {
+      store.delete(matchId);
+      removed += 1;
+    }
+  }
+  return removed;
+}
+
 // src/matches.json
 var matches_default = [
   {
@@ -24956,6 +25040,406 @@ var sf = Array.from({ length: 2 }, (_, i) => ({
 var final = [{ id: "F-1", stage: "F" }];
 var bracket = [...r32, ...r16, ...qf, ...sf, ...final];
 
+// src/data/knockoutBracket.json
+var knockoutBracket_default = {
+  matches: [
+    {
+      matchNumber: 73,
+      stage: "R32",
+      dateUtc: "2026-06-28T19:00:00Z",
+      stadium: "Los Angeles Stadium",
+      city: "Los Angeles",
+      slotA: "2A",
+      slotB: "2B",
+      teamA: null,
+      teamB: {
+        code: "CAN",
+        name: "Canada"
+      }
+    },
+    {
+      matchNumber: 74,
+      stage: "R32",
+      dateUtc: "2026-06-29T20:30:00Z",
+      stadium: "Boston Stadium",
+      city: "Boston",
+      slotA: "1E",
+      slotB: "3ABCDF",
+      teamA: {
+        code: "GER",
+        name: "Germany"
+      },
+      teamB: null
+    },
+    {
+      matchNumber: 75,
+      stage: "R32",
+      dateUtc: "2026-06-30T01:00:00Z",
+      stadium: "Monterrey Stadium",
+      city: "Monterrey",
+      slotA: "1F",
+      slotB: "2C",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 76,
+      stage: "R32",
+      dateUtc: "2026-06-29T17:00:00Z",
+      stadium: "Houston Stadium",
+      city: "Houston",
+      slotA: "1C",
+      slotB: "2F",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 77,
+      stage: "R32",
+      dateUtc: "2026-06-30T21:00:00Z",
+      stadium: "New York/New Jersey Stadium",
+      city: "New Jersey",
+      slotA: "1I",
+      slotB: "3CDFGH",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 78,
+      stage: "R32",
+      dateUtc: "2026-06-30T17:00:00Z",
+      stadium: "Dallas Stadium",
+      city: "Dallas",
+      slotA: "2E",
+      slotB: "2I",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 79,
+      stage: "R32",
+      dateUtc: "2026-07-01T01:00:00Z",
+      stadium: "Mexico City Stadium",
+      city: "Mexico City",
+      slotA: "1A",
+      slotB: "3CEFHI",
+      teamA: {
+        code: "MEX",
+        name: "Mexico"
+      },
+      teamB: null
+    },
+    {
+      matchNumber: 80,
+      stage: "R32",
+      dateUtc: "2026-07-01T16:00:00Z",
+      stadium: "Atlanta Stadium",
+      city: "Atlanta",
+      slotA: "1L",
+      slotB: "3EHIJK",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 81,
+      stage: "R32",
+      dateUtc: "2026-07-02T00:00:00Z",
+      stadium: "San Francisco Bay Area Stadium",
+      city: "San Francisco Bay Area",
+      slotA: "1D",
+      slotB: "3BEFIJ",
+      teamA: {
+        code: "USA",
+        name: "USA"
+      },
+      teamB: null
+    },
+    {
+      matchNumber: 82,
+      stage: "R32",
+      dateUtc: "2026-07-01T20:00:00Z",
+      stadium: "Seattle Stadium",
+      city: "Seattle",
+      slotA: "1G",
+      slotB: "3AEHIJ",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 83,
+      stage: "R32",
+      dateUtc: "2026-07-02T23:00:00Z",
+      stadium: "Toronto Stadium",
+      city: "Toronto",
+      slotA: "2K",
+      slotB: "2L",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 84,
+      stage: "R32",
+      dateUtc: "2026-07-02T19:00:00Z",
+      stadium: "Los Angeles Stadium",
+      city: "Los Angeles",
+      slotA: "1H",
+      slotB: "2J",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 85,
+      stage: "R32",
+      dateUtc: "2026-07-03T03:00:00Z",
+      stadium: "BC Place Vancouver",
+      city: "Vancouver",
+      slotA: "1B",
+      slotB: "3EFGIJ",
+      teamA: {
+        code: "SUI",
+        name: "Switzerland"
+      },
+      teamB: null
+    },
+    {
+      matchNumber: 86,
+      stage: "R32",
+      dateUtc: "2026-07-03T22:00:00Z",
+      stadium: "Miami Stadium",
+      city: "Miami",
+      slotA: "1J",
+      slotB: "2H",
+      teamA: {
+        code: "ARG",
+        name: "Argentina"
+      },
+      teamB: null
+    },
+    {
+      matchNumber: 87,
+      stage: "R32",
+      dateUtc: "2026-07-04T01:30:00Z",
+      stadium: "Kansas City Stadium",
+      city: "Kansas City",
+      slotA: "1K",
+      slotB: "3DEIJL",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 88,
+      stage: "R32",
+      dateUtc: "2026-07-03T18:00:00Z",
+      stadium: "Dallas Stadium",
+      city: "Dallas",
+      slotA: "2D",
+      slotB: "2G",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 89,
+      stage: "R16",
+      dateUtc: "2026-07-04T21:00:00Z",
+      stadium: "Philadelphia Stadium",
+      city: "Philadelphia",
+      slotA: "W74",
+      slotB: "W77",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 90,
+      stage: "R16",
+      dateUtc: "2026-07-04T17:00:00Z",
+      stadium: "Houston Stadium",
+      city: "Houston",
+      slotA: "W73",
+      slotB: "W75",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 91,
+      stage: "R16",
+      dateUtc: "2026-07-05T20:00:00Z",
+      stadium: "New York/New Jersey Stadium",
+      city: "New Jersey",
+      slotA: "W76",
+      slotB: "W78",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 92,
+      stage: "R16",
+      dateUtc: "2026-07-06T00:00:00Z",
+      stadium: "Mexico City Stadium",
+      city: "Mexico City",
+      slotA: "W79",
+      slotB: "W80",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 93,
+      stage: "R16",
+      dateUtc: "2026-07-06T19:00:00Z",
+      stadium: "Dallas Stadium",
+      city: "Dallas",
+      slotA: "W83",
+      slotB: "W84",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 94,
+      stage: "R16",
+      dateUtc: "2026-07-07T00:00:00Z",
+      stadium: "Seattle Stadium",
+      city: "Seattle",
+      slotA: "W81",
+      slotB: "W82",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 95,
+      stage: "R16",
+      dateUtc: "2026-07-07T16:00:00Z",
+      stadium: "Atlanta Stadium",
+      city: "Atlanta",
+      slotA: "W86",
+      slotB: "W88",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 96,
+      stage: "R16",
+      dateUtc: "2026-07-07T20:00:00Z",
+      stadium: "BC Place Vancouver",
+      city: "Vancouver",
+      slotA: "W85",
+      slotB: "W87",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 97,
+      stage: "QF",
+      dateUtc: "2026-07-09T20:00:00Z",
+      stadium: "Boston Stadium",
+      city: "Boston",
+      slotA: "W89",
+      slotB: "W90",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 98,
+      stage: "QF",
+      dateUtc: "2026-07-10T19:00:00Z",
+      stadium: "Los Angeles Stadium",
+      city: "Los Angeles",
+      slotA: "W93",
+      slotB: "W94",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 99,
+      stage: "QF",
+      dateUtc: "2026-07-11T21:00:00Z",
+      stadium: "Miami Stadium",
+      city: "Miami",
+      slotA: "W91",
+      slotB: "W92",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 100,
+      stage: "QF",
+      dateUtc: "2026-07-12T01:00:00Z",
+      stadium: "Kansas City Stadium",
+      city: "Kansas City",
+      slotA: "W95",
+      slotB: "W96",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 101,
+      stage: "SF",
+      dateUtc: "2026-07-14T19:00:00Z",
+      stadium: "Dallas Stadium",
+      city: "Dallas",
+      slotA: "W97",
+      slotB: "W98",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 102,
+      stage: "SF",
+      dateUtc: "2026-07-15T19:00:00Z",
+      stadium: "Atlanta Stadium",
+      city: "Atlanta",
+      slotA: "W99",
+      slotB: "W100",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 103,
+      stage: "TP",
+      dateUtc: "2026-07-18T21:00:00Z",
+      stadium: "Miami Stadium",
+      city: "Miami",
+      slotA: "RU101",
+      slotB: "RU102",
+      teamA: null,
+      teamB: null
+    },
+    {
+      matchNumber: 104,
+      stage: "F",
+      dateUtc: "2026-07-19T19:00:00Z",
+      stadium: "New York/New Jersey Stadium",
+      city: "New Jersey",
+      slotA: "W101",
+      slotB: "W102",
+      teamA: null,
+      teamB: null
+    }
+  ]
+};
+
+// src/data/knockoutBracket.ts
+var KNOCKOUT_MATCHES = knockoutBracket_default.matches;
+
+// src/utils/knockoutSlots.ts
+function humanizeSlot(slot) {
+  const groupPos = slot.match(/^([12])([A-L])$/);
+  if (groupPos) return `${groupPos[1]}\xBA ${groupPos[2]}`;
+  const bestThird = slot.match(/^3([A-L]{2,})$/);
+  if (bestThird) return `3\xBA ${bestThird[1].split("").join("/")}`;
+  const winner = slot.match(/^W(\d+)$/);
+  if (winner) return `Vencedor #${winner[1]}`;
+  const loser = slot.match(/^RU(\d+)$/);
+  if (loser) return `Perdedor #${loser[1]}`;
+  return slot;
+}
+var KNOCKOUT_STAGE_NAMES = {
+  R32: "16 Avos de Final",
+  R16: "Oitavas de Final",
+  QF: "Quartas de Final",
+  SF: "Semifinal",
+  TP: "Disputa do 3\xBA Lugar",
+  F: "Final"
+};
+
 // src/appMatches.ts
 var PT_MONTHS = [
   "Janeiro",
@@ -25049,11 +25533,45 @@ var buildSupplementalMatch = (seed) => {
     broadcasters: []
   };
 };
+var NEUTRAL_TEAM_STYLE = { primaryColor: "#64748b", secondaryColor: "#94a3b8" };
+var toBrasiliaTimestamp = (dateUtc) => {
+  const utc = new Date(dateUtc);
+  const br = new Date(utc.getTime() - 3 * 60 * 60 * 1e3);
+  const p = (n) => String(n).padStart(2, "0");
+  return `${br.getUTCFullYear()}-${p(br.getUTCMonth() + 1)}-${p(br.getUTCDate())}T${p(br.getUTCHours())}:${p(br.getUTCMinutes())}:00-03:00`;
+};
+var buildKnockoutTeamEntry = (ref, slot) => {
+  if (ref) {
+    const known = teamByCode.get(ref.code);
+    if (known) return { ...known, group: "", lineup: lineupByTeamCode.get(ref.code) ?? [] };
+    return { name: ref.name, code: ref.code, flagSvg: "", ...NEUTRAL_TEAM_STYLE, group: "", lineup: [] };
+  }
+  return { name: humanizeSlot(slot), code: slot, flagSvg: "", ...NEUTRAL_TEAM_STYLE, group: "", lineup: [] };
+};
+var buildKnockoutMatch = (km) => {
+  const kickoffTimestamp = toBrasiliaTimestamp(km.dateUtc);
+  const kickoffMs = new Date(km.dateUtc).getTime();
+  return {
+    id: `ko-${km.matchNumber}-2026`,
+    teamA: buildKnockoutTeamEntry(km.teamA, km.slotA),
+    teamB: buildKnockoutTeamEntry(km.teamB, km.slotB),
+    stadiumName: km.stadium,
+    city: km.city,
+    stageName: KNOCKOUT_STAGE_NAMES[km.stage],
+    kickoffTime: formatKickoffTime(kickoffTimestamp),
+    kickoffDate: formatKickoffDate(kickoffTimestamp),
+    kickoffTimestamp,
+    status: "PRE_GAME",
+    countdownTargetSeconds: Math.max(0, Math.floor((kickoffMs - Date.now()) / 1e3)),
+    broadcasters: []
+  };
+};
 var APP_MATCHES = [
   ...BASE_MATCHES,
   ...FIFA_SCHEDULED_MATCHES.filter(
     ({ teamA, teamB }) => !existingIds.has(`${teamA.toLowerCase()}-${teamB.toLowerCase()}-2026`)
-  ).map(buildSupplementalMatch)
+  ).map(buildSupplementalMatch),
+  ...KNOCKOUT_MATCHES.map(buildKnockoutMatch)
 ].map((match) => {
   const officialVenue = FIFA_MATCH_VENUES[match.id];
   if (!officialVenue) {
@@ -25382,16 +25900,16 @@ var teamAnalysis_default = {
     updatedAt: "2026-06-21T00:00:00.000Z"
   },
   KOR: {
-    text: "## Leitura\nA Coreia do Sul de Hong Myung-bo fez uma campanha de altos e baixos na fase de grupos e segue dependendo de si para avan\xE7ar. Bateu a Rep\xFAblica Tcheca por 2 a 1 na estreia, mas caiu diante da anfitri\xE3 M\xE9xico por 1 a 0, somando 3 pontos que a mant\xEAm na cola da lideran\xE7a. Com Son Heung-min no comando e o talento de Lee Kang-in e Kim Min-jae, os asi\xE1ticos chegam \xE0 rodada final precisando de um bom resultado para garantir a classifica\xE7\xE3o.\n## Desempenho\nNo jogo de abertura, a Coreia foi eficiente e bateu a Rep\xFAblica Tcheca por 2 a 1, com gols de Hwang In-beom e Lee Kang-in. Contra o M\xE9xico, por\xE9m, esbarrou na organiza\xE7\xE3o anfitri\xE3 e perdeu por 1 a 0, sem conseguir furar o bloqueio. O time mostra qualidade t\xE9cnica, mas precisa ser mais consistente.\n## N\xFAmeros\nJ2 \xB7 1 vit\xF3ria \xB7 1 derrota \xB7 2 gols marcados \xB7 2 sofridos (SG 0), em 2\xBA no Grupo A. Pr\xF3ximo desafio: \xC1frica do Sul (24/06) \u2014 uma vit\xF3ria encaminha a vaga nas oitavas.",
-    updatedAt: "2026-06-19T01:00:00.000Z"
+    text: "## Leitura\nA Coreia do Sul de Hong Myung-bo se despediu do Mundial na fase de grupos, eliminada no detalhe. Chegou \xE0 \xFAltima rodada dependendo de si, mas perdeu o confronto direto com a \xC1frica do Sul e ficou pelo caminho. Com Son Heung-min e bom talento t\xE9cnico, faltou consist\xEAncia e capricho ofensivo na hora decisiva.\n## Desempenho\nBateu a Rep\xFAblica Tcheca por 2 a 1 na estreia (gols de Hwang In-beom e Oh Hyeon-gyu), mas perdeu para o M\xE9xico (0 a 1) e, quando bastava vencer a \xC1frica do Sul para avan\xE7ar, foi superada por 1 a 0. N\xE3o conseguiu furar o bloqueio sul-africano e amargou a elimina\xE7\xE3o com 3 pontos.\n## N\xFAmeros\nJ3 \xB7 1 vit\xF3ria \xB7 2 derrotas \xB7 2 gols marcados \xB7 3 sofridos (SG -1) \xB7 3\xBA do Grupo A com 3 pontos. Eliminada na fase de grupos.",
+    updatedAt: "2026-06-25T01:00:00.000Z"
   },
   CZE: {
-    text: "## Leitura\nA Rep\xFAblica Tcheca de Miroslav Koubek vive situa\xE7\xE3o delicada no Grupo A ap\xF3s come\xE7ar perdendo. Caiu para a Coreia do Sul por 2 a 1 na estreia e depois ficou no 1 a 1 com a \xC1frica do Sul, somando apenas 1 ponto. Com Patrik Schick e Tom\xE1\u0161 Sou\u010Dek como principais armas, os tchecos ainda t\xEAm chance, mas ter\xE3o pela frente a anfitri\xE3 M\xE9xico na rodada decisiva \u2014 um obst\xE1culo e tanto.\n## Desempenho\nNa estreia, a Rep\xFAblica Tcheca saiu derrotada pela Coreia do Sul por 2 a 1, mesmo marcando com Ladislav Krej\u010D\xED. Contra a \xC1frica do Sul, ficou no empate em 1 a 1, com gol de Michal Sad\xEDlek, em um jogo no qual faltou capricho para sair com a vit\xF3ria. O ataque produziu, mas a defesa deixou a desejar.\n## N\xFAmeros\nJ2 \xB7 1 empate \xB7 1 derrota \xB7 2 gols marcados \xB7 3 sofridos (SG -1), em 3\xBA no Grupo A. Pr\xF3ximo desafio: M\xE9xico (24/06) \u2014 provavelmente ser\xE1 preciso vencer a anfitri\xE3 para seguir vivo no Mundial.",
-    updatedAt: "2026-06-18T16:00:00.000Z"
+    text: "## Leitura\nA Rep\xFAblica Tcheca de Miroslav Koubek fez uma campanha para esquecer e terminou na lanterna do Grupo A, eliminada. Somou apenas 1 ponto em tr\xEAs jogos e sofreu demais na defesa, especialmente diante da anfitri\xE3 M\xE9xico na despedida. Mesmo com Patrik Schick e Tom\xE1\u0161 Sou\u010Dek, faltou solidez para sustentar resultados.\n## Desempenho\nPerdeu para a Coreia do Sul por 2 a 1 na estreia (gol de Ladislav Krej\u010D\xED), empatou com a \xC1frica do Sul em 1 a 1 (Michal Sad\xEDlek) e foi goleada por 3 a 0 pelo M\xE9xico na rodada final. O ataque at\xE9 produziu nos primeiros jogos, mas a defesa ruiu e a equipe se despede sem vit\xF3rias.\n## N\xFAmeros\nJ3 \xB7 1 empate \xB7 2 derrotas \xB7 2 gols marcados \xB7 6 sofridos (SG -4) \xB7 lanterna do Grupo A com 1 ponto. Eliminada na fase de grupos.",
+    updatedAt: "2026-06-25T01:00:00.000Z"
   },
   RSA: {
-    text: "## Leitura\nA \xC1frica do Sul de Hugo Broos teve um come\xE7o dif\xEDcil no Grupo A e ainda esbarrou em problemas de indisciplina. Perdeu para a anfitri\xE3 M\xE9xico por 2 a 0 e depois empatou em 1 a 1 com a Rep\xFAblica Tcheca, somando 1 ponto que a deixa na lanterna. Os Bafana Bafana, com Percy Tau como refer\xEAncia, precisam reagir e melhorar a postura disciplinar para sonhar com a classifica\xE7\xE3o.\n## Desempenho\nDiante do M\xE9xico, a \xC1frica do Sul foi superada por 2 a 0 num jogo em que pouco amea\xE7ou. Contra a Rep\xFAblica Tcheca, arrancou um empate por 1 a 1, com gol de Teboho Mokoena, mas viu o desgaste e os cart\xF5es pesarem \u2014 a sele\xE7\xE3o j\xE1 acumula duas expuls\xF5es na competi\xE7\xE3o, o que compromete o planejamento. Faltam efici\xEAncia e disciplina.\n## N\xFAmeros\nJ2 \xB7 1 empate \xB7 1 derrota \xB7 1 gol marcado \xB7 3 sofridos (SG -2) \xB7 lanterna do Grupo A. Pr\xF3ximo desafio: Coreia do Sul (24/06), em confronto direto que vale a sobreviv\xEAncia no torneio.",
-    updatedAt: "2026-06-18T16:00:00.000Z"
+    text: "## Leitura\nA \xC1frica do Sul de Hugo Broos protagonizou a grata surpresa do Grupo A: lanterna ap\xF3s duas rodadas, deu a volta por cima na hora decisiva e garantiu a classifica\xE7\xE3o \xE0s oitavas em segundo lugar. Os Bafana Bafana cresceram quando mais precisaram e venceram o confronto direto que valia a vaga.\n## Desempenho\nCome\xE7ou perdendo para o M\xE9xico (0 a 2) e empatou com a Rep\xFAblica Tcheca (1 a 1, gol de Teboho Mokoena), somando s\xF3 1 ponto nas duas primeiras rodadas. Mas na decis\xE3o fez o que precisava: bateu a Coreia do Sul por 1 a 0, com gol de Thapelo Maseko aos 63 minutos, e saltou para a segunda vaga. Rea\xE7\xE3o na hora certa.\n## N\xFAmeros\nJ3 \xB7 1 vit\xF3ria \xB7 1 empate \xB7 1 derrota \xB7 2 gols marcados \xB7 3 sofridos (SG -1) \xB7 2\xBA do Grupo A com 4 pontos. Classificada \xE0s oitavas.",
+    updatedAt: "2026-06-25T01:00:00.000Z"
   },
   ALG: {
     text: "## Leitura\nA Arg\xE9lia de Vladimir Petkovi\u0107 teve uma estreia para esquecer no Grupo J. Caiu diante da Argentina por 3 a 0, sentindo o peso de enfrentar a atual campe\xE3 do mundo logo na abertura. Mesmo com um elenco de qualidade \u2014 Mahrez, Bennacer e Gouiri \xE0 frente \u2014, os Fennecs n\xE3o conseguiram impor seu jogo e amargam a lanterna. A boa not\xEDcia \xE9 que ainda h\xE1 tempo: um confronto direto com a Jord\xE2nia pode reacender as esperan\xE7as de classifica\xE7\xE3o.\n## Desempenho\nContra a Argentina, a Arg\xE9lia foi dominada e pouco produziu ofensivamente, saindo de campo com uma derrota dura por 3 a 0. Faltou intensidade e capricho para um time que aposta no talento individual de Mahrez e na cria\xE7\xE3o de Bennacer. A sele\xE7\xE3o precisa reagir r\xE1pido para n\xE3o dar adeus precocemente ao Mundial.\n## N\xFAmeros\nJ1 \xB7 1 derrota \xB7 0 gols marcados \xB7 3 sofridos (SG -3) \xB7 lanterna do Grupo J. Pr\xF3ximos desafios: Jord\xE2nia (23/06) e \xC1ustria (27/06) \u2014 vencer a Jord\xE2nia \xE9 praticamente obrigat\xF3rio para seguir vivo.",
@@ -25450,8 +25968,8 @@ var teamAnalysis_default = {
     text: "## Leitura\nO Brasil de Carlo Ancelotti avan\xE7ou \xE0s oitavas como l\xEDder do Grupo C, com a melhor defesa da chave e um ataque que engrenou no momento certo. Depois do empate sem brilho na estreia, a Sele\xE7\xE3o deslanchou com duas vit\xF3rias convincentes e confirmou o favoritismo. Alisson d\xE1 seguran\xE7a no gol, e Vin\xEDcius Jr e Matheus Cunha despontaram como as armas ofensivas da campanha.\n## Desempenho\nCome\xE7ou travado, no 1 a 1 com o Marrocos, mas cresceu: 3 a 0 no Haiti e 3 a 0 na Esc\xF3cia, sempre no controle. Vin\xEDcius Jr terminou como artilheiro do time (4 gols) e Matheus Cunha (3) foi a grata revela\xE7\xE3o. A defesa, liderada por Marquinhos e com Alisson seguro, sofreu apenas o gol do Marrocos em tr\xEAs jogos.\n## N\xFAmeros\nJ3 \xB7 2 vit\xF3rias \xB7 1 empate \xB7 7 gols marcados \xB7 1 sofrido \xB7 2 clean sheets. O Brasil terminou em 1\xBA no Grupo C com 7 pontos e o melhor saldo da chave (SG +6), \xE0 frente do Marrocos pelo crit\xE9rio de gols. Classificado \xE0s oitavas."
   },
   MEX: {
-    text: "## Leitura\nO pa\xEDs-sede come\xE7ou a Copa em casa do jeito dos sonhos: 100% de aproveitamento, duas vit\xF3rias e a defesa intranspon\xEDvel. Sob o comando experiente de Javier Aguirre, o M\xE9xico juntou solidez defensiva e efici\xEAncia ofensiva para abrir a competi\xE7\xE3o na lideran\xE7a do Grupo A, com a torcida empurrando em todos os est\xE1dios. A classifica\xE7\xE3o j\xE1 est\xE1 bem encaminhada e o time joga com a confian\xE7a de quem se sente em casa.\n## Desempenho\nNa abertura do Mundial, o M\xE9xico venceu a \xC1frica do Sul por 2 a 0 com autoridade; na sequ\xEAncia, bateu a Coreia do Sul por 1 a 0 num jogo mais truncado, mostrando capacidade de segurar o resultado. Malag\xF3n pouco foi exigido no gol, a dupla de zaga Montes\u2013V\xE1squez deu seguran\xE7a, e Edson \xC1lvarez comandou o meio-campo. Na frente, Santiago Gim\xE9nez e Hirving Lozano s\xE3o os nomes de refer\xEAncia de um ataque que tem sido objetivo.\n## N\xFAmeros\nJ2 \xB7 2 vit\xF3rias \xB7 3 gols marcados \xB7 0 sofridos \xB7 2 clean sheets. O M\xE9xico lidera o Grupo A com 6 pontos e o melhor saldo da chave (SG +3), defesa ainda invicta. Pr\xF3ximo desafio: Rep\xFAblica Tcheca, em 24/06.",
-    updatedAt: "2026-06-19T01:00:00.000Z"
+    text: "## Leitura\nO pa\xEDs-sede fez uma campanha perfeita e avan\xE7ou \xE0s oitavas como l\xEDder absoluto do Grupo A. Sob o comando de Javier Aguirre, o M\xE9xico venceu os tr\xEAs jogos sem sofrer gols \u2014 defesa intranspon\xEDvel e efici\xEAncia ofensiva, embalado pela torcida. Confirmou o favoritismo com autoridade e chega ao mata-mata como uma das sele\xE7\xF5es em melhor momento.\n## Desempenho\nCome\xE7ou batendo a \xC1frica do Sul (2 a 0, gols de Juli\xE1n Qui\xF1ones e Ra\xFAl Jim\xE9nez), segurou a Coreia do Sul (1 a 0, com Luis Romo) e fechou goleando a Rep\xFAblica Tcheca por 3 a 0, com Mateo Ch\xE1vez, Qui\xF1ones e \xC1lvaro Fidalgo. Tr\xEAs vit\xF3rias, tr\xEAs clean sheets: Malag\xF3n pouco trabalhou, a defesa foi muralha e o ataque, objetivo.\n## N\xFAmeros\nJ3 \xB7 3 vit\xF3rias \xB7 6 gols marcados \xB7 0 sofridos \xB7 3 clean sheets \xB7 1\xBA do Grupo A com 9 pontos e o melhor saldo da chave (SG +6). Classificado \xE0s oitavas como l\xEDder.",
+    updatedAt: "2026-06-25T01:00:00.000Z"
   },
   ARG: {
     text: "## Leitura\nA atual campe\xE3 do mundo segue impec\xE1vel e confirma o favoritismo no Grupo J. Comandada por Lionel Scaloni, a Argentina venceu os dois primeiros jogos sem sofrer gols, com Messi em estado de gra\xE7a e uma defesa pouco amea\xE7ada. Lidera com 100% de aproveitamento e j\xE1 encaminha a classifica\xE7\xE3o \xE0s oitavas.\n## Desempenho\nNa estreia, goleou a Arg\xE9lia por 3 a 0 com um hat-trick de Messi. Na sequ\xEAncia, bateu a \xC1ustria por 2 a 0, de novo com dois gols do camisa 10. Em ambos os jogos dominou a posse, criou as melhores chances e mal foi amea\xE7ada \u2014 Emiliano Mart\xEDnez segue sem trabalho, e Scaloni j\xE1 p\xF4de rodar o elenco com o placar resolvido. Futebol maduro e eficiente de uma candidata ao t\xEDtulo.\n## N\xFAmeros\nJ2 \xB7 2 vit\xF3rias \xB7 5 gols marcados \xB7 0 sofridos \xB7 2 clean sheets. A Argentina lidera o Grupo J com 6 pontos e o melhor saldo da chave (SG +5). Artilheiro: Lionel Messi (5 gols). Pr\xF3ximo desafio: Jord\xE2nia (27/06), quando pode fechar a fase de grupos com 100%.",
@@ -26106,6 +26624,7 @@ function getCanonicalSeedStandings(matches = APP_MATCHES) {
     ])
   );
   for (const match of matches) {
+    if (match.stageName !== "Group Stage") continue;
     for (const team2 of [match.teamA, match.teamB]) {
       if (!canonicalRows.has(team2.code)) {
         canonicalRows.set(team2.code, createSeedRowFromMatchTeam(team2));
@@ -27401,6 +27920,7 @@ var warmDefaultFifaCaches = async () => {
     fifaSyncDiagnostics.backgroundWarm.lastError = null;
     fifaSyncDiagnostics.backgroundWarm.lastRefreshAfterMs = payload.refreshAfterMs;
     fifaSyncDiagnostics.backgroundWarm.cycleCount += 1;
+    pruneIdleMatches(chatStore, fifaSyncDiagnostics.matchStates.activeLiveMatchIds);
     scheduleBackgroundWarm(payload.refreshAfterMs);
   } catch (error) {
     fifaSyncDiagnostics.backgroundWarm.lastError = serializeErrorMessage(error);
@@ -27942,18 +28462,70 @@ app.get("/api/questions", (_req, res) => {
 });
 var PRESENCE_WINDOW_MS = 45 * 1e3;
 var presenceStore = /* @__PURE__ */ new Map();
-app.post("/api/presence", (req, res) => {
-  const now = Date.now();
+var deriveClientKey = (req) => {
   const ip = req.ip ?? "";
   const rawId = req.body?.id;
   const clientId = typeof rawId === "string" ? rawId.slice(0, 64) : "";
-  const key = clientId ? `${ip}|${clientId}` : ip;
-  recordHeartbeat(presenceStore, key, now);
+  return clientId ? `${ip}|${clientId}` : ip;
+};
+app.post("/api/presence", (req, res) => {
+  const now = Date.now();
+  recordHeartbeat(presenceStore, deriveClientKey(req), now);
   res.set("Cache-Control", "no-store");
   res.json({
     online: countOnline(presenceStore, now, PRESENCE_WINDOW_MS),
     updatedAt: new Date(now).toISOString()
   });
+});
+var chatStore = /* @__PURE__ */ new Map();
+var chatRateMap = /* @__PURE__ */ new Map();
+var CHAT_MAX_RSS_BYTES = Number(process.env.CHAT_MAX_RSS_MB ?? 1500) * 1024 * 1024;
+var VALID_MATCH_IDS = new Set(APP_MATCHES.map((match) => match.id));
+var isMatchLive = (matchId) => fifaSyncDiagnostics.matchStates.activeLiveMatchIds.includes(matchId);
+app.get("/api/chat/:matchId", (req, res) => {
+  res.set("Cache-Control", "no-store");
+  const { matchId } = req.params;
+  if (!VALID_MATCH_IDS.has(matchId)) {
+    return res.status(404).json({ error: "Partida desconhecida." });
+  }
+  const rawSince = req.query.since;
+  const sinceId = typeof rawSince === "string" && rawSince !== "" ? Number(rawSince) : void 0;
+  const since = sinceId !== void 0 && Number.isFinite(sinceId) ? sinceId : void 0;
+  const payload = {
+    open: isMatchLive(matchId),
+    messages: getMessages(chatStore, matchId, since),
+    updatedAt: (/* @__PURE__ */ new Date()).toISOString()
+  };
+  return res.json(payload);
+});
+app.post("/api/chat/:matchId", (req, res) => {
+  res.set("Cache-Control", "no-store");
+  const { matchId } = req.params;
+  if (!VALID_MATCH_IDS.has(matchId)) {
+    return res.status(404).json({ error: "Partida desconhecida." });
+  }
+  if (process.memoryUsage().rss > CHAT_MAX_RSS_BYTES) {
+    return res.status(503).json({ error: "Chat temporariamente indispon\xEDvel. Tente em instantes." });
+  }
+  if (!isMatchLive(matchId)) {
+    return res.status(403).json({ error: "O chat abre quando a partida come\xE7a." });
+  }
+  const body = req.body ?? {};
+  const nickname = validateNickname(body.nickname);
+  if (!nickname.ok) return res.status(400).json({ error: nickname.reason });
+  const text = validateText(body.text);
+  if (!text.ok) return res.status(400).json({ error: text.reason });
+  const now = Date.now();
+  if (!passesRateLimit(chatRateMap, deriveClientKey(req), now)) {
+    return res.status(429).json({ error: "Voc\xEA est\xE1 enviando mensagens r\xE1pido demais. Respire." });
+  }
+  const message = appendMessage(
+    chatStore,
+    matchId,
+    { nickname: nickname.value, text: text.value },
+    now
+  );
+  return res.status(201).json({ message });
 });
 app.get("/api/health", (_req, res) => {
   const mem = process.memoryUsage();
