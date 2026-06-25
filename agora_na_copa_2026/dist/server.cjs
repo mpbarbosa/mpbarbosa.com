@@ -7839,7 +7839,9 @@ var squads_default = {
     socials: {
       instagram: "cunha",
       wikipedia: "https://pt.wikipedia.org/wiki/Matheus_Cunha"
-    }
+    },
+    worldCupNote: "## Leitura\nMatheus Cunha desponta como uma das gratas novidades do Brasil nesta Copa. Vers\xE1til, m\xF3vel e de boa finaliza\xE7\xE3o, o atacante come\xE7ou como op\xE7\xE3o no banco, mas aproveitou a primeira chance como titular para desencantar e j\xE1 briga por espa\xE7o no ataque de uma sele\xE7\xE3o candidata ao t\xEDtulo e l\xEDder do Grupo C.\n## Desempenho\nNa estreia contra o Marrocos (1 a 1), entrou no segundo tempo \u2014 aos 61 minutos, no lugar de Lucas Paquet\xE1 \u2014 e ajudou na press\xE3o pelo empate. Na partida seguinte, foi decisivo: marcou duas vezes na vit\xF3ria por 3 a 0 sobre o Haiti, aos 23 e aos 36 minutos, antes de dar lugar a Endrick (64). Um brace que o colocou em evid\xEAncia.\n## N\xFAmeros\nJ2 \xB7 2 gols \xB7 0 cart\xF5es \xB7 Brasil l\xEDder do Grupo C (4 pontos, SG +3). Em ascens\xE3o como arma ofensiva da sele\xE7\xE3o.",
+    worldCupNoteUpdatedAt: "2026-06-20T00:30:00.000Z"
   },
   "430624": {
     fifaId: "430624",
@@ -18737,6 +18739,22 @@ function parseOpenMeteoCurrent(raw) {
   };
 }
 
+// presence-core.ts
+function recordHeartbeat(store, id, nowMs) {
+  if (id) store.set(id, nowMs);
+}
+function countOnline(store, nowMs, windowMs) {
+  let online = 0;
+  for (const [id, lastSeen] of store) {
+    if (nowMs - lastSeen <= windowMs) {
+      online += 1;
+    } else {
+      store.delete(id);
+    }
+  }
+  return online;
+}
+
 // src/matches.json
 var matches_default = [
   {
@@ -26374,6 +26392,25 @@ var YELLOW_CARD_INCIDENT_SUFFIX = " recebeu amarelo.";
 var RED_CARD_INCIDENT_SUFFIX = " foi expulso.";
 app.set("trust proxy", 1);
 app.use(import_express.default.json());
+var FIFA_FALLBACK_API_BASE = process.env.FIFA_FALLBACK_API_BASE?.replace(/\/+$/, "");
+if (FIFA_FALLBACK_API_BASE) {
+  const isFifaDerivedPath = (p) => p === "/api/match-overlays" || p === "/api/match-states" || p === "/api/broadcast-guide" || p === "/api/team-lineups" || p === "/api/tournament-leaders" || p.startsWith("/api/team-view/") || p.startsWith("/api/player-stats/") || p.startsWith("/api/player-incidents/");
+  app.get(/^\/api\//, async (req, res, next) => {
+    if (!isFifaDerivedPath(req.path)) {
+      next();
+      return;
+    }
+    try {
+      const upstream = await fetch(`${FIFA_FALLBACK_API_BASE}${req.originalUrl}`, {
+        headers: { Accept: "application/json", "User-Agent": "agora-na-copa-2026/1.0" }
+      });
+      const body = await upstream.text();
+      res.status(upstream.status).set("Content-Type", upstream.headers.get("content-type") ?? "application/json").set("Cache-Control", "no-store").send(body);
+    } catch {
+      next();
+    }
+  });
+}
 app.use((req, res, next) => {
   if (req.path.startsWith("/assets/") || req.path === "/favicon.ico") return next();
   const start = Date.now();
@@ -26823,7 +26860,11 @@ var recordFailureState = (diagnostics, error) => {
     ).toISOString();
   }
 };
+var FIFA_SYNC_DISABLED = process.env.DISABLE_FIFA_SYNC === "true";
 var fetchJson = async (url) => {
+  if (FIFA_SYNC_DISABLED) {
+    throw new Error("FIFA sync disabled (DISABLE_FIFA_SYNC) \u2014 serving fallback data");
+  }
   const response = await fetch(url, {
     headers: {
       "User-Agent": "agora-na-copa-2026/1.0",
@@ -27898,6 +27939,19 @@ app.get("/api/fifa-sync-status", (_req, res) => {
 app.get("/api/questions", (_req, res) => {
   res.set("Cache-Control", "no-store");
   res.json(TRIVIA_QUESTIONS);
+});
+var PRESENCE_WINDOW_MS = 45 * 1e3;
+var presenceStore = /* @__PURE__ */ new Map();
+app.post("/api/presence", (req, res) => {
+  const now = Date.now();
+  const rawId = req.body?.id;
+  const id = typeof rawId === "string" ? rawId.slice(0, 64) : "";
+  recordHeartbeat(presenceStore, id, now);
+  res.set("Cache-Control", "no-store");
+  res.json({
+    online: countOnline(presenceStore, now, PRESENCE_WINDOW_MS),
+    updatedAt: new Date(now).toISOString()
+  });
 });
 app.get("/api/health", (_req, res) => {
   const mem = process.memoryUsage();
