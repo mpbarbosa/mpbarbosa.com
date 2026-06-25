@@ -26868,6 +26868,59 @@ function groupStandings(rows, matches = APP_MATCHES) {
   });
 }
 
+// predict-core.ts
+function strength(team2) {
+  return team2.points * 3 + team2.goalDifference * 2 + team2.goalsFor;
+}
+function goalsPerGame(team2) {
+  return team2.played > 0 ? Math.round(team2.goalsFor / team2.played) : 0;
+}
+function teamLine(team2) {
+  if (team2.played === 0) {
+    return `${team2.name} ainda n\xE3o entrou em campo nesta Copa.`;
+  }
+  const sign = team2.goalDifference > 0 ? `+${team2.goalDifference}` : `${team2.goalDifference}`;
+  return `${team2.name} \u2014 ${team2.points} pts em ${team2.played} jogo${team2.played === 1 ? "" : "s"} (${team2.won}V ${team2.drawn}E ${team2.lost}D), ${team2.goalsFor} gols pr\xF3, ${team2.goalsAgainst} contra, saldo ${sign}.`;
+}
+function buildPrediction(home, away, userNotes) {
+  const margin = strength(home) - strength(away);
+  const bothPlayed = home.played > 0 && away.played > 0;
+  let verdict;
+  if (!bothPlayed) {
+    verdict = `Cedo demais para cravar: ${home.name} e ${away.name} mal aqueceram os motores. Por enquanto, confronto totalmente em aberto.`;
+  } else if (Math.abs(margin) <= 2) {
+    verdict = `Jogo de igual para igual entre ${home.name} e ${away.name} \u2014 moeda no ar.`;
+  } else {
+    const fav = margin > 0 ? home : away;
+    const dog = margin > 0 ? away : home;
+    const strong = Math.abs(margin) > 6;
+    verdict = strong ? `${fav.name} entra como favorito claro diante de ${dog.name}, pela campanha mais s\xF3lida.` : `${fav.name} leva leve vantagem sobre ${dog.name}, mas sem folga para vacilar.`;
+  }
+  let scoreline = "";
+  if (bothPlayed) {
+    let hg = goalsPerGame(home);
+    let ag = goalsPerGame(away);
+    if (hg === ag && margin !== 0) {
+      if (margin > 0) hg += 1;
+      else ag += 1;
+    }
+    scoreline = `
+Placar simulado: ${home.name} ${hg} x ${ag} ${away.name}.`;
+  }
+  const notes = userNotes?.trim().slice(0, 280);
+  const notesLine = notes ? `
+Voc\xEA destacou: "${notes}" \u2014 anotado, mas o palpite segue a campanha.` : "";
+  return [
+    `## Progn\xF3stico`,
+    `${verdict}${scoreline}`,
+    `## N\xFAmeros`,
+    `${teamLine(home)}
+${teamLine(away)}`,
+    `## Leitura`,
+    `Palpite simulado, gerado s\xF3 a partir da campanha atual das sele\xE7\xF5es \u2014 \xE9 divers\xE3o para a torcida, n\xE3o cravada de resultado.${notesLine}`
+  ].join("\n");
+}
+
 // server.ts
 var TEAM_ANALYSIS_BY_CODE = teamAnalysis_default;
 import_dotenv.default.config();
@@ -28459,6 +28512,46 @@ app.get("/api/fifa-sync-status", (_req, res) => {
 app.get("/api/questions", (_req, res) => {
   res.set("Cache-Control", "no-store");
   res.json(TRIVIA_QUESTIONS);
+});
+app.post("/api/predict", (req, res) => {
+  res.set("Cache-Control", "no-store");
+  const body = req.body ?? {};
+  const homeKey = typeof body.homeTeam === "string" ? body.homeTeam.trim() : "";
+  const awayKey = typeof body.awayTeam === "string" ? body.awayTeam.trim() : "";
+  const userNotes = typeof body.userNotes === "string" ? body.userNotes : void 0;
+  if (!homeKey || !awayKey) {
+    res.status(400).json({ error: "Informe as duas sele\xE7\xF5es (homeTeam e awayTeam)." });
+    return;
+  }
+  if (homeKey.toUpperCase() === awayKey.toUpperCase()) {
+    res.status(400).json({ error: "Escolha duas sele\xE7\xF5es diferentes." });
+    return;
+  }
+  const rows = computeStandings(APP_MATCHES);
+  const byKey = /* @__PURE__ */ new Map();
+  for (const row of rows) {
+    byKey.set(row.code.toUpperCase(), row);
+    byKey.set(row.name.toUpperCase(), row);
+  }
+  const home = byKey.get(homeKey.toUpperCase());
+  const away = byKey.get(awayKey.toUpperCase());
+  if (!home || !away) {
+    res.status(404).json({ error: "Sele\xE7\xE3o n\xE3o encontrada." });
+    return;
+  }
+  const toTeam = (row) => ({
+    name: row.name,
+    code: row.code,
+    points: row.points,
+    played: row.played,
+    won: row.won,
+    drawn: row.drawn,
+    lost: row.lost,
+    goalsFor: row.goalsFor,
+    goalsAgainst: row.goalsAgainst,
+    goalDifference: row.goalDifference
+  });
+  res.json({ text: buildPrediction(toTeam(home), toTeam(away), userNotes), simulated: true });
 });
 var PRESENCE_WINDOW_MS = 45 * 1e3;
 var presenceStore = /* @__PURE__ */ new Map();
