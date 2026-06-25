@@ -18389,21 +18389,27 @@ var toIncidentPlayerMention = (fifaPlayer, fallbackName, teamCode) => {
     pictureUrl: fifaPicture ?? registryEntry?.pictureUrl
   };
 };
+var FIFA_OWN_GOAL_TYPE = 3;
 var getIncidentsFromLiveFifa = (fifaMatch, homeTeamCode, awayTeamCode) => {
   const homePlayerNames = buildPlayerNameMap(fifaMatch.HomeTeam);
   const awayPlayerNames = buildPlayerNameMap(fifaMatch.AwayTeam);
   const homePlayers = buildFifaPlayerMap(fifaMatch.HomeTeam);
   const awayPlayers = buildFifaPlayerMap(fifaMatch.AwayTeam);
   const teamCodeFor = (team2) => team2 === "A" ? homeTeamCode : awayTeamCode;
-  const buildGoalIncidents = (goals, playerNames, players, team2) => (goals || []).map((goal, index) => {
-    const playerName = goal.IdPlayer ? playerNames.get(goal.IdPlayer) || "Jogador" : "Jogador";
+  const buildGoalIncidents = (goals, playerNames, players, team2, oppPlayerNames, oppPlayers, oppTeam) => (goals || []).map((goal, index) => {
+    const isOwnGoal = goal.Type === FIFA_OWN_GOAL_TYPE;
+    const names = isOwnGoal ? oppPlayerNames : playerNames;
+    const playerMap = isOwnGoal ? oppPlayers : players;
+    const mentionTeam = isOwnGoal ? oppTeam : team2;
+    const playerName = goal.IdPlayer ? names.get(goal.IdPlayer) || "Jogador" : "Jogador";
+    const text = isOwnGoal ? playerName === "Jogador" ? "Gol contra." : `Gol contra de ${playerName}.` : `${playerName} marcou.`;
     return {
       id: `${team2}-goal-${goal.IdGoal || `${goal.Minute || "sem-minuto"}-${index}`}`,
       time: goal.Minute || "--'",
       type: "GOAL",
-      text: `${playerName} marcou.`,
+      text,
       team: team2,
-      playerMentions: [toIncidentPlayerMention(goal.IdPlayer ? players.get(goal.IdPlayer) : void 0, playerName, teamCodeFor(team2))],
+      playerMentions: [toIncidentPlayerMention(goal.IdPlayer ? playerMap.get(goal.IdPlayer) : void 0, playerName, teamCodeFor(mentionTeam))],
       period: goal.Period
     };
   });
@@ -18457,8 +18463,8 @@ var getIncidentsFromLiveFifa = (fifaMatch, homeTeamCode, awayTeamCode) => {
     };
   });
   return [
-    ...buildGoalIncidents(fifaMatch.HomeTeam?.Goals, homePlayerNames, homePlayers, "A"),
-    ...buildGoalIncidents(fifaMatch.AwayTeam?.Goals, awayPlayerNames, awayPlayers, "B"),
+    ...buildGoalIncidents(fifaMatch.HomeTeam?.Goals, homePlayerNames, homePlayers, "A", awayPlayerNames, awayPlayers, "B"),
+    ...buildGoalIncidents(fifaMatch.AwayTeam?.Goals, awayPlayerNames, awayPlayers, "B", homePlayerNames, homePlayers, "A"),
     ...buildBookingIncidents(fifaMatch.HomeTeam?.Bookings, homePlayerNames, homePlayers, "A"),
     ...buildBookingIncidents(fifaMatch.AwayTeam?.Bookings, awayPlayerNames, awayPlayers, "B"),
     ...buildSubstitutionIncidents(
