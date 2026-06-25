@@ -4158,7 +4158,9 @@ var squads_default = {
     socials: {
       instagram: "nicolas.pepe19",
       wikipedia: "https://pt.wikipedia.org/wiki/Nicolas_P%C3%A9p%C3%A9"
-    }
+    },
+    worldCupNote: "## Leitura\nReserva que decidiu quando mais importou. Apagado nas duas primeiras rodadas, Nicolas P\xE9p\xE9 renasceu na rodada final: com uma dupla decisiva sobre Cura\xE7ao, carimbou a classifica\xE7\xE3o da Costa do Marfim \xE0s oitavas. Prova de que, mesmo fora do time ideal, o ponta ainda resolve nos momentos quentes.\n## Desempenho\nO come\xE7o foi discreto. Titular contra o Equador (derrota por 1 a 0), saiu aos 77 minutos sem brilhar; diante da Alemanha, entrou apenas aos 85. Tudo mudou no jogo que valia a vaga. Contra Cura\xE7ao, P\xE9p\xE9 abriu o placar logo aos 7 minutos e, mesmo ap\xF3s levar amarelo aos 34, voltou ligado do intervalo: aos 64 fez o segundo e fechou o 2 a 0 que classificou a Costa do Marfim. Saiu aplaudido aos 67, miss\xE3o cumprida.\n## N\xFAmeros\nJ3 \xB7 2 gols \xB7 1 amarelo \xB7 Costa do Marfim em 2\xBA no Grupo E, classificada \xE0s oitavas.",
+    worldCupNoteUpdatedAt: "2026-06-25T20:00:00.000Z"
   },
   "402772": {
     fifaId: "402772",
@@ -4824,7 +4826,9 @@ var squads_default = {
     socials: {
       instagram: "leroysane",
       wikipedia: "https://pt.wikipedia.org/wiki/Leroy_San%C3%A9"
-    }
+    },
+    worldCupNote: "## Leitura\nArma de velocidade ainda \xE0 espera do seu melhor. Leroy San\xE9 teve fase de grupos modesta e, embora tenha deixado o dele na rodada final, viu a Alemanha trope\xE7ar. Ainda assim, com a Mannschaft classificada em primeiro, o ponta segue como trunfo de profundidade para as oitavas.\n## Desempenho\nDiscreto nas duas primeiras rodadas, San\xE9 n\xE3o balan\xE7ou as redes e foi substitu\xEDdo aos 60 minutos na vit\xF3ria suada sobre a Costa do Marfim (2 a 1). Na rodada final contra o Equador, abriu o placar cedo, aos 2 minutos \u2014 mas o gol acabou isolado: o Equador virou para 2 a 1, com Nilson Angulo (9 minutos) e Gonzalo Plata (77), e a Alemanha, j\xE1 garantida, foi surpreendida. Mesmo com a derrota, a Mannschaft terminou em primeiro no grupo pelo saldo de gols.\n## N\xFAmeros\nJ3 \xB7 1 gol \xB7 0 cart\xF5es \xB7 Alemanha em 1\xBA no Grupo E, classificada \xE0s oitavas.",
+    worldCupNoteUpdatedAt: "2026-06-25T20:00:00.000Z"
   },
   "404645": {
     fifaId: "404645",
@@ -24738,8 +24742,8 @@ var FIFA_SCHEDULED_MATCHES = [
   // ── Grupo E ───────────────────────────────────────────────────────────────
   { teamA: "GER", teamB: "CIV", kickoffTimestamp: "2026-06-20T17:00:00-03:00", status: "FINISHED", score: { teamA: 2, teamB: 1 }, ...v("GER", "CIV") },
   { teamA: "ECU", teamB: "CUW", kickoffTimestamp: "2026-06-20T21:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 0 }, ...v("ECU", "CUW") },
-  { teamA: "CUW", teamB: "CIV", kickoffTimestamp: "2026-06-25T17:00:00-03:00", status: "PRE_GAME", ...v("CUW", "CIV") },
-  { teamA: "ECU", teamB: "GER", kickoffTimestamp: "2026-06-25T17:00:00-03:00", status: "PRE_GAME", ...v("ECU", "GER") },
+  { teamA: "CUW", teamB: "CIV", kickoffTimestamp: "2026-06-25T17:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 2 }, ...v("CUW", "CIV") },
+  { teamA: "ECU", teamB: "GER", kickoffTimestamp: "2026-06-25T17:00:00-03:00", status: "FINISHED", score: { teamA: 2, teamB: 1 }, ...v("ECU", "GER") },
   // ── Grupo F ───────────────────────────────────────────────────────────────
   { teamA: "NED", teamB: "SWE", kickoffTimestamp: "2026-06-20T14:00:00-03:00", status: "FINISHED", score: { teamA: 5, teamB: 1 }, ...v("NED", "SWE") },
   { teamA: "TUN", teamB: "JPN", kickoffTimestamp: "2026-06-21T01:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 4 }, ...v("TUN", "JPN") },
