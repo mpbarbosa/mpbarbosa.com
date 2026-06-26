@@ -25435,7 +25435,7 @@ function humanizeSlot(slot) {
   const groupPos = slot.match(/^([12])([A-L])$/);
   if (groupPos) return `${groupPos[1]}\xBA ${groupPos[2]}`;
   const bestThird = slot.match(/^3([A-L]{2,})$/);
-  if (bestThird) return `3\xBA ${bestThird[1].split("").join("/")}`;
+  if (bestThird) return `Melhor 3\xBA \xB7 ${bestThird[1].split("").join("/")}`;
   const winner = slot.match(/^W(\d+)$/);
   if (winner) return `Vencedor #${winner[1]}`;
   const loser = slot.match(/^RU(\d+)$/);
