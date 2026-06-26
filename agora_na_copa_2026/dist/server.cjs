@@ -24744,8 +24744,8 @@ var FIFA_SCHEDULED_MATCHES = [
   // ── Grupo D ───────────────────────────────────────────────────────────────
   { teamA: "USA", teamB: "AUS", kickoffTimestamp: "2026-06-19T16:00:00-03:00", status: "FINISHED", score: { teamA: 2, teamB: 0 }, ...v("USA", "AUS") },
   { teamA: "TUR", teamB: "PAR", kickoffTimestamp: "2026-06-20T00:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 1 }, ...v("TUR", "PAR") },
-  { teamA: "PAR", teamB: "AUS", kickoffTimestamp: "2026-06-25T23:00:00-03:00", status: "PRE_GAME", ...v("PAR", "AUS") },
-  { teamA: "TUR", teamB: "USA", kickoffTimestamp: "2026-06-25T23:00:00-03:00", status: "PRE_GAME", ...v("TUR", "USA") },
+  { teamA: "PAR", teamB: "AUS", kickoffTimestamp: "2026-06-25T23:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 0 }, ...v("PAR", "AUS") },
+  { teamA: "TUR", teamB: "USA", kickoffTimestamp: "2026-06-25T23:00:00-03:00", status: "FINISHED", score: { teamA: 3, teamB: 2 }, ...v("TUR", "USA") },
   // ── Grupo E ───────────────────────────────────────────────────────────────
   { teamA: "GER", teamB: "CIV", kickoffTimestamp: "2026-06-20T17:00:00-03:00", status: "FINISHED", score: { teamA: 2, teamB: 1 }, ...v("GER", "CIV") },
   { teamA: "ECU", teamB: "CUW", kickoffTimestamp: "2026-06-20T21:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 0 }, ...v("ECU", "CUW") },
@@ -24770,8 +24770,8 @@ var FIFA_SCHEDULED_MATCHES = [
   { teamA: "IRQ", teamB: "NOR", kickoffTimestamp: "2026-06-16T19:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 4 }, ...v("IRQ", "NOR") },
   { teamA: "FRA", teamB: "IRQ", kickoffTimestamp: "2026-06-22T18:00:00-03:00", status: "FINISHED", score: { teamA: 3, teamB: 0 }, ...v("FRA", "IRQ") },
   { teamA: "NOR", teamB: "SEN", kickoffTimestamp: "2026-06-22T21:00:00-03:00", status: "FINISHED", score: { teamA: 3, teamB: 2 }, ...v("NOR", "SEN") },
-  { teamA: "NOR", teamB: "FRA", kickoffTimestamp: "2026-06-26T16:00:00-03:00", status: "PRE_GAME", ...v("NOR", "FRA") },
-  { teamA: "SEN", teamB: "IRQ", kickoffTimestamp: "2026-06-26T16:00:00-03:00", status: "PRE_GAME", ...v("SEN", "IRQ") },
+  { teamA: "NOR", teamB: "FRA", kickoffTimestamp: "2026-06-26T16:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 4 }, ...v("NOR", "FRA") },
+  { teamA: "SEN", teamB: "IRQ", kickoffTimestamp: "2026-06-26T16:00:00-03:00", status: "FINISHED", score: { teamA: 5, teamB: 0 }, ...v("SEN", "IRQ") },
   // ── Grupo J ───────────────────────────────────────────────────────────────
   { teamA: "AUT", teamB: "JOR", kickoffTimestamp: "2026-06-17T01:00:00-03:00", status: "FINISHED", score: { teamA: 3, teamB: 1 }, ...v("AUT", "JOR") },
   { teamA: "ARG", teamB: "AUT", kickoffTimestamp: "2026-06-22T14:00:00-03:00", status: "FINISHED", score: { teamA: 2, teamB: 0 }, ...v("ARG", "AUT") },
