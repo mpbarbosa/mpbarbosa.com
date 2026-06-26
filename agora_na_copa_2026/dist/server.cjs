@@ -26799,6 +26799,9 @@ function sortByOverall(rows) {
     (a, b) => b.goalDifference - a.goalDifference || b.goalsFor - a.goalsFor || b.fairPlayPoints - a.fairPlayPoints
   );
 }
+function compareThirdPlaceRanking(a, b) {
+  return b.points - a.points || b.goalDifference - a.goalDifference || b.goalsFor - a.goalsFor || b.fairPlayPoints - a.fairPlayPoints;
+}
 function sortSubcluster(rows, matches) {
   if (rows.length === 1) return rows;
   const codes = new Set(rows.map((r) => r.code));
@@ -26861,6 +26864,16 @@ function sortGroupTable(rows, matches) {
     i = j;
   }
   return result;
+}
+function rankBestThirds(groups) {
+  const thirds = [];
+  for (const { group, rows } of groups) {
+    const letter = group.match(/Grupo ([A-L])/)?.[1];
+    const third = rows[2];
+    if (letter && third) thirds.push({ row: third, groupLetter: letter });
+  }
+  thirds.sort((a, b) => compareThirdPlaceRanking(a.row, b.row));
+  return thirds.map((t, i) => ({ ...t, qualifies: i < 8 }));
 }
 function groupStandings(rows, matches = APP_MATCHES) {
   const byGroup = /* @__PURE__ */ new Map();
@@ -26930,6 +26943,169 @@ ${teamLine(away)}`,
     `## Leitura`,
     `Palpite simulado, gerado s\xF3 a partir da campanha atual das sele\xE7\xF5es \u2014 \xE9 divers\xE3o para a torcida, n\xE3o cravada de resultado.${notesLine}`
   ].join("\n");
+}
+
+// qualification-sim-core.ts
+function createRng(seed) {
+  let a = seed >>> 0;
+  return () => {
+    a = a + 1831565813 | 0;
+    let t = Math.imul(a ^ a >>> 15, 1 | a);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+function isRemainingGroupMatch(match) {
+  return match.stageName === "Group Stage" && match.status !== "FINISHED";
+}
+var LEAGUE_AVG_GOALS = 1.35;
+var MIN_EXPECTED_GOALS = 0.2;
+var MAX_EXPECTED_GOALS = 5;
+var MAX_GOALS_PER_SIDE = 8;
+function clamp(value, min, max) {
+  return Math.min(max, Math.max(min, value));
+}
+var DEFAULT_PRIOR_WEIGHT = 1.5;
+var DEFAULT_RHO = -0.13;
+function buildStrengthModel(standings2, priorWeight) {
+  let totalGoals = 0;
+  let totalGames = 0;
+  for (const row of standings2) {
+    totalGoals += row.goalsFor;
+    totalGames += row.played;
+  }
+  const baseline = totalGames > 0 ? totalGoals / totalGames : LEAGUE_AVG_GOALS;
+  const teams = /* @__PURE__ */ new Map();
+  for (const row of standings2) {
+    const attackRate = (row.goalsFor + priorWeight * baseline) / (row.played + priorWeight);
+    const defenseRate = (row.goalsAgainst + priorWeight * baseline) / (row.played + priorWeight);
+    teams.set(row.code, { attack: attackRate / baseline, defense: defenseRate / baseline });
+  }
+  return { baseline, teams };
+}
+function poissonPmf(lambda, max) {
+  const pmf = new Array(max + 1);
+  pmf[0] = Math.exp(-lambda);
+  for (let k = 1; k <= max; k += 1) pmf[k] = pmf[k - 1] * lambda / k;
+  return pmf;
+}
+function dixonColesTau(x, y, lambda, mu, rho) {
+  if (x === 0 && y === 0) return 1 - lambda * mu * rho;
+  if (x === 0 && y === 1) return 1 + lambda * rho;
+  if (x === 1 && y === 0) return 1 + mu * rho;
+  if (x === 1 && y === 1) return 1 - rho;
+  return 1;
+}
+var STRENGTH_FALLBACK = { attack: 1, defense: 1 };
+function buildScoreDistribution(model, homeCode, awayCode, rho) {
+  const home = model.teams.get(homeCode) ?? STRENGTH_FALLBACK;
+  const away = model.teams.get(awayCode) ?? STRENGTH_FALLBACK;
+  const lambda = clamp(model.baseline * home.attack * away.defense, MIN_EXPECTED_GOALS, MAX_EXPECTED_GOALS);
+  const mu = clamp(model.baseline * away.attack * home.defense, MIN_EXPECTED_GOALS, MAX_EXPECTED_GOALS);
+  const pmfHome = poissonPmf(lambda, MAX_GOALS_PER_SIDE);
+  const pmfAway = poissonPmf(mu, MAX_GOALS_PER_SIDE);
+  const scores = [];
+  const weights = [];
+  let total = 0;
+  for (let x = 0; x <= MAX_GOALS_PER_SIDE; x += 1) {
+    for (let y = 0; y <= MAX_GOALS_PER_SIDE; y += 1) {
+      const weight = pmfHome[x] * pmfAway[y] * Math.max(0, dixonColesTau(x, y, lambda, mu, rho));
+      total += weight;
+      scores.push({ teamA: x, teamB: y });
+      weights.push(weight);
+    }
+  }
+  const cumulative = [];
+  let running = 0;
+  for (const weight of weights) {
+    running += weight / total;
+    cumulative.push(running);
+  }
+  return { cumulative, scores };
+}
+function createPoissonSampler(standings2, options = {}) {
+  const priorWeight = Math.max(0, options.priorWeight ?? DEFAULT_PRIOR_WEIGHT);
+  const rho = options.rho ?? DEFAULT_RHO;
+  const model = buildStrengthModel(standings2, priorWeight);
+  const cache = /* @__PURE__ */ new Map();
+  return (match, rng) => {
+    const key = `${match.teamA.code}|${match.teamB.code}`;
+    let dist = cache.get(key);
+    if (!dist) {
+      dist = buildScoreDistribution(model, match.teamA.code, match.teamB.code, rho);
+      cache.set(key, dist);
+    }
+    const u = rng();
+    const { cumulative, scores } = dist;
+    for (let i = 0; i < cumulative.length; i += 1) {
+      if (u <= cumulative[i]) return scores[i];
+    }
+    return scores[scores.length - 1];
+  };
+}
+function simulateOnce(finished, remaining, sampler, rng) {
+  const sampled = remaining.map((match) => ({
+    ...match,
+    status: "FINISHED",
+    score: sampler(match, rng)
+  }));
+  const simulatedMatches = [...finished, ...sampled];
+  const rows = computeStandings(simulatedMatches);
+  const groups = groupStandings(rows, simulatedMatches);
+  const thirds = rankBestThirds(groups);
+  return { groups, thirds };
+}
+function classifyFinish({ groups, thirds }, teamCode) {
+  for (const group of groups) {
+    const index = group.rows.findIndex((row) => row.code === teamCode);
+    if (index === -1) continue;
+    const position = index;
+    if (position <= 1) return { position, advanced: true };
+    if (position === 3) return { position, advanced: false };
+    const ranked = thirds.find((third) => third.row.code === teamCode);
+    return { position, advanced: Boolean(ranked?.qualifies) };
+  }
+  throw new Error(`Team "${teamCode}" not found in the group standings.`);
+}
+var DEFAULT_ITERATIONS = 3e3;
+var DEFAULT_SEED = 2654435769;
+function estimateQualificationOdds(matches, teamCode, options = {}) {
+  const seed = options.seed ?? DEFAULT_SEED;
+  const rng = createRng(seed);
+  const remaining = matches.filter(isRemainingGroupMatch);
+  const finished = matches.filter((match) => !isRemainingGroupMatch(match));
+  const sampler = options.sampler ?? createPoissonSampler(computeStandings(matches));
+  const deterministic = remaining.length === 0;
+  const iterations = deterministic ? 1 : Math.max(1, options.iterations ?? DEFAULT_ITERATIONS);
+  const positionCounts = [0, 0, 0, 0];
+  let top2 = 0;
+  let bestThird = 0;
+  for (let i = 0; i < iterations; i += 1) {
+    const tables = simulateOnce(finished, remaining, sampler, rng);
+    const { position, advanced } = classifyFinish(tables, teamCode);
+    positionCounts[position] += 1;
+    if (advanced) {
+      if (position <= 1) top2 += 1;
+      else bestThird += 1;
+    }
+  }
+  const asTop2 = top2 / iterations;
+  const asBestThird = bestThird / iterations;
+  return {
+    teamCode,
+    iterations,
+    advance: asTop2 + asBestThird,
+    asTop2,
+    asBestThird,
+    eliminated: 1 - asTop2 - asBestThird,
+    finishPosition: [
+      positionCounts[0] / iterations,
+      positionCounts[1] / iterations,
+      positionCounts[2] / iterations,
+      positionCounts[3] / iterations
+    ],
+    deterministic
+  };
 }
 
 // server.ts
@@ -28563,6 +28739,54 @@ app.post("/api/predict", (req, res) => {
     goalDifference: row.goalDifference
   });
   res.json({ text: buildPrediction(toTeam(home), toTeam(away), userNotes), simulated: true });
+});
+var QUALIFICATION_SIM_SEED = 1371482685;
+var DEFAULT_QUALIFICATION_ITERATIONS = 4e3;
+var MIN_QUALIFICATION_ITERATIONS = 200;
+var MAX_QUALIFICATION_ITERATIONS = 2e4;
+var qualificationOddsCache = /* @__PURE__ */ new Map();
+app.get("/api/qualification-odds/:teamCode", (req, res) => {
+  const rawKey = typeof req.params.teamCode === "string" ? req.params.teamCode.trim() : "";
+  if (!rawKey) {
+    res.status(400).json({ error: "Informe a sele\xE7\xE3o (c\xF3digo ou nome)." });
+    return;
+  }
+  const rows = computeStandings(APP_MATCHES);
+  const byKey = /* @__PURE__ */ new Map();
+  for (const row of rows) {
+    byKey.set(row.code.toUpperCase(), row);
+    byKey.set(row.name.toUpperCase(), row);
+  }
+  const team2 = byKey.get(rawKey.toUpperCase());
+  if (!team2) {
+    res.status(404).json({ error: "Sele\xE7\xE3o n\xE3o encontrada." });
+    return;
+  }
+  const requested = Number.parseInt(String(req.query.iterations ?? ""), 10);
+  const iterations = Number.isFinite(requested) ? Math.min(MAX_QUALIFICATION_ITERATIONS, Math.max(MIN_QUALIFICATION_ITERATIONS, requested)) : DEFAULT_QUALIFICATION_ITERATIONS;
+  const cacheKey = `${team2.code}:${iterations}`;
+  const cached = qualificationOddsCache.get(cacheKey);
+  if (cached) {
+    res.set("Cache-Control", "public, max-age=300");
+    res.json(cached);
+    return;
+  }
+  const odds = estimateQualificationOdds(APP_MATCHES, team2.code, {
+    iterations,
+    seed: QUALIFICATION_SIM_SEED
+  });
+  const payload = {
+    source: "simulated",
+    simulated: true,
+    note: odds.deterministic ? "Fase de grupos definida: a classifica\xE7\xE3o j\xE1 est\xE1 decidida pelos resultados." : "Probabilidade simulada (Monte Carlo) a partir da campanha atual \u2014 palpite para a torcida, n\xE3o cravada de resultado.",
+    updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
+    team: { code: team2.code, name: team2.name, group: team2.group },
+    iterations: odds.iterations,
+    odds
+  };
+  qualificationOddsCache.set(cacheKey, payload);
+  res.set("Cache-Control", "public, max-age=300");
+  res.json(payload);
 });
 var PRESENCE_WINDOW_MS = 45 * 1e3;
 var presenceStore = /* @__PURE__ */ new Map();
