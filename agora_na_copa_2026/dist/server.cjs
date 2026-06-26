@@ -127,7 +127,8 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Manuel_Neuer"
     },
     worldCupNote: "## Leitura\nManuel Neuer, \xEDcone do futebol alem\xE3o e um dos maiores goleiros da hist\xF3ria, foi a experi\xEAncia e a lideran\xE7a no gol de uma Alemanha que terminou a fase de grupos na lideran\xE7a do Grupo E. Aos 40 anos, o veterano seguiu como dono da camisa 1 e refer\xEAncia de uma sele\xE7\xE3o que avan\xE7ou em primeiro, mesmo trope\xE7ando na rodada final.\n## Desempenho\nNeuer disputou as tr\xEAs partidas por inteiro. Come\xE7ou com a goleada por 7 a 1 sobre Cura\xE7ao (vazado uma \xFAnica vez, no gol de Comenencia aos 21) e a virada por 2 a 1 sobre a Costa do Marfim (sofreu o gol de Kessi\xE9 aos 30). Na despedida da fase de grupos, por\xE9m, a Alemanha \u2014 j\xE1 classificada \u2014 caiu por 2 a 1 para o Equador: San\xE9 abriu o placar logo aos 2 minutos, mas Angulo empatou aos 9 e Plata decretou a virada aos 77, num rev\xE9s que Neuer n\xE3o conseguiu evitar.\n## N\xFAmeros\nJ3 \xB7 2 vit\xF3rias \xB7 1 derrota \xB7 4 gols sofridos (foi vazado em todos os jogos) \xB7 ainda sem clean sheet no Mundial. A Alemanha terminou em 1\xBA no Grupo E com 6 pontos e saldo +6, \xE0 frente da Costa do Marfim pelo saldo de gols. Neuer leva a experi\xEAncia da camisa 1 \xE0s oitavas, mas precisar\xE1 elevar a seguran\xE7a defensiva no mata-mata.",
-    worldCupNoteUpdatedAt: "2026-06-25T22:00:00.000Z"
+    worldCupNoteUpdatedAt: "2026-06-25T22:00:00.000Z",
+    instagramPostUrl: "https://www.instagram.com/p/DZlA2i1Go8Y/"
   },
   "229397": {
     fifaId: "229397",
