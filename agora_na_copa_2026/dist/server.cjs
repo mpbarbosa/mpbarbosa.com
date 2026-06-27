@@ -14238,7 +14238,8 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Lamine_Yamal"
     },
     worldCupNote: "## Leitura\nQue reviravolta na trajet\xF3ria de Lamine Yamal nesta Copa. Depois de uma estreia apagada saindo do banco, o jovem fen\xF4meno espanhol explodiu diante da Ar\xE1bia Saudita: abriu o placar logo aos 10 e marcou seu primeiro gol em Copas do Mundo, puxando a goleada por 4 a 0 que levou a Espanha \xE0 lideran\xE7a do Grupo H. O camisa 19 \xE9, de novo, o craque que todos esperam \u2014 e mira o duelo decisivo com o Uruguai.\n## Desempenho\nCome\xE7ou discreto: entrou como substituto no empate sem gols com Cabo Verde, com pouco espa\xE7o num jogo travado. Mas respondeu na sequ\xEAncia. Titular contra a Ar\xE1bia Saudita, decidiu cedo \u2014 gol aos 10 minutos, o primeiro dele em Mundiais \u2014 antes de ser substitu\xEDdo com o jogo j\xE1 resolvido na goleada por 4 a 0. Sem cart\xF5es.\n## N\xFAmeros\nJ2 \xB7 1 gol \xB7 0 cart\xF5es. A Espanha lidera o Grupo H com 4 pontos, saldo +4 e nenhum gol sofrido. Yamal saiu do jejum e desencantou no momento certo. Pr\xF3ximo desafio: Uruguai.",
-    worldCupNoteUpdatedAt: "2026-06-21T16:00:00.000Z"
+    worldCupNoteUpdatedAt: "2026-06-21T16:00:00.000Z",
+    instagramPostUrl: "https://www.instagram.com/p/DZ3B-0cj0TN/"
   },
   "484691": {
     fifaId: "484691",
