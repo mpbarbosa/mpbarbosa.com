@@ -144,6 +144,7 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Lionel_Messi"
     },
     instagramPostUrls: [
+      "https://www.instagram.com/reel/DZ5kyXauIKr/",
       "https://www.instagram.com/p/DZ5zea7jzW5/",
       "https://www.instagram.com/reel/DZ0RteXxomP/"
     ],
@@ -11019,7 +11020,9 @@ var squads_default = {
     socials: {
       instagram: "leandrotrossard",
       wikipedia: "https://pt.wikipedia.org/wiki/Leandro_Trossard"
-    }
+    },
+    worldCupNote: "## Leitura\nUm dos principais homens de cria\xE7\xE3o da B\xE9lgica, o camisa 10 Leandro Trossard chega \xE0 Copa como pe\xE7a fixa do ataque \u2014 velocidade, drible e faro de \xE1rea que ele exibe no Arsenal. Mas os Diabos Vermelhos patinaram na largada do Grupo G: dois empates em dois jogos, pouca pontaria e um futebol abaixo do esperado. \xC9 exatamente o tipo de jogo emperrado que pede a inspira\xE7\xE3o do ponta para a B\xE9lgica deslanchar no Mundial.\n## Desempenho\nTitular nas duas rodadas, Trossard cumpriu os 90 minutos em ambas. No 1 a 1 com o Egito na estreia, ajudou na arma\xE7\xE3o mas n\xE3o conseguiu ser decisivo num jogo equilibrado. Repetiu a presen\xE7a no decepcionante 0 a 0 contra o Ir\xE3, mais uma vez sem furar o bloqueio advers\xE1rio. Sem participa\xE7\xE3o direta em gols e sem cart\xF5es nas partidas encerradas.\n## N\xFAmeros\nJ2 \xB7 0 gols \xB7 0 cart\xF5es. A B\xE9lgica soma apenas 2 pontos no Grupo G, com dois empates, um gol marcado e saldo zero. Trossard ainda espera o momento de transformar presen\xE7a em decis\xE3o.",
+    worldCupNoteUpdatedAt: "2026-06-21T19:00:00.000Z"
   },
   "448360": {
     fifaId: "448360",
