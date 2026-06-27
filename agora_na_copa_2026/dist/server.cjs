@@ -143,7 +143,10 @@ var squads_default = {
       instagram: "leomessi",
       wikipedia: "https://pt.wikipedia.org/wiki/Lionel_Messi"
     },
-    instagramPostUrl: "https://www.instagram.com/reel/DZ0RteXxomP/",
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZ5zea7jzW5/",
+      "https://www.instagram.com/reel/DZ0RteXxomP/"
+    ],
     worldCupNote: "## Leitura\nMessi est\xE1 em estado de gra\xE7a e \xE9 o grande nome do in\xEDcio da Copa. Com 5 gols em apenas 2 jogos, o capit\xE3o coloca a Argentina como favorita ao t\xEDtulo e j\xE1 encaminha a vaga no mata-mata. Lidera a artilharia, e a comiss\xE3o pode dosar seus minutos com a classifica\xE7\xE3o cada vez mais perto.\n## Desempenho\nCome\xE7ou com um hat-trick na goleada por 3 a 0 sobre a Arg\xE9lia (gols aos 17, 60 e 76) e seguiu decisivo contra a \xC1ustria: marcou duas vezes no 2 a 0, aos 38 e nos acr\xE9scimos finais (90+5). Cinco gols, nenhum sofrido pela Argentina e ficha disciplinar limpa \u2014 futebol de outro n\xEDvel.\n## N\xFAmeros\nJ2 \xB7 5 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina lidera o Grupo J com 6 pontos, 100% de aproveitamento e dois clean sheets. Messi decide e comanda \u2014 o protagonista absoluto deste in\xEDcio de Mundial.",
     worldCupNoteUpdatedAt: "2026-06-22T17:00:00.000Z",
     dateOfBirth: "1987-06-24",
@@ -14243,7 +14246,10 @@ var squads_default = {
     },
     worldCupNote: "## Leitura\nQue reviravolta na trajet\xF3ria de Lamine Yamal nesta Copa. Depois de uma estreia apagada saindo do banco, o jovem fen\xF4meno espanhol explodiu diante da Ar\xE1bia Saudita: abriu o placar logo aos 10 e marcou seu primeiro gol em Copas do Mundo, puxando a goleada por 4 a 0 que levou a Espanha \xE0 lideran\xE7a do Grupo H. O camisa 19 \xE9, de novo, o craque que todos esperam \u2014 e mira o duelo decisivo com o Uruguai.\n## Desempenho\nCome\xE7ou discreto: entrou como substituto no empate sem gols com Cabo Verde, com pouco espa\xE7o num jogo travado. Mas respondeu na sequ\xEAncia. Titular contra a Ar\xE1bia Saudita, decidiu cedo \u2014 gol aos 10 minutos, o primeiro dele em Mundiais \u2014 antes de ser substitu\xEDdo com o jogo j\xE1 resolvido na goleada por 4 a 0. Sem cart\xF5es.\n## N\xFAmeros\nJ2 \xB7 1 gol \xB7 0 cart\xF5es. A Espanha lidera o Grupo H com 4 pontos, saldo +4 e nenhum gol sofrido. Yamal saiu do jejum e desencantou no momento certo. Pr\xF3ximo desafio: Uruguai.",
     worldCupNoteUpdatedAt: "2026-06-21T16:00:00.000Z",
-    instagramPostUrl: "https://www.instagram.com/p/DZ3B-0cj0TN/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZ3B-0cj0TN/",
+      "https://www.instagram.com/reel/DZzshFaxghJ/"
+    ]
   },
   "484691": {
     fifaId: "484691",
@@ -18322,6 +18328,7 @@ var mergeLineupWithLocalMetadata = (players, fallbackLineup, teamCode) => player
       number: player.number || entry?.number || player.number,
       socials: player.socials ?? entry?.socials,
       instagramPostUrl: player.instagramPostUrl ?? entry?.instagramPostUrl,
+      instagramPostUrls: player.instagramPostUrls ?? entry?.instagramPostUrls,
       worldCupNote: player.worldCupNote ?? entry?.worldCupNote,
       fullName: player.fullName ?? entry?.fullName,
       dateOfBirth: player.dateOfBirth ?? entry?.dateOfBirth,
@@ -18336,6 +18343,7 @@ var mergeLineupWithLocalMetadata = (players, fallbackLineup, teamCode) => player
     pictureUrl: player.pictureUrl ?? fallbackPlayer.pictureUrl,
     socials: player.socials ?? fallbackPlayer.socials ?? entry?.socials,
     instagramPostUrl: player.instagramPostUrl ?? fallbackPlayer.instagramPostUrl ?? entry?.instagramPostUrl,
+    instagramPostUrls: player.instagramPostUrls ?? fallbackPlayer.instagramPostUrls ?? entry?.instagramPostUrls,
     worldCupNote: player.worldCupNote ?? fallbackPlayer.worldCupNote ?? entry?.worldCupNote,
     fullName: player.fullName ?? fallbackPlayer.fullName ?? entry?.fullName,
     dateOfBirth: player.dateOfBirth ?? fallbackPlayer.dateOfBirth ?? entry?.dateOfBirth,
@@ -18362,6 +18370,7 @@ var enrichFallbackLineupWithFifaPictures = (fallbackLineup, fifaTeam, teamCode) 
       pictureUrl: fifaPicture ?? player.pictureUrl ?? entry?.pictureUrl,
       socials: player.socials ?? entry?.socials,
       instagramPostUrl: player.instagramPostUrl ?? entry?.instagramPostUrl,
+      instagramPostUrls: player.instagramPostUrls ?? entry?.instagramPostUrls,
       worldCupNote: player.worldCupNote ?? entry?.worldCupNote,
       fullName: player.fullName ?? entry?.fullName,
       dateOfBirth: player.dateOfBirth ?? entry?.dateOfBirth,
@@ -27257,7 +27266,8 @@ var upsertPlayerLeaderMetadata = (metadataByPlayerKey, teamCode, player) => {
       club: player.club,
       socials: player.socials,
       pictureUrl: player.pictureUrl,
-      instagramPostUrl: player.instagramPostUrl
+      instagramPostUrl: player.instagramPostUrl,
+      instagramPostUrls: player.instagramPostUrls
     });
     return;
   }
@@ -27268,7 +27278,8 @@ var upsertPlayerLeaderMetadata = (metadataByPlayerKey, teamCode, player) => {
     club: current.club ?? player.club,
     socials: current.socials ?? player.socials,
     pictureUrl: current.pictureUrl ?? player.pictureUrl,
-    instagramPostUrl: current.instagramPostUrl ?? player.instagramPostUrl
+    instagramPostUrl: current.instagramPostUrl ?? player.instagramPostUrl,
+    instagramPostUrls: current.instagramPostUrls ?? player.instagramPostUrls
   });
 };
 var buildPlayerLeaderMetadataMap = (lineupsPayload) => {
@@ -27285,7 +27296,8 @@ var buildPlayerLeaderMetadataMap = (lineupsPayload) => {
         club: player.club ?? entry?.club,
         socials: player.socials ?? entry?.socials,
         pictureUrl: player.pictureUrl ?? entry?.pictureUrl,
-        instagramPostUrl: player.instagramPostUrl ?? entry?.instagramPostUrl
+        instagramPostUrl: player.instagramPostUrl ?? entry?.instagramPostUrl,
+        instagramPostUrls: player.instagramPostUrls ?? entry?.instagramPostUrls
       });
       const fifaId = player.fifaId ?? (isNumericFifaId(player.id) ? player.id : void 0);
       if (fifaId) {
@@ -27401,6 +27413,7 @@ var aggregateTournamentLeaders = async (language) => {
         socials: metadata?.socials,
         pictureUrl: metadata?.pictureUrl,
         instagramPostUrl: metadata?.instagramPostUrl,
+        instagramPostUrls: metadata?.instagramPostUrls,
         goals: 0,
         yellowCards: 0,
         redCards: 0
@@ -27948,6 +27961,7 @@ var buildFallbackLineupEntry = (players, teamCode) => ({
       pictureUrl: player.pictureUrl ?? entry.pictureUrl,
       socials: player.socials ?? entry.socials,
       instagramPostUrl: player.instagramPostUrl ?? entry.instagramPostUrl,
+      instagramPostUrls: player.instagramPostUrls ?? entry.instagramPostUrls,
       worldCupNote: player.worldCupNote ?? entry.worldCupNote,
       fullName: player.fullName ?? entry.fullName,
       dateOfBirth: player.dateOfBirth ?? entry.dateOfBirth,
