@@ -1404,8 +1404,8 @@ var squads_default = {
       instagram: "kevindebruyne",
       wikipedia: "https://pt.wikipedia.org/wiki/Kevin_De_Bruyne"
     },
-    worldCupNote: "## Leitura\nKevin De Bruyne \xE9 o c\xE9rebro e a principal refer\xEAncia da B\xE9lgica \u2014 o camisa 7 que faz a engrenagem dos Diabos Vermelhos girar. Um dos maiores meias da sua gera\xE7\xE3o, carrega a miss\xE3o de destravar um ataque que trope\xE7ou na largada do Mundial: depois de dois empates, \xE9 dele que a B\xE9lgica espera o passe \u2014 ou o gol \u2014 que defina a vaga no Grupo G.\n## Desempenho\nTitular nas duas primeiras partidas, De Bruyne ainda n\xE3o deslanchou. Na estreia, no 1 a 1 com o Egito, ficou em campo at\xE9 os 85 minutos \u2014 e a B\xE9lgica s\xF3 escapou da derrota com um gol contra de Mohamed Hany (66'), depois de Emam Ashour abrir o placar (19'). Contra o Ir\xE3, jogou at\xE9 os 87 num 0 a 0 truncado, com os belgas reduzidos a dez ap\xF3s a expuls\xE3o de Nathan Ngoy (66'). Em dois jogos, a B\xE9lgica n\xE3o marcou com os p\xE9s \u2014 o \xFAnico gol saiu contra \u2014, e o camisa 7 ainda espera seu lance decisivo no Mundial.\n## N\xFAmeros\nJ2 \xB7 0 gols \xB7 0 cart\xF5es \xB7 B\xE9lgica em 3\xBA no Grupo G (2 pontos, dois empates)",
-    worldCupNoteUpdatedAt: "2026-06-21T19:00:00.000Z"
+    worldCupNote: "## Leitura\nO maestro voltou a decidir na hora certa. Depois de dois empates em que a genialidade n\xE3o apareceu, Kevin De Bruyne deu o tom na goleada por 5 a 1 sobre a Nova Zel\xE2ndia: marcou um gol e comandou a cria\xE7\xE3o no jogo que garantiu \xE0 B\xE9lgica a ponta do Grupo G. O camisa 7 segue sendo o c\xE9rebro que faz os Diabos Vermelhos girarem \u2014 agora rumo ao mata-mata.\n## Desempenho\nTitular nas tr\xEAs partidas. Foi substitu\xEDdo aos 85 minutos no 1 a 1 com o Egito e aos 87 no 0 a 0 contra o Ir\xE3, jogos truncados em que a B\xE9lgica n\xE3o marcou com os p\xE9s. Respondeu na terceira rodada: contra a Nova Zel\xE2ndia, balan\xE7ou as redes aos 66 minutos antes de dar lugar a Onana aos 72, com a goleada j\xE1 consolidada. Sem cart\xF5es.\n## N\xFAmeros\nJ3 \xB7 1 gol \xB7 0 cart\xF5es. Com a fase de grupos encerrada, a B\xE9lgica ficou em primeiro no Grupo G \u2014 5 pontos e saldo +4, \xE0 frente do Egito no saldo de gols \u2014 e est\xE1 classificada ao mata-mata. De Bruyne reencontrou seu lance decisivo no momento certo.",
+    worldCupNoteUpdatedAt: "2026-06-27T03:00:00.000Z"
   },
   "358122": {
     fifaId: "358122",
@@ -11023,8 +11023,8 @@ var squads_default = {
       instagram: "leandrotrossard",
       wikipedia: "https://pt.wikipedia.org/wiki/Leandro_Trossard"
     },
-    worldCupNote: "## Leitura\nUm dos principais homens de cria\xE7\xE3o da B\xE9lgica, o camisa 10 Leandro Trossard chega \xE0 Copa como pe\xE7a fixa do ataque \u2014 velocidade, drible e faro de \xE1rea que ele exibe no Arsenal. Mas os Diabos Vermelhos patinaram na largada do Grupo G: dois empates em dois jogos, pouca pontaria e um futebol abaixo do esperado. \xC9 exatamente o tipo de jogo emperrado que pede a inspira\xE7\xE3o do ponta para a B\xE9lgica deslanchar no Mundial.\n## Desempenho\nTitular nas duas rodadas, Trossard cumpriu os 90 minutos em ambas. No 1 a 1 com o Egito na estreia, ajudou na arma\xE7\xE3o mas n\xE3o conseguiu ser decisivo num jogo equilibrado. Repetiu a presen\xE7a no decepcionante 0 a 0 contra o Ir\xE3, mais uma vez sem furar o bloqueio advers\xE1rio. Sem participa\xE7\xE3o direta em gols e sem cart\xF5es nas partidas encerradas.\n## N\xFAmeros\nJ2 \xB7 0 gols \xB7 0 cart\xF5es. A B\xE9lgica soma apenas 2 pontos no Grupo G, com dois empates, um gol marcado e saldo zero. Trossard ainda espera o momento de transformar presen\xE7a em decis\xE3o.",
-    worldCupNoteUpdatedAt: "2026-06-21T19:00:00.000Z",
+    worldCupNote: "## Leitura\nTrossard atendeu ao chamado da forma mais sonora poss\xEDvel. Depois de dois empates apagados na largada, o camisa 10 explodiu diante da Nova Zel\xE2ndia: marcou duas vezes \u2014 seus primeiros gols em Copas do Mundo \u2014 e puxou a goleada por 5 a 1 que garantiu \xE0 B\xE9lgica a lideran\xE7a do Grupo G. O ponta do Arsenal saiu do jejum no momento certo e devolveu o ataque belga ao protagonismo antes do mata-mata.\n## Desempenho\nTitular nas tr\xEAs rodadas. Discreto no 1 a 1 com o Egito e no 0 a 0 com o Ir\xE3, jogos travados em que n\xE3o conseguiu ser decisivo. Mas desencantou de vez contra a Nova Zel\xE2ndia: abriu o placar aos 28 minutos e ampliou aos 50, antes de ser substitu\xEDdo aos 72 por Saelemaekers com a goleada encaminhada. Dois gols num jogo s\xF3, sem cart\xF5es, e a sensa\xE7\xE3o de que o craque finalmente engrenou.\n## N\xFAmeros\nJ3 \xB7 2 gols \xB7 0 cart\xF5es. Com a fase de grupos encerrada, a B\xE9lgica terminou em primeiro no Grupo G \u2014 5 pontos e saldo +4, \xE0 frente do Egito pelo crit\xE9rio de saldo \u2014 e avan\xE7ou ao mata-mata. Trossard chega embalado pela dobradinha decisiva sobre a Nova Zel\xE2ndia.",
+    worldCupNoteUpdatedAt: "2026-06-27T03:00:00.000Z",
     instagramPostUrl: "https://www.instagram.com/p/DYvHLw0jIbg/"
   },
   "448360": {
@@ -24779,8 +24779,8 @@ var FIFA_SCHEDULED_MATCHES = [
   // ── Grupo G ───────────────────────────────────────────────────────────────
   { teamA: "BEL", teamB: "IRN", kickoffTimestamp: "2026-06-21T16:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 0 }, ...v("BEL", "IRN") },
   { teamA: "NZL", teamB: "EGY", kickoffTimestamp: "2026-06-21T22:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 3 }, ...v("NZL", "EGY") },
-  { teamA: "EGY", teamB: "IRN", kickoffTimestamp: "2026-06-27T00:00:00-03:00", status: "PRE_GAME", ...v("EGY", "IRN") },
-  { teamA: "NZL", teamB: "BEL", kickoffTimestamp: "2026-06-27T00:00:00-03:00", status: "PRE_GAME", ...v("NZL", "BEL") },
+  { teamA: "EGY", teamB: "IRN", kickoffTimestamp: "2026-06-27T00:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 1 }, ...v("EGY", "IRN") },
+  { teamA: "NZL", teamB: "BEL", kickoffTimestamp: "2026-06-27T00:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 5 }, ...v("NZL", "BEL") },
   // ── Grupo H ───────────────────────────────────────────────────────────────
   { teamA: "ESP", teamB: "KSA", kickoffTimestamp: "2026-06-21T13:00:00-03:00", status: "FINISHED", score: { teamA: 4, teamB: 0 }, ...v("ESP", "KSA") },
   { teamA: "URU", teamB: "CPV", kickoffTimestamp: "2026-06-21T19:00:00-03:00", status: "FINISHED", score: { teamA: 2, teamB: 2 }, ...v("URU", "CPV") },
