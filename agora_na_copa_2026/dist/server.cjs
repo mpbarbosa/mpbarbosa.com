@@ -163,7 +163,9 @@ var squads_default = {
     socials: {
       instagram: "muslera",
       wikipedia: "https://pt.wikipedia.org/wiki/Fernando_Muslera"
-    }
+    },
+    worldCupNote: "## Leitura\nAos 39 anos e vestindo a camisa 23, Fernando Muslera \xE9 a aposta de Marcelo Bielsa para o gol do Uruguai no Mundial \u2014 e abra\xE7ou a miss\xE3o: ganhou a vaga de Sergio Rochet e foi titular nas tr\xEAs primeiras partidas. S\xEDmbolo de uma gera\xE7\xE3o celeste, o veterano carrega a responsabilidade de segurar a meta de um Uruguai que ainda n\xE3o engrenou e que chega pressionado \xE0 decis\xE3o do Grupo H diante da Espanha.\n## Desempenho\nNa estreia, no 1 a 1 com a Ar\xE1bia Saudita, foi vazado por Abdulelah Al-Amri aos 41, antes de Maxi Ara\xFAjo igualar aos 80. Contra Cabo Verde (2 a 2), sofreu os gols de Kevin Pina (21') e H\xE9lio Varela (61'), num jogo em que o Uruguai chegou a virar com Ara\xFAjo (44') e Canobbio (45'+6') mas viu o empate escapar no segundo tempo. Dois jogos completos, nenhuma rede intacta e a sensa\xE7\xE3o de que a defesa celeste ainda precisa dar mais sustenta\xE7\xE3o ao seu camisa 23.\n## N\xFAmeros\nJ2 \xB7 3 gols sofridos \xB7 0 jogos sem sofrer \xB7 titular nas duas partidas. O Uruguai aparece em 2\xBA no Grupo H, com 2 pontos e saldo zero, vivo mas pressionado. Pr\xF3ximo e decisivo: Espanha, valendo a classifica\xE7\xE3o.",
+    worldCupNoteUpdatedAt: "2026-06-21T22:00:00.000Z"
   },
   "241559": {
     fifaId: "241559",
@@ -10216,7 +10218,9 @@ var squads_default = {
     socials: {
       instagram: "alexbbaena",
       wikipedia: "https://pt.wikipedia.org/wiki/%C3%81lex_Baena"
-    }
+    },
+    worldCupNote: "## Leitura\nMeia criativo da Espanha, o camisa 15 \xC1lex Baena chegou \xE0 Copa como uma das op\xE7\xF5es de arma\xE7\xE3o de Luis de la Fuente, mas ainda busca espa\xE7o fixo num meio-campo lotado de craques. Nos dois primeiros jogos do Grupo H foi pe\xE7a de rod\xEDzio: ficou no banco na estreia e ganhou a chance de come\xE7ar diante da Ar\xE1bia Saudita. Talento de sobra para crescer conforme a Espanha avan\xE7a \u2014 a vitrine est\xE1 montada.\n## Desempenho\nN\xE3o entrou em campo no empate sem gols com Cabo Verde na abertura, observando do banco um jogo travado. Teve sua oportunidade na segunda rodada: titular na goleada por 4 a 0 sobre a Ar\xE1bia Saudita, atuou na cria\xE7\xE3o at\xE9 ser substitu\xEDdo aos 61 minutos por Nico Williams, com o placar j\xE1 encaminhado. Sem participa\xE7\xE3o direta nos gols e sem cart\xF5es.\n## N\xFAmeros\nJ1 \xB7 0 gols \xB7 0 cart\xF5es. A Espanha lidera o Grupo H com 4 pontos, saldo +4 e nenhum gol sofrido em dois jogos. Baena ainda espera o momento de deixar sua marca no Mundial.",
+    worldCupNoteUpdatedAt: "2026-06-21T16:00:00.000Z"
   },
   "447864": {
     fifaId: "447864",
