@@ -1403,7 +1403,9 @@ var squads_default = {
     socials: {
       instagram: "kevindebruyne",
       wikipedia: "https://pt.wikipedia.org/wiki/Kevin_De_Bruyne"
-    }
+    },
+    worldCupNote: "## Leitura\nKevin De Bruyne \xE9 o c\xE9rebro e a principal refer\xEAncia da B\xE9lgica \u2014 o camisa 7 que faz a engrenagem dos Diabos Vermelhos girar. Um dos maiores meias da sua gera\xE7\xE3o, carrega a miss\xE3o de destravar um ataque que trope\xE7ou na largada do Mundial: depois de dois empates, \xE9 dele que a B\xE9lgica espera o passe \u2014 ou o gol \u2014 que defina a vaga no Grupo G.\n## Desempenho\nTitular nas duas primeiras partidas, De Bruyne ainda n\xE3o deslanchou. Na estreia, no 1 a 1 com o Egito, ficou em campo at\xE9 os 85 minutos \u2014 e a B\xE9lgica s\xF3 escapou da derrota com um gol contra de Mohamed Hany (66'), depois de Emam Ashour abrir o placar (19'). Contra o Ir\xE3, jogou at\xE9 os 87 num 0 a 0 truncado, com os belgas reduzidos a dez ap\xF3s a expuls\xE3o de Nathan Ngoy (66'). Em dois jogos, a B\xE9lgica n\xE3o marcou com os p\xE9s \u2014 o \xFAnico gol saiu contra \u2014, e o camisa 7 ainda espera seu lance decisivo no Mundial.\n## N\xFAmeros\nJ2 \xB7 0 gols \xB7 0 cart\xF5es \xB7 B\xE9lgica em 3\xBA no Grupo G (2 pontos, dois empates)",
+    worldCupNoteUpdatedAt: "2026-06-21T19:00:00.000Z"
   },
   "358122": {
     fifaId: "358122",
