@@ -4474,7 +4474,8 @@ var squads_default = {
     socials: {
       instagram: "diogomcosta99",
       wikipedia: "https://pt.wikipedia.org/wiki/Diogo_Costa"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZqYaexAIPb/"
   },
   "403002": {
     fifaId: "403002",
@@ -24810,8 +24811,8 @@ var FIFA_SCHEDULED_MATCHES = [
   { teamA: "GHA", teamB: "PAN", kickoffTimestamp: "2026-06-17T20:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 0 }, ...v("GHA", "PAN") },
   { teamA: "ENG", teamB: "GHA", kickoffTimestamp: "2026-06-23T17:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 0 }, ...v("ENG", "GHA") },
   { teamA: "PAN", teamB: "CRO", kickoffTimestamp: "2026-06-23T20:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 1 }, ...v("PAN", "CRO") },
-  { teamA: "CRO", teamB: "GHA", kickoffTimestamp: "2026-06-27T18:00:00-03:00", status: "PRE_GAME", ...v("CRO", "GHA") },
-  { teamA: "PAN", teamB: "ENG", kickoffTimestamp: "2026-06-27T18:00:00-03:00", status: "PRE_GAME", ...v("PAN", "ENG") }
+  { teamA: "CRO", teamB: "GHA", kickoffTimestamp: "2026-06-27T18:00:00-03:00", status: "FINISHED", score: { teamA: 2, teamB: 1 }, ...v("CRO", "GHA") },
+  { teamA: "PAN", teamB: "ENG", kickoffTimestamp: "2026-06-27T18:00:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 2 }, ...v("PAN", "ENG") }
 ];
 
 // src/data/tournament.ts
