@@ -24796,8 +24796,8 @@ var FIFA_SCHEDULED_MATCHES = [
   { teamA: "AUT", teamB: "JOR", kickoffTimestamp: "2026-06-17T01:00:00-03:00", status: "FINISHED", score: { teamA: 3, teamB: 1 }, ...v("AUT", "JOR") },
   { teamA: "ARG", teamB: "AUT", kickoffTimestamp: "2026-06-22T14:00:00-03:00", status: "FINISHED", score: { teamA: 2, teamB: 0 }, ...v("ARG", "AUT") },
   { teamA: "JOR", teamB: "ALG", kickoffTimestamp: "2026-06-23T00:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 2 }, ...v("JOR", "ALG") },
-  { teamA: "ALG", teamB: "AUT", kickoffTimestamp: "2026-06-27T23:00:00-03:00", status: "PRE_GAME", ...v("ALG", "AUT") },
-  { teamA: "JOR", teamB: "ARG", kickoffTimestamp: "2026-06-27T23:00:00-03:00", status: "PRE_GAME", ...v("JOR", "ARG") },
+  { teamA: "ALG", teamB: "AUT", kickoffTimestamp: "2026-06-27T23:00:00-03:00", status: "FINISHED", score: { teamA: 3, teamB: 3 }, ...v("ALG", "AUT") },
+  { teamA: "JOR", teamB: "ARG", kickoffTimestamp: "2026-06-27T23:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 3 }, ...v("JOR", "ARG") },
   // ── Grupo K ───────────────────────────────────────────────────────────────
   { teamA: "POR", teamB: "COD", kickoffTimestamp: "2026-06-17T14:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 1 }, ...v("POR", "COD") },
   { teamA: "UZB", teamB: "COL", kickoffTimestamp: "2026-06-17T23:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 3 }, ...v("UZB", "COL") },
@@ -25529,10 +25529,20 @@ var teamByCode = new Map(
     }
   ])
 );
+var PT_WEEKDAYS = [
+  "domingo",
+  "segunda-feira",
+  "ter\xE7a-feira",
+  "quarta-feira",
+  "quinta-feira",
+  "sexta-feira",
+  "s\xE1bado"
+];
 var formatKickoffDate = (kickoffTimestamp) => {
   const [datePart] = kickoffTimestamp.split("T");
   const [year, month, day] = datePart.split("-").map(Number);
-  return `${day} ${PT_MONTHS[month - 1]}, ${year}`;
+  const weekday = PT_WEEKDAYS[new Date(Date.UTC(year, month - 1, day)).getUTCDay()];
+  return `${day} ${PT_MONTHS[month - 1]} ${year} (${weekday})`;
 };
 var formatKickoffTime = (kickoffTimestamp) => kickoffTimestamp.slice(11, 16);
 var buildTeamEntry = (teamCode) => {
@@ -25604,12 +25614,14 @@ var APP_MATCHES = [
   ).map(buildSupplementalMatch),
   ...KNOCKOUT_MATCHES.map(buildKnockoutMatch)
 ].map((match) => {
+  const kickoffDate = formatKickoffDate(match.kickoffTimestamp);
   const officialVenue = FIFA_MATCH_VENUES[match.id];
   if (!officialVenue) {
-    return match;
+    return { ...match, kickoffDate };
   }
   return {
     ...match,
+    kickoffDate,
     stadiumName: officialVenue.stadiumName.trim(),
     city: officialVenue.city.trim()
   };
@@ -25815,8 +25827,8 @@ var wikipediaCountries_default = WIKIPEDIA_COUNTRIES;
 // src/data/teamAnalysis.json
 var teamAnalysis_default = {
   COL: {
-    text: "## Leitura\nA Col\xF4mbia de N\xE9stor Lorenzo confirmou o favoritismo e lidera o Grupo K com 100% de aproveitamento. Depois de bater o Uzbequist\xE3o na estreia, superou a RD Congo por 1 a 0 e chegou aos 6 pontos, mostrando a for\xE7a de uma gera\xE7\xE3o badalada, com Luis D\xEDaz \xE0 frente. A sele\xE7\xE3o cafetera est\xE1 perto da classifica\xE7\xE3o e disputa a ponta com Portugal.\n## Desempenho\nContra a RD Congo, a Col\xF4mbia encontrou mais dificuldade do que na estreia, mas foi premiada pela insist\xEAncia: Daniel Mu\xF1oz marcou aos 76 minutos e garantiu o 1 a 0. Somada \xE0 vit\xF3ria por 3 a 1 sobre o Uzbequist\xE3o (gols de Daniel Mu\xF1oz, Jaminton Campaz e Luis D\xEDaz), a campanha \xE9 de duas vit\xF3rias e regularidade defensiva.\n## N\xFAmeros\nJ2 \xB7 2 vit\xF3rias \xB7 4 gols marcados \xB7 1 sofrido (SG +3) \xB7 l\xEDder do Grupo K com 6 pontos. Pr\xF3ximo desafio: Portugal (27/06) \u2014 o confronto direto vale a lideran\xE7a do grupo.",
-    updatedAt: "2026-06-24T09:06:00-03:00"
+    text: "## Leitura\nA Col\xF4mbia de N\xE9stor Lorenzo cumpriu a miss\xE3o com autoridade e terminou em primeiro no Grupo K, carimbando a vaga no mata-mata. Gera\xE7\xE3o badalada com Luis D\xEDaz \xE0 frente, a sele\xE7\xE3o cafetera somou 7 pontos e, mais do que os gols, impressionou pela solidez defensiva: apenas um gol sofrido em tr\xEAs jogos.\n## Desempenho\nEstreou vencendo o Uzbequist\xE3o por 3 a 1, com Daniel Mu\xF1oz, Luis D\xEDaz e Jaminton Campaz (nos acr\xE9scimos) balan\xE7ando as redes. Na sequ\xEAncia, superou a RD Congo por 1 a 0, de novo com Daniel Mu\xF1oz (76 minutos), o grande nome ofensivo da campanha. Na rodada final, segurou um 0 a 0 diante de Portugal que confirmou a lideran\xE7a do grupo \u2014 confronto direto sem gols, mas com a ponta assegurada.\n## N\xFAmeros\nJ3 \xB7 2 vit\xF3rias \xB7 1 empate \xB7 4 gols marcados \xB7 1 sofrido (SG +3) \xB7 1\xAA colocada do Grupo K com 7 pontos, classificada ao mata-mata. Artilheiro na Copa: Daniel Mu\xF1oz (2 gols). Pr\xF3ximo desafio: os 16-avos de final do Mundial (mata-mata), contra advers\xE1rio a ser definido pelo cruzamento do chaveamento.",
+    updatedAt: "2026-06-28T00:32:00-03:00"
   },
   POR: {
     text: "## Leitura\nPortugal de Roberto Mart\xEDnez se recuperou da estreia decepcionante e voltou a sorrir no Grupo K. Depois do empate com a RD Congo, goleou o Uzbequist\xE3o por 5 a 0 e chegou aos 4 pontos, com Cristiano Ronaldo enfim desencantando. A sele\xE7\xE3o lusa, favorita ao t\xEDtulo, est\xE1 bem encaminhada e mira a lideran\xE7a no duelo contra a Col\xF4mbia.\n## Desempenho\nDiante do Uzbequist\xE3o, Portugal fez o que faltou na estreia: foi eficiente e goleou por 5 a 0. Cristiano Ronaldo marcou duas vezes (aos 6 e aos 39 minutos), Nuno Mendes e Rafael Le\xE3o tamb\xE9m balan\xE7aram as redes, numa exibi\xE7\xE3o de ataque avassalador que devolveu a confian\xE7a \xE0 equipe.\n## N\xFAmeros\nJ2 \xB7 1 vit\xF3ria \xB7 1 empate \xB7 6 gols marcados \xB7 1 sofrido (SG +5), em 2\xBA no Grupo K com 4 pontos. Artilheiro: Cristiano Ronaldo (2 gols). Pr\xF3ximo desafio: Col\xF4mbia (27/06) \u2014 vencer significa terminar na ponta do grupo.",
