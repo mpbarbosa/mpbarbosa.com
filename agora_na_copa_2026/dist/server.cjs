@@ -24803,8 +24803,8 @@ var FIFA_SCHEDULED_MATCHES = [
   { teamA: "UZB", teamB: "COL", kickoffTimestamp: "2026-06-17T23:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 3 }, ...v("UZB", "COL") },
   { teamA: "POR", teamB: "UZB", kickoffTimestamp: "2026-06-23T14:00:00-03:00", status: "FINISHED", score: { teamA: 5, teamB: 0 }, ...v("POR", "UZB") },
   { teamA: "COL", teamB: "COD", kickoffTimestamp: "2026-06-23T23:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 0 }, ...v("COL", "COD") },
-  { teamA: "COL", teamB: "POR", kickoffTimestamp: "2026-06-27T20:30:00-03:00", status: "PRE_GAME", ...v("COL", "POR") },
-  { teamA: "COD", teamB: "UZB", kickoffTimestamp: "2026-06-27T20:30:00-03:00", status: "PRE_GAME", ...v("COD", "UZB") },
+  { teamA: "COL", teamB: "POR", kickoffTimestamp: "2026-06-27T20:30:00-03:00", status: "FINISHED", score: { teamA: 0, teamB: 0 }, ...v("COL", "POR") },
+  { teamA: "COD", teamB: "UZB", kickoffTimestamp: "2026-06-27T20:30:00-03:00", status: "FINISHED", score: { teamA: 3, teamB: 1 }, ...v("COD", "UZB") },
   // ── Grupo L ───────────────────────────────────────────────────────────────
   { teamA: "ENG", teamB: "CRO", kickoffTimestamp: "2026-06-17T17:00:00-03:00", status: "FINISHED", score: { teamA: 4, teamB: 2 }, ...v("ENG", "CRO") },
   { teamA: "GHA", teamB: "PAN", kickoffTimestamp: "2026-06-17T20:00:00-03:00", status: "FINISHED", score: { teamA: 1, teamB: 0 }, ...v("GHA", "PAN") },
@@ -26913,12 +26913,6 @@ function groupStandings(rows, matches = APP_MATCHES) {
 }
 
 // predict-core.ts
-function strength(team2) {
-  return team2.points * 3 + team2.goalDifference * 2 + team2.goalsFor;
-}
-function goalsPerGame(team2) {
-  return team2.played > 0 ? Math.round(team2.goalsFor / team2.played) : 0;
-}
 function teamLine(team2) {
   if (team2.played === 0) {
     return `${team2.name} ainda n\xE3o entrou em campo nesta Copa.`;
@@ -26926,42 +26920,43 @@ function teamLine(team2) {
   const sign = team2.goalDifference > 0 ? `+${team2.goalDifference}` : `${team2.goalDifference}`;
   return `${team2.name} \u2014 ${team2.points} pts em ${team2.played} jogo${team2.played === 1 ? "" : "s"} (${team2.won}V ${team2.drawn}E ${team2.lost}D), ${team2.goalsFor} gols pr\xF3, ${team2.goalsAgainst} contra, saldo ${sign}.`;
 }
-function buildPrediction(home, away, userNotes) {
-  const margin = strength(home) - strength(away);
+function pct(probability) {
+  return `${Math.round(probability * 100)}%`;
+}
+function buildPrediction(home, away, outcome, userNotes) {
   const bothPlayed = home.played > 0 && away.played > 0;
+  const edge = outcome.homeWin - outcome.awayWin;
   let verdict;
   if (!bothPlayed) {
     verdict = `Cedo demais para cravar: ${home.name} e ${away.name} mal aqueceram os motores. Por enquanto, confronto totalmente em aberto.`;
-  } else if (Math.abs(margin) <= 2) {
+  } else if (Math.abs(edge) <= 0.1) {
     verdict = `Jogo de igual para igual entre ${home.name} e ${away.name} \u2014 moeda no ar.`;
   } else {
-    const fav = margin > 0 ? home : away;
-    const dog = margin > 0 ? away : home;
-    const strong = Math.abs(margin) > 6;
+    const fav = edge > 0 ? home : away;
+    const dog = edge > 0 ? away : home;
+    const strong = Math.abs(edge) > 0.3;
     verdict = strong ? `${fav.name} entra como favorito claro diante de ${dog.name}, pela campanha mais s\xF3lida.` : `${fav.name} leva leve vantagem sobre ${dog.name}, mas sem folga para vacilar.`;
   }
-  let scoreline = "";
+  let modelLines = "";
   if (bothPlayed) {
-    let hg = goalsPerGame(home);
-    let ag = goalsPerGame(away);
-    if (hg === ag && margin !== 0) {
-      if (margin > 0) hg += 1;
-      else ag += 1;
-    }
-    scoreline = `
-Placar simulado: ${home.name} ${hg} x ${ag} ${away.name}.`;
+    const probLine = `Probabilidades: ${home.name} ${pct(outcome.homeWin)} \xB7 empate ${pct(outcome.draw)} \xB7 ${away.name} ${pct(outcome.awayWin)}.`;
+    const { teamA, teamB } = outcome.mostLikelyScore;
+    const scoreLine = `Placar mais prov\xE1vel: ${home.name} ${teamA} x ${teamB} ${away.name}.`;
+    modelLines = `
+${probLine}
+${scoreLine}`;
   }
   const notes = userNotes?.trim().slice(0, 280);
   const notesLine = notes ? `
 Voc\xEA destacou: "${notes}" \u2014 anotado, mas o palpite segue a campanha.` : "";
   return [
     `## Progn\xF3stico`,
-    `${verdict}${scoreline}`,
+    `${verdict}${modelLines}`,
     `## N\xFAmeros`,
     `${teamLine(home)}
 ${teamLine(away)}`,
     `## Leitura`,
-    `Palpite simulado, gerado s\xF3 a partir da campanha atual das sele\xE7\xF5es \u2014 \xE9 divers\xE3o para a torcida, n\xE3o cravada de resultado.${notesLine}`
+    `Palpite simulado por um modelo de Poisson com corre\xE7\xE3o Dixon-Coles sobre a campanha atual das sele\xE7\xF5es \u2014 \xE9 divers\xE3o para a torcida, n\xE3o cravada de resultado.${notesLine}`
   ].join("\n");
 }
 
@@ -27017,28 +27012,33 @@ function dixonColesTau(x, y, lambda, mu, rho) {
   return 1;
 }
 var STRENGTH_FALLBACK = { attack: 1, defense: 1 };
-function buildScoreDistribution(model, homeCode, awayCode, rho) {
+function buildScoreGrid(model, homeCode, awayCode, rho) {
   const home = model.teams.get(homeCode) ?? STRENGTH_FALLBACK;
   const away = model.teams.get(awayCode) ?? STRENGTH_FALLBACK;
   const lambda = clamp(model.baseline * home.attack * away.defense, MIN_EXPECTED_GOALS, MAX_EXPECTED_GOALS);
   const mu = clamp(model.baseline * away.attack * home.defense, MIN_EXPECTED_GOALS, MAX_EXPECTED_GOALS);
   const pmfHome = poissonPmf(lambda, MAX_GOALS_PER_SIDE);
   const pmfAway = poissonPmf(mu, MAX_GOALS_PER_SIDE);
-  const scores = [];
-  const weights = [];
+  const cells = [];
   let total = 0;
   for (let x = 0; x <= MAX_GOALS_PER_SIDE; x += 1) {
     for (let y = 0; y <= MAX_GOALS_PER_SIDE; y += 1) {
       const weight = pmfHome[x] * pmfAway[y] * Math.max(0, dixonColesTau(x, y, lambda, mu, rho));
       total += weight;
-      scores.push({ teamA: x, teamB: y });
-      weights.push(weight);
+      cells.push({ home: x, away: y, prob: weight });
     }
   }
+  for (const cell of cells) cell.prob /= total;
+  return { lambda, mu, cells };
+}
+function buildScoreDistribution(model, homeCode, awayCode, rho) {
+  const { cells } = buildScoreGrid(model, homeCode, awayCode, rho);
+  const scores = [];
   const cumulative = [];
   let running = 0;
-  for (const weight of weights) {
-    running += weight / total;
+  for (const cell of cells) {
+    running += cell.prob;
+    scores.push({ teamA: cell.home, teamB: cell.away });
     cumulative.push(running);
   }
   return { cumulative, scores };
@@ -27061,6 +27061,30 @@ function createPoissonSampler(standings2, options = {}) {
       if (u <= cumulative[i]) return scores[i];
     }
     return scores[scores.length - 1];
+  };
+}
+function predictMatchOutcome(standings2, homeCode, awayCode, options = {}) {
+  const priorWeight = Math.max(0, options.priorWeight ?? DEFAULT_PRIOR_WEIGHT);
+  const rho = options.rho ?? DEFAULT_RHO;
+  const model = buildStrengthModel(standings2, priorWeight);
+  const { lambda, mu, cells } = buildScoreGrid(model, homeCode, awayCode, rho);
+  let homeWin = 0;
+  let draw = 0;
+  let awayWin = 0;
+  let modal = cells[0];
+  for (const cell of cells) {
+    if (cell.home > cell.away) homeWin += cell.prob;
+    else if (cell.home < cell.away) awayWin += cell.prob;
+    else draw += cell.prob;
+    if (cell.prob > modal.prob) modal = cell;
+  }
+  return {
+    homeWin,
+    draw,
+    awayWin,
+    expectedHomeGoals: lambda,
+    expectedAwayGoals: mu,
+    mostLikelyScore: { teamA: modal.home, teamB: modal.away }
   };
 }
 function simulateOnce(finished, remaining, sampler, rng) {
@@ -28763,7 +28787,8 @@ app.post("/api/predict", (req, res) => {
     goalsAgainst: row.goalsAgainst,
     goalDifference: row.goalDifference
   });
-  res.json({ text: buildPrediction(toTeam(home), toTeam(away), userNotes), simulated: true });
+  const outcome = predictMatchOutcome(rows, home.code, away.code);
+  res.json({ text: buildPrediction(toTeam(home), toTeam(away), outcome, userNotes), simulated: true });
 });
 var QUALIFICATION_SIM_SEED = 1371482685;
 var DEFAULT_QUALIFICATION_ITERATIONS = 4e3;
