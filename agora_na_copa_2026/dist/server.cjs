@@ -25082,7 +25082,10 @@ var knockoutBracket_default = {
       city: "Los Angeles",
       slotA: "2A",
       slotB: "2B",
-      teamA: null,
+      teamA: {
+        code: "RSA",
+        name: "South Africa"
+      },
       teamB: {
         code: "CAN",
         name: "Canada"
@@ -25100,7 +25103,10 @@ var knockoutBracket_default = {
         code: "GER",
         name: "Germany"
       },
-      teamB: null
+      teamB: {
+        code: "PAR",
+        name: "Paraguay"
+      }
     },
     {
       matchNumber: 75,
@@ -25110,8 +25116,14 @@ var knockoutBracket_default = {
       city: "Monterrey",
       slotA: "1F",
       slotB: "2C",
-      teamA: null,
-      teamB: null
+      teamA: {
+        code: "NED",
+        name: "Netherlands"
+      },
+      teamB: {
+        code: "MAR",
+        name: "Morocco"
+      }
     },
     {
       matchNumber: 76,
@@ -25121,8 +25133,14 @@ var knockoutBracket_default = {
       city: "Houston",
       slotA: "1C",
       slotB: "2F",
-      teamA: null,
-      teamB: null
+      teamA: {
+        code: "BRA",
+        name: "Brazil"
+      },
+      teamB: {
+        code: "JPN",
+        name: "Japan"
+      }
     },
     {
       matchNumber: 77,
@@ -25132,8 +25150,14 @@ var knockoutBracket_default = {
       city: "New Jersey",
       slotA: "1I",
       slotB: "3CDFGH",
-      teamA: null,
-      teamB: null
+      teamA: {
+        code: "FRA",
+        name: "France"
+      },
+      teamB: {
+        code: "SWE",
+        name: "Sweden"
+      }
     },
     {
       matchNumber: 78,
@@ -25143,8 +25167,14 @@ var knockoutBracket_default = {
       city: "Dallas",
       slotA: "2E",
       slotB: "2I",
-      teamA: null,
-      teamB: null
+      teamA: {
+        code: "CIV",
+        name: "C\xF4te d'Ivoire"
+      },
+      teamB: {
+        code: "NOR",
+        name: "Norway"
+      }
     },
     {
       matchNumber: 79,
@@ -25158,7 +25188,10 @@ var knockoutBracket_default = {
         code: "MEX",
         name: "Mexico"
       },
-      teamB: null
+      teamB: {
+        code: "ECU",
+        name: "Ecuador"
+      }
     },
     {
       matchNumber: 80,
@@ -25168,8 +25201,14 @@ var knockoutBracket_default = {
       city: "Atlanta",
       slotA: "1L",
       slotB: "3EHIJK",
-      teamA: null,
-      teamB: null
+      teamA: {
+        code: "ENG",
+        name: "England"
+      },
+      teamB: {
+        code: "COD",
+        name: "Congo DR"
+      }
     },
     {
       matchNumber: 81,
@@ -25183,7 +25222,10 @@ var knockoutBracket_default = {
         code: "USA",
         name: "USA"
       },
-      teamB: null
+      teamB: {
+        code: "BIH",
+        name: "Bosnia and Herzegovina"
+      }
     },
     {
       matchNumber: 82,
@@ -25193,8 +25235,14 @@ var knockoutBracket_default = {
       city: "Seattle",
       slotA: "1G",
       slotB: "3AEHIJ",
-      teamA: null,
-      teamB: null
+      teamA: {
+        code: "BEL",
+        name: "Belgium"
+      },
+      teamB: {
+        code: "SEN",
+        name: "Senegal"
+      }
     },
     {
       matchNumber: 83,
@@ -25204,8 +25252,14 @@ var knockoutBracket_default = {
       city: "Toronto",
       slotA: "2K",
       slotB: "2L",
-      teamA: null,
-      teamB: null
+      teamA: {
+        code: "POR",
+        name: "Portugal"
+      },
+      teamB: {
+        code: "CRO",
+        name: "Croatia"
+      }
     },
     {
       matchNumber: 84,
@@ -25215,8 +25269,14 @@ var knockoutBracket_default = {
       city: "Los Angeles",
       slotA: "1H",
       slotB: "2J",
-      teamA: null,
-      teamB: null
+      teamA: {
+        code: "ESP",
+        name: "Spain"
+      },
+      teamB: {
+        code: "AUT",
+        name: "Austria"
+      }
     },
     {
       matchNumber: 85,
@@ -25230,7 +25290,10 @@ var knockoutBracket_default = {
         code: "SUI",
         name: "Switzerland"
       },
-      teamB: null
+      teamB: {
+        code: "ALG",
+        name: "Algeria"
+      }
     },
     {
       matchNumber: 86,
@@ -25244,7 +25307,10 @@ var knockoutBracket_default = {
         code: "ARG",
         name: "Argentina"
       },
-      teamB: null
+      teamB: {
+        code: "CPV",
+        name: "Cabo Verde"
+      }
     },
     {
       matchNumber: 87,
@@ -25254,8 +25320,14 @@ var knockoutBracket_default = {
       city: "Kansas City",
       slotA: "1K",
       slotB: "3DEIJL",
-      teamA: null,
-      teamB: null
+      teamA: {
+        code: "COL",
+        name: "Colombia"
+      },
+      teamB: {
+        code: "GHA",
+        name: "Ghana"
+      }
     },
     {
       matchNumber: 88,
@@ -25265,8 +25337,14 @@ var knockoutBracket_default = {
       city: "Dallas",
       slotA: "2D",
       slotB: "2G",
-      teamA: null,
-      teamB: null
+      teamA: {
+        code: "AUS",
+        name: "Australia"
+      },
+      teamB: {
+        code: "EGY",
+        name: "Egypt"
+      }
     },
     {
       matchNumber: 89,
