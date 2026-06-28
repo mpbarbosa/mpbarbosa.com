@@ -167,9 +167,7 @@ var squads_default = {
     socials: {
       instagram: "muslera",
       wikipedia: "https://pt.wikipedia.org/wiki/Fernando_Muslera"
-    },
-    worldCupNote: "## Leitura\nAos 39 anos e com a camisa 23, Fernando Muslera foi a aposta de Marcelo Bielsa para o gol do Uruguai e disputou as tr\xEAs partidas como titular. S\xEDmbolo de uma gera\xE7\xE3o celeste, o veterano segurou a meta o quanto p\xF4de, mas n\xE3o evitou um Mundial frustrante: o Uruguai parou na fase de grupos.\n## Desempenho\nNa estreia, no 1 a 1 com a Ar\xE1bia Saudita, foi vazado por Abdulelah Al-Amri (41'), antes de Maxi Ara\xFAjo igualar (80'). Contra Cabo Verde (2 a 2), sofreu os gols de Kevin Pina (21') e H\xE9lio Varela (61'), num jogo em que a Celeste chegou a virar com Ara\xFAjo (44') e Canobbio (45'+6'). Na decis\xE3o diante da Espanha, levou o gol de \xC1lex Baena (42') na derrota por 1 a 0 que selou a elimina\xE7\xE3o uruguaia. Tr\xEAs jogos completos, nenhuma rede intacta.\n## N\xFAmeros\nJ3 \xB7 4 gols sofridos \xB7 0 jogos sem sofrer \xB7 titular nos tr\xEAs jogos. O Uruguai terminou em 3\xBA no Grupo H, com 2 pontos, e est\xE1 eliminado \u2014 desfecho amargo para o capit\xE3o da defesa celeste.",
-    worldCupNoteUpdatedAt: "2026-06-27T00:00:00.000Z"
+    }
   },
   "241559": {
     fifaId: "241559",
@@ -1745,7 +1743,8 @@ var squads_default = {
     dateOfBirth: "1993-07-28",
     height: 190,
     worldCupNote: "## Leitura\nCapit\xE3o e principal refer\xEAncia ofensiva da Inglaterra, Harry Kane \xE9 um dos grandes nomes desta Copa e candidato \xE0 artilharia. Maior goleador da hist\xF3ria da sele\xE7\xE3o inglesa, come\xE7ou o torneio fazendo o que se espera dele, mas esbarrou numa defesa fechada na segunda rodada \u2014 sem tirar o English Team da lideran\xE7a do Grupo L.\n## Desempenho\nEstreia de gala: na vit\xF3ria por 4 a 2 sobre a Cro\xE1cia, Kane marcou duas vezes no primeiro tempo (aos 12 e aos 42 minutos), comandando a goleada parcial. Na segunda rodada, por\xE9m, ficou em branco no 0 a 0 com Gana \u2014 bem marcado, viu o ataque ingl\xEAs esbarrar no bloqueio gan\xEAs, mas a Inglaterra seguiu invicta e na ponta.\n## N\xFAmeros\nJ2 \xB7 2 gols \xB7 0 cart\xF5es \xB7 Inglaterra l\xEDder do Grupo L (4 pontos, SG +2). Pr\xF3ximo desafio: Panam\xE1, valendo a confirma\xE7\xE3o da vaga.",
-    worldCupNoteUpdatedAt: "2026-06-23T20:00:00.000Z"
+    worldCupNoteUpdatedAt: "2026-06-23T20:00:00.000Z",
+    instagramPostUrl: "https://www.instagram.com/p/DZ8oJCFFqhu/"
   },
   "369434": {
     fifaId: "369434",
@@ -25832,8 +25831,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-06-24T09:06:00-03:00"
   },
   ENG: {
-    text: "## Leitura\nA Inglaterra terminou o Grupo L na lideran\xE7a e invicta. Come\xE7ou com um joga\xE7o contra a Cro\xE1cia, segurou Gana num empate sem gols e fechou com tranquilidade sobre o Panam\xE1, sempre com Harry Kane decisivo. Avan\xE7a \xE0s oitavas em primeiro.\n## Desempenho\nEstreou vencendo a Cro\xE1cia por 4 a 2, com dois gols de Kane, um de Bellingham e um de Rashford. Empatou em 0 a 0 com Gana e bateu o Panam\xE1 por 2 a 0 (Bellingham e Kane), confirmando o primeiro lugar.\n## N\xFAmeros\nJ3 \xB7 2 vit\xF3rias \xB7 1 empate \xB7 6 gols marcados \xB7 2 sofridos (SG +4) \xB7 l\xEDder do Grupo L com 7 pontos. Artilheiro: Harry Kane (3 gols). Classificada em 1\xBA; aguarda o advers\xE1rio das oitavas.",
-    updatedAt: "2026-06-27T22:24:00-03:00"
+    text: "## Leitura\nA Inglaterra de Thomas Tuchel cumpriu o favoritismo e terminou o Grupo L na lideran\xE7a e invicta. Mostrou as duas faces de uma candidata ao t\xEDtulo: poder de fogo na estreia, com 4 a 2 sobre a Cro\xE1cia, e solidez defensiva nas duas rodadas seguintes, zerando o gol diante de Gana e Panam\xE1. Harry Kane, como sempre, foi a refer\xEAncia \u2014 mas a profundidade do elenco apareceu como o grande trunfo dos ingleses.\n## Desempenho\nEstreou num joga\xE7o: 4 a 2 sobre a Cro\xE1cia, com dois gols de Kane ainda no primeiro tempo (12 e 42), Jude Bellingham logo no in\xEDcio da etapa final (47) e Marcus Rashford fechando a conta (85). Na segunda rodada, esbarrou na organiza\xE7\xE3o ganesa num 0 a 0 truncado \u2014 Tuchel lan\xE7ou m\xE3o de Saka, Eze e Rashford no segundo tempo, mas n\xE3o furou o bloqueio. Na despedida, controlou o Panam\xE1 e venceu por 2 a 0, com Bellingham (62) e Kane (67) confirmando o primeiro lugar.\n## Pontos fortes\nA for\xE7a do English Team est\xE1 no equil\xEDbrio entre os setores. No ataque, Kane (3 gols) divide a responsabilidade com Bellingham (2), e o banco de luxo \u2014 Bukayo Saka, Eberechi Eze e Rashford \u2014 d\xE1 a Tuchel poder de mudar o jogo na reta final. Atr\xE1s, foram dois jogos sem sofrer gols depois do vacilo inicial contra os croatas: apenas 2 gols sofridos em tr\xEAs partidas, ambos num \xFAnico jogo, com Declan Rice dando o equil\xEDbrio no meio-campo. \xC9 um conjunto montado para o mata-mata.\n## N\xFAmeros\nJ3 \xB7 2 vit\xF3rias \xB7 1 empate \xB7 6 gols marcados \xB7 2 sofridos (SG +4) \xB7 2 jogos sem sofrer gols \xB7 l\xEDder do Grupo L com 7 pontos. Artilheiro: Harry Kane (3 gols), seguido de Jude Bellingham (2). T\xE9cnico: Thomas Tuchel. Classificada em 1\xBA; como cabe\xE7a de chave, aguarda a defini\xE7\xE3o do advers\xE1rio das oitavas, ainda dependente do encerramento dos Grupos J e K.",
+    updatedAt: "2026-06-27T22:56:00-03:00"
   },
   GHA: {
     text: "## Leitura\nGana garantiu vaga entre os melhores terceiros do Grupo L apoiada numa defesa aplicada. Venceu o Panam\xE1, segurou a Inglaterra e s\xF3 caiu diante da Cro\xE1cia, terminando em terceiro com a classifica\xE7\xE3o assegurada.\n## Desempenho\nEstreou batendo o Panam\xE1 por 1 a 0, com Yirenkyi marcando nos acr\xE9scimos. Segurou um empate sem gols com a Inglaterra e perdeu para a Cro\xE1cia por 2 a 1 na rodada final, com Luckassen descontando.\n## N\xFAmeros\nJ3 \xB7 1 vit\xF3ria \xB7 1 empate \xB7 1 derrota \xB7 2 gols marcados \xB7 2 sofridos (SG 0) \xB7 3\xBA no Grupo L com 4 pontos. Classificada entre os oito melhores terceiros \u2014 vaga matematicamente assegurada mesmo com os Grupos J e K ainda em disputa.",
