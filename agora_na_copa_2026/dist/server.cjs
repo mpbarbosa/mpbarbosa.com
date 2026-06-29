@@ -13030,7 +13030,8 @@ var squads_default = {
     socials: {
       instagram: "kaishusano_1230",
       wikipedia: "https://en.wikipedia.org/wiki/Kaish%C5%AB_Sano"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DWGqwl0DfOk/"
   },
   "479316": {
     fifaId: "479316",
@@ -25528,6 +25529,16 @@ var knockoutBracket_default = {
 // src/data/knockoutBracket.ts
 var KNOCKOUT_MATCHES = knockoutBracket_default.matches;
 
+// src/data/knockoutResults.ts
+var KNOCKOUT_RESULTS = {
+  // #73 · 16-avos · Los Angeles Stadium · 28/06/2026 — África do Sul 0×1 Canadá
+  // (Stephen Eustáquio aos 90+2'). Canadá classificado; alimenta a Oitavas #90 (slot W73).
+  73: { status: "FINISHED", score: { teamA: 0, teamB: 1 } },
+  // #76 · 16-avos · 29/06/2026 — Brasil 2×1 Japão (Sano 29' p/ JPN; Casemiro 56' e
+  // Gabriel Martinelli 90+5' p/ BRA). Brasil classificado; alimenta a Oitavas #91 (slot W76).
+  76: { status: "FINISHED", score: { teamA: 2, teamB: 1 } }
+};
+
 // src/utils/knockoutSlots.ts
 function humanizeSlot(slot) {
   const groupPos = slot.match(/^([12])([A-L])$/);
@@ -25670,6 +25681,7 @@ var buildKnockoutTeamEntry = (ref, slot) => {
 var buildKnockoutMatch = (km) => {
   const kickoffTimestamp = toBrasiliaTimestamp(km.dateUtc);
   const kickoffMs = new Date(km.dateUtc).getTime();
+  const result = KNOCKOUT_RESULTS[km.matchNumber];
   return {
     id: `ko-${km.matchNumber}-2026`,
     teamA: buildKnockoutTeamEntry(km.teamA, km.slotA),
@@ -25680,7 +25692,9 @@ var buildKnockoutMatch = (km) => {
     kickoffTime: formatKickoffTime(kickoffTimestamp),
     kickoffDate: formatKickoffDate(kickoffTimestamp),
     kickoffTimestamp,
-    status: "PRE_GAME",
+    status: result?.status ?? "PRE_GAME",
+    score: result?.score,
+    matchTime: result?.matchTime,
     countdownTargetSeconds: Math.max(0, Math.floor((kickoffMs - Date.now()) / 1e3)),
     broadcasters: []
   };
