@@ -2741,7 +2741,11 @@ var squads_default = {
     },
     dateOfBirth: "1998-12-20",
     height: 180,
-    instagramPostUrl: "https://www.instagram.com/p/DZqaoeeAhUg/",
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZqaoeeAhUg/",
+      "https://www.instagram.com/p/DZ7YVf1Anjj/",
+      "https://www.instagram.com/p/DaOi0kjF55g/"
+    ],
     worldCupNote: "## Leitura\nComo sempre, Mbapp\xE9 \xE9 o farol da Fran\xE7a \u2014 e fechou a fase de grupos com 100% de aproveitamento e a lideran\xE7a do Grupo I. Capit\xE3o e principal estrela, o camisa 10 soma quatro gols e leva a Fran\xE7a \xE0s oitavas como uma das for\xE7as do Mundial.\n## Desempenho\nNa estreia, marcou duas vezes na vit\xF3ria por 3 a 1 sobre o Senegal (66' e 90'+6'). Contra o Iraque, repetiu a dose: abriu aos 14 e ampliou aos 54 no 3 a 0. No fechamento, na vit\xF3ria por 4 a 1 sobre a Noruega, atuou at\xE9 os 86 sem balan\xE7ar as redes, mas a Fran\xE7a selou a campanha perfeita. Ficha disciplinar limpa.\n## N\xFAmeros\nJ3 \xB7 4 gols \xB7 0 cart\xF5es \xB7 Fran\xE7a em 1\xBA do Grupo I com 9 pontos (100%) e saldo +8. Entre os artilheiros do Mundial, Mbapp\xE9 lidera o favorito rumo \xE0s oitavas.",
     worldCupNoteUpdatedAt: "2026-06-26T19:00:00.000Z"
   },
