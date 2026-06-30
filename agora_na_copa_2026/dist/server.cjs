@@ -15994,8 +15994,11 @@ var squads_default = {
     dateOfBirth: "2000-06-11",
     height: 190,
     socials: {
+      instagram: "orlando_daniel01",
       wikipedia: "https://en.wikipedia.org/wiki/Orlando_Gill"
-    }
+    },
+    worldCupNote: "## Leitura\nOrlando Gill virou her\xF3i nacional. Em uma das maiores noites da hist\xF3ria do futebol paraguaio, o goleiro defendeu duas cobran\xE7as na disputa de p\xEAnaltis e eliminou a tetracampe\xE3 Alemanha nos 16-avos de final, colocando o Paraguai nas oitavas da Copa do Mundo.\n## Desempenho\nNo 1 a 1 que persistiu pela prorroga\xE7\xE3o contra a Alemanha \u2014 Julio Enciso abriu aos 42\u2019, Kai Havertz empatou aos 54\u2019 \u2014, a decis\xE3o foi para os p\xEAnaltis, e para as m\xE3os de Gill. O goleiro pegou as cobran\xE7as de Kai Havertz e Nick Woltemade, enquanto Mauricio, Gustavo G\xF3mez, Mat\xEDas Galarza e Jos\xE9 Canale convertiam para a Albirroja, selando o 4 a 3 que derrubou a favorita.\n## N\xFAmeros\nParaguai: 3\xBA do Grupo D (4 pts), classificado entre os melhores terceiros. Nos 16-avos, 2 p\xEAnaltis defendidos (Havertz e Woltemade) na vit\xF3ria por 4 a 3 sobre a Alemanha. Pr\xF3ximo desafio: oitavas de final, contra o vencedor de Fran\xE7a x Su\xE9cia.",
+    worldCupNoteUpdatedAt: "2026-06-29T20:30:00.000Z"
   },
   "494557": {
     fifaId: "494557",
