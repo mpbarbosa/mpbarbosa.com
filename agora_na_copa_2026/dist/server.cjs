@@ -27289,6 +27289,7 @@ var DEFAULT_PORT = Number(process.env.PORT || 3e3);
 var HOST = "0.0.0.0";
 var STRICT_PORT = process.env.STRICT_PORT === "true";
 var FIFA_API_BASE_URL = "https://api.fifa.com/api/v3";
+var FIFA_FALLBACK_BASE_URL = process.env.FIFA_FALLBACK_BASE_URL ?? "https://copa2026.mpbarbosa.com/api/fifa-proxy";
 var FIFA_COMPETITION_ID = "17";
 var FIFA_SEASON_ID = "285023";
 var DEFAULT_BROADCAST_COUNTRY = "BR";
@@ -27790,10 +27791,7 @@ var recordFailureState = (diagnostics, error) => {
   }
 };
 var FIFA_SYNC_DISABLED = process.env.DISABLE_FIFA_SYNC === "true";
-var fetchJson = async (url) => {
-  if (FIFA_SYNC_DISABLED) {
-    throw new Error("FIFA sync disabled (DISABLE_FIFA_SYNC) \u2014 serving fallback data");
-  }
+var fetchJsonFrom = async (url) => {
   const response = await fetch(url, {
     headers: {
       "User-Agent": "agora-na-copa-2026/1.0",
@@ -27804,6 +27802,36 @@ var fetchJson = async (url) => {
     throw new Error(`FIFA API request failed (${response.status}) for ${url}`);
   }
   return await response.json();
+};
+var toFifaFallbackUrl = (url) => {
+  const fifaPrefix = `${FIFA_API_BASE_URL}/`;
+  if (!FIFA_FALLBACK_BASE_URL || !url.startsWith(fifaPrefix)) {
+    return null;
+  }
+  const candidate = `${FIFA_FALLBACK_BASE_URL}/${url.slice(fifaPrefix.length)}`;
+  return candidate.startsWith(fifaPrefix) ? null : candidate;
+};
+var fetchJson = async (url) => {
+  if (FIFA_SYNC_DISABLED) {
+    throw new Error("FIFA sync disabled (DISABLE_FIFA_SYNC) \u2014 serving fallback data");
+  }
+  try {
+    return await fetchJsonFrom(url);
+  } catch (primaryError) {
+    const fallbackUrl = toFifaFallbackUrl(url);
+    if (!fallbackUrl) {
+      throw primaryError;
+    }
+    try {
+      const payload = await fetchJsonFrom(fallbackUrl);
+      console.warn(`FIFA direct fetch failed for ${url}; served from fallback ${fallbackUrl}.`);
+      return payload;
+    } catch (fallbackError) {
+      throw new Error(
+        `FIFA API unreachable and fallback failed for ${url}: ${primaryError.message} | fallback: ${fallbackError.message}`
+      );
+    }
+  }
 };
 var fetchCalendarMatches = async (language) => {
   const calendarData = await fetchJson(
@@ -28870,6 +28898,50 @@ app.get("/api/fifa-sync-status", (_req, res) => {
       activeLiveMatchIds: fifaSyncDiagnostics.matchStates.activeLiveMatchIds
     }
   });
+});
+var FIFA_PROXY_CACHE_TTL_MS = 30 * 1e3;
+var FIFA_PROXY_ALLOWED_ROOTS = ["calendar/", "live/", "watch/"];
+var fifaProxyCache = /* @__PURE__ */ new Map();
+app.get("/api/fifa-proxy/*", async (req, res) => {
+  if (FIFA_SYNC_DISABLED) {
+    res.status(503).json({ error: "FIFA proxy disabled (DISABLE_FIFA_SYNC)" });
+    return;
+  }
+  const subPath = req.params[0] ?? "";
+  if (!FIFA_PROXY_ALLOWED_ROOTS.some((root) => subPath.startsWith(root))) {
+    res.status(404).json({ error: "Unsupported FIFA proxy path" });
+    return;
+  }
+  const queryIndex = req.originalUrl.indexOf("?");
+  const query = queryIndex >= 0 ? req.originalUrl.slice(queryIndex) : "";
+  const target = `${FIFA_API_BASE_URL}/${subPath}${query}`;
+  const cached = fifaProxyCache.get(target);
+  if (cached && cached.expiresAt > Date.now()) {
+    res.status(cached.status).type("application/json").send(cached.body);
+    return;
+  }
+  try {
+    const upstream = await fetch(target, {
+      headers: {
+        "User-Agent": "agora-na-copa-2026/1.0",
+        Accept: "application/json"
+      }
+    });
+    const body = await upstream.text();
+    if (upstream.ok) {
+      fifaProxyCache.set(target, {
+        expiresAt: Date.now() + FIFA_PROXY_CACHE_TTL_MS,
+        status: upstream.status,
+        body
+      });
+    }
+    res.status(upstream.status).type("application/json").send(body);
+  } catch (error) {
+    res.status(502).json({
+      error: "FIFA upstream unreachable via proxy",
+      detail: error.message
+    });
+  }
 });
 app.get("/api/questions", (_req, res) => {
   res.set("Cache-Control", "no-store");
