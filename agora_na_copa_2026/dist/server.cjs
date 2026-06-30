@@ -18253,6 +18253,17 @@ var getScoreFromLiveFifa = (fifaMatch) => {
   }
   return void 0;
 };
+var getPenaltyScoreFromFifa = (fifaMatch, fifaLiveMatch) => {
+  const homePenalties = typeof fifaLiveMatch?.HomeTeamPenaltyScore === "number" ? fifaLiveMatch.HomeTeamPenaltyScore : fifaMatch.HomeTeamPenaltyScore;
+  const awayPenalties = typeof fifaLiveMatch?.AwayTeamPenaltyScore === "number" ? fifaLiveMatch.AwayTeamPenaltyScore : fifaMatch.AwayTeamPenaltyScore;
+  if (typeof homePenalties === "number" && typeof awayPenalties === "number") {
+    return {
+      teamA: homePenalties,
+      teamB: awayPenalties
+    };
+  }
+  return void 0;
+};
 var getPeriodSortValue = (period) => {
   if (typeof period !== "number") {
     return Number.MAX_SAFE_INTEGER;
@@ -18533,6 +18544,7 @@ var buildMatchStateEntry = (localMatch, fifaMatch, fifaLiveMatch) => {
     return {
       status: localMatch.status,
       score: localMatch.score,
+      penaltyScore: localMatch.penaltyScore,
       source: "fallback",
       note: "Dados oficiais da FIFA indispon\xEDveis para esta partida no momento; exibindo o estado local.",
       updatedAt: (/* @__PURE__ */ new Date()).toISOString()
@@ -18540,6 +18552,7 @@ var buildMatchStateEntry = (localMatch, fifaMatch, fifaLiveMatch) => {
   }
   const fifaScore = getScoreFromFifa(fifaMatch);
   const liveScore = fifaLiveMatch ? getScoreFromLiveFifa(fifaLiveMatch) : void 0;
+  const penaltyScore = getPenaltyScoreFromFifa(fifaMatch, fifaLiveMatch);
   const incidents = fifaLiveMatch ? getIncidentsFromLiveFifa(fifaLiveMatch, localMatch.teamA.code, localMatch.teamB.code) : void 0;
   const status = fifaLiveMatch ? getMatchStatusFromFifa(localMatch, {
     ...fifaMatch,
@@ -18555,6 +18568,7 @@ var buildMatchStateEntry = (localMatch, fifaMatch, fifaLiveMatch) => {
   return {
     status,
     score: liveScore || fifaScore || (status === "PRE_GAME" ? void 0 : localMatch.score),
+    penaltyScore: status === "PRE_GAME" ? void 0 : penaltyScore,
     matchTime: status === "LIVE" && fifaLiveMatch?.MatchTime ? fifaLiveMatch.MatchTime : void 0,
     officialStatus,
     referee: getRefereeFromFifa(fifaMatch),
