@@ -74,8 +74,8 @@ var squads_default = {
       instagram: "cristiano",
       wikipedia: "https://pt.wikipedia.org/wiki/Cristiano_Ronaldo"
     },
-    worldCupNote: "## Leitura\nCome\xE7ou a Copa em branco, mas reagiu na hora certa. Depois de n\xE3o deixar sua marca no frustrante empate com a RD Congo, Cristiano Ronaldo desencantou diante do Uzbequist\xE3o e devolveu Portugal ao caminho da classifica\xE7\xE3o. O capit\xE3o mostra que ainda decide e chega embalado para o confronto direto com a Col\xF4mbia, que vale a ponta do Grupo K.\n## Desempenho\nFicou em branco na estreia (empate 1 a 1 com a RD Congo), mas explodiu na segunda rodada: marcou duas vezes na goleada por 5 a 0 sobre o Uzbequist\xE3o, aos 6 e aos 39 minutos, abrindo e encaminhando a vit\xF3ria. Foi o protagonista esperado, comandando a rea\xE7\xE3o portuguesa sem disciplinar a ficha.\n## N\xFAmeros\nJ2 \xB7 2 gols \xB7 0 cart\xF5es \xB7 Portugal em 2\xBA do Grupo K (4 pontos, SG +5). Pr\xF3ximo desafio: Col\xF4mbia, na decis\xE3o da lideran\xE7a.",
-    worldCupNoteUpdatedAt: "2026-06-23T17:00:00.000Z",
+    worldCupNote: "## Leitura\nParou na decis\xE3o. Depois de reagir contra o Uzbequist\xE3o, Cristiano Ronaldo esbarrou no ferrolho colombiano no empate sem gols que valia a ponta do Grupo K. Portugal avan\xE7ou aos 16-avos, mas em segundo, e o capit\xE3o segue na ca\xE7a ao primeiro gol no mata-mata.\n## Desempenho\nFicou em branco na estreia (1 a 1 com a RD Congo) e explodiu na segunda rodada, com dois gols na goleada por 5 a 0 sobre o Uzbequist\xE3o (6' e 39'). Na decis\xE3o do grupo, por\xE9m, parou no 0 a 0 com a Col\xF4mbia: bem marcado, n\xE3o furou o bloqueio advers\xE1rio, e Portugal cedeu a lideran\xE7a aos colombianos.\n## N\xFAmeros\nJ3 \xB7 2 gols \xB7 0 cart\xF5es \xB7 Portugal em 2\xBA do Grupo K (5 pontos, SG +5). Classificado aos 16-avos de final.",
+    worldCupNoteUpdatedAt: "2026-06-27T23:30:00.000Z",
     dateOfBirth: "1985-02-05",
     height: 185
   },
@@ -126,8 +126,8 @@ var squads_default = {
       instagram: "manuelneuer",
       wikipedia: "https://pt.wikipedia.org/wiki/Manuel_Neuer"
     },
-    worldCupNote: "## Leitura\nManuel Neuer, \xEDcone do futebol alem\xE3o e um dos maiores goleiros da hist\xF3ria, foi a experi\xEAncia e a lideran\xE7a no gol de uma Alemanha que terminou a fase de grupos na lideran\xE7a do Grupo E. Aos 40 anos, o veterano seguiu como dono da camisa 1 e refer\xEAncia de uma sele\xE7\xE3o que avan\xE7ou em primeiro, mesmo trope\xE7ando na rodada final.\n## Desempenho\nNeuer disputou as tr\xEAs partidas por inteiro. Come\xE7ou com a goleada por 7 a 1 sobre Cura\xE7ao (vazado uma \xFAnica vez, no gol de Comenencia aos 21) e a virada por 2 a 1 sobre a Costa do Marfim (sofreu o gol de Kessi\xE9 aos 30). Na despedida da fase de grupos, por\xE9m, a Alemanha \u2014 j\xE1 classificada \u2014 caiu por 2 a 1 para o Equador: San\xE9 abriu o placar logo aos 2 minutos, mas Angulo empatou aos 9 e Plata decretou a virada aos 77, num rev\xE9s que Neuer n\xE3o conseguiu evitar.\n## N\xFAmeros\nJ3 \xB7 2 vit\xF3rias \xB7 1 derrota \xB7 4 gols sofridos (foi vazado em todos os jogos) \xB7 ainda sem clean sheet no Mundial. A Alemanha terminou em 1\xBA no Grupo E com 6 pontos e saldo +6, \xE0 frente da Costa do Marfim pelo saldo de gols. Neuer leva a experi\xEAncia da camisa 1 \xE0s oitavas, mas precisar\xE1 elevar a seguran\xE7a defensiva no mata-mata.",
-    worldCupNoteUpdatedAt: "2026-06-25T22:00:00.000Z",
+    worldCupNote: "## Leitura\nFim de linha precoce para o veterano. Manuel Neuer n\xE3o conseguiu evitar a queda nos 16-avos: a Alemanha empatou em 1 a 1 com o Paraguai e foi eliminada nos p\xEAnaltis. Aos 40 anos, o \xEDcone alem\xE3o se despede do Mundial ap\xF3s um mata-mata cruel para a Mannschaft.\n## Desempenho\nLevou a Alemanha aos 16-avos como l\xEDder do Grupo E, ainda que vazado em todos os jogos da primeira fase. Contra o Paraguai, sofreu o gol de Julio Enciso aos 42; Kai Havertz empatou aos 54, e o 1 a 1 resistiu \xE0 prorroga\xE7\xE3o. Nos p\xEAnaltis, por\xE9m, o goleiro paraguaio Orlando Gill brilhou, e a Alemanha caiu por 4 a 3, eliminada.\n## N\xFAmeros\nJ4 \xB7 5 gols sofridos no Mundial \xB7 eliminado nos 16-avos de final. A Alemanha terminou em 1\xBA no Grupo E, mas parou no Paraguai nos p\xEAnaltis (1 a 1 no tempo normal, 4 a 3 na disputa). Fim de campanha.",
+    worldCupNoteUpdatedAt: "2026-06-29T20:30:00.000Z",
     instagramPostUrl: "https://www.instagram.com/p/DZlA2i1Go8Y/"
   },
   "229397": {
@@ -148,8 +148,8 @@ var squads_default = {
       "https://www.instagram.com/p/DZ5zea7jzW5/",
       "https://www.instagram.com/reel/DZ0RteXxomP/"
     ],
-    worldCupNote: "## Leitura\nMessi est\xE1 em estado de gra\xE7a e \xE9 o grande nome do in\xEDcio da Copa. Com 5 gols em apenas 2 jogos, o capit\xE3o coloca a Argentina como favorita ao t\xEDtulo e j\xE1 encaminha a vaga no mata-mata. Lidera a artilharia, e a comiss\xE3o pode dosar seus minutos com a classifica\xE7\xE3o cada vez mais perto.\n## Desempenho\nCome\xE7ou com um hat-trick na goleada por 3 a 0 sobre a Arg\xE9lia (gols aos 17, 60 e 76) e seguiu decisivo contra a \xC1ustria: marcou duas vezes no 2 a 0, aos 38 e nos acr\xE9scimos finais (90+5). Cinco gols, nenhum sofrido pela Argentina e ficha disciplinar limpa \u2014 futebol de outro n\xEDvel.\n## N\xFAmeros\nJ2 \xB7 5 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina lidera o Grupo J com 6 pontos, 100% de aproveitamento e dois clean sheets. Messi decide e comanda \u2014 o protagonista absoluto deste in\xEDcio de Mundial.",
-    worldCupNoteUpdatedAt: "2026-06-22T17:00:00.000Z",
+    worldCupNote: "## Leitura\nMessi segue impar\xE1vel e fechou a fase de grupos como artilheiro isolado do Mundial. Mesmo come\xE7ando no banco diante da Jord\xE2nia, o capit\xE3o entrou e marcou de novo \u2014 s\xE3o 6 gols em 3 jogos \u2014, e a Argentina avan\xE7ou com 100% de aproveitamento, cada vez mais favorita ao t\xEDtulo.\n## Desempenho\nHat-trick na estreia (3 a 0 na Arg\xE9lia, aos 17, 60 e 76) e dois gols sobre a \xC1ustria (2 a 0, aos 38 e 90+5). Na terceira rodada foi poupado no in\xEDcio \u2014 a Argentina j\xE1 vencia por 2 a 0 com Lo Celso (19') e Lautaro (31') \u2014, mas entrou aos 60 e fechou o 3 a 1 sobre a Jord\xE2nia com gol aos 80 minutos (Altamari havia descontado aos 55).\n## N\xFAmeros\nJ3 \xB7 6 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina ganhou o Grupo J com 9 pontos, 100% de aproveitamento e SG +7. Classificada aos 16-avos como uma das favoritas.",
+    worldCupNoteUpdatedAt: "2026-06-28T02:00:00.000Z",
     dateOfBirth: "1987-06-24",
     height: 170
   },
@@ -184,8 +184,8 @@ var squads_default = {
     },
     dateOfBirth: "1985-09-09",
     height: 172,
-    worldCupNote: "## Leitura\nAos 39 anos e em provavelmente sua \xFAltima Copa, Luka Modri\u0107 segue sendo o c\xE9rebro e o capit\xE3o da Cro\xE1cia. Vice-campe\xE3o mundial em 2018 e Bola de Ouro daquele torneio, o camisa 10 \xE9 a refer\xEAncia t\xE9cnica de uma sele\xE7\xE3o que precisou dele para reagir no Grupo L. Mesmo sem n\xFAmeros chamativos, \xE9 a sua experi\xEAncia que mant\xE9m viva a esperan\xE7a croata.\n## Desempenho\nTitular nas duas partidas, Modri\u0107 comandou o meio-campo croata. Na estreia, foi substitu\xEDdo aos 58 minutos na derrota por 4 a 2 para a Inglaterra, jogo em que a Cro\xE1cia naufragou na defesa. Na segunda rodada, orquestrou as a\xE7\xF5es at\xE9 sair aos 81 minutos na sofrida vit\xF3ria por 1 a 0 sobre o Panam\xE1 \u2014 resultado decisivo, com gol de Ante Budimir, que recolocou a Cro\xE1cia na briga pela classifica\xE7\xE3o. N\xE3o marcou nem foi advertido nos dois jogos.\n## N\xFAmeros\nJ2 \xB7 0 gols \xB7 0 cart\xF5es \xB7 Cro\xE1cia em 3\xBA do Grupo L (3 pontos, SG -1). Pr\xF3ximo desafio: Gana (27/06), em confronto que vale a vaga nas oitavas.",
-    worldCupNoteUpdatedAt: "2026-06-23T23:00:00.000Z"
+    worldCupNote: "## Leitura\nO c\xE9rebro croata levou a sele\xE7\xE3o \xE0 classifica\xE7\xE3o. Aos 39 anos, Luka Modri\u0107 comandou o meio-campo na vit\xF3ria que valia a vaga e colocou a Cro\xE1cia nos 16-avos, em segundo no Grupo L. Sem n\xFAmeros chamativos, mas decisivo na orquestra\xE7\xE3o, segue vivo em provavelmente sua \xFAltima Copa.\n## Desempenho\nTitular nas tr\xEAs rodadas. Ap\xF3s a derrota por 4 a 2 para a Inglaterra (saiu aos 58) e a vit\xF3ria por 1 a 0 sobre o Panam\xE1 (saiu aos 81), foi a r\xE9gua do time do in\xEDcio ao fim na vit\xF3ria por 2 a 1 sobre Gana, que confirmou a classifica\xE7\xE3o: Petar Sucic abriu aos 31, Derrick Luckassen empatou aos 73 e Nikola Vlasic fez o gol da vit\xF3ria aos 83. N\xE3o marcou nem foi advertido.\n## N\xFAmeros\nJ3 \xB7 0 gols \xB7 0 cart\xF5es \xB7 Cro\xE1cia em 2\xBA do Grupo L (6 pontos, SG 0). Classificada aos 16-avos de final.",
+    worldCupNoteUpdatedAt: "2026-06-27T21:00:00.000Z"
   },
   "261367": {
     fifaId: "261367",
@@ -482,8 +482,8 @@ var squads_default = {
     },
     dateOfBirth: "1992-10-02",
     height: 193,
-    worldCupNote: "## Leitura\nSeguran\xE7a de sobra debaixo das traves. Titular absoluto, Alisson fechou a fase de grupos transmitindo a tranquilidade de sempre: o \xFAnico gol que o Brasil sofreu veio de bola parada contra o Marrocos, sem responsabilidade do goleiro. Aos 33 anos e em alto n\xEDvel, \xE9 o seguro de vida de uma Sele\xE7\xE3o que terminou em primeiro no Grupo C.\n## Desempenho\nTr\xEAs jogos como titular: foi vazado uma vez no empate com o Marrocos (1 a 1), mas manteve a meta zerada nas vit\xF3rias por 3 a 0 sobre Haiti e Esc\xF3cia, com a serenidade e a sa\xEDda de bola habituais. Encerrou a primeira fase com dois clean sheets seguidos e sem cart\xF5es.\n## N\xFAmeros\nJ3 \xB7 1 gol sofrido \xB7 2 jogos sem sofrer gols \xB7 0 cart\xF5es. O Brasil terminou em 1\xBA no Grupo C com 7 pontos e a melhor defesa da chave (apenas 1 GC). Classificado \xE0s oitavas.",
-    worldCupNoteUpdatedAt: "2026-06-24T22:00:00.000Z"
+    worldCupNote: "## Leitura\nSeguran\xE7a nas traves rumo \xE0s oitavas. Alisson foi vazado uma vez, mas viu o Brasil reagir e vencer o Jap\xE3o por 2 a 1 nos 16-avos. O goleiro segue como o seguro de vida de uma Sele\xE7\xE3o que avan\xE7ou no mata-mata.\n## Desempenho\nFechou a fase de grupos com dois clean sheets e a lideran\xE7a do Grupo C. Nos 16-avos, foi vazado por Kaishu Sano aos 29 contra o Jap\xE3o, mas o Brasil virou com Casemiro (56') e Gabriel Martinelli (90+5'), garantindo a vaga nas oitavas. Sem cart\xF5es.\n## N\xFAmeros\nJ4 \xB7 2 gols sofridos no Mundial \xB7 classificado \xE0s oitavas de final. O Brasil, 1\xBA do Grupo C, venceu o Jap\xE3o por 2 a 1 nos 16-avos.",
+    worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z"
   },
   "308386": {
     fifaId: "308386",
@@ -500,8 +500,8 @@ var squads_default = {
       instagram: "casemiro",
       wikipedia: "https://pt.wikipedia.org/wiki/Casemiro"
     },
-    worldCupNote: "## Leitura\nAos 34 anos, Casemiro chega \xE0 Copa como pe\xE7a de experi\xEAncia e lideran\xE7a no meio-campo do Brasil. Volante posicional, de conten\xE7\xE3o e boa leitura de jogo, \xE9 o tipo de jogador que ganha ainda mais import\xE2ncia no mata-mata, quando o equil\xEDbrio defensivo pesa. Com o Brasil classificado em primeiro no Grupo C, segue como refer\xEAncia na marca\xE7\xE3o.\n## Desempenho\nGanhou minutos ao longo da fase de grupos: atuou no empate com o Marrocos (1 a 1), quando foi advertido com cart\xE3o amarelo aos 37 minutos, e foi titular na vit\xF3ria por 3 a 0 sobre a Esc\xF3cia, saindo aos 66 para a entrada de Fabinho. Sem gols, cumpriu a fun\xE7\xE3o de conten\xE7\xE3o e equil\xEDbrio no meio-campo.\n## N\xFAmeros\nJ3 \xB7 0 gols \xB7 1 cart\xE3o amarelo. O Brasil terminou em 1\xBA no Grupo C com 7 pontos (2 vit\xF3rias, 1 empate) e o melhor saldo da chave (SG +6, 7 GP, 1 GC). Classificado \xE0s oitavas.",
-    worldCupNoteUpdatedAt: "2026-06-24T22:00:00.000Z"
+    worldCupNote: "## Leitura\nLideran\xE7a e gol na hora certa. Casemiro deixou a marca dele no mata-mata: fez o gol de empate na virada por 2 a 1 sobre o Jap\xE3o que levou o Brasil \xE0s oitavas. Aos 34 anos, o volante respondeu quando o equil\xEDbrio pesava.\n## Desempenho\nNa fase de grupos atuou no empate com o Marrocos (amarelo aos 37) e na vit\xF3ria sobre a Esc\xF3cia. Contra o Jap\xE3o, levou amarelo cedo (14') mas foi protagonista: com o Brasil atr\xE1s ap\xF3s o gol de Sano (29'), igualou aos 56 minutos. Martinelli fez o segundo nos acr\xE9scimos (90+5') e Casemiro saiu aplaudido aos 90+1.\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 2 amarelos \xB7 classificado \xE0s oitavas. O Brasil bateu o Jap\xE3o por 2 a 1 nos 16-avos, com gol do volante.",
+    worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z"
   },
   "310116": {
     fifaId: "310116",
@@ -1742,8 +1742,8 @@ var squads_default = {
     },
     dateOfBirth: "1993-07-28",
     height: 190,
-    worldCupNote: "## Leitura\nCapit\xE3o e principal refer\xEAncia ofensiva da Inglaterra, Harry Kane \xE9 um dos grandes nomes desta Copa e candidato \xE0 artilharia. Maior goleador da hist\xF3ria da sele\xE7\xE3o inglesa, come\xE7ou o torneio fazendo o que se espera dele, mas esbarrou numa defesa fechada na segunda rodada \u2014 sem tirar o English Team da lideran\xE7a do Grupo L.\n## Desempenho\nEstreia de gala: na vit\xF3ria por 4 a 2 sobre a Cro\xE1cia, Kane marcou duas vezes no primeiro tempo (aos 12 e aos 42 minutos), comandando a goleada parcial. Na segunda rodada, por\xE9m, ficou em branco no 0 a 0 com Gana \u2014 bem marcado, viu o ataque ingl\xEAs esbarrar no bloqueio gan\xEAs, mas a Inglaterra seguiu invicta e na ponta.\n## N\xFAmeros\nJ2 \xB7 2 gols \xB7 0 cart\xF5es \xB7 Inglaterra l\xEDder do Grupo L (4 pontos, SG +2). Pr\xF3ximo desafio: Panam\xE1, valendo a confirma\xE7\xE3o da vaga.",
-    worldCupNoteUpdatedAt: "2026-06-23T20:00:00.000Z",
+    worldCupNote: "## Leitura\nO capit\xE3o voltou a marcar e a Inglaterra fechou a fase de grupos na lideran\xE7a. Harry Kane fez o segundo no 2 a 0 sobre o Panam\xE1 e chegou a 3 gols no Mundial, mantendo o English Team invicto e em primeiro no Grupo L rumo aos 16-avos.\n## Desempenho\nCome\xE7ou com dois gols sobre a Cro\xE1cia (4 a 2, aos 12 e 42) e parou no 0 a 0 com Gana. Diante do Panam\xE1, ampliou: Jude Bellingham abriu aos 62 e Kane fez o segundo aos 67, antes de dar lugar a Watkins (84). Vit\xF3ria por 2 a 0 que garantiu a ponta.\n## N\xFAmeros\nJ3 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Inglaterra em 1\xBA do Grupo L (7 pontos, SG +4). Classificada aos 16-avos de final.",
+    worldCupNoteUpdatedAt: "2026-06-27T21:00:00.000Z",
     instagramPostUrl: "https://www.instagram.com/p/DZ8oJCFFqhu/"
   },
   "369434": {
@@ -4167,8 +4167,8 @@ var squads_default = {
       instagram: "nicolas.pepe19",
       wikipedia: "https://pt.wikipedia.org/wiki/Nicolas_P%C3%A9p%C3%A9"
     },
-    worldCupNote: "## Leitura\nReserva que decidiu quando mais importou. Apagado nas duas primeiras rodadas, Nicolas P\xE9p\xE9 renasceu na rodada final: com uma dupla decisiva sobre Cura\xE7ao, carimbou a classifica\xE7\xE3o da Costa do Marfim \xE0s oitavas. Prova de que, mesmo fora do time ideal, o ponta ainda resolve nos momentos quentes.\n## Desempenho\nO come\xE7o foi discreto. Titular contra o Equador (derrota por 1 a 0), saiu aos 77 minutos sem brilhar; diante da Alemanha, entrou apenas aos 85. Tudo mudou no jogo que valia a vaga. Contra Cura\xE7ao, P\xE9p\xE9 abriu o placar logo aos 7 minutos e, mesmo ap\xF3s levar amarelo aos 34, voltou ligado do intervalo: aos 64 fez o segundo e fechou o 2 a 0 que classificou a Costa do Marfim. Saiu aplaudido aos 67, miss\xE3o cumprida.\n## N\xFAmeros\nJ3 \xB7 2 gols \xB7 1 amarelo \xB7 Costa do Marfim em 2\xBA no Grupo E, classificada \xE0s oitavas.",
-    worldCupNoteUpdatedAt: "2026-06-25T20:00:00.000Z"
+    worldCupNote: "## Leitura\nO her\xF3i da classifica\xE7\xE3o n\xE3o evitou a queda. Nicolas P\xE9p\xE9, decisivo na vaga marfinense, foi titular na elimina\xE7\xE3o para a Noruega nos 16-avos (2 a 1). A Costa do Marfim se despede do Mundial ap\xF3s uma boa fase de grupos.\n## Desempenho\nDepois da dupla decisiva sobre Cura\xE7ao que classificou o time, P\xE9p\xE9 come\xE7ou jogando contra a Noruega e saiu aos 87 minutos, sem marcar. Antonio Nusa abriu para os noruegueses (39'), Amad Diallo empatou (74'), mas Erling Haaland fez o gol da vit\xF3ria aos 86, eliminando os marfinenses.\n## N\xFAmeros\nJ4 \xB7 2 gols \xB7 1 amarelo \xB7 eliminado nos 16-avos de final. A Costa do Marfim, 2\xAA do Grupo E, perdeu por 2 a 1 para a Noruega.",
+    worldCupNoteUpdatedAt: "2026-06-30T17:00:00.000Z"
   },
   "402772": {
     fifaId: "402772",
@@ -4836,8 +4836,8 @@ var squads_default = {
       instagram: "leroysane",
       wikipedia: "https://pt.wikipedia.org/wiki/Leroy_San%C3%A9"
     },
-    worldCupNote: "## Leitura\nArma de velocidade ainda \xE0 espera do seu melhor. Leroy San\xE9 teve fase de grupos modesta e, embora tenha deixado o dele na rodada final, viu a Alemanha trope\xE7ar. Ainda assim, com a Mannschaft classificada em primeiro, o ponta segue como trunfo de profundidade para as oitavas.\n## Desempenho\nDiscreto nas duas primeiras rodadas, San\xE9 n\xE3o balan\xE7ou as redes e foi substitu\xEDdo aos 60 minutos na vit\xF3ria suada sobre a Costa do Marfim (2 a 1). Na rodada final contra o Equador, abriu o placar cedo, aos 2 minutos \u2014 mas o gol acabou isolado: o Equador virou para 2 a 1, com Nilson Angulo (9 minutos) e Gonzalo Plata (77), e a Alemanha, j\xE1 garantida, foi surpreendida. Mesmo com a derrota, a Mannschaft terminou em primeiro no grupo pelo saldo de gols.\n## N\xFAmeros\nJ3 \xB7 1 gol \xB7 0 cart\xF5es \xB7 Alemanha em 1\xBA no Grupo E, classificada \xE0s oitavas.",
-    worldCupNoteUpdatedAt: "2026-06-25T20:00:00.000Z"
+    worldCupNote: "## Leitura\nA arma de velocidade se despede sem brilhar no mata-mata. Leroy San\xE9 foi titular na elimina\xE7\xE3o alem\xE3 para o Paraguai nos 16-avos \u2014 1 a 1 e queda nos p\xEAnaltis \u2014, encerrando uma Copa abaixo do esperado para o ponta.\n## Desempenho\nTeve fase de grupos modesta, com apenas o gol contra o Equador (na derrota por 2 a 1) e a lideran\xE7a do Grupo E assegurada. Nos 16-avos, come\xE7ou jogando contra o Paraguai e saiu aos 88 minutos, sem balan\xE7ar as redes; Enciso (42') e Havertz (54') marcaram no 1 a 1, e a Alemanha foi eliminada nos p\xEAnaltis (4 a 3).\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 0 cart\xF5es \xB7 eliminado nos 16-avos com a Alemanha, derrotada pelo Paraguai nos p\xEAnaltis.",
+    worldCupNoteUpdatedAt: "2026-06-29T20:30:00.000Z"
   },
   "404645": {
     fifaId: "404645",
@@ -5073,8 +5073,8 @@ var squads_default = {
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c2722c3-a70b-49d8-bdb4-77109161f533/VINICIUS-JUNIOR_405742",
     instagramPostUrl: "https://www.instagram.com/p/DZjBZ9UjVG6/",
-    worldCupNote: "## Leitura\nEm alto n\xEDvel e artilheiro do Brasil. Vin\xEDcius J\xFAnior decidiu mais uma vez e fechou a fase de grupos como o destaque ofensivo de uma Sele\xE7\xE3o que terminou em primeiro no Grupo C. Com quatro gols, \xE9 um dos goleadores do Mundial e vive grande fase rumo ao mata-mata.\n## Desempenho\nDecisivo do in\xEDcio ao fim: marcou no empate com o Marrocos (1 a 1), na goleada sobre o Haiti (3 a 0) e fez dois na vit\xF3ria por 3 a 0 sobre a Esc\xF3cia, aos 7 e aos 45+3 minutos, liderando a campanha brasileira. Quatro gols em tr\xEAs jogos, sempre participativo e sem cart\xF5es.\n## N\xFAmeros\nJ3 \xB7 4 gols \xB7 0 cart\xF5es \xB7 artilheiro do Brasil. A Sele\xE7\xE3o terminou em 1\xBA no Grupo C com 7 pontos (2 vit\xF3rias, 1 empate), 7 gols marcados e apenas 1 sofrido. Classificada \xE0s oitavas.",
-    worldCupNoteUpdatedAt: "2026-06-24T22:00:00.000Z",
+    worldCupNote: "## Leitura\nSem balan\xE7ar as redes, mas nas oitavas. Vin\xEDcius J\xFAnior n\xE3o marcou no 2 a 1 sobre o Jap\xE3o, mas viu o Brasil garantir a vaga no mata-mata. Artilheiro da Sele\xE7\xE3o na fase de grupos com 4 gols, o atacante segue como refer\xEAncia ofensiva rumo \xE0s oitavas.\n## Desempenho\nBrilhou na fase de grupos, com gols sobre Marrocos, Haiti e dois sobre a Esc\xF3cia (4 no total). Nos 16-avos contra o Jap\xE3o, titular, passou em branco, mas o Brasil virou com Casemiro (56') e Martinelli (90+5') ap\xF3s o gol de Sano (29'). Sem cart\xF5es.\n## N\xFAmeros\nJ4 \xB7 4 gols \xB7 0 cart\xF5es \xB7 artilheiro do Brasil. A Sele\xE7\xE3o, 1\xAA do Grupo C, venceu o Jap\xE3o por 2 a 1 nos 16-avos e est\xE1 nas oitavas de final.",
+    worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z",
     dateOfBirth: "2000-07-12",
     height: 176,
     socials: {
@@ -6636,8 +6636,12 @@ var squads_default = {
     },
     dateOfBirth: "2000-07-21",
     height: 195,
-    worldCupNote: "## Leitura\nErling Haaland chegou \xE0 Copa como uma das maiores for\xE7as de ataque do mundo e fez sua parte: quatro gols em duas rodadas que praticamente garantiram a Noruega nas oitavas. Poupado na rodada final, o centroavante chega descansado ao mata-mata como o grande trunfo noruegu\xEAs.\n## Desempenho\nFoi decisivo nas duas primeiras rodadas: na vit\xF3ria por 4 a 1 sobre o Iraque, marcou duas vezes no primeiro tempo (29' e 43'); no 3 a 2 sobre o Senegal, voltou a marcar duas vezes (48' e 58'). Com a vaga encaminhada, ficou no banco na derrota por 4 a 1 para a Fran\xE7a na \xFAltima rodada, sem entrar em campo.\n## N\xFAmeros\nJ3 \xB7 4 gols \xB7 0 cart\xF5es \xB7 Noruega em 2\xBA do Grupo I (6 pontos, saldo +1), classificada \xE0s oitavas. Poupado no jogo final, Haaland fez seus quatro gols nas duas primeiras rodadas \u2014 o motor da vaga norueguesa.",
-    worldCupNoteUpdatedAt: "2026-06-26T19:00:00.000Z"
+    worldCupNote: "## Leitura\nDescansado e decisivo. Poupado na \xFAltima rodada da fase de grupos, Erling Haaland voltou com tudo nos 16-avos: marcou o gol da vit\xF3ria por 2 a 1 sobre a Costa do Marfim e levou a Noruega \xE0s oitavas. Agora com 5 gols, \xE9 o vice-artilheiro do Mundial.\n## Desempenho\nFez quatro gols nas duas primeiras rodadas (dois sobre o Iraque, dois sobre o Senegal) e foi poupado na derrota para a Fran\xE7a. No mata-mata, decidiu: com o 1 a 1 contra a Costa do Marfim \u2014 Nusa (39') e Amad Diallo (74') \u2014, Haaland fez o gol da classifica\xE7\xE3o aos 86 minutos, garantindo o 2 a 1.\n## N\xFAmeros\nJ4 \xB7 5 gols \xB7 0 cart\xF5es \xB7 vice-artilheiro da Copa, atr\xE1s apenas de Messi (6). A Noruega bateu a Costa do Marfim por 2 a 1 e avan\xE7ou \xE0s oitavas de final.",
+    worldCupNoteUpdatedAt: "2026-06-30T17:00:00.000Z",
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaONQazv3q_/",
+      "https://www.instagram.com/reel/DZ7ymbXvMdt/"
+    ]
   },
   "419654": {
     fifaId: "419654",
@@ -6976,8 +6980,8 @@ var squads_default = {
       instagram: "brianbrobbeyy",
       wikipedia: "https://pt.wikipedia.org/wiki/Brian_Brobbey"
     },
-    worldCupNote: "## Leitura\nBrian Brobbey assumiu a refer\xEAncia ofensiva da Holanda e respondeu na hora certa. Com 3 gols, ajudou a Laranja Mec\xE2nica a liderar o Grupo F e a se classificar \xE0s oitavas.\n## Desempenho\nDepois de entrar no fim do empate com o Jap\xE3o (2 a 2), foi decisivo contra a Su\xE9cia: marcou duas vezes logo no in\xEDcio (5' e 17') na goleada por 5 a 1. Manteve a veia goleadora no fechamento: abriu o placar aos 7 na vit\xF3ria por 3 a 1 sobre a Tun\xEDsia, que garantiu a Holanda em 1\xBA. Sem cart\xF5es.\n## N\xFAmeros\nJ3 \xB7 3 gols \xB7 0 cart\xF5es. A Holanda terminou em 1\xBA no Grupo F com 7 pontos e saldo +6, classificada \xE0s oitavas. Brobbey foi um dos trunfos de um ataque pulverizado e perigoso.",
-    worldCupNoteUpdatedAt: "2026-06-25T23:00:00.000Z"
+    worldCupNote: "## Leitura\nElimina\xE7\xE3o amarga para a refer\xEAncia laranja. Brian Brobbey foi titular nos 16-avos, mas a Holanda empatou em 1 a 1 com o Marrocos e caiu nos p\xEAnaltis. Autor de 3 gols na fase de grupos, o centroavante se despede do Mundial.\n## Desempenho\nDecisivo na primeira fase (dois gols sobre a Su\xE9cia e um sobre a Tun\xEDsia, 3 no total), come\xE7ou jogando contra o Marrocos e saiu aos 71 minutos para Weghorst. Cody Gakpo abriu aos 72, mas Issa Diop empatou nos acr\xE9scimos (90+1') e o jogo foi aos p\xEAnaltis, onde a Holanda foi eliminada.\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 eliminado nos 16-avos de final. A Holanda, 1\xAA do Grupo F, parou no Marrocos nos p\xEAnaltis (1 a 1 no tempo normal).",
+    worldCupNoteUpdatedAt: "2026-06-30T01:00:00.000Z"
   },
   "424056": {
     fifaId: "424056",
@@ -7604,8 +7608,8 @@ var squads_default = {
       instagram: "bee18_official",
       wikipedia: "https://pt.wikipedia.org/wiki/Ayase_Ueda"
     },
-    worldCupNote: "## Leitura\nAyase Ueda \xE9 o homem-gol do Jap\xE3o e pe\xE7a central de uma campanha consistente. Com 2 gols, liderou o ataque dos Samurais Azuis, que se classificaram \xE0s oitavas no equilibrado Grupo F.\n## Desempenho\nDepois do 2 a 2 com a Holanda, brilhou na goleada por 4 a 0 sobre a Tun\xEDsia, marcando duas vezes (31' e 83'). No fechamento, atuou at\xE9 os 66 no 1 a 1 com a Su\xE9cia, sem marcar, mas o empate confirmou a vaga japonesa. Ficha limpa.\n## N\xFAmeros\nJ3 \xB7 2 gols \xB7 0 cart\xF5es. O Jap\xE3o terminou em 2\xBA no Grupo F, com 5 pontos e saldo +4, classificado \xE0s oitavas. Ueda foi o homem-gol de um Jap\xE3o eficiente.",
-    worldCupNoteUpdatedAt: "2026-06-25T23:00:00.000Z"
+    worldCupNote: "## Leitura\nFim de linha para os Samurais Azuis. Ayase Ueda, homem-gol do Jap\xE3o, viu a equipe sair na frente, mas perder de virada por 2 a 1 para o Brasil nos 16-avos. Com 2 gols no Mundial, o atacante se despede de uma campanha consistente.\n## Desempenho\nMarcou duas vezes sobre a Tun\xEDsia na fase de grupos (4 a 0) e ajudou o Jap\xE3o a avan\xE7ar em segundo no Grupo F. Contra o Brasil, o Jap\xE3o abriu o placar com Kaishu Sano (29'), mas levou a virada de Casemiro (56') e Gabriel Martinelli (90+5'). Ueda n\xE3o marcou, e os japoneses deram adeus.\n## N\xFAmeros\nJ4 \xB7 2 gols \xB7 0 cart\xF5es \xB7 eliminado nos 16-avos de final. O Jap\xE3o perdeu de virada por 2 a 1 para o Brasil.",
+    worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z"
   },
   "430437": {
     fifaId: "430437",
@@ -7854,8 +7858,8 @@ var squads_default = {
       instagram: "cunha",
       wikipedia: "https://pt.wikipedia.org/wiki/Matheus_Cunha"
     },
-    worldCupNote: "## Leitura\nMatheus Cunha confirmou a boa fase e encerrou a fase de grupos como uma das gratas revela\xE7\xF5es do Brasil. Vers\xE1til e de boa finaliza\xE7\xE3o, marcou em sequ\xEAncia e se firmou como arma ofensiva de uma Sele\xE7\xE3o que avan\xE7ou em primeiro no Grupo C.\n## Desempenho\nCresceu a cada jogo: entrou no segundo tempo no empate com o Marrocos (1 a 1), marcou duas vezes na vit\xF3ria sobre o Haiti (3 a 0, aos 23 e 36) e voltou a balan\xE7ar as redes contra a Esc\xF3cia, aos 60 minutos, no 3 a 0 que confirmou a lideran\xE7a, antes de dar lugar a Neymar (76).\n## N\xFAmeros\nJ3 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Brasil 1\xBA do Grupo C (7 pontos, SG +6). Em alta como arma ofensiva da sele\xE7\xE3o, classificada \xE0s oitavas.",
-    worldCupNoteUpdatedAt: "2026-06-24T22:00:00.000Z"
+    worldCupNote: "## Leitura\nMenos minutos, mas vaga nas oitavas. Matheus Cunha foi titular nos 16-avos e saiu no segundo tempo na virada por 2 a 1 sobre o Jap\xE3o. Revela\xE7\xE3o da fase de grupos com 3 gols, o atacante segue no elenco brasileiro rumo ao mata-mata.\n## Desempenho\nCresceu na fase de grupos, com dois gols sobre o Haiti e um sobre a Esc\xF3cia (3 no total). Contra o Jap\xE3o, come\xE7ou jogando e foi substitu\xEDdo por Martinelli aos 65 minutos \u2014 justamente o autor do gol da vit\xF3ria (90+5'), ap\xF3s Sano abrir (29') e Casemiro empatar (56'). Sem marcar, mas com a vaga garantida.\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 classificado \xE0s oitavas. O Brasil bateu o Jap\xE3o por 2 a 1 nos 16-avos de final.",
+    worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z"
   },
   "430624": {
     fifaId: "430624",
@@ -9888,8 +9892,8 @@ var squads_default = {
       instagram: "jodavid",
       wikipedia: "https://pt.wikipedia.org/wiki/Jonathan_David"
     },
-    worldCupNote: "## Leitura\nJonathan David comandou o ataque do anfitri\xE3o Canad\xE1 e foi um dos artilheiros da fase de grupos, com 3 gols. O centroavante carregou o time da casa, classificado \xE0s oitavas em seu pr\xF3prio Mundial.\n## Desempenho\nDiscreto e substitu\xEDdo na estreia (1 a 1 com a B\xF3snia), explodiu na sequ\xEAncia: hat-trick na goleada por 6 a 0 sobre o Catar (29', 45'+3' e 90'+2'). No fechamento, foi titular na derrota por 2 a 1 para a Su\xED\xE7a, sem marcar, mas o Canad\xE1 avan\xE7ou mesmo assim. Sem cart\xF5es.\n## N\xFAmeros\nJ3 \xB7 3 gols (um hat-trick) \xB7 0 cart\xF5es. O Canad\xE1 terminou em 2\xBA no Grupo B, com 4 pontos e saldo +5, classificado \xE0s oitavas. David foi o grande nome dos anfitri\xF5es na fase de grupos.",
-    worldCupNoteUpdatedAt: "2026-06-24T19:00:00.000Z"
+    worldCupNote: "## Leitura\nO anfitri\xE3o segue sonhando, e David vai junto. Jonathan David n\xE3o marcou, mas o Canad\xE1 venceu a \xC1frica do Sul por 1 a 0 nos 16-avos e avan\xE7ou \xE0s oitavas em seu pr\xF3prio Mundial. Artilheiro do time na fase de grupos com 3 gols, o centroavante mira o gol no mata-mata.\n## Desempenho\nBrilhou na fase de grupos com um hat-trick sobre o Catar (6 a 0). Nos 16-avos contra a \xC1frica do Sul, o ataque canadense esbarrou na defesa advers\xE1ria quase o jogo todo: o gol da classifica\xE7\xE3o saiu apenas aos 90+2, com Stephen Eust\xE1quio. David n\xE3o marcou, mas o Canad\xE1 avan\xE7ou.\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 classificado \xE0s oitavas de final. O Canad\xE1 bateu a \xC1frica do Sul por 1 a 0 nos 16-avos, com gol nos acr\xE9scimos.",
+    worldCupNoteUpdatedAt: "2026-06-28T19:00:00.000Z"
   },
   "441258": {
     fifaId: "441258",
@@ -14386,8 +14390,8 @@ var squads_default = {
       instagram: "denizundav",
       wikipedia: "https://pt.wikipedia.org/wiki/Deniz_Undav"
     },
-    worldCupNote: "## Leitura\nDeniz Undav foi a arma secreta da Alemanha na fase de grupos. Mesmo sem ser titular, somou 3 gols \u2014 todos saindo do banco \u2014 e foi o her\xF3i da virada sobre a Costa do Marfim. A Alemanha avan\xE7ou \xE0s oitavas como l\xEDder do Grupo E.\n## Desempenho\nContra Cura\xE7ao (7 a 1), entrou aos 64 e marcou aos 78. Diante da Costa do Marfim, foi decisivo: lan\xE7ado aos 60 com a Alemanha atr\xE1s, empatou aos 68 e fez o gol da vit\xF3ria nos acr\xE9scimos (90'+4') na virada por 2 a 1. No fechamento, entrou aos 60 na derrota por 2 a 1 para o Equador, sem repetir a fa\xE7anha \u2014 mas a Alemanha terminou em 1\xBA assim mesmo. Sem cart\xF5es.\n## N\xFAmeros\nJ3 \xB7 3 gols \xB7 0 cart\xF5es \xB7 todos saindo do banco. A Alemanha terminou em 1\xBA no Grupo E com 6 pontos e saldo +6, classificada \xE0s oitavas. Undav \xE9 a prova viva da profundidade do elenco alem\xE3o.",
-    worldCupNoteUpdatedAt: "2026-06-25T20:00:00.000Z"
+    worldCupNote: "## Leitura\nO her\xF3i da fase de grupos n\xE3o conseguiu repetir a magia no mata-mata. Deniz Undav, autor de 3 gols saindo do banco na primeira fase, foi titular nos 16-avos, mas a Alemanha caiu para o Paraguai nos p\xEAnaltis e deu adeus ao Mundial.\n## Desempenho\nDecisivo na fase de grupos (gol contra Cura\xE7ao e a virada sobre a Costa do Marfim, sempre vindo do banco), come\xE7ou jogando contra o Paraguai e foi substitu\xEDdo aos 63 minutos por Musiala. N\xE3o marcou, e o 1 a 1 \u2014 Enciso (42') e Havertz (54') \u2014 foi para os p\xEAnaltis, onde a Alemanha perdeu por 4 a 3.\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 eliminado nos 16-avos de final. A Alemanha, l\xEDder do Grupo E, parou no Paraguai nos p\xEAnaltis.",
+    worldCupNoteUpdatedAt: "2026-06-29T20:30:00.000Z"
   },
   "484859": {
     fifaId: "484859",
@@ -25585,6 +25589,13 @@ var KNOCKOUT_STAGE_NAMES = {
   F: "Final"
 };
 
+// src/utils/matchResult.ts
+function decisiveSlot(score, penaltyScore) {
+  if (score.teamA !== score.teamB) return score.teamA > score.teamB ? "A" : "B";
+  if (!penaltyScore || penaltyScore.teamA === penaltyScore.teamB) return null;
+  return penaltyScore.teamA > penaltyScore.teamB ? "A" : "B";
+}
+
 // src/appMatches.ts
 var PT_MONTHS = [
   "Janeiro",
@@ -25703,14 +25714,35 @@ var buildKnockoutTeamEntry = (ref, slot) => {
   }
   return { name: humanizeSlot(slot), code: slot, flagSvg: "", ...NEUTRAL_TEAM_STYLE, group: "", lineup: [] };
 };
+var KNOCKOUT_BY_NUMBER = new Map(KNOCKOUT_MATCHES.map((km) => [km.matchNumber, km]));
+function resolveFeederSlot(slot, knockoutByNumber, results, seen = /* @__PURE__ */ new Set()) {
+  const parsed = /^(W|RU|L)(\d+)$/.exec(slot);
+  if (!parsed) return null;
+  const feederNumber = Number(parsed[2]);
+  if (seen.has(feederNumber)) return null;
+  seen.add(feederNumber);
+  const feeder = knockoutByNumber.get(feederNumber);
+  const result = results[feederNumber];
+  if (!feeder || !result || result.status !== "FINISHED") return null;
+  const winningSlot = decisiveSlot(result.score, result.penaltyScore);
+  if (!winningSlot) return null;
+  const wantWinner = parsed[1] === "W";
+  const targetSlot = wantWinner ? winningSlot : winningSlot === "A" ? "B" : "A";
+  const directRef = targetSlot === "A" ? feeder.teamA : feeder.teamB;
+  if (directRef) return directRef;
+  const nestedSlot = targetSlot === "A" ? feeder.slotA : feeder.slotB;
+  return resolveFeederSlot(nestedSlot, knockoutByNumber, results, seen);
+}
 var buildKnockoutMatch = (km) => {
   const kickoffTimestamp = toBrasiliaTimestamp(km.dateUtc);
   const kickoffMs = new Date(km.dateUtc).getTime();
   const result = KNOCKOUT_RESULTS[km.matchNumber];
+  const teamARef = km.teamA ?? resolveFeederSlot(km.slotA, KNOCKOUT_BY_NUMBER, KNOCKOUT_RESULTS);
+  const teamBRef = km.teamB ?? resolveFeederSlot(km.slotB, KNOCKOUT_BY_NUMBER, KNOCKOUT_RESULTS);
   return {
     id: `ko-${km.matchNumber}-2026`,
-    teamA: buildKnockoutTeamEntry(km.teamA, km.slotA),
-    teamB: buildKnockoutTeamEntry(km.teamB, km.slotB),
+    teamA: buildKnockoutTeamEntry(teamARef, km.slotA),
+    teamB: buildKnockoutTeamEntry(teamBRef, km.slotB),
     stadiumName: km.stadium,
     city: km.city,
     stageName: KNOCKOUT_STAGE_NAMES[km.stage],
