@@ -28272,6 +28272,11 @@ var buildTeamViewPayload = async (teamCode, country, language) => {
       broadcastGuidePayload.guides[reference.match.id]
     )
   );
+  const groupStageComplete = APP_MATCHES.filter(
+    (match) => match.stageName === "Group Stage"
+  ).every(
+    (match) => (matchStatesPayload.states[match.id]?.status ?? match.status) === "FINISHED"
+  );
   const lineupReference = currentMatchReference ?? nextMatchReference ?? lastMatchReference ?? teamMatches[0] ?? null;
   const lineup = lineupReference ? lineupReference.isTeamA ? teamLineupsPayload.lineups[lineupReference.match.id]?.teamA ?? buildFallbackLineupEntry(lineupReference.team.lineup, lineupReference.team.code) : teamLineupsPayload.lineups[lineupReference.match.id]?.teamB ?? buildFallbackLineupEntry(lineupReference.team.lineup, lineupReference.team.code) : null;
   const featuredGuideReference = currentMatchReference ?? nextMatchReference ?? null;
@@ -28323,6 +28328,7 @@ var buildTeamViewPayload = async (teamCode, country, language) => {
     nextMatch,
     lastMatch,
     matchHistory,
+    groupStageComplete,
     teamAnalysis: teamAnalysisEntry?.text ?? null,
     teamAnalysisUpdatedAt,
     teamAnalysisUpToDate,
