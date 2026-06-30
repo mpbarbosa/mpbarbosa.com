@@ -5012,7 +5012,8 @@ var squads_default = {
     socials: {
       instagram: "zionsuzuki",
       wikipedia: "https://pt.wikipedia.org/wiki/Zion_Suzuki"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaCe1z0ER3Y/"
   },
   "405545": {
     fifaId: "405545",
@@ -25552,6 +25553,12 @@ var KNOCKOUT_RESULTS = {
   // #73 · 16-avos · Los Angeles Stadium · 28/06/2026 — África do Sul 0×1 Canadá
   // (Stephen Eustáquio aos 90+2'). Canadá classificado; alimenta a Oitavas #90 (slot W73).
   73: { status: "FINISHED", score: { teamA: 0, teamB: 1 } },
+  // #74 · 16-avos · Alemanha 1×1 Paraguai (Havertz 54' p/ ALE; Enciso 42' p/ PAR), Paraguai
+  // 4×3 nos pênaltis. Paraguai classificado; alimenta a Oitavas #90 (slot W74).
+  74: { status: "FINISHED", score: { teamA: 1, teamB: 1 }, penaltyScore: { teamA: 3, teamB: 4 } },
+  // #75 · 16-avos · Holanda 1×1 Marrocos (Gakpo 72' p/ HOL; Issa Diop 90+1' p/ MAR), Marrocos
+  // 3×2 nos pênaltis. Marrocos classificado; alimenta a Oitavas #91 (slot W75).
+  75: { status: "FINISHED", score: { teamA: 1, teamB: 1 }, penaltyScore: { teamA: 2, teamB: 3 } },
   // #76 · 16-avos · 29/06/2026 — Brasil 2×1 Japão (Sano 29' p/ JPN; Casemiro 56' e
   // Gabriel Martinelli 90+5' p/ BRA). Brasil classificado; alimenta a Oitavas #91 (slot W76).
   76: { status: "FINISHED", score: { teamA: 2, teamB: 1 } }
@@ -25712,6 +25719,7 @@ var buildKnockoutMatch = (km) => {
     kickoffTimestamp,
     status: result?.status ?? "PRE_GAME",
     score: result?.score,
+    penaltyScore: result?.penaltyScore,
     matchTime: result?.matchTime,
     countdownTargetSeconds: Math.max(0, Math.floor((kickoffMs - Date.now()) / 1e3)),
     broadcasters: []
