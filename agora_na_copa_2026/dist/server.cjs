@@ -28183,6 +28183,10 @@ var buildTeamViewMatchSummary = (reference, state, guide) => ({
     team: reference.isTeamA ? state.score.teamA : state.score.teamB,
     opponent: reference.isTeamA ? state.score.teamB : state.score.teamA
   } : void 0,
+  penaltyScore: state?.penaltyScore ? {
+    team: reference.isTeamA ? state.penaltyScore.teamA : state.penaltyScore.teamB,
+    opponent: reference.isTeamA ? state.penaltyScore.teamB : state.penaltyScore.teamA
+  } : void 0,
   broadcasters: guide?.broadcasters ?? reference.match.broadcasters,
   source: state?.source ?? "fallback",
   note: state?.note ?? "Dados locais do aplicativo.",
