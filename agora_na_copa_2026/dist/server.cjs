@@ -483,7 +483,8 @@ var squads_default = {
     dateOfBirth: "1992-10-02",
     height: 193,
     worldCupNote: "## Leitura\nSeguran\xE7a nas traves rumo \xE0s oitavas. Alisson foi vazado uma vez, mas viu o Brasil reagir e vencer o Jap\xE3o por 2 a 1 nos 16-avos. O goleiro segue como o seguro de vida de uma Sele\xE7\xE3o que avan\xE7ou no mata-mata.\n## Desempenho\nFechou a fase de grupos com dois clean sheets e a lideran\xE7a do Grupo C. Nos 16-avos, foi vazado por Kaishu Sano aos 29 contra o Jap\xE3o, mas o Brasil virou com Casemiro (56') e Gabriel Martinelli (90+5'), garantindo a vaga nas oitavas. Sem cart\xF5es.\n## N\xFAmeros\nJ4 \xB7 2 gols sofridos no Mundial \xB7 classificado \xE0s oitavas de final. O Brasil, 1\xBA do Grupo C, venceu o Jap\xE3o por 2 a 1 nos 16-avos.",
-    worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z"
+    worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z",
+    instagramPostUrl: "https://www.instagram.com/p/DaL65g6yWCY/"
   },
   "308386": {
     fifaId: "308386",
@@ -5017,7 +5018,10 @@ var squads_default = {
       instagram: "zionsuzuki",
       wikipedia: "https://pt.wikipedia.org/wiki/Zion_Suzuki"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DaCe1z0ER3Y/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaCe1z0ER3Y/",
+      "https://www.instagram.com/p/DaL65g6yWCY/"
+    ]
   },
   "405545": {
     fifaId: "405545",
@@ -13693,7 +13697,8 @@ var squads_default = {
     socials: {
       instagram: "nusaantonio",
       wikipedia: "https://pt.wikipedia.org/wiki/Antonio_Nusa"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaOxjrMjB_9/"
   },
   "483471": {
     fifaId: "483471",
