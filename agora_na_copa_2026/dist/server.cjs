@@ -5080,7 +5080,10 @@ var squads_default = {
     position: "FW",
     club: "Real Madrid",
     pictureUrl: "https://digitalhub.fifa.com/transform/1c2722c3-a70b-49d8-bdb4-77109161f533/VINICIUS-JUNIOR_405742",
-    instagramPostUrl: "https://www.instagram.com/p/DZjBZ9UjVG6/",
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZjBZ9UjVG6/",
+      "https://www.instagram.com/p/DZzgqBDCBSS/"
+    ],
     worldCupNote: "## Leitura\nSem balan\xE7ar as redes, mas nas oitavas. Vin\xEDcius J\xFAnior n\xE3o marcou no 2 a 1 sobre o Jap\xE3o, mas viu o Brasil garantir a vaga no mata-mata. Artilheiro da Sele\xE7\xE3o na fase de grupos com 4 gols, o atacante segue como refer\xEAncia ofensiva rumo \xE0s oitavas.\n## Desempenho\nBrilhou na fase de grupos, com gols sobre Marrocos, Haiti e dois sobre a Esc\xF3cia (4 no total). Nos 16-avos contra o Jap\xE3o, titular, passou em branco, mas o Brasil virou com Casemiro (56') e Martinelli (90+5') ap\xF3s o gol de Sano (29'). Sem cart\xF5es.\n## N\xFAmeros\nJ4 \xB7 4 gols \xB7 0 cart\xF5es \xB7 artilheiro do Brasil. A Sele\xE7\xE3o, 1\xAA do Grupo C, venceu o Jap\xE3o por 2 a 1 nos 16-avos e est\xE1 nas oitavas de final.",
     worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z",
     dateOfBirth: "2000-07-12",
@@ -25585,7 +25588,11 @@ var KNOCKOUT_RESULTS = {
   77: { status: "FINISHED", score: { teamA: 3, teamB: 0 } },
   // #78 · 16-avos · Costa do Marfim 1×2 Noruega (Amad Diallo 74' p/ CIV; Antonio Nusa 39' e
   // Erling Haaland 86' p/ NOR). Noruega classificada; alimenta a Oitavas #91 (slot W78).
-  78: { status: "FINISHED", score: { teamA: 1, teamB: 2 } }
+  78: { status: "FINISHED", score: { teamA: 1, teamB: 2 } },
+  // #79 · 16-avos · 30/06/2026 (início adiado para as 23h por chuva) — México 2×0 Equador
+  // (Julian Quiñones 22', Raúl Jiménez 31'; Piero Hincapié expulso aos 90+5' p/ EQU).
+  // México classificado; alimenta a Oitavas #92 (slot W79).
+  79: { status: "FINISHED", score: { teamA: 2, teamB: 0 } }
 };
 
 // src/utils/knockoutSlots.ts
