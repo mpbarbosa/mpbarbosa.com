@@ -18152,6 +18152,8 @@ var FIFA_MATCH_STATUS = {
   ABANDONED: 4,
   POSTPONED: 7,
   CANCELLED: 8,
+  DELAYED: 10,
+  // kickoff delayed (e.g. weather) but still expected — FIFA renders "Atrasado"
   LINE_UPS: 12,
   // line-ups published (still pre-match)
   SUSPENDED: 99
@@ -18163,6 +18165,7 @@ var getMatchStatusFromFifa = (localMatch, fifaMatch) => {
       return "FINISHED";
     case FIFA_MATCH_STATUS.FUTURE:
     case FIFA_MATCH_STATUS.LINE_UPS:
+    case FIFA_MATCH_STATUS.DELAYED:
       return "PRE_GAME";
     case FIFA_MATCH_STATUS.LIVE:
       return "LIVE";
@@ -18222,6 +18225,7 @@ var FIFA_STATUS_LABELS = {
   [FIFA_MATCH_STATUS.ABANDONED]: "Abandonado",
   [FIFA_MATCH_STATUS.POSTPONED]: "Adiado",
   [FIFA_MATCH_STATUS.CANCELLED]: "Cancelado",
+  [FIFA_MATCH_STATUS.DELAYED]: "Atrasado",
   [FIFA_MATCH_STATUS.SUSPENDED]: "Paralisado"
 };
 var TERMINAL_OR_ABNORMAL_STATUS = /* @__PURE__ */ new Set([
@@ -18229,7 +18233,8 @@ var TERMINAL_OR_ABNORMAL_STATUS = /* @__PURE__ */ new Set([
   FIFA_MATCH_STATUS.SUSPENDED,
   FIFA_MATCH_STATUS.ABANDONED,
   FIFA_MATCH_STATUS.POSTPONED,
-  FIFA_MATCH_STATUS.CANCELLED
+  FIFA_MATCH_STATUS.CANCELLED,
+  FIFA_MATCH_STATUS.DELAYED
 ]);
 var getOfficialFifaStatusLabel = (matchStatus, period) => {
   if (typeof matchStatus === "number" && TERMINAL_OR_ABNORMAL_STATUS.has(matchStatus)) {
@@ -25207,7 +25212,7 @@ var knockoutBracket_default = {
     {
       matchNumber: 79,
       stage: "R32",
-      dateUtc: "2026-07-01T01:00:00Z",
+      dateUtc: "2026-07-01T02:00:00Z",
       stadium: "Mexico City Stadium",
       city: "Mexico City",
       slotA: "1A",
