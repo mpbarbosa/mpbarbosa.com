@@ -18817,6 +18817,70 @@ function parseOpenMeteoCurrent(raw) {
   };
 }
 
+// reddit-core.ts
+var REDDIT_TOKEN_URL = "https://www.reddit.com/api/v1/access_token";
+var REDDIT_OAUTH_BASE = "https://oauth.reddit.com";
+var REDDIT_USER_AGENT = "web:agora-na-copa-2026:1.0 (by /u/mpbarbosa; +https://copa2026.mpbarbosa.com)";
+var buildRedditTokenRequest = (clientId, clientSecret) => {
+  if (!clientId || !clientSecret) return null;
+  const basic = Buffer.from(`${clientId}:${clientSecret}`).toString("base64");
+  return {
+    url: REDDIT_TOKEN_URL,
+    method: "POST",
+    headers: {
+      Authorization: `Basic ${basic}`,
+      "Content-Type": "application/x-www-form-urlencoded",
+      "User-Agent": REDDIT_USER_AGENT
+    },
+    body: "grant_type=client_credentials"
+  };
+};
+var parseRedditToken = (json) => {
+  if (!json || typeof json !== "object") return null;
+  const obj = json;
+  const token = obj.access_token;
+  if (typeof token !== "string" || !token) return null;
+  const expires = typeof obj.expires_in === "number" ? obj.expires_in : 3600;
+  return { accessToken: token, expiresInSec: expires };
+};
+var buildRedditInfoUrl = (ids) => {
+  const clean2 = ids.filter((id) => typeof id === "string" && id.length > 0);
+  if (clean2.length === 0) return null;
+  const names = clean2.map((id) => `t3_${id}`).join(",");
+  return `${REDDIT_OAUTH_BASE}/api/info?id=${encodeURIComponent(names)}`;
+};
+var mergeRedditListing = (seeds, listingJson) => {
+  const liveById = /* @__PURE__ */ new Map();
+  try {
+    const children = listingJson?.data?.children;
+    if (Array.isArray(children)) {
+      for (const child of children) {
+        const data = child?.data;
+        if (data && typeof data.id === "string") liveById.set(data.id, data);
+      }
+    }
+  } catch {
+    return seeds;
+  }
+  return seeds.map((seed) => {
+    const live = liveById.get(seed.id);
+    if (!live) return seed;
+    const title = typeof live.title === "string" && live.title.trim() ? live.title.trim() : seed.title;
+    const subredditPrefixed = typeof live.subreddit_name_prefixed === "string" ? live.subreddit_name_prefixed : seed.subreddit;
+    const author = typeof live.author === "string" && live.author !== "[deleted]" ? live.author : void 0;
+    const score = typeof live.score === "number" ? live.score : void 0;
+    const numComments = typeof live.num_comments === "number" ? live.num_comments : void 0;
+    return {
+      ...seed,
+      title,
+      subreddit: subredditPrefixed,
+      ...author ? { author } : {},
+      ...score !== void 0 ? { score } : {},
+      ...numComments !== void 0 ? { numComments } : {}
+    };
+  });
+};
+
 // presence-core.ts
 function recordHeartbeat(store, key, nowMs) {
   if (key) store.set(key, nowMs);
@@ -27351,6 +27415,17 @@ function estimateQualificationOdds(matches, teamCode, options = {}) {
   };
 }
 
+// src/data/redditPosts.json
+var redditPosts_default = [
+  {
+    id: "1ukm48k",
+    url: "https://www.reddit.com/r/ModaBrasil/comments/1ukm48k/o_que_voc%C3%AAs_acham_do_estilo_de_carlo_ancelotti/",
+    subreddit: "r/ModaBrasil",
+    title: "O que voc\xEAs acham do estilo de Carlo Ancelotti?",
+    teamCode: "BRA"
+  }
+];
+
 // server.ts
 var TEAM_ANALYSIS_BY_CODE = teamAnalysis_default;
 import_dotenv.default.config();
@@ -28852,6 +28927,101 @@ app.get("/api/google-trends", (_req, res) => {
   });
 });
 void refreshGoogleTrendsCache();
+var REDDIT_CLIENT_ID = process.env.REDDIT_CLIENT_ID;
+var REDDIT_CLIENT_SECRET = process.env.REDDIT_CLIENT_SECRET;
+var REDDIT_CACHE_TTL_MS = 15 * 60 * 1e3;
+var REDDIT_FETCH_TIMEOUT_MS = 6e3;
+var REDDIT_SEEDS = redditPosts_default;
+var redditFallback = (note) => ({
+  source: "fallback",
+  note,
+  updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
+  posts: REDDIT_SEEDS
+});
+var redditCache = null;
+var redditToken = null;
+var fetchRedditToken = async () => {
+  if (redditToken && redditToken.expiresAt > Date.now()) return redditToken.accessToken;
+  const request = buildRedditTokenRequest(REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET);
+  if (!request) return null;
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), REDDIT_FETCH_TIMEOUT_MS);
+  try {
+    const response = await fetch(request.url, {
+      method: request.method,
+      headers: request.headers,
+      body: request.body,
+      signal: controller.signal
+    });
+    if (!response.ok) throw new Error(`Reddit token request failed (${response.status})`);
+    const token = parseRedditToken(await response.json());
+    if (!token) throw new Error("Reddit token response malformed");
+    redditToken = {
+      accessToken: token.accessToken,
+      expiresAt: Date.now() + Math.max(0, token.expiresInSec - 60) * 1e3
+    };
+    return token.accessToken;
+  } finally {
+    clearTimeout(timeout);
+  }
+};
+var fetchReddit = async () => {
+  const accessToken = await fetchRedditToken();
+  if (!accessToken) throw new Error("Reddit credentials unset");
+  const infoUrl = buildRedditInfoUrl(REDDIT_SEEDS.map((post) => post.id));
+  if (!infoUrl) throw new Error("No curated Reddit posts to hydrate");
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), REDDIT_FETCH_TIMEOUT_MS);
+  let response;
+  try {
+    response = await fetch(infoUrl, {
+      signal: controller.signal,
+      headers: { Authorization: `Bearer ${accessToken}`, "User-Agent": REDDIT_USER_AGENT }
+    });
+  } finally {
+    clearTimeout(timeout);
+  }
+  if (!response.ok) throw new Error(`Reddit info request failed (${response.status})`);
+  return {
+    source: "reddit",
+    note: "Repercuss\xE3o da Copa no Reddit",
+    updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
+    posts: mergeRedditListing(REDDIT_SEEDS, await response.json())
+  };
+};
+var redditRefreshing = false;
+var refreshRedditCache = async () => {
+  if (redditRefreshing) return;
+  redditRefreshing = true;
+  try {
+    redditCache = { payload: await fetchReddit(), expiresAt: Date.now() + REDDIT_CACHE_TTL_MS };
+  } catch (error) {
+    console.error("Reddit background refresh failed:", error);
+  } finally {
+    redditRefreshing = false;
+  }
+};
+app.get("/api/reddit", (_req, res) => {
+  if (redditCache && redditCache.expiresAt > Date.now()) {
+    res.set("Cache-Control", "public, max-age=600");
+    res.json(redditCache.payload);
+    return;
+  }
+  const hasCreds = Boolean(REDDIT_CLIENT_ID && REDDIT_CLIENT_SECRET);
+  if (hasCreds) void refreshRedditCache();
+  if (redditCache) {
+    res.set("Cache-Control", "public, max-age=60");
+    res.json(redditCache.payload);
+    return;
+  }
+  res.set("Cache-Control", "public, max-age=60");
+  res.json(
+    redditFallback(
+      hasCreds ? "Atualizando posts do Reddit\u2026" : "Posts em destaque (Reddit ao vivo indispon\xEDvel)."
+    )
+  );
+});
+if (REDDIT_CLIENT_ID && REDDIT_CLIENT_SECRET) void refreshRedditCache();
 var weatherCache = /* @__PURE__ */ new Map();
 var parseCoordinate = (value, max) => {
   if (typeof value !== "string") return null;
