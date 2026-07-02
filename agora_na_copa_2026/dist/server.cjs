@@ -25592,7 +25592,11 @@ var KNOCKOUT_RESULTS = {
   // #79 · 16-avos · 30/06/2026 (início adiado para as 23h por chuva) — México 2×0 Equador
   // (Julian Quiñones 22', Raúl Jiménez 31'; Piero Hincapié expulso aos 90+5' p/ EQU).
   // México classificado; alimenta a Oitavas #92 (slot W79).
-  79: { status: "FINISHED", score: { teamA: 2, teamB: 0 } }
+  79: { status: "FINISHED", score: { teamA: 2, teamB: 0 } },
+  // #80 · 16-avos · Atlanta Stadium · 01/07/2026 — Inglaterra 2×1 RD Congo (Brian Cipenga 7'
+  // p/ COD; Harry Kane 75' e 86' p/ ING). Inglaterra virou e se classificou; alimenta a
+  // Oitavas #92 (slot W80).
+  80: { status: "FINISHED", score: { teamA: 2, teamB: 1 } }
 };
 
 // src/utils/knockoutSlots.ts
