@@ -8158,7 +8158,10 @@ var squads_default = {
     socials: {
       instagram: "mikel10oyar",
       wikipedia: "https://pt.wikipedia.org/wiki/Mikel_Oyarzabal"
-    }
+    },
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZ5e3aJmmL3/"
+    ]
   },
   "430753": {
     fifaId: "430753",
