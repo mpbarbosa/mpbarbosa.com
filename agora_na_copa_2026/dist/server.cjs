@@ -2238,7 +2238,10 @@ var squads_default = {
     socials: {
       instagram: "toniruediger",
       wikipedia: "https://pt.wikipedia.org/wiki/Antonio_R%C3%BCdiger"
-    }
+    },
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZlIOe4jpxy/"
+    ]
   },
   "380005": {
     fifaId: "380005",
