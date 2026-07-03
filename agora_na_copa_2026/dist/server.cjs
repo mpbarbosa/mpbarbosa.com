@@ -59,7 +59,8 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Neymar"
     },
     dateOfBirth: "1992-02-05",
-    height: 175
+    height: 175,
+    instagramPostUrl: "https://www.instagram.com/p/DaCJER5DRhv/"
   },
   "201200": {
     fifaId: "201200",
@@ -83,7 +84,9 @@ var squads_default = {
       "https://www.instagram.com/p/DZ-gMJqDedA/",
       "https://www.instagram.com/p/DaT2GPUD40W/",
       "https://www.instagram.com/p/DaT53MSFjn5/",
-      "https://www.instagram.com/p/DaT-EMHjYiD/"
+      "https://www.instagram.com/p/DaT-EMHjYiD/",
+      "https://www.instagram.com/p/DaUFHrIjDha/",
+      "https://www.instagram.com/reel/DZ-pxQZSaSR/"
     ]
   },
   "215285": {
@@ -156,7 +159,9 @@ var squads_default = {
     instagramPostUrls: [
       "https://www.instagram.com/reel/DZ5kyXauIKr/",
       "https://www.instagram.com/p/DZ5zea7jzW5/",
-      "https://www.instagram.com/reel/DZ0RteXxomP/"
+      "https://www.instagram.com/reel/DZ0RteXxomP/",
+      "https://www.instagram.com/p/DZ5yyhfFG-m/",
+      "https://www.instagram.com/p/DZ-s34VkfDU/"
     ],
     worldCupNote: "## Leitura\nMessi segue impar\xE1vel e fechou a fase de grupos como artilheiro isolado do Mundial. Mesmo come\xE7ando no banco diante da Jord\xE2nia, o capit\xE3o entrou e marcou de novo \u2014 s\xE3o 6 gols em 3 jogos \u2014, e a Argentina avan\xE7ou com 100% de aproveitamento, cada vez mais favorita ao t\xEDtulo.\n## Desempenho\nHat-trick na estreia (3 a 0 na Arg\xE9lia, aos 17, 60 e 76) e dois gols sobre a \xC1ustria (2 a 0, aos 38 e 90+5). Na terceira rodada foi poupado no in\xEDcio \u2014 a Argentina j\xE1 vencia por 2 a 0 com Lo Celso (19') e Lautaro (31') \u2014, mas entrou aos 60 e fechou o 3 a 1 sobre a Jord\xE2nia com gol aos 80 minutos (Altamari havia descontado aos 55).\n## N\xFAmeros\nJ3 \xB7 6 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina ganhou o Grupo J com 9 pontos, 100% de aproveitamento e SG +7. Classificada aos 16-avos como uma das favoritas.",
     worldCupNoteUpdatedAt: "2026-06-28T02:00:00.000Z",
@@ -500,7 +505,9 @@ var squads_default = {
     worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z",
     instagramPostUrls: [
       "https://www.instagram.com/p/DaL65g6yWCY/",
-      "https://www.instagram.com/p/DaRNtKpG7g0/"
+      "https://www.instagram.com/p/DaRNtKpG7g0/",
+      "https://www.instagram.com/p/DaOFrcyjxy4/",
+      "https://www.instagram.com/p/DaA2zsiEVoo/"
     ]
   },
   "308386": {
@@ -758,7 +765,8 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Marcos_Ao%C3%A1s_Corr%C3%AAa"
     },
     dateOfBirth: "1994-05-14",
-    height: 183
+    height: 183,
+    instagramPostUrl: "https://www.instagram.com/p/DaJkLWqltlU/"
   },
   "335656": {
     fifaId: "335656",
@@ -1548,7 +1556,10 @@ var squads_default = {
       instagram: "vozinha1",
       wikipedia: "https://pt.wikipedia.org/wiki/Vozinha"
     },
-    instagramPostUrl: "https://www.instagram.com/reel/DZno5Zsxo6V/",
+    instagramPostUrls: [
+      "https://www.instagram.com/reel/DZno5Zsxo6V/",
+      "https://www.instagram.com/p/DaOg9MyDtVw/"
+    ],
     worldCupNote: "## Leitura\nAos 40 anos, o veterano Josimar Dias \u2014 o Vozinha \u2014 \xE9 o s\xEDmbolo da campanha hist\xF3rica de Cabo Verde, classificado pela primeira vez \xE0s oitavas de uma Copa do Mundo. Dono absoluto da camisa 1 e muralha da sele\xE7\xE3o, virou \xEDdolo nacional e fen\xF4meno mundial \u2014 e foi o esteio do feito in\xE9dito.\n## Desempenho\nContra a Espanha, foi gigante: sete defesas, 0 a 0 e pr\xEAmio de craque da partida no primeiro ponto cabo-verdiano em Copas. Diante do Uruguai, sofreu dois gols (Maxi Ara\xFAjo aos 44 e Canobbio aos 45+6), mas Cabo Verde reagiu e arrancou um valioso 2 a 2. No 0 a 0 com a Ar\xE1bia Saudita, voltou a fechar o gol e selou a classifica\xE7\xE3o in\xE9dita. Duas redes intactas em tr\xEAs jogos.\n## N\xFAmeros\nJ3 \xB7 2 clean sheets \xB7 2 gols sofridos \xB7 3 pontos. Cabo Verde terminou em 2\xBA no Grupo H e est\xE1 classificado \xE0s oitavas pela primeira vez na hist\xF3ria \u2014 e Vozinha foi decisivo na muralha que escreveu o feito.",
     worldCupNoteUpdatedAt: "2026-06-27T00:00:00.000Z",
     dateOfBirth: "1986-06-03",
@@ -2766,7 +2777,8 @@ var squads_default = {
       "https://www.instagram.com/p/DZqaoeeAhUg/",
       "https://www.instagram.com/p/DZ7YVf1Anjj/",
       "https://www.instagram.com/p/DaOi0kjF55g/",
-      "https://www.instagram.com/p/DZ-3bZFETZa/"
+      "https://www.instagram.com/p/DZ-3bZFETZa/",
+      "https://www.instagram.com/p/DaJEBlOgsGG/"
     ],
     worldCupNote: "## Leitura\nO farol franc\xEAs seguiu brilhando. Kylian Mbapp\xE9 marcou duas vezes na goleada por 3 a 0 sobre a Su\xE9cia nos 16-avos e levou a Fran\xE7a \xE0s oitavas de final embalada. Capit\xE3o e artilheiro, o camisa 10 chegou a seis gols no Mundial.\n## Desempenho\nFez quatro gols na fase de grupos (dois no Senegal, dois no Iraque) e liderou os 100% de aproveitamento da Fran\xE7a no Grupo I. Nos 16-avos, contra a Su\xE9cia, abriu o placar no fim do primeiro tempo (45') e fechou a conta aos 74', com Bradley Barcola completando o 3 a 0 (53').\n## N\xFAmeros\nJ4 \xB7 6 gols \xB7 0 cart\xF5es \xB7 Fran\xE7a classificada \xE0s oitavas de final, onde encara o Paraguai. Mbapp\xE9 lidera o ataque de um dos favoritos ao t\xEDtulo.",
     worldCupNoteUpdatedAt: "2026-06-30T21:00:00.000Z"
@@ -3186,7 +3198,8 @@ var squads_default = {
     socials: {
       instagram: "fabinho",
       wikipedia: "https://pt.wikipedia.org/wiki/Fabinho_(futebolista,_1993)"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaLz2cDGOxP/"
   },
   "394824": {
     fifaId: "394824",
@@ -5112,7 +5125,8 @@ var squads_default = {
     socials: {
       instagram: "vinijr",
       wikipedia: "https://pt.wikipedia.org/wiki/Vin%C3%ADcius_J%C3%BAnior"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZkzbG7DsbZ/"
   },
   "405841": {
     fifaId: "405841",
@@ -11004,7 +11018,8 @@ var squads_default = {
     socials: {
       instagram: "mike_maignan16",
       wikipedia: "https://pt.wikipedia.org/wiki/Mike_Maignan"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaQCW1HlaPs/"
   },
   "448341": {
     fifaId: "448341",
@@ -25691,7 +25706,22 @@ var KNOCKOUT_RESULTS = {
   // #80 · 16-avos · Atlanta Stadium · 01/07/2026 — Inglaterra 2×1 RD Congo (Brian Cipenga 7'
   // p/ COD; Harry Kane 75' e 86' p/ ING). Inglaterra virou e se classificou; alimenta a
   // Oitavas #92 (slot W80).
-  80: { status: "FINISHED", score: { teamA: 2, teamB: 1 } }
+  80: { status: "FINISHED", score: { teamA: 2, teamB: 1 } },
+  // #81 · 16-avos · 01/07/2026 — Estados Unidos 2×0 Bósnia e Herzegovina (Folarin Balogun 45',
+  // expulso aos 64'; Malik Tillman 82'). EUA classificados mesmo com um a menos; alimentam a
+  // Oitavas #94 (slot W81).
+  81: { status: "FINISHED", score: { teamA: 2, teamB: 0 } },
+  // #82 · 16-avos · 01/07/2026 — Bélgica 3×2 Senegal na prorrogação (Habib Diarra 24' e Ismaila
+  // Sarr 51' p/ SEN; Romelu Lukaku 86', Youri Tielemans 89' e 120+5' p/ BEL). Bélgica virou de
+  // 0×2 e se classificou; alimenta a Oitavas #94 (slot W82).
+  82: { status: "FINISHED", score: { teamA: 3, teamB: 2 } },
+  // #83 · 16-avos · 02/07/2026 — Portugal 2×1 Croácia (Ivan Perisic 53' p/ CRO; Cristiano
+  // Ronaldo 68' de pênalti e Gonçalo Ramos 90+4' p/ POR). Portugal virou nos acréscimos;
+  // alimenta a Oitavas #93 (slot W83).
+  83: { status: "FINISHED", score: { teamA: 2, teamB: 1 } },
+  // #84 · 16-avos · 02/07/2026 — Espanha 3×0 Áustria (Mikel Oyarzabal 36' e 89', Pedro Porro
+  // 66'). Espanha classificada com autoridade; alimenta a Oitavas #93 (slot W84).
+  84: { status: "FINISHED", score: { teamA: 3, teamB: 0 } }
 };
 
 // src/utils/knockoutSlots.ts
