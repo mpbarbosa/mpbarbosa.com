@@ -77,7 +77,12 @@ var squads_default = {
     worldCupNote: "## Leitura\nParou na decis\xE3o. Depois de reagir contra o Uzbequist\xE3o, Cristiano Ronaldo esbarrou no ferrolho colombiano no empate sem gols que valia a ponta do Grupo K. Portugal avan\xE7ou aos 16-avos, mas em segundo, e o capit\xE3o segue na ca\xE7a ao primeiro gol no mata-mata.\n## Desempenho\nFicou em branco na estreia (1 a 1 com a RD Congo) e explodiu na segunda rodada, com dois gols na goleada por 5 a 0 sobre o Uzbequist\xE3o (6' e 39'). Na decis\xE3o do grupo, por\xE9m, parou no 0 a 0 com a Col\xF4mbia: bem marcado, n\xE3o furou o bloqueio advers\xE1rio, e Portugal cedeu a lideran\xE7a aos colombianos.\n## N\xFAmeros\nJ3 \xB7 2 gols \xB7 0 cart\xF5es \xB7 Portugal em 2\xBA do Grupo K (5 pontos, SG +5). Classificado aos 16-avos de final.",
     worldCupNoteUpdatedAt: "2026-06-27T23:30:00.000Z",
     dateOfBirth: "1985-02-05",
-    height: 185
+    height: 185,
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZ8ItZojQFO/",
+      "https://www.instagram.com/p/DZ-gMJqDedA/",
+      "https://www.instagram.com/p/DaT2GPUD40W/"
+    ]
   },
   "215285": {
     fifaId: "215285",
@@ -185,7 +190,8 @@ var squads_default = {
     dateOfBirth: "1985-09-09",
     height: 172,
     worldCupNote: "## Leitura\nO c\xE9rebro croata levou a sele\xE7\xE3o \xE0 classifica\xE7\xE3o. Aos 39 anos, Luka Modri\u0107 comandou o meio-campo na vit\xF3ria que valia a vaga e colocou a Cro\xE1cia nos 16-avos, em segundo no Grupo L. Sem n\xFAmeros chamativos, mas decisivo na orquestra\xE7\xE3o, segue vivo em provavelmente sua \xFAltima Copa.\n## Desempenho\nTitular nas tr\xEAs rodadas. Ap\xF3s a derrota por 4 a 2 para a Inglaterra (saiu aos 58) e a vit\xF3ria por 1 a 0 sobre o Panam\xE1 (saiu aos 81), foi a r\xE9gua do time do in\xEDcio ao fim na vit\xF3ria por 2 a 1 sobre Gana, que confirmou a classifica\xE7\xE3o: Petar Sucic abriu aos 31, Derrick Luckassen empatou aos 73 e Nikola Vlasic fez o gol da vit\xF3ria aos 83. N\xE3o marcou nem foi advertido.\n## N\xFAmeros\nJ3 \xB7 0 gols \xB7 0 cart\xF5es \xB7 Cro\xE1cia em 2\xBA do Grupo L (6 pontos, SG 0). Classificada aos 16-avos de final.",
-    worldCupNoteUpdatedAt: "2026-06-27T21:00:00.000Z"
+    worldCupNoteUpdatedAt: "2026-06-27T21:00:00.000Z",
+    instagramPostUrl: "https://www.instagram.com/p/DaT2GPUD40W/"
   },
   "261367": {
     fifaId: "261367",
