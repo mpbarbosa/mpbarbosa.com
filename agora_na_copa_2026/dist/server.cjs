@@ -89,7 +89,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaT-EMHjYiD/",
       "https://www.instagram.com/p/DaUFHrIjDha/",
       "https://www.instagram.com/reel/DZ-pxQZSaSR/",
-      "https://www.instagram.com/p/DZ8ZcOkiD9h/"
+      "https://www.instagram.com/p/DZ8ZcOkiD9h/",
+      "https://www.instagram.com/p/DaUJJ9ZCPyJ/"
     ]
   },
   "215285": {
@@ -1134,7 +1135,8 @@ var squads_default = {
     instagramPostUrls: [
       "https://www.instagram.com/p/DZn4QqYjQg0/",
       "https://www.instagram.com/p/DaWFkJniUoa/",
-      "https://www.instagram.com/p/DZ5kmxVAW24/"
+      "https://www.instagram.com/p/DZ5kmxVAW24/",
+      "https://www.instagram.com/p/DZ4Jg5jD6FI/"
     ],
     worldCupNote: "## Leitura\nSalah \xE9 o farol do Egito e segue levando os Fara\xF3s adiante: depois de garantir a vaga na fase de grupos, foi um dos cobradores da disputa de p\xEAnaltis que eliminou a Austr\xE1lia e colocou o Egito nas oitavas \u2014 onde reencontra a Argentina de Messi.\n## Desempenho\nDiscreto no 1 a 1 com a B\xE9lgica (substitu\xEDdo aos 76), decidiu contra a Nova Zel\xE2ndia com o gol aos 67 na virada por 3 a 1, e no 1 a 1 com o Ir\xE3 o empate bastou para classificar. Nos 16-avos, o 1 a 1 com a Austr\xE1lia (Emam Ashour aos 13; gol contra de Mohamed Hany aos 55) foi para os p\xEAnaltis, e Salah converteu sua cobran\xE7a no 4 a 2 que valeu a vaga.\n## N\xFAmeros\nJ4 \xB7 1 gol (+ p\xEAnalti convertido na disputa) \xB7 0 cart\xF5es. O Egito passou em 2\xBA no Grupo G (5 pontos, SG +2) e eliminou a Austr\xE1lia nos p\xEAnaltis; nas oitavas enfrenta a Argentina.",
     worldCupNoteUpdatedAt: "2026-07-03T18:00:00.000Z"
@@ -1598,7 +1600,9 @@ var squads_default = {
       "https://www.instagram.com/p/DZpkxupjE67/",
       "https://www.instagram.com/reel/DaWg-6iAcHT/",
       "https://www.instagram.com/p/DaGEnBgjDRw/",
-      "https://www.instagram.com/p/DZnju0oH7yg/"
+      "https://www.instagram.com/p/DZnju0oH7yg/",
+      "https://www.instagram.com/p/DaEr1UliNG3/",
+      "https://www.instagram.com/p/DaWmfzXDrnT/"
     ],
     worldCupNote: "## Leitura\nAos 40 anos, Josimar Dias \u2014 o Vozinha \u2014 encerrou como s\xEDmbolo da campanha mais hist\xF3rica de Cabo Verde: a estreia do pa\xEDs nas oitavas de uma Copa do Mundo. A muralha s\xF3 caiu diante da Argentina, e ainda assim depois de levar os favoritos \xE0 prorroga\xE7\xE3o.\n## Desempenho\nFoi gigante na fase de grupos: sete defesas e 0 a 0 com pr\xEAmio de craque diante da Espanha, o 2 a 2 com o Uruguai e o 0 a 0 com a Ar\xE1bia Saudita que selou a classifica\xE7\xE3o in\xE9dita. Nos 16-avos, foi superado por 3 a 2 pela Argentina de Messi (que abriu aos 29) numa batalha que foi \xE0 prorroga\xE7\xE3o \u2014 Cabo Verde empatava 2 a 2 at\xE9 um gol contra de Diney Borges aos 111 decretar a elimina\xE7\xE3o.\n## N\xFAmeros\nJ4 \xB7 2 clean sheets \xB7 5 gols sofridos \xB7 Cabo Verde caiu nas oitavas diante da Argentina, encerrando a melhor campanha de sua hist\xF3ria.",
     worldCupNoteUpdatedAt: "2026-07-03T22:00:00.000Z",
@@ -18325,6 +18329,7 @@ var squads_default = {
       instagram: "jamesrodriguez10",
       instagramFollowers: 5e7
     },
+    instagramPostUrl: "https://www.instagram.com/p/DaI4aWKkZDs/",
     worldCupNote: "## Leitura\nCapit\xE3o e camisa 10, James Rodr\xEDguez volta a ser o maestro da Col\xF4mbia: o organizador que dita o ritmo e a principal refer\xEAncia t\xE9cnica de uma sele\xE7\xE3o que venceu o Grupo K com autoridade. Mais de uma d\xE9cada depois da Chuteira de Ouro de 2014, segue sendo a batuta criativa que os colombianos procuram em cada arma\xE7\xE3o.\n## Desempenho\nTitular nas quatro partidas, foi o c\xE9rebro da arma\xE7\xE3o e saiu para poupar f\xF4lego em todas: substitu\xEDdo aos 72' na vit\xF3ria por 3\xD71 sobre o Uzbequist\xE3o, aos 58' no 1\xD70 diante da RD Congo e aos 76' no 0\xD70 com Portugal que carimbou a lideran\xE7a do grupo. Nos 16-avos, come\xE7ou o triunfo por 1\xD70 sobre Gana \u2014 gol de Jhon Arias aos 14' \u2014 antes de dar lugar a Richard R\xEDos. Ainda sem marcar na competi\xE7\xE3o, \xE9 o fio condutor de um time que sofreu apenas um gol em toda a fase de grupos.\n## N\xFAmeros\nJ4 \xB7 0 gols \xB7 0 cart\xF5es \xB7 l\xEDder do Grupo K (7 pts), classificada \xE0s oitavas",
     worldCupNoteUpdatedAt: "2026-07-04T01:30:00.000Z"
   },
