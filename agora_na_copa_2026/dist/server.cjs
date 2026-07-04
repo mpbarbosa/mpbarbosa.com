@@ -163,7 +163,8 @@ var squads_default = {
       "https://www.instagram.com/reel/DZ0RteXxomP/",
       "https://www.instagram.com/p/DZ5yyhfFG-m/",
       "https://www.instagram.com/p/DZ-s34VkfDU/",
-      "https://www.instagram.com/p/DaWg1ZzgILy/"
+      "https://www.instagram.com/p/DaWg1ZzgILy/",
+      "https://www.instagram.com/p/DaVH_x6j8ih/"
     ],
     worldCupNote: "## Leitura\nMessi segue impar\xE1vel e fechou a fase de grupos como artilheiro isolado do Mundial. Mesmo come\xE7ando no banco diante da Jord\xE2nia, o capit\xE3o entrou e marcou de novo \u2014 s\xE3o 6 gols em 3 jogos \u2014, e a Argentina avan\xE7ou com 100% de aproveitamento, cada vez mais favorita ao t\xEDtulo.\n## Desempenho\nHat-trick na estreia (3 a 0 na Arg\xE9lia, aos 17, 60 e 76) e dois gols sobre a \xC1ustria (2 a 0, aos 38 e 90+5). Na terceira rodada foi poupado no in\xEDcio \u2014 a Argentina j\xE1 vencia por 2 a 0 com Lo Celso (19') e Lautaro (31') \u2014, mas entrou aos 60 e fechou o 3 a 1 sobre a Jord\xE2nia com gol aos 80 minutos (Altamari havia descontado aos 55).\n## N\xFAmeros\nJ3 \xB7 6 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina ganhou o Grupo J com 9 pontos, 100% de aproveitamento e SG +7. Classificada aos 16-avos como uma das favoritas.",
     worldCupNoteUpdatedAt: "2026-06-28T02:00:00.000Z",
@@ -1115,7 +1116,8 @@ var squads_default = {
     },
     instagramPostUrls: [
       "https://www.instagram.com/p/DZn4QqYjQg0/",
-      "https://www.instagram.com/p/DaWFkJniUoa/"
+      "https://www.instagram.com/p/DaWFkJniUoa/",
+      "https://www.instagram.com/p/DZ5kmxVAW24/"
     ],
     worldCupNote: "## Leitura\nSalah \xE9 o farol do Egito e cumpriu seu papel: com o gol da virada sobre a Nova Zel\xE2ndia e a vaga garantida, o capit\xE3o levou os Fara\xF3s ao mata-mata. Astro do Liverpool e principal nome do Egito, \xE9 a esperan\xE7a eg\xEDpcia na pr\xF3xima fase.\n## Desempenho\nCome\xE7ou discreto no empate em 1 a 1 com a B\xE9lgica, substitu\xEDdo aos 76. Respondeu contra a Nova Zel\xE2ndia: marcou aos 67 o gol que completou a virada no 3 a 1. No fechamento, no 1 a 1 com o Ir\xE3, atuou at\xE9 os 57 sem balan\xE7ar as redes, mas o empate bastou para classificar o Egito. Ficha limpa.\n## N\xFAmeros\nJ3 \xB7 1 gol \xB7 0 cart\xF5es. O Egito terminou em 2\xBA no Grupo G, com 5 pontos e saldo +2, classificado \xE0s oitavas. Salah \xE9 o nome em que os Fara\xF3s depositam o sonho de avan\xE7ar ainda mais.",
     worldCupNoteUpdatedAt: "2026-06-27T03:00:00.000Z"
@@ -1434,7 +1436,11 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Kevin_De_Bruyne"
     },
     worldCupNote: "## Leitura\nSaiu antes da virada \xE9pica. Kevin De Bruyne come\xE7ou os 16-avos contra o Senegal, mas foi substitu\xEDdo aos 56', com a B\xE9lgica perdendo por 2 a 0 \u2014 e viu do banco os Diabos Vermelhos buscarem uma rea\xE7\xE3o dram\xE1tica para vencer por 3 a 2 na prorroga\xE7\xE3o e avan\xE7ar \xE0s oitavas.\n## Desempenho\nTitular e decisivo na fase de grupos, com gol na goleada por 5 a 1 sobre a Nova Zel\xE2ndia que deu a ponta do Grupo G. Nos 16-avos, foi titular diante do Senegal, mas deixou o campo aos 56' (entrou Raskin) quando a B\xE9lgica perdia por 2 a 0 \u2014 Habib Diarra (24') e Ismaila Sarr (51') marcaram. A rea\xE7\xE3o viria depois, com Lukaku (86') e Tielemans (89' e 120+5').\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 0 cart\xF5es \xB7 B\xE9lgica classificada \xE0s oitavas de final, onde encara os Estados Unidos. De Bruyne saiu antes da virada, mas o time avan\xE7ou.",
-    worldCupNoteUpdatedAt: "2026-07-01T20:00:00.000Z"
+    worldCupNoteUpdatedAt: "2026-07-01T20:00:00.000Z",
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZ9QmtoiJKj/",
+      "https://www.instagram.com/p/DZozZswm3WJ/"
+    ]
   },
   "358122": {
     fifaId: "358122",
@@ -1567,7 +1573,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaWg1ZzgILy/",
       "https://www.instagram.com/p/DZpkxupjE67/",
       "https://www.instagram.com/reel/DaWg-6iAcHT/",
-      "https://www.instagram.com/p/DaGEnBgjDRw/"
+      "https://www.instagram.com/p/DaGEnBgjDRw/",
+      "https://www.instagram.com/p/DZnju0oH7yg/"
     ],
     worldCupNote: "## Leitura\nAos 40 anos, o veterano Josimar Dias \u2014 o Vozinha \u2014 \xE9 o s\xEDmbolo da campanha hist\xF3rica de Cabo Verde, classificado pela primeira vez \xE0s oitavas de uma Copa do Mundo. Dono absoluto da camisa 1 e muralha da sele\xE7\xE3o, virou \xEDdolo nacional e fen\xF4meno mundial \u2014 e foi o esteio do feito in\xE9dito.\n## Desempenho\nContra a Espanha, foi gigante: sete defesas, 0 a 0 e pr\xEAmio de craque da partida no primeiro ponto cabo-verdiano em Copas. Diante do Uruguai, sofreu dois gols (Maxi Ara\xFAjo aos 44 e Canobbio aos 45+6), mas Cabo Verde reagiu e arrancou um valioso 2 a 2. No 0 a 0 com a Ar\xE1bia Saudita, voltou a fechar o gol e selou a classifica\xE7\xE3o in\xE9dita. Duas redes intactas em tr\xEAs jogos.\n## N\xFAmeros\nJ3 \xB7 2 clean sheets \xB7 2 gols sofridos \xB7 3 pontos. Cabo Verde terminou em 2\xBA no Grupo H e est\xE1 classificado \xE0s oitavas pela primeira vez na hist\xF3ria \u2014 e Vozinha foi decisivo na muralha que escreveu o feito.",
     worldCupNoteUpdatedAt: "2026-06-27T00:00:00.000Z",
