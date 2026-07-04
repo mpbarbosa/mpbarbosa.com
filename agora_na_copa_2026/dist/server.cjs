@@ -166,8 +166,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaWg1ZzgILy/",
       "https://www.instagram.com/p/DaVH_x6j8ih/"
     ],
-    worldCupNote: "## Leitura\nMessi segue impar\xE1vel e fechou a fase de grupos como artilheiro isolado do Mundial. Mesmo come\xE7ando no banco diante da Jord\xE2nia, o capit\xE3o entrou e marcou de novo \u2014 s\xE3o 6 gols em 3 jogos \u2014, e a Argentina avan\xE7ou com 100% de aproveitamento, cada vez mais favorita ao t\xEDtulo.\n## Desempenho\nHat-trick na estreia (3 a 0 na Arg\xE9lia, aos 17, 60 e 76) e dois gols sobre a \xC1ustria (2 a 0, aos 38 e 90+5). Na terceira rodada foi poupado no in\xEDcio \u2014 a Argentina j\xE1 vencia por 2 a 0 com Lo Celso (19') e Lautaro (31') \u2014, mas entrou aos 60 e fechou o 3 a 1 sobre a Jord\xE2nia com gol aos 80 minutos (Altamari havia descontado aos 55).\n## N\xFAmeros\nJ3 \xB7 6 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina ganhou o Grupo J com 9 pontos, 100% de aproveitamento e SG +7. Classificada aos 16-avos como uma das favoritas.",
-    worldCupNoteUpdatedAt: "2026-06-28T02:00:00.000Z",
+    worldCupNote: "## Leitura\nMessi segue impar\xE1vel e artilheiro isolado do Mundial. Depois de fechar a fase de grupos com 6 gols, o capit\xE3o abriu o placar nos 16-avos e chegou a 7 \u2014 a Argentina avan\xE7a \xE0s oitavas cada vez mais favorita ao t\xEDtulo, com um cl\xE1ssico contra o Egito de Salah pela frente.\n## Desempenho\nHat-trick na estreia (3 a 0 na Arg\xE9lia, aos 17, 60 e 76), dois sobre a \xC1ustria (2 a 0, aos 38 e 90+5) e o gol que fechou o 3 a 1 sobre a Jord\xE2nia (aos 80, tendo entrado no 2\xBA tempo). Nos 16-avos, marcou aos 29 o gol que abriu o dur\xEDssimo 3 a 2 sobre Cabo Verde \u2014 que levou a decis\xE3o \xE0 prorroga\xE7\xE3o (2 a 2 com Sidny Lopes Cabral aos 103) at\xE9 um gol contra de Diney Borges aos 111 carimbar a vaga.\n## N\xFAmeros\nJ4 \xB7 7 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina ganhou o Grupo J com 9 pontos (100%, SG +7) e passou pelos 16-avos; nas oitavas encara o Egito.",
+    worldCupNoteUpdatedAt: "2026-07-03T22:00:00.000Z",
     dateOfBirth: "1987-06-24",
     height: 170
   },
@@ -1119,8 +1119,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaWFkJniUoa/",
       "https://www.instagram.com/p/DZ5kmxVAW24/"
     ],
-    worldCupNote: "## Leitura\nSalah \xE9 o farol do Egito e cumpriu seu papel: com o gol da virada sobre a Nova Zel\xE2ndia e a vaga garantida, o capit\xE3o levou os Fara\xF3s ao mata-mata. Astro do Liverpool e principal nome do Egito, \xE9 a esperan\xE7a eg\xEDpcia na pr\xF3xima fase.\n## Desempenho\nCome\xE7ou discreto no empate em 1 a 1 com a B\xE9lgica, substitu\xEDdo aos 76. Respondeu contra a Nova Zel\xE2ndia: marcou aos 67 o gol que completou a virada no 3 a 1. No fechamento, no 1 a 1 com o Ir\xE3, atuou at\xE9 os 57 sem balan\xE7ar as redes, mas o empate bastou para classificar o Egito. Ficha limpa.\n## N\xFAmeros\nJ3 \xB7 1 gol \xB7 0 cart\xF5es. O Egito terminou em 2\xBA no Grupo G, com 5 pontos e saldo +2, classificado \xE0s oitavas. Salah \xE9 o nome em que os Fara\xF3s depositam o sonho de avan\xE7ar ainda mais.",
-    worldCupNoteUpdatedAt: "2026-06-27T03:00:00.000Z"
+    worldCupNote: "## Leitura\nSalah \xE9 o farol do Egito e segue levando os Fara\xF3s adiante: depois de garantir a vaga na fase de grupos, foi um dos cobradores da disputa de p\xEAnaltis que eliminou a Austr\xE1lia e colocou o Egito nas oitavas \u2014 onde reencontra a Argentina de Messi.\n## Desempenho\nDiscreto no 1 a 1 com a B\xE9lgica (substitu\xEDdo aos 76), decidiu contra a Nova Zel\xE2ndia com o gol aos 67 na virada por 3 a 1, e no 1 a 1 com o Ir\xE3 o empate bastou para classificar. Nos 16-avos, o 1 a 1 com a Austr\xE1lia (Emam Ashour aos 13; gol contra de Mohamed Hany aos 55) foi para os p\xEAnaltis, e Salah converteu sua cobran\xE7a no 4 a 2 que valeu a vaga.\n## N\xFAmeros\nJ4 \xB7 1 gol (+ p\xEAnalti convertido na disputa) \xB7 0 cart\xF5es. O Egito passou em 2\xBA no Grupo G (5 pontos, SG +2) e eliminou a Austr\xE1lia nos p\xEAnaltis; nas oitavas enfrenta a Argentina.",
+    worldCupNoteUpdatedAt: "2026-07-03T18:00:00.000Z"
   },
   "344661": {
     fifaId: "344661",
@@ -1576,8 +1576,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaGEnBgjDRw/",
       "https://www.instagram.com/p/DZnju0oH7yg/"
     ],
-    worldCupNote: "## Leitura\nAos 40 anos, o veterano Josimar Dias \u2014 o Vozinha \u2014 \xE9 o s\xEDmbolo da campanha hist\xF3rica de Cabo Verde, classificado pela primeira vez \xE0s oitavas de uma Copa do Mundo. Dono absoluto da camisa 1 e muralha da sele\xE7\xE3o, virou \xEDdolo nacional e fen\xF4meno mundial \u2014 e foi o esteio do feito in\xE9dito.\n## Desempenho\nContra a Espanha, foi gigante: sete defesas, 0 a 0 e pr\xEAmio de craque da partida no primeiro ponto cabo-verdiano em Copas. Diante do Uruguai, sofreu dois gols (Maxi Ara\xFAjo aos 44 e Canobbio aos 45+6), mas Cabo Verde reagiu e arrancou um valioso 2 a 2. No 0 a 0 com a Ar\xE1bia Saudita, voltou a fechar o gol e selou a classifica\xE7\xE3o in\xE9dita. Duas redes intactas em tr\xEAs jogos.\n## N\xFAmeros\nJ3 \xB7 2 clean sheets \xB7 2 gols sofridos \xB7 3 pontos. Cabo Verde terminou em 2\xBA no Grupo H e est\xE1 classificado \xE0s oitavas pela primeira vez na hist\xF3ria \u2014 e Vozinha foi decisivo na muralha que escreveu o feito.",
-    worldCupNoteUpdatedAt: "2026-06-27T00:00:00.000Z",
+    worldCupNote: "## Leitura\nAos 40 anos, Josimar Dias \u2014 o Vozinha \u2014 encerrou como s\xEDmbolo da campanha mais hist\xF3rica de Cabo Verde: a estreia do pa\xEDs nas oitavas de uma Copa do Mundo. A muralha s\xF3 caiu diante da Argentina, e ainda assim depois de levar os favoritos \xE0 prorroga\xE7\xE3o.\n## Desempenho\nFoi gigante na fase de grupos: sete defesas e 0 a 0 com pr\xEAmio de craque diante da Espanha, o 2 a 2 com o Uruguai e o 0 a 0 com a Ar\xE1bia Saudita que selou a classifica\xE7\xE3o in\xE9dita. Nos 16-avos, foi superado por 3 a 2 pela Argentina de Messi (que abriu aos 29) numa batalha que foi \xE0 prorroga\xE7\xE3o \u2014 Cabo Verde empatava 2 a 2 at\xE9 um gol contra de Diney Borges aos 111 decretar a elimina\xE7\xE3o.\n## N\xFAmeros\nJ4 \xB7 2 clean sheets \xB7 5 gols sofridos \xB7 Cabo Verde caiu nas oitavas diante da Argentina, encerrando a melhor campanha de sua hist\xF3ria.",
+    worldCupNoteUpdatedAt: "2026-07-03T22:00:00.000Z",
     dateOfBirth: "1986-06-03",
     height: 189
   },
@@ -18204,7 +18204,13 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/800cc17f-8f64-4d16-90e9-c5ab79c4d302/RODRIGUEZ-James_269058",
     dateOfBirth: "1991-07-12",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "jamesrodriguez10",
+      instagramFollowers: 5e7
+    },
+    worldCupNote: "## Leitura\nCapit\xE3o e camisa 10, James Rodr\xEDguez volta a ser o maestro da Col\xF4mbia: o organizador que dita o ritmo e a principal refer\xEAncia t\xE9cnica de uma sele\xE7\xE3o que venceu o Grupo K com autoridade. Mais de uma d\xE9cada depois da Chuteira de Ouro de 2014, segue sendo a batuta criativa que os colombianos procuram em cada arma\xE7\xE3o.\n## Desempenho\nTitular nas quatro partidas, foi o c\xE9rebro da arma\xE7\xE3o e saiu para poupar f\xF4lego em todas: substitu\xEDdo aos 72' na vit\xF3ria por 3\xD71 sobre o Uzbequist\xE3o, aos 58' no 1\xD70 diante da RD Congo e aos 76' no 0\xD70 com Portugal que carimbou a lideran\xE7a do grupo. Nos 16-avos, come\xE7ou o triunfo por 1\xD70 sobre Gana \u2014 gol de Jhon Arias aos 14' \u2014 antes de dar lugar a Richard R\xEDos. Ainda sem marcar na competi\xE7\xE3o, \xE9 o fio condutor de um time que sofreu apenas um gol em toda a fase de grupos.\n## N\xFAmeros\nJ4 \xB7 0 gols \xB7 0 cart\xF5es \xB7 l\xEDder do Grupo K (7 pts), classificada \xE0s oitavas",
+    worldCupNoteUpdatedAt: "2026-07-04T01:30:00.000Z"
   },
   "470760": {
     fifaId: "470760",
@@ -18216,7 +18222,12 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/1449efe8-a491-4d19-8c7d-c6fb0b6e8d0f/ARIAS-Jhon_470760",
     dateOfBirth: "1997-09-21",
-    height: 168
+    height: 168,
+    socials: {
+      instagram: "jhonariasa",
+      instagramFollowers: 1e6
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaHYZBuDYb_/"
   },
   "360642": {
     fifaId: "360642",
@@ -26208,7 +26219,23 @@ var KNOCKOUT_RESULTS = {
   83: { status: "FINISHED", score: { teamA: 2, teamB: 1 } },
   // #84 · 16-avos · 02/07/2026 — Espanha 3×0 Áustria (Mikel Oyarzabal 36' e 89', Pedro Porro
   // 66'). Espanha classificada com autoridade; alimenta a Oitavas #93 (slot W84).
-  84: { status: "FINISHED", score: { teamA: 3, teamB: 0 } }
+  84: { status: "FINISHED", score: { teamA: 3, teamB: 0 } },
+  // #85 · 16-avos · BC Place Vancouver · 03/07/2026 — Suíça 2×0 Argélia (Breel Embolo 10',
+  // Dan Ndoye 46'). Suíça classificada; alimenta a Oitavas #96 (slot W85).
+  85: { status: "FINISHED", score: { teamA: 2, teamB: 0 } },
+  // #86 · 16-avos · Miami Stadium · 03/07/2026 — Argentina 3×2 Cabo Verde na prorrogação
+  // (Lionel Messi 29', Lisandro Martínez 92' e gol contra de Diney Borges 111' p/ ARG; Deroy
+  // Duarte 59' e Sidny Lopes Cabral 103' p/ CPV). Argentina classificada; alimenta a Oitavas
+  // #95 (slot W86).
+  86: { status: "FINISHED", score: { teamA: 3, teamB: 2 } },
+  // #87 · 16-avos · Kansas City Stadium · 03/07/2026 — Colômbia 1×0 Gana (Jhon Arias 14').
+  // Colômbia classificada; alimenta a Oitavas #96 (slot W87).
+  87: { status: "FINISHED", score: { teamA: 1, teamB: 0 } },
+  // #88 · 16-avos · Dallas Stadium · 03/07/2026 — Austrália 1×1 Egito (gol contra de Mohamed
+  // Hany 55' p/ AUS; Emam Ashour 13' p/ EGY), Egito 4×2 nos pênaltis (Saber, Ramy Rabia,
+  // Mohamed Salah e Hossam Abdelmaguid; Irvine e Awer Mabil p/ AUS). Egito classificado;
+  // alimenta a Oitavas #95 (slot W88).
+  88: { status: "FINISHED", score: { teamA: 1, teamB: 1 }, penaltyScore: { teamA: 2, teamB: 4 } }
 };
 
 // src/utils/knockoutSlots.ts
