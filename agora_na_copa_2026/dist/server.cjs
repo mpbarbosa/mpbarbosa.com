@@ -86,7 +86,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaT53MSFjn5/",
       "https://www.instagram.com/p/DaT-EMHjYiD/",
       "https://www.instagram.com/p/DaUFHrIjDha/",
-      "https://www.instagram.com/reel/DZ-pxQZSaSR/"
+      "https://www.instagram.com/reel/DZ-pxQZSaSR/",
+      "https://www.instagram.com/p/DZ8ZcOkiD9h/"
     ]
   },
   "215285": {
@@ -161,7 +162,8 @@ var squads_default = {
       "https://www.instagram.com/p/DZ5zea7jzW5/",
       "https://www.instagram.com/reel/DZ0RteXxomP/",
       "https://www.instagram.com/p/DZ5yyhfFG-m/",
-      "https://www.instagram.com/p/DZ-s34VkfDU/"
+      "https://www.instagram.com/p/DZ-s34VkfDU/",
+      "https://www.instagram.com/p/DaWg1ZzgILy/"
     ],
     worldCupNote: "## Leitura\nMessi segue impar\xE1vel e fechou a fase de grupos como artilheiro isolado do Mundial. Mesmo come\xE7ando no banco diante da Jord\xE2nia, o capit\xE3o entrou e marcou de novo \u2014 s\xE3o 6 gols em 3 jogos \u2014, e a Argentina avan\xE7ou com 100% de aproveitamento, cada vez mais favorita ao t\xEDtulo.\n## Desempenho\nHat-trick na estreia (3 a 0 na Arg\xE9lia, aos 17, 60 e 76) e dois gols sobre a \xC1ustria (2 a 0, aos 38 e 90+5). Na terceira rodada foi poupado no in\xEDcio \u2014 a Argentina j\xE1 vencia por 2 a 0 com Lo Celso (19') e Lautaro (31') \u2014, mas entrou aos 60 e fechou o 3 a 1 sobre a Jord\xE2nia com gol aos 80 minutos (Altamari havia descontado aos 55).\n## N\xFAmeros\nJ3 \xB7 6 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina ganhou o Grupo J com 9 pontos, 100% de aproveitamento e SG +7. Classificada aos 16-avos como uma das favoritas.",
     worldCupNoteUpdatedAt: "2026-06-28T02:00:00.000Z",
@@ -1111,7 +1113,10 @@ var squads_default = {
       instagram: "mosalah",
       wikipedia: "https://pt.wikipedia.org/wiki/Mohamed_Salah"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DZn4QqYjQg0/",
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZn4QqYjQg0/",
+      "https://www.instagram.com/p/DaWFkJniUoa/"
+    ],
     worldCupNote: "## Leitura\nSalah \xE9 o farol do Egito e cumpriu seu papel: com o gol da virada sobre a Nova Zel\xE2ndia e a vaga garantida, o capit\xE3o levou os Fara\xF3s ao mata-mata. Astro do Liverpool e principal nome do Egito, \xE9 a esperan\xE7a eg\xEDpcia na pr\xF3xima fase.\n## Desempenho\nCome\xE7ou discreto no empate em 1 a 1 com a B\xE9lgica, substitu\xEDdo aos 76. Respondeu contra a Nova Zel\xE2ndia: marcou aos 67 o gol que completou a virada no 3 a 1. No fechamento, no 1 a 1 com o Ir\xE3, atuou at\xE9 os 57 sem balan\xE7ar as redes, mas o empate bastou para classificar o Egito. Ficha limpa.\n## N\xFAmeros\nJ3 \xB7 1 gol \xB7 0 cart\xF5es. O Egito terminou em 2\xBA no Grupo G, com 5 pontos e saldo +2, classificado \xE0s oitavas. Salah \xE9 o nome em que os Fara\xF3s depositam o sonho de avan\xE7ar ainda mais.",
     worldCupNoteUpdatedAt: "2026-06-27T03:00:00.000Z"
   },
@@ -1558,7 +1563,8 @@ var squads_default = {
     },
     instagramPostUrls: [
       "https://www.instagram.com/reel/DZno5Zsxo6V/",
-      "https://www.instagram.com/p/DaOg9MyDtVw/"
+      "https://www.instagram.com/p/DaOg9MyDtVw/",
+      "https://www.instagram.com/p/DaWg1ZzgILy/"
     ],
     worldCupNote: "## Leitura\nAos 40 anos, o veterano Josimar Dias \u2014 o Vozinha \u2014 \xE9 o s\xEDmbolo da campanha hist\xF3rica de Cabo Verde, classificado pela primeira vez \xE0s oitavas de uma Copa do Mundo. Dono absoluto da camisa 1 e muralha da sele\xE7\xE3o, virou \xEDdolo nacional e fen\xF4meno mundial \u2014 e foi o esteio do feito in\xE9dito.\n## Desempenho\nContra a Espanha, foi gigante: sete defesas, 0 a 0 e pr\xEAmio de craque da partida no primeiro ponto cabo-verdiano em Copas. Diante do Uruguai, sofreu dois gols (Maxi Ara\xFAjo aos 44 e Canobbio aos 45+6), mas Cabo Verde reagiu e arrancou um valioso 2 a 2. No 0 a 0 com a Ar\xE1bia Saudita, voltou a fechar o gol e selou a classifica\xE7\xE3o in\xE9dita. Duas redes intactas em tr\xEAs jogos.\n## N\xFAmeros\nJ3 \xB7 2 clean sheets \xB7 2 gols sofridos \xB7 3 pontos. Cabo Verde terminou em 2\xBA no Grupo H e est\xE1 classificado \xE0s oitavas pela primeira vez na hist\xF3ria \u2014 e Vozinha foi decisivo na muralha que escreveu o feito.",
     worldCupNoteUpdatedAt: "2026-06-27T00:00:00.000Z",
@@ -18857,6 +18863,165 @@ function parseOpenMeteoCurrent(raw) {
   };
 }
 
+// traffic-report-core.ts
+function splitSections(text) {
+  const sections = {};
+  let current = "__head__";
+  sections[current] = [];
+  for (const line of text.split(/\r?\n/)) {
+    const m = line.match(/^==\s*(.+?)\s*==$/);
+    if (m) {
+      current = m[1];
+      sections[current] = [];
+    } else {
+      sections[current].push(line);
+    }
+  }
+  return sections;
+}
+function parseCountRows(lines) {
+  const rows = [];
+  for (const raw of lines) {
+    const m = raw.match(/^\s*(\d+)\s+(.+?)\s*$/);
+    if (m) rows.push({ label: m[2], count: Number(m[1]) });
+  }
+  return rows;
+}
+function parseGeoSection(lines) {
+  const byVisitor = [];
+  const byVolume = [];
+  let bucket = null;
+  let geoSource = null;
+  for (const line of lines || []) {
+    if (/Geo source:/.test(line)) geoSource = line.replace(/.*Geo source:\s*/, "").trim();
+    else if (/by unique visitor/.test(line)) bucket = byVisitor;
+    else if (/by request volume/.test(line)) bucket = byVolume;
+    else {
+      const m = line.match(/^\s*(\d+)\s+(.+?)\s*$/);
+      if (m && bucket) bucket.push({ label: m[2], count: Number(m[1]) });
+    }
+  }
+  return { geoSource, byVisitor, byVolume };
+}
+function parseSummary(text, file) {
+  const s = splitSections(text);
+  const head = (s["__head__"] || []).join("\n");
+  const totals = (s["Totals"] || []).join("\n");
+  const grab = (re, src = head) => {
+    const m = src.match(re);
+    return m ? m[1].trim() : null;
+  };
+  const generated = grab(/Generated:\s*(\S+)/);
+  const generatedMs = generated ? Date.parse(generated) : NaN;
+  if (!generated || Number.isNaN(generatedMs)) return null;
+  const logLines = Number(grab(/\((\d+)\s+log lines\)/)) || null;
+  const requests = Number(grab(/Requests:\s*(\d+)/, totals)) || null;
+  const uniqueIps = Number(grab(/Unique IPs:\s*(\d+)/, totals)) || null;
+  const dateRange = grab(/Date range:\s*(.+)/, totals);
+  const countries = parseGeoSection(s["Top countries"]);
+  const cities = parseGeoSection(s["Top cities"]);
+  const geoSource = countries.geoSource || cities.geoSource;
+  const bots = Number(grab(/Bot-ish hits:\s*(\d+)/, (s["Bot / crawler share"] || []).join("\n")));
+  const suspectLines = s["Suspect / synthetic paths (e2e test fixtures)"] || [];
+  const suspect = Number(grab(/Suspect hits:\s*(\d+)/, suspectLines.join("\n")));
+  const suspectSources = [];
+  for (const line of suspectLines) {
+    const m = line.match(/^\s*(\d+)\s+(\d{1,3}(?:\.\d{1,3}){3})\s+(\S+)\s+(.+?)\s*$/);
+    if (m) suspectSources.push({ count: Number(m[1]), ip: m[2], status: m[3], ua: m[4] });
+  }
+  const byHour = {};
+  for (const { label, count } of parseCountRows(s["Requests by hour of day"] || [])) {
+    if (/^\d{2}$/.test(label)) byHour[label] = count;
+  }
+  return {
+    file,
+    generated,
+    generatedMs,
+    logLines,
+    requests,
+    uniqueIps,
+    dateRange,
+    geoSource,
+    topPaths: parseCountRows(s["Top 20 requested paths"] || []),
+    statusCodes: parseCountRows(s["HTTP status codes"] || []),
+    referrers: parseCountRows(s["Top 20 referrers"] || []),
+    countriesByVisitor: countries.byVisitor,
+    countriesByVolume: countries.byVolume,
+    citiesByVisitor: cities.byVisitor,
+    citiesByVolume: cities.byVolume,
+    byHour,
+    byDay: parseCountRows(s["Requests by day"] || []),
+    bots: Number.isFinite(bots) ? bots : null,
+    suspect: Number.isFinite(suspect) ? suspect : null,
+    suspectSources
+  };
+}
+var SYNTHETIC = /Atacante%20Teste|Goleiro%20Teste|Abdulilah%20Alamri|Clube%20Teste/;
+function projectLatest(snap) {
+  return {
+    file: snap.file,
+    generated: snap.generated,
+    requests: snap.requests,
+    uniqueIps: snap.uniqueIps,
+    logLines: snap.logLines,
+    dateRange: snap.dateRange,
+    geoSource: snap.geoSource,
+    bots: snap.bots,
+    suspect: snap.suspect,
+    topPaths: snap.topPaths.filter((r) => !SYNTHETIC.test(r.label)),
+    statusCodes: snap.statusCodes,
+    referrers: snap.referrers.filter((r) => r.label !== '"-"' && !/^rt=/.test(r.label)).map((r) => ({ ...r, label: r.label.replace(/^"|"$/g, "") })),
+    countriesByVisitor: snap.countriesByVisitor,
+    countriesByVolume: snap.countriesByVolume,
+    citiesByVisitor: snap.citiesByVisitor,
+    citiesByVolume: snap.citiesByVolume,
+    byHour: snap.byHour,
+    byDay: snap.byDay
+  };
+}
+function buildTrafficDashboard(files, updatedAt) {
+  const snaps = files.map(({ file, text }) => parseSummary(text, file)).filter((s) => s !== null).sort((a, b) => a.generatedMs - b.generatedMs);
+  if (snaps.length === 0) {
+    return {
+      source: "fallback",
+      note: "Nenhum instant\xE2neo de tr\xE1fego dispon\xEDvel.",
+      updatedAt,
+      snapshotCount: 0,
+      windowRatePerMin: null,
+      timeline: [],
+      latest: null
+    };
+  }
+  const timeline = snaps.map((snap, i) => {
+    let ratePerMin = null;
+    if (i > 0) {
+      const prev = snaps[i - 1];
+      const dReq = (snap.requests || 0) - (prev.requests || 0);
+      const dMin = (snap.generatedMs - prev.generatedMs) / 6e4;
+      if (dMin > 0) ratePerMin = Math.max(0, Math.round(dReq / dMin));
+    }
+    return {
+      t: snap.generatedMs,
+      requests: snap.requests || 0,
+      uniqueIps: snap.uniqueIps || 0,
+      ratePerMin
+    };
+  });
+  const first = snaps[0];
+  const latest = snaps[snaps.length - 1];
+  const windowMin = (latest.generatedMs - first.generatedMs) / 6e4;
+  const windowRatePerMin = windowMin > 0 ? Math.round(((latest.requests || 0) - (first.requests || 0)) / windowMin) : null;
+  return {
+    source: "traffic-log",
+    note: `Baseado em ${snaps.length} instant\xE2neo${snaps.length === 1 ? "" : "s"} do log de acesso da produ\xE7\xE3o.`,
+    updatedAt,
+    snapshotCount: snaps.length,
+    windowRatePerMin,
+    timeline,
+    latest: projectLatest(latest)
+  };
+}
+
 // reddit-core.ts
 var REDDIT_TOKEN_URL = "https://www.reddit.com/api/v1/access_token";
 var REDDIT_OAUTH_BASE = "https://oauth.reddit.com";
@@ -29077,6 +29242,34 @@ app.get("/api/reddit", (_req, res) => {
   );
 });
 if (REDDIT_CLIENT_ID && REDDIT_CLIENT_SECRET) void refreshRedditCache();
+var TRAFFIC_REPORTS_DIR = import_path.default.join(process.cwd(), "traffic-reports");
+var TRAFFIC_CACHE_TTL_MS = 5 * 60 * 1e3;
+var trafficCache = null;
+var buildTrafficPayload = () => {
+  const updatedAt = (/* @__PURE__ */ new Date()).toISOString();
+  let files;
+  try {
+    files = (0, import_node_fs.readdirSync)(TRAFFIC_REPORTS_DIR).filter((f) => /^summary-.*\.txt$/.test(f)).map((file) => ({ file, text: (0, import_node_fs.readFileSync)(import_path.default.join(TRAFFIC_REPORTS_DIR, file), "utf8") }));
+  } catch {
+    return {
+      source: "fallback",
+      note: "Relat\xF3rios de tr\xE1fego indispon\xEDveis nesta inst\xE2ncia.",
+      updatedAt,
+      snapshotCount: 0,
+      windowRatePerMin: null,
+      timeline: [],
+      latest: null
+    };
+  }
+  return buildTrafficDashboard(files, updatedAt);
+};
+app.get("/api/traffic-dashboard", (_req, res) => {
+  if (!trafficCache || trafficCache.expiresAt <= Date.now()) {
+    trafficCache = { payload: buildTrafficPayload(), expiresAt: Date.now() + TRAFFIC_CACHE_TTL_MS };
+  }
+  res.set("Cache-Control", "public, max-age=300");
+  res.json(trafficCache.payload);
+});
 var weatherCache = /* @__PURE__ */ new Map();
 var parseCoordinate = (value, max) => {
   if (typeof value !== "string") return null;
