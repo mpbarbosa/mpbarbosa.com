@@ -1391,7 +1391,8 @@ var squads_default = {
       instagram: "bounouyassine_bono",
       instagramFollowers: 7e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Yassine_Bounou"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaNMCkgEfA3/"
   },
   "358003": {
     fifaId: "358003",
@@ -10149,7 +10150,8 @@ var squads_default = {
     socials: {
       instagram: "azzedine_ounahi",
       wikipedia: "https://pt.wikipedia.org/wiki/Azzedine_Ounahi"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/CmAALjTLilU/"
   },
   "441313": {
     fifaId: "441313",
@@ -27768,6 +27770,9 @@ var fanSocialCatalog = {
     "fanSocial.fifaOfficialProfile": "@fifaworldcup \u2022 Perfil oficial",
     "fanSocial.fifaFollowBlurb": "Siga a conta oficial da Copa do Mundo FIFA 2026 e acompanhe tudo do Mundial em primeira m\xE3o.",
     "fanSocial.fifaFollow": "Seguir",
+    // Player Instagram highlights feed
+    "fanSocial.igHighlightsSubtitle": "Os melhores momentos dos craques da Copa, direto do Instagram",
+    "fanSocial.igHighlightsAria": "Destaques de jogadores no Instagram",
     // Google Trends card
     "fanSocial.trendsLabel": "Buscas em alta no Google",
     "fanSocial.trendsTitle": "Em alta no Google",
@@ -27861,6 +27866,9 @@ var fanSocialCatalog = {
     "fanSocial.fifaOfficialProfile": "@fifaworldcup \u2022 Perfil oficial",
     "fanSocial.fifaFollowBlurb": "Sigue la cuenta oficial de la Copa Mundial de la FIFA 2026 y acompa\xF1a todo el Mundial de primera mano.",
     "fanSocial.fifaFollow": "Seguir",
+    // Player Instagram highlights feed
+    "fanSocial.igHighlightsSubtitle": "Los mejores momentos de las estrellas del Mundial, directo desde Instagram",
+    "fanSocial.igHighlightsAria": "Destacados de jugadores en Instagram",
     // Google Trends card
     "fanSocial.trendsLabel": "B\xFAsquedas populares en Google",
     "fanSocial.trendsTitle": "Tendencia en Google",
@@ -27914,6 +27922,7 @@ var teamLineupCatalog = {
     "teamLineup.highlights": "Melhores momentos",
     "teamLineup.fullGame": "Jogo completo",
     "teamLineup.videosPending": "Aguardando a Caz\xE9 TV fazer o upload dos v\xEDdeos no YouTube.",
+    "teamLineup.igHighlightsSubtitle": "Os melhores momentos da sele\xE7\xE3o, direto do Instagram",
     "teamLineup.historyTitle": "Hist\xF3rico na Copa 2026",
     "teamLineup.historyCountOne": "{count} jogo no Mundial",
     "teamLineup.historyCountMany": "{count} jogos no Mundial",
@@ -27980,6 +27989,7 @@ var teamLineupCatalog = {
     "teamLineup.highlights": "Mejores momentos",
     "teamLineup.fullGame": "Partido completo",
     "teamLineup.videosPending": "Esperando que Caz\xE9 TV suba los videos a YouTube.",
+    "teamLineup.igHighlightsSubtitle": "Los mejores momentos de la selecci\xF3n, directo desde Instagram",
     "teamLineup.historyTitle": "Historial en el Mundial 2026",
     "teamLineup.historyCountOne": "{count} partido en el Mundial",
     "teamLineup.historyCountMany": "{count} partidos en el Mundial",
