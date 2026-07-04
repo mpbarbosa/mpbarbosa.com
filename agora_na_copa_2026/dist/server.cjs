@@ -1564,7 +1564,10 @@ var squads_default = {
     instagramPostUrls: [
       "https://www.instagram.com/reel/DZno5Zsxo6V/",
       "https://www.instagram.com/p/DaOg9MyDtVw/",
-      "https://www.instagram.com/p/DaWg1ZzgILy/"
+      "https://www.instagram.com/p/DaWg1ZzgILy/",
+      "https://www.instagram.com/p/DZpkxupjE67/",
+      "https://www.instagram.com/reel/DaWg-6iAcHT/",
+      "https://www.instagram.com/p/DaGEnBgjDRw/"
     ],
     worldCupNote: "## Leitura\nAos 40 anos, o veterano Josimar Dias \u2014 o Vozinha \u2014 \xE9 o s\xEDmbolo da campanha hist\xF3rica de Cabo Verde, classificado pela primeira vez \xE0s oitavas de uma Copa do Mundo. Dono absoluto da camisa 1 e muralha da sele\xE7\xE3o, virou \xEDdolo nacional e fen\xF4meno mundial \u2014 e foi o esteio do feito in\xE9dito.\n## Desempenho\nContra a Espanha, foi gigante: sete defesas, 0 a 0 e pr\xEAmio de craque da partida no primeiro ponto cabo-verdiano em Copas. Diante do Uruguai, sofreu dois gols (Maxi Ara\xFAjo aos 44 e Canobbio aos 45+6), mas Cabo Verde reagiu e arrancou um valioso 2 a 2. No 0 a 0 com a Ar\xE1bia Saudita, voltou a fechar o gol e selou a classifica\xE7\xE3o in\xE9dita. Duas redes intactas em tr\xEAs jogos.\n## N\xFAmeros\nJ3 \xB7 2 clean sheets \xB7 2 gols sofridos \xB7 3 pontos. Cabo Verde terminou em 2\xBA no Grupo H e est\xE1 classificado \xE0s oitavas pela primeira vez na hist\xF3ria \u2014 e Vozinha foi decisivo na muralha que escreveu o feito.",
     worldCupNoteUpdatedAt: "2026-06-27T00:00:00.000Z",
@@ -26502,6 +26505,20 @@ function isAnalysisUpToDate(analysisUpdatedAt, lastEventDate) {
 
 // src/data/matchDisciplinary.json
 var matchDisciplinary_default = {
+  "alg-aut-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
   "arg-aut-2026": {
     teamA: {
       yellow: 2,
@@ -26563,6 +26580,20 @@ var matchDisciplinary_default = {
       yellow: 1,
       secondYellow: 0,
       directRed: 1,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "bih-qat-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
       yellowAndDirectRed: 0
     },
     teamB: {
@@ -26642,9 +26673,93 @@ var matchDisciplinary_default = {
       yellowAndDirectRed: 0
     }
   },
+  "cod-uzb-2026": {
+    teamA: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
   "col-cod-2026": {
     teamA: {
       yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "col-por-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "cpv-ksa-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "cro-gha-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "cuw-civ-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "cze-mex-2026": {
+    teamA: {
+      yellow: 0,
       secondYellow: 0,
       directRed: 0,
       yellowAndDirectRed: 0
@@ -26679,6 +26794,34 @@ var matchDisciplinary_default = {
     },
     teamB: {
       yellow: 5,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ecu-ger-2026": {
+    teamA: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "egy-irn-2026": {
+    teamA: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 4,
       secondYellow: 0,
       directRed: 0,
       yellowAndDirectRed: 0
@@ -26810,6 +26953,230 @@ var matchDisciplinary_default = {
       yellowAndDirectRed: 0
     }
   },
+  "jor-arg-2026": {
+    teamA: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "jpn-swe-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-73-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-74-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 1,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 1,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-75-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-76-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-78-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-79-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 1,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-80-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-81-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 1,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-82-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-83-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-84-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-85-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-86-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "ko-88-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
   "kor-cze-2026": {
     teamA: {
       yellow: 1,
@@ -26833,6 +27200,20 @@ var matchDisciplinary_default = {
     },
     teamB: {
       yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "mar-hai-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 3,
       secondYellow: 0,
       directRed: 0,
       yellowAndDirectRed: 0
@@ -26894,6 +27275,34 @@ var matchDisciplinary_default = {
       yellowAndDirectRed: 0
     }
   },
+  "nor-fra-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "nzl-bel-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
   "nzl-egy-2026": {
     teamA: {
       yellow: 2,
@@ -26909,6 +27318,34 @@ var matchDisciplinary_default = {
     }
   },
   "pan-cro-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "pan-eng-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "par-aus-2026": {
     teamA: {
       yellow: 1,
       secondYellow: 0,
@@ -26964,6 +27401,34 @@ var matchDisciplinary_default = {
       yellowAndDirectRed: 0
     }
   },
+  "rsa-kor-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "sco-bra-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
   "sco-mar-2026": {
     teamA: {
       yellow: 1,
@@ -26978,6 +27443,20 @@ var matchDisciplinary_default = {
       yellowAndDirectRed: 0
     }
   },
+  "sen-irq-2026": {
+    teamA: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 1,
+      yellowAndDirectRed: 0
+    }
+  },
   "sui-bih-2026": {
     teamA: {
       yellow: 1,
@@ -26989,6 +27468,20 @@ var matchDisciplinary_default = {
       yellow: 2,
       secondYellow: 0,
       directRed: 1,
+      yellowAndDirectRed: 0
+    }
+  },
+  "sui-can-2026": {
+    teamA: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
       yellowAndDirectRed: 0
     }
   },
@@ -27020,6 +27513,20 @@ var matchDisciplinary_default = {
       yellowAndDirectRed: 0
     }
   },
+  "tur-usa-2026": {
+    teamA: {
+      yellow: 0,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
   "uru-cpv-2026": {
     teamA: {
       yellow: 2,
@@ -27029,6 +27536,20 @@ var matchDisciplinary_default = {
     },
     teamB: {
       yellow: 2,
+      secondYellow: 0,
+      directRed: 0,
+      yellowAndDirectRed: 0
+    }
+  },
+  "uru-esp-2026": {
+    teamA: {
+      yellow: 3,
+      secondYellow: 0,
+      directRed: 1,
+      yellowAndDirectRed: 0
+    },
+    teamB: {
+      yellow: 1,
       secondYellow: 0,
       directRed: 0,
       yellowAndDirectRed: 0
@@ -29242,7 +29763,7 @@ app.get("/api/reddit", (_req, res) => {
   );
 });
 if (REDDIT_CLIENT_ID && REDDIT_CLIENT_SECRET) void refreshRedditCache();
-var TRAFFIC_REPORTS_DIR = import_path.default.join(process.cwd(), "traffic-reports");
+var TRAFFIC_REPORTS_DIR = process.env.TRAFFIC_REPORTS_DIR ? import_path.default.resolve(process.env.TRAFFIC_REPORTS_DIR) : import_path.default.join(process.cwd(), "traffic-reports");
 var TRAFFIC_CACHE_TTL_MS = 5 * 60 * 1e3;
 var trafficCache = null;
 var buildTrafficPayload = () => {
