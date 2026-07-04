@@ -19327,8 +19327,40 @@ function parseOpenMeteoCurrent(raw, locale = "pt") {
 
 // src/i18n/locale.ts
 var DEFAULT_LOCALE = "pt";
+var isLocale = (value) => value === "pt" || value === "es";
 var localeFromFifaLanguage = (language) => language.trim().toLowerCase().startsWith("es") ? "es" : DEFAULT_LOCALE;
 var localeFromHost = (host) => typeof host === "string" && /^es\./i.test(host.trim()) ? "es" : DEFAULT_LOCALE;
+var STORAGE_KEY = "agora-locale";
+var QUERY_KEY = "lang";
+var INJECTED_GLOBAL = "__AGORA_LOCALE__";
+var resolveInitialLocale = () => {
+  if (typeof window === "undefined") return DEFAULT_LOCALE;
+  try {
+    const stored = window.localStorage?.getItem(STORAGE_KEY);
+    if (isLocale(stored)) return stored;
+  } catch {
+  }
+  try {
+    const queryLang = new URLSearchParams(window.location.search).get(QUERY_KEY);
+    if (isLocale(queryLang)) {
+      persistLocale(queryLang);
+      return queryLang;
+    }
+  } catch {
+  }
+  const injected = window[INJECTED_GLOBAL];
+  if (isLocale(injected)) return injected;
+  return localeFromHost(window.location?.hostname);
+};
+var activeLocale = null;
+var getActiveLocale = () => activeLocale ?? resolveInitialLocale();
+var persistLocale = (locale) => {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage?.setItem(STORAGE_KEY, locale);
+  } catch {
+  }
+};
 
 // server-i18n.ts
 var NOTE_TRANSLATIONS = {
@@ -28675,6 +28707,46 @@ function decisiveSlot(score, penaltyScore) {
   return penaltyScore.teamA > penaltyScore.teamB ? "A" : "B";
 }
 
+// src/i18n/teamNames.ts
+var ES_TEAM_NAMES = {
+  ALG: "ARGELIA",
+  AUS: "AUSTRALIA",
+  AUT: "AUSTRIA",
+  BIH: "BOSNIA Y HERZEGOVINA",
+  CIV: "COSTA DE MARFIL",
+  COD: "RD DEL CONGO",
+  COL: "COLOMBIA",
+  CRO: "CROACIA",
+  CUW: "CURAZAO",
+  CZE: "CHEQUIA",
+  ECU: "ECUADOR",
+  EGY: "EGIPTO",
+  FRA: "FRANCIA",
+  GER: "ALEMANIA",
+  GHA: "GHANA",
+  HAI: "HAIT\xCD",
+  IRN: "IR\xC1N",
+  IRQ: "IRAK",
+  JPN: "JAP\xD3N",
+  KOR: "COREA DEL SUR",
+  MAR: "MARRUECOS",
+  NED: "PA\xCDSES BAJOS",
+  NZL: "NUEVA ZELANDA",
+  PAR: "PARAGUAY",
+  RSA: "SUD\xC1FRICA",
+  SCO: "ESCOCIA",
+  SUI: "SUIZA",
+  SWE: "SUECIA",
+  TUN: "T\xDANEZ",
+  TUR: "TURQU\xCDA",
+  URU: "URUGUAY",
+  UZB: "UZBEKIST\xC1N"
+};
+var localizeTeamName = (name, code, locale = getActiveLocale()) => {
+  if (locale !== "es" || !code) return name;
+  return ES_TEAM_NAMES[code] ?? name;
+};
+
 // src/appMatches.ts
 var PT_MONTHS = [
   "Janeiro",
@@ -28742,11 +28814,37 @@ var PT_WEEKDAYS = [
   "sexta-feira",
   "s\xE1bado"
 ];
+var ES_MONTHS = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre"
+];
+var ES_WEEKDAYS = [
+  "domingo",
+  "lunes",
+  "martes",
+  "mi\xE9rcoles",
+  "jueves",
+  "viernes",
+  "s\xE1bado"
+];
 var formatKickoffDate = (kickoffTimestamp) => {
   const [datePart] = kickoffTimestamp.split("T");
   const [year, month, day] = datePart.split("-").map(Number);
-  const weekday = PT_WEEKDAYS[new Date(Date.UTC(year, month - 1, day)).getUTCDay()];
-  return `${day} ${PT_MONTHS[month - 1]} ${year} (${weekday})`;
+  const es = getActiveLocale() === "es";
+  const months = es ? ES_MONTHS : PT_MONTHS;
+  const weekdays = es ? ES_WEEKDAYS : PT_WEEKDAYS;
+  const weekday = weekdays[new Date(Date.UTC(year, month - 1, day)).getUTCDay()];
+  return `${day} ${months[month - 1]} ${year} (${weekday})`;
 };
 var formatKickoffTime = (kickoffTimestamp) => kickoffTimestamp.slice(11, 16);
 var buildTeamEntry = (teamCode) => {
@@ -28844,13 +28942,17 @@ var APP_MATCHES = [
   ...KNOCKOUT_MATCHES.map(buildKnockoutMatch)
 ].map((match) => {
   const kickoffDate = formatKickoffDate(match.kickoffTimestamp);
+  const teamA = { ...match.teamA, name: localizeTeamName(match.teamA.name, match.teamA.code) };
+  const teamB = { ...match.teamB, name: localizeTeamName(match.teamB.name, match.teamB.code) };
   const officialVenue = FIFA_MATCH_VENUES[match.id];
   if (!officialVenue) {
-    return { ...match, kickoffDate };
+    return { ...match, kickoffDate, teamA, teamB };
   }
   return {
     ...match,
     kickoffDate,
+    teamA,
+    teamB,
     stadiumName: officialVenue.stadiumName.trim(),
     city: officialVenue.city.trim()
   };
@@ -30423,7 +30525,9 @@ function getCanonicalSeedStandings(matches = APP_MATCHES) {
     standings.map((row) => [
       row.code,
       {
-        ...row
+        ...row,
+        // Localize the display name for the active UI locale (pt → unchanged).
+        name: localizeTeamName(row.name, row.code)
       }
     ])
   );
