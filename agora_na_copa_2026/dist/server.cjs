@@ -28045,7 +28045,7 @@ var dashboardCatalog = {
     "dashboard.chartGroupGoalsSubtitle": "fase de grupos \xB7 gols marcados",
     // Chart: top scorers
     "dashboard.chartTopTeamsTitle": "Artilharia das sele\xE7\xF5es",
-    "dashboard.chartTopTeamsSubtitle": "fase de grupos \xB7 8 maiores ataques",
+    "dashboard.chartTopTeamsSubtitle": "todo o torneio \xB7 grupos + mata-mata \xB7 8 maiores ataques",
     // Chart: goals by phase
     "dashboard.chartPhaseGoalsTitle": "Gols por fase",
     "dashboard.chartPhaseGoalsSubtitle": "gols marcados por fase \xB7 grupos + mata-mata \xB7 {total} gols",
@@ -28171,7 +28171,7 @@ var dashboardCatalog = {
     "dashboard.chartGroupGoalsSubtitle": "fase de grupos \xB7 goles marcados",
     // Chart: top scorers
     "dashboard.chartTopTeamsTitle": "Artiller\xEDa de las selecciones",
-    "dashboard.chartTopTeamsSubtitle": "fase de grupos \xB7 8 mejores ataques",
+    "dashboard.chartTopTeamsSubtitle": "todo el torneo \xB7 grupos + eliminatorias \xB7 8 mejores ataques",
     // Chart: goals by phase
     "dashboard.chartPhaseGoalsTitle": "Goles por fase",
     "dashboard.chartPhaseGoalsSubtitle": "goles marcados por fase \xB7 grupos + eliminatorias \xB7 {total} goles",
@@ -28343,7 +28343,20 @@ var bannersCatalog = {
     "banners.version.checkNow": "Verificar atualiza\xE7\xE3o agora",
     "banners.version.updateNowAria": "Atualizar para a nova vers\xE3o agora",
     // AdSlot
-    "banners.ads.label": "Publicidade"
+    "banners.ads.label": "Publicidade",
+    // TeamCountdownBadge (followed-team next-match countdown)
+    "banners.teamCountdown.next": "Pr\xF3ximo jogo",
+    "banners.teamCountdown.live": "{team} ao vivo",
+    "banners.teamCountdown.onPitch": "Em campo",
+    "banners.teamCountdown.probable": "Confronto prov\xE1vel",
+    "banners.teamCountdown.change": "Trocar sele\xE7\xE3o",
+    "banners.teamCountdown.choose": "Escolha sua sele\xE7\xE3o",
+    "banners.teamCountdown.chooseHint": "Acompanhe o pr\xF3ximo jogo da sua sele\xE7\xE3o",
+    "banners.teamCountdown.noNextMatch": "Sem pr\xF3ximo jogo",
+    "banners.teamCountdown.noNextMatchHint": "Escolha outra sele\xE7\xE3o para acompanhar",
+    "banners.teamCountdown.selectAria": "Escolha a sele\xE7\xE3o para acompanhar",
+    "banners.teamCountdown.closeAria": "Fechar o acompanhamento da sele\xE7\xE3o",
+    "banners.teamCountdown.countdownAria": "Faltam {time} para o pr\xF3ximo jogo"
   },
   es: {
     // DonationPix
@@ -28380,7 +28393,20 @@ var bannersCatalog = {
     "banners.version.checkNow": "Verificar actualizaci\xF3n ahora",
     "banners.version.updateNowAria": "Actualizar a la nueva versi\xF3n ahora",
     // AdSlot
-    "banners.ads.label": "Publicidad"
+    "banners.ads.label": "Publicidad",
+    // TeamCountdownBadge (followed-team next-match countdown)
+    "banners.teamCountdown.next": "Pr\xF3ximo partido",
+    "banners.teamCountdown.live": "{team} en vivo",
+    "banners.teamCountdown.onPitch": "En cancha",
+    "banners.teamCountdown.probable": "Cruce probable",
+    "banners.teamCountdown.change": "Cambiar selecci\xF3n",
+    "banners.teamCountdown.choose": "Elige tu selecci\xF3n",
+    "banners.teamCountdown.chooseHint": "Sigue el pr\xF3ximo partido de tu selecci\xF3n",
+    "banners.teamCountdown.noNextMatch": "Sin pr\xF3ximo partido",
+    "banners.teamCountdown.noNextMatchHint": "Elige otra selecci\xF3n para seguir",
+    "banners.teamCountdown.selectAria": "Elige la selecci\xF3n a seguir",
+    "banners.teamCountdown.closeAria": "Cerrar el seguimiento de la selecci\xF3n",
+    "banners.teamCountdown.countdownAria": "Faltan {time} para el pr\xF3ximo partido"
   }
 };
 
