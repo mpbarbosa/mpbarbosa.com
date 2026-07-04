@@ -10069,8 +10069,8 @@ var squads_default = {
       instagramFollowers: 5e5,
       wikipedia: "https://pt.wikipedia.org/wiki/Jonathan_David"
     },
-    worldCupNote: "## Leitura\nO anfitri\xE3o segue sonhando, e David vai junto. Jonathan David n\xE3o marcou, mas o Canad\xE1 venceu a \xC1frica do Sul por 1 a 0 nos 16-avos e avan\xE7ou \xE0s oitavas em seu pr\xF3prio Mundial. Artilheiro do time na fase de grupos com 3 gols, o centroavante mira o gol no mata-mata.\n## Desempenho\nBrilhou na fase de grupos com um hat-trick sobre o Catar (6 a 0). Nos 16-avos contra a \xC1frica do Sul, o ataque canadense esbarrou na defesa advers\xE1ria quase o jogo todo: o gol da classifica\xE7\xE3o saiu apenas aos 90+2, com Stephen Eust\xE1quio. David n\xE3o marcou, mas o Canad\xE1 avan\xE7ou.\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 classificado \xE0s oitavas de final. O Canad\xE1 bateu a \xC1frica do Sul por 1 a 0 nos 16-avos, com gol nos acr\xE9scimos.",
-    worldCupNoteUpdatedAt: "2026-06-28T19:00:00.000Z"
+    worldCupNote: "## Leitura\nO sonho do anfitri\xE3o acabou. O Canad\xE1 foi eliminado nas oitavas de final, batido por 3 a 0 pelo Marrocos, e Jonathan David \u2014 artilheiro do time na fase de grupos com 3 gols \u2014 n\xE3o conseguiu ampliar sua conta no mata-mata. Encerra a Copa como o principal nome ofensivo de uma campanha hist\xF3rica da sele\xE7\xE3o da casa.\n## Desempenho\nBrilhou na fase de grupos com um hat-trick sobre o Catar (6 a 0). Nos 16-avos, o Canad\xE1 bateu a \xC1frica do Sul por 1 a 0 com gol de Stephen Eust\xE1quio aos 90+2, sem David marcar. Nas oitavas, esbarrou num Marrocos dominante: Azzedine Ounahi fez dois (50' e 82') e Soufiane Rahimi fechou o 3 a 0 nos acr\xE9scimos. David levou amarelo aos 43 e, como todo o ataque canadense, n\xE3o achou o gol.\n## N\xFAmeros\nJ5 \xB7 3 gols \xB7 1 cart\xE3o amarelo \xB7 eliminado nas oitavas de final. O Canad\xE1, 2\xBA colocado do Grupo B, caiu diante do Marrocos por 3 a 0.",
+    worldCupNoteUpdatedAt: "2026-07-04T17:00:00.000Z"
   },
   "441258": {
     fifaId: "441258",
@@ -26511,7 +26511,10 @@ var KNOCKOUT_RESULTS = {
   // Hany 55' p/ AUS; Emam Ashour 13' p/ EGY), Egito 4×2 nos pênaltis (Saber, Ramy Rabia,
   // Mohamed Salah e Hossam Abdelmaguid; Irvine e Awer Mabil p/ AUS). Egito classificado;
   // alimenta a Oitavas #95 (slot W88).
-  88: { status: "FINISHED", score: { teamA: 1, teamB: 1 }, penaltyScore: { teamA: 2, teamB: 4 } }
+  88: { status: "FINISHED", score: { teamA: 1, teamB: 1 }, penaltyScore: { teamA: 2, teamB: 4 } },
+  // #90 · Oitavas · Houston Stadium · 04/07/2026 — Canadá 0×3 Marrocos (Azzedine Ounahi 50' e
+  // 82', Soufiane Rahimi 90+8' p/ MAR). Marrocos classificado às Quartas; alimenta a #97 (slot W90).
+  90: { status: "FINISHED", score: { teamA: 0, teamB: 3 } }
 };
 
 // src/i18n/catalogs/core.ts
@@ -29232,8 +29235,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-06-26T01:24:00-03:00"
   },
   CAN: {
-    text: "## Leitura\nO Canad\xE1 de Jesse Marsch, pa\xEDs-sede, est\xE1 nas oitavas de final. Segundo do Grupo B, bateu a \xC1frica do Sul por 1 a 0 nos 16-avos com um gol de Stephen Eust\xE1quio nos acr\xE9scimos e avan\xE7ou no sufoco. A campanha mistura o poder ofensivo da fase de grupos com o drama de uma decis\xE3o resolvida no \xFAltimo lance.\n## Desempenho\nNa primeira fase empatou com a B\xF3snia (1 a 1), goleou o Catar por 6 a 0 \u2014 hat-trick de Jonathan David \u2014 e perdeu para a Su\xED\xE7a por 2 a 1. Nos 16-avos, num jogo truncado, precisou esperar at\xE9 os acr\xE9scimos: Eust\xE1quio marcou aos 90+2' e garantiu a vaga diante de uma \xC1frica do Sul aguerrida.\n## N\xFAmeros\nFase de grupos: 1V 1E 1D, 8 gols marcados, 3 sofridos (SG +5), 2\xBA do Grupo B (4 pts). Nos 16-avos, venceu a \xC1frica do Sul por 1 a 0. Artilheiro: Jonathan David (3 gols). Agora aguarda nas oitavas o vencedor de Holanda x Marrocos.",
-    updatedAt: "2026-06-29T19:58:00-03:00"
+    updatedAt: "2026-07-04T16:59:00-03:00",
+    text: "## Leitura\nA Copa em casa do Canad\xE1 de Jesse Marsch terminou nas oitavas de final. Depois de uma campanha hist\xF3rica \u2014 a melhor da sele\xE7\xE3o anfitri\xE3 em Mundiais \u2014, os canadenses esbarraram num Marrocos muito superior e ca\xEDram por 3 a 0. Fica o saldo positivo: passar da fase de grupos e vencer um mata-mata pela primeira vez.\n## Desempenho\nNa primeira fase, empatou com a B\xF3snia (1 a 1), goleou o Catar por 6 a 0 \u2014 hat-trick de Jonathan David \u2014 e perdeu para a Su\xED\xE7a por 2 a 1. Nos 16-avos, superou a \xC1frica do Sul por 1 a 0 com gol de Stephen Eust\xE1quio nos acr\xE9scimos (90+2'). Nas oitavas, por\xE9m, n\xE3o teve resposta para o Marrocos: Azzedine Ounahi marcou duas vezes (50' e 82') e Soufiane Rahimi fechou o 3 a 0 nos acr\xE9scimos. David, artilheiro do time, ainda levou amarelo aos 43 e n\xE3o achou o gol.\n## N\xFAmeros\nCinco jogos: 2 vit\xF3rias, 1 empate e 2 derrotas. Na fase de grupos, 2\xBA do Grupo B (4 pts, 8 gols marcados e 3 sofridos, SG +5). Nos 16-avos, 1 a 0 na \xC1frica do Sul; nas oitavas, 0 a 3 para o Marrocos \u2014 eliminado. Artilheiro: Jonathan David (3 gols)."
   },
   SUI: {
     updatedAt: "2026-07-04T11:52:00-03:00",
@@ -29308,8 +29311,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-06-29T19:07:00-03:00"
   },
   MAR: {
-    text: "## Leitura\nO Marrocos de Walid Regragui segue firme no Mundial. Terminou o Grupo C em 2\xBA (7 pontos, os mesmos do Brasil, atr\xE1s apenas pelo saldo) e, nos 16-avos, eliminou a Holanda nos p\xEAnaltis para avan\xE7ar \xE0s oitavas de final, onde enfrenta o Canad\xE1. Invicto no tempo normal, com Ismael Saibari inspirado e Achraf Hakimi puxando o time, os Le\xF5es do Atlas confirmam o favoritismo.\n## Desempenho\nNa fase de grupos, segurou o Brasil num 1 a 1 (Saibari marcou, Vin\xEDcius J\xFAnior empatou), bateu a Esc\xF3cia por 1 a 0 (Saibari logo aos 2 minutos) e fechou com 4 a 2 sobre o Haiti (Hakimi, Saibari, Soufiane Rahimi e Gessime Yassine). Nos 16-avos, empatou por 1 a 1 com a Holanda \u2014 Issa Diop deixou tudo igual aos 90+1 \u2014 e levou a decis\xE3o aos p\xEAnaltis, vencendo por 3 a 2, com Rahimi, Talbi e Saibari convertendo enquanto os holandeses desperdi\xE7aram tr\xEAs cobran\xE7as.\n## N\xFAmeros\nFase de grupos: J3 \xB7 2 vit\xF3rias \xB7 1 empate \xB7 6 gols marcados \xB7 3 sofridos (SG +3) \xB7 2\xBA do Grupo C com 7 pontos. Artilheiro: Ismael Saibari (3 gols). Nos 16-avos de final, 1 a 1 com a Holanda e classifica\xE7\xE3o nos p\xEAnaltis (3 a 2). Pr\xF3ximo desafio: o Canad\xE1, nas oitavas de final.",
-    updatedAt: "2026-06-30T22:04:00-03:00"
+    updatedAt: "2026-07-04T16:59:00-03:00",
+    text: "## Leitura\nO Marrocos de Walid Regragui est\xE1 nas quartas de final. Depois de eliminar a Holanda nos p\xEAnaltis nos 16-avos, os Le\xF5es do Atlas atropelaram o pa\xEDs-sede Canad\xE1 por 3 a 0 nas oitavas, com Azzedine Ounahi em noite inspirada. S\xF3lido atr\xE1s e eficiente \xE0 frente, o Marrocos segue vivo e sonhando alto, repetindo o protagonismo de 2022.\n## Desempenho\nNa fase de grupos, segurou o Brasil num 1 a 1 (Saibari abriu, Vin\xEDcius J\xFAnior empatou), bateu a Esc\xF3cia por 1 a 0 (Saibari aos 2 minutos) e fechou com 4 a 2 sobre o Haiti. Nos 16-avos, empatou por 1 a 1 com a Holanda e avan\xE7ou nos p\xEAnaltis (3 a 2). Nas oitavas, dominou o Canad\xE1: Ounahi marcou aos 50 e aos 82, e Rahimi fez o terceiro aos 90+8, no 3 a 0 que carimbou a vaga entre os oito melhores.\n## N\xFAmeros\nCinco jogos, invicto no tempo normal: 3 vit\xF3rias e 2 empates (um deles decidido nos p\xEAnaltis). Na fase de grupos, 2\xBA do Grupo C (7 pts, mesmo do Brasil, atr\xE1s s\xF3 pelo saldo). Nos 16-avos, 1 a 1 com a Holanda e classifica\xE7\xE3o nos p\xEAnaltis; nas oitavas, 3 a 0 no Canad\xE1. Artilheiro: Ismael Saibari (3 gols). Pr\xF3ximo desafio: o vencedor de Paraguai x Fran\xE7a, nas quartas de final."
   },
   HAI: {
     text: "## Leitura\nO Haiti de S\xE9bastien Mign\xE9 se despediu da Copa do Mundo na fase de grupos, eliminado com tr\xEAs derrotas no Grupo C. Apesar da entrega, faltou consist\xEAncia defensiva: a sele\xE7\xE3o caribenha sofreu gols em todos os jogos e fechou na lanterna, sem pontos.\n## Desempenho\nPerdeu para a Esc\xF3cia por 1 a 0 na estreia, foi superado pelo Brasil por 3 a 0 (Matheus Cunha duas vezes e Vin\xEDcius J\xFAnior) e caiu por 4 a 2 diante do Marrocos, quando ao menos balan\xE7ou as redes com Wilson Isidor e um gol contra de Bounou. Competitivo em alguns lances, mas fr\xE1gil nos duelos com as sele\xE7\xF5es mais fortes.\n## N\xFAmeros\nJ3 \xB7 3 derrotas \xB7 2 gols marcados \xB7 8 sofridos (SG -6) \xB7 lanterna do Grupo C, sem pontos. Eliminado na fase de grupos.",
