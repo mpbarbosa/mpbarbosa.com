@@ -554,6 +554,7 @@ var squads_default = {
     height: 182,
     socials: {
       instagram: "nicolasotamendi30",
+      instagramFollowers: 9e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Nicol%C3%A1s_Otamendi"
     }
   },
@@ -972,6 +973,7 @@ var squads_default = {
     height: 177,
     socials: {
       instagram: "andrejkramaric",
+      instagramFollowers: 38e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Andrej_Kramari%C4%87"
     }
   },
@@ -1385,6 +1387,7 @@ var squads_default = {
     height: 192,
     socials: {
       instagram: "bounouyassine_bono",
+      instagramFollowers: 7e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Yassine_Bounou"
     }
   },
@@ -1506,6 +1509,7 @@ var squads_default = {
     height: 186,
     socials: {
       instagram: "ivanperisic444",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Ivan_Peri%C5%A1i%C4%87"
     }
   },
@@ -1646,6 +1650,7 @@ var squads_default = {
     height: 173,
     socials: {
       instagram: "jpcancelo",
+      instagramFollowers: 9e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Cancelo"
     }
   },
@@ -1757,6 +1762,7 @@ var squads_default = {
     height: 188,
     socials: {
       instagram: "dominiklivakovic40",
+      instagramFollowers: 95e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Dominik_Livakovi%C4%87"
     }
   },
@@ -2082,6 +2088,7 @@ var squads_default = {
     height: 185,
     socials: {
       instagram: "sofyanamrabat",
+      instagramFollowers: 5e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Sofyan_Amrabat"
     }
   },
@@ -2964,6 +2971,7 @@ var squads_default = {
     height: 175,
     socials: {
       instagram: "tyler.adams",
+      instagramFollowers: 34e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Tyler_Adams"
     }
   },
@@ -3336,6 +3344,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/8460686d-d2c7-4d3e-98a5-f797400470ed/HWANG-Heechan_395083",
     socials: {
       instagram: "hwangheechan",
+      instagramFollowers: 78e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Hwang_Hee-chan"
     },
     dateOfBirth: "1996-01-26",
@@ -3467,6 +3476,7 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "rubendsneves",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/R%C3%BAben_Neves"
     }
   },
@@ -3825,6 +3835,7 @@ var squads_default = {
     height: 196,
     socials: {
       instagram: "asorloth",
+      instagramFollowers: 61e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Alexander_S%C3%B8rloth"
     }
   },
@@ -4052,6 +4063,7 @@ var squads_default = {
     height: 176,
     socials: {
       instagram: "youritielemans",
+      instagramFollowers: 61e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Youri_Tielemans"
     }
   },
@@ -4084,6 +4096,7 @@ var squads_default = {
     height: 180,
     socials: {
       instagram: "marcusrashford",
+      instagramFollowers: 22e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Marcus_Rashford"
     }
   },
@@ -4470,6 +4483,7 @@ var squads_default = {
     height: 179,
     socials: {
       instagram: "nahuelmolina35",
+      instagramFollowers: 3e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Nahuel_Molina"
     }
   },
@@ -4743,6 +4757,7 @@ var squads_default = {
     height: 187,
     socials: {
       instagram: "tomiyasu.t",
+      instagramFollowers: 93e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Takehiro_Tomiyasu"
     }
   },
@@ -5971,6 +5986,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/a54e995b-caa3-43c4-981f-b54ada7f678d/LEE-Kangin_418490",
     socials: {
       instagram: "kanginleeoficial",
+      instagramFollowers: 18e5,
       wikipedia: "https://pt.wikipedia.org/wiki/Lee_Kang-in"
     },
     dateOfBirth: "2001-02-19",
@@ -6230,6 +6246,7 @@ var squads_default = {
     height: 187,
     socials: {
       instagram: "gioareyna",
+      instagramFollowers: 53e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Giovanni_Reyna"
     }
   },
@@ -8037,6 +8054,7 @@ var squads_default = {
     height: 180,
     socials: {
       instagram: "nicoigonzalez",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Nicol%C3%A1s_Gonz%C3%A1lez"
     }
   },
@@ -8214,6 +8232,7 @@ var squads_default = {
     height: 188,
     socials: {
       instagram: "mikelmerino",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Mikel_Merino"
     }
   },
@@ -8230,6 +8249,7 @@ var squads_default = {
     height: 173,
     socials: {
       instagram: "cucurella3",
+      instagramFollowers: 3e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Marc_Cucurella"
     }
   },
@@ -8279,6 +8299,7 @@ var squads_default = {
     height: 181,
     socials: {
       instagram: "mikel10oyar",
+      instagramFollowers: 37e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Mikel_Oyarzabal"
     },
     instagramPostUrls: [
@@ -8737,6 +8758,7 @@ var squads_default = {
     height: 178,
     socials: {
       instagram: "donyellmalen",
+      instagramFollowers: 64e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Donyell_Malen"
     }
   },
@@ -8910,6 +8932,7 @@ var squads_default = {
     height: 177,
     socials: {
       instagram: "nunomendes_5",
+      instagramFollowers: 4e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Nuno_Mendes_(futebolista)"
     }
   },
@@ -9522,6 +9545,7 @@ var squads_default = {
     height: 188,
     socials: {
       instagram: "ddumfries2",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Denzel_Dumfries"
     }
   },
@@ -9614,6 +9638,7 @@ var squads_default = {
     height: 174,
     socials: {
       instagram: "facupellistri",
+      instagramFollowers: 95e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Facundo_Pellistri"
     }
   },
@@ -9983,6 +10008,7 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "antonee_jedi",
+      instagramFollowers: 19e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Antonee_Robinson"
     }
   },
@@ -10488,6 +10514,7 @@ var squads_default = {
     height: 185,
     socials: {
       instagram: "goncaloramos88",
+      instagramFollowers: 1e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Gon%C3%A7alo_Ramos"
     }
   },
@@ -10971,6 +10998,7 @@ var squads_default = {
     height: 180,
     socials: {
       instagram: "olliewatkins",
+      instagramFollowers: 1e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Ollie_Watkins"
     }
   },
