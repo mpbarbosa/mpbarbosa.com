@@ -56,6 +56,7 @@ var squads_default = {
     pictureUrl: "",
     socials: {
       instagram: "neymarjr",
+      instagramFollowers: 23e7,
       wikipedia: "https://pt.wikipedia.org/wiki/Neymar"
     },
     dateOfBirth: "1992-02-05",
@@ -73,6 +74,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/7b63f223-fda2-4d56-b218-f143f0abd2d8/CRISTIANO-RONALDO_201200",
     socials: {
       instagram: "cristiano",
+      instagramFollowers: 67e7,
       wikipedia: "https://pt.wikipedia.org/wiki/Cristiano_Ronaldo"
     },
     worldCupNote: "## Leitura\nDesencantou no mata-mata. Depois de balan\xE7ar as redes na fase de grupos, Cristiano Ronaldo marcou seu primeiro gol em mata-matas de Copa: empatou de p\xEAnalti na virada por 2 a 1 sobre a Cro\xE1cia que colocou Portugal nas oitavas de final. O capit\xE3o mant\xE9m vivo o sonho luso.\n## Desempenho\nFicou em branco na estreia (1 a 1 com a RD Congo), fez dois na goleada por 5 a 0 sobre o Uzbequist\xE3o (6' e 39') e parou no 0 a 0 com a Col\xF4mbia. Nos 16-avos, contra a Cro\xE1cia, empatou de p\xEAnalti aos 68' \u2014 seu primeiro gol em mata-matas de Copa \u2014 e Gon\xE7alo Ramos completou a virada nos acr\xE9scimos (90+4').\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal classificado \xE0s oitavas de final, onde encara a Espanha. Ronaldo desencantou no mata-mata na hora certa.",
@@ -103,6 +105,7 @@ var squads_default = {
     height: 185,
     socials: {
       instagram: "yosoy8a",
+      instagramFollowers: 4e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Guillermo_Ochoa"
     }
   },
@@ -135,6 +138,7 @@ var squads_default = {
     height: 193,
     socials: {
       instagram: "manuelneuer",
+      instagramFollowers: 15e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Manuel_Neuer"
     },
     worldCupNote: "## Leitura\nFim de linha precoce para o veterano. Manuel Neuer n\xE3o conseguiu evitar a queda nos 16-avos: a Alemanha empatou em 1 a 1 com o Paraguai e foi eliminada nos p\xEAnaltis. Aos 40 anos, o \xEDcone alem\xE3o se despede do Mundial ap\xF3s um mata-mata cruel para a Mannschaft.\n## Desempenho\nLevou a Alemanha aos 16-avos como l\xEDder do Grupo E, ainda que vazado em todos os jogos da primeira fase. Contra o Paraguai, sofreu o gol de Julio Enciso aos 42; Kai Havertz empatou aos 54, e o 1 a 1 resistiu \xE0 prorroga\xE7\xE3o. Nos p\xEAnaltis, por\xE9m, o goleiro paraguaio Orlando Gill brilhou, e a Alemanha caiu por 4 a 3, eliminada.\n## N\xFAmeros\nJ4 \xB7 5 gols sofridos no Mundial \xB7 eliminado nos 16-avos de final. A Alemanha terminou em 1\xBA no Grupo E, mas parou no Paraguai nos p\xEAnaltis (1 a 1 no tempo normal, 4 a 3 na disputa). Fim de campanha.",
@@ -155,6 +159,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/19823774-fac0-485a-8a8f-572e7324c6c2/MESSI-Lionel_229397",
     socials: {
       instagram: "leomessi",
+      instagramFollowers: 51e7,
       wikipedia: "https://pt.wikipedia.org/wiki/Lionel_Messi"
     },
     instagramPostUrls: [
@@ -198,6 +203,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/cbff6a19-cce4-45ee-9869-84cf30ce5676/MODRIC-Luka_241559",
     socials: {
       instagram: "lukamodric10",
+      instagramFollowers: 39e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Luka_Modri%C4%87"
     },
     dateOfBirth: "1985-09-09",
@@ -452,6 +458,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/f9694bf1-eb42-4d26-9503-e988bd32a435/SON-Heungmin_307849",
     socials: {
       instagram: "hm_son7",
+      instagramFollowers: 15e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Son_Heung-min"
     },
     dateOfBirth: "1992-07-08",
@@ -470,6 +477,7 @@ var squads_default = {
     height: 195,
     socials: {
       instagram: "emimartinezz1",
+      instagramFollowers: 15e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez"
     }
   },
@@ -500,6 +508,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/6b051628-d407-41ce-8a60-dc354ac4ccb8/ALISSON_308370",
     socials: {
       instagram: "alissonbecker",
+      instagramFollowers: 9e6,
       wikipedia: "https://en.wikipedia.org/wiki/Alisson_(footballer,_born_1995)"
     },
     dateOfBirth: "1992-10-02",
@@ -526,6 +535,7 @@ var squads_default = {
     height: 185,
     socials: {
       instagram: "casemiro",
+      instagramFollowers: 23e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Casemiro"
     },
     worldCupNote: "## Leitura\nLideran\xE7a e gol na hora certa. Casemiro deixou a marca dele no mata-mata: fez o gol de empate na virada por 2 a 1 sobre o Jap\xE3o que levou o Brasil \xE0s oitavas. Aos 34 anos, o volante respondeu quando o equil\xEDbrio pesava.\n## Desempenho\nNa fase de grupos atuou no empate com o Marrocos (amarelo aos 37) e na vit\xF3ria sobre a Esc\xF3cia. Contra o Jap\xE3o, levou amarelo cedo (14') mas foi protagonista: com o Brasil atr\xE1s ap\xF3s o gol de Sano (29'), igualou aos 56 minutos. Martinelli fez o segundo nos acr\xE9scimos (90+5') e Casemiro saiu aplaudido aos 90+1.\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 2 amarelos \xB7 classificado \xE0s oitavas. O Brasil bateu o Jap\xE3o por 2 a 1 nos 16-avos, com gol do volante.",
@@ -765,6 +775,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/30069661-f88d-4ff7-9c4e-071a5cf3c093/MARQUINHOS_332946",
     socials: {
       instagram: "marquinhosm5",
+      instagramFollowers: 8e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Marcos_Ao%C3%A1s_Corr%C3%AAa"
     },
     dateOfBirth: "1994-05-14",
@@ -848,6 +859,7 @@ var squads_default = {
     height: 185,
     socials: {
       instagram: "jpickford1",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Jordan_Pickford"
     }
   },
@@ -880,6 +892,7 @@ var squads_default = {
     height: 178,
     socials: {
       instagram: "memphisdepay",
+      instagramFollowers: 2e7,
       wikipedia: "https://pt.wikipedia.org/wiki/Memphis_Depay"
     }
   },
@@ -1096,6 +1109,7 @@ var squads_default = {
     height: 178,
     socials: {
       instagram: "mateokovacic8",
+      instagramFollowers: 5e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Mateo_Kova%C4%8Di%C4%87"
     }
   },
@@ -1112,6 +1126,7 @@ var squads_default = {
     height: 175,
     socials: {
       instagram: "mosalah",
+      instagramFollowers: 66e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Mohamed_Salah"
     },
     instagramPostUrls: [
@@ -1353,6 +1368,7 @@ var squads_default = {
     height: 188,
     socials: {
       instagram: "raulalonsojimenez9",
+      instagramFollowers: 3e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Ra%C3%BAl_Jim%C3%A9nez"
     }
   },
@@ -1401,6 +1417,7 @@ var squads_default = {
     height: 199,
     socials: {
       instagram: "thibautcourtois",
+      instagramFollowers: 18e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Thibaut_Courtois"
     }
   },
@@ -1417,6 +1434,7 @@ var squads_default = {
     height: 190,
     socials: {
       instagram: "romelulukaku",
+      instagramFollowers: 9e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Romelu_Lukaku"
     }
   },
@@ -1433,6 +1451,7 @@ var squads_default = {
     height: 181,
     socials: {
       instagram: "kevindebruyne",
+      instagramFollowers: 26e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Kevin_De_Bruyne"
     },
     worldCupNote: "## Leitura\nSaiu antes da virada \xE9pica. Kevin De Bruyne come\xE7ou os 16-avos contra o Senegal, mas foi substitu\xEDdo aos 56', com a B\xE9lgica perdendo por 2 a 0 \u2014 e viu do banco os Diabos Vermelhos buscarem uma rea\xE7\xE3o dram\xE1tica para vencer por 3 a 2 na prorroga\xE7\xE3o e avan\xE7ar \xE0s oitavas.\n## Desempenho\nTitular e decisivo na fase de grupos, com gol na goleada por 5 a 1 sobre a Nova Zel\xE2ndia que deu a ponta do Grupo G. Nos 16-avos, foi titular diante do Senegal, mas deixou o campo aos 56' (entrou Raskin) quando a B\xE9lgica perdia por 2 a 0 \u2014 Habib Diarra (24') e Ismaila Sarr (51') marcaram. A rea\xE7\xE3o viria depois, com Lukaku (86') e Tielemans (89' e 120+5').\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 0 cart\xF5es \xB7 B\xE9lgica classificada \xE0s oitavas de final, onde encara os Estados Unidos. De Bruyne saiu antes da virada, mas o time avan\xE7ou.",
@@ -1565,6 +1584,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/b8286230-b161-484e-87a9-ce5a20e6f7d1/VOZINHA_364752",
     socials: {
       instagram: "vozinha1",
+      instagramFollowers: 15e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Vozinha"
     },
     instagramPostUrls: [
@@ -1783,6 +1803,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/5ad83fe6-1139-4f92-a97c-669052eb1755/KANE-Harry_369419",
     socials: {
       instagram: "harrykane",
+      instagramFollowers: 18e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Harry_Kane"
     },
     dateOfBirth: "1993-07-28",
@@ -1804,6 +1825,7 @@ var squads_default = {
     height: 188,
     socials: {
       instagram: "johnstones5",
+      instagramFollowers: 3e6,
       wikipedia: "https://pt.wikipedia.org/wiki/John_Stones"
     }
   },
@@ -2380,6 +2402,7 @@ var squads_default = {
     height: 187,
     socials: {
       instagram: "rubendias",
+      instagramFollowers: 4e6,
       wikipedia: "https://pt.wikipedia.org/wiki/R%C3%BAben_Dias"
     }
   },
@@ -2613,6 +2636,7 @@ var squads_default = {
     height: 177,
     socials: {
       instagram: "joshua.kimmich",
+      instagramFollowers: 9e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Joshua_Kimmich"
     }
   },
@@ -2785,6 +2809,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/66f6087d-9563-4644-8f10-5614ef6e1e51/MBAPPE-Kylian_389867",
     socials: {
       instagram: "k.mbappe",
+      instagramFollowers: 13e7,
       wikipedia: "https://pt.wikipedia.org/wiki/Kylian_Mbapp%C3%A9"
     },
     dateOfBirth: "1998-12-20",
@@ -2955,6 +2980,7 @@ var squads_default = {
     height: 180,
     socials: {
       instagram: "west.mckennie",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Weston_McKennie"
     }
   },
@@ -2971,6 +2997,7 @@ var squads_default = {
     height: 177,
     socials: {
       instagram: "cmpulisic",
+      instagramFollowers: 8e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Christian_Pulisic"
     }
   },
@@ -3130,6 +3157,7 @@ var squads_default = {
     height: 190,
     socials: {
       instagram: "eloyroom",
+      instagramFollowers: 1e6,
       wikipedia: "https://en.wikipedia.org/wiki/Eloy_Room"
     },
     instagramPostUrl: "https://www.instagram.com/p/CqXEaZqKWN9/",
@@ -3389,6 +3417,7 @@ var squads_default = {
     height: 173,
     socials: {
       instagram: "bernardocarvalhosilva",
+      instagramFollowers: 5e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Bernardo_Silva"
     }
   },
@@ -3405,6 +3434,7 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "brunofernandes8",
+      instagramFollowers: 11e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Bruno_Fernandes"
     }
   },
@@ -3730,6 +3760,7 @@ var squads_default = {
     height: 195,
     socials: {
       instagram: "virgilvandijk",
+      instagramFollowers: 17e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Virgil_van_Dijk"
     }
   },
@@ -3810,6 +3841,7 @@ var squads_default = {
     height: 179,
     socials: {
       instagram: "o.dembele7",
+      instagramFollowers: 2e7,
       wikipedia: "https://pt.wikipedia.org/wiki/Ousmane_Demb%C3%A9l%C3%A9"
     }
   },
@@ -3874,6 +3906,7 @@ var squads_default = {
     height: 180,
     socials: {
       instagram: "edsonnalvarez",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Edson_%C3%81lvarez"
     }
   },
@@ -3890,6 +3923,7 @@ var squads_default = {
     height: 178,
     socials: {
       instagram: "odegaard.98",
+      instagramFollowers: 7e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Martin_%C3%98degaard"
     }
   },
@@ -3906,6 +3940,7 @@ var squads_default = {
     height: 180,
     socials: {
       instagram: "achrafhakimi",
+      instagramFollowers: 23e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Achraf_Hakimi"
     }
   },
@@ -4204,6 +4239,7 @@ var squads_default = {
     height: 191,
     socials: {
       instagram: "adrienrabiot_25",
+      instagramFollowers: 3e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Adrien_Rabiot"
     }
   },
@@ -4220,6 +4256,7 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "nicolas.pepe19",
+      instagramFollowers: 11e5,
       wikipedia: "https://pt.wikipedia.org/wiki/Nicolas_P%C3%A9p%C3%A9"
     },
     worldCupNote: "## Leitura\nO her\xF3i da classifica\xE7\xE3o n\xE3o evitou a queda. Nicolas P\xE9p\xE9, decisivo na vaga marfinense, foi titular na elimina\xE7\xE3o para a Noruega nos 16-avos (2 a 1). A Costa do Marfim se despede do Mundial ap\xF3s uma boa fase de grupos.\n## Desempenho\nDepois da dupla decisiva sobre Cura\xE7ao que classificou o time, P\xE9p\xE9 come\xE7ou jogando contra a Noruega e saiu aos 87 minutos, sem marcar. Antonio Nusa abriu para os noruegueses (39'), Amad Diallo empatou (74'), mas Erling Haaland fez o gol da vit\xF3ria aos 86, eliminando os marfinenses.\n## N\xFAmeros\nJ4 \xB7 2 gols \xB7 1 amarelo \xB7 eliminado nos 16-avos de final. A Costa do Marfim, 2\xAA do Grupo E, perdeu por 2 a 1 para a Noruega.",
@@ -4303,6 +4340,7 @@ var squads_default = {
     height: 182,
     socials: {
       instagram: "fedevalverde",
+      instagramFollowers: 22e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Federico_Valverde"
     }
   },
@@ -4399,6 +4437,7 @@ var squads_default = {
     height: 175,
     socials: {
       instagram: "lautaromartinez",
+      instagramFollowers: 12e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Lautaro_Mart%C3%ADnez"
     }
   },
@@ -4735,6 +4774,7 @@ var squads_default = {
     height: 173,
     socials: {
       instagram: "takefusa.kubo",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Takefusa_Kubo"
     }
   },
@@ -4889,6 +4929,7 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "leroysane",
+      instagramFollowers: 9e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Leroy_San%C3%A9"
     },
     worldCupNote: "## Leitura\nA arma de velocidade se despede sem brilhar no mata-mata. Leroy San\xE9 foi titular na elimina\xE7\xE3o alem\xE3 para o Paraguai nos 16-avos \u2014 1 a 1 e queda nos p\xEAnaltis \u2014, encerrando uma Copa abaixo do esperado para o ponta.\n## Desempenho\nTeve fase de grupos modesta, com apenas o gol contra o Equador (na derrota por 2 a 1) e a lideran\xE7a do Grupo E assegurada. Nos 16-avos, come\xE7ou jogando contra o Paraguai e saiu aos 88 minutos, sem balan\xE7ar as redes; Enciso (42') e Havertz (54') marcaram no 1 a 1, e a Alemanha foi eliminada nos p\xEAnaltis (4 a 3).\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 0 cart\xF5es \xB7 eliminado nos 16-avos com a Alemanha, derrotada pelo Paraguai nos p\xEAnaltis.",
@@ -5086,6 +5127,7 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "ferrantorres",
+      instagramFollowers: 8e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Ferran_Torres"
     }
   },
@@ -5140,6 +5182,7 @@ var squads_default = {
     height: 176,
     socials: {
       instagram: "vinijr",
+      instagramFollowers: 62e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Vin%C3%ADcius_J%C3%BAnior"
     },
     instagramPostUrl: "https://www.instagram.com/p/DZkzbG7DsbZ/"
@@ -5237,6 +5280,7 @@ var squads_default = {
     height: 188,
     socials: {
       instagram: "aurelientchm",
+      instagramFollowers: 9e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Aur%C3%A9lien_Tchouam%C3%A9ni"
     }
   },
@@ -5365,6 +5409,7 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "timothyweah",
+      instagramFollowers: 79e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Timothy_Weah"
     }
   },
@@ -5601,6 +5646,7 @@ var squads_default = {
     height: 190,
     socials: {
       instagram: "kaihavertz29",
+      instagramFollowers: 6e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Kai_Havertz"
     }
   },
@@ -5821,6 +5867,7 @@ var squads_default = {
     height: 170,
     socials: {
       instagram: "juliaanalvarez",
+      instagramFollowers: 2e7,
       wikipedia: "https://pt.wikipedia.org/wiki/Juli%C3%A1n_Alvarez"
     }
   },
@@ -5942,6 +5989,7 @@ var squads_default = {
     height: 179,
     socials: {
       instagram: "joaofelix79",
+      instagramFollowers: 13e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Jo%C3%A3o_F%C3%A9lix"
     }
   },
@@ -5974,6 +6022,7 @@ var squads_default = {
     height: 188,
     socials: {
       instagram: "iamrafaeleao93",
+      instagramFollowers: 7e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Rafael_Le%C3%A3o"
     }
   },
@@ -6227,6 +6276,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/f1a7af03-ada1-4642-927c-5fe06844c89c/ARAUJO-Maxi_419100",
     socials: {
       instagram: "maximilianoaraujo6",
+      instagramFollowers: 35e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Maxi_Ara\xFAjo"
     },
     dateOfBirth: "2000-02-15",
@@ -6263,6 +6313,7 @@ var squads_default = {
     height: 185,
     socials: {
       instagram: "darwin_n9",
+      instagramFollowers: 5e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Darwin_N%C3%BA%C3%B1ez"
     }
   },
@@ -6359,6 +6410,7 @@ var squads_default = {
     height: 192,
     socials: {
       instagram: "w.saliba4",
+      instagramFollowers: 12e5,
       wikipedia: "https://pt.wikipedia.org/wiki/William_Saliba"
     }
   },
@@ -6695,6 +6747,7 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/ee269811-9f84-401f-99b8-e953a2704ebb/HAALAND-Erling_419652",
     socials: {
       instagram: "erling",
+      instagramFollowers: 46e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Erling_Haaland"
     },
     dateOfBirth: "2000-07-21",
@@ -6783,6 +6836,7 @@ var squads_default = {
     height: 181,
     socials: {
       instagram: "frenkiedejong",
+      instagramFollowers: 15e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Frenkie_de_Jong"
     }
   },
@@ -6876,6 +6930,7 @@ var squads_default = {
     height: 174,
     socials: {
       instagram: "pedri",
+      instagramFollowers: 22e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Pedri"
     }
   },
@@ -7041,6 +7096,7 @@ var squads_default = {
     height: 181,
     socials: {
       instagram: "brianbrobbeyy",
+      instagramFollowers: 47e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Brian_Brobbey"
     },
     worldCupNote: "## Leitura\nElimina\xE7\xE3o amarga para a refer\xEAncia laranja. Brian Brobbey foi titular nos 16-avos, mas a Holanda empatou em 1 a 1 com o Marrocos e caiu nos p\xEAnaltis. Autor de 3 gols na fase de grupos, o centroavante se despede do Mundial.\n## Desempenho\nDecisivo na primeira fase (dois gols sobre a Su\xE9cia e um sobre a Tun\xEDsia, 3 no total), come\xE7ou jogando contra o Marrocos e saiu aos 71 minutos para Weghorst. Cody Gakpo abriu aos 72, mas Issa Diop empatou nos acr\xE9scimos (90+1') e o jogo foi aos p\xEAnaltis, onde a Holanda foi eliminada.\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 eliminado nos 16-avos de final. A Holanda, 1\xAA do Grupo F, parou no Marrocos nos p\xEAnaltis (1 a 1 no tempo normal).",
@@ -7218,6 +7274,7 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "awbissaka",
+      instagramFollowers: 4e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Aaron_Wan-Bissaka"
     }
   },
@@ -7250,6 +7307,7 @@ var squads_default = {
     height: 178,
     socials: {
       instagram: "rodridepaul",
+      instagramFollowers: 14e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Rodrigo_de_Paul"
     }
   },
@@ -7403,6 +7461,7 @@ var squads_default = {
     height: 180,
     socials: {
       instagram: "jamalmusiala10",
+      instagramFollowers: 7e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Jamal_Musiala"
     }
   },
@@ -7670,6 +7729,7 @@ var squads_default = {
     height: 182,
     socials: {
       instagram: "bee18_official",
+      instagramFollowers: 62e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Ayase_Ueda"
     },
     worldCupNote: "## Leitura\nFim de linha para os Samurais Azuis. Ayase Ueda, homem-gol do Jap\xE3o, viu a equipe sair na frente, mas perder de virada por 2 a 1 para o Brasil nos 16-avos. Com 2 gols no Mundial, o atacante se despede de uma campanha consistente.\n## Desempenho\nMarcou duas vezes sobre a Tun\xEDsia na fase de grupos (4 a 0) e ajudou o Jap\xE3o a avan\xE7ar em segundo no Grupo F. Contra o Brasil, o Jap\xE3o abriu o placar com Kaishu Sano (29'), mas levou a virada de Casemiro (56') e Gabriel Martinelli (90+5'). Ueda n\xE3o marcou, e os japoneses deram adeus.\n## N\xFAmeros\nJ4 \xB7 2 gols \xB7 0 cart\xF5es \xB7 eliminado nos 16-avos de final. O Jap\xE3o perdeu de virada por 2 a 1 para o Brasil.",
@@ -7872,6 +7932,7 @@ var squads_default = {
     height: 178,
     socials: {
       instagram: "gabriel.martinelli",
+      instagramFollowers: 4e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Gabriel_Martinelli"
     },
     instagramPostUrl: "https://www.instagram.com/p/DaL8cplAA9S/"
@@ -7906,6 +7967,7 @@ var squads_default = {
     height: 182,
     socials: {
       instagram: "brunoguimaraes",
+      instagramFollowers: 3e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Bruno_Guimar%C3%A3es"
     }
   },
@@ -7922,6 +7984,7 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "cunha",
+      instagramFollowers: 6e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Matheus_Cunha"
     },
     worldCupNote: "## Leitura\nMenos minutos, mas vaga nas oitavas. Matheus Cunha foi titular nos 16-avos e saiu no segundo tempo na virada por 2 a 1 sobre o Jap\xE3o. Revela\xE7\xE3o da fase de grupos com 3 gols, o atacante segue no elenco brasileiro rumo ao mata-mata.\n## Desempenho\nCresceu na fase de grupos, com dois gols sobre o Haiti e um sobre a Esc\xF3cia (3 no total). Contra o Jap\xE3o, come\xE7ou jogando e foi substitu\xEDdo por Martinelli aos 65 minutos \u2014 justamente o autor do gol da vit\xF3ria (90+5'), ap\xF3s Sano abrir (29') e Casemiro empatar (56'). Sem marcar, mas com a vaga garantida.\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 classificado \xE0s oitavas. O Brasil bateu o Jap\xE3o por 2 a 1 nos 16-avos de final.",
@@ -7957,6 +8020,7 @@ var squads_default = {
     height: 176,
     socials: {
       instagram: "alemacallister",
+      instagramFollowers: 9e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Alexis_Mac_Allister"
     }
   },
@@ -8037,6 +8101,7 @@ var squads_default = {
     height: 176,
     socials: {
       instagram: "flowirtz",
+      instagramFollowers: 5e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Florian_Wirtz"
     }
   },
@@ -8197,6 +8262,7 @@ var squads_default = {
     height: 179,
     socials: {
       instagram: "daniolmo",
+      instagramFollowers: 6e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Dani_Olmo"
     }
   },
@@ -8263,6 +8329,7 @@ var squads_default = {
     height: 180,
     socials: {
       instagram: "sant.gimenez",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Santiago_Gim%C3%A9nez"
     }
   },
@@ -8391,6 +8458,7 @@ var squads_default = {
     height: 185,
     socials: {
       instagram: "cutiromero2",
+      instagramFollowers: 18e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Cristian_Romero"
     }
   },
@@ -8761,6 +8829,7 @@ var squads_default = {
     height: 185,
     socials: {
       instagram: "declanrice",
+      instagramFollowers: 7e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Declan_Rice"
     }
   },
@@ -9316,6 +9385,7 @@ var squads_default = {
     height: 176,
     socials: {
       instagram: "raphinha",
+      instagramFollowers: 21e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Raphinha"
     }
   },
@@ -9720,6 +9790,7 @@ var squads_default = {
     height: 170,
     socials: {
       instagram: "vitinha",
+      instagramFollowers: 5e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Vitinha"
     }
   },
@@ -9960,6 +10031,7 @@ var squads_default = {
     height: 175,
     socials: {
       instagram: "jodavid",
+      instagramFollowers: 5e5,
       wikipedia: "https://pt.wikipedia.org/wiki/Jonathan_David"
     },
     worldCupNote: "## Leitura\nO anfitri\xE3o segue sonhando, e David vai junto. Jonathan David n\xE3o marcou, mas o Canad\xE1 venceu a \xC1frica do Sul por 1 a 0 nos 16-avos e avan\xE7ou \xE0s oitavas em seu pr\xF3prio Mundial. Artilheiro do time na fase de grupos com 3 gols, o centroavante mira o gol no mata-mata.\n## Desempenho\nBrilhou na fase de grupos com um hat-trick sobre o Catar (6 a 0). Nos 16-avos contra a \xC1frica do Sul, o ataque canadense esbarrou na defesa advers\xE1ria quase o jogo todo: o gol da classifica\xE7\xE3o saiu apenas aos 90+2, com Stephen Eust\xE1quio. David n\xE3o marcou, mas o Canad\xE1 avan\xE7ou.\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 classificado \xE0s oitavas de final. O Canad\xE1 bateu a \xC1frica do Sul por 1 a 0 nos 16-avos, com gol nos acr\xE9scimos.",
@@ -10154,6 +10226,7 @@ var squads_default = {
     height: 182,
     socials: {
       instagram: "ugartemanu",
+      instagramFollowers: 1e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Manuel_Ugarte"
     }
   },
@@ -10282,6 +10355,7 @@ var squads_default = {
     height: 181,
     socials: {
       instagram: "nicolas_williams9",
+      instagramFollowers: 53e5,
       wikipedia: "https://pt.wikipedia.org/wiki/Nico_Williams"
     }
   },
@@ -10298,6 +10372,7 @@ var squads_default = {
     height: 172,
     socials: {
       instagram: "alexbbaena",
+      instagramFollowers: 33e4,
       wikipedia: "https://pt.wikipedia.org/wiki/%C3%81lex_Baena"
     },
     worldCupNote: "## Leitura\nVoltou ao rod\xEDzio no mata-mata. \xC1lex Baena foi titular nos 16-avos, mas desta vez sem repetir o gol decisivo da fase de grupos: a Espanha n\xE3o precisou dele para golear a \xC1ustria por 3 a 0 e avan\xE7ar \xE0s oitavas com autoridade.\n## Desempenho\nHer\xF3i da fase de grupos, com o gol da vit\xF3ria por 1 a 0 sobre o Uruguai que selou a lideran\xE7a do Grupo H. Nos 16-avos, foi titular contra a \xC1ustria e saiu aos 71' (entrou Ferran Torres), sem marcar \u2014 Mikel Oyarzabal (duas vezes) e Pedro Porro resolveram o 3 a 0.\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 1 cart\xE3o amarelo \xB7 Espanha classificada \xE0s oitavas de final, onde encara Portugal. Baena seguiu no rod\xEDzio de La Roja, agora sem balan\xE7ar as redes.",
@@ -10332,6 +10407,7 @@ var squads_default = {
     height: 173,
     socials: {
       instagram: "pablogavi",
+      instagramFollowers: 2e7,
       wikipedia: "https://pt.wikipedia.org/wiki/Gavi_(futebolista)"
     }
   },
@@ -10666,6 +10742,7 @@ var squads_default = {
     height: 193,
     socials: {
       instagram: "codymathesgakpo",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Cody_Gakpo"
     },
     instagramPostUrl: "https://www.instagram.com/p/DZ0zY5ZjZBM/"
@@ -10811,6 +10888,7 @@ var squads_default = {
     height: 185,
     socials: {
       instagram: "josko_gvardiol",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Jo%C5%A1ko_Gvardiol"
     }
   },
@@ -10843,6 +10921,7 @@ var squads_default = {
     height: 178,
     socials: {
       instagram: "bukayosaka87",
+      instagramFollowers: 8e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Bukayo_Saka"
     }
   },
@@ -10875,6 +10954,7 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "judebellingham",
+      instagramFollowers: 42e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Jude_Bellingham"
     }
   },
@@ -10939,6 +11019,7 @@ var squads_default = {
     height: 178,
     socials: {
       instagram: "enzojfernandez",
+      instagramFollowers: 13e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Enzo_Fern%C3%A1ndez"
     }
   },
@@ -11033,6 +11114,7 @@ var squads_default = {
     height: 191,
     socials: {
       instagram: "mike_maignan16",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Mike_Maignan"
     },
     instagramPostUrl: "https://www.instagram.com/p/DaQCW1HlaPs/"
@@ -11050,6 +11132,7 @@ var squads_default = {
     height: 173,
     socials: {
       instagram: "jeremydoku",
+      instagramFollowers: 4e6,
       wikipedia: "https://pt.wikipedia.org/wiki/J%C3%A9r%C3%A9my_Doku"
     }
   },
@@ -11098,6 +11181,7 @@ var squads_default = {
     height: 172,
     socials: {
       instagram: "leandrotrossard",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Leandro_Trossard"
     },
     worldCupNote: "## Leitura\nFicou em campo at\xE9 a prorroga\xE7\xE3o da virada. Leandro Trossard foi titular nos 16-avos contra o Senegal e atuou at\xE9 os 109', quando a B\xE9lgica ainda buscava o improv\xE1vel \u2014 e conseguiu: venceu por 3 a 2 na prorroga\xE7\xE3o e avan\xE7ou \xE0s oitavas de final.\n## Desempenho\nExplodiu na fase de grupos com dois gols sobre a Nova Zel\xE2ndia, que deram a ponta do Grupo G. Nos 16-avos, come\xE7ou jogando diante do Senegal e saiu aos 109' (entrou Onana), sem marcar num jogo dram\xE1tico: a B\xE9lgica saiu de 0 a 2 (Diarra 24', Sarr 51') para vencer com Lukaku (86') e Tielemans (89' e 120+5').\n## N\xFAmeros\nJ4 \xB7 2 gols \xB7 0 cart\xF5es \xB7 B\xE9lgica classificada \xE0s oitavas de final, onde encara os Estados Unidos. Trossard seguiu titular na campanha do mata-mata.",
@@ -12393,6 +12477,7 @@ var squads_default = {
     height: 179,
     socials: {
       instagram: "balogun",
+      instagramFollowers: 57e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Folarin_Balogun"
     }
   },
@@ -14328,6 +14413,7 @@ var squads_default = {
     height: 183,
     socials: {
       instagram: "lamineyamal",
+      instagramFollowers: 45e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Lamine_Yamal"
     },
     worldCupNote: "## Leitura\nSeguiu como titular rumo \xE0s oitavas. Lamine Yamal foi a campo nos 16-avos e atuou at\xE9 os 85' na goleada por 3 a 0 sobre a \xC1ustria, que classificou a Espanha com autoridade. Sem marcar desta vez, mas pe\xE7a fixa de La Roja no mata-mata.\n## Desempenho\nDesencantou na fase de grupos com seu primeiro gol em Mundiais, na goleada por 4 a 0 sobre a Ar\xE1bia Saudita, e ajudou a Espanha a liderar o Grupo H. Nos 16-avos, foi titular contra a \xC1ustria e saiu aos 85' (entrou Gavi), sem balan\xE7ar as redes \u2014 Mikel Oyarzabal (duas vezes) e Pedro Porro fizeram o 3 a 0.\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 0 cart\xF5es \xB7 Espanha classificada \xE0s oitavas de final, onde encara Portugal. Yamal segue como titular do craque espanhol no mata-mata.",
@@ -14462,6 +14548,7 @@ var squads_default = {
     height: 179,
     socials: {
       instagram: "denizundav",
+      instagramFollowers: 1e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Deniz_Undav"
     },
     worldCupNote: "## Leitura\nO her\xF3i da fase de grupos n\xE3o conseguiu repetir a magia no mata-mata. Deniz Undav, autor de 3 gols saindo do banco na primeira fase, foi titular nos 16-avos, mas a Alemanha caiu para o Paraguai nos p\xEAnaltis e deu adeus ao Mundial.\n## Desempenho\nDecisivo na fase de grupos (gol contra Cura\xE7ao e a virada sobre a Costa do Marfim, sempre vindo do banco), come\xE7ou jogando contra o Paraguai e foi substitu\xEDdo aos 63 minutos por Musiala. N\xE3o marcou, e o 1 a 1 \u2014 Enciso (42') e Havertz (54') \u2014 foi para os p\xEAnaltis, onde a Alemanha perdeu por 4 a 3.\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 eliminado nos 16-avos de final. A Alemanha, l\xEDder do Grupo E, parou no Paraguai nos p\xEAnaltis.",
@@ -14496,6 +14583,7 @@ var squads_default = {
     height: 187,
     socials: {
       instagram: "bradley_dls",
+      instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Bradley_Barcola"
     }
   },
