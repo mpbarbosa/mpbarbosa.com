@@ -1602,7 +1602,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaGEnBgjDRw/",
       "https://www.instagram.com/p/DZnju0oH7yg/",
       "https://www.instagram.com/p/DaEr1UliNG3/",
-      "https://www.instagram.com/p/DaWmfzXDrnT/"
+      "https://www.instagram.com/p/DaWmfzXDrnT/",
+      "https://www.instagram.com/reel/DaWoAwkR6oK/"
     ],
     worldCupNote: "## Leitura\nAos 40 anos, Josimar Dias \u2014 o Vozinha \u2014 encerrou como s\xEDmbolo da campanha mais hist\xF3rica de Cabo Verde: a estreia do pa\xEDs nas oitavas de uma Copa do Mundo. A muralha s\xF3 caiu diante da Argentina, e ainda assim depois de levar os favoritos \xE0 prorroga\xE7\xE3o.\n## Desempenho\nFoi gigante na fase de grupos: sete defesas e 0 a 0 com pr\xEAmio de craque diante da Espanha, o 2 a 2 com o Uruguai e o 0 a 0 com a Ar\xE1bia Saudita que selou a classifica\xE7\xE3o in\xE9dita. Nos 16-avos, foi superado por 3 a 2 pela Argentina de Messi (que abriu aos 29) numa batalha que foi \xE0 prorroga\xE7\xE3o \u2014 Cabo Verde empatava 2 a 2 at\xE9 um gol contra de Diney Borges aos 111 decretar a elimina\xE7\xE3o.\n## N\xFAmeros\nJ4 \xB7 2 clean sheets \xB7 5 gols sofridos \xB7 Cabo Verde caiu nas oitavas diante da Argentina, encerrando a melhor campanha de sua hist\xF3ria.",
     worldCupNoteUpdatedAt: "2026-07-03T22:00:00.000Z",
@@ -4342,7 +4343,10 @@ var squads_default = {
       instagram: "agus_cano7",
       wikipedia: "https://pt.wikipedia.org/wiki/Agust%C3%ADn_Canobbio"
     },
-    instagramPostUrl: "https://www.instagram.com/reel/DZ2ZDoSIGay/"
+    instagramPostUrls: [
+      "https://www.instagram.com/reel/DZ2ZDoSIGay/",
+      "https://www.instagram.com/p/DZ32ycliNzr/"
+    ]
   },
   "402884": {
     fifaId: "402884",
