@@ -19261,45 +19261,49 @@ function buildOpenMeteoUrl(lat, lng) {
   return `${OPEN_METEO_BASE_URL}?${params.toString()}`;
 }
 var WMO_CODES = {
-  0: { description: "C\xE9u limpo", emoji: "\u2600\uFE0F", nightEmoji: "\u{1F319}" },
-  1: { description: "Predominantemente limpo", emoji: "\u{1F324}\uFE0F", nightEmoji: "\u{1F319}" },
-  2: { description: "Parcialmente nublado", emoji: "\u26C5", nightEmoji: "\u2601\uFE0F" },
-  3: { description: "Nublado", emoji: "\u2601\uFE0F" },
-  45: { description: "N\xE9voa", emoji: "\u{1F32B}\uFE0F" },
-  48: { description: "N\xE9voa com geada", emoji: "\u{1F32B}\uFE0F" },
-  51: { description: "Garoa leve", emoji: "\u{1F326}\uFE0F" },
-  53: { description: "Garoa", emoji: "\u{1F326}\uFE0F" },
-  55: { description: "Garoa intensa", emoji: "\u{1F326}\uFE0F" },
-  56: { description: "Garoa congelante", emoji: "\u{1F327}\uFE0F" },
-  57: { description: "Garoa congelante intensa", emoji: "\u{1F327}\uFE0F" },
-  61: { description: "Chuva fraca", emoji: "\u{1F326}\uFE0F" },
-  63: { description: "Chuva", emoji: "\u{1F327}\uFE0F" },
-  65: { description: "Chuva forte", emoji: "\u{1F327}\uFE0F" },
-  66: { description: "Chuva congelante", emoji: "\u{1F327}\uFE0F" },
-  67: { description: "Chuva congelante forte", emoji: "\u{1F327}\uFE0F" },
-  71: { description: "Neve fraca", emoji: "\u{1F328}\uFE0F" },
-  73: { description: "Neve", emoji: "\u{1F328}\uFE0F" },
-  75: { description: "Neve forte", emoji: "\u2744\uFE0F" },
-  77: { description: "Gr\xE3os de neve", emoji: "\u{1F328}\uFE0F" },
-  80: { description: "Pancadas de chuva", emoji: "\u{1F326}\uFE0F" },
-  81: { description: "Pancadas de chuva", emoji: "\u{1F327}\uFE0F" },
-  82: { description: "Pancadas de chuva fortes", emoji: "\u26C8\uFE0F" },
-  85: { description: "Pancadas de neve", emoji: "\u{1F328}\uFE0F" },
-  86: { description: "Pancadas de neve fortes", emoji: "\u2744\uFE0F" },
-  95: { description: "Tempestade", emoji: "\u26C8\uFE0F" },
-  96: { description: "Tempestade com granizo", emoji: "\u26C8\uFE0F" },
-  99: { description: "Tempestade com granizo", emoji: "\u26C8\uFE0F" }
+  0: { pt: "C\xE9u limpo", es: "Cielo despejado", emoji: "\u2600\uFE0F", nightEmoji: "\u{1F319}" },
+  1: { pt: "Predominantemente limpo", es: "Mayormente despejado", emoji: "\u{1F324}\uFE0F", nightEmoji: "\u{1F319}" },
+  2: { pt: "Parcialmente nublado", es: "Parcialmente nublado", emoji: "\u26C5", nightEmoji: "\u2601\uFE0F" },
+  3: { pt: "Nublado", es: "Nublado", emoji: "\u2601\uFE0F" },
+  45: { pt: "N\xE9voa", es: "Niebla", emoji: "\u{1F32B}\uFE0F" },
+  48: { pt: "N\xE9voa com geada", es: "Niebla con escarcha", emoji: "\u{1F32B}\uFE0F" },
+  51: { pt: "Garoa leve", es: "Llovizna ligera", emoji: "\u{1F326}\uFE0F" },
+  53: { pt: "Garoa", es: "Llovizna", emoji: "\u{1F326}\uFE0F" },
+  55: { pt: "Garoa intensa", es: "Llovizna intensa", emoji: "\u{1F326}\uFE0F" },
+  56: { pt: "Garoa congelante", es: "Llovizna helada", emoji: "\u{1F327}\uFE0F" },
+  57: { pt: "Garoa congelante intensa", es: "Llovizna helada intensa", emoji: "\u{1F327}\uFE0F" },
+  61: { pt: "Chuva fraca", es: "Lluvia d\xE9bil", emoji: "\u{1F326}\uFE0F" },
+  63: { pt: "Chuva", es: "Lluvia", emoji: "\u{1F327}\uFE0F" },
+  65: { pt: "Chuva forte", es: "Lluvia fuerte", emoji: "\u{1F327}\uFE0F" },
+  66: { pt: "Chuva congelante", es: "Lluvia helada", emoji: "\u{1F327}\uFE0F" },
+  67: { pt: "Chuva congelante forte", es: "Lluvia helada fuerte", emoji: "\u{1F327}\uFE0F" },
+  71: { pt: "Neve fraca", es: "Nieve d\xE9bil", emoji: "\u{1F328}\uFE0F" },
+  73: { pt: "Neve", es: "Nieve", emoji: "\u{1F328}\uFE0F" },
+  75: { pt: "Neve forte", es: "Nieve fuerte", emoji: "\u2744\uFE0F" },
+  77: { pt: "Gr\xE3os de neve", es: "Granos de nieve", emoji: "\u{1F328}\uFE0F" },
+  80: { pt: "Pancadas de chuva", es: "Chubascos", emoji: "\u{1F326}\uFE0F" },
+  81: { pt: "Pancadas de chuva", es: "Chubascos", emoji: "\u{1F327}\uFE0F" },
+  82: { pt: "Pancadas de chuva fortes", es: "Chubascos fuertes", emoji: "\u26C8\uFE0F" },
+  85: { pt: "Pancadas de neve", es: "Chubascos de nieve", emoji: "\u{1F328}\uFE0F" },
+  86: { pt: "Pancadas de neve fortes", es: "Chubascos de nieve fuertes", emoji: "\u2744\uFE0F" },
+  95: { pt: "Tempestade", es: "Tormenta", emoji: "\u26C8\uFE0F" },
+  96: { pt: "Tempestade com granizo", es: "Tormenta con granizo", emoji: "\u26C8\uFE0F" },
+  99: { pt: "Tempestade com granizo", es: "Tormenta con granizo", emoji: "\u26C8\uFE0F" }
 };
-var UNKNOWN_LABEL = { description: "Tempo inst\xE1vel", emoji: "\u{1F321}\uFE0F" };
-function describeWeatherCode(code, isDay) {
+var UNKNOWN_LABEL = {
+  pt: "Tempo inst\xE1vel",
+  es: "Tiempo inestable",
+  emoji: "\u{1F321}\uFE0F"
+};
+function describeWeatherCode(code, isDay, locale = "pt") {
   const label = WMO_CODES[code] ?? UNKNOWN_LABEL;
   const emoji = !isDay && label.nightEmoji ? label.nightEmoji : label.emoji;
-  return { description: label.description, emoji };
+  return { description: locale === "es" ? label.es : label.pt, emoji };
 }
 function toFiniteNumber(value) {
   return typeof value === "number" && Number.isFinite(value) ? value : null;
 }
-function parseOpenMeteoCurrent(raw) {
+function parseOpenMeteoCurrent(raw, locale = "pt") {
   if (!raw || typeof raw !== "object") return null;
   const current = raw.current;
   if (!current || typeof current !== "object") return null;
@@ -19308,7 +19312,7 @@ function parseOpenMeteoCurrent(raw) {
   if (temperatureC === null) return null;
   const weatherCode = toFiniteNumber(c.weather_code) ?? 0;
   const isDay = c.is_day === 1 || c.is_day === true;
-  const { description, emoji } = describeWeatherCode(weatherCode, isDay);
+  const { description, emoji } = describeWeatherCode(weatherCode, isDay, locale);
   return {
     temperatureC: Math.round(temperatureC),
     apparentC: Math.round(toFiniteNumber(c.apparent_temperature) ?? temperatureC),
@@ -19320,6 +19324,96 @@ function parseOpenMeteoCurrent(raw) {
     isDay
   };
 }
+
+// src/i18n/locale.ts
+var DEFAULT_LOCALE = "pt";
+var localeFromFifaLanguage = (language) => language.trim().toLowerCase().startsWith("es") ? "es" : DEFAULT_LOCALE;
+var localeFromHost = (host) => typeof host === "string" && /^es\./i.test(host.trim()) ? "es" : DEFAULT_LOCALE;
+
+// server-i18n.ts
+var NOTE_TRANSLATIONS = {
+  // Broadcast guide
+  "Dados oficiais do Onde Assistir da FIFA para o Brasil.": "Datos oficiales de \xABD\xF3nde Ver\xBB de la FIFA.",
+  "Dados oficiais da FIFA indispon\xEDveis para esta partida no momento; exibindo a lista local.": "Datos oficiales de la FIFA no disponibles para este partido por ahora; mostrando la lista local.",
+  // Team view
+  "Painel da sele\xE7\xE3o abastecido por dados oficiais da FIFA sempre que dispon\xEDveis.": "Panel de la selecci\xF3n alimentado con datos oficiales de la FIFA siempre que est\xE9n disponibles.",
+  "Painel da sele\xE7\xE3o usando dados locais do aplicativo enquanto a FIFA n\xE3o publica todos os detalhes.": "Panel de la selecci\xF3n usando datos locales de la app mientras la FIFA no publica todos los detalles.",
+  "Painel da sele\xE7\xE3o combinando dados oficiais da FIFA com fallback local do aplicativo.": "Panel de la selecci\xF3n combinando datos oficiales de la FIFA con respaldo local de la app.",
+  // Lineups
+  "Escala\xE7\xE3o estimada a partir da base local do aplicativo.": "Alineaci\xF3n estimada a partir de la base local de la app.",
+  // Player incidents
+  "Incidentes a partir de dados locais (FIFA indispon\xEDvel).": "Incidencias a partir de datos locales (FIFA no disponible).",
+  "Incidentes sincronizados com a FIFA.": "Incidencias sincronizadas con la FIFA.",
+  // Tournament leaders
+  "Ranking calculado a partir de placares e lances oficiais da FIFA.": "Ranking calculado a partir de marcadores y jugadas oficiales de la FIFA.",
+  "Ranking calculado a partir do fallback local do aplicativo.": "Ranking calculado a partir del respaldo local de la app.",
+  "Ranking calculado com mix de dados oficiais da FIFA e fallback local.": "Ranking calculado con una mezcla de datos oficiales de la FIFA y respaldo local.",
+  // Player stats / incidents unavailable
+  "Estat\xEDsticas indispon\xEDveis \u2014 FIFA API inacess\xEDvel.": "Estad\xEDsticas no disponibles \u2014 API de la FIFA inaccesible.",
+  "Incidentes indispon\xEDveis \u2014 FIFA API inacess\xEDvel.": "Incidencias no disponibles \u2014 API de la FIFA inaccesible.",
+  // Country info (Wikipedia content stays pt for now; notes translated)
+  "Dados da Wikipedia e Wikidata.": "Datos de Wikipedia y Wikidata.",
+  "Usando dados em cache \u2014 Wikipedia inacess\xEDvel.": "Usando datos en cach\xE9 \u2014 Wikipedia inaccesible.",
+  "Informa\xE7\xF5es indispon\xEDveis \u2014 Wikipedia inacess\xEDvel.": "Informaci\xF3n no disponible \u2014 Wikipedia inaccesible.",
+  // Endpoint error messages
+  "Erro ao carregar guia de transmiss\xE3o da FIFA": "Error al cargar la gu\xEDa de transmisi\xF3n de la FIFA",
+  "Erro ao carregar placares da FIFA": "Error al cargar los marcadores de la FIFA",
+  "Erro ao carregar dados unificados da FIFA": "Error al cargar los datos unificados de la FIFA",
+  "Erro ao carregar escala\xE7\xF5es da FIFA": "Error al cargar las alineaciones de la FIFA",
+  "Erro ao carregar l\xEDderes do torneio": "Error al cargar los l\xEDderes del torneo",
+  "Erro ao carregar painel completo da sele\xE7\xE3o": "Error al cargar el panel completo de la selecci\xF3n",
+  "Jogador n\xE3o encontrado nos l\xEDderes do torneio": "Jugador no encontrado en los l\xEDderes del torneo",
+  "Jogador n\xE3o encontrado": "Jugador no encontrado",
+  "Sele\xE7\xE3o n\xE3o encontrada": "Selecci\xF3n no encontrada",
+  "Pa\xEDs n\xE3o encontrado": "Pa\xEDs no encontrado"
+};
+var localizeNote = (text, locale) => locale === "es" ? NOTE_TRANSLATIONS[text] ?? text : text;
+var HTML_SEO = {
+  es: {
+    htmlLang: "es-419",
+    ogLocale: "es_MX",
+    canonical: "https://es.copa2026.mpbarbosa.com/",
+    title: "Ahora en el Mundial 26 \u2014 Copa Mundial FIFA 2026 en vivo",
+    description: "Sigue la Copa Mundial de la FIFA 2026 en vivo: cuenta regresiva, d\xF3nde ver, alineaciones, tablas de posiciones de los grupos, clasificaci\xF3n y llave \u2014 todo en un solo lugar.",
+    ogDescription: "Cuenta regresiva, d\xF3nde ver, alineaciones, tablas de posiciones y llave de la Copa Mundial de la FIFA 2026 \u2014 todo en un solo lugar.",
+    ogSiteName: "Ahora en el Mundial 26",
+    ogImageAlt: "Ahora en el Mundial 26 \u2014 compa\xF1ero de la Copa Mundial FIFA 2026"
+  }
+};
+var localizeIndexHtml = (html, locale) => {
+  if (locale !== "es") return html;
+  const seo = HTML_SEO.es;
+  return html.replace(/(<html[^>]*\blang=")[^"]*(")/, `$1${seo.htmlLang}$2`).replace(/<title>[^<]*<\/title>/, `<title>${seo.title}</title>`).replace(
+    /(<meta\s+name="description"\s+content=")[^"]*(")/,
+    `$1${seo.description}$2`
+  ).replace(
+    /(<meta\s+property="og:locale"\s+content=")[^"]*(")/,
+    `$1${seo.ogLocale}$2`
+  ).replace(
+    /(<meta\s+property="og:title"\s+content=")[^"]*(")/,
+    `$1${seo.title}$2`
+  ).replace(
+    /(<meta\s+property="og:description"\s+content=")[^"]*(")/,
+    `$1${seo.ogDescription}$2`
+  ).replace(
+    /(<meta\s+name="twitter:title"\s+content=")[^"]*(")/,
+    `$1${seo.title}$2`
+  ).replace(
+    /(<meta\s+name="twitter:description"\s+content=")[^"]*(")/,
+    `$1${seo.ogDescription}$2`
+  ).replace(
+    /(<meta\s+property="og:site_name"\s+content=")[^"]*(")/,
+    `$1${seo.ogSiteName}$2`
+  ).replace(
+    /(<meta\s+property="og:image:alt"\s+content=")[^"]*(")/,
+    `$1${seo.ogImageAlt}$2`
+  ).replace(
+    /(<link\s+rel="canonical"\s+href=")[^"]*(")/,
+    `$1${seo.canonical}$2`
+  ).replace("</head>", `  <script>window.__AGORA_LOCALE__="es";</script>
+  </head>`);
+};
+var localizeResilienceNote = (payload, locale) => locale === "es" && typeof payload.note === "string" ? { ...payload, note: localizeNote(payload.note, locale) } : payload;
 
 // traffic-report-core.ts
 function splitSections(text) {
@@ -19561,6 +19655,27 @@ function countOnline(store, nowMs, windowMs) {
 }
 
 // chat-core.ts
+var CHAT_MESSAGES = {
+  pt: {
+    nicknameInvalid: "Apelido inv\xE1lido.",
+    nicknameEmpty: "Escolha um apelido para participar.",
+    nicknameLinks: "O apelido n\xE3o pode conter links.",
+    textInvalid: "Mensagem inv\xE1lida.",
+    textEmpty: "Digite uma mensagem.",
+    textTooLong: (max) => `A mensagem passa de ${max} caracteres.`,
+    textLinks: "A mensagem n\xE3o pode conter links."
+  },
+  es: {
+    nicknameInvalid: "Apodo inv\xE1lido.",
+    nicknameEmpty: "Elige un apodo para participar.",
+    nicknameLinks: "El apodo no puede contener enlaces.",
+    textInvalid: "Mensaje inv\xE1lido.",
+    textEmpty: "Escribe un mensaje.",
+    textTooLong: (max) => `El mensaje supera los ${max} caracteres.`,
+    textLinks: "El mensaje no puede contener enlaces."
+  }
+};
+var chatMessages = (locale) => locale === "es" ? CHAT_MESSAGES.es : CHAT_MESSAGES.pt;
 var CHAT_LIMITS = {
   /** Max characters in a nickname (clamped, then validated non-empty). */
   maxNicknameLength: 24,
@@ -19580,21 +19695,23 @@ var invalid = (reason) => ({ ok: false, value: "", reason });
 function clean(raw) {
   return raw.replace(CONTROL_CHARS, " ").replace(/\s+/g, " ").trim();
 }
-function validateNickname(raw) {
-  if (typeof raw !== "string") return invalid("Apelido inv\xE1lido.");
+function validateNickname(raw, locale = "pt") {
+  const m = chatMessages(locale);
+  if (typeof raw !== "string") return invalid(m.nicknameInvalid);
   const cleaned = clean(raw).slice(0, CHAT_LIMITS.maxNicknameLength);
-  if (!cleaned) return invalid("Escolha um apelido para participar.");
-  if (URL_PATTERN.test(cleaned)) return invalid("O apelido n\xE3o pode conter links.");
+  if (!cleaned) return invalid(m.nicknameEmpty);
+  if (URL_PATTERN.test(cleaned)) return invalid(m.nicknameLinks);
   return valid(cleaned);
 }
-function validateText(raw) {
-  if (typeof raw !== "string") return invalid("Mensagem inv\xE1lida.");
+function validateText(raw, locale = "pt") {
+  const m = chatMessages(locale);
+  if (typeof raw !== "string") return invalid(m.textInvalid);
   const cleaned = clean(raw);
-  if (!cleaned) return invalid("Digite uma mensagem.");
+  if (!cleaned) return invalid(m.textEmpty);
   if (cleaned.length > CHAT_LIMITS.maxTextLength) {
-    return invalid(`A mensagem passa de ${CHAT_LIMITS.maxTextLength} caracteres.`);
+    return invalid(m.textTooLong(CHAT_LIMITS.maxTextLength));
   }
-  if (URL_PATTERN.test(cleaned)) return invalid("A mensagem n\xE3o pode conter links.");
+  if (URL_PATTERN.test(cleaned)) return invalid(m.textLinks);
   return valid(cleaned);
 }
 function passesRateLimit(rateMap, key, nowMs, limits = CHAT_LIMITS) {
@@ -26363,6 +26480,2142 @@ var KNOCKOUT_RESULTS = {
   88: { status: "FINISHED", score: { teamA: 1, teamB: 1 }, penaltyScore: { teamA: 2, teamB: 4 } }
 };
 
+// src/i18n/catalogs/core.ts
+var coreCatalog = {
+  pt: {
+    // App shell — header, banners, controls
+    "shell.brandName": "Agora na Copa",
+    "shell.newVersion": "Nova vers\xE3o dispon\xEDvel",
+    "shell.updateNow": "Atualizar agora",
+    "shell.editClock": "Mudar Rel\xF3gio",
+    "shell.howToUse": "Como usar o app",
+    "shell.toggleTheme": "Alternar estilo visual",
+    "shell.switchLanguage": "Mudar idioma",
+    // Footer
+    "footer.rights": "\xA9 2026 Agora na Copa 26. Todos os direitos reservados. FIFA World Cup, marcas e logos s\xE3o de propriedade de seus respectivos donos.",
+    "footer.madeWith": "Desenvolvido com carinho para o fan\xE1tico por dados esportivos.",
+    "footer.credits": "Cr\xE9ditos:",
+    "footer.privacy": "Pol\xEDtica de Privacidade",
+    "footer.pageVersion": "Vers\xE3o da p\xE1gina:",
+    // Navigation (mirrors NAV_ITEMS ids)
+    "nav.dashboard.label": "Dashboard",
+    "nav.dashboard.desc": "Painel em constru\xE7\xE3o.",
+    "nav.ao-vivo.label": "Ao Vivo",
+    "nav.ao-vivo.desc": "Acompanhe o cron\xF4metro, transmiss\xF5es e lances de cada jogo.",
+    "nav.partidas.label": "Partidas",
+    "nav.partidas.desc": "Veja todos os jogos encerrados, ao vivo e agendados da Copa.",
+    "nav.grupos.label": "Grupos",
+    "nav.grupos.desc": "Tabelas de classifica\xE7\xE3o dos 12 grupos do torneio.",
+    "nav.chaveamento.label": "Mata-mata",
+    "nav.chaveamento.desc": "Mata-mata interativo at\xE9 a grande final.",
+    "nav.selecoes.label": "Sele\xE7\xF5es",
+    "nav.selecoes.desc": "Lista completa das sele\xE7\xF5es classificadas para a Copa com acesso ao painel de cada time.",
+    "nav.jogadores.label": "Jogadores",
+    "nav.jogadores.desc": "Perfis individuais dos atletas classificados para a Copa.",
+    "nav.lideres.label": "L\xEDderes",
+    "nav.lideres.desc": "Artilharia, disciplina e destaques coletivos da Copa.",
+    "nav.estadios.label": "Est\xE1dios",
+    "nav.estadios.desc": "Mapa e curiosidades das 16 sedes do Mundial.",
+    "nav.social-medias.label": "Redes Sociais",
+    "nav.social-medias.desc": "Feed social do Mundo na Copa com filtros, tend\xEAncias, curtidas e coment\xE1rios.",
+    "nav.noticias.label": "Not\xEDcias",
+    "nav.noticias.desc": "Feed de novidades sobre sele\xE7\xF5es, sedes e ingressos.",
+    "nav.fanzone.label": "Fan Zone",
+    "nav.fanzone.desc": "Quiz e minijogos para o torcedor acompanhar a Copa em clima de resenha."
+  },
+  es: {
+    // App shell
+    "shell.brandName": "Ahora en el Mundial",
+    "shell.newVersion": "Actualizaci\xF3n disponible",
+    "shell.updateNow": "Actualizar ahora",
+    "shell.editClock": "Cambiar reloj",
+    "shell.howToUse": "C\xF3mo usar la app",
+    "shell.toggleTheme": "Cambiar estilo visual",
+    "shell.switchLanguage": "Cambiar idioma",
+    // Footer
+    "footer.rights": "\xA9 2026 Ahora en el Mundial 26. Todos los derechos reservados. FIFA World Cup, marcas y logos son propiedad de sus respectivos due\xF1os.",
+    "footer.madeWith": "Hecho con cari\xF1o para el fan\xE1tico de los datos deportivos.",
+    "footer.credits": "Cr\xE9ditos:",
+    "footer.privacy": "Pol\xEDtica de Privacidad",
+    "footer.pageVersion": "Versi\xF3n de la p\xE1gina:",
+    // Navigation
+    "nav.dashboard.label": "Panel",
+    "nav.dashboard.desc": "Panel en construcci\xF3n.",
+    "nav.ao-vivo.label": "En Vivo",
+    "nav.ao-vivo.desc": "Sigue el cron\xF3metro, las transmisiones y las jugadas de cada partido.",
+    "nav.partidas.label": "Partidos",
+    "nav.partidas.desc": "Mira todos los partidos finalizados, en vivo y programados del Mundial.",
+    "nav.grupos.label": "Grupos",
+    "nav.grupos.desc": "Tablas de posiciones de los 12 grupos del torneo.",
+    "nav.chaveamento.label": "Eliminatorias",
+    "nav.chaveamento.desc": "Llave interactiva hasta la gran final.",
+    "nav.selecoes.label": "Selecciones",
+    "nav.selecoes.desc": "Lista completa de las selecciones clasificadas al Mundial con acceso al panel de cada equipo.",
+    "nav.jogadores.label": "Jugadores",
+    "nav.jogadores.desc": "Perfiles individuales de los atletas clasificados al Mundial.",
+    "nav.lideres.label": "L\xEDderes",
+    "nav.lideres.desc": "Goleo, disciplina y destacados colectivos del Mundial.",
+    "nav.estadios.label": "Estadios",
+    "nav.estadios.desc": "Mapa y curiosidades de las 16 sedes del Mundial.",
+    "nav.social-medias.label": "Redes Sociales",
+    "nav.social-medias.desc": "Feed social del Mundial con filtros, tendencias, me gusta y comentarios.",
+    "nav.noticias.label": "Noticias",
+    "nav.noticias.desc": "Feed de novedades sobre selecciones, sedes y entradas.",
+    "nav.fanzone.label": "Fan Zone",
+    "nav.fanzone.desc": "Quiz y minijuegos para que el hincha siga el Mundial en clima de charla."
+  }
+};
+
+// src/i18n/catalogs/aoVivo.ts
+var aoVivoCatalog = {
+  pt: {
+    // Header match-selector group labels
+    "aoVivo.group.finished": "Jogos conclu\xEDdos: ",
+    "aoVivo.group.live": "Jogos atuais: ",
+    "aoVivo.group.upcoming": "Pr\xF3ximos jogos: ",
+    // Incident feed badges (GOL / AM / VM / SUB / LANCE)
+    "aoVivo.incident.goal": "GOL",
+    "aoVivo.incident.yellow": "AM",
+    "aoVivo.incident.red": "VM",
+    "aoVivo.incident.sub": "SUB",
+    "aoVivo.incident.play": "LANCE",
+    // Incident text fragments (rebuilt around the highlighted player name)
+    "aoVivo.incidentText.scoredSuffix": " marcou.",
+    "aoVivo.incidentText.yellowSuffix": " recebeu amarelo.",
+    "aoVivo.incidentText.redSuffix": " foi expulso.",
+    "aoVivo.incidentText.subOut": "Sai ",
+    "aoVivo.incidentText.subIn": ", entra ",
+    // Simulated-incident texts (local demo simulator)
+    "aoVivo.sim.goalGeneric": "Gol da simula\xE7\xE3o para {teamName}. A tabela do grupo foi recalculada na hora.",
+    "aoVivo.sim.yellowGeneric": "Cart\xE3o amarelo para {teamName} na press\xE3o da simula\xE7\xE3o.",
+    "aoVivo.sim.redGeneric": "Cart\xE3o vermelho para {teamName} em lance recriado localmente.",
+    "aoVivo.sim.subGeneric": "Substitui\xE7\xE3o simulada para {teamName}.",
+    "aoVivo.sim.whistle": "Apito simulado em {teamName}.",
+    "aoVivo.sim.comment": "Atualiza\xE7\xE3o local para {teamName}.",
+    // Overlay source/updated line
+    "aoVivo.overlay.pending": "Atualiza\xE7\xE3o pendente",
+    "aoVivo.overlay.unavailable": "Atualiza\xE7\xE3o indispon\xEDvel",
+    "aoVivo.overlay.updatedAt": "Atualizado {time}",
+    "aoVivo.overlay.sourceSimulation": "Simula\xE7\xE3o local",
+    "aoVivo.overlay.sourceOfficial": "Oficial",
+    "aoVivo.overlay.sourceFallback": "Fallback local",
+    // Status line
+    "aoVivo.status.live": "AO VIVO",
+    "aoVivo.status.liveWithTime": "AO VIVO \u2022 {time}",
+    "aoVivo.status.suspended": "PARALISADO",
+    "aoVivo.status.finished": "ENCERRADO",
+    "aoVivo.status.preGame": "PR\xC9-JOGO",
+    "aoVivo.status.officialFifaTitle": "Status oficial da partida segundo a FIFA",
+    // Simultaneous-live alert + toggle
+    "aoVivo.simultaneous.liveNow": "{count} jogos ao vivo agora",
+    "aoVivo.simultaneous.tapToSwitch": "Partidas simult\xE2neas \u2014 toque para alternar:",
+    "aoVivo.simultaneous.bothAria": "Ver os dois jogos ao vivo lado a lado",
+    "aoVivo.simultaneous.both": "Os dois",
+    "aoVivo.simultaneous.matchAria": "Ver {teamA} x {teamB}",
+    // Match-selector chips (tooltips / aria)
+    "aoVivo.selector.matchTooltip": "{teamA} x {teamB}",
+    "aoVivo.selector.prevIn": "Ver jogos anteriores em {label}",
+    "aoVivo.selector.nextIn": "Ver pr\xF3ximos jogos em {label}",
+    // Clock / simulation config drawer
+    "aoVivo.config.title": "CONFIGUREM O CRON\xD4METRO MOCK",
+    "aoVivo.config.close": "Fechar [X]",
+    "aoVivo.config.narrationStatus": "Status da narra\xE7\xE3o",
+    "aoVivo.config.browserSupport": "Suporte do navegador",
+    "aoVivo.config.available": "Dispon\xEDvel",
+    "aoVivo.config.unavailable": "Indispon\xEDvel",
+    "aoVivo.config.voiceEngine": "Motor de voz (CDN)",
+    "aoVivo.config.loaded": "Carregado",
+    "aoVivo.config.loading": "Carregando\u2026",
+    "aoVivo.config.dash": "\u2014",
+    "aoVivo.config.selectedVoice": "Voz selecionada",
+    "aoVivo.config.loadingVoice": "carregando voz\u2026",
+    "aoVivo.config.voiceOnDevice": " \xB7 no aparelho",
+    "aoVivo.config.voiceOnNetwork": " \xB7 da rede",
+    "aoVivo.config.narration": "Narra\xE7\xE3o",
+    "aoVivo.config.enabled": "Ativada",
+    "aoVivo.config.disabled": "Desativada",
+    "aoVivo.config.voiceLabel": "Voz (escolha uma que fale no seu aparelho)",
+    "aoVivo.config.voiceAuto": "Autom\xE1tica (recomendada)",
+    "aoVivo.config.voiceNetworkSuffix": " \xB7 rede",
+    "aoVivo.config.testVoiceStarting": "iniciando\u2026",
+    "aoVivo.config.testVoiceTitle": "Falar uma frase de teste agora (teste direto do dispositivo)",
+    "aoVivo.config.testVoice": "Testar voz",
+    "aoVivo.config.kickoffLabel": "Hor\xE1rio Principal de Entrada:",
+    "aoVivo.config.kickoffPlaceholder": "Exemplo: 16:00",
+    "aoVivo.config.remainingLabel": "Tempo Restante (Segundos):",
+    "aoVivo.config.convertedPreview": "Previs\xE3o convertida: {value}",
+    "aoVivo.config.simulatorTitle": "Simulador de placar e disciplina",
+    "aoVivo.config.simulatorDesc": "Use o duelo Brasil x Marrocos para validar o cron\xF4metro demo e ver o Grupos reagir a gols e cart\xF5es em tempo real.",
+    "aoVivo.config.resetDemo": "Resetar demo local",
+    "aoVivo.config.startLive": "Iniciar ao vivo",
+    "aoVivo.config.goal": "Gol {code}",
+    "aoVivo.config.yellow": "Amarelo {code}",
+    "aoVivo.config.red": "Vermelho {code}",
+    "aoVivo.config.finishMatch": "Encerrar jogo",
+    "aoVivo.config.applyToMatch": "Aplicar ao Jogo",
+    // Scoreboard
+    "aoVivo.scoreboard.penaltyTitle": "Resultado da disputa por p\xEAnaltis",
+    "aoVivo.scoreboard.penaltyLabel": "P\xEAnaltis {a}",
+    "aoVivo.scoreboard.advancesOnPenalties": "{name} avan\xE7a nos p\xEAnaltis",
+    "aoVivo.scoreboard.openGroupTable": "Abrir tabela do {group}",
+    "aoVivo.scoreboard.stadiumLocalTimeTitle": "Hora local no est\xE1dio",
+    "aoVivo.scoreboard.localTime": "Hor\xE1rio local",
+    "aoVivo.scoreboard.countdown": "Faltam:",
+    "aoVivo.scoreboard.brasiliaTime": "HOR\xC1RIO DE BRAS\xCDLIA",
+    "aoVivo.scoreboard.fifaMatchPage": "P\xE1gina oficial da FIFA para esta partida",
+    "aoVivo.scoreboard.simultaneousOne": "Aten\xE7\xE3o: outro jogo no mesmo hor\xE1rio",
+    "aoVivo.scoreboard.simultaneousMany": "Aten\xE7\xE3o: outros jogos no mesmo hor\xE1rio",
+    "aoVivo.scoreboard.simultaneousTitle": "{teamA} x {teamB} \u2014 come\xE7a no mesmo hor\xE1rio",
+    "aoVivo.scoreboard.simultaneousAria": "Ver {teamA} contra {teamB}, que come\xE7a no mesmo hor\xE1rio",
+    // Tabs
+    "aoVivo.tab.broadcast": "Onde Assistir",
+    "aoVivo.tab.lineup": "Escala\xE7\xE3o",
+    "aoVivo.tab.postGame": "P\xF3s-jogo",
+    "aoVivo.tab.preGame": "Pr\xE9-jogo",
+    "aoVivo.tab.instagram": "Instagram",
+    // Broadcast guide
+    "aoVivo.broadcast.title": "Onde ver o jogo",
+    "aoVivo.broadcast.loadingNote": "Carregando dados oficiais da FIFA...",
+    "aoVivo.broadcast.videoAria": "Assistir no YouTube: {title}",
+    // Incident panel
+    "aoVivo.incidents.title": "Lances do jogo",
+    "aoVivo.incidents.feedSimulation": "Feed da simula\xE7\xE3o local",
+    "aoVivo.incidents.feedOfficial": "Feed oficial da FIFA",
+    "aoVivo.incidents.feedWaiting": "Aguardando lances oficiais da FIFA",
+    "aoVivo.incidents.clickHint": "Clique no nome destacado para abrir o card do jogador",
+    "aoVivo.incidents.empty": "Sem lances oficiais registrados pela FIFA ate agora.",
+    "aoVivo.incidents.listenPlay": "Ouvir o lance",
+    // Finished-match bar
+    "aoVivo.finished.label": "Jogos conclu\xEDdos:",
+    "aoVivo.finished.prev": "Ver jogos conclu\xEDdos anteriores",
+    "aoVivo.finished.next": "Ver pr\xF3ximos jogos conclu\xEDdos",
+    // Analysis + Instagram tabs
+    "aoVivo.analysis.highlights": "Destaques da partida",
+    "aoVivo.analysis.preview": "Pr\xE9via da partida",
+    "aoVivo.analysis.highlightsLabel": "Destaques",
+    "aoVivo.analysis.previewLabel": "Pr\xE9via",
+    "aoVivo.instagram.title": "No Instagram",
+    "aoVivo.instagram.open": "Abrir no Instagram",
+    // Lineup tab
+    "aoVivo.lineup.title": "CENTRAL T\xC1TICA E DISTRIBUI\xC7\xC3O ESPACIAL",
+    "aoVivo.lineup.desc": "Posicionamento estrat\xE9gico planejado para o confronto oficial de S\xE3o Paulo / Nova Iorque 2026.",
+    // Incident player overlay
+    "aoVivo.overlayCard.position": "Posi\xE7\xE3o",
+    "aoVivo.overlayCard.birth": "Nascimento",
+    "aoVivo.overlayCard.currentClub": "Clube atual",
+    "aoVivo.overlayCard.matchContext": "Contexto da partida",
+    "aoVivo.overlayCard.matchContextValue": "{teamName} x {opponentName}: {playerName} aparece no radar dos lances da partida."
+  },
+  es: {
+    // Header match-selector group labels
+    "aoVivo.group.finished": "Partidos finalizados: ",
+    "aoVivo.group.live": "Partidos actuales: ",
+    "aoVivo.group.upcoming": "Pr\xF3ximos partidos: ",
+    // Incident feed badges
+    "aoVivo.incident.goal": "GOL",
+    "aoVivo.incident.yellow": "AM",
+    "aoVivo.incident.red": "RJ",
+    "aoVivo.incident.sub": "CAM",
+    "aoVivo.incident.play": "JUGADA",
+    // Incident text fragments
+    "aoVivo.incidentText.scoredSuffix": " marc\xF3.",
+    "aoVivo.incidentText.yellowSuffix": " recibi\xF3 amarilla.",
+    "aoVivo.incidentText.redSuffix": " fue expulsado.",
+    "aoVivo.incidentText.subOut": "Sale ",
+    "aoVivo.incidentText.subIn": ", entra ",
+    // Simulated-incident texts
+    "aoVivo.sim.goalGeneric": "Gol de la simulaci\xF3n para {teamName}. La tabla del grupo se recalcul\xF3 al instante.",
+    "aoVivo.sim.yellowGeneric": "Tarjeta amarilla para {teamName} en la presi\xF3n de la simulaci\xF3n.",
+    "aoVivo.sim.redGeneric": "Tarjeta roja para {teamName} en una jugada recreada localmente.",
+    "aoVivo.sim.subGeneric": "Cambio simulado para {teamName}.",
+    "aoVivo.sim.whistle": "Silbato simulado en {teamName}.",
+    "aoVivo.sim.comment": "Actualizaci\xF3n local para {teamName}.",
+    // Overlay source/updated line
+    "aoVivo.overlay.pending": "Actualizaci\xF3n pendiente",
+    "aoVivo.overlay.unavailable": "Actualizaci\xF3n no disponible",
+    "aoVivo.overlay.updatedAt": "Actualizado {time}",
+    "aoVivo.overlay.sourceSimulation": "Simulaci\xF3n local",
+    "aoVivo.overlay.sourceOfficial": "Oficial",
+    "aoVivo.overlay.sourceFallback": "Respaldo local",
+    // Status line
+    "aoVivo.status.live": "EN VIVO",
+    "aoVivo.status.liveWithTime": "EN VIVO \u2022 {time}",
+    "aoVivo.status.suspended": "SUSPENDIDO",
+    "aoVivo.status.finished": "FINALIZADO",
+    "aoVivo.status.preGame": "PREVIA",
+    "aoVivo.status.officialFifaTitle": "Estado oficial del partido seg\xFAn la FIFA",
+    // Simultaneous-live alert + toggle
+    "aoVivo.simultaneous.liveNow": "{count} partidos en vivo ahora",
+    "aoVivo.simultaneous.tapToSwitch": "Partidos simult\xE1neos \u2014 toca para alternar:",
+    "aoVivo.simultaneous.bothAria": "Ver los dos partidos en vivo lado a lado",
+    "aoVivo.simultaneous.both": "Los dos",
+    "aoVivo.simultaneous.matchAria": "Ver {teamA} x {teamB}",
+    // Match-selector chips
+    "aoVivo.selector.matchTooltip": "{teamA} x {teamB}",
+    "aoVivo.selector.prevIn": "Ver partidos anteriores en {label}",
+    "aoVivo.selector.nextIn": "Ver pr\xF3ximos partidos en {label}",
+    // Clock / simulation config drawer
+    "aoVivo.config.title": "CONFIGUREN EL CRON\xD3METRO MOCK",
+    "aoVivo.config.close": "Cerrar [X]",
+    "aoVivo.config.narrationStatus": "Estado de la narraci\xF3n",
+    "aoVivo.config.browserSupport": "Soporte del navegador",
+    "aoVivo.config.available": "Disponible",
+    "aoVivo.config.unavailable": "No disponible",
+    "aoVivo.config.voiceEngine": "Motor de voz (CDN)",
+    "aoVivo.config.loaded": "Cargado",
+    "aoVivo.config.loading": "Cargando\u2026",
+    "aoVivo.config.dash": "\u2014",
+    "aoVivo.config.selectedVoice": "Voz seleccionada",
+    "aoVivo.config.loadingVoice": "cargando voz\u2026",
+    "aoVivo.config.voiceOnDevice": " \xB7 en el dispositivo",
+    "aoVivo.config.voiceOnNetwork": " \xB7 de la red",
+    "aoVivo.config.narration": "Narraci\xF3n",
+    "aoVivo.config.enabled": "Activada",
+    "aoVivo.config.disabled": "Desactivada",
+    "aoVivo.config.voiceLabel": "Voz (elige una que suene en tu dispositivo)",
+    "aoVivo.config.voiceAuto": "Autom\xE1tica (recomendada)",
+    "aoVivo.config.voiceNetworkSuffix": " \xB7 red",
+    "aoVivo.config.testVoiceStarting": "iniciando\u2026",
+    "aoVivo.config.testVoiceTitle": "Decir una frase de prueba ahora (prueba directa del dispositivo)",
+    "aoVivo.config.testVoice": "Probar voz",
+    "aoVivo.config.kickoffLabel": "Horario Principal de Inicio:",
+    "aoVivo.config.kickoffPlaceholder": "Ejemplo: 16:00",
+    "aoVivo.config.remainingLabel": "Tiempo Restante (Segundos):",
+    "aoVivo.config.convertedPreview": "Previsi\xF3n convertida: {value}",
+    "aoVivo.config.simulatorTitle": "Simulador de marcador y disciplina",
+    "aoVivo.config.simulatorDesc": "Usa el duelo Brasil x Marruecos para validar el cron\xF3metro demo y ver a Grupos reaccionar a goles y tarjetas en tiempo real.",
+    "aoVivo.config.resetDemo": "Reiniciar demo local",
+    "aoVivo.config.startLive": "Iniciar en vivo",
+    "aoVivo.config.goal": "Gol {code}",
+    "aoVivo.config.yellow": "Amarilla {code}",
+    "aoVivo.config.red": "Roja {code}",
+    "aoVivo.config.finishMatch": "Finalizar partido",
+    "aoVivo.config.applyToMatch": "Aplicar al Partido",
+    // Scoreboard
+    "aoVivo.scoreboard.penaltyTitle": "Resultado de la definici\xF3n por penales",
+    "aoVivo.scoreboard.penaltyLabel": "Penales {a}",
+    "aoVivo.scoreboard.advancesOnPenalties": "{name} avanza en los penales",
+    "aoVivo.scoreboard.openGroupTable": "Abrir tabla del {group}",
+    "aoVivo.scoreboard.stadiumLocalTimeTitle": "Hora local en el estadio",
+    "aoVivo.scoreboard.localTime": "Hora local",
+    "aoVivo.scoreboard.countdown": "Faltan:",
+    "aoVivo.scoreboard.brasiliaTime": "HORA DE BRASILIA",
+    "aoVivo.scoreboard.fifaMatchPage": "P\xE1gina oficial de la FIFA para este partido",
+    "aoVivo.scoreboard.simultaneousOne": "Atenci\xF3n: otro partido a la misma hora",
+    "aoVivo.scoreboard.simultaneousMany": "Atenci\xF3n: otros partidos a la misma hora",
+    "aoVivo.scoreboard.simultaneousTitle": "{teamA} x {teamB} \u2014 comienza a la misma hora",
+    "aoVivo.scoreboard.simultaneousAria": "Ver {teamA} contra {teamB}, que comienza a la misma hora",
+    // Tabs
+    "aoVivo.tab.broadcast": "D\xF3nde Ver",
+    "aoVivo.tab.lineup": "Alineaci\xF3n",
+    "aoVivo.tab.postGame": "Pospartido",
+    "aoVivo.tab.preGame": "Previa",
+    "aoVivo.tab.instagram": "Instagram",
+    // Broadcast guide
+    "aoVivo.broadcast.title": "D\xF3nde ver el partido",
+    "aoVivo.broadcast.loadingNote": "Cargando datos oficiales de la FIFA...",
+    "aoVivo.broadcast.videoAria": "Ver en YouTube: {title}",
+    // Incident panel
+    "aoVivo.incidents.title": "Jugadas del partido",
+    "aoVivo.incidents.feedSimulation": "Feed de la simulaci\xF3n local",
+    "aoVivo.incidents.feedOfficial": "Feed oficial de la FIFA",
+    "aoVivo.incidents.feedWaiting": "Esperando jugadas oficiales de la FIFA",
+    "aoVivo.incidents.clickHint": "Toca el nombre destacado para abrir la ficha del jugador",
+    "aoVivo.incidents.empty": "Sin jugadas oficiales registradas por la FIFA hasta ahora.",
+    "aoVivo.incidents.listenPlay": "Escuchar la jugada",
+    // Finished-match bar
+    "aoVivo.finished.label": "Partidos finalizados:",
+    "aoVivo.finished.prev": "Ver partidos finalizados anteriores",
+    "aoVivo.finished.next": "Ver pr\xF3ximos partidos finalizados",
+    // Analysis + Instagram tabs
+    "aoVivo.analysis.highlights": "Lo m\xE1s destacado del partido",
+    "aoVivo.analysis.preview": "Previa del partido",
+    "aoVivo.analysis.highlightsLabel": "Destacados",
+    "aoVivo.analysis.previewLabel": "Previa",
+    "aoVivo.instagram.title": "En Instagram",
+    "aoVivo.instagram.open": "Abrir en Instagram",
+    // Lineup tab
+    "aoVivo.lineup.title": "CENTRAL T\xC1CTICA Y DISTRIBUCI\xD3N ESPACIAL",
+    "aoVivo.lineup.desc": "Posicionamiento estrat\xE9gico planificado para el enfrentamiento oficial de S\xE3o Paulo / Nueva York 2026.",
+    // Incident player overlay
+    "aoVivo.overlayCard.position": "Posici\xF3n",
+    "aoVivo.overlayCard.birth": "Nacimiento",
+    "aoVivo.overlayCard.currentClub": "Club actual",
+    "aoVivo.overlayCard.matchContext": "Contexto del partido",
+    "aoVivo.overlayCard.matchContextValue": "{teamName} x {opponentName}: {playerName} aparece en el radar de las jugadas del partido."
+  }
+};
+
+// src/i18n/catalogs/standings.ts
+var standingsCatalog = {
+  pt: {
+    // StandingsView — header
+    "standings.title": "Tabela de Classifica\xE7\xE3o",
+    "standings.subtitle": "Fase de grupos \u2022 12 chaves de 4 sele\xE7\xF5es",
+    "standings.criteriaButtonTitle": "Crit\xE9rios de classifica\xE7\xE3o",
+    "standings.criteria": "Crit\xE9rios",
+    // StandingsView — tooltip legend hint
+    "standings.legendPrefix": "Toque ou passe o cursor sobre o",
+    "standings.legendQualified": "(classificado),",
+    "standings.legendEliminated": "(eliminado), sobre o",
+    "standings.legendThirdHighlight": "3\xBA em destaque",
+    "standings.legendThirdHint": "(aguardando a defini\xE7\xE3o dos 8 melhores terceiros) ou sobre o",
+    "standings.legendPosition": "n\xBA de posi\xE7\xE3o",
+    "standings.legendPositionHint": "(1\xBA/2\xBA ainda em disputa) para ver a an\xE1lise matem\xE1tica da situa\xE7\xE3o de cada sele\xE7\xE3o.",
+    // StandingsView — table columns
+    "standings.col.pts": "PTS",
+    "standings.col.sg": "SG",
+    "standings.col.j": "J",
+    "standings.col.v": "V",
+    "standings.col.e": "E",
+    "standings.col.d": "D",
+    "standings.col.gf": "GF",
+    "standings.col.ga": "GA",
+    "standings.col.position": "Posi\xE7\xE3o",
+    "standings.col.team": "Equipe",
+    // StandingsView — group card status
+    "standings.live": "Ao Vivo",
+    "standings.finished": "Encerrado",
+    "standings.liveMatchLine": "{teamA} {scoreA}\u2013{scoreB} {teamB} \xB7 em andamento",
+    "standings.notPlayedYet": "Resultados da fase de grupos ainda n\xE3o disputados",
+    "standings.somePending": "Alguns confrontos deste grupo ainda n\xE3o foram disputados",
+    // StandingsView — row titles/notes
+    "standings.rowTitleQualified": "Classificado matematicamente para o mata-mata",
+    "standings.rowTitleEliminated": "Eliminado da fase de grupos",
+    "standings.rowTitleAwaitingThird": "Aguardando a defini\xE7\xE3o dos 8 melhores terceiros colocados",
+    "standings.noteThirdQualified": "Terminou em 3\xBA no {group} e avan\xE7ou ao mata-mata como um dos 8 melhores terceiros colocados ({position}\xBA entre os 12).",
+    "standings.noteThirdEliminated": "Terminou em 3\xBA no {group} e est\xE1 eliminado \u2014 ficou fora dos 8 melhores terceiros colocados ({position}\xBA entre os 12).",
+    "standings.noteAwaitingThird": "Terminou em 3\xBA no {group}. Os 8 melhores terceiros colocados avan\xE7am ao mata-mata \u2014 a defini\xE7\xE3o s\xF3 sai quando todos os grupos terminarem.{suffix}",
+    "standings.noteAwaitingThirdSuffix": " Posi\xE7\xE3o provis\xF3ria entre os 12 terceiros: {position}\xBA \u2014 {status}",
+    "standings.noteAwaitingThirdInside": "dentro dos 8 que avan\xE7am.",
+    "standings.noteAwaitingThirdOutside": "fora dos 8, por enquanto.",
+    // StandingsView — group analysis section
+    "standings.groupAnalysis": "An\xE1lise do grupo",
+    // StandingsRulesCard
+    "standings.rules.title": "Crit\xE9rios de Classifica\xE7\xE3o",
+    "standings.rules.subtitle": "Artigo 13 \xB7 Regulamento FIFA WC 2026",
+    "standings.rules.close": "Fechar",
+    "standings.rules.intro": "Quando duas ou mais sele\xE7\xF5es est\xE3o empatadas em pontos ao final da fase de grupos, os crit\xE9rios abaixo s\xE3o aplicados em ordem.",
+    "standings.rules.step1": "Passo 1",
+    "standings.rules.step1Title": "Confronto direto",
+    "standings.rules.step1Desc": "Apenas os jogos entre as sele\xE7\xF5es empatadas",
+    "standings.rules.step1A": "Maior n\xFAmero de pontos entre si",
+    "standings.rules.step1B": "Maior saldo de gols nos jogos entre si",
+    "standings.rules.step1C": "Maior n\xFAmero de gols marcados nos jogos entre si",
+    "standings.rules.step2": "Passo 2",
+    "standings.rules.step2Title": "Se ainda empatadas",
+    "standings.rules.step2Desc": "Crit\xE9rios A\u2013C reaplicados ao subgrupo restante; se ainda houver empate:",
+    "standings.rules.step2D": "Maior saldo de gols em todos os jogos do grupo",
+    "standings.rules.step2E": "Maior n\xFAmero de gols marcados em todos os jogos do grupo",
+    "standings.rules.step2F": "Fair play \u2014 menor pontua\xE7\xE3o de infra\xE7\xF5es disciplinares:",
+    "standings.rules.yellowCard": "Cart\xE3o amarelo",
+    "standings.rules.yellowCardPts": "\u22121 pt",
+    "standings.rules.indirectRed": "Vermelho indireto (2 amarelos)",
+    "standings.rules.indirectRedPts": "\u22123 pts",
+    "standings.rules.directRed": "Vermelho direto",
+    "standings.rules.directRedPts": "\u22124 pts",
+    "standings.rules.yellowPlusRed": "Amarelo + vermelho direto",
+    "standings.rules.yellowPlusRedPts": "\u22125 pts",
+    "standings.rules.step3": "Passo 3",
+    "standings.rules.step3Title": "\xDAltima inst\xE2ncia",
+    "standings.rules.step3G": "Ranking FIFA/Coca-Cola Men's mais recente",
+    "standings.rules.step3H": "Edi\xE7\xF5es anteriores do ranking, retroativamente, at\xE9 haver decis\xE3o",
+    "standings.rules.best8Title": "Melhores 8 terceiros colocados",
+    "standings.rules.best8Desc": "Crit\xE9rio separado \u2014 sem confronto direto:",
+    "standings.rules.best8Order": "Pontos \u2192 Saldo de gols \u2192 Gols marcados \u2192 Fair play \u2192 Ranking FIFA",
+    "standings.rules.officialLink": "Ver regulamento oficial da FIFA",
+    // ThirdPlaceTable
+    "standings.third.title": "Melhores 3\xBA colocados",
+    "standings.third.subtitle": "8 das 12 chaves avan\xE7am pelo 3\xBA lugar \xB7 ranking provis\xF3rio",
+    "standings.third.colGroup": "Gr.",
+    "standings.third.colTeam": "Equipe",
+    "standings.third.colChance": "Chance",
+    "standings.third.colChanceTitle": "Probabilidade simulada (Monte Carlo) de avan\xE7ar ao mata-mata",
+    "standings.third.colJTitle": "Jogos disputados (encerrados + em andamento)",
+    "standings.third.colFpTitle": "Fair play (Art. 13.2f): \u22121 amarelo, \u22123 segundo amarelo, \u22124 vermelho direto",
+    "standings.third.guaranteedTitle": "Classifica\xE7\xE3o garantida ao mata-mata (100% nas simula\xE7\xF5es)",
+    "standings.third.guaranteedAria": "Classifica\xE7\xE3o garantida",
+    "standings.third.eliminatedTitle": "Eliminado: 0% de chance de ficar entre os 8 melhores 3\xBAs",
+    "standings.third.eliminatedAria": "Eliminado",
+    "standings.third.chanceCellTitle": "Probabilidade simulada de avan\xE7ar ao mata-mata",
+    "standings.third.footnote": "A linha verde marca o corte dos 8 classificados. A coluna Chance \xE9 uma probabilidade simulada (Monte Carlo) de avan\xE7ar ao mata-mata \u2014 palpite para a torcida, n\xE3o cravada de resultado. A aloca\xE7\xE3o oficial de cada 3\xBA colocado \xE0s chaves do mata-mata s\xF3 \xE9 definida ao fim da fase de grupos.",
+    "standings.third.tooltipBase": "{name} \xB7 {ord}",
+    "standings.third.tooltipOrd": "{rank}\xBA melhor 3\xBA colocado",
+    "standings.third.tooltipGuaranteed": "{name} \xB7 {ord} \u2014 classifica\xE7\xE3o ao mata-mata garantida.",
+    "standings.third.tooltipEliminated": "{name} \xB7 {ord} \u2014 eliminado: sem cen\xE1rios de ficar entre os 8 melhores 3\xBAs.",
+    "standings.third.tooltipInside": "{name} \xB7 {ord} \u2014 dentro do corte provis\xF3rio dos 8, mas sem vaga garantida ({pct}% nas simula\xE7\xF5es).",
+    "standings.third.tooltipContention": "{name} \xB7 {ord} \u2014 fora do corte provis\xF3rio dos 8, mas ainda na briga ({pct}% nas simula\xE7\xF5es).",
+    // GroupMatchHistory
+    "standings.history.title": "Hist\xF3rico de jogos",
+    "standings.history.openMatchTitle": "Abrir a partida {teamA} x {teamB}",
+    "standings.history.openMatchAria": "Abrir a partida {teamA} contra {teamB}",
+    "standings.history.live": "\u25CF ao vivo"
+  },
+  es: {
+    // StandingsView — header
+    "standings.title": "Tabla de Posiciones",
+    "standings.subtitle": "Fase de grupos \u2022 12 grupos de 4 selecciones",
+    "standings.criteriaButtonTitle": "Criterios de clasificaci\xF3n",
+    "standings.criteria": "Criterios",
+    // StandingsView — tooltip legend hint
+    "standings.legendPrefix": "Toca o pasa el cursor sobre el",
+    "standings.legendQualified": "(clasificado),",
+    "standings.legendEliminated": "(eliminado), sobre el",
+    "standings.legendThirdHighlight": "3\xBA destacado",
+    "standings.legendThirdHint": "(a la espera de la definici\xF3n de los 8 mejores terceros) o sobre el",
+    "standings.legendPosition": "n\xBA de posici\xF3n",
+    "standings.legendPositionHint": "(1\xBA/2\xBA a\xFAn en disputa) para ver el an\xE1lisis matem\xE1tico de la situaci\xF3n de cada selecci\xF3n.",
+    // StandingsView — table columns
+    "standings.col.pts": "PTS",
+    "standings.col.sg": "DG",
+    "standings.col.j": "PJ",
+    "standings.col.v": "G",
+    "standings.col.e": "E",
+    "standings.col.d": "P",
+    "standings.col.gf": "GF",
+    "standings.col.ga": "GC",
+    "standings.col.position": "Posici\xF3n",
+    "standings.col.team": "Equipo",
+    // StandingsView — group card status
+    "standings.live": "En Vivo",
+    "standings.finished": "Finalizado",
+    "standings.liveMatchLine": "{teamA} {scoreA}\u2013{scoreB} {teamB} \xB7 en curso",
+    "standings.notPlayedYet": "Resultados de la fase de grupos a\xFAn no disputados",
+    "standings.somePending": "Algunos partidos de este grupo a\xFAn no se han disputado",
+    // StandingsView — row titles/notes
+    "standings.rowTitleQualified": "Clasificado matem\xE1ticamente a las eliminatorias",
+    "standings.rowTitleEliminated": "Eliminado de la fase de grupos",
+    "standings.rowTitleAwaitingThird": "A la espera de la definici\xF3n de los 8 mejores terceros",
+    "standings.noteThirdQualified": "Termin\xF3 3\xBA en el {group} y avanz\xF3 a las eliminatorias como uno de los 8 mejores terceros ({position}\xBA entre los 12).",
+    "standings.noteThirdEliminated": "Termin\xF3 3\xBA en el {group} y est\xE1 eliminado \u2014 qued\xF3 fuera de los 8 mejores terceros ({position}\xBA entre los 12).",
+    "standings.noteAwaitingThird": "Termin\xF3 3\xBA en el {group}. Los 8 mejores terceros avanzan a las eliminatorias \u2014 la definici\xF3n solo sale cuando todos los grupos terminen.{suffix}",
+    "standings.noteAwaitingThirdSuffix": " Posici\xF3n provisional entre los 12 terceros: {position}\xBA \u2014 {status}",
+    "standings.noteAwaitingThirdInside": "dentro de los 8 que avanzan.",
+    "standings.noteAwaitingThirdOutside": "fuera de los 8, por ahora.",
+    // StandingsView — group analysis section
+    "standings.groupAnalysis": "An\xE1lisis del grupo",
+    // StandingsRulesCard
+    "standings.rules.title": "Criterios de Clasificaci\xF3n",
+    "standings.rules.subtitle": "Art\xEDculo 13 \xB7 Reglamento FIFA WC 2026",
+    "standings.rules.close": "Cerrar",
+    "standings.rules.intro": "Cuando dos o m\xE1s selecciones est\xE1n empatadas en puntos al final de la fase de grupos, los criterios de abajo se aplican en orden.",
+    "standings.rules.step1": "Paso 1",
+    "standings.rules.step1Title": "Enfrentamiento directo",
+    "standings.rules.step1Desc": "Solo los partidos entre las selecciones empatadas",
+    "standings.rules.step1A": "Mayor n\xFAmero de puntos entre s\xED",
+    "standings.rules.step1B": "Mayor diferencia de goles en los partidos entre s\xED",
+    "standings.rules.step1C": "Mayor n\xFAmero de goles marcados en los partidos entre s\xED",
+    "standings.rules.step2": "Paso 2",
+    "standings.rules.step2Title": "Si siguen empatadas",
+    "standings.rules.step2Desc": "Criterios A\u2013C reaplicados al subgrupo restante; si a\xFAn hay empate:",
+    "standings.rules.step2D": "Mayor diferencia de goles en todos los partidos del grupo",
+    "standings.rules.step2E": "Mayor n\xFAmero de goles marcados en todos los partidos del grupo",
+    "standings.rules.step2F": "Fair play \u2014 menor puntuaci\xF3n de infracciones disciplinarias:",
+    "standings.rules.yellowCard": "Tarjeta amarilla",
+    "standings.rules.yellowCardPts": "\u22121 pt",
+    "standings.rules.indirectRed": "Roja indirecta (2 amarillas)",
+    "standings.rules.indirectRedPts": "\u22123 pts",
+    "standings.rules.directRed": "Roja directa",
+    "standings.rules.directRedPts": "\u22124 pts",
+    "standings.rules.yellowPlusRed": "Amarilla + roja directa",
+    "standings.rules.yellowPlusRedPts": "\u22125 pts",
+    "standings.rules.step3": "Paso 3",
+    "standings.rules.step3Title": "\xDAltima instancia",
+    "standings.rules.step3G": "Ranking FIFA/Coca-Cola Men's m\xE1s reciente",
+    "standings.rules.step3H": "Ediciones anteriores del ranking, retroactivamente, hasta que haya decisi\xF3n",
+    "standings.rules.best8Title": "Mejores 8 terceros",
+    "standings.rules.best8Desc": "Criterio aparte \u2014 sin enfrentamiento directo:",
+    "standings.rules.best8Order": "Puntos \u2192 Diferencia de goles \u2192 Goles marcados \u2192 Fair play \u2192 Ranking FIFA",
+    "standings.rules.officialLink": "Ver el reglamento oficial de la FIFA",
+    // ThirdPlaceTable
+    "standings.third.title": "Mejores terceros",
+    "standings.third.subtitle": "8 de los 12 grupos avanzan por el 3\xBA puesto \xB7 ranking provisional",
+    "standings.third.colGroup": "Gr.",
+    "standings.third.colTeam": "Equipo",
+    "standings.third.colChance": "Chance",
+    "standings.third.colChanceTitle": "Probabilidad simulada (Monte Carlo) de avanzar a las eliminatorias",
+    "standings.third.colJTitle": "Partidos disputados (finalizados + en curso)",
+    "standings.third.colFpTitle": "Fair play (Art. 13.2f): \u22121 amarilla, \u22123 segunda amarilla, \u22124 roja directa",
+    "standings.third.guaranteedTitle": "Clasificaci\xF3n garantizada a las eliminatorias (100% en las simulaciones)",
+    "standings.third.guaranteedAria": "Clasificaci\xF3n garantizada",
+    "standings.third.eliminatedTitle": "Eliminado: 0% de chance de quedar entre los 8 mejores terceros",
+    "standings.third.eliminatedAria": "Eliminado",
+    "standings.third.chanceCellTitle": "Probabilidad simulada de avanzar a las eliminatorias",
+    "standings.third.footnote": "La l\xEDnea verde marca el corte de los 8 clasificados. La columna Chance es una probabilidad simulada (Monte Carlo) de avanzar a las eliminatorias \u2014 un pron\xF3stico para la afici\xF3n, no un resultado cerrado. La asignaci\xF3n oficial de cada tercero a los cruces de las eliminatorias solo se define al final de la fase de grupos.",
+    "standings.third.tooltipBase": "{name} \xB7 {ord}",
+    "standings.third.tooltipOrd": "{rank}\xBA mejor tercero",
+    "standings.third.tooltipGuaranteed": "{name} \xB7 {ord} \u2014 clasificaci\xF3n a las eliminatorias garantizada.",
+    "standings.third.tooltipEliminated": "{name} \xB7 {ord} \u2014 eliminado: sin escenarios de quedar entre los 8 mejores terceros.",
+    "standings.third.tooltipInside": "{name} \xB7 {ord} \u2014 dentro del corte provisional de los 8, pero sin cupo garantizado ({pct}% en las simulaciones).",
+    "standings.third.tooltipContention": "{name} \xB7 {ord} \u2014 fuera del corte provisional de los 8, pero a\xFAn en la pelea ({pct}% en las simulaciones).",
+    // GroupMatchHistory
+    "standings.history.title": "Historial de partidos",
+    "standings.history.openMatchTitle": "Abrir el partido {teamA} x {teamB}",
+    "standings.history.openMatchAria": "Abrir el partido {teamA} contra {teamB}",
+    "standings.history.live": "\u25CF en vivo"
+  }
+};
+
+// src/i18n/catalogs/teams.ts
+var teamsCatalog = {
+  pt: {
+    "teams.title": "Sele\xE7\xF5es",
+    "teams.subtitle": "Todas as 48 sele\xE7\xF5es da Copa com acesso direto ao painel completo de cada equipe",
+    "teams.legendQualified": "\u2713 Classificada",
+    "teams.legendQualifiedDesc": "vaga garantida no mata-mata",
+    "teams.legendEliminated": "\u2715 Eliminada",
+    "teams.legendEliminatedDesc": "sem chances de classifica\xE7\xE3o",
+    "teams.groupTeamCount": "{count} sele\xE7\xF5es",
+    "teams.teamStatsOne": "{code} \u2022 {points} pt \u2022 {played} {jogos}",
+    "teams.teamStatsMany": "{code} \u2022 {points} pts \u2022 {played} {jogos}",
+    "teams.gameSingular": "jogo",
+    "teams.gamePlural": "jogos",
+    "teams.qualifiedBadge": "Classificada",
+    "teams.qualifiedTitle": "Classificada para o mata-mata",
+    "teams.eliminatedBadge": "Eliminada",
+    "teams.eliminatedTitle": "Sem chances de classifica\xE7\xE3o para o mata-mata"
+  },
+  es: {
+    "teams.title": "Selecciones",
+    "teams.subtitle": "Todas las 48 selecciones del Mundial con acceso directo al panel completo de cada equipo",
+    "teams.legendQualified": "\u2713 Clasificada",
+    "teams.legendQualifiedDesc": "cupo asegurado en los octavos",
+    "teams.legendEliminated": "\u2715 Eliminada",
+    "teams.legendEliminatedDesc": "sin chances de clasificaci\xF3n",
+    "teams.groupTeamCount": "{count} selecciones",
+    "teams.teamStatsOne": "{code} \u2022 {points} pt \u2022 {played} {jogos}",
+    "teams.teamStatsMany": "{code} \u2022 {points} pts \u2022 {played} {jogos}",
+    "teams.gameSingular": "partido",
+    "teams.gamePlural": "partidos",
+    "teams.qualifiedBadge": "Clasificada",
+    "teams.qualifiedTitle": "Clasificada a la fase eliminatoria",
+    "teams.eliminatedBadge": "Eliminada",
+    "teams.eliminatedTitle": "Sin chances de clasificaci\xF3n a la fase eliminatoria"
+  }
+};
+
+// src/i18n/catalogs/partidas.ts
+var partidasCatalog = {
+  pt: {
+    // Header
+    "partidas.title": "Partidas",
+    "partidas.subtitle": "Lista compacta inspirada no placar da BBC para navegar a agenda sem polui\xE7\xE3o visual.",
+    // Filter tabs (label + short label shown per date section)
+    "partidas.filterScheduled": "Agendadas",
+    "partidas.filterScheduledShort": "Agenda",
+    "partidas.filterLive": "Ao vivo",
+    "partidas.filterLiveShort": "Ao vivo",
+    "partidas.filterFinished": "Encerradas",
+    "partidas.filterFinishedShort": "Resultados",
+    // Count copy (jogo/jogos)
+    "partidas.matchCountSingular": "{count} jogo",
+    "partidas.matchCountPlural": "{count} jogos",
+    // Phase header
+    "partidas.groupStagePhase": "Fase de Grupos",
+    "partidas.hiddenHintSingular": " oculto",
+    "partidas.hiddenHintPlural": " ocultos",
+    // Status strip — compact label
+    "partidas.statusCompact.PRE_GAME": "Agenda",
+    "partidas.statusCompact.LIVE": "Ao vivo",
+    "partidas.statusCompact.SUSPENDED": "Paralisado",
+    "partidas.statusCompact.FINISHED": "FT",
+    // Status — accessible (aria) label
+    "partidas.statusAccessible.PRE_GAME": "Agendada",
+    "partidas.statusAccessible.LIVE": "Ao vivo",
+    "partidas.statusAccessible.SUSPENDED": "Jogo paralisado",
+    "partidas.statusAccessible.FINISHED": "Encerrada",
+    // Center scoreboard display
+    "partidas.kickoff": "Kickoff",
+    "partidas.penalties": "P\xEAn. {teamA} x {teamB}",
+    "partidas.fullTimeLong": "Final",
+    "partidas.inPlay": "Em jogo",
+    "partidas.suspended": "Paralisado",
+    // Provisional-team badge
+    "partidas.qualifiedProvisional": "Classificado (provis\xF3rio)",
+    "partidas.provAbbrev": "prov.",
+    // Empty state
+    "partidas.emptyState": "Nenhuma partida nesta faixa no momento."
+  },
+  es: {
+    // Header
+    "partidas.title": "Partidos",
+    "partidas.subtitle": "Lista compacta inspirada en el marcador de la BBC para navegar la agenda sin ruido visual.",
+    // Filter tabs
+    "partidas.filterScheduled": "Programados",
+    "partidas.filterScheduledShort": "Agenda",
+    "partidas.filterLive": "En vivo",
+    "partidas.filterLiveShort": "En vivo",
+    "partidas.filterFinished": "Finalizados",
+    "partidas.filterFinishedShort": "Resultados",
+    // Count copy (partido/partidos)
+    "partidas.matchCountSingular": "{count} partido",
+    "partidas.matchCountPlural": "{count} partidos",
+    // Phase header
+    "partidas.groupStagePhase": "Fase de Grupos",
+    "partidas.hiddenHintSingular": " oculto",
+    "partidas.hiddenHintPlural": " ocultos",
+    // Status strip — compact label
+    "partidas.statusCompact.PRE_GAME": "Agenda",
+    "partidas.statusCompact.LIVE": "En vivo",
+    "partidas.statusCompact.SUSPENDED": "Detenido",
+    "partidas.statusCompact.FINISHED": "FT",
+    // Status — accessible (aria) label
+    "partidas.statusAccessible.PRE_GAME": "Programado",
+    "partidas.statusAccessible.LIVE": "En vivo",
+    "partidas.statusAccessible.SUSPENDED": "Partido detenido",
+    "partidas.statusAccessible.FINISHED": "Finalizado",
+    // Center scoreboard display
+    "partidas.kickoff": "Inicio",
+    "partidas.penalties": "Pen. {teamA} x {teamB}",
+    "partidas.fullTimeLong": "Final",
+    "partidas.inPlay": "En juego",
+    "partidas.suspended": "Detenido",
+    // Provisional-team badge
+    "partidas.qualifiedProvisional": "Clasificado (provisional)",
+    "partidas.provAbbrev": "prov.",
+    // Empty state
+    "partidas.emptyState": "No hay partidos en esta franja por ahora."
+  }
+};
+
+// src/i18n/catalogs/common.ts
+var commonCatalog = {
+  pt: {
+    // MatchWeatherChip
+    "common.weatherChip.title": "Ver previs\xE3o do tempo do est\xE1dio \u2022 Sensa\xE7\xE3o {apparent}\xB0 \u2022 Umidade {humidity}% \u2022 Vento {wind} km/h",
+    "common.weatherChip.ariaLabel": "Clima no est\xE1dio: {description}, {temperature} graus. Abrir a previs\xE3o do tempo.",
+    // RefereeChip
+    "common.referee.caption": "\xC1rbitro",
+    "common.referee.titleWithCountry": "\xC1rbitro da partida: {name} ({country})",
+    "common.referee.title": "\xC1rbitro da partida: {name}",
+    "common.referee.labelWithCountry": "\xC1rbitro: {name}, {country}",
+    "common.referee.label": "\xC1rbitro: {name}",
+    "common.referee.openCard": "{label} \u2014 abrir card do \xE1rbitro",
+    // WeatherSuspensionNotice
+    "common.weatherSuspension.title": "Abrir o regulamento da FIFA sobre partidas suspensas",
+    "common.weatherSuspension.text": "Partida paralisada \u2014 protocolo da FIFA para suspens\xE3o por condi\xE7\xF5es de tempo",
+    // AnalysisFreshnessBadge
+    "common.freshness.upToDateTitle": "A an\xE1lise reflete o \xFAltimo jogo",
+    "common.freshness.staleTitle": "A an\xE1lise est\xE1 atr\xE1s do \xFAltimo jogo",
+    "common.freshness.upToDate": "Atualizada",
+    "common.freshness.stale": "Desatualizada"
+  },
+  es: {
+    // MatchWeatherChip
+    "common.weatherChip.title": "Ver el pron\xF3stico del tiempo del estadio \u2022 Sensaci\xF3n {apparent}\xB0 \u2022 Humedad {humidity}% \u2022 Viento {wind} km/h",
+    "common.weatherChip.ariaLabel": "Clima en el estadio: {description}, {temperature} grados. Abrir el pron\xF3stico del tiempo.",
+    // RefereeChip
+    "common.referee.caption": "\xC1rbitro",
+    "common.referee.titleWithCountry": "\xC1rbitro del partido: {name} ({country})",
+    "common.referee.title": "\xC1rbitro del partido: {name}",
+    "common.referee.labelWithCountry": "\xC1rbitro: {name}, {country}",
+    "common.referee.label": "\xC1rbitro: {name}",
+    "common.referee.openCard": "{label} \u2014 abrir la tarjeta del \xE1rbitro",
+    // WeatherSuspensionNotice
+    "common.weatherSuspension.title": "Abrir el reglamento de la FIFA sobre partidos suspendidos",
+    "common.weatherSuspension.text": "Partido suspendido \u2014 protocolo de la FIFA para suspensi\xF3n por condiciones clim\xE1ticas",
+    // AnalysisFreshnessBadge
+    "common.freshness.upToDateTitle": "El an\xE1lisis refleja el \xFAltimo partido",
+    "common.freshness.staleTitle": "El an\xE1lisis est\xE1 detr\xE1s del \xFAltimo partido",
+    "common.freshness.upToDate": "Actualizada",
+    "common.freshness.stale": "Desactualizada"
+  }
+};
+
+// src/i18n/catalogs/jogadores.ts
+var jogadoresCatalog = {
+  pt: {
+    "jogadores.title": "Jogadores",
+    "jogadores.viewProfileOf": "Ver perfil de {name}",
+    "jogadores.legendBadge": "Lenda",
+    "jogadores.instagramVerified": "Instagram verificado",
+    "jogadores.teamPlayerCount": "{group} \xB7 {count} jogadores",
+    "jogadores.viewLineupOf": "Ver escala\xE7\xE3o de {name}",
+    "jogadores.searchPlaceholder": "Buscar jogador...",
+    "jogadores.searchAriaLabel": "Buscar jogador por nome",
+    "jogadores.clearSearch": "Limpar busca",
+    "jogadores.teamFilterLabel": "Sele\xE7\xE3o",
+    "jogadores.filterByTeam": "Filtrar por sele\xE7\xE3o",
+    "jogadores.allTeams": "Todas as sele\xE7\xF5es",
+    "jogadores.starsFilter": "\u2605 Craques da Copa",
+    "jogadores.starsFilterTitle": "Mostrar s\xF3 os craques da Copa",
+    "jogadores.clearAllFilters": "Ver todas \xD7",
+    "jogadores.subtitleFiltered": "{count} atleta{plural} encontrado{plural}",
+    "jogadores.subtitleAll": "{teams} sele\xE7\xF5es \xB7 {players} atletas",
+    "jogadores.emptyTitle": "Nenhum jogador encontrado",
+    "jogadores.emptyHint": "Tente outro nome ou sele\xE7\xE3o",
+    "jogadores.detailPosition": "Posi\xE7\xE3o",
+    "jogadores.detailBirth": "Nascimento"
+  },
+  es: {
+    "jogadores.title": "Jugadores",
+    "jogadores.viewProfileOf": "Ver perfil de {name}",
+    "jogadores.legendBadge": "Leyenda",
+    "jogadores.instagramVerified": "Instagram verificado",
+    "jogadores.teamPlayerCount": "{group} \xB7 {count} jugadores",
+    "jogadores.viewLineupOf": "Ver alineaci\xF3n de {name}",
+    "jogadores.searchPlaceholder": "Buscar jugador...",
+    "jogadores.searchAriaLabel": "Buscar jugador por nombre",
+    "jogadores.clearSearch": "Limpiar b\xFAsqueda",
+    "jogadores.teamFilterLabel": "Selecci\xF3n",
+    "jogadores.filterByTeam": "Filtrar por selecci\xF3n",
+    "jogadores.allTeams": "Todas las selecciones",
+    "jogadores.starsFilter": "\u2605 Cracks del Mundial",
+    "jogadores.starsFilterTitle": "Mostrar solo los cracks del Mundial",
+    "jogadores.clearAllFilters": "Ver todas \xD7",
+    "jogadores.subtitleFiltered": "{count} atleta{plural} encontrado{plural}",
+    "jogadores.subtitleAll": "{teams} selecciones \xB7 {players} atletas",
+    "jogadores.emptyTitle": "Ning\xFAn jugador encontrado",
+    "jogadores.emptyHint": "Prueba con otro nombre o selecci\xF3n",
+    "jogadores.detailPosition": "Posici\xF3n",
+    "jogadores.detailBirth": "Nacimiento"
+  }
+};
+
+// src/i18n/catalogs/lideres.ts
+var lideresCatalog = {
+  pt: {
+    "lideres.title": "L\xEDderes do Torneio",
+    "lideres.subtitle": "Artilharia, disciplina e destaques coletivos da Copa",
+    "lideres.updatedAt": "Atualizado {time}",
+    "lideres.updateUnavailable": "Atualiza\xE7\xE3o indispon\xEDvel",
+    "lideres.updatePending": "Atualiza\xE7\xE3o pendente",
+    "lideres.loading": "Carregando o radar de l\xEDderes oficiais da competi\xE7\xE3o...",
+    "lideres.error": "N\xE3o foi poss\xEDvel carregar os l\xEDderes do torneio agora.",
+    "lideres.playerEmpty": "A FIFA ainda n\xE3o registrou ocorr\xEAncias suficientes para este ranking.",
+    "lideres.teamEmpty": "Ainda n\xE3o h\xE1 partidas suficientes para montar este ranking coletivo.",
+    "lideres.photoAlt": "Foto de {name}",
+    "lideres.openTeamPanel": "Abrir painel completo de {team}",
+    "lideres.shirt": "Camisa {number}",
+    "lideres.topScorersTitle": "Artilharia",
+    "lideres.topScorersSubtitle": "Quem mais balan\xE7ou as redes",
+    "lideres.yellowCardsTitle": "Cart\xF5es Amarelos",
+    "lideres.yellowCardsSubtitle": "Mais advertidos do torneio",
+    "lideres.redCardsTitle": "Cart\xF5es Vermelhos",
+    "lideres.redCardsSubtitle": "Expuls\xF5es registradas",
+    "lideres.bestAttackTitle": "Melhores Ataques",
+    "lideres.bestAttackSubtitle": "Mais gols marcados",
+    "lideres.bestDefenseTitle": "Melhores Defesas",
+    "lideres.bestDefenseSubtitle": "Menos gols sofridos",
+    "lideres.cleanSheetsTitle": "Clean Sheets",
+    "lideres.cleanSheetsSubtitle": "Jogos sem sofrer gols",
+    "lideres.goalsOne": "{count} gol",
+    "lideres.goalsMany": "{count} gols",
+    "lideres.yellowsOne": "{count} amarelo",
+    "lideres.yellowsMany": "{count} amarelos",
+    "lideres.redsOne": "{count} vermelho",
+    "lideres.redsMany": "{count} vermelhos",
+    "lideres.concededOne": "{count} sofrido",
+    "lideres.concededMany": "{count} sofridos",
+    "lideres.cleanSheetOne": "{count} clean sheet",
+    "lideres.cleanSheetMany": "{count} clean sheets",
+    "lideres.attackDetail": "{matches} \u2022 {wins}",
+    "lideres.matchesOne": "{count} jogo",
+    "lideres.matchesMany": "{count} jogos",
+    "lideres.winsOne": "{count} vit\xF3ria",
+    "lideres.winsMany": "{count} vit\xF3rias",
+    "lideres.defenseDetail": "{cleanSheets} \u2022 {matches}",
+    "lideres.cleanSheetsDetail": "{goalsAgainst} sofrido{plural} \u2022 {matches}",
+    "lideres.statGoals": "Gols",
+    "lideres.statYellows": "Amarelos",
+    "lideres.statReds": "Vermelhos",
+    "lideres.detailClub": "Clube atual",
+    "lideres.detailPosition": "Posi\xE7\xE3o",
+    "lideres.officialHighlight": "Destaque oficial do torneio para {team}."
+  },
+  es: {
+    "lideres.title": "L\xEDderes del Torneo",
+    "lideres.subtitle": "Goleo, disciplina y destacados colectivos del Mundial",
+    "lideres.updatedAt": "Actualizado {time}",
+    "lideres.updateUnavailable": "Actualizaci\xF3n no disponible",
+    "lideres.updatePending": "Actualizaci\xF3n pendiente",
+    "lideres.loading": "Cargando el radar de l\xEDderes oficiales de la competici\xF3n...",
+    "lideres.error": "No se pudieron cargar los l\xEDderes del torneo ahora.",
+    "lideres.playerEmpty": "La FIFA a\xFAn no registr\xF3 incidencias suficientes para este ranking.",
+    "lideres.teamEmpty": "Todav\xEDa no hay partidos suficientes para armar este ranking colectivo.",
+    "lideres.photoAlt": "Foto de {name}",
+    "lideres.openTeamPanel": "Abrir panel completo de {team}",
+    "lideres.shirt": "Camiseta {number}",
+    "lideres.topScorersTitle": "Goleo",
+    "lideres.topScorersSubtitle": "Qui\xE9nes m\xE1s sacudieron las redes",
+    "lideres.yellowCardsTitle": "Tarjetas Amarillas",
+    "lideres.yellowCardsSubtitle": "Los m\xE1s amonestados del torneo",
+    "lideres.redCardsTitle": "Tarjetas Rojas",
+    "lideres.redCardsSubtitle": "Expulsiones registradas",
+    "lideres.bestAttackTitle": "Mejores Ataques",
+    "lideres.bestAttackSubtitle": "M\xE1s goles marcados",
+    "lideres.bestDefenseTitle": "Mejores Defensas",
+    "lideres.bestDefenseSubtitle": "Menos goles recibidos",
+    "lideres.cleanSheetsTitle": "Vallas Invictas",
+    "lideres.cleanSheetsSubtitle": "Partidos sin recibir goles",
+    "lideres.goalsOne": "{count} gol",
+    "lideres.goalsMany": "{count} goles",
+    "lideres.yellowsOne": "{count} amarilla",
+    "lideres.yellowsMany": "{count} amarillas",
+    "lideres.redsOne": "{count} roja",
+    "lideres.redsMany": "{count} rojas",
+    "lideres.concededOne": "{count} recibido",
+    "lideres.concededMany": "{count} recibidos",
+    "lideres.cleanSheetOne": "{count} valla invicta",
+    "lideres.cleanSheetMany": "{count} vallas invictas",
+    "lideres.attackDetail": "{matches} \u2022 {wins}",
+    "lideres.matchesOne": "{count} partido",
+    "lideres.matchesMany": "{count} partidos",
+    "lideres.winsOne": "{count} victoria",
+    "lideres.winsMany": "{count} victorias",
+    "lideres.defenseDetail": "{cleanSheets} \u2022 {matches}",
+    "lideres.cleanSheetsDetail": "{goalsAgainst} recibido{plural} \u2022 {matches}",
+    "lideres.statGoals": "Goles",
+    "lideres.statYellows": "Amarillas",
+    "lideres.statReds": "Rojas",
+    "lideres.detailClub": "Club actual",
+    "lideres.detailPosition": "Posici\xF3n",
+    "lideres.officialHighlight": "Destacado oficial del torneo por {team}."
+  }
+};
+
+// src/i18n/catalogs/bracket.ts
+var bracketCatalog = {
+  pt: {
+    // Stage labels (per-stage columns)
+    "bracket.stage.R32": "16 avos",
+    "bracket.stage.R16": "Oitavas",
+    "bracket.stage.QF": "Quartas",
+    "bracket.stage.SF": "Semifinais",
+    "bracket.stage.TP": "3\xBA lugar",
+    "bracket.stage.F": "Final",
+    // Stage labels (short, full-bracket column headers)
+    "bracket.stageShort.R32": "16-avos",
+    "bracket.stageShort.R16": "Oitavas",
+    "bracket.stageShort.QF": "Quartas",
+    "bracket.stageShort.SF": "Semis",
+    "bracket.stageShort.TP": "3\xBA lugar",
+    "bracket.stageShort.F": "Final",
+    // Slot row markers
+    "bracket.slot.qualified": "Classificado",
+    "bracket.slot.eliminated": "Eliminado",
+    "bracket.slot.provisionalShort": "prov.",
+    "bracket.slot.viewTeam": "Ver sele\xE7\xE3o {name}",
+    // Column subheading (confronto count)
+    "bracket.column.confrontoSingular": "{count} confronto",
+    "bracket.column.confrontoPlural": "{count} confrontos",
+    "bracket.column.finalSummary": "Grande final em East Rutherford",
+    "bracket.column.thirdPlaceSummary": "Disputa do 3\xBA lugar",
+    // View header
+    "bracket.title": "Mata-mata da Copa",
+    "bracket.subtitle": "Tabela oficial da FIFA \u2022 datas no hor\xE1rio de Bras\xEDlia \u2022 vagas dos 16 avos preenchidas provisoriamente pela classifica\xE7\xE3o atual",
+    "bracket.route.title": "Rota at\xE9 MetLife Stadium",
+    "bracket.route.subtitle": "East Rutherford \u2022 16 avos \u2192 final \u2022 inclui a disputa do 3\xBA lugar",
+    // View toggle
+    "bracket.toggle.aria": "Modo de visualiza\xE7\xE3o do mata-mata",
+    "bracket.toggle.columns": "Colunas",
+    "bracket.toggle.full": "Chave completa",
+    // Legend
+    "bracket.legend.qualified": "Classificado",
+    "bracket.legend.provisional": "prov. Provis\xF3rio",
+    "bracket.legend.bestThird": "Melhor 3\xBA",
+    "bracket.legend.officialLabels": "Demais vagas: r\xF3tulos oficiais",
+    // Full bracket
+    "bracket.full.openTeam": "Abrir sele\xE7\xE3o {name}",
+    "bracket.full.rotateHint": "Gire o celular para o modo horizontal para ver a chave completa",
+    // Predictor panel
+    "bracket.predictor.title": "Palpite do confronto",
+    "bracket.predictor.subtitle": "Escolha um cruzamento j\xE1 definido do mata-mata e gere um progn\xF3stico por um modelo estat\xEDstico (Poisson/Dixon-Coles) sobre a campanha atual das sele\xE7\xF5es.",
+    "bracket.predictor.simulated": "Simulado",
+    "bracket.predictor.empty": "Nenhum confronto do mata-mata tem as duas vagas definidas ainda. Assim que a classifica\xE7\xE3o preencher os dois lados de um jogo, o palpite aparece aqui.",
+    "bracket.predictor.confrontoLabel": "Confronto",
+    "bracket.predictor.loading": "Gerando palpite\u2026",
+    "bracket.predictor.simulatedBadge": "Palpite simulado",
+    "bracket.predictor.prognosisFallback": "Progn\xF3stico",
+    "bracket.predictor.error": "N\xE3o foi poss\xEDvel gerar o palpite agora. Tente escolher o confronto novamente."
+  },
+  es: {
+    // Stage labels (per-stage columns)
+    "bracket.stage.R32": "16avos",
+    "bracket.stage.R16": "Octavos",
+    "bracket.stage.QF": "Cuartos",
+    "bracket.stage.SF": "Semifinales",
+    "bracket.stage.TP": "3\xBA puesto",
+    "bracket.stage.F": "Final",
+    // Stage labels (short, full-bracket column headers)
+    "bracket.stageShort.R32": "16avos",
+    "bracket.stageShort.R16": "Octavos",
+    "bracket.stageShort.QF": "Cuartos",
+    "bracket.stageShort.SF": "Semis",
+    "bracket.stageShort.TP": "3\xBA puesto",
+    "bracket.stageShort.F": "Final",
+    // Slot row markers
+    "bracket.slot.qualified": "Clasificado",
+    "bracket.slot.eliminated": "Eliminado",
+    "bracket.slot.provisionalShort": "prov.",
+    "bracket.slot.viewTeam": "Ver selecci\xF3n {name}",
+    // Column subheading (confronto count)
+    "bracket.column.confrontoSingular": "{count} cruce",
+    "bracket.column.confrontoPlural": "{count} cruces",
+    "bracket.column.finalSummary": "Gran final en East Rutherford",
+    "bracket.column.thirdPlaceSummary": "Partido por el tercer puesto",
+    // View header
+    "bracket.title": "Eliminatorias del Mundial",
+    "bracket.subtitle": "Cuadro oficial de la FIFA \u2022 fechas en horario de Brasilia \u2022 cupos de los 16avos completados provisionalmente seg\xFAn la clasificaci\xF3n actual",
+    "bracket.route.title": "Ruta al MetLife Stadium",
+    "bracket.route.subtitle": "East Rutherford \u2022 16avos \u2192 final \u2022 incluye el partido por el tercer puesto",
+    // View toggle
+    "bracket.toggle.aria": "Modo de visualizaci\xF3n de las eliminatorias",
+    "bracket.toggle.columns": "Columnas",
+    "bracket.toggle.full": "Cuadro completo",
+    // Legend
+    "bracket.legend.qualified": "Clasificado",
+    "bracket.legend.provisional": "prov. Provisional",
+    "bracket.legend.bestThird": "Mejor 3\xBA",
+    "bracket.legend.officialLabels": "Dem\xE1s cupos: etiquetas oficiales",
+    // Full bracket
+    "bracket.full.openTeam": "Abrir selecci\xF3n {name}",
+    "bracket.full.rotateHint": "Gira el tel\xE9fono al modo horizontal para ver el cuadro completo",
+    // Predictor panel
+    "bracket.predictor.title": "Pron\xF3stico del cruce",
+    "bracket.predictor.subtitle": "Elige un cruce ya definido de las eliminatorias y genera un pron\xF3stico con un modelo estad\xEDstico (Poisson/Dixon-Coles) sobre la campa\xF1a actual de las selecciones.",
+    "bracket.predictor.simulated": "Simulado",
+    "bracket.predictor.empty": "Ning\xFAn cruce de las eliminatorias tiene los dos cupos definidos todav\xEDa. En cuanto la clasificaci\xF3n complete los dos lados de un partido, el pron\xF3stico aparece aqu\xED.",
+    "bracket.predictor.confrontoLabel": "Cruce",
+    "bracket.predictor.loading": "Generando pron\xF3stico\u2026",
+    "bracket.predictor.simulatedBadge": "Pron\xF3stico simulado",
+    "bracket.predictor.prognosisFallback": "Pron\xF3stico",
+    "bracket.predictor.error": "No se pudo generar el pron\xF3stico ahora. Intenta elegir el cruce nuevamente."
+  }
+};
+
+// src/i18n/catalogs/playerCard.ts
+var playerCardCatalog = {
+  pt: {
+    // Shared chrome
+    "playerCard.close": "Fechar",
+    "playerCard.openInstagram": "Abrir no Instagram",
+    "playerCard.instagramHighlightOne": "Destaque no Instagram",
+    "playerCard.instagramHighlightMany": "Destaques no Instagram",
+    // Player stat / detail labels (buildPlayerStatCells / buildTournamentStatCells)
+    "playerCard.stat.shirt": "Camisa",
+    "playerCard.stat.age": "Idade",
+    "playerCard.stat.height": "Altura",
+    "playerCard.stat.goals": "Gols",
+    "playerCard.stat.yellows": "Amarelos",
+    "playerCard.stat.reds": "Vermelhos",
+    // Social platform labels
+    "playerCard.social.site": "Site oficial",
+    "playerCard.social.wikipedia": "Wikip\xE9dia",
+    "playerCard.social.followers": "seguidores",
+    // Birth-date month abbreviations (formatBirthDate)
+    "playerCard.month.jan": "jan.",
+    "playerCard.month.feb": "fev.",
+    "playerCard.month.mar": "mar.",
+    "playerCard.month.apr": "abr.",
+    "playerCard.month.may": "mai.",
+    "playerCard.month.jun": "jun.",
+    "playerCard.month.jul": "jul.",
+    "playerCard.month.aug": "ago.",
+    "playerCard.month.sep": "set.",
+    "playerCard.month.oct": "out.",
+    "playerCard.month.nov": "nov.",
+    "playerCard.month.dec": "dez.",
+    // Player overlay card
+    "playerCard.photoAlt": "Foto de {name}",
+    "playerCard.signatureAlt": "Assinatura de {name}",
+    "playerCard.zoomedPhotoAlt": "Foto ampliada de {name}",
+    "playerCard.eyebrow": "Card completo do jogador",
+    "playerCard.openTeamPanel": "Abrir painel completo de {team}",
+    "playerCard.openFullPhoto": "Abrir foto em tamanho real",
+    "playerCard.officialSocials": "Redes oficiais",
+    "playerCard.webSearch": "Pesquisar na web",
+    "playerCard.news": "Not\xEDcias",
+    // Coach card
+    "playerCard.coachEyebrow": "Card do treinador",
+    "playerCard.coachRole": "T\xE9cnico",
+    "playerCard.coachRoleTeam": "T\xE9cnico \u2022 {team}",
+    "playerCard.coachGames": "Jogos",
+    "playerCard.coachWins": "Vit\xF3rias",
+    "playerCard.coachDraws": "Empates",
+    "playerCard.coachLosses": "Derrotas",
+    "playerCard.coachGoals": "Gols (pr\xF3 / contra)",
+    "playerCard.coachGoalDiff": "Saldo",
+    "playerCard.coachPhotoCredit": "Foto:",
+    // Referee card
+    "playerCard.refereeEyebrow": "Card do \xE1rbitro",
+    "playerCard.refereeRole": "\xC1rbitro(a)",
+    "playerCard.refereeRoleCountry": "\xC1rbitro(a) \u2022 {country}",
+    "playerCard.refereeBlurb": "\xC1rbitro(a) principal designado(a) pela FIFA para a partida."
+  },
+  es: {
+    // Shared chrome
+    "playerCard.close": "Cerrar",
+    "playerCard.openInstagram": "Abrir en Instagram",
+    "playerCard.instagramHighlightOne": "Destacado en Instagram",
+    "playerCard.instagramHighlightMany": "Destacados en Instagram",
+    // Player stat / detail labels
+    "playerCard.stat.shirt": "N\xFAmero",
+    "playerCard.stat.age": "Edad",
+    "playerCard.stat.height": "Altura",
+    "playerCard.stat.goals": "Goles",
+    "playerCard.stat.yellows": "Amarillas",
+    "playerCard.stat.reds": "Rojas",
+    // Social platform labels
+    "playerCard.social.site": "Sitio oficial",
+    "playerCard.social.wikipedia": "Wikipedia",
+    "playerCard.social.followers": "seguidores",
+    // Birth-date month abbreviations
+    "playerCard.month.jan": "ene.",
+    "playerCard.month.feb": "feb.",
+    "playerCard.month.mar": "mar.",
+    "playerCard.month.apr": "abr.",
+    "playerCard.month.may": "may.",
+    "playerCard.month.jun": "jun.",
+    "playerCard.month.jul": "jul.",
+    "playerCard.month.aug": "ago.",
+    "playerCard.month.sep": "sep.",
+    "playerCard.month.oct": "oct.",
+    "playerCard.month.nov": "nov.",
+    "playerCard.month.dec": "dic.",
+    // Player overlay card
+    "playerCard.photoAlt": "Foto de {name}",
+    "playerCard.signatureAlt": "Firma de {name}",
+    "playerCard.zoomedPhotoAlt": "Foto ampliada de {name}",
+    "playerCard.eyebrow": "Ficha completa del jugador",
+    "playerCard.openTeamPanel": "Abrir el panel completo de {team}",
+    "playerCard.openFullPhoto": "Abrir foto en tama\xF1o real",
+    "playerCard.officialSocials": "Redes oficiales",
+    "playerCard.webSearch": "Buscar en la web",
+    "playerCard.news": "Noticias",
+    // Coach card
+    "playerCard.coachEyebrow": "Ficha del DT",
+    "playerCard.coachRole": "DT",
+    "playerCard.coachRoleTeam": "DT \u2022 {team}",
+    "playerCard.coachGames": "Partidos",
+    "playerCard.coachWins": "Victorias",
+    "playerCard.coachDraws": "Empates",
+    "playerCard.coachLosses": "Derrotas",
+    "playerCard.coachGoals": "Goles (a favor / en contra)",
+    "playerCard.coachGoalDiff": "Diferencia",
+    "playerCard.coachPhotoCredit": "Foto:",
+    // Referee card
+    "playerCard.refereeEyebrow": "Ficha del \xE1rbitro",
+    "playerCard.refereeRole": "\xC1rbitro(a)",
+    "playerCard.refereeRoleCountry": "\xC1rbitro(a) \u2022 {country}",
+    "playerCard.refereeBlurb": "\xC1rbitro(a) principal designado(a) por la FIFA para el partido."
+  }
+};
+
+// src/i18n/catalogs/venuesNews.ts
+var venuesNewsCatalog = {
+  pt: {
+    // Country labels
+    "venuesNews.country.USA": "Estados Unidos",
+    "venuesNews.country.MEX": "M\xE9xico",
+    "venuesNews.country.CAN": "Canad\xE1",
+    // VenueMapView — header
+    "venuesNews.venues.title": "Est\xE1dios da Copa",
+    "venuesNews.venues.subtitle": "16 sedes \u2022 mapa real com OpenStreetMap \u2022 explora\xE7\xE3o por cidade anfitri\xE3",
+    // VenueMapView — map panel
+    "venuesNews.venues.mapTitle": "Rotas do Mundial",
+    "venuesNews.venues.mapHint": "Navegue pelo mapa, aplique zoom e toque em um marcador para abrir a sede",
+    "venuesNews.venues.mapDescription": "Explore as 16 sedes em escala real, com zoom livre entre Canad\xE1, Estados Unidos e M\xE9xico.",
+    // VenueMapView — mobile list
+    "venuesNews.venues.matchCount": "{count} jogos",
+    // VenueMapView — detail panel
+    "venuesNews.venues.selectedVenue": "Sede selecionada",
+    "venuesNews.venues.highlightedMatches": "{count} partidas em destaque",
+    "venuesNews.venues.capacity": "Capacidade",
+    "venuesNews.venues.inauguration": "Inaugura\xE7\xE3o",
+    "venuesNews.venues.arenaXRay": "Raio-X da arena",
+    "venuesNews.venues.matchesHere": "Jogos nesta sede",
+    "venuesNews.venues.matchesHereHint": "Cruzamento com as partidas em destaque do app",
+    "venuesNews.venues.noMatches": "Esta arena ainda n\xE3o recebeu nenhuma das partidas em destaque da p\xE1gina.",
+    // NewsView — header
+    "venuesNews.news.title": "Central de Not\xEDcias",
+    "venuesNews.news.subtitle": "Atualiza\xE7\xF5es sobre sedes, ingressos, sele\xE7\xF5es e bastidores do Mundial",
+    "venuesNews.news.highlightsCount": "{count} destaques em foco",
+    // NewsView — filters
+    "venuesNews.news.filterAll": "Todas",
+    "venuesNews.news.filterVenues": "Sedes",
+    "venuesNews.news.filterTickets": "Ingressos",
+    "venuesNews.news.filterTeams": "Equipes",
+    "venuesNews.news.filterGeneral": "Geral"
+  },
+  es: {
+    // Country labels
+    "venuesNews.country.USA": "Estados Unidos",
+    "venuesNews.country.MEX": "M\xE9xico",
+    "venuesNews.country.CAN": "Canad\xE1",
+    // VenueMapView — header
+    "venuesNews.venues.title": "Estadios del Mundial",
+    "venuesNews.venues.subtitle": "16 sedes \u2022 mapa real con OpenStreetMap \u2022 exploraci\xF3n por ciudad anfitriona",
+    // VenueMapView — map panel
+    "venuesNews.venues.mapTitle": "Rutas del Mundial",
+    "venuesNews.venues.mapHint": "Navega por el mapa, aplica zoom y toca un marcador para abrir la sede",
+    "venuesNews.venues.mapDescription": "Explora las 16 sedes a escala real, con zoom libre entre Canad\xE1, Estados Unidos y M\xE9xico.",
+    // VenueMapView — mobile list
+    "venuesNews.venues.matchCount": "{count} partidos",
+    // VenueMapView — detail panel
+    "venuesNews.venues.selectedVenue": "Sede seleccionada",
+    "venuesNews.venues.highlightedMatches": "{count} partidos destacados",
+    "venuesNews.venues.capacity": "Capacidad",
+    "venuesNews.venues.inauguration": "Inauguraci\xF3n",
+    "venuesNews.venues.arenaXRay": "Radiograf\xEDa del estadio",
+    "venuesNews.venues.matchesHere": "Partidos en este estadio",
+    "venuesNews.venues.matchesHereHint": "Cruce con los partidos destacados de la app",
+    "venuesNews.venues.noMatches": "Este estadio a\xFAn no ha recibido ninguno de los partidos destacados de la p\xE1gina.",
+    // NewsView — header
+    "venuesNews.news.title": "Central de Noticias",
+    "venuesNews.news.subtitle": "Novedades sobre sedes, entradas, selecciones y entretelones del Mundial",
+    "venuesNews.news.highlightsCount": "{count} destacados en foco",
+    // NewsView — filters
+    "venuesNews.news.filterAll": "Todas",
+    "venuesNews.news.filterVenues": "Sedes",
+    "venuesNews.news.filterTickets": "Entradas",
+    "venuesNews.news.filterTeams": "Equipos",
+    "venuesNews.news.filterGeneral": "General"
+  }
+};
+
+// src/i18n/catalogs/fanSocial.ts
+var fanSocialCatalog = {
+  pt: {
+    // FanZoneView — header
+    "fanSocial.fanZoneTitle": "Fan Zone",
+    "fanSocial.fanZoneSubtitle": "Quiz da torcida, disputa de p\xEAnaltis e palpite simulado das partidas",
+    "fanSocial.fanZoneScopeNote": "Palpite 100% simulado \u2022 sem IA externa",
+    // Trivia panel
+    "fanSocial.triviaTitle": "Quiz da torcida",
+    "fanSocial.triviaWarmup": "Aquecendo o quiz",
+    "fanSocial.triviaProgress": "Pergunta {current} de {total}",
+    "fanSocial.triviaScore": "Placar: {score}",
+    "fanSocial.triviaLoading": "Carregando perguntas do aquecimento da torcida...",
+    "fanSocial.triviaError": "N\xE3o foi poss\xEDvel carregar o quiz agora. Tente atualizar a Fan Zone.",
+    "fanSocial.triviaCorrect": "Resposta certa",
+    "fanSocial.triviaWrong": "N\xE3o foi dessa vez",
+    "fanSocial.triviaRestart": "Reiniciar quiz",
+    "fanSocial.triviaNext": "Pr\xF3xima pergunta",
+    // Penalty panel
+    "fanSocial.penaltyTitle": "Disputa de p\xEAnaltis",
+    "fanSocial.penaltySubtitle": "Escolha o canto e veja para onde o goleiro mergulha",
+    "fanSocial.penaltyReset": "Reiniciar disputa",
+    "fanSocial.penaltyShots": "Batidas",
+    "fanSocial.penaltyGoals": "Gols",
+    "fanSocial.penaltySaves": "Defesas",
+    "fanSocial.penaltyExplainer": "O goleiro alterna leitura de cantos em um padr\xE3o pseudoaleat\xF3rio para manter a brincadeira r\xE1pida e consistente entre as rodadas.",
+    "fanSocial.penaltyOptionLeft": "Canto esquerdo",
+    "fanSocial.penaltyOptionCenter": "No meio",
+    "fanSocial.penaltyOptionRight": "Canto direito",
+    "fanSocial.penaltyLastResult": "Resultado da \xFAltima cobran\xE7a",
+    "fanSocial.penaltyGoalConfirmed": "Gol confirmado",
+    "fanSocial.penaltyKeeperSaved": "Goleiro defendeu",
+    "fanSocial.penaltyResultShotPrefix": "Voc\xEA bateu em",
+    "fanSocial.penaltyResultKeeperMid": "e o goleiro caiu em",
+    "fanSocial.penaltyResultSuffix": ".",
+    "fanSocial.penaltyDirLeft": "esquerda",
+    "fanSocial.penaltyDirCenter": "centro",
+    "fanSocial.penaltyDirRight": "direita",
+    "fanSocial.penaltyEmpty": "Fa\xE7a a primeira cobran\xE7a para abrir o placar da Fan Zone.",
+    // Predictor panel
+    "fanSocial.predictorTitle": "Palpite da partida",
+    "fanSocial.predictorSubtitle": "Escolha duas sele\xE7\xF5es e gere um progn\xF3stico a partir da campanha atual delas.",
+    "fanSocial.predictorSimulated": "Simulado",
+    "fanSocial.predictorHome": "Mandante",
+    "fanSocial.predictorAway": "Visitante",
+    "fanSocial.predictorSelect": "Selecione\u2026",
+    "fanSocial.predictorNotesPlaceholder": "Opcional: seu pitaco (les\xF5es, clima, fator casa\u2026)",
+    "fanSocial.predictorSameTeams": "Escolha duas sele\xE7\xF5es diferentes.",
+    "fanSocial.predictorGenerating": "Gerando\u2026",
+    "fanSocial.predictorGenerate": "Gerar palpite",
+    "fanSocial.predictorSimulatedBadge": "Palpite simulado",
+    "fanSocial.predictorError": "N\xE3o foi poss\xEDvel gerar o palpite agora. Tente novamente.",
+    // SocialMediasView — header
+    "fanSocial.socialTitle": "Redes Sociais",
+    "fanSocial.socialSubtitle": "Mundo na Copa \u2022 feed social com filtros, curtidas e coment\xE1rios em tempo real",
+    "fanSocial.socialMultiview": "Multiview ao vivo",
+    // FIFA profile card
+    "fanSocial.fifaCardLabel": "Card oficial da Copa do Mundo FIFA",
+    "fanSocial.fifaProfileLabel": "Perfil oficial da Copa do Mundo FIFA no Instagram",
+    "fanSocial.fifaOfficialProfile": "@fifaworldcup \u2022 Perfil oficial",
+    "fanSocial.fifaFollowBlurb": "Siga a conta oficial da Copa do Mundo FIFA 2026 e acompanhe tudo do Mundial em primeira m\xE3o.",
+    "fanSocial.fifaFollow": "Seguir",
+    // Google Trends card
+    "fanSocial.trendsLabel": "Buscas em alta no Google",
+    "fanSocial.trendsTitle": "Em alta no Google",
+    "fanSocial.trendsSportsOnly": "S\xF3 esportes",
+    "fanSocial.trendsSource": "Google Trends \u2022 Brasil",
+    "fanSocial.trendsLoading": "Carregando buscas em alta\u2026",
+    "fanSocial.trendsEmpty": "Nenhuma busca de esportes em alta agora.",
+    "fanSocial.trendsSearches": "{traffic} buscas",
+    // Filters
+    "fanSocial.filterAll": "Tudo",
+    "fanSocial.filterPhotos": "Fotos",
+    "fanSocial.filterNews": "Not\xEDcias",
+    "fanSocial.filterOfficial": "Oficial",
+    "fanSocial.filtersLabel": "Filtrar publica\xE7\xF5es",
+    // Category badges
+    "fanSocial.categoryPhoto": "Foto",
+    "fanSocial.categoryNews": "Not\xEDcia",
+    "fanSocial.categoryOfficial": "Oficial",
+    // Feed
+    "fanSocial.feedLabel": "Feed social",
+    "fanSocial.feedEmptyPrefix": "Nenhuma publica\xE7\xE3o para esse filtro agora. Tente outra tag ou volte para ",
+    "fanSocial.feedEmptyAll": "Tudo",
+    "fanSocial.feedEmptySuffix": ".",
+    "fanSocial.postOfficialAccount": "Conta oficial",
+    "fanSocial.commentsEmpty": "Seja o primeiro a comentar essa publica\xE7\xE3o.",
+    "fanSocial.commentPlaceholder": "Manda a real\u2026",
+    "fanSocial.commentSubmit": "Enviar coment\xE1rio",
+    // Trending sidebar
+    "fanSocial.trendingTitle": "Tend\xEAncias",
+    "fanSocial.trendingHint": "Toque numa hashtag para filtrar o feed",
+    "fanSocial.postCountSingular": "post",
+    "fanSocial.postCountPlural": "posts"
+  },
+  es: {
+    // FanZoneView — header
+    "fanSocial.fanZoneTitle": "Fan Zone",
+    "fanSocial.fanZoneSubtitle": "Quiz de la hinchada, tanda de penales y pron\xF3stico simulado de los partidos",
+    "fanSocial.fanZoneScopeNote": "Pron\xF3stico 100% simulado \u2022 sin IA externa",
+    // Trivia panel
+    "fanSocial.triviaTitle": "Quiz de la hinchada",
+    "fanSocial.triviaWarmup": "Calentando el quiz",
+    "fanSocial.triviaProgress": "Pregunta {current} de {total}",
+    "fanSocial.triviaScore": "Puntaje: {score}",
+    "fanSocial.triviaLoading": "Cargando preguntas del calentamiento de la hinchada...",
+    "fanSocial.triviaError": "No se pudo cargar el quiz por ahora. Intenta actualizar la Fan Zone.",
+    "fanSocial.triviaCorrect": "\xA1Acertaste!",
+    "fanSocial.triviaWrong": "No fue esta vez",
+    "fanSocial.triviaRestart": "Reiniciar quiz",
+    "fanSocial.triviaNext": "Siguiente pregunta",
+    // Penalty panel
+    "fanSocial.penaltyTitle": "Tanda de penales",
+    "fanSocial.penaltySubtitle": "Elige el palo y mira hacia d\xF3nde se lanza el arquero",
+    "fanSocial.penaltyReset": "Reiniciar tanda",
+    "fanSocial.penaltyShots": "Remates",
+    "fanSocial.penaltyGoals": "Goles",
+    "fanSocial.penaltySaves": "Atajadas",
+    "fanSocial.penaltyExplainer": "El arquero alterna la lectura de los palos con un patr\xF3n pseudoaleatorio para mantener el juego r\xE1pido y consistente entre rondas.",
+    "fanSocial.penaltyOptionLeft": "Palo izquierdo",
+    "fanSocial.penaltyOptionCenter": "Al medio",
+    "fanSocial.penaltyOptionRight": "Palo derecho",
+    "fanSocial.penaltyLastResult": "Resultado del \xFAltimo remate",
+    "fanSocial.penaltyGoalConfirmed": "Gol confirmado",
+    "fanSocial.penaltyKeeperSaved": "El arquero ataj\xF3",
+    "fanSocial.penaltyResultShotPrefix": "Pateaste a",
+    "fanSocial.penaltyResultKeeperMid": "y el arquero se lanz\xF3 a",
+    "fanSocial.penaltyResultSuffix": ".",
+    "fanSocial.penaltyDirLeft": "la izquierda",
+    "fanSocial.penaltyDirCenter": "el medio",
+    "fanSocial.penaltyDirRight": "la derecha",
+    "fanSocial.penaltyEmpty": "Patea el primer penal para abrir el marcador de la Fan Zone.",
+    // Predictor panel
+    "fanSocial.predictorTitle": "Pron\xF3stico del partido",
+    "fanSocial.predictorSubtitle": "Elige dos selecciones y genera un pron\xF3stico a partir de su campa\xF1a actual.",
+    "fanSocial.predictorSimulated": "Simulado",
+    "fanSocial.predictorHome": "Local",
+    "fanSocial.predictorAway": "Visitante",
+    "fanSocial.predictorSelect": "Selecciona\u2026",
+    "fanSocial.predictorNotesPlaceholder": "Opcional: tu comentario (lesiones, clima, factor cancha\u2026)",
+    "fanSocial.predictorSameTeams": "Elige dos selecciones diferentes.",
+    "fanSocial.predictorGenerating": "Generando\u2026",
+    "fanSocial.predictorGenerate": "Generar pron\xF3stico",
+    "fanSocial.predictorSimulatedBadge": "Pron\xF3stico simulado",
+    "fanSocial.predictorError": "No se pudo generar el pron\xF3stico por ahora. Intenta de nuevo.",
+    // SocialMediasView — header
+    "fanSocial.socialTitle": "Redes Sociales",
+    "fanSocial.socialSubtitle": "El mundo en el Mundial \u2022 feed social con filtros, me gusta y comentarios en tiempo real",
+    "fanSocial.socialMultiview": "Multiview en vivo",
+    // FIFA profile card
+    "fanSocial.fifaCardLabel": "Tarjeta oficial de la Copa Mundial de la FIFA",
+    "fanSocial.fifaProfileLabel": "Perfil oficial de la Copa Mundial de la FIFA en Instagram",
+    "fanSocial.fifaOfficialProfile": "@fifaworldcup \u2022 Perfil oficial",
+    "fanSocial.fifaFollowBlurb": "Sigue la cuenta oficial de la Copa Mundial de la FIFA 2026 y acompa\xF1a todo el Mundial de primera mano.",
+    "fanSocial.fifaFollow": "Seguir",
+    // Google Trends card
+    "fanSocial.trendsLabel": "B\xFAsquedas populares en Google",
+    "fanSocial.trendsTitle": "Tendencia en Google",
+    "fanSocial.trendsSportsOnly": "Solo deportes",
+    "fanSocial.trendsSource": "Google Trends \u2022 Brasil",
+    "fanSocial.trendsLoading": "Cargando b\xFAsquedas populares\u2026",
+    "fanSocial.trendsEmpty": "No hay b\xFAsquedas de deportes populares ahora.",
+    "fanSocial.trendsSearches": "{traffic} b\xFAsquedas",
+    // Filters
+    "fanSocial.filterAll": "Todo",
+    "fanSocial.filterPhotos": "Fotos",
+    "fanSocial.filterNews": "Noticias",
+    "fanSocial.filterOfficial": "Oficial",
+    "fanSocial.filtersLabel": "Filtrar publicaciones",
+    // Category badges
+    "fanSocial.categoryPhoto": "Foto",
+    "fanSocial.categoryNews": "Noticia",
+    "fanSocial.categoryOfficial": "Oficial",
+    // Feed
+    "fanSocial.feedLabel": "Feed social",
+    "fanSocial.feedEmptyPrefix": "No hay publicaciones para este filtro ahora. Prueba otra etiqueta o vuelve a ",
+    "fanSocial.feedEmptyAll": "Todo",
+    "fanSocial.feedEmptySuffix": ".",
+    "fanSocial.postOfficialAccount": "Cuenta oficial",
+    "fanSocial.commentsEmpty": "S\xE9 el primero en comentar esta publicaci\xF3n.",
+    "fanSocial.commentPlaceholder": "Dilo sin filtro\u2026",
+    "fanSocial.commentSubmit": "Enviar comentario",
+    // Trending sidebar
+    "fanSocial.trendingTitle": "Tendencias",
+    "fanSocial.trendingHint": "Toca un hashtag para filtrar el feed",
+    "fanSocial.postCountSingular": "post",
+    "fanSocial.postCountPlural": "posts"
+  }
+};
+
+// src/i18n/catalogs/teamLineup.ts
+var teamLineupCatalog = {
+  pt: {
+    "teamLineup.updateUnavailable": "Atualiza\xE7\xE3o indispon\xEDvel",
+    "teamLineup.updatedAt": "Atualizado {time}",
+    "teamLineup.statusLive": "AO VIVO",
+    "teamLineup.statusFinished": "ENCERRADO",
+    "teamLineup.statusNext": "PR\xD3XIMO JOGO",
+    "teamLineup.penaltySuffix": "({team} x {opponent} p\xEAn.)",
+    "teamLineup.noRecord": "Sem registro",
+    "teamLineup.matchClock": "Rel\xF3gio da partida",
+    "teamLineup.hostCity": "Cidade-sede",
+    "teamLineup.matchCardEmpty": "Ainda n\xE3o h\xE1 jogo suficiente para preencher este bloco da sele\xE7\xE3o. Assim que a agenda ou o resultado oficial aparecer, o painel atualiza automaticamente.",
+    "teamLineup.matchVideosHeading": "V\xEDdeos das partidas \u2014 jogo completo e melhores momentos",
+    "teamLineup.watchOnYoutube": "Assistir no YouTube: {title}",
+    "teamLineup.highlights": "Melhores momentos",
+    "teamLineup.fullGame": "Jogo completo",
+    "teamLineup.videosPending": "Aguardando a Caz\xE9 TV fazer o upload dos v\xEDdeos no YouTube.",
+    "teamLineup.historyTitle": "Hist\xF3rico na Copa 2026",
+    "teamLineup.historyCountOne": "{count} jogo no Mundial",
+    "teamLineup.historyCountMany": "{count} jogos no Mundial",
+    "teamLineup.colStage": "Fase",
+    "teamLineup.colOpponent": "Advers\xE1rio",
+    "teamLineup.colScore": "Placar",
+    "teamLineup.colResult": "Res.",
+    "teamLineup.penaltyLine": "{team} x {opponent} p\xEAn.",
+    "teamLineup.liveChip": "Vivo",
+    "teamLineup.playerPhotoAlt": "Foto de {name}",
+    "teamLineup.shirtNumber": "Camisa {number}",
+    "teamLineup.noShirt": "Sem camisa confirmada",
+    "teamLineup.noLeaderEntries": "A FIFA ainda n\xE3o registrou ocorr\xEAncias deste tipo para a sele\xE7\xE3o.",
+    "teamLineup.noBroadcasters": "Sem emissoras publicadas no momento para a partida atual ou pr\xF3xima desta sele\xE7\xE3o.",
+    "teamLineup.open": "Abrir",
+    "teamLineup.populationMillions": "{value} mi",
+    "teamLineup.pillCapital": "Capital",
+    "teamLineup.pillPopulation": "Popula\xE7\xE3o",
+    "teamLineup.pillArea": "\xC1rea",
+    "teamLineup.pillLanguage": "Idioma",
+    "teamLineup.pillGovernment": "Governo",
+    "teamLineup.pillCurrency": "Moeda",
+    "teamLineup.readMoreWikipedia": "Ler mais na Wikip\xE9dia",
+    "teamLineup.back": "Voltar",
+    "teamLineup.groupLabel": "\u2022 Grupo {group}",
+    "teamLineup.openCoachCard": "Abrir card do treinador {coach}",
+    "teamLineup.coachLabel": "T\xE9cnico",
+    "teamLineup.federationTitle": "Site oficial da {abbr} \u2014 {name}",
+    "teamLineup.federationAria": "Abrir o site oficial da {abbr}",
+    "teamLineup.loadingPanel": "Montando o painel completo da sele\xE7\xE3o...",
+    "teamLineup.loadError": "N\xE3o foi poss\xEDvel carregar o painel completo da sele\xE7\xE3o agora.",
+    "teamLineup.matchesLabel": "Partidas",
+    "teamLineup.scheduleEmpty": "Agenda da sele\xE7\xE3o ainda sem registros para este torneio.",
+    "teamLineup.cardNow": "Agora",
+    "teamLineup.cardNext": "Pr\xF3xima",
+    "teamLineup.cardLast": "\xDAltima",
+    "teamLineup.analysisTitle": "An\xE1lise da sele\xE7\xE3o",
+    "teamLineup.lineupTitle": "Escala\xE7\xE3o da sele\xE7\xE3o",
+    "teamLineup.lineupOfficial": "Escala\xE7\xE3o oficial FIFA",
+    "teamLineup.lineupEstimated": "Escala\xE7\xE3o estimada (dados locais)",
+    "teamLineup.lineupUnavailable": "Escala\xE7\xE3o indispon\xEDvel",
+    "teamLineup.lineupUnavailableBody": "Escala\xE7\xE3o ainda n\xE3o disponibilizada pela FIFA para esta sele\xE7\xE3o. Enquanto isso, o painel aguarda a confirma\xE7\xE3o oficial ou a pr\xF3xima atualiza\xE7\xE3o local.",
+    "teamLineup.campaignTitle": "Campanha",
+    "teamLineup.campaignRank": "{group} \u2022 {rank}\xBA de {size}",
+    "teamLineup.points": "Pontos",
+    "teamLineup.abbrPlayed": "J",
+    "teamLineup.abbrWon": "V",
+    "teamLineup.abbrDrawn": "E",
+    "teamLineup.abbrLost": "D"
+  },
+  es: {
+    "teamLineup.updateUnavailable": "Actualizaci\xF3n no disponible",
+    "teamLineup.updatedAt": "Actualizado {time}",
+    "teamLineup.statusLive": "EN VIVO",
+    "teamLineup.statusFinished": "FINALIZADO",
+    "teamLineup.statusNext": "PR\xD3XIMO PARTIDO",
+    "teamLineup.penaltySuffix": "({team} x {opponent} pen.)",
+    "teamLineup.noRecord": "Sin registro",
+    "teamLineup.matchClock": "Reloj del partido",
+    "teamLineup.hostCity": "Ciudad sede",
+    "teamLineup.matchCardEmpty": "Todav\xEDa no hay partido suficiente para completar este bloque de la selecci\xF3n. En cuanto aparezca la agenda o el resultado oficial, el panel se actualiza autom\xE1ticamente.",
+    "teamLineup.matchVideosHeading": "Videos de los partidos \u2014 partido completo y mejores momentos",
+    "teamLineup.watchOnYoutube": "Ver en YouTube: {title}",
+    "teamLineup.highlights": "Mejores momentos",
+    "teamLineup.fullGame": "Partido completo",
+    "teamLineup.videosPending": "Esperando que Caz\xE9 TV suba los videos a YouTube.",
+    "teamLineup.historyTitle": "Historial en el Mundial 2026",
+    "teamLineup.historyCountOne": "{count} partido en el Mundial",
+    "teamLineup.historyCountMany": "{count} partidos en el Mundial",
+    "teamLineup.colStage": "Fase",
+    "teamLineup.colOpponent": "Rival",
+    "teamLineup.colScore": "Marcador",
+    "teamLineup.colResult": "Res.",
+    "teamLineup.penaltyLine": "{team} x {opponent} pen.",
+    "teamLineup.liveChip": "Vivo",
+    "teamLineup.playerPhotoAlt": "Foto de {name}",
+    "teamLineup.shirtNumber": "Camiseta {number}",
+    "teamLineup.noShirt": "Sin camiseta confirmada",
+    "teamLineup.noLeaderEntries": "La FIFA a\xFAn no registr\xF3 incidencias de este tipo para la selecci\xF3n.",
+    "teamLineup.noBroadcasters": "Sin emisoras publicadas por ahora para el partido actual o pr\xF3ximo de esta selecci\xF3n.",
+    "teamLineup.open": "Abrir",
+    "teamLineup.populationMillions": "{value} M",
+    "teamLineup.pillCapital": "Capital",
+    "teamLineup.pillPopulation": "Poblaci\xF3n",
+    "teamLineup.pillArea": "\xC1rea",
+    "teamLineup.pillLanguage": "Idioma",
+    "teamLineup.pillGovernment": "Gobierno",
+    "teamLineup.pillCurrency": "Moneda",
+    "teamLineup.readMoreWikipedia": "Leer m\xE1s en Wikipedia",
+    "teamLineup.back": "Volver",
+    "teamLineup.groupLabel": "\u2022 Grupo {group}",
+    "teamLineup.openCoachCard": "Abrir la ficha del entrenador {coach}",
+    "teamLineup.coachLabel": "DT",
+    "teamLineup.federationTitle": "Sitio oficial de {abbr} \u2014 {name}",
+    "teamLineup.federationAria": "Abrir el sitio oficial de {abbr}",
+    "teamLineup.loadingPanel": "Armando el panel completo de la selecci\xF3n...",
+    "teamLineup.loadError": "No se pudo cargar el panel completo de la selecci\xF3n ahora.",
+    "teamLineup.matchesLabel": "Partidos",
+    "teamLineup.scheduleEmpty": "La agenda de la selecci\xF3n a\xFAn no tiene registros para este torneo.",
+    "teamLineup.cardNow": "Ahora",
+    "teamLineup.cardNext": "Pr\xF3ximo",
+    "teamLineup.cardLast": "\xDAltimo",
+    "teamLineup.analysisTitle": "An\xE1lisis de la selecci\xF3n",
+    "teamLineup.lineupTitle": "Alineaci\xF3n de la selecci\xF3n",
+    "teamLineup.lineupOfficial": "Alineaci\xF3n oficial FIFA",
+    "teamLineup.lineupEstimated": "Alineaci\xF3n estimada (datos locales)",
+    "teamLineup.lineupUnavailable": "Alineaci\xF3n no disponible",
+    "teamLineup.lineupUnavailableBody": "La FIFA a\xFAn no public\xF3 la alineaci\xF3n de esta selecci\xF3n. Mientras tanto, el panel espera la confirmaci\xF3n oficial o la pr\xF3xima actualizaci\xF3n local.",
+    "teamLineup.campaignTitle": "Campa\xF1a",
+    "teamLineup.campaignRank": "{group} \u2022 {rank}\xBA de {size}",
+    "teamLineup.points": "Puntos",
+    "teamLineup.abbrPlayed": "PJ",
+    "teamLineup.abbrWon": "G",
+    "teamLineup.abbrDrawn": "E",
+    "teamLineup.abbrLost": "P"
+  }
+};
+
+// src/i18n/catalogs/dashboard.ts
+var dashboardCatalog = {
+  pt: {
+    // Header
+    "dashboard.title": "Dashboard",
+    "dashboard.subtitlePanorama": "Panorama da Copa do Mundo FIFA 2026 em n\xFAmeros",
+    "dashboard.subtitleTrafego": "Bastidores da audi\xEAncia do site em n\xFAmeros",
+    // Freshness badge
+    "dashboard.freshnessTitleUpToDate": "O painel reflete a \xFAltima partida disputada",
+    "dashboard.freshnessTitleStale": "Uma partida foi disputada ap\xF3s a publica\xE7\xE3o deste painel",
+    "dashboard.freshUpToDate": "Atualizado",
+    "dashboard.freshStale": "Desatualizado",
+    // Tabs
+    "dashboard.tabsAriaLabel": "Se\xE7\xF5es do dashboard",
+    "dashboard.tabPanorama": "Panorama",
+    "dashboard.tabTrafego": "Tr\xE1fego",
+    // KPI tiles
+    "dashboard.kpiTeams": "Sele\xE7\xF5es",
+    "dashboard.kpiTeamsHint": "6 continentes",
+    "dashboard.kpiStadiums": "Sedes",
+    "dashboard.kpiStadiumsHint": "3 pa\xEDses",
+    "dashboard.kpiMatchesFinished": "Jogos encerrados",
+    "dashboard.kpiMatchesFinishedHint": "de {total}",
+    "dashboard.kpiLive": "Ao vivo",
+    "dashboard.kpiLiveHint": "agora",
+    "dashboard.kpiUpcoming": "Agendados",
+    "dashboard.kpiUpcomingHint": "a disputar",
+    "dashboard.kpiGroupGoals": "Gols (grupos)",
+    "dashboard.kpiGroupGoalsHint": "{value} por jogo",
+    // Legend / phase labels
+    "dashboard.phaseGroupStage": "Fase de grupos",
+    "dashboard.phaseRoundOf32": "16-avos",
+    "dashboard.phaseRoundOf16": "Oitavas",
+    // Chart: continents
+    "dashboard.chartContinentsTitle": "Sele\xE7\xF5es por continente",
+    "dashboard.chartContinentsSubtitle": "por fase \xB7 {groupStage} grupos \u2192 {roundOf32} 16-avos \u2192 {roundOf16} oitavas",
+    // Chart: matches by status
+    "dashboard.chartStatusTitle": "Partidas por situa\xE7\xE3o",
+    "dashboard.chartStatusSubtitle": "todo o torneio \xB7 grupos + mata-mata",
+    "dashboard.donutCenterLabel": "jogos",
+    // Chart: goals by group
+    "dashboard.chartGroupGoalsTitle": "Gols por grupo",
+    "dashboard.chartGroupGoalsSubtitle": "fase de grupos \xB7 gols marcados",
+    // Chart: top scorers
+    "dashboard.chartTopTeamsTitle": "Artilharia das sele\xE7\xF5es",
+    "dashboard.chartTopTeamsSubtitle": "fase de grupos \xB7 8 maiores ataques",
+    // Chart: goals by phase
+    "dashboard.chartPhaseGoalsTitle": "Gols por fase",
+    "dashboard.chartPhaseGoalsSubtitle": "gols marcados por fase \xB7 grupos + mata-mata \xB7 {total} gols",
+    "dashboard.phaseGameSingular": "{count} jogo",
+    "dashboard.phaseGamePlural": "{count} jogos",
+    // Chart: goals by minute
+    "dashboard.chartGoalsByMinuteTitle": "Gols por minuto",
+    "dashboard.chartGoalsByMinuteSubtitleTeam": "{team} \xB7 {count} {goals} \xB7 minuto do jogo \xD7 n\xBA de gols",
+    "dashboard.chartGoalsByMinuteSubtitleAll": "todos os jogos encerrados \xB7 {count} gols \xB7 minuto do jogo \xD7 n\xBA de gols",
+    "dashboard.goalSingular": "gol",
+    "dashboard.goalPlural": "gols",
+    "dashboard.goalsTeamFilterAria": "Filtrar gols por minuto por sele\xE7\xE3o",
+    "dashboard.goalsTeamFilterAll": "Todas as sele\xE7\xF5es",
+    "dashboard.goalsTeamFilterOption": "{name} ({goals})",
+    "dashboard.goalsByMinuteEmpty": "Sem gols registrados para esta sele\xE7\xE3o",
+    "dashboard.axisMinute": "minuto",
+    "dashboard.axisGoals": "gols",
+    "dashboard.markerHalfTime": "intervalo",
+    // Chart: goals heat-map
+    "dashboard.chartHeatmapTitle": "Mapa de calor dos gols",
+    "dashboard.chartHeatmapSubtitle": "gols por grupo da sele\xE7\xE3o \xD7 intervalo de 15 min \xB7 {total} gols",
+    "dashboard.heatmapRowHeader": "Grupo",
+    "dashboard.heatmapCellSingular": "Grupo {group} \xB7 {interval} min \xB7 {value} gol",
+    "dashboard.heatmapCellPlural": "Grupo {group} \xB7 {interval} min \xB7 {value} gols",
+    // Chart primitives (shared)
+    "dashboard.lineChartNeedTwoPoints": "S\xE3o necess\xE1rios ao menos dois instant\xE2neos para tra\xE7ar a tend\xEAncia",
+    "dashboard.scatterAria": "{yLabel} por {xLabel}",
+    "dashboard.heatmapLegendLess": "menos",
+    "dashboard.heatmapLegendMore": "mais",
+    // Traffic panel — status classes
+    "dashboard.statusSuccess": "Sucesso (2xx)",
+    "dashboard.statusRedirect": "Redirecionamento (3xx)",
+    "dashboard.statusClientError": "Erro do cliente (4xx)",
+    "dashboard.statusServerError": "Erro do servidor (5xx)",
+    "dashboard.statusOther": "Outros",
+    // Traffic panel — empty/loading states
+    "dashboard.trafficEmptySnapshot": "Sem dados neste instant\xE2neo",
+    "dashboard.trafficLoadFailed": "N\xE3o foi poss\xEDvel carregar o painel de tr\xE1fego",
+    "dashboard.trafficLoading": "Carregando dados de tr\xE1fego\u2026",
+    "dashboard.trafficNoSnapshots": "Nenhum instant\xE2neo de tr\xE1fego dispon\xEDvel ainda",
+    // Traffic panel — summary line
+    "dashboard.trafficSummarySingular": "{count} instant\xE2neo \xB7 atualizado em {when}",
+    "dashboard.trafficSummaryPlural": "{count} instant\xE2neos \xB7 atualizado em {when}",
+    "dashboard.trafficGeoSuffix": " \xB7 geo: GeoLite2",
+    // Traffic panel — KPI tiles
+    "dashboard.trafficKpiRequests": "Requisi\xE7\xF5es",
+    "dashboard.trafficKpiRequestsHint": "na janela do log",
+    "dashboard.trafficKpiUniqueIps": "IPs \xFAnicos",
+    "dashboard.trafficKpiAvgRate": "M\xE9dia req/min",
+    "dashboard.trafficKpiAvgRateHint": "na janela",
+    "dashboard.trafficKpiBots": "Bots",
+    "dashboard.trafficKpiBotsHint": "{count} hits",
+    "dashboard.trafficKpiSynthetic": "Sint\xE9tico (e2e)",
+    "dashboard.trafficKpiSyntheticHint": "{count} hits",
+    "dashboard.trafficKpiLogLines": "Linhas de log",
+    // Traffic panel — chart titles/subtitles
+    "dashboard.trafficCumulativeTitle": "Tr\xE1fego acumulado",
+    "dashboard.trafficCumulativeSubtitle": "requisi\xE7\xF5es acumuladas na janela do log \xB7 por instant\xE2neo",
+    "dashboard.trafficRateTitle": "Ritmo de requisi\xE7\xF5es",
+    "dashboard.trafficRateSubtitle": "requisi\xE7\xF5es/min entre instant\xE2neos consecutivos",
+    "dashboard.trafficTopPathsTitle": "Rotas mais acessadas",
+    "dashboard.trafficTopPathsSubtitle": "rotas sint\xE9ticas de e2e exclu\xEDdas",
+    "dashboard.trafficByHourTitle": "Requisi\xE7\xF5es por hora (UTC)",
+    "dashboard.trafficByHourSubtitle": "distribui\xE7\xE3o ao longo do dia",
+    "dashboard.trafficStatusCodesTitle": "C\xF3digos de status HTTP",
+    "dashboard.trafficStatusCodesSubtitle": "agrupados por classe",
+    "dashboard.trafficCountriesVisitorsTitle": "Pa\xEDses (visitantes \xFAnicos)",
+    "dashboard.trafficCountriesVisitorsSubtitle": "top 10 por IP \xFAnico",
+    "dashboard.trafficCountriesVolumeTitle": "Pa\xEDses (volume de requisi\xE7\xF5es)",
+    "dashboard.trafficCountriesVolumeSubtitle": "top 10 por requisi\xE7\xF5es",
+    "dashboard.trafficCitiesVisitorsTitle": "Cidades (visitantes \xFAnicos)",
+    "dashboard.trafficCitiesSubtitle": "menos precisas que pa\xEDs \xB7 bucket (unknown) esperado",
+    "dashboard.trafficCitiesVolumeTitle": "Cidades (volume de requisi\xE7\xF5es)",
+    "dashboard.trafficByDayTitle": "Requisi\xE7\xF5es por dia",
+    "dashboard.trafficByDaySubtitle": "cada dia da janela do log",
+    "dashboard.trafficReferrersTitle": "Principais referenciadores",
+    "dashboard.trafficReferrersSubtitle": "origem do tr\xE1fego",
+    // Traffic panel — series names + hour tooltip
+    "dashboard.trafficSeriesRequests": "Requisi\xE7\xF5es (acumulado)",
+    "dashboard.trafficSeriesRate": "Requisi\xE7\xF5es/min",
+    "dashboard.trafficHourTooltip": "{hour}h \xB7 {count} req"
+  },
+  es: {
+    // Header
+    "dashboard.title": "Dashboard",
+    "dashboard.subtitlePanorama": "Panorama del Mundial FIFA 2026 en n\xFAmeros",
+    "dashboard.subtitleTrafego": "El detr\xE1s de escena de la audiencia del sitio en n\xFAmeros",
+    // Freshness badge
+    "dashboard.freshnessTitleUpToDate": "El panel refleja el \xFAltimo partido disputado",
+    "dashboard.freshnessTitleStale": "Se disput\xF3 un partido despu\xE9s de la publicaci\xF3n de este panel",
+    "dashboard.freshUpToDate": "Actualizado",
+    "dashboard.freshStale": "Desactualizado",
+    // Tabs
+    "dashboard.tabsAriaLabel": "Secciones del dashboard",
+    "dashboard.tabPanorama": "Panorama",
+    "dashboard.tabTrafego": "Tr\xE1fico",
+    // KPI tiles
+    "dashboard.kpiTeams": "Selecciones",
+    "dashboard.kpiTeamsHint": "6 continentes",
+    "dashboard.kpiStadiums": "Sedes",
+    "dashboard.kpiStadiumsHint": "3 pa\xEDses",
+    "dashboard.kpiMatchesFinished": "Partidos finalizados",
+    "dashboard.kpiMatchesFinishedHint": "de {total}",
+    "dashboard.kpiLive": "En vivo",
+    "dashboard.kpiLiveHint": "ahora",
+    "dashboard.kpiUpcoming": "Programados",
+    "dashboard.kpiUpcomingHint": "por disputar",
+    "dashboard.kpiGroupGoals": "Goles (grupos)",
+    "dashboard.kpiGroupGoalsHint": "{value} por partido",
+    // Legend / phase labels
+    "dashboard.phaseGroupStage": "Fase de grupos",
+    "dashboard.phaseRoundOf32": "16-avos",
+    "dashboard.phaseRoundOf16": "Octavos",
+    // Chart: continents
+    "dashboard.chartContinentsTitle": "Selecciones por continente",
+    "dashboard.chartContinentsSubtitle": "por fase \xB7 {groupStage} grupos \u2192 {roundOf32} 16-avos \u2192 {roundOf16} octavos",
+    // Chart: matches by status
+    "dashboard.chartStatusTitle": "Partidos por situaci\xF3n",
+    "dashboard.chartStatusSubtitle": "todo el torneo \xB7 grupos + eliminatorias",
+    "dashboard.donutCenterLabel": "partidos",
+    // Chart: goals by group
+    "dashboard.chartGroupGoalsTitle": "Goles por grupo",
+    "dashboard.chartGroupGoalsSubtitle": "fase de grupos \xB7 goles marcados",
+    // Chart: top scorers
+    "dashboard.chartTopTeamsTitle": "Artiller\xEDa de las selecciones",
+    "dashboard.chartTopTeamsSubtitle": "fase de grupos \xB7 8 mejores ataques",
+    // Chart: goals by phase
+    "dashboard.chartPhaseGoalsTitle": "Goles por fase",
+    "dashboard.chartPhaseGoalsSubtitle": "goles marcados por fase \xB7 grupos + eliminatorias \xB7 {total} goles",
+    "dashboard.phaseGameSingular": "{count} partido",
+    "dashboard.phaseGamePlural": "{count} partidos",
+    // Chart: goals by minute
+    "dashboard.chartGoalsByMinuteTitle": "Goles por minuto",
+    "dashboard.chartGoalsByMinuteSubtitleTeam": "{team} \xB7 {count} {goals} \xB7 minuto del partido \xD7 n\xBA de goles",
+    "dashboard.chartGoalsByMinuteSubtitleAll": "todos los partidos finalizados \xB7 {count} goles \xB7 minuto del partido \xD7 n\xBA de goles",
+    "dashboard.goalSingular": "gol",
+    "dashboard.goalPlural": "goles",
+    "dashboard.goalsTeamFilterAria": "Filtrar goles por minuto por selecci\xF3n",
+    "dashboard.goalsTeamFilterAll": "Todas las selecciones",
+    "dashboard.goalsTeamFilterOption": "{name} ({goals})",
+    "dashboard.goalsByMinuteEmpty": "Sin goles registrados para esta selecci\xF3n",
+    "dashboard.axisMinute": "minuto",
+    "dashboard.axisGoals": "goles",
+    "dashboard.markerHalfTime": "entretiempo",
+    // Chart: goals heat-map
+    "dashboard.chartHeatmapTitle": "Mapa de calor de los goles",
+    "dashboard.chartHeatmapSubtitle": "goles por grupo de la selecci\xF3n \xD7 intervalo de 15 min \xB7 {total} goles",
+    "dashboard.heatmapRowHeader": "Grupo",
+    "dashboard.heatmapCellSingular": "Grupo {group} \xB7 {interval} min \xB7 {value} gol",
+    "dashboard.heatmapCellPlural": "Grupo {group} \xB7 {interval} min \xB7 {value} goles",
+    // Chart primitives (shared)
+    "dashboard.lineChartNeedTwoPoints": "Se necesitan al menos dos instant\xE1neas para trazar la tendencia",
+    "dashboard.scatterAria": "{yLabel} por {xLabel}",
+    "dashboard.heatmapLegendLess": "menos",
+    "dashboard.heatmapLegendMore": "m\xE1s",
+    // Traffic panel — status classes
+    "dashboard.statusSuccess": "\xC9xito (2xx)",
+    "dashboard.statusRedirect": "Redirecci\xF3n (3xx)",
+    "dashboard.statusClientError": "Error del cliente (4xx)",
+    "dashboard.statusServerError": "Error del servidor (5xx)",
+    "dashboard.statusOther": "Otros",
+    // Traffic panel — empty/loading states
+    "dashboard.trafficEmptySnapshot": "Sin datos en esta instant\xE1nea",
+    "dashboard.trafficLoadFailed": "No se pudo cargar el panel de tr\xE1fico",
+    "dashboard.trafficLoading": "Cargando datos de tr\xE1fico\u2026",
+    "dashboard.trafficNoSnapshots": "A\xFAn no hay ninguna instant\xE1nea de tr\xE1fico disponible",
+    // Traffic panel — summary line
+    "dashboard.trafficSummarySingular": "{count} instant\xE1nea \xB7 actualizado en {when}",
+    "dashboard.trafficSummaryPlural": "{count} instant\xE1neas \xB7 actualizado en {when}",
+    "dashboard.trafficGeoSuffix": " \xB7 geo: GeoLite2",
+    // Traffic panel — KPI tiles
+    "dashboard.trafficKpiRequests": "Solicitudes",
+    "dashboard.trafficKpiRequestsHint": "en la ventana del log",
+    "dashboard.trafficKpiUniqueIps": "IPs \xFAnicas",
+    "dashboard.trafficKpiAvgRate": "Media sol/min",
+    "dashboard.trafficKpiAvgRateHint": "en la ventana",
+    "dashboard.trafficKpiBots": "Bots",
+    "dashboard.trafficKpiBotsHint": "{count} hits",
+    "dashboard.trafficKpiSynthetic": "Sint\xE9tico (e2e)",
+    "dashboard.trafficKpiSyntheticHint": "{count} hits",
+    "dashboard.trafficKpiLogLines": "L\xEDneas de log",
+    // Traffic panel — chart titles/subtitles
+    "dashboard.trafficCumulativeTitle": "Tr\xE1fico acumulado",
+    "dashboard.trafficCumulativeSubtitle": "solicitudes acumuladas en la ventana del log \xB7 por instant\xE1nea",
+    "dashboard.trafficRateTitle": "Ritmo de solicitudes",
+    "dashboard.trafficRateSubtitle": "solicitudes/min entre instant\xE1neas consecutivas",
+    "dashboard.trafficTopPathsTitle": "Rutas m\xE1s accedidas",
+    "dashboard.trafficTopPathsSubtitle": "rutas sint\xE9ticas de e2e excluidas",
+    "dashboard.trafficByHourTitle": "Solicitudes por hora (UTC)",
+    "dashboard.trafficByHourSubtitle": "distribuci\xF3n a lo largo del d\xEDa",
+    "dashboard.trafficStatusCodesTitle": "C\xF3digos de estado HTTP",
+    "dashboard.trafficStatusCodesSubtitle": "agrupados por clase",
+    "dashboard.trafficCountriesVisitorsTitle": "Pa\xEDses (visitantes \xFAnicos)",
+    "dashboard.trafficCountriesVisitorsSubtitle": "top 10 por IP \xFAnica",
+    "dashboard.trafficCountriesVolumeTitle": "Pa\xEDses (volumen de solicitudes)",
+    "dashboard.trafficCountriesVolumeSubtitle": "top 10 por solicitudes",
+    "dashboard.trafficCitiesVisitorsTitle": "Ciudades (visitantes \xFAnicos)",
+    "dashboard.trafficCitiesSubtitle": "menos precisas que pa\xEDs \xB7 bucket (unknown) esperado",
+    "dashboard.trafficCitiesVolumeTitle": "Ciudades (volumen de solicitudes)",
+    "dashboard.trafficByDayTitle": "Solicitudes por d\xEDa",
+    "dashboard.trafficByDaySubtitle": "cada d\xEDa de la ventana del log",
+    "dashboard.trafficReferrersTitle": "Principales referenciadores",
+    "dashboard.trafficReferrersSubtitle": "origen del tr\xE1fico",
+    // Traffic panel — series names + hour tooltip
+    "dashboard.trafficSeriesRequests": "Solicitudes (acumulado)",
+    "dashboard.trafficSeriesRate": "Solicitudes/min",
+    "dashboard.trafficHourTooltip": "{hour}h \xB7 {count} sol"
+  }
+};
+
+// src/i18n/catalogs/liveExtras.ts
+var liveExtrasCatalog = {
+  pt: {
+    // MatchChatPanel
+    "liveExtras.chat.heading": "Resenha ao vivo",
+    "liveExtras.chat.liveBadge": "Ao vivo",
+    "liveExtras.chat.subtitle": "Bate-papo an\xF4nimo s\xF3 durante a partida \u2014 as mensagens somem quando o jogo acaba.",
+    "liveExtras.chat.empty": "Seja o primeiro a mandar a real sobre o jogo.",
+    "liveExtras.chat.nicknamePlaceholder": "Seu apelido",
+    "liveExtras.chat.nicknameAria": "Apelido",
+    "liveExtras.chat.messagePlaceholder": "Manda a real\u2026",
+    "liveExtras.chat.messageAria": "Mensagem",
+    "liveExtras.chat.sendAria": "Enviar mensagem",
+    "liveExtras.chat.closed": "O chat abre quando a partida come\xE7a. Volte no apito inicial!",
+    // SimultaneousLiveMatches
+    "liveExtras.live.liveWithTime": "AO VIVO \u2022 {time}",
+    "liveExtras.live.live": "AO VIVO",
+    "liveExtras.live.suspended": "PARALISADO",
+    "liveExtras.live.finished": "ENCERRADO",
+    "liveExtras.live.whereToWatch": "Onde assistir",
+    "liveExtras.live.incidents": "Lances",
+    // MatchSpeechToggle
+    "liveExtras.speech.disable": "Desativar a narra\xE7\xE3o dos lances",
+    "liveExtras.speech.enable": "Ativar a narra\xE7\xE3o dos lances"
+  },
+  es: {
+    // MatchChatPanel
+    "liveExtras.chat.heading": "Charla en vivo",
+    "liveExtras.chat.liveBadge": "En vivo",
+    "liveExtras.chat.subtitle": "Chat an\xF3nimo solo durante el partido \u2014 los mensajes desaparecen cuando termina el juego.",
+    "liveExtras.chat.empty": "S\xE9 el primero en decir lo tuyo sobre el partido.",
+    "liveExtras.chat.nicknamePlaceholder": "Tu apodo",
+    "liveExtras.chat.nicknameAria": "Apodo",
+    "liveExtras.chat.messagePlaceholder": "Escribe un mensaje\u2026",
+    "liveExtras.chat.messageAria": "Mensaje",
+    "liveExtras.chat.sendAria": "Enviar mensaje",
+    "liveExtras.chat.closed": "El chat se abre cuando comienza el partido. \xA1Vuelve en el pitazo inicial!",
+    // SimultaneousLiveMatches
+    "liveExtras.live.liveWithTime": "EN VIVO \u2022 {time}",
+    "liveExtras.live.live": "EN VIVO",
+    "liveExtras.live.suspended": "DETENIDO",
+    "liveExtras.live.finished": "FINALIZADO",
+    "liveExtras.live.whereToWatch": "D\xF3nde ver",
+    "liveExtras.live.incidents": "Jugadas",
+    // MatchSpeechToggle
+    "liveExtras.speech.disable": "Desactivar la narraci\xF3n de las jugadas",
+    "liveExtras.speech.enable": "Activar la narraci\xF3n de las jugadas"
+  }
+};
+
+// src/i18n/catalogs/banners.ts
+var bannersCatalog = {
+  pt: {
+    // DonationPix
+    "banners.pix.pixPrefix": "Pix:",
+    "banners.pix.copyKeyAria": "Copiar chave Pix",
+    "banners.pix.copied": "Copiado",
+    "banners.pix.copy": "Copiar",
+    "banners.pix.blurb": "Escaneie o QR no app do seu banco ou copie a chave Pix. Toda contribui\xE7\xE3o ajuda a manter o projeto no ar.",
+    "banners.pix.keyLabel": "Chave Pix \xB7 {keyType}",
+    "banners.pix.brcodeCopied": "Pix Copia e Cola copiado",
+    "banners.pix.brcodeCopy": "Copiar Pix Copia e Cola",
+    // CookieConsentBanner
+    "banners.cookie.ariaLabel": "Aviso de cookies",
+    "banners.cookie.textBefore": "Usamos cookies para medir audi\xEAncia e exibir an\xFAncios, ajudando a manter o site no ar. Ao aceitar, voc\xEA concorda com o uso de cookies. Veja a",
+    "banners.cookie.privacyPolicy": "Pol\xEDtica de Privacidade",
+    "banners.cookie.essential": "Apenas essenciais",
+    "banners.cookie.accept": "Aceitar",
+    // ShareButton
+    "banners.share.shareTitle": "Compartilhar",
+    "banners.share.shareAria": "Compartilhar o app",
+    "banners.share.linkCopied": "Link copiado!",
+    // OnlineCountBadge
+    "banners.online.titleOne": "{count} f\xE3 online agora",
+    "banners.online.titleMany": "{count} f\xE3s online agora",
+    "banners.online.label": "online",
+    // VersionCheckTimer
+    "banners.version.updateTitle": "Nova vers\xE3o dispon\xEDvel \u2014 recarregue para atualizar",
+    "banners.version.newVersion": "nova vers\xE3o",
+    "banners.version.lastCheckAt": "\xFAltima verifica\xE7\xE3o \xE0s {time}",
+    "banners.version.awaitingFirst": "aguardando a primeira verifica\xE7\xE3o",
+    "banners.version.nextCheckTitle": "Pr\xF3xima verifica\xE7\xE3o de nova vers\xE3o em {countdown} \u2022 {last}",
+    "banners.version.timerAria": "Tempo at\xE9 a pr\xF3xima verifica\xE7\xE3o de nova vers\xE3o",
+    "banners.version.updateNow": "Atualizar agora",
+    "banners.version.checkNow": "Verificar atualiza\xE7\xE3o agora",
+    "banners.version.updateNowAria": "Atualizar para a nova vers\xE3o agora",
+    // AdSlot
+    "banners.ads.label": "Publicidade"
+  },
+  es: {
+    // DonationPix
+    "banners.pix.pixPrefix": "Pix:",
+    "banners.pix.copyKeyAria": "Copiar clave Pix",
+    "banners.pix.copied": "Copiado",
+    "banners.pix.copy": "Copiar",
+    "banners.pix.blurb": "Escanea el QR en la app de tu banco o copia la clave Pix. Cada contribuci\xF3n ayuda a mantener el proyecto en l\xEDnea.",
+    "banners.pix.keyLabel": "Clave Pix \xB7 {keyType}",
+    "banners.pix.brcodeCopied": "Pix Copia y Pega copiado",
+    "banners.pix.brcodeCopy": "Copiar Pix Copia y Pega",
+    // CookieConsentBanner
+    "banners.cookie.ariaLabel": "Aviso de cookies",
+    "banners.cookie.textBefore": "Usamos cookies para medir la audiencia y mostrar anuncios, ayudando a mantener el sitio en l\xEDnea. Al aceptar, aceptas el uso de cookies. Consulta la",
+    "banners.cookie.privacyPolicy": "Pol\xEDtica de Privacidad",
+    "banners.cookie.essential": "Solo esenciales",
+    "banners.cookie.accept": "Aceptar",
+    // ShareButton
+    "banners.share.shareTitle": "Compartir",
+    "banners.share.shareAria": "Compartir la app",
+    "banners.share.linkCopied": "\xA1Enlace copiado!",
+    // OnlineCountBadge
+    "banners.online.titleOne": "{count} fan en l\xEDnea ahora",
+    "banners.online.titleMany": "{count} fans en l\xEDnea ahora",
+    "banners.online.label": "en l\xEDnea",
+    // VersionCheckTimer
+    "banners.version.updateTitle": "Nueva versi\xF3n disponible \u2014 recarga para actualizar",
+    "banners.version.newVersion": "nueva versi\xF3n",
+    "banners.version.lastCheckAt": "\xFAltima verificaci\xF3n a las {time}",
+    "banners.version.awaitingFirst": "esperando la primera verificaci\xF3n",
+    "banners.version.nextCheckTitle": "Pr\xF3xima verificaci\xF3n de nueva versi\xF3n en {countdown} \u2022 {last}",
+    "banners.version.timerAria": "Tiempo hasta la pr\xF3xima verificaci\xF3n de nueva versi\xF3n",
+    "banners.version.updateNow": "Actualizar ahora",
+    "banners.version.checkNow": "Verificar actualizaci\xF3n ahora",
+    "banners.version.updateNowAria": "Actualizar a la nueva versi\xF3n ahora",
+    // AdSlot
+    "banners.ads.label": "Publicidad"
+  }
+};
+
+// src/i18n/catalogs/tours.ts
+var toursCatalog = {
+  pt: {
+    // featureTour.ts — TOUR_STEPS
+    "tours.feature.welcome.title": "Bem-vindo ao Agora na Copa 26 \u26BD",
+    "tours.feature.welcome.description": "Um tour r\xE1pido pelas principais \xE1reas do app \u2014 leva menos de 30 segundos.",
+    "tours.feature.aoVivo.title": "Ao Vivo",
+    "tours.feature.aoVivo.description": "Placar, onde assistir (Globo, SporTV, Caz\xE9TV, FIFA+) e as escala\xE7\xF5es de cada jogo.",
+    "tours.feature.jogadores.title": "Jogadores",
+    "tours.feature.jogadores.description": "Busque qualquer jogador e abra o perfil completo tocando no nome.",
+    "tours.feature.lideres.title": "L\xEDderes",
+    "tours.feature.lideres.description": "Artilheiros, cart\xF5es e as estat\xEDsticas que decidem o Mundial.",
+    "tours.feature.chaveamento.title": "Mata-mata",
+    "tours.feature.chaveamento.description": "Acompanhe o caminho do mata-mata at\xE9 a final.",
+    "tours.feature.social.title": "Redes Sociais",
+    "tours.feature.social.description": "Tend\xEAncias e o feed social da Copa, num s\xF3 lugar.",
+    "tours.feature.theme.title": "Tema claro ou escuro",
+    "tours.feature.theme.description": "Toque aqui para alternar o visual quando quiser.",
+    // messiTour.ts
+    "tours.messi.step1.title": "Conhe\xE7a o maior craque \u2B50",
+    "tours.messi.step1.description": 'Lionel Messi \xE9 a estrela da Copa. Vamos abrir o card dele \u2014 tudo come\xE7a na aba Jogadores. Toque em "Pr\xF3ximo".',
+    "tours.messi.step2.title": "Lionel Messi",
+    "tours.messi.step2.description": 'Aqui est\xE1 o Messi entre os jogadores. Toque em "Pr\xF3ximo" para abrir o card completo.',
+    "tours.messi.step3.title": "Card completo do Messi \u2713",
+    "tours.messi.step3.description": "Pronto! Estat\xEDsticas, an\xE1lise e redes oficiais \u2014 \xE9 assim que voc\xEA abre o card de qualquer jogador.",
+    // tipTours.ts — team lineup tour
+    "tours.teamLineup.step1.title": "Veja o elenco de cada sele\xE7\xE3o \u{1F30E}",
+    "tours.teamLineup.step1.description": 'Todas as 48 sele\xE7\xF5es t\xEAm uma p\xE1gina completa. Tudo come\xE7a na aba Sele\xE7\xF5es \u2014 toque em "Pr\xF3ximo".',
+    "tours.teamLineup.step2.title": "Toque na bandeira",
+    "tours.teamLineup.step2.description": "Toque no escudo da sele\xE7\xE3o para abrir o elenco completo. Vamos abrir o Brasil.",
+    "tours.teamLineup.step3.title": "Elenco completo \u2713",
+    "tours.teamLineup.step3.description": "Pronto! Escala\xE7\xE3o titular, comiss\xE3o t\xE9cnica e hist\xF3rico de jogos \u2014 \xE9 assim que voc\xEA abre qualquer sele\xE7\xE3o.",
+    // tipTours.ts — best thirds tour
+    "tours.bestThirds.step1.title": "8 dos 12 terceiros avan\xE7am \u{1F9EE}",
+    "tours.bestThirds.step1.description": 'Nem todo 3\xBA colocado est\xE1 fora \u2014 e d\xE1 para ver quem passa. Vamos achar essa tabela: abra a aba Grupos no "Pr\xF3ximo".',
+    "tours.bestThirds.step2.title": "Role at\xE9 o fim da p\xE1gina \u2B07\uFE0F",
+    "tours.bestThirds.step2.description": 'A se\xE7\xE3o "Melhores 3\xBA colocados" fica no rodap\xE9 desta p\xE1gina, logo abaixo das 12 chaves. Toque em "Pr\xF3ximo" que eu te levo at\xE9 l\xE1.',
+    "tours.bestThirds.step3.title": "Achou: Melhores 3\xBA colocados \u2713",
+    "tours.bestThirds.step3.description": "\xC9 aqui. Os 12 terceiros colocados s\xE3o ranqueados por pontos, saldo, gols e fair play. A linha verde marca o corte: os 8 de cima avan\xE7am ao mata-mata.",
+    // tipTours.ts — bracket tour
+    "tours.bracket.step1.title": "O caminho at\xE9 a final \u{1F3C6}",
+    "tours.bracket.step1.description": 'Acompanhe todo o mata-mata, dos 16 avos \xE0 decis\xE3o, na aba Mata-mata \u2014 toque em "Pr\xF3ximo".',
+    "tours.bracket.step2.title": "Mata-mata da Copa",
+    "tours.bracket.step2.description": "A cada fase, o cruzamento se monta com os classificados \u2014 incluindo as vagas dos 8 melhores terceiros colocados.",
+    // tipTours.ts — bracket feeder tour
+    "tours.bracketFeeder.step1.title": "Quem decide o advers\xE1rio? \u{1F50D}",
+    "tours.bracketFeeder.step1.description": 'No Mata-mata, cada confronto nasce de dois jogos da fase anterior \u2014 e d\xE1 para ver quais. Abra a aba Mata-mata no "Pr\xF3ximo".',
+    "tours.bracketFeeder.step2.title": "Aponte para um jogo das Oitavas",
+    "tours.bracketFeeder.step2.description": 'Passe o mouse (ou toque, no celular) num confronto das Oitavas. No "Pr\xF3ximo" eu fa\xE7o isso por voc\xEA.',
+    "tours.bracketFeeder.step3.title": "Os 2 jogos das 16 avos \u2713",
+    "tours.bracketFeeder.step3.description": "Prontinho! As 16 avos acendem os dois jogos que decidem quem chega a este confronto \u2014 destacados e lado a lado. O resto da coluna some para focar no caminho.",
+    // tipTours.ts — group history tour
+    "tours.groupHistory.step1.title": "Todos os jogos do grupo \u{1F4C5}",
+    "tours.groupHistory.step1.description": 'Resultados e pr\xF3ximos jogos de cada chave ficam no card do grupo. Abra a aba Grupos no "Pr\xF3ximo".',
+    "tours.groupHistory.step2.title": "Hist\xF3rico de jogos",
+    "tours.groupHistory.step2.description": 'Cada grupo tem uma se\xE7\xE3o "Hist\xF3rico de jogos". Toque em "Pr\xF3ximo" que eu abro para voc\xEA.',
+    "tours.groupHistory.step3.title": "Resultados e pr\xF3ximos jogos \u2713",
+    "tours.groupHistory.step3.description": "Pronto! Os jogos j\xE1 disputados aparecem com o placar e os pr\xF3ximos com o hor\xE1rio \u2014 em ordem, sem sair da tabela.",
+    // tipTours.ts — full bracket tour
+    "tours.fullBracket.step1.title": "Toda a chave numa tela s\xF3 \u{1F3C6}",
+    "tours.fullBracket.step1.description": 'D\xE1 para ver o mata-mata inteiro como um p\xF4ster, dos 16 avos \xE0 final. Abra a aba Mata-mata no "Pr\xF3ximo".',
+    "tours.fullBracket.step2.title": 'Ative a "Chave completa"',
+    "tours.fullBracket.step2.description": 'Este bot\xE3o troca as colunas pela chave completa \u2014 a tabela sim\xE9trica com todas as sele\xE7\xF5es e a ta\xE7a no centro. No "Pr\xF3ximo" eu ativo para voc\xEA.',
+    "tours.fullBracket.step3.title": "A chave completa \u2713",
+    "tours.fullBracket.step3.description": "Pronto! As sele\xE7\xF5es convergem das laterais at\xE9 a ta\xE7a no centro: as bandeiras acesas mostram quem avan\xE7ou e as caixas vazias esperam os pr\xF3ximos jogos. No celular, gire a tela para o modo horizontal."
+  },
+  es: {
+    // featureTour.ts — TOUR_STEPS
+    "tours.feature.welcome.title": "Bienvenido a Agora na Copa 26 \u26BD",
+    "tours.feature.welcome.description": "Un recorrido r\xE1pido por las principales \xE1reas de la app \u2014 toma menos de 30 segundos.",
+    "tours.feature.aoVivo.title": "En Vivo",
+    "tours.feature.aoVivo.description": "Marcador, d\xF3nde ver (Globo, SporTV, Caz\xE9TV, FIFA+) y las alineaciones de cada partido.",
+    "tours.feature.jogadores.title": "Jugadores",
+    "tours.feature.jogadores.description": "Busca cualquier jugador y abre el perfil completo tocando en el nombre.",
+    "tours.feature.lideres.title": "L\xEDderes",
+    "tours.feature.lideres.description": "Goleadores, tarjetas y las estad\xEDsticas que deciden el Mundial.",
+    "tours.feature.chaveamento.title": "Eliminatorias",
+    "tours.feature.chaveamento.description": "Sigue el camino de las eliminatorias hasta la final.",
+    "tours.feature.social.title": "Redes Sociales",
+    "tours.feature.social.description": "Tendencias y el feed social del Mundial, en un solo lugar.",
+    "tours.feature.theme.title": "Tema claro u oscuro",
+    "tours.feature.theme.description": "Toca aqu\xED para alternar el aspecto cuando quieras.",
+    // messiTour.ts
+    "tours.messi.step1.title": "Conoce al mayor crack \u2B50",
+    "tours.messi.step1.description": 'Lionel Messi es la estrella del Mundial. Vamos a abrir su tarjeta \u2014 todo empieza en la pesta\xF1a Jugadores. Toca en "Siguiente".',
+    "tours.messi.step2.title": "Lionel Messi",
+    "tours.messi.step2.description": 'Aqu\xED est\xE1 Messi entre los jugadores. Toca en "Siguiente" para abrir la tarjeta completa.',
+    "tours.messi.step3.title": "Tarjeta completa de Messi \u2713",
+    "tours.messi.step3.description": "\xA1Listo! Estad\xEDsticas, an\xE1lisis y redes oficiales \u2014 as\xED es como abres la tarjeta de cualquier jugador.",
+    // tipTours.ts — team lineup tour
+    "tours.teamLineup.step1.title": "Mira la plantilla de cada selecci\xF3n \u{1F30E}",
+    "tours.teamLineup.step1.description": 'Las 48 selecciones tienen una p\xE1gina completa. Todo empieza en la pesta\xF1a Selecciones \u2014 toca en "Siguiente".',
+    "tours.teamLineup.step2.title": "Toca la bandera",
+    "tours.teamLineup.step2.description": "Toca el escudo de la selecci\xF3n para abrir la plantilla completa. Vamos a abrir Brasil.",
+    "tours.teamLineup.step3.title": "Plantilla completa \u2713",
+    "tours.teamLineup.step3.description": "\xA1Listo! Alineaci\xF3n titular, cuerpo t\xE9cnico e historial de partidos \u2014 as\xED es como abres cualquier selecci\xF3n.",
+    // tipTours.ts — best thirds tour
+    "tours.bestThirds.step1.title": "8 de los 12 terceros avanzan \u{1F9EE}",
+    "tours.bestThirds.step1.description": 'No todo 3\xBA puesto queda fuera \u2014 y puedes ver qui\xE9n pasa. Vamos a encontrar esa tabla: abre la pesta\xF1a Grupos en "Siguiente".',
+    "tours.bestThirds.step2.title": "Despl\xE1zate hasta el final de la p\xE1gina \u2B07\uFE0F",
+    "tours.bestThirds.step2.description": 'La secci\xF3n "Mejores 3\xBA puestos" est\xE1 al pie de esta p\xE1gina, justo debajo de las 12 llaves. Toca en "Siguiente" que te llevo hasta all\xED.',
+    "tours.bestThirds.step3.title": "Encontrado: Mejores 3\xBA puestos \u2713",
+    "tours.bestThirds.step3.description": "Es aqu\xED. Los 12 terceros puestos se clasifican por puntos, diferencia, goles y fair play. La l\xEDnea verde marca el corte: los 8 de arriba avanzan a las eliminatorias.",
+    // tipTours.ts — bracket tour
+    "tours.bracket.step1.title": "El camino hasta la final \u{1F3C6}",
+    "tours.bracket.step1.description": 'Sigue todas las eliminatorias, de los dieciseisavos a la final, en la pesta\xF1a Eliminatorias \u2014 toca en "Siguiente".',
+    "tours.bracket.step2.title": "Eliminatorias del Mundial",
+    "tours.bracket.step2.description": "En cada fase, el cruce se arma con los clasificados \u2014 incluyendo los cupos de los 8 mejores terceros puestos.",
+    // tipTours.ts — bracket feeder tour
+    "tours.bracketFeeder.step1.title": "\xBFQui\xE9n decide al rival? \u{1F50D}",
+    "tours.bracketFeeder.step1.description": 'En las Eliminatorias, cada duelo nace de dos partidos de la fase anterior \u2014 y puedes ver cu\xE1les. Abre la pesta\xF1a Eliminatorias en "Siguiente".',
+    "tours.bracketFeeder.step2.title": "Apunta a un partido de los Octavos",
+    "tours.bracketFeeder.step2.description": 'Pasa el mouse (o toca, en el celular) sobre un duelo de los Octavos. En "Siguiente" lo hago por ti.',
+    "tours.bracketFeeder.step3.title": "Los 2 partidos de los dieciseisavos \u2713",
+    "tours.bracketFeeder.step3.description": "\xA1Listo! Los dieciseisavos encienden los dos partidos que deciden qui\xE9n llega a este duelo \u2014 destacados y lado a lado. El resto de la columna desaparece para enfocar el camino.",
+    // tipTours.ts — group history tour
+    "tours.groupHistory.step1.title": "Todos los partidos del grupo \u{1F4C5}",
+    "tours.groupHistory.step1.description": 'Resultados y pr\xF3ximos partidos de cada llave est\xE1n en la tarjeta del grupo. Abre la pesta\xF1a Grupos en "Siguiente".',
+    "tours.groupHistory.step2.title": "Historial de partidos",
+    "tours.groupHistory.step2.description": 'Cada grupo tiene una secci\xF3n "Historial de partidos". Toca en "Siguiente" que la abro por ti.',
+    "tours.groupHistory.step3.title": "Resultados y pr\xF3ximos partidos \u2713",
+    "tours.groupHistory.step3.description": "\xA1Listo! Los partidos ya jugados aparecen con el marcador y los pr\xF3ximos con el horario \u2014 en orden, sin salir de la tabla.",
+    // tipTours.ts — full bracket tour
+    "tours.fullBracket.step1.title": "Toda la llave en una sola pantalla \u{1F3C6}",
+    "tours.fullBracket.step1.description": 'Puedes ver todas las eliminatorias como un p\xF3ster, de los dieciseisavos a la final. Abre la pesta\xF1a Eliminatorias en "Siguiente".',
+    "tours.fullBracket.step2.title": 'Activa la "Llave completa"',
+    "tours.fullBracket.step2.description": 'Este bot\xF3n cambia las columnas por la llave completa \u2014 la tabla sim\xE9trica con todas las selecciones y la copa en el centro. En "Siguiente" la activo por ti.',
+    "tours.fullBracket.step3.title": "La llave completa \u2713",
+    "tours.fullBracket.step3.description": "\xA1Listo! Las selecciones convergen desde los lados hasta la copa en el centro: las banderas encendidas muestran qui\xE9n avanz\xF3 y las casillas vac\xEDas esperan los pr\xF3ximos partidos. En el celular, gira la pantalla al modo horizontal."
+  }
+};
+
+// src/i18n/catalogs/utils.ts
+var utilsCatalog = {
+  pt: {
+    // teamTournamentStatus.ts — team tournament-status labels
+    "utils.classifiedFor": "Classificado para {stage}",
+    "utils.champion": "Campe\xE3o",
+    "utils.runnerUp": "Vice-campe\xE3o",
+    "utils.thirdPlace": "3\xBA lugar",
+    "utils.fourthPlace": "4\xBA lugar",
+    "utils.eliminatedIn": "Eliminado em {stage}",
+    "utils.eliminatedGroupStage": "Eliminada na fase de grupos",
+    // matchResult.ts — finished-match per-side result line + points copy
+    "utils.pointsOne": "+1 pt",
+    "utils.pointsMany": "+{pts} pts",
+    "utils.pointsZero": "0 pts",
+    "utils.runnerUpShort": "Vice",
+    "utils.qualified": "Classificado",
+    "utils.eliminated": "Eliminado",
+    // playerDisplay.ts — pitch position labels
+    "utils.positionGK": "Goleiro",
+    "utils.positionDF": "Defensor",
+    "utils.positionMF": "Meio-Campista",
+    "utils.positionFW": "Atacante",
+    // dateFormat.ts — editorial "Atualizado em …" stamp
+    "utils.updatedOn": "Atualizado em {stamp}",
+    // knockoutSlots.ts — stage names (also used as the {stage} above)
+    "utils.stage.group": "Fase de Grupos",
+    "utils.stage.R32": "16 Avos de Final",
+    "utils.stage.R16": "Oitavas de Final",
+    "utils.stage.QF": "Quartas de Final",
+    "utils.stage.SF": "Semifinal",
+    "utils.stage.TP": "Disputa do 3\xBA Lugar",
+    "utils.stage.F": "Final"
+  },
+  es: {
+    // teamTournamentStatus.ts
+    "utils.classifiedFor": "Clasificado a {stage}",
+    "utils.champion": "Campe\xF3n",
+    "utils.runnerUp": "Subcampe\xF3n",
+    "utils.thirdPlace": "3er lugar",
+    "utils.fourthPlace": "4\xBA lugar",
+    "utils.eliminatedIn": "Eliminado en {stage}",
+    "utils.eliminatedGroupStage": "Eliminado en la fase de grupos",
+    // matchResult.ts
+    "utils.pointsOne": "+1 pt",
+    "utils.pointsMany": "+{pts} pts",
+    "utils.pointsZero": "0 pts",
+    "utils.runnerUpShort": "Subcampe\xF3n",
+    "utils.qualified": "Clasificado",
+    "utils.eliminated": "Eliminado",
+    // playerDisplay.ts
+    "utils.positionGK": "Arquero",
+    "utils.positionDF": "Defensa",
+    "utils.positionMF": "Mediocampista",
+    "utils.positionFW": "Delantero",
+    // dateFormat.ts
+    "utils.updatedOn": "Actualizado el {stamp}",
+    // knockoutSlots.ts
+    "utils.stage.group": "Fase de grupos",
+    "utils.stage.R32": "Dieciseisavos de final",
+    "utils.stage.R16": "Octavos de final",
+    "utils.stage.QF": "Cuartos de final",
+    "utils.stage.SF": "Semifinal",
+    "utils.stage.TP": "Tercer puesto",
+    "utils.stage.F": "Final"
+  }
+};
+
+// src/i18n/strings.ts
+var MODULES = [
+  coreCatalog,
+  aoVivoCatalog,
+  standingsCatalog,
+  teamsCatalog,
+  partidasCatalog,
+  commonCatalog,
+  jogadoresCatalog,
+  lideresCatalog,
+  bracketCatalog,
+  playerCardCatalog,
+  venuesNewsCatalog,
+  fanSocialCatalog,
+  teamLineupCatalog,
+  dashboardCatalog,
+  liveExtrasCatalog,
+  bannersCatalog,
+  toursCatalog,
+  utilsCatalog
+];
+var mergeLocale = (pick) => Object.assign({}, ...MODULES.map((module2) => module2[pick]));
+var CATALOGS = {
+  pt: mergeLocale("pt"),
+  es: mergeLocale("es")
+};
+
+// src/i18n/LocaleContext.tsx
+var import_react = require("react");
+var import_jsx_runtime = require("react/jsx-runtime");
+var LocaleContext = (0, import_react.createContext)(null);
+
 // src/utils/knockoutSlots.ts
 function humanizeSlot(slot) {
   const groupPos = slot.match(/^([12])([A-L])$/);
@@ -26383,6 +28636,11 @@ var KNOCKOUT_STAGE_NAMES = {
   TP: "Disputa do 3\xBA Lugar",
   F: "Final"
 };
+var STAGE_CODE_BY_PT_NAME = Object.fromEntries(
+  Object.entries(KNOCKOUT_STAGE_NAMES).map(
+    ([code, name]) => [name, code]
+  )
+);
 
 // src/utils/matchResult.ts
 function decisiveSlot(score, penaltyScore) {
@@ -26772,8 +29030,8 @@ var wikipediaCountries_default = WIKIPEDIA_COUNTRIES;
 // src/data/teamAnalysis.json
 var teamAnalysis_default = {
   COL: {
-    text: "## Leitura\nA Col\xF4mbia de N\xE9stor Lorenzo cumpriu a miss\xE3o com autoridade e terminou em primeiro no Grupo K, carimbando a vaga no mata-mata. Gera\xE7\xE3o badalada com Luis D\xEDaz \xE0 frente, a sele\xE7\xE3o cafetera somou 7 pontos e, mais do que os gols, impressionou pela solidez defensiva: apenas um gol sofrido em tr\xEAs jogos.\n## Desempenho\nEstreou vencendo o Uzbequist\xE3o por 3 a 1, com Daniel Mu\xF1oz, Luis D\xEDaz e Jaminton Campaz (nos acr\xE9scimos) balan\xE7ando as redes. Na sequ\xEAncia, superou a RD Congo por 1 a 0, de novo com Daniel Mu\xF1oz (76 minutos), o grande nome ofensivo da campanha. Na rodada final, segurou um 0 a 0 diante de Portugal que confirmou a lideran\xE7a do grupo \u2014 confronto direto sem gols, mas com a ponta assegurada.\n## N\xFAmeros\nJ3 \xB7 2 vit\xF3rias \xB7 1 empate \xB7 4 gols marcados \xB7 1 sofrido (SG +3) \xB7 1\xAA colocada do Grupo K com 7 pontos, classificada ao mata-mata. Artilheiro na Copa: Daniel Mu\xF1oz (2 gols). Pr\xF3ximo desafio: os 16-avos de final do Mundial (mata-mata), contra advers\xE1rio a ser definido pelo cruzamento do chaveamento.",
-    updatedAt: "2026-06-28T00:32:00-03:00"
+    updatedAt: "2026-07-04T11:52:00-03:00",
+    text: "## Leitura\nA Col\xF4mbia est\xE1 nas oitavas de final e chega embalada. Ganhou o Grupo K sem perder e, nos 16-avos, bateu Gana com um gol cedo e muita solidez defensiva, confirmando o bom momento.\n## Desempenho\nNo grupo foram sete pontos: 3 a 1 no Uzbequist\xE3o, 1 a 0 na RD Congo e um 0 a 0 com Portugal que garantiu a lideran\xE7a. Nos 16-avos, Jhon Arias resolveu logo aos 14 minutos e a Col\xF4mbia segurou o 1 a 0 at\xE9 o fim, sem sustos maiores diante de Gana.\n## N\xFAmeros\nQuatro jogos, tr\xEAs vit\xF3rias e um empate; 5 gols marcados e apenas 1 sofrido \u2014 a defesa \xE9 o grande trunfo. L\xEDder do Grupo K, a Col\xF4mbia enfrenta a Su\xED\xE7a nas oitavas de final, dia 7 de julho."
   },
   POR: {
     text: "## Leitura\nPortugal de Roberto Mart\xEDnez avan\xE7ou \xE0s oitavas com suor: virou sobre a Cro\xE1cia por 2 a 1 nos 16-avos de final, com Cristiano Ronaldo empatando de p\xEAnalti e Gon\xE7alo Ramos decidindo nos acr\xE9scimos. O capit\xE3o marcou seu primeiro gol em mata-matas de Copa e mant\xE9m vivo o sonho luso.\n## Desempenho\nClassificou-se em segundo no Grupo K. Empatou com a RD Congo (1 a 1), goleou o Uzbequist\xE3o por 5 a 0 (dois de Ronaldo) e ficou no 0 a 0 com a Col\xF4mbia, cedendo a lideran\xE7a. Defesa s\xF3lida (s\xF3 um gol sofrido), mas ataque irregular contra os mais qualificados.\n## 16-avos de final\nA Cro\xE1cia saiu na frente com Ivan Perisic (53'). Ronaldo empatou de p\xEAnalti (68') \u2014 seu primeiro gol em mata-matas de Copa \u2014 e, quando o jogo caminhava para a prorroga\xE7\xE3o, Gon\xE7alo Ramos apareceu aos 90+4' para decretar a virada por 2 a 1.\n## N\xFAmeros\nJ4 \xB7 virada por 2 a 1 sobre a Cro\xE1cia nos 16-avos \xB7 2\xBA do Grupo K (5 pontos, SG +5 na fase de grupos). Cristiano Ronaldo desencantou no mata-mata. Classificada \xE0s oitavas de final, onde encara a Espanha.",
@@ -26792,8 +29050,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-07-02T23:30:00-03:00"
   },
   GHA: {
-    text: "## Leitura\nGana garantiu vaga entre os melhores terceiros do Grupo L apoiada numa defesa aplicada. Venceu o Panam\xE1, segurou a Inglaterra e s\xF3 caiu diante da Cro\xE1cia, terminando em terceiro com a classifica\xE7\xE3o assegurada.\n## Desempenho\nEstreou batendo o Panam\xE1 por 1 a 0, com Yirenkyi marcando nos acr\xE9scimos. Segurou um empate sem gols com a Inglaterra e perdeu para a Cro\xE1cia por 2 a 1 na rodada final, com Luckassen descontando.\n## N\xFAmeros\nJ3 \xB7 1 vit\xF3ria \xB7 1 empate \xB7 1 derrota \xB7 2 gols marcados \xB7 2 sofridos (SG 0) \xB7 3\xBA no Grupo L com 4 pontos. Classificada entre os oito melhores terceiros; nos 16-avos de final, encara a Col\xF4mbia.",
-    updatedAt: "2026-06-29T19:58:00-03:00"
+    updatedAt: "2026-07-04T11:52:00-03:00",
+    text: "## Leitura\nA caminhada de Gana acabou nos 16-avos de final. Classificada como uma das melhores terceiras do Grupo L, esbarrou numa Col\xF4mbia s\xF3lida e perdeu por 1 a 0, faltando pontaria para sonhar com as oitavas.\n## Desempenho\nNo grupo, Gana fez o suficiente: 1 a 0 no Panam\xE1, 0 a 0 com a Inglaterra e derrota por 2 a 1 para a Cro\xE1cia \u2014 quatro pontos e a vaga por repescagem. Nos 16-avos, levou o gol de Jhon Arias logo aos 14 e, apesar da press\xE3o no segundo tempo, n\xE3o conseguiu o empate diante da retranca colombiana.\n## N\xFAmeros\nQuatro jogos, uma vit\xF3ria, um empate e duas derrotas; apenas 2 gols marcados e 3 sofridos \u2014 o ataque pouco produtivo pesou. Terceira colocada do Grupo L, Gana est\xE1 eliminada nos 16-avos de final."
   },
   PAN: {
     text: "## Leitura\nO Panam\xE1 se despede da Copa sem pontos e sem marcar gols. As tr\xEAs derrotas no Grupo L, todas por margem curta, deixaram a equipe na lanterna do grupo.\n## Desempenho\nPerdeu para Gana por 1 a 0, para a Cro\xE1cia por 1 a 0 e para a Inglaterra por 2 a 0, sempre sem balan\xE7ar as redes advers\xE1rias.\n## N\xFAmeros\nJ3 \xB7 3 derrotas \xB7 0 gol marcado \xB7 4 sofridos (SG -4) \xB7 lanterna do Grupo L com 0 ponto. Eliminado na fase de grupos.",
@@ -26840,8 +29098,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-06-29T19:58:00-03:00"
   },
   SUI: {
-    text: "## Leitura\nA Su\xED\xE7a de Murat Yakin fez uma fase de grupos s\xF3lida e terminou em primeiro no Grupo B, classificada \xE0s oitavas como l\xEDder. Invicta, somou 7 pontos e coroou a campanha com a vit\xF3ria sobre o anfitri\xE3o Canad\xE1 na rodada final. Com a experi\xEAncia de Granit Xhaka e a for\xE7a de Breel Embolo e do revela\xE7\xE3o Johan Manzambi, os su\xED\xE7os avan\xE7am embalados.\n## Desempenho\nDepois do empate morno com o Catar (1 a 1), a Su\xED\xE7a encaixou o jogo: goleou a B\xF3snia por 4 a 1 (dois de Manzambi) e bateu o Canad\xE1 por 2 a 1 na decis\xE3o da ponta, com gols de Ruben Vargas (46) e Johan Manzambi (57). Cresceu ao longo do grupo e provou ser a for\xE7a da chave.\n## N\xFAmeros\nJ3 \xB7 2 vit\xF3rias \xB7 1 empate \xB7 7 gols marcados \xB7 3 sofridos (SG +4) \xB7 1\xBA do Grupo B com 7 pontos. Artilheiro: Johan Manzambi (3 gols). Classificada \xE0s oitavas como l\xEDder do grupo.",
-    updatedAt: "2026-06-24T19:00:00.000Z"
+    updatedAt: "2026-07-04T11:52:00-03:00",
+    text: "## Leitura\nA Su\xED\xE7a est\xE1 nas oitavas de final e faz jus ao favoritismo que carregava. Venceu o Grupo B com autoridade e, nos 16-avos, despachou a Arg\xE9lia sem sustos, mantendo a pegada eficiente que a levou t\xE3o longe.\n## Desempenho\nNa fase de grupos foram sete pontos: empate por 1 a 1 com o Catar na estreia, seguido de 4 a 1 sobre a B\xF3snia e 2 a 1 no Canad\xE1 \u2014 a melhor campanha do grupo. Nos 16-avos, resolveu cedo contra a Arg\xE9lia: Breel Embolo abriu aos 10 minutos e Dan Ndoye ampliou logo aos 46, no 2 a 0 que carimbou a vaga.\n## N\xFAmeros\nQuatro jogos, tr\xEAs vit\xF3rias e um empate, 9 gols marcados e apenas 4 sofridos. L\xEDder do Grupo B, a Su\xED\xE7a agora encara a Col\xF4mbia nas oitavas de final, dia 7 de julho."
   },
   QAT: {
     text: "## Leitura\nO Catar de Julen Lopetegui fez uma fase de grupos para esquecer e terminou na lanterna do Grupo B, eliminado. Somou apenas 1 ponto \u2014 o empate com a Su\xED\xE7a na estreia \u2014 e perdeu os dois jogos seguintes, sofrendo 10 gols no total. A campanha exp\xF4s as limita\xE7\xF5es e a indisciplina de um time que decepcionou.\n## Desempenho\nDepois do promissor 1 a 1 com a Su\xED\xE7a, o Catar desabou: levou 6 a 0 do Canad\xE1, com duas expuls\xF5es, e perdeu por 3 a 1 para a B\xF3snia na despedida, descontando com Hassan Al-Haydos (42). Defesa fr\xE1gil e falta de consist\xEAncia marcaram a pior campanha do grupo.\n## N\xFAmeros\nJ3 \xB7 1 empate \xB7 2 derrotas \xB7 2 gols marcados \xB7 10 sofridos (SG -8) \xB7 lanterna do Grupo B com 1 ponto. Eliminado na fase de grupos.",
@@ -26856,8 +29114,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-07-02T23:30:00-03:00"
   },
   AUS: {
-    text: "## Leitura\nA Austr\xE1lia de Tony Popovic fez uma campanha s\xF3lida e avan\xE7ou \xE0s oitavas em 2\xBA no Grupo D, com 4 pontos. Defensivamente organizados, os Socceroos souberam pontuar nos momentos certos e levaram a melhor na briga direta por vaga.\n## Desempenho\nEstreou vencendo a Turquia por 2 a 0 (Nestory Irankunda e Connor Metcalfe), perdeu para os Estados Unidos por 2 a 0 e segurou um empate sem gols com o Paraguai na rodada decisiva \u2014 resultado que bastou para confirmar a classifica\xE7\xE3o. Equipe aplicada, que cresceu na marca\xE7\xE3o e soube se segurar quando precisou.\n## N\xFAmeros\nJ3 \xB7 1 vit\xF3ria \xB7 1 empate \xB7 1 derrota \xB7 2 gols marcados \xB7 2 sofridos (SG 0) \xB7 2\xBA do Grupo D com 4 pontos. Classificada \xE0s oitavas de final.",
-    updatedAt: "2026-06-26T01:24:00-03:00"
+    updatedAt: "2026-07-04T11:52:00-03:00",
+    text: "## Leitura\nA Austr\xE1lia deu adeus \xE0 Copa nos 16-avos, mas no detalhe. Segunda do Grupo D, segurou o Egito no 1 a 1 e for\xE7ou a decis\xE3o por p\xEAnaltis, onde acabou superada. Saiu de campo sem ser batida no tempo normal.\n## Desempenho\nNa fase de grupos, campanha equilibrada: 2 a 0 na Turquia, derrota por 2 a 0 para os Estados Unidos e 0 a 0 com o Paraguai \u2014 quatro pontos e o vice-lideran\xE7a. Nos 16-avos, saiu atr\xE1s para o Egito (Emam Ashour, 13'), mas empatou com um gol contra de Mohamed Hany aos 55. Nos p\xEAnaltis, s\xF3 Irvine e Mabil converteram, e o 4 a 2 mandou os australianos para casa.\n## N\xFAmeros\nQuatro jogos, uma vit\xF3ria, dois empates e uma derrota no tempo regular; 5 gols marcados e 4 sofridos. Vice-l\xEDder do Grupo D, a Austr\xE1lia est\xE1 eliminada nos 16-avos, batida apenas na marca da cal."
   },
   PAR: {
     text: "## Leitura\nQue campanha do Paraguai de Gustavo Alfaro. Classificado \xE0 Copa entre os melhores terceiros, o time fez hist\xF3ria nos 16-avos ao eliminar a tetracampe\xE3 Alemanha nos p\xEAnaltis e avan\xE7ar \xE0s oitavas de final. Aguerrido e organizado, transformou-se na grande zebra do Mundial \u2014 e ainda sonha mais alto.\n## Desempenho\nNa fase de grupos foi 3\xBA no Grupo D: levou 4 a 1 dos Estados Unidos, reagiu batendo a Turquia por 1 a 0 (gol rel\xE2mpago de Mat\xEDas Galarza aos 2 minutos) e segurou um 0 a 0 com a Austr\xE1lia, suficiente para avan\xE7ar pelo crit\xE9rio de melhores terceiros. Nos 16-avos, segurou o 1 a 1 com a Alemanha \u2014 Julio Enciso abriu aos 42\u2019, Kai Havertz empatou aos 54\u2019 \u2014, levou o jogo aos p\xEAnaltis e venceu por 4 a 3, com o goleiro Orlando Gill defendendo as cobran\xE7as de Havertz e Woltemade.\n## N\xFAmeros\nFase de grupos: 1V 1E 1D, 3\xBA do Grupo D (4 pts), classificado entre os melhores terceiros. Nos 16-avos, eliminou a Alemanha (1 a 1, 4 a 3 nos p\xEAnaltis). Pr\xF3ximo desafio: oitavas de final, contra o vencedor de Fran\xE7a x Su\xE9cia.",
@@ -26868,8 +29126,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-06-26T01:24:00-03:00"
   },
   EGY: {
-    text: "## Leitura\nO Egito fez uma campanha s\xF3lida e avan\xE7ou em segundo no Grupo G \u2014 mesmos 5 pontos da B\xE9lgica, atr\xE1s apenas no saldo de gols. Classifica\xE7\xE3o merecida para os Fara\xF3s.\n## Desempenho\nEmpatou em 1 a 1 com a B\xE9lgica na estreia, com Emam Ashour abrindo o placar (19\u2019). Depois veio a vit\xF3ria decisiva: virada por 3 a 1 sobre a Nova Zel\xE2ndia \u2014 Surman abriu para os Kiwis, mas Zico, Salah e Trezeguet constru\xEDram o triunfo. Fechou com 1 a 1 contra o Ir\xE3 (Mahmoud Saber marcou, Ramin Rezaeian empatou), resultado que carimbou a vaga.\n## N\xFAmeros\nJ3 \xB7 1V 2E \xB7 5 gols marcados, 3 sofridos, saldo +2 e 5 pontos. Segundo lugar do Grupo G e classifica\xE7\xE3o garantida. Mohamed Salah segue como a grande refer\xEAncia do time.",
-    updatedAt: "2026-06-27T02:34:00-03:00"
+    updatedAt: "2026-07-04T11:52:00-03:00",
+    text: "## Leitura\nO Egito est\xE1 nas oitavas de final depois de uma decis\xE3o por p\xEAnaltis de puro sangue-frio. Passou de grupo invicto e, nos 16-avos, precisou da marca da cal para superar uma Austr\xE1lia aguerrida \u2014 mas seguiu adiante com autoridade nas cobran\xE7as.\n## Desempenho\nNo Grupo G foram cinco pontos sem derrota: 1 a 1 com a B\xE9lgica, 3 a 1 na Nova Zel\xE2ndia e 1 a 1 com o Ir\xE3. Nos 16-avos, Emam Ashour abriu aos 13, mas um gol contra deixou tudo igual e levou o jogo aos p\xEAnaltis. L\xE1, o Egito foi perfeito nas primeiras cobran\xE7as \u2014 Saber, Rabia, Salah e Abdelmaguid \u2014 e fechou em 4 a 2.\n## N\xFAmeros\nQuatro jogos invicto no tempo normal, com 6 gols marcados e 4 sofridos. Segundo colocado do Grupo G, o Egito encara a Argentina nas oitavas de final, dia 7 de julho."
   },
   NZL: {
     text: "## Leitura\nA Nova Zel\xE2ndia se despede do Mundial. Terminou em \xFAltimo no Grupo G, sem vit\xF3rias e com uma defesa que cedeu dez gols em tr\xEAs jogos.\n## Desempenho\nPerdeu por 3 a 1 para o Egito na estreia (Finn Surman marcou, mas levou a virada), arrancou um surpreendente 2 a 2 com o Ir\xE3 \u2014 Elijah Just brilhou com dois gols \u2014 e foi atropelada por 5 a 1 pela B\xE9lgica na despedida. O ponto contra o Ir\xE3 foi o \xFAnico da campanha.\n## N\xFAmeros\nJ3 \xB7 1E 2D \xB7 4 gols marcados, 10 sofridos, saldo -6 e apenas 1 ponto. Quarto e \xFAltimo lugar do Grupo G \u2014 eliminada. Elijah Just, com tr\xEAs gols, foi o nome ofensivo do time.",
@@ -26900,8 +29158,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-06-29T19:58:00-03:00"
   },
   ALG: {
-    text: "## Leitura\nA Arg\xE9lia de Vladimir Petkovi\u0107 se reabilitou de uma estreia dura e garantiu vaga entre os melhores terceiros do Grupo J. Depois de cair diante da Argentina, os Fennecs venceram a Jord\xE2nia e arrancaram um empate eletrizante com a \xC1ustria para se classificar aos 16-avos, onde encaram a Su\xED\xE7a. Mahrez apareceu na hora certa.\n## Desempenho\nPerdeu para a Argentina por 3 a 0 na abertura, mas reagiu: bateu a Jord\xE2nia por 2 a 1 de virada (Benbouali aos 69' e Gouiri aos 82') e empatou em 3 a 3 com a \xC1ustria num jogo maluco, com Belghali e dois de Riyad Mahrez \u2014 o segundo aos 90+3' \u2014 buscando o ponto da classifica\xE7\xE3o.\n## N\xFAmeros\nJ3 \xB7 1V 1E 1D \xB7 5 gols marcados \xB7 7 sofridos (SG -2) \xB7 3\xBA do Grupo J com 4 pontos, classificada entre os oito melhores terceiros. Artilheiro: Riyad Mahrez (2 gols). Pr\xF3ximo desafio: Su\xED\xE7a, nos 16-avos de final.",
-    updatedAt: "2026-06-29T19:58:00-03:00"
+    updatedAt: "2026-07-04T11:52:00-03:00",
+    text: "## Leitura\nA campanha da Arg\xE9lia terminou nos 16-avos de final. Classificada como uma das melhores terceiras do Grupo J, esbarrou numa Su\xED\xE7a mais eficiente e caiu por 2 a 0, sem conseguir criar a rea\xE7\xE3o que precisava.\n## Desempenho\nNo grupo, a Arg\xE9lia oscilou: perdeu de 3 a 0 para a Argentina, reagiu com o 2 a 1 sobre a Jord\xE2nia e arrancou um 3 a 3 dram\xE1tico com a \xC1ustria que garantiu a vaga por pontos. Nos 16-avos, por\xE9m, viu a Su\xED\xE7a abrir 2 a 0 ainda no in\xEDcio do segundo tempo e n\xE3o teve resposta \u2014 s\xF3 um amarelo de Cha\xEFbi e outro de Boudaoui como saldo.\n## N\xFAmeros\nQuatro jogos, uma vit\xF3ria, dois empates e uma derrota; 5 gols marcados e 9 sofridos. Terceira colocada do Grupo J, a Arg\xE9lia est\xE1 eliminada nos 16-avos de final."
   },
   JOR: {
     text: "## Leitura\nEstreante em Copas do Mundo, a Jord\xE2nia de Jamal Sellami despediu-se ainda na fase de grupos, sem pontos, mas n\xE3o sem deixar sua marca. Os jordanianos balan\xE7aram as redes nos tr\xEAs jogos do Grupo J \u2014 feito digno de nota para um debutante \u2014, ainda que a fragilidade defensiva tenha custado caro. Terminaram em \xFAltimo, eliminados, mas levam para casa o registro hist\xF3rico do primeiro gol do pa\xEDs em Mundiais.\n## Desempenho\nPerderam para a \xC1ustria por 3 a 1 na estreia, com Ali Olwan anotando o gol in\xE9dito da Jord\xE2nia em Copas. Na rodada seguinte, contra a Arg\xE9lia \u2014 sua grande chance \u2014, chegaram a liderar com Nizar Al-Rashdan aos 36 minutos, mas sofreram a virada por 2 a 1 (Nadhir Benbouali e Amine Gouiri) e ficaram sem chances de classifica\xE7\xE3o. No encerramento, ainda incomodaram a Argentina com gol de Mousa Al-Tamari, mas foram batidos por 3 a 1.\n## N\xFAmeros\nJ3 \xB7 3 derrotas \xB7 3 gols marcados \xB7 8 sofridos (SG -5) \xB7 4\xBA e \xFAltimo no Grupo J, eliminada. Gols de Ali Olwan, Nizar Al-Rashdan e Mousa Al-Tamari (um cada). Fim de linha: a Jord\xE2nia se despede do seu primeiro Mundial com a defesa como ponto fraco, mas com a certeza de que sabe marcar nesse n\xEDvel.",
@@ -26928,8 +29186,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-07-02T23:30:00-03:00"
   },
   CPV: {
-    text: "## Leitura\nCabo Verde fez hist\xF3ria: avan\xE7ou em segundo no Grupo H, feito in\xE9dito para a sele\xE7\xE3o dos Tubar\xF5es Azuis. Sem vencer, mas com tr\xEAs empates e uma defesa aplicada, os caboverdianos garantiram lugar no mata-mata da Copa.\n## Desempenho\nSegurou um 0 a 0 valioso contra a Espanha na estreia. No segundo jogo, arrancou um 2 a 2 com o Uruguai \u2014 Kevin Pina (21\u2019) e Helio Varela (61\u2019) marcaram numa virada de resili\xEAncia. Fechou com novo 0 a 0, contra a Ar\xE1bia Saudita, resultado que carimbou a classifica\xE7\xE3o hist\xF3rica.\n## N\xFAmeros\nJ3 \xB7 3E \xB7 2 gols marcados, 2 sofridos, saldo zero e 3 pontos. Segundo lugar do Grupo H \u2014 classifica\xE7\xE3o in\xE9dita ao mata-mata. A solidez defensiva foi a marca da campanha.",
-    updatedAt: "2026-06-27T08:24:00-03:00"
+    updatedAt: "2026-07-04T11:52:00-03:00",
+    text: "## Leitura\nCabo Verde se despede da Copa de cabe\xE7a erguida. Estreante e azar\xE3o, a ilha fez uma campanha hist\xF3rica: passou de grupo invicta e s\xF3 foi eliminada pela Argentina na prorroga\xE7\xE3o, depois de assustar a favorita at\xE9 o fim.\n## Desempenho\nNa fase de grupos, tr\xEAs empates que valeram ouro: 0 a 0 com a Espanha, 2 a 2 com o Uruguai e 0 a 0 com a Ar\xE1bia Saudita \u2014 tr\xEAs pontos e a in\xE9dita classifica\xE7\xE3o em segundo do Grupo H. Nos 16-avos, vendeu caro: empatou duas vezes com a Argentina, com Deroy Duarte (59') e Sidny Lopes Cabral (103'), e s\xF3 cedeu no 3 a 2 da prorroga\xE7\xE3o.\n## N\xFAmeros\nQuatro jogos sem vencer no tempo normal, mas apenas uma derrota \u2014 na prorroga\xE7\xE3o; 4 gols marcados e 5 sofridos. Segunda colocada do Grupo H, Cabo Verde est\xE1 eliminada nos 16-avos, encerrando uma estreia memor\xE1vel."
   },
   URU: {
     text: "## Leitura\nO Uruguai protagonizou uma das maiores decep\xE7\xF5es da primeira fase. Sem vencer no Grupo H \u2014 dois empates e uma derrota \u2014, a Celeste terminou em terceiro com apenas 2 pontos e est\xE1 eliminada: entre os doze terceiros colocados ficou na \xFAltima posi\xE7\xE3o, muito longe do corte dos oito que avan\xE7aram. A Espanha (7 pts) dominou o grupo e Cabo Verde (3 pts), em sua estreia em Copas, levou a segunda vaga.\n## Desempenho\nEstreou cedendo o 2 a 2 ao Cabo Verde: saiu atr\xE1s com Kevin Pina (21\u2019), virou ainda no primeiro tempo com Maxi Araujo (44\u2019) e Canobbio (45+6\u2019), mas voltou a ser alcan\xE7ada por H\xE9lio Varela (61\u2019). Contra a Ar\xE1bia Saudita ficou no 1 a 1 \u2014 Abdulelah Alamri abriu para os sauditas (41\u2019) e Maxi Araujo deixou tudo igual (80\u2019). Na despedida, perdeu por 1 a 0 para a Espanha, gol de \xC1lex Baena (42\u2019), e deu adeus ao Mundial sem nenhuma vit\xF3ria.\n## N\xFAmeros\nJ3 \xB7 2E 1D \xB7 3 gols marcados, 4 sofridos, saldo -1 e apenas 2 pontos. Terceiro lugar no Grupo H e 12\xBA (\xFAltimo) entre os terceiros colocados \u2014 eliminada. Maxi Araujo, com 2 gols, foi o \xFAnico destaque ofensivo de uma campanha para esquecer.",
@@ -26960,8 +29218,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-07-01T01:15:00-03:00"
   },
   ARG: {
-    text: "## Leitura\nA atual campe\xE3 do mundo fez 100% na fase de grupos e refor\xE7a o favoritismo. Comandada por Lionel Scaloni, a Argentina venceu os tr\xEAs jogos do Grupo J sem grandes sustos, com um Messi avassalador \u2014 seis gols \u2014 e uma defesa quase intranspon\xEDvel. Agora encara Cabo Verde nos 16-avos de final.\n## Desempenho\nEstreou goleando a Arg\xE9lia por 3 a 0 com hat-trick de Messi (17', 60', 76'). Bateu a \xC1ustria por 2 a 0, de novo com dois do camisa 10 (38' e 90+5'). E fechou com 3 a 1 sobre a Jord\xE2nia \u2014 Lo Celso (19'), Lautaro Mart\xEDnez (31') e Messi (80'), com Altamari descontando. Dom\xEDnio de posse, efici\xEAncia e elenco rodado: futebol maduro de candidata ao t\xEDtulo.\n## N\xFAmeros\nJ3 \xB7 3 vit\xF3rias \xB7 8 gols marcados \xB7 1 sofrido \xB7 1\xBA do Grupo J com 9 pontos e o melhor saldo da chave (SG +7). Artilheiro isolado da competi\xE7\xE3o: Lionel Messi (6 gols). Pr\xF3ximo desafio: Cabo Verde, nos 16-avos de final.",
-    updatedAt: "2026-06-29T19:58:00-03:00"
+    updatedAt: "2026-07-04T11:52:00-03:00",
+    text: "## Leitura\nA Argentina segue viva e nas oitavas de final, mas precisou suar para chegar l\xE1. Depois de uma fase de grupos impec\xE1vel, sofreu mais do que esperava diante da estreante Cabo Verde e s\xF3 avan\xE7ou na prorroga\xE7\xE3o.\n## Desempenho\nNo Grupo J foram tr\xEAs vit\xF3rias em tr\xEAs: 3 a 0 na Arg\xE9lia, 2 a 0 na \xC1ustria e 3 a 1 na Jord\xE2nia \u2014 nove pontos e lideran\xE7a folgada. Nos 16-avos, o roteiro complicou: Messi abriu aos 29, mas Cabo Verde empatou duas vezes (Deroy Duarte e Sidny Lopes Cabral) e levou o jogo ao tempo extra. Lisandro Mart\xEDnez marcou aos 92 e um gol contra de Diney Borges, aos 111, decretou o 3 a 2.\n## N\xFAmeros\nQuatro jogos, quatro vit\xF3rias, 11 gols marcados e apenas 3 sofridos \u2014 campanha 100%. L\xEDder do Grupo J, a Argentina encara o Egito nas oitavas de final, dia 7 de julho."
   }
 };
 
@@ -28402,48 +30660,68 @@ function groupStandings(rows, matches = APP_MATCHES) {
 }
 
 // predict-core.ts
-function teamLine(team2) {
+function teamLine(team2, locale = "pt") {
   if (team2.played === 0) {
-    return `${team2.name} ainda n\xE3o entrou em campo nesta Copa.`;
+    return locale === "es" ? `${team2.name} a\xFAn no ha entrado en cancha en este Mundial.` : `${team2.name} ainda n\xE3o entrou em campo nesta Copa.`;
   }
   const sign = team2.goalDifference > 0 ? `+${team2.goalDifference}` : `${team2.goalDifference}`;
+  if (locale === "es") {
+    return `${team2.name} \u2014 ${team2.points} pts en ${team2.played} partido${team2.played === 1 ? "" : "s"} (${team2.won}G ${team2.drawn}E ${team2.lost}P), ${team2.goalsFor} goles a favor, ${team2.goalsAgainst} en contra, diferencia ${sign}.`;
+  }
   return `${team2.name} \u2014 ${team2.points} pts em ${team2.played} jogo${team2.played === 1 ? "" : "s"} (${team2.won}V ${team2.drawn}E ${team2.lost}D), ${team2.goalsFor} gols pr\xF3, ${team2.goalsAgainst} contra, saldo ${sign}.`;
 }
 function pct(probability) {
   return `${Math.round(probability * 100)}%`;
 }
-function buildPrediction(home, away, outcome, userNotes) {
+function buildPrediction(home, away, outcome, userNotes, locale = "pt") {
+  const es = locale === "es";
   const bothPlayed = home.played > 0 && away.played > 0;
   const edge = outcome.homeWin - outcome.awayWin;
   let verdict;
   if (!bothPlayed) {
-    verdict = `Cedo demais para cravar: ${home.name} e ${away.name} mal aqueceram os motores. Por enquanto, confronto totalmente em aberto.`;
+    verdict = es ? `Demasiado pronto para definir: ${home.name} y ${away.name} apenas calentaron motores. Por ahora, un duelo totalmente abierto.` : `Cedo demais para cravar: ${home.name} e ${away.name} mal aqueceram os motores. Por enquanto, confronto totalmente em aberto.`;
   } else if (Math.abs(edge) <= 0.1) {
-    verdict = `Jogo de igual para igual entre ${home.name} e ${away.name} \u2014 moeda no ar.`;
+    verdict = es ? `Partido parejo entre ${home.name} y ${away.name} \u2014 moneda al aire.` : `Jogo de igual para igual entre ${home.name} e ${away.name} \u2014 moeda no ar.`;
   } else {
     const fav = edge > 0 ? home : away;
     const dog = edge > 0 ? away : home;
     const strong = Math.abs(edge) > 0.3;
-    verdict = strong ? `${fav.name} entra como favorito claro diante de ${dog.name}, pela campanha mais s\xF3lida.` : `${fav.name} leva leve vantagem sobre ${dog.name}, mas sem folga para vacilar.`;
+    if (es) {
+      verdict = strong ? `${fav.name} llega como favorito claro ante ${dog.name}, por la campa\xF1a m\xE1s s\xF3lida.` : `${fav.name} tiene una leve ventaja sobre ${dog.name}, pero sin margen para relajarse.`;
+    } else {
+      verdict = strong ? `${fav.name} entra como favorito claro diante de ${dog.name}, pela campanha mais s\xF3lida.` : `${fav.name} leva leve vantagem sobre ${dog.name}, mas sem folga para vacilar.`;
+    }
   }
   let modelLines = "";
   if (bothPlayed) {
     const probLine = `Probabilidades: ${home.name} ${pct(outcome.homeWin)} \xB7 empate ${pct(outcome.draw)} \xB7 ${away.name} ${pct(outcome.awayWin)}.`;
     const { teamA, teamB } = outcome.mostLikelyScore;
-    const scoreLine = `Placar mais prov\xE1vel: ${home.name} ${teamA} x ${teamB} ${away.name}.`;
+    const scoreLine = es ? `Marcador m\xE1s probable: ${home.name} ${teamA} x ${teamB} ${away.name}.` : `Placar mais prov\xE1vel: ${home.name} ${teamA} x ${teamB} ${away.name}.`;
     modelLines = `
 ${probLine}
 ${scoreLine}`;
   }
   const notes = userNotes?.trim().slice(0, 280);
-  const notesLine = notes ? `
+  const notesLine = notes ? es ? `
+Destacaste: "${notes}" \u2014 anotado, pero el pron\xF3stico sigue la campa\xF1a.` : `
 Voc\xEA destacou: "${notes}" \u2014 anotado, mas o palpite segue a campanha.` : "";
+  if (es) {
+    return [
+      `## Pron\xF3stico`,
+      `${verdict}${modelLines}`,
+      `## N\xFAmeros`,
+      `${teamLine(home, locale)}
+${teamLine(away, locale)}`,
+      `## Lectura`,
+      `Pron\xF3stico simulado con un modelo de Poisson con correcci\xF3n Dixon-Coles sobre la campa\xF1a actual de las selecciones \u2014 es diversi\xF3n para la hinchada, no un resultado cantado.${notesLine}`
+    ].join("\n");
+  }
   return [
     `## Progn\xF3stico`,
     `${verdict}${modelLines}`,
     `## N\xFAmeros`,
-    `${teamLine(home)}
-${teamLine(away)}`,
+    `${teamLine(home, locale)}
+${teamLine(away, locale)}`,
     `## Leitura`,
     `Palpite simulado por um modelo de Poisson com corre\xE7\xE3o Dixon-Coles sobre a campanha atual das sele\xE7\xF5es \u2014 \xE9 divers\xE3o para a torcida, n\xE3o cravada de resultado.${notesLine}`
   ].join("\n");
@@ -28672,6 +30950,11 @@ var FIFA_COMPETITION_ID = "17";
 var FIFA_SEASON_ID = "285023";
 var DEFAULT_BROADCAST_COUNTRY = "BR";
 var DEFAULT_BROADCAST_LANGUAGE = "pt";
+var localeForRequest = (req) => {
+  const q = req.query?.language;
+  if (typeof q === "string" && q.trim()) return localeFromFifaLanguage(q.trim());
+  return localeFromHost(req.hostname);
+};
 var BROADCAST_GUIDE_CACHE_TTL_MS = 5 * 60 * 1e3;
 var TEAM_LINEUPS_CACHE_TTL_MS = 5 * 60 * 1e3;
 var LIVE_TEAM_LINEUPS_CACHE_TTL_MS = 10 * 1e3;
@@ -29255,7 +31538,10 @@ var getBroadcastGuidePayload = async (country, language) => {
           {
             broadcasters: hasOfficialGuide ? fifaBroadcasters : match.broadcasters,
             source: hasOfficialGuide ? "fifa" : "fallback",
-            note: hasOfficialGuide ? "Dados oficiais do Onde Assistir da FIFA para o Brasil." : "Dados oficiais da FIFA indispon\xEDveis para esta partida no momento; exibindo a lista local.",
+            note: localizeNote(
+              hasOfficialGuide ? "Dados oficiais do Onde Assistir da FIFA para o Brasil." : "Dados oficiais da FIFA indispon\xEDveis para esta partida no momento; exibindo a lista local.",
+              localeFromFifaLanguage(language)
+            ),
             fifaMatchId: fifaMatch?.IdMatch,
             updatedAt: (/* @__PURE__ */ new Date()).toISOString()
           }
@@ -29506,7 +31792,7 @@ var getTeamViewNote = (source) => {
   }
   return "Painel da sele\xE7\xE3o combinando dados oficiais da FIFA com fallback local do aplicativo.";
 };
-var buildFallbackLineupEntry = (players, teamCode) => ({
+var buildFallbackLineupEntry = (players, teamCode, locale = "pt") => ({
   // Enrich the local lineup from the squad registry so editorial/profile fields
   // (worldCupNote, instagramPostUrl, socials, picture, metadata) reach the player
   // card even when no live FIFA lineup is available (finished/upcoming matches).
@@ -29528,7 +31814,7 @@ var buildFallbackLineupEntry = (players, teamCode) => ({
     };
   }),
   source: "fallback",
-  note: "Escala\xE7\xE3o estimada a partir da base local do aplicativo.",
+  note: localizeNote("Escala\xE7\xE3o estimada a partir da base local do aplicativo.", locale),
   updatedAt: (/* @__PURE__ */ new Date()).toISOString()
 });
 var resolveTeamViewSource = (sources) => {
@@ -29656,7 +31942,7 @@ var buildTeamViewPayload = async (teamCode, country, language) => {
     (match) => (matchStatesPayload.states[match.id]?.status ?? match.status) === "FINISHED"
   );
   const lineupReference = currentMatchReference ?? nextMatchReference ?? lastMatchReference ?? teamMatches[0] ?? null;
-  const lineup = lineupReference ? lineupReference.isTeamA ? teamLineupsPayload.lineups[lineupReference.match.id]?.teamA ?? buildFallbackLineupEntry(lineupReference.team.lineup, lineupReference.team.code) : teamLineupsPayload.lineups[lineupReference.match.id]?.teamB ?? buildFallbackLineupEntry(lineupReference.team.lineup, lineupReference.team.code) : null;
+  const lineup = lineupReference ? lineupReference.isTeamA ? teamLineupsPayload.lineups[lineupReference.match.id]?.teamA ?? buildFallbackLineupEntry(lineupReference.team.lineup, lineupReference.team.code, localeFromFifaLanguage(language)) : teamLineupsPayload.lineups[lineupReference.match.id]?.teamB ?? buildFallbackLineupEntry(lineupReference.team.lineup, lineupReference.team.code, localeFromFifaLanguage(language)) : null;
   const featuredGuideReference = currentMatchReference ?? nextMatchReference ?? null;
   const broadcastGuide = featuredGuideReference ? broadcastGuidePayload.guides[featuredGuideReference.match.id] ?? null : null;
   const topScorers = sortPlayerLeaders(
@@ -29797,7 +32083,7 @@ app.get("/api/broadcast-guide", async (req, res) => {
   } catch (error) {
     console.error("FIFA API Error in /api/broadcast-guide:", error);
     res.status(502).json({
-      error: error?.message || "Erro ao carregar guia de transmiss\xE3o da FIFA"
+      error: error?.message || localizeNote("Erro ao carregar guia de transmiss\xE3o da FIFA", localeForRequest(req))
     });
   }
 });
@@ -29808,7 +32094,9 @@ app.get("/api/match-states", async (req, res) => {
     res.json(await getMatchStatesPayload(language));
   } catch (error) {
     console.error("FIFA API Error in /api/match-states:", error);
-    res.status(502).json({ error: error?.message || "Erro ao carregar placares da FIFA" });
+    res.status(502).json({
+      error: error?.message || localizeNote("Erro ao carregar placares da FIFA", localeForRequest(req))
+    });
   }
 });
 app.get("/api/match-overlays", async (req, res) => {
@@ -29820,7 +32108,7 @@ app.get("/api/match-overlays", async (req, res) => {
   } catch (error) {
     console.error("FIFA API Error in /api/match-overlays:", error);
     res.status(502).json({
-      error: error?.message || "Erro ao carregar dados unificados da FIFA"
+      error: error?.message || localizeNote("Erro ao carregar dados unificados da FIFA", localeForRequest(req))
     });
   }
 });
@@ -29831,17 +32119,26 @@ app.get("/api/team-lineups", async (req, res) => {
     res.json(await getTeamLineupsPayload(language));
   } catch (error) {
     console.error("FIFA API Error in /api/team-lineups:", error);
-    res.status(502).json({ error: error?.message || "Erro ao carregar escala\xE7\xF5es da FIFA" });
+    res.status(502).json({
+      error: error?.message || localizeNote("Erro ao carregar escala\xE7\xF5es da FIFA", localeForRequest(req))
+    });
   }
 });
 app.get("/api/tournament-leaders", async (req, res) => {
   try {
     const language = typeof req.query.language === "string" && req.query.language.trim() ? req.query.language.trim() : DEFAULT_BROADCAST_LANGUAGE;
     res.set("Cache-Control", "no-store");
-    res.json(await getTournamentLeadersPayload(language));
+    res.json(
+      localizeResilienceNote(
+        await getTournamentLeadersPayload(language),
+        localeFromFifaLanguage(language)
+      )
+    );
   } catch (error) {
     console.error("FIFA API Error in /api/tournament-leaders:", error);
-    res.status(502).json({ error: error?.message || "Erro ao carregar l\xEDderes do torneio" });
+    res.status(502).json({
+      error: error?.message || localizeNote("Erro ao carregar l\xEDderes do torneio", localeForRequest(req))
+    });
   }
 });
 app.get("/api/player-stats/:teamCode/:playerName", async (req, res) => {
@@ -29854,8 +32151,11 @@ app.get("/api/player-stats/:teamCode/:playerName", async (req, res) => {
     const leader = aggregated.playerLeaders.find(
       (p) => p.teamCode === teamCode && normalizeText2(p.name) === normalizedPlayerName
     );
+    const locale = localeFromFifaLanguage(language);
     if (!leader) {
-      res.status(404).json({ error: "Jogador n\xE3o encontrado nos l\xEDderes do torneio" });
+      res.status(404).json({
+        error: localizeNote("Jogador n\xE3o encontrado nos l\xEDderes do torneio", locale)
+      });
       return;
     }
     const payload = {
@@ -29863,7 +32163,7 @@ app.get("/api/player-stats/:teamCode/:playerName", async (req, res) => {
       yellowCards: leader.yellowCards,
       redCards: leader.redCards,
       source: aggregated.source,
-      note: aggregated.note,
+      note: localizeNote(aggregated.note, locale),
       updatedAt: aggregated.updatedAt
     };
     res.set("Cache-Control", "no-store");
@@ -29875,7 +32175,7 @@ app.get("/api/player-stats/:teamCode/:playerName", async (req, res) => {
       yellowCards: 0,
       redCards: 0,
       source: "fallback",
-      note: "Estat\xEDsticas indispon\xEDveis \u2014 FIFA API inacess\xEDvel.",
+      note: localizeNote("Estat\xEDsticas indispon\xEDveis \u2014 FIFA API inacess\xEDvel.", localeForRequest(req)),
       updatedAt: (/* @__PURE__ */ new Date()).toISOString()
     };
     res.json(fallback);
@@ -29886,13 +32186,14 @@ app.get("/api/player-incidents/:teamCode/:playerName", async (req, res) => {
     const teamCode = req.params.teamCode.toUpperCase();
     const playerName = req.params.playerName;
     const language = typeof req.query.language === "string" && req.query.language.trim() ? req.query.language.trim() : DEFAULT_BROADCAST_LANGUAGE;
+    const locale = localeFromFifaLanguage(language);
     const payload = await aggregatePlayerIncidents(teamCode, playerName, language);
     if (!payload) {
-      res.status(404).json({ error: "Jogador n\xE3o encontrado" });
+      res.status(404).json({ error: localizeNote("Jogador n\xE3o encontrado", locale) });
       return;
     }
     res.set("Cache-Control", "no-store");
-    res.json(payload);
+    res.json(localizeResilienceNote(payload, locale));
   } catch (error) {
     console.error("FIFA API Error in /api/player-incidents:", error);
     const fallback = {
@@ -29905,7 +32206,7 @@ app.get("/api/player-incidents/:teamCode/:playerName", async (req, res) => {
       incidents: [],
       summary: { goals: 0, yellowCards: 0, redCards: 0, substitutionsOff: 0, substitutionsOn: 0 },
       source: "fallback",
-      note: "Incidentes indispon\xEDveis \u2014 FIFA API inacess\xEDvel.",
+      note: localizeNote("Incidentes indispon\xEDveis \u2014 FIFA API inacess\xEDvel.", localeForRequest(req)),
       updatedAt: (/* @__PURE__ */ new Date()).toISOString()
     };
     res.json(fallback);
@@ -29915,16 +32216,19 @@ app.get("/api/team-view/:teamCode", async (req, res) => {
   try {
     const country = typeof req.query.country === "string" && req.query.country.trim() ? req.query.country.trim().toUpperCase() : DEFAULT_BROADCAST_COUNTRY;
     const language = typeof req.query.language === "string" && req.query.language.trim() ? req.query.language.trim() : DEFAULT_BROADCAST_LANGUAGE;
+    const locale = localeFromFifaLanguage(language);
     const payload = await buildTeamViewPayload(req.params.teamCode, country, language);
     if (!payload) {
-      res.status(404).json({ error: "Sele\xE7\xE3o n\xE3o encontrada" });
+      res.status(404).json({ error: localizeNote("Sele\xE7\xE3o n\xE3o encontrada", locale) });
       return;
     }
     res.set("Cache-Control", "no-store");
-    res.json(payload);
+    res.json(localizeResilienceNote(payload, locale));
   } catch (error) {
     console.error("FIFA API Error in /api/team-view/:teamCode:", error);
-    res.status(502).json({ error: error?.message || "Erro ao carregar painel completo da sele\xE7\xE3o" });
+    res.status(502).json({
+      error: error?.message || localizeNote("Erro ao carregar painel completo da sele\xE7\xE3o", localeForRequest(req))
+    });
   }
 });
 async function fetchCountryInfo(code) {
@@ -30045,20 +32349,25 @@ async function fetchCountryInfo(code) {
 }
 app.get("/api/country-info/:code", async (req, res) => {
   const code = req.params.code.toUpperCase();
+  const locale = localeForRequest(req);
   try {
     const payload = await fetchCountryInfo(code);
     if (!payload) {
-      res.status(404).json({ error: "Pa\xEDs n\xE3o encontrado" });
+      res.status(404).json({ error: localizeNote("Pa\xEDs n\xE3o encontrado", locale) });
       return;
     }
     res.set("Cache-Control", "public, max-age=3600");
-    res.json(payload);
+    res.json(localizeResilienceNote(payload, locale));
   } catch (error) {
     console.error("Wikipedia API Error in /api/country-info:", error);
     const stale = countryInfoCache.get(code);
     if (stale) {
       res.set("Cache-Control", "public, max-age=3600");
-      res.json({ ...stale.payload, source: "fallback", note: "Usando dados em cache \u2014 Wikipedia inacess\xEDvel." });
+      res.json({
+        ...stale.payload,
+        source: "fallback",
+        note: localizeNote("Usando dados em cache \u2014 Wikipedia inacess\xEDvel.", locale)
+      });
       return;
     }
     const fallback = {
@@ -30075,7 +32384,7 @@ app.get("/api/country-info/:code", async (req, res) => {
       government: null,
       currency: null,
       source: "fallback",
-      note: "Informa\xE7\xF5es indispon\xEDveis \u2014 Wikipedia inacess\xEDvel.",
+      note: localizeNote("Informa\xE7\xF5es indispon\xEDveis \u2014 Wikipedia inacess\xEDvel.", locale),
       updatedAt: (/* @__PURE__ */ new Date()).toISOString()
     };
     res.json(fallback);
@@ -30283,7 +32592,7 @@ var parseCoordinate = (value, max) => {
   if (!Number.isFinite(n) || Math.abs(n) > max) return null;
   return n;
 };
-var fetchVenueWeather = async (lat, lng) => {
+var fetchVenueWeather = async (lat, lng, locale) => {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), WEATHER_FETCH_TIMEOUT_MS);
   let response;
@@ -30295,30 +32604,31 @@ var fetchVenueWeather = async (lat, lng) => {
   if (!response.ok) {
     throw new Error(`Open-Meteo request failed (${response.status})`);
   }
-  const snapshot = parseOpenMeteoCurrent(await response.json());
+  const snapshot = parseOpenMeteoCurrent(await response.json(), locale);
   if (!snapshot) {
     throw new Error("Open-Meteo returned no current weather");
   }
   return {
     source: "open-meteo",
-    note: "Condi\xE7\xF5es no est\xE1dio \u2022 Open-Meteo",
+    note: locale === "es" ? "Condiciones en el estadio \u2022 Open-Meteo" : "Condi\xE7\xF5es no est\xE1dio \u2022 Open-Meteo",
     updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
     weather: snapshot
   };
 };
 app.get("/api/match-weather", async (req, res) => {
+  const locale = localeForRequest(req);
   const lat = parseCoordinate(req.query.lat, 90);
   const lng = parseCoordinate(req.query.lng, 180);
   if (lat === null || lng === null) {
     res.status(400).json({
       source: "fallback",
-      note: "Coordenadas do est\xE1dio inv\xE1lidas.",
+      note: locale === "es" ? "Coordenadas del estadio inv\xE1lidas." : "Coordenadas do est\xE1dio inv\xE1lidas.",
       updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
       weather: null
     });
     return;
   }
-  const key = `${lat.toFixed(2)},${lng.toFixed(2)}`;
+  const key = `${locale}:${lat.toFixed(2)},${lng.toFixed(2)}`;
   const cached = weatherCache.get(key);
   if (cached && cached.expiresAt > Date.now()) {
     res.set("Cache-Control", "public, max-age=300");
@@ -30326,7 +32636,7 @@ app.get("/api/match-weather", async (req, res) => {
     return;
   }
   try {
-    const payload = await fetchVenueWeather(lat, lng);
+    const payload = await fetchVenueWeather(lat, lng, locale);
     weatherCache.set(key, { payload, expiresAt: Date.now() + WEATHER_CACHE_TTL_MS });
     res.set("Cache-Control", "public, max-age=300");
     res.json(payload);
@@ -30334,13 +32644,17 @@ app.get("/api/match-weather", async (req, res) => {
     console.error("Weather fetch failed:", error);
     if (cached) {
       res.set("Cache-Control", "public, max-age=60");
-      res.json({ ...cached.payload, source: "fallback", note: "Atualizando o clima\u2026" });
+      res.json({
+        ...cached.payload,
+        source: "fallback",
+        note: locale === "es" ? "Actualizando el clima\u2026" : "Atualizando o clima\u2026"
+      });
       return;
     }
     res.set("Cache-Control", "public, max-age=60");
     res.json({
       source: "fallback",
-      note: "Clima indispon\xEDvel no momento.",
+      note: locale === "es" ? "Clima no disponible por ahora." : "Clima indispon\xEDvel no momento.",
       updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
       weather: null
     });
@@ -30456,16 +32770,21 @@ app.get("/api/questions", (_req, res) => {
 });
 app.post("/api/predict", (req, res) => {
   res.set("Cache-Control", "no-store");
+  const locale = localeForRequest(req);
   const body = req.body ?? {};
   const homeKey = typeof body.homeTeam === "string" ? body.homeTeam.trim() : "";
   const awayKey = typeof body.awayTeam === "string" ? body.awayTeam.trim() : "";
   const userNotes = typeof body.userNotes === "string" ? body.userNotes : void 0;
   if (!homeKey || !awayKey) {
-    res.status(400).json({ error: "Informe as duas sele\xE7\xF5es (homeTeam e awayTeam)." });
+    res.status(400).json({
+      error: locale === "es" ? "Indica las dos selecciones (homeTeam y awayTeam)." : "Informe as duas sele\xE7\xF5es (homeTeam e awayTeam)."
+    });
     return;
   }
   if (homeKey.toUpperCase() === awayKey.toUpperCase()) {
-    res.status(400).json({ error: "Escolha duas sele\xE7\xF5es diferentes." });
+    res.status(400).json({
+      error: locale === "es" ? "Elige dos selecciones diferentes." : "Escolha duas sele\xE7\xF5es diferentes."
+    });
     return;
   }
   const rows = computeStandings(APP_MATCHES);
@@ -30477,7 +32796,9 @@ app.post("/api/predict", (req, res) => {
   const home = byKey.get(homeKey.toUpperCase());
   const away = byKey.get(awayKey.toUpperCase());
   if (!home || !away) {
-    res.status(404).json({ error: "Sele\xE7\xE3o n\xE3o encontrada." });
+    res.status(404).json({
+      error: locale === "es" ? "Selecci\xF3n no encontrada." : "Sele\xE7\xE3o n\xE3o encontrada."
+    });
     return;
   }
   const toTeam = (row) => ({
@@ -30493,7 +32814,10 @@ app.post("/api/predict", (req, res) => {
     goalDifference: row.goalDifference
   });
   const outcome = predictMatchOutcome(rows, home.code, away.code);
-  res.json({ text: buildPrediction(toTeam(home), toTeam(away), outcome, userNotes), simulated: true });
+  res.json({
+    text: buildPrediction(toTeam(home), toTeam(away), outcome, userNotes, locale),
+    simulated: true
+  });
 });
 var QUALIFICATION_SIM_SEED = 1371482685;
 var DEFAULT_QUALIFICATION_ITERATIONS = 4e3;
@@ -30569,7 +32893,9 @@ app.get("/api/chat/:matchId", (req, res) => {
   res.set("Cache-Control", "no-store");
   const { matchId } = req.params;
   if (!VALID_MATCH_IDS.has(matchId)) {
-    return res.status(404).json({ error: "Partida desconhecida." });
+    return res.status(404).json({
+      error: localeForRequest(req) === "es" ? "Partido desconocido." : "Partida desconhecida."
+    });
   }
   const rawSince = req.query.since;
   const sinceId = typeof rawSince === "string" && rawSince !== "" ? Number(rawSince) : void 0;
@@ -30583,24 +32909,32 @@ app.get("/api/chat/:matchId", (req, res) => {
 });
 app.post("/api/chat/:matchId", (req, res) => {
   res.set("Cache-Control", "no-store");
+  const locale = localeForRequest(req);
+  const es = locale === "es";
   const { matchId } = req.params;
   if (!VALID_MATCH_IDS.has(matchId)) {
-    return res.status(404).json({ error: "Partida desconhecida." });
+    return res.status(404).json({ error: es ? "Partido desconocido." : "Partida desconhecida." });
   }
   if (process.memoryUsage().rss > CHAT_MAX_RSS_BYTES) {
-    return res.status(503).json({ error: "Chat temporariamente indispon\xEDvel. Tente em instantes." });
+    return res.status(503).json({
+      error: es ? "Chat no disponible temporalmente. Prueba en unos instantes." : "Chat temporariamente indispon\xEDvel. Tente em instantes."
+    });
   }
   if (!isMatchLive(matchId)) {
-    return res.status(403).json({ error: "O chat abre quando a partida come\xE7a." });
+    return res.status(403).json({
+      error: es ? "El chat se abre cuando comienza el partido." : "O chat abre quando a partida come\xE7a."
+    });
   }
   const body = req.body ?? {};
-  const nickname = validateNickname(body.nickname);
+  const nickname = validateNickname(body.nickname, locale);
   if (!nickname.ok) return res.status(400).json({ error: nickname.reason });
-  const text = validateText(body.text);
+  const text = validateText(body.text, locale);
   if (!text.ok) return res.status(400).json({ error: text.reason });
   const now = Date.now();
   if (!passesRateLimit(chatRateMap, deriveClientKey(req), now)) {
-    return res.status(429).json({ error: "Voc\xEA est\xE1 enviando mensagens r\xE1pido demais. Respire." });
+    return res.status(429).json({
+      error: es ? "Est\xE1s enviando mensajes demasiado r\xE1pido. Respira." : "Voc\xEA est\xE1 enviando mensagens r\xE1pido demais. Respire."
+    });
   }
   const message = appendMessage(
     chatStore,
@@ -30644,9 +32978,11 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     const distPath = import_path.default.join(process.cwd(), "dist");
-    app.use(import_express.default.static(distPath));
+    app.use(import_express.default.static(distPath, { index: false }));
+    const indexHtml = (0, import_node_fs.readFileSync)(import_path.default.join(distPath, "index.html"), "utf8");
     app.get("*", (req, res) => {
-      res.sendFile(import_path.default.join(distPath, "index.html"));
+      res.set("Content-Type", "text/html; charset=utf-8");
+      res.send(localizeIndexHtml(indexHtml, localeFromHost(req.hostname)));
     });
   }
   httpServer.listen(port, HOST, () => {
