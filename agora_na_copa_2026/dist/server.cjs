@@ -2836,7 +2836,8 @@ var squads_default = {
       "https://www.instagram.com/p/DZ-3bZFETZa/",
       "https://www.instagram.com/p/DaJEBlOgsGG/",
       "https://www.instagram.com/p/DaZSbgnkYGr/",
-      "https://www.instagram.com/p/DaZPLicEbdx/"
+      "https://www.instagram.com/p/DaZPLicEbdx/",
+      "https://www.instagram.com/p/DaPKsLMlTsQ/"
     ],
     worldCupNote: "## Leitura\nO farol franc\xEAs n\xE3o apaga. Kylian Mbapp\xE9 marcou o gol da vit\xF3ria por 1 a 0 sobre o Paraguai nas oitavas de final e levou a Fran\xE7a \xE0s quartas. Capit\xE3o e artilheiro, o camisa 10 chegou a sete gols no Mundial e segue decisivo nos momentos que pesam.\n## Desempenho\nFez quatro gols na fase de grupos (dois no Senegal, dois no Iraque) e liderou os 100% de aproveitamento da Fran\xE7a no Grupo I. Nos 16-avos, marcou duas vezes na goleada por 3 a 0 sobre a Su\xE9cia (45' e 74'). Nas oitavas, diante de um Paraguai muito fechado, quebrou a resist\xEAncia aos 70' \u2014 seu s\xE9timo gol no Mundial \u2014 e garantiu a classifica\xE7\xE3o francesa.\n## N\xFAmeros\nJ5 \xB7 7 gols \xB7 0 cart\xF5es \xB7 Fran\xE7a classificada \xE0s quartas de final, onde enfrenta o Marrocos. Mbapp\xE9 segue como artilheiro e principal nome do ataque de um dos favoritos ao t\xEDtulo.",
     worldCupNoteUpdatedAt: "2026-07-04T21:00:00.000Z"
@@ -3783,7 +3784,8 @@ var squads_default = {
       instagram: "virgilvandijk",
       instagramFollowers: 17e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Virgil_van_Dijk"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaV6iW7jAAe/"
   },
   "397894": {
     fifaId: "397894",
@@ -8682,7 +8684,8 @@ var squads_default = {
     socials: {
       instagram: "juriengaari",
       wikipedia: "https://pt.wikipedia.org/wiki/Juri%C3%ABn_Gaari"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaI6wI3FlWe/"
   },
   "431781": {
     fifaId: "431781",
@@ -9996,7 +9999,8 @@ var squads_default = {
     socials: {
       instagram: "julioenciso.33",
       wikipedia: "https://pt.wikipedia.org/wiki/Julio_Enciso"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZ0VvuHlEUn/"
   },
   "441236": {
     fifaId: "441236",
@@ -13051,7 +13055,8 @@ var squads_default = {
     socials: {
       instagram: "s_moreira20",
       wikipedia: "https://pt.wikipedia.org/wiki/Steven_Moreira"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaYi20uDHkS/"
   },
   "477849": {
     fifaId: "477849",
@@ -13116,7 +13121,8 @@ var squads_default = {
     height: 180,
     socials: {
       instagram: "jpfernandes_18"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZphItEjvzo/"
   },
   "477856": {
     fifaId: "477856",
@@ -15112,7 +15118,8 @@ var squads_default = {
     socials: {
       instagram: "gustavocaballer0",
       wikipedia: "https://en.wikipedia.org/wiki/Gustavo_Caballero"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaRQSgAm_iZ/"
   },
   "486074": {
     fifaId: "486074",
@@ -16960,7 +16967,10 @@ var squads_default = {
       instagram: "s_elmourabet",
       wikipedia: "https://en.wikipedia.org/wiki/Samir_El_Mourabet"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DZjaVOfDcBm/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZjaVOfDcBm/",
+      "https://www.instagram.com/p/DaYzonaCDqb/"
+    ]
   },
   "505112": {
     fifaId: "505112",
@@ -29526,7 +29536,6 @@ var bannersCatalog = {
     // OnlineCountBadge
     "banners.online.titleOne": "{count} f\xE3 online agora",
     "banners.online.titleMany": "{count} f\xE3s online agora",
-    "banners.online.label": "online",
     // VersionCheckTimer
     "banners.version.updateTitle": "Nova vers\xE3o dispon\xEDvel \u2014 recarregue para atualizar",
     "banners.version.newVersion": "nova vers\xE3o",
@@ -29578,7 +29587,6 @@ var bannersCatalog = {
     // OnlineCountBadge
     "banners.online.titleOne": "{count} fan en l\xEDnea ahora",
     "banners.online.titleMany": "{count} fans en l\xEDnea ahora",
-    "banners.online.label": "en l\xEDnea",
     // VersionCheckTimer
     "banners.version.updateTitle": "Nueva versi\xF3n disponible \u2014 recarga para actualizar",
     "banners.version.newVersion": "nueva versi\xF3n",
@@ -29630,7 +29638,6 @@ var bannersCatalog = {
     // OnlineCountBadge
     "banners.online.titleOne": "{count} fan online now",
     "banners.online.titleMany": "{count} fans online now",
-    "banners.online.label": "online",
     // VersionCheckTimer
     "banners.version.updateTitle": "New version available \u2014 reload to update",
     "banners.version.newVersion": "new version",
