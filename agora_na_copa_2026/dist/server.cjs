@@ -19327,6 +19327,22 @@ function parseOpenMeteoCurrent(raw, locale = "pt") {
   };
 }
 
+// server.ts
+var import_maxmind = __toESM(require("maxmind"), 1);
+
+// geo-core.ts
+var normalizeClientIp = (ip) => {
+  const trimmed = (ip ?? "").trim();
+  if (!trimmed || trimmed === "-") return "";
+  return trimmed.replace(/^::ffff:/i, "");
+};
+var countryFromCountryResponse = (result) => {
+  const iso = result?.country?.iso_code ?? result?.registered_country?.iso_code ?? null;
+  if (typeof iso !== "string") return null;
+  const code = iso.trim().toUpperCase();
+  return /^[A-Z]{2}$/.test(code) ? code : null;
+};
+
 // src/i18n/locale.ts
 var DEFAULT_LOCALE = "pt";
 var isLocale = (value) => value === "pt" || value === "es";
@@ -19367,8 +19383,9 @@ var persistLocale = (locale) => {
 // server-i18n.ts
 var NOTE_TRANSLATIONS = {
   // Broadcast guide
-  "Dados oficiais do Onde Assistir da FIFA para o Brasil.": "Datos oficiales de \xABD\xF3nde Ver\xBB de la FIFA.",
+  "Dados oficiais de Onde Assistir da FIFA.": "Datos oficiales de \xABD\xF3nde Ver\xBB de la FIFA.",
   "Dados oficiais da FIFA indispon\xEDveis para esta partida no momento; exibindo a lista local.": "Datos oficiales de la FIFA no disponibles para este partido por ahora; mostrando la lista local.",
+  "Nenhuma transmiss\xE3o oficial da FIFA para esta partida no pa\xEDs selecionado.": "No hay transmisi\xF3n oficial de la FIFA para este partido en el pa\xEDs seleccionado.",
   // Team view
   "Painel da sele\xE7\xE3o abastecido por dados oficiais da FIFA sempre que dispon\xEDveis.": "Panel de la selecci\xF3n alimentado con datos oficiales de la FIFA siempre que est\xE9n disponibles.",
   "Painel da sele\xE7\xE3o usando dados locais do aplicativo enquanto a FIFA n\xE3o publica todos os detalhes.": "Panel de la selecci\xF3n usando datos locales de la app mientras la FIFA no publica todos los detalles.",
@@ -26717,6 +26734,8 @@ var aoVivoCatalog = {
     "aoVivo.broadcast.title": "Onde ver o jogo",
     "aoVivo.broadcast.loadingNote": "Carregando dados oficiais da FIFA...",
     "aoVivo.broadcast.videoAria": "Assistir no YouTube: {title}",
+    "aoVivo.broadcast.countryLabel": "Pa\xEDs de transmiss\xE3o",
+    "aoVivo.broadcast.noneForCountry": "Nenhuma transmiss\xE3o oficial listada para este pa\xEDs.",
     // Incident panel
     "aoVivo.incidents.title": "Lances do jogo",
     "aoVivo.incidents.feedSimulation": "Feed da simula\xE7\xE3o local",
@@ -26855,6 +26874,8 @@ var aoVivoCatalog = {
     "aoVivo.broadcast.title": "D\xF3nde ver el partido",
     "aoVivo.broadcast.loadingNote": "Cargando datos oficiales de la FIFA...",
     "aoVivo.broadcast.videoAria": "Ver en YouTube: {title}",
+    "aoVivo.broadcast.countryLabel": "Pa\xEDs de transmisi\xF3n",
+    "aoVivo.broadcast.noneForCountry": "Sin transmisi\xF3n oficial listada para este pa\xEDs.",
     // Incident panel
     "aoVivo.incidents.title": "Jugadas del partido",
     "aoVivo.incidents.feedSimulation": "Feed de la simulaci\xF3n local",
@@ -31096,6 +31117,20 @@ var FIFA_COMPETITION_ID = "17";
 var FIFA_SEASON_ID = "285023";
 var DEFAULT_BROADCAST_COUNTRY = "BR";
 var DEFAULT_BROADCAST_LANGUAGE = "pt";
+var GEO_DB_PATH = process.env.GEO_DB || "/var/lib/GeoIP/GeoLite2-Country.mmdb";
+var geoReaderPromise;
+var getGeoReader = () => {
+  if (!geoReaderPromise) {
+    geoReaderPromise = import_maxmind.default.open(GEO_DB_PATH).catch((error) => {
+      console.warn(
+        `GeoIP disabled \u2014 could not open ${GEO_DB_PATH}:`,
+        error instanceof Error ? error.message : error
+      );
+      return null;
+    });
+  }
+  return geoReaderPromise;
+};
 var localeForRequest = (req) => {
   const q = req.query?.language;
   if (typeof q === "string" && q.trim()) return localeFromFifaLanguage(q.trim());
@@ -31156,7 +31191,16 @@ app.use((req, res, next) => {
   next();
 });
 var TRIVIA_QUESTIONS = triviaQuestions;
-var broadcastGuideCache = null;
+var broadcastGuideCache = /* @__PURE__ */ new Map();
+var BROADCAST_GUIDE_CACHE_MAX = 64;
+var setBroadcastGuideCache = (key, entry) => {
+  broadcastGuideCache.set(key, entry);
+  while (broadcastGuideCache.size > BROADCAST_GUIDE_CACHE_MAX) {
+    const oldest = broadcastGuideCache.keys().next().value;
+    if (oldest === void 0) break;
+    broadcastGuideCache.delete(oldest);
+  }
+};
 var matchStatesCache = null;
 var teamLineupsCache = null;
 var countryInfoCache = /* @__PURE__ */ new Map();
@@ -31651,15 +31695,18 @@ var fetchLiveMatch = async (matchId, language) => fetchJson(
 );
 var getBroadcastGuidePayload = async (country, language) => {
   const cacheKey = `${country}:${language}`;
+  const isBrazil = country === DEFAULT_BROADCAST_COUNTRY;
   fifaSyncDiagnostics.broadcastGuide.lastAttemptAt = (/* @__PURE__ */ new Date()).toISOString();
-  if (broadcastGuideCache && broadcastGuideCache.key === cacheKey && broadcastGuideCache.expiresAt > Date.now()) {
-    return broadcastGuideCache.payload;
+  const fresh = broadcastGuideCache.get(cacheKey);
+  if (fresh && fresh.expiresAt > Date.now()) {
+    return fresh.payload;
   }
   if (isCircuitOpen(fifaSyncDiagnostics.broadcastGuide)) {
-    if (broadcastGuideCache?.key === cacheKey) {
+    const stale = broadcastGuideCache.get(cacheKey);
+    if (stale) {
       markStaleServe(fifaSyncDiagnostics.broadcastGuide);
       console.warn(`Broadcast guide circuit open for ${cacheKey}; serving stale cache.`);
-      return broadcastGuideCache.payload;
+      return stale.payload;
     }
     throw new Error("FIFA broadcast guide fetch temporarily paused after repeated failures.");
   }
@@ -31671,23 +31718,22 @@ var getBroadcastGuidePayload = async (country, language) => {
       )
     ]);
     const watchByMatchId = new Map(
-      (watchData.Matches || []).map((match) => [match.IdMatch, match])
+      (watchData?.Matches ?? []).map((match) => [match.IdMatch, match])
     );
+    const locale = localeFromFifaLanguage(language);
     const guides = Object.fromEntries(
       APP_MATCHES.map((match) => {
         const fifaMatch = findCalendarMatch(match, calendarMatches, language);
         const fifaWatchMatch = fifaMatch ? watchByMatchId.get(fifaMatch.IdMatch) : void 0;
         const fifaBroadcasters = normalizeBroadcasters(fifaWatchMatch?.Sources);
         const hasOfficialGuide = fifaBroadcasters.length > 0;
+        const notePt = hasOfficialGuide ? "Dados oficiais de Onde Assistir da FIFA." : isBrazil ? "Dados oficiais da FIFA indispon\xEDveis para esta partida no momento; exibindo a lista local." : "Nenhuma transmiss\xE3o oficial da FIFA para esta partida no pa\xEDs selecionado.";
         return [
           match.id,
           {
-            broadcasters: hasOfficialGuide ? fifaBroadcasters : match.broadcasters,
+            broadcasters: hasOfficialGuide ? fifaBroadcasters : isBrazil ? match.broadcasters : [],
             source: hasOfficialGuide ? "fifa" : "fallback",
-            note: localizeNote(
-              hasOfficialGuide ? "Dados oficiais do Onde Assistir da FIFA para o Brasil." : "Dados oficiais da FIFA indispon\xEDveis para esta partida no momento; exibindo a lista local.",
-              localeFromFifaLanguage(language)
-            ),
+            note: localizeNote(notePt, locale),
             fifaMatchId: fifaMatch?.IdMatch,
             updatedAt: (/* @__PURE__ */ new Date()).toISOString()
           }
@@ -31699,24 +31745,24 @@ var getBroadcastGuidePayload = async (country, language) => {
       language,
       guides
     };
-    broadcastGuideCache = {
-      key: cacheKey,
+    setBroadcastGuideCache(cacheKey, {
       createdAt: Date.now(),
       expiresAt: Date.now() + BROADCAST_GUIDE_CACHE_TTL_MS,
       payload
-    };
+    });
     fifaSyncDiagnostics.broadcastGuide.lastSuccessAt = (/* @__PURE__ */ new Date()).toISOString();
     resetFailureState(fifaSyncDiagnostics.broadcastGuide);
     return payload;
   } catch (error) {
     recordFailureState(fifaSyncDiagnostics.broadcastGuide, error);
-    if (broadcastGuideCache?.key === cacheKey) {
+    const stale = broadcastGuideCache.get(cacheKey);
+    if (stale) {
       markStaleServe(fifaSyncDiagnostics.broadcastGuide);
       console.warn(
         `Serving stale broadcast guide cache for ${cacheKey} after FIFA error:`,
         error
       );
-      return broadcastGuideCache.payload;
+      return stale.payload;
     }
     throw error;
   }
@@ -32808,9 +32854,11 @@ app.get("/api/match-weather", async (req, res) => {
 });
 app.get("/api/fifa-sync-status", (_req, res) => {
   const now = Date.now();
-  const broadcastGuideFallbackCount = broadcastGuideCache ? Object.values(broadcastGuideCache.payload.guides).filter(
-    (guide) => guide.source === "fallback"
-  ).length : 0;
+  const broadcastGuideEntries = [...broadcastGuideCache.values()];
+  const broadcastGuideFallbackCount = broadcastGuideEntries.reduce(
+    (total, entry) => total + Object.values(entry.payload.guides).filter((guide) => guide.source === "fallback").length,
+    0
+  );
   const matchStateFallbackCount = matchStatesCache ? Object.values(matchStatesCache.payload.states).filter(
     (state) => state.source === "fallback"
   ).length : 0;
@@ -32829,9 +32877,10 @@ app.get("/api/fifa-sync-status", (_req, res) => {
           const openUntilMs = getCircuitOpenUntilMs(fifaSyncDiagnostics.broadcastGuide);
           return openUntilMs ? Math.max(0, openUntilMs - now) : null;
         })(),
-        cacheKey: broadcastGuideCache?.key || null,
-        cacheAgeMs: broadcastGuideCache ? now - broadcastGuideCache.createdAt : null,
-        cacheExpiresInMs: broadcastGuideCache ? Math.max(0, broadcastGuideCache.expiresAt - now) : null,
+        cacheKeys: [...broadcastGuideCache.keys()],
+        cachedCountryLangCount: broadcastGuideCache.size,
+        cacheAgeMs: broadcastGuideEntries.length ? now - Math.max(...broadcastGuideEntries.map((entry) => entry.createdAt)) : null,
+        cacheExpiresInMs: broadcastGuideEntries.length ? Math.max(0, Math.max(...broadcastGuideEntries.map((entry) => entry.expiresAt)) - now) : null,
         fallbackMatchCount: broadcastGuideFallbackCount
       },
       matchStates: {
@@ -33021,6 +33070,23 @@ var deriveClientKey = (req) => {
   const clientId = typeof rawId === "string" ? rawId.slice(0, 64) : "";
   return clientId ? `${ip}|${clientId}` : ip;
 };
+app.get("/api/geo", async (req, res) => {
+  res.set("Cache-Control", "no-store");
+  const reader = await getGeoReader();
+  if (!reader) {
+    return res.json({ country: null, source: "unavailable" });
+  }
+  const ip = normalizeClientIp(req.ip);
+  let country = null;
+  if (ip) {
+    try {
+      country = countryFromCountryResponse(reader.get(ip));
+    } catch {
+      country = null;
+    }
+  }
+  res.json({ country, source: "geoip" });
+});
 app.post("/api/presence", (req, res) => {
   const now = Date.now();
   recordHeartbeat(presenceStore, deriveClientKey(req), now);
