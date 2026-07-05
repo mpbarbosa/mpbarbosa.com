@@ -171,7 +171,8 @@ var squads_default = {
       "https://www.instagram.com/p/DZ5yyhfFG-m/",
       "https://www.instagram.com/p/DZ-s34VkfDU/",
       "https://www.instagram.com/p/DaWg1ZzgILy/",
-      "https://www.instagram.com/p/DaVH_x6j8ih/"
+      "https://www.instagram.com/p/DaVH_x6j8ih/",
+      "https://www.instagram.com/p/DaYZ09gFQqx/"
     ],
     worldCupNote: "## Leitura\nMessi segue impar\xE1vel e artilheiro isolado do Mundial. Depois de fechar a fase de grupos com 6 gols, o capit\xE3o abriu o placar nos 16-avos e chegou a 7 \u2014 a Argentina avan\xE7a \xE0s oitavas cada vez mais favorita ao t\xEDtulo, com um cl\xE1ssico contra o Egito de Salah pela frente.\n## Desempenho\nHat-trick na estreia (3 a 0 na Arg\xE9lia, aos 17, 60 e 76), dois sobre a \xC1ustria (2 a 0, aos 38 e 90+5) e o gol que fechou o 3 a 1 sobre a Jord\xE2nia (aos 80, tendo entrado no 2\xBA tempo). Nos 16-avos, marcou aos 29 o gol que abriu o dur\xEDssimo 3 a 2 sobre Cabo Verde \u2014 que levou a decis\xE3o \xE0 prorroga\xE7\xE3o (2 a 2 com Sidny Lopes Cabral aos 103) at\xE9 um gol contra de Diney Borges aos 111 carimbar a vaga.\n## N\xFAmeros\nJ4 \xB7 7 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina ganhou o Grupo J com 9 pontos (100%, SG +7) e passou pelos 16-avos; nas oitavas encara o Egito.",
     worldCupNoteUpdatedAt: "2026-07-03T22:00:00.000Z",
@@ -1858,7 +1859,8 @@ var squads_default = {
     socials: {
       instagram: "gustavogomez462",
       wikipedia: "https://pt.wikipedia.org/wiki/Gustavo_G%C3%B3mez"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaYcVInDagU/"
   },
   "369749": {
     fifaId: "369749",
@@ -15087,7 +15089,10 @@ var squads_default = {
       instagram: "r.halhal4",
       wikipedia: "https://en.wikipedia.org/wiki/Redouane_Halhal"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DaAyU0jFVnt/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaAyU0jFVnt/",
+      "https://www.instagram.com/p/DaY5BQXmmqH/"
+    ]
   },
   "485802": {
     fifaId: "485802",
@@ -28896,6 +28901,8 @@ var teamLineupCatalog = {
     "teamLineup.abbrLost": "D",
     "teamLineup.pitchCaptain": "Capit\xE3o",
     "teamLineup.pitchPosition": "Posi\xE7\xE3o",
+    "teamLineup.pitchBirth": "Nascimento",
+    "teamLineup.pitchClub": "Clube atual",
     "teamLineup.pitchOpenCard": "Abrir card completo do jogador",
     "teamLineup.pitchTactic": "Para esta partida contra {opponent}, {player} desempenha papel fundamental no bloco t\xE1tico {role}.",
     "teamLineup.pitchRoleFw": "ofensivo, buscando romper a \xFAltima linha advers\xE1ria",
@@ -28971,6 +28978,8 @@ var teamLineupCatalog = {
     "teamLineup.abbrLost": "P",
     "teamLineup.pitchCaptain": "Capit\xE1n",
     "teamLineup.pitchPosition": "Posici\xF3n",
+    "teamLineup.pitchBirth": "Nacimiento",
+    "teamLineup.pitchClub": "Club actual",
     "teamLineup.pitchOpenCard": "Abrir la ficha completa del jugador",
     "teamLineup.pitchTactic": "Para este partido ante {opponent}, {player} cumple un papel clave en el bloque t\xE1ctico {role}.",
     "teamLineup.pitchRoleFw": "ofensivo, buscando romper la \xFAltima l\xEDnea rival",
@@ -29046,6 +29055,8 @@ var teamLineupCatalog = {
     "teamLineup.abbrLost": "L",
     "teamLineup.pitchCaptain": "Captain",
     "teamLineup.pitchPosition": "Position",
+    "teamLineup.pitchBirth": "Born",
+    "teamLineup.pitchClub": "Current club",
     "teamLineup.pitchOpenCard": "Open full player card",
     "teamLineup.pitchTactic": "In this match against {opponent}, {player} plays a key role in the {role} tactical block.",
     "teamLineup.pitchRoleFw": "attacking side, looking to break the opponent's last line",
