@@ -4171,7 +4171,8 @@ var squads_default = {
     height: 182,
     socials: {
       wikipedia: "https://en.wikipedia.org/wiki/Nuno_da_Costa"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaXGdn2lmZ2/"
   },
   "401894": {
     fifaId: "401894",
@@ -5010,7 +5011,8 @@ var squads_default = {
     socials: {
       instagram: "sekofofana",
       wikipedia: "https://en.wikipedia.org/wiki/Seko_Fofana"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZnY8TTjbnW/"
   },
   "405178": {
     fifaId: "405178",
@@ -13062,7 +13064,8 @@ var squads_default = {
     socials: {
       instagram: "helio_varela",
       wikipedia: "https://en.wikipedia.org/wiki/H%C3%A9lio_Varela"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaXz_ghln1_/"
   },
   "477852": {
     fifaId: "477852",
@@ -13125,7 +13128,8 @@ var squads_default = {
     height: 174,
     socials: {
       wikipedia: "https://pt.wikipedia.org/wiki/Jovane_Cabral"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaYye5AmQZC/"
   },
   "477859": {
     fifaId: "477859",
@@ -13560,7 +13564,8 @@ var squads_default = {
     socials: {
       instagram: "wagnerpina_",
       wikipedia: "https://en.wikipedia.org/wiki/Wagner_Pina"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaF7j5AFXLV/"
   },
   "482869": {
     fifaId: "482869",
@@ -17270,7 +17275,8 @@ var squads_default = {
     socials: {
       instagram: "yandiomande",
       wikipedia: "https://pt.wikipedia.org/wiki/Yan_Diomand%C3%A9"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZm_YfDCFR7/"
   },
   "510989": {
     fifaId: "510989",
@@ -18254,7 +18260,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/73d7ea6f-ca50-4665-97cf-4c319351dce6/LUCUMI-Jhon_441622",
     dateOfBirth: "1998-06-26",
-    height: 187
+    height: 187,
+    instagramPostUrl: "https://www.instagram.com/p/DaOBrUREYmX/"
   },
   "315614": {
     fifaId: "315614",
@@ -18531,7 +18538,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/898b7742-30e2-4b72-8470-dbcdf5d5e058/SUAREZ-Luis_428905",
     dateOfBirth: "1997-12-02",
-    height: 179
+    height: 179,
+    instagramPostUrl: "https://www.instagram.com/p/DaYIt4vDkYt/"
   },
   "492189": {
     fifaId: "492189",
@@ -26950,6 +26958,9 @@ var aoVivoCatalog = {
     "aoVivo.analysis.previewLabel": "Pr\xE9via",
     "aoVivo.instagram.title": "No Instagram",
     "aoVivo.instagram.open": "Abrir no Instagram",
+    "aoVivo.instagramPostTitle": "Publica\xE7\xE3o no Instagram",
+    // Affiliate gear strip
+    "aoVivo.affiliateTitle": "Equipe para assistir \xE0 Copa",
     // Lineup tab
     "aoVivo.lineup.title": "CENTRAL T\xC1TICA E DISTRIBUI\xC7\xC3O ESPACIAL",
     "aoVivo.lineup.desc": "Posicionamento estrat\xE9gico planejado para o confronto oficial de S\xE3o Paulo / Nova Iorque 2026.",
@@ -27090,6 +27101,9 @@ var aoVivoCatalog = {
     "aoVivo.analysis.previewLabel": "Previa",
     "aoVivo.instagram.title": "En Instagram",
     "aoVivo.instagram.open": "Abrir en Instagram",
+    "aoVivo.instagramPostTitle": "Publicaci\xF3n en Instagram",
+    // Affiliate gear strip
+    "aoVivo.affiliateTitle": "Equipo para ver el Mundial",
     // Lineup tab
     "aoVivo.lineup.title": "CENTRAL T\xC1CTICA Y DISTRIBUCI\xD3N ESPACIAL",
     "aoVivo.lineup.desc": "Posicionamiento estrat\xE9gico planificado para el enfrentamiento oficial de S\xE3o Paulo / Nueva York 2026.",
@@ -27230,6 +27244,9 @@ var aoVivoCatalog = {
     "aoVivo.analysis.previewLabel": "Preview",
     "aoVivo.instagram.title": "On Instagram",
     "aoVivo.instagram.open": "Open on Instagram",
+    "aoVivo.instagramPostTitle": "Instagram post",
+    // Affiliate gear strip
+    "aoVivo.affiliateTitle": "Gear to watch the World Cup",
     // Lineup tab
     "aoVivo.lineup.title": "TACTICAL HUB AND SPATIAL LAYOUT",
     "aoVivo.lineup.desc": "Strategic positioning planned for the official S\xE3o Paulo / New York 2026 clash.",
@@ -27920,7 +27937,8 @@ var lideresCatalog = {
     "lideres.statReds": "Vermelhos",
     "lideres.detailClub": "Clube atual",
     "lideres.detailPosition": "Posi\xE7\xE3o",
-    "lideres.officialHighlight": "Destaque oficial do torneio para {team}."
+    "lideres.officialHighlight": "Destaque oficial do torneio para {team}.",
+    "lideres.loadError": "Falha ao carregar os l\xEDderes da Copa."
   },
   es: {
     "lideres.title": "L\xEDderes del Torneo",
@@ -27969,7 +27987,8 @@ var lideresCatalog = {
     "lideres.statReds": "Rojas",
     "lideres.detailClub": "Club actual",
     "lideres.detailPosition": "Posici\xF3n",
-    "lideres.officialHighlight": "Destacado oficial del torneo por {team}."
+    "lideres.officialHighlight": "Destacado oficial del torneo por {team}.",
+    "lideres.loadError": "Error al cargar los l\xEDderes del Mundial."
   },
   en: {
     "lideres.title": "Tournament Leaders",
@@ -28018,7 +28037,8 @@ var lideresCatalog = {
     "lideres.statReds": "Reds",
     "lideres.detailClub": "Current club",
     "lideres.detailPosition": "Position",
-    "lideres.officialHighlight": "Official tournament standout for {team}."
+    "lideres.officialHighlight": "Official tournament standout for {team}.",
+    "lideres.loadError": "Failed to load the World Cup leaders."
   }
 };
 
@@ -28243,7 +28263,9 @@ var playerCardCatalog = {
     "playerCard.refereeEyebrow": "Card do \xE1rbitro",
     "playerCard.refereeRole": "\xC1rbitro(a)",
     "playerCard.refereeRoleCountry": "\xC1rbitro(a) \u2022 {country}",
-    "playerCard.refereeBlurb": "\xC1rbitro(a) principal designado(a) pela FIFA para a partida."
+    "playerCard.refereeBlurb": "\xC1rbitro(a) principal designado(a) pela FIFA para a partida.",
+    // Note carousel
+    "playerCard.noteSectionsAria": "Se\xE7\xF5es da an\xE1lise"
   },
   es: {
     // Shared chrome
@@ -28301,7 +28323,9 @@ var playerCardCatalog = {
     "playerCard.refereeEyebrow": "Ficha del \xE1rbitro",
     "playerCard.refereeRole": "\xC1rbitro(a)",
     "playerCard.refereeRoleCountry": "\xC1rbitro(a) \u2022 {country}",
-    "playerCard.refereeBlurb": "\xC1rbitro(a) principal designado(a) por la FIFA para el partido."
+    "playerCard.refereeBlurb": "\xC1rbitro(a) principal designado(a) por la FIFA para el partido.",
+    // Note carousel
+    "playerCard.noteSectionsAria": "Secciones del an\xE1lisis"
   },
   en: {
     // Shared chrome
@@ -28359,7 +28383,9 @@ var playerCardCatalog = {
     "playerCard.refereeEyebrow": "Referee card",
     "playerCard.refereeRole": "Referee",
     "playerCard.refereeRoleCountry": "Referee \u2022 {country}",
-    "playerCard.refereeBlurb": "Head referee assigned by FIFA for the match."
+    "playerCard.refereeBlurb": "Head referee assigned by FIFA for the match.",
+    // Note carousel
+    "playerCard.noteSectionsAria": "Analysis sections"
   }
 };
 
@@ -28565,7 +28591,15 @@ var fanSocialCatalog = {
     "fanSocial.trendingTitle": "Tend\xEAncias",
     "fanSocial.trendingHint": "Toque numa hashtag para filtrar o feed",
     "fanSocial.postCountSingular": "post",
-    "fanSocial.postCountPlural": "posts"
+    "fanSocial.postCountPlural": "posts",
+    // Reddit feed + predictor section
+    "fanSocial.redditTitle": "Repercuss\xE3o no Reddit",
+    "fanSocial.redditAria": "Repercuss\xE3o da Copa no Reddit",
+    "fanSocial.redditThousand": "mil",
+    "fanSocial.predictorSectionFallback": "Progn\xF3stico",
+    "fanSocial.redditSubtitle": "O que a torcida est\xE1 discutindo no Reddit",
+    "fanSocial.redditComments": "coment.",
+    "fanSocial.redditOpen": "Abrir no Reddit"
   },
   es: {
     // FanZoneView — header
@@ -28661,7 +28695,15 @@ var fanSocialCatalog = {
     "fanSocial.trendingTitle": "Tendencias",
     "fanSocial.trendingHint": "Toca un hashtag para filtrar el feed",
     "fanSocial.postCountSingular": "post",
-    "fanSocial.postCountPlural": "posts"
+    "fanSocial.postCountPlural": "posts",
+    // Reddit feed + predictor section
+    "fanSocial.redditTitle": "Repercusi\xF3n en Reddit",
+    "fanSocial.redditAria": "Repercusi\xF3n del Mundial en Reddit",
+    "fanSocial.redditThousand": "mil",
+    "fanSocial.predictorSectionFallback": "Pron\xF3stico",
+    "fanSocial.redditSubtitle": "Lo que la hinchada est\xE1 discutiendo en Reddit",
+    "fanSocial.redditComments": "coment.",
+    "fanSocial.redditOpen": "Abrir en Reddit"
   },
   en: {
     // FanZoneView — header
@@ -28757,7 +28799,15 @@ var fanSocialCatalog = {
     "fanSocial.trendingTitle": "Trending",
     "fanSocial.trendingHint": "Tap a hashtag to filter the feed",
     "fanSocial.postCountSingular": "post",
-    "fanSocial.postCountPlural": "posts"
+    "fanSocial.postCountPlural": "posts",
+    // Reddit feed + predictor section
+    "fanSocial.redditTitle": "Reddit buzz",
+    "fanSocial.redditAria": "World Cup buzz on Reddit",
+    "fanSocial.redditThousand": "K",
+    "fanSocial.predictorSectionFallback": "Prediction",
+    "fanSocial.redditSubtitle": "What fans are talking about on Reddit",
+    "fanSocial.redditComments": "comments",
+    "fanSocial.redditOpen": "Open on Reddit"
   }
 };
 
@@ -28828,7 +28878,15 @@ var teamLineupCatalog = {
     "teamLineup.abbrPlayed": "J",
     "teamLineup.abbrWon": "V",
     "teamLineup.abbrDrawn": "E",
-    "teamLineup.abbrLost": "D"
+    "teamLineup.abbrLost": "D",
+    "teamLineup.pitchCaptain": "Capit\xE3o",
+    "teamLineup.pitchPosition": "Posi\xE7\xE3o",
+    "teamLineup.pitchOpenCard": "Abrir card completo do jogador",
+    "teamLineup.pitchTactic": "Para esta partida contra {opponent}, {player} desempenha papel fundamental no bloco t\xE1tico {role}.",
+    "teamLineup.pitchRoleFw": "ofensivo, buscando romper a \xFAltima linha advers\xE1ria",
+    "teamLineup.pitchRoleOther": "sustentando a posse ou as sa\xEDdas r\xE1pidas",
+    "teamLineup.leaderYellowTitle": "Cart\xF5es amarelos",
+    "teamLineup.leaderRedTitle": "Cart\xF5es vermelhos"
   },
   es: {
     "teamLineup.updateUnavailable": "Actualizaci\xF3n no disponible",
@@ -28895,7 +28953,15 @@ var teamLineupCatalog = {
     "teamLineup.abbrPlayed": "PJ",
     "teamLineup.abbrWon": "G",
     "teamLineup.abbrDrawn": "E",
-    "teamLineup.abbrLost": "P"
+    "teamLineup.abbrLost": "P",
+    "teamLineup.pitchCaptain": "Capit\xE1n",
+    "teamLineup.pitchPosition": "Posici\xF3n",
+    "teamLineup.pitchOpenCard": "Abrir la ficha completa del jugador",
+    "teamLineup.pitchTactic": "Para este partido ante {opponent}, {player} cumple un papel clave en el bloque t\xE1ctico {role}.",
+    "teamLineup.pitchRoleFw": "ofensivo, buscando romper la \xFAltima l\xEDnea rival",
+    "teamLineup.pitchRoleOther": "sosteniendo la posesi\xF3n o las salidas r\xE1pidas",
+    "teamLineup.leaderYellowTitle": "Tarjetas amarillas",
+    "teamLineup.leaderRedTitle": "Tarjetas rojas"
   },
   en: {
     "teamLineup.updateUnavailable": "Update unavailable",
@@ -28962,7 +29028,15 @@ var teamLineupCatalog = {
     "teamLineup.abbrPlayed": "P",
     "teamLineup.abbrWon": "W",
     "teamLineup.abbrDrawn": "D",
-    "teamLineup.abbrLost": "L"
+    "teamLineup.abbrLost": "L",
+    "teamLineup.pitchCaptain": "Captain",
+    "teamLineup.pitchPosition": "Position",
+    "teamLineup.pitchOpenCard": "Open full player card",
+    "teamLineup.pitchTactic": "In this match against {opponent}, {player} plays a key role in the {role} tactical block.",
+    "teamLineup.pitchRoleFw": "attacking side, looking to break the opponent's last line",
+    "teamLineup.pitchRoleOther": "sustaining possession or quick transitions",
+    "teamLineup.leaderYellowTitle": "Yellow cards",
+    "teamLineup.leaderRedTitle": "Red cards"
   }
 };
 
@@ -29443,6 +29517,8 @@ var bannersCatalog = {
     "banners.share.shareTitle": "Compartilhar",
     "banners.share.shareAria": "Compartilhar o app",
     "banners.share.linkCopied": "Link copiado!",
+    "banners.shareTitle": "Agora na Copa 26",
+    "banners.shareText": "Acompanhe a Copa do Mundo FIFA 2026 ao vivo: onde assistir, escala\xE7\xF5es, grupos e chaveamento.",
     // OnlineCountBadge
     "banners.online.titleOne": "{count} f\xE3 online agora",
     "banners.online.titleMany": "{count} f\xE3s online agora",
@@ -29493,6 +29569,8 @@ var bannersCatalog = {
     "banners.share.shareTitle": "Compartir",
     "banners.share.shareAria": "Compartir la app",
     "banners.share.linkCopied": "\xA1Enlace copiado!",
+    "banners.shareTitle": "Ahora en el Mundial 26",
+    "banners.shareText": "Sigue la Copa Mundial de la FIFA 2026 en vivo: d\xF3nde ver, alineaciones, grupos y llave.",
     // OnlineCountBadge
     "banners.online.titleOne": "{count} fan en l\xEDnea ahora",
     "banners.online.titleMany": "{count} fans en l\xEDnea ahora",
@@ -29543,6 +29621,8 @@ var bannersCatalog = {
     "banners.share.shareTitle": "Share",
     "banners.share.shareAria": "Share the app",
     "banners.share.linkCopied": "Link copied!",
+    "banners.shareTitle": "Now at the World Cup 26",
+    "banners.shareText": "Follow the FIFA World Cup 2026 live: where to watch, lineups, groups and bracket.",
     // OnlineCountBadge
     "banners.online.titleOne": "{count} fan online now",
     "banners.online.titleMany": "{count} fans online now",
@@ -32310,11 +32390,16 @@ function groupStandings(rows, matches = APP_MATCHES) {
 // predict-core.ts
 function teamLine(team2, locale = "pt") {
   if (team2.played === 0) {
-    return locale === "es" ? `${team2.name} a\xFAn no ha entrado en cancha en este Mundial.` : `${team2.name} ainda n\xE3o entrou em campo nesta Copa.`;
+    if (locale === "es") return `${team2.name} a\xFAn no ha entrado en cancha en este Mundial.`;
+    if (locale === "en") return `${team2.name} haven't taken the field yet at this World Cup.`;
+    return `${team2.name} ainda n\xE3o entrou em campo nesta Copa.`;
   }
   const sign = team2.goalDifference > 0 ? `+${team2.goalDifference}` : `${team2.goalDifference}`;
   if (locale === "es") {
     return `${team2.name} \u2014 ${team2.points} pts en ${team2.played} partido${team2.played === 1 ? "" : "s"} (${team2.won}G ${team2.drawn}E ${team2.lost}P), ${team2.goalsFor} goles a favor, ${team2.goalsAgainst} en contra, diferencia ${sign}.`;
+  }
+  if (locale === "en") {
+    return `${team2.name} \u2014 ${team2.points} pts in ${team2.played} match${team2.played === 1 ? "" : "es"} (${team2.won}W ${team2.drawn}D ${team2.lost}L), ${team2.goalsFor} goals for, ${team2.goalsAgainst} against, GD ${sign}.`;
   }
   return `${team2.name} \u2014 ${team2.points} pts em ${team2.played} jogo${team2.played === 1 ? "" : "s"} (${team2.won}V ${team2.drawn}E ${team2.lost}D), ${team2.goalsFor} gols pr\xF3, ${team2.goalsAgainst} contra, saldo ${sign}.`;
 }
@@ -32323,36 +32408,51 @@ function pct(probability) {
 }
 function buildPrediction(home, away, outcome, userNotes, locale = "pt") {
   const es = locale === "es";
+  const en = locale === "en";
   const bothPlayed = home.played > 0 && away.played > 0;
   const edge = outcome.homeWin - outcome.awayWin;
   let verdict;
   if (!bothPlayed) {
-    verdict = es ? `Demasiado pronto para definir: ${home.name} y ${away.name} apenas calentaron motores. Por ahora, un duelo totalmente abierto.` : `Cedo demais para cravar: ${home.name} e ${away.name} mal aqueceram os motores. Por enquanto, confronto totalmente em aberto.`;
+    verdict = es ? `Demasiado pronto para definir: ${home.name} y ${away.name} apenas calentaron motores. Por ahora, un duelo totalmente abierto.` : en ? `Too early to call: ${home.name} and ${away.name} have barely warmed up. For now, a wide-open matchup.` : `Cedo demais para cravar: ${home.name} e ${away.name} mal aqueceram os motores. Por enquanto, confronto totalmente em aberto.`;
   } else if (Math.abs(edge) <= 0.1) {
-    verdict = es ? `Partido parejo entre ${home.name} y ${away.name} \u2014 moneda al aire.` : `Jogo de igual para igual entre ${home.name} e ${away.name} \u2014 moeda no ar.`;
+    verdict = es ? `Partido parejo entre ${home.name} y ${away.name} \u2014 moneda al aire.` : en ? `An even matchup between ${home.name} and ${away.name} \u2014 a coin flip.` : `Jogo de igual para igual entre ${home.name} e ${away.name} \u2014 moeda no ar.`;
   } else {
     const fav = edge > 0 ? home : away;
     const dog = edge > 0 ? away : home;
     const strong = Math.abs(edge) > 0.3;
     if (es) {
       verdict = strong ? `${fav.name} llega como favorito claro ante ${dog.name}, por la campa\xF1a m\xE1s s\xF3lida.` : `${fav.name} tiene una leve ventaja sobre ${dog.name}, pero sin margen para relajarse.`;
+    } else if (en) {
+      verdict = strong ? `${fav.name} come in as clear favorites over ${dog.name}, on the stronger campaign.` : `${fav.name} hold a slight edge over ${dog.name}, but no room to relax.`;
     } else {
       verdict = strong ? `${fav.name} entra como favorito claro diante de ${dog.name}, pela campanha mais s\xF3lida.` : `${fav.name} leva leve vantagem sobre ${dog.name}, mas sem folga para vacilar.`;
     }
   }
   let modelLines = "";
   if (bothPlayed) {
-    const probLine = `Probabilidades: ${home.name} ${pct(outcome.homeWin)} \xB7 empate ${pct(outcome.draw)} \xB7 ${away.name} ${pct(outcome.awayWin)}.`;
+    const probLine = en ? `Probabilities: ${home.name} ${pct(outcome.homeWin)} \xB7 draw ${pct(outcome.draw)} \xB7 ${away.name} ${pct(outcome.awayWin)}.` : `Probabilidades: ${home.name} ${pct(outcome.homeWin)} \xB7 empate ${pct(outcome.draw)} \xB7 ${away.name} ${pct(outcome.awayWin)}.`;
     const { teamA, teamB } = outcome.mostLikelyScore;
-    const scoreLine = es ? `Marcador m\xE1s probable: ${home.name} ${teamA} x ${teamB} ${away.name}.` : `Placar mais prov\xE1vel: ${home.name} ${teamA} x ${teamB} ${away.name}.`;
+    const scoreLine = es ? `Marcador m\xE1s probable: ${home.name} ${teamA} x ${teamB} ${away.name}.` : en ? `Most likely score: ${home.name} ${teamA}-${teamB} ${away.name}.` : `Placar mais prov\xE1vel: ${home.name} ${teamA} x ${teamB} ${away.name}.`;
     modelLines = `
 ${probLine}
 ${scoreLine}`;
   }
   const notes = userNotes?.trim().slice(0, 280);
   const notesLine = notes ? es ? `
-Destacaste: "${notes}" \u2014 anotado, pero el pron\xF3stico sigue la campa\xF1a.` : `
+Destacaste: "${notes}" \u2014 anotado, pero el pron\xF3stico sigue la campa\xF1a.` : en ? `
+You noted: "${notes}" \u2014 noted, but the prediction follows the campaign.` : `
 Voc\xEA destacou: "${notes}" \u2014 anotado, mas o palpite segue a campanha.` : "";
+  if (en) {
+    return [
+      `## Prediction`,
+      `${verdict}${modelLines}`,
+      `## Numbers`,
+      `${teamLine(home, locale)}
+${teamLine(away, locale)}`,
+      `## Read`,
+      `Simulated prediction from a Poisson model with Dixon-Coles correction over the teams' current campaign \u2014 it's fun for fans, not a called result.${notesLine}`
+    ].join("\n");
+  }
   if (es) {
     return [
       `## Pron\xF3stico`,
