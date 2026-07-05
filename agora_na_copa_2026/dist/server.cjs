@@ -540,6 +540,7 @@ var squads_default = {
       instagramFollowers: 23e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Casemiro"
     },
+    instagramPostUrl: "https://www.instagram.com/p/DZ_ZOsDjAzO/",
     worldCupNote: "## Leitura\nLideran\xE7a e gol na hora certa. Casemiro deixou a marca dele no mata-mata: fez o gol de empate na virada por 2 a 1 sobre o Jap\xE3o que levou o Brasil \xE0s oitavas. Aos 34 anos, o volante respondeu quando o equil\xEDbrio pesava.\n## Desempenho\nNa fase de grupos atuou no empate com o Marrocos (amarelo aos 37) e na vit\xF3ria sobre a Esc\xF3cia. Contra o Jap\xE3o, levou amarelo cedo (14') mas foi protagonista: com o Brasil atr\xE1s ap\xF3s o gol de Sano (29'), igualou aos 56 minutos. Martinelli fez o segundo nos acr\xE9scimos (90+5') e Casemiro saiu aplaudido aos 90+1.\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 2 amarelos \xB7 classificado \xE0s oitavas. O Brasil bateu o Jap\xE3o por 2 a 1 nos 16-avos, com gol do volante.",
     worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z"
   },
