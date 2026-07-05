@@ -90,7 +90,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaUFHrIjDha/",
       "https://www.instagram.com/reel/DZ-pxQZSaSR/",
       "https://www.instagram.com/p/DZ8ZcOkiD9h/",
-      "https://www.instagram.com/p/DaUJJ9ZCPyJ/"
+      "https://www.instagram.com/p/DaUJJ9ZCPyJ/",
+      "https://www.instagram.com/p/DaZSbgnkYGr/"
     ]
   },
   "215285": {
@@ -1604,7 +1605,8 @@ var squads_default = {
       "https://www.instagram.com/p/DZnju0oH7yg/",
       "https://www.instagram.com/p/DaEr1UliNG3/",
       "https://www.instagram.com/p/DaWmfzXDrnT/",
-      "https://www.instagram.com/reel/DaWoAwkR6oK/"
+      "https://www.instagram.com/reel/DaWoAwkR6oK/",
+      "https://www.instagram.com/p/DaZmwTLjv3O/"
     ],
     worldCupNote: "## Leitura\nAos 40 anos, Josimar Dias \u2014 o Vozinha \u2014 encerrou como s\xEDmbolo da campanha mais hist\xF3rica de Cabo Verde: a estreia do pa\xEDs nas oitavas de uma Copa do Mundo. A muralha s\xF3 caiu diante da Argentina, e ainda assim depois de levar os favoritos \xE0 prorroga\xE7\xE3o.\n## Desempenho\nFoi gigante na fase de grupos: sete defesas e 0 a 0 com pr\xEAmio de craque diante da Espanha, o 2 a 2 com o Uruguai e o 0 a 0 com a Ar\xE1bia Saudita que selou a classifica\xE7\xE3o in\xE9dita. Nos 16-avos, foi superado por 3 a 2 pela Argentina de Messi (que abriu aos 29) numa batalha que foi \xE0 prorroga\xE7\xE3o \u2014 Cabo Verde empatava 2 a 2 at\xE9 um gol contra de Diney Borges aos 111 decretar a elimina\xE7\xE3o.\n## N\xFAmeros\nJ4 \xB7 2 clean sheets \xB7 5 gols sofridos \xB7 Cabo Verde caiu nas oitavas diante da Argentina, encerrando a melhor campanha de sua hist\xF3ria.",
     worldCupNoteUpdatedAt: "2026-07-03T22:00:00.000Z",
@@ -2832,7 +2834,9 @@ var squads_default = {
       "https://www.instagram.com/p/DZ7YVf1Anjj/",
       "https://www.instagram.com/p/DaOi0kjF55g/",
       "https://www.instagram.com/p/DZ-3bZFETZa/",
-      "https://www.instagram.com/p/DaJEBlOgsGG/"
+      "https://www.instagram.com/p/DaJEBlOgsGG/",
+      "https://www.instagram.com/p/DaZSbgnkYGr/",
+      "https://www.instagram.com/p/DaZPLicEbdx/"
     ],
     worldCupNote: "## Leitura\nO farol franc\xEAs n\xE3o apaga. Kylian Mbapp\xE9 marcou o gol da vit\xF3ria por 1 a 0 sobre o Paraguai nas oitavas de final e levou a Fran\xE7a \xE0s quartas. Capit\xE3o e artilheiro, o camisa 10 chegou a sete gols no Mundial e segue decisivo nos momentos que pesam.\n## Desempenho\nFez quatro gols na fase de grupos (dois no Senegal, dois no Iraque) e liderou os 100% de aproveitamento da Fran\xE7a no Grupo I. Nos 16-avos, marcou duas vezes na goleada por 3 a 0 sobre a Su\xE9cia (45' e 74'). Nas oitavas, diante de um Paraguai muito fechado, quebrou a resist\xEAncia aos 70' \u2014 seu s\xE9timo gol no Mundial \u2014 e garantiu a classifica\xE7\xE3o francesa.\n## N\xFAmeros\nJ5 \xB7 7 gols \xB7 0 cart\xF5es \xB7 Fran\xE7a classificada \xE0s quartas de final, onde enfrenta o Marrocos. Mbapp\xE9 segue como artilheiro e principal nome do ataque de um dos favoritos ao t\xEDtulo.",
     worldCupNoteUpdatedAt: "2026-07-04T21:00:00.000Z"
@@ -4183,7 +4187,8 @@ var squads_default = {
     socials: {
       instagram: "jamiromonteiro",
       wikipedia: "https://pt.wikipedia.org/wiki/Jamiro_Monteiro"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaLQu7nFY-h/"
   },
   "401924": {
     fifaId: "401924",
@@ -15066,7 +15071,8 @@ var squads_default = {
     socials: {
       instagram: "r.halhal4",
       wikipedia: "https://en.wikipedia.org/wiki/Redouane_Halhal"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaAyU0jFVnt/"
   },
   "485802": {
     fifaId: "485802",
@@ -16945,7 +16951,8 @@ var squads_default = {
     socials: {
       instagram: "s_elmourabet",
       wikipedia: "https://en.wikipedia.org/wiki/Samir_El_Mourabet"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZjaVOfDcBm/"
   },
   "505112": {
     fifaId: "505112",
@@ -18234,7 +18241,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/597b88e8-d3ab-4f1f-9ba5-c031478769d3/MUNOZ-Daniel_431200",
     dateOfBirth: "1996-05-26",
-    height: 180
+    height: 180,
+    instagramPostUrl: "https://www.instagram.com/p/DZxjUNxnLBZ/"
   },
   "441622": {
     fifaId: "441622",
@@ -18486,7 +18494,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/e3774306-ac78-44ee-954b-9f4328a035c1/MACHADO-Deiver_394376",
     dateOfBirth: "1993-09-02",
-    height: 173
+    height: 173,
+    instagramPostUrl: "https://www.instagram.com/p/DaJTFEOD0l_/"
   },
   "386013": {
     fifaId: "386013",
@@ -19345,9 +19354,19 @@ var countryFromCountryResponse = (result) => {
 
 // src/i18n/locale.ts
 var DEFAULT_LOCALE = "pt";
-var isLocale = (value) => value === "pt" || value === "es";
-var localeFromFifaLanguage = (language) => language.trim().toLowerCase().startsWith("es") ? "es" : DEFAULT_LOCALE;
-var localeFromHost = (host) => typeof host === "string" && /^es\./i.test(host.trim()) ? "es" : DEFAULT_LOCALE;
+var isLocale = (value) => value === "pt" || value === "es" || value === "en";
+var localeFromFifaLanguage = (language) => {
+  const lang = language.trim().toLowerCase();
+  if (lang.startsWith("es")) return "es";
+  if (lang.startsWith("en")) return "en";
+  return DEFAULT_LOCALE;
+};
+var localeFromHost = (host) => {
+  const h = typeof host === "string" ? host.trim() : "";
+  if (/^es\./i.test(h)) return "es";
+  if (/^en\./i.test(h)) return "en";
+  return DEFAULT_LOCALE;
+};
 var STORAGE_KEY = "agora-locale";
 var QUERY_KEY = "lang";
 var INJECTED_GLOBAL = "__AGORA_LOCALE__";
@@ -19383,42 +19402,158 @@ var persistLocale = (locale) => {
 // server-i18n.ts
 var NOTE_TRANSLATIONS = {
   // Broadcast guide
-  "Dados oficiais de Onde Assistir da FIFA.": "Datos oficiales de \xABD\xF3nde Ver\xBB de la FIFA.",
-  "Dados oficiais da FIFA indispon\xEDveis para esta partida no momento; exibindo a lista local.": "Datos oficiales de la FIFA no disponibles para este partido por ahora; mostrando la lista local.",
-  "Nenhuma transmiss\xE3o oficial da FIFA para esta partida no pa\xEDs selecionado.": "No hay transmisi\xF3n oficial de la FIFA para este partido en el pa\xEDs seleccionado.",
+  "Dados oficiais de Onde Assistir da FIFA.": {
+    es: "Datos oficiales de \xABD\xF3nde Ver\xBB de la FIFA.",
+    en: "Official FIFA 'Where to Watch' data."
+  },
+  "Dados oficiais da FIFA indispon\xEDveis para esta partida no momento; exibindo a lista local.": {
+    es: "Datos oficiales de la FIFA no disponibles para este partido por ahora; mostrando la lista local.",
+    en: "Official FIFA data unavailable for this match right now; showing the local list."
+  },
+  "Nenhuma transmiss\xE3o oficial da FIFA para esta partida no pa\xEDs selecionado.": {
+    es: "No hay transmisi\xF3n oficial de la FIFA para este partido en el pa\xEDs seleccionado.",
+    en: "No official FIFA broadcast for this match in the selected country."
+  },
   // Team view
-  "Painel da sele\xE7\xE3o abastecido por dados oficiais da FIFA sempre que dispon\xEDveis.": "Panel de la selecci\xF3n alimentado con datos oficiales de la FIFA siempre que est\xE9n disponibles.",
-  "Painel da sele\xE7\xE3o usando dados locais do aplicativo enquanto a FIFA n\xE3o publica todos os detalhes.": "Panel de la selecci\xF3n usando datos locales de la app mientras la FIFA no publica todos los detalles.",
-  "Painel da sele\xE7\xE3o combinando dados oficiais da FIFA com fallback local do aplicativo.": "Panel de la selecci\xF3n combinando datos oficiales de la FIFA con respaldo local de la app.",
+  "Painel da sele\xE7\xE3o abastecido por dados oficiais da FIFA sempre que dispon\xEDveis.": {
+    es: "Panel de la selecci\xF3n alimentado con datos oficiales de la FIFA siempre que est\xE9n disponibles.",
+    en: "Team panel powered by official FIFA data whenever available."
+  },
+  "Painel da sele\xE7\xE3o usando dados locais do aplicativo enquanto a FIFA n\xE3o publica todos os detalhes.": {
+    es: "Panel de la selecci\xF3n usando datos locales de la app mientras la FIFA no publica todos los detalles.",
+    en: "Team panel using the app's local data while FIFA hasn't published every detail."
+  },
+  "Painel da sele\xE7\xE3o combinando dados oficiais da FIFA com fallback local do aplicativo.": {
+    es: "Panel de la selecci\xF3n combinando datos oficiales de la FIFA con respaldo local de la app.",
+    en: "Team panel combining official FIFA data with the app's local fallback."
+  },
   // Lineups
-  "Escala\xE7\xE3o estimada a partir da base local do aplicativo.": "Alineaci\xF3n estimada a partir de la base local de la app.",
+  "Escala\xE7\xE3o estimada a partir da base local do aplicativo.": {
+    es: "Alineaci\xF3n estimada a partir de la base local de la app.",
+    en: "Lineup estimated from the app's local data."
+  },
   // Player incidents
-  "Incidentes a partir de dados locais (FIFA indispon\xEDvel).": "Incidencias a partir de datos locales (FIFA no disponible).",
-  "Incidentes sincronizados com a FIFA.": "Incidencias sincronizadas con la FIFA.",
+  "Incidentes a partir de dados locais (FIFA indispon\xEDvel).": {
+    es: "Incidencias a partir de datos locales (FIFA no disponible).",
+    en: "Incidents from local data (FIFA unavailable)."
+  },
+  "Incidentes sincronizados com a FIFA.": {
+    es: "Incidencias sincronizadas con la FIFA.",
+    en: "Incidents synced with FIFA."
+  },
   // Tournament leaders
-  "Ranking calculado a partir de placares e lances oficiais da FIFA.": "Ranking calculado a partir de marcadores y jugadas oficiales de la FIFA.",
-  "Ranking calculado a partir do fallback local do aplicativo.": "Ranking calculado a partir del respaldo local de la app.",
-  "Ranking calculado com mix de dados oficiais da FIFA e fallback local.": "Ranking calculado con una mezcla de datos oficiales de la FIFA y respaldo local.",
+  "Ranking calculado a partir de placares e lances oficiais da FIFA.": {
+    es: "Ranking calculado a partir de marcadores y jugadas oficiales de la FIFA.",
+    en: "Ranking computed from official FIFA scores and plays."
+  },
+  "Ranking calculado a partir do fallback local do aplicativo.": {
+    es: "Ranking calculado a partir del respaldo local de la app.",
+    en: "Ranking computed from the app's local fallback."
+  },
+  "Ranking calculado com mix de dados oficiais da FIFA e fallback local.": {
+    es: "Ranking calculado con una mezcla de datos oficiales de la FIFA y respaldo local.",
+    en: "Ranking computed from a mix of official FIFA data and local fallback."
+  },
   // Player stats / incidents unavailable
-  "Estat\xEDsticas indispon\xEDveis \u2014 FIFA API inacess\xEDvel.": "Estad\xEDsticas no disponibles \u2014 API de la FIFA inaccesible.",
-  "Incidentes indispon\xEDveis \u2014 FIFA API inacess\xEDvel.": "Incidencias no disponibles \u2014 API de la FIFA inaccesible.",
+  "Estat\xEDsticas indispon\xEDveis \u2014 FIFA API inacess\xEDvel.": {
+    es: "Estad\xEDsticas no disponibles \u2014 API de la FIFA inaccesible.",
+    en: "Stats unavailable \u2014 FIFA API unreachable."
+  },
+  "Incidentes indispon\xEDveis \u2014 FIFA API inacess\xEDvel.": {
+    es: "Incidencias no disponibles \u2014 API de la FIFA inaccesible.",
+    en: "Incidents unavailable \u2014 FIFA API unreachable."
+  },
   // Country info (Wikipedia content stays pt for now; notes translated)
-  "Dados da Wikipedia e Wikidata.": "Datos de Wikipedia y Wikidata.",
-  "Usando dados em cache \u2014 Wikipedia inacess\xEDvel.": "Usando datos en cach\xE9 \u2014 Wikipedia inaccesible.",
-  "Informa\xE7\xF5es indispon\xEDveis \u2014 Wikipedia inacess\xEDvel.": "Informaci\xF3n no disponible \u2014 Wikipedia inaccesible.",
+  "Dados da Wikipedia e Wikidata.": {
+    es: "Datos de Wikipedia y Wikidata.",
+    en: "Data from Wikipedia and Wikidata."
+  },
+  "Usando dados em cache \u2014 Wikipedia inacess\xEDvel.": {
+    es: "Usando datos en cach\xE9 \u2014 Wikipedia inaccesible.",
+    en: "Using cached data \u2014 Wikipedia unreachable."
+  },
+  "Informa\xE7\xF5es indispon\xEDveis \u2014 Wikipedia inacess\xEDvel.": {
+    es: "Informaci\xF3n no disponible \u2014 Wikipedia inaccesible.",
+    en: "Information unavailable \u2014 Wikipedia unreachable."
+  },
   // Endpoint error messages
-  "Erro ao carregar guia de transmiss\xE3o da FIFA": "Error al cargar la gu\xEDa de transmisi\xF3n de la FIFA",
-  "Erro ao carregar placares da FIFA": "Error al cargar los marcadores de la FIFA",
-  "Erro ao carregar dados unificados da FIFA": "Error al cargar los datos unificados de la FIFA",
-  "Erro ao carregar escala\xE7\xF5es da FIFA": "Error al cargar las alineaciones de la FIFA",
-  "Erro ao carregar l\xEDderes do torneio": "Error al cargar los l\xEDderes del torneo",
-  "Erro ao carregar painel completo da sele\xE7\xE3o": "Error al cargar el panel completo de la selecci\xF3n",
-  "Jogador n\xE3o encontrado nos l\xEDderes do torneio": "Jugador no encontrado en los l\xEDderes del torneo",
-  "Jogador n\xE3o encontrado": "Jugador no encontrado",
-  "Sele\xE7\xE3o n\xE3o encontrada": "Selecci\xF3n no encontrada",
-  "Pa\xEDs n\xE3o encontrado": "Pa\xEDs no encontrado"
+  "Erro ao carregar guia de transmiss\xE3o da FIFA": {
+    es: "Error al cargar la gu\xEDa de transmisi\xF3n de la FIFA",
+    en: "Error loading the FIFA broadcast guide"
+  },
+  "Erro ao carregar placares da FIFA": {
+    es: "Error al cargar los marcadores de la FIFA",
+    en: "Error loading FIFA scores"
+  },
+  "Erro ao carregar dados unificados da FIFA": {
+    es: "Error al cargar los datos unificados de la FIFA",
+    en: "Error loading unified FIFA data"
+  },
+  "Erro ao carregar escala\xE7\xF5es da FIFA": {
+    es: "Error al cargar las alineaciones de la FIFA",
+    en: "Error loading FIFA lineups"
+  },
+  "Erro ao carregar l\xEDderes do torneio": {
+    es: "Error al cargar los l\xEDderes del torneo",
+    en: "Error loading the tournament leaders"
+  },
+  "Erro ao carregar painel completo da sele\xE7\xE3o": {
+    es: "Error al cargar el panel completo de la selecci\xF3n",
+    en: "Error loading the full team panel"
+  },
+  "Jogador n\xE3o encontrado nos l\xEDderes do torneio": {
+    es: "Jugador no encontrado en los l\xEDderes del torneo",
+    en: "Player not found in the tournament leaders"
+  },
+  "Jogador n\xE3o encontrado": { es: "Jugador no encontrado", en: "Player not found" },
+  "Sele\xE7\xE3o n\xE3o encontrada": { es: "Selecci\xF3n no encontrada", en: "Team not found" },
+  "Pa\xEDs n\xE3o encontrado": { es: "Pa\xEDs no encontrado", en: "Country not found" },
+  // Match weather (Open-Meteo)
+  "Condi\xE7\xF5es no est\xE1dio \u2022 Open-Meteo": {
+    es: "Condiciones en el estadio \u2022 Open-Meteo",
+    en: "Conditions at the stadium \u2022 Open-Meteo"
+  },
+  "Coordenadas do est\xE1dio inv\xE1lidas.": {
+    es: "Coordenadas del estadio inv\xE1lidas.",
+    en: "Invalid stadium coordinates."
+  },
+  "Atualizando o clima\u2026": {
+    es: "Actualizando el clima\u2026",
+    en: "Updating the weather\u2026"
+  },
+  "Clima indispon\xEDvel no momento.": {
+    es: "Clima no disponible por ahora.",
+    en: "Weather unavailable right now."
+  },
+  // Match predictor (/api/predict) validation errors
+  "Informe as duas sele\xE7\xF5es (homeTeam e awayTeam).": {
+    es: "Indica las dos selecciones (homeTeam y awayTeam).",
+    en: "Provide both teams (homeTeam and awayTeam)."
+  },
+  "Escolha duas sele\xE7\xF5es diferentes.": {
+    es: "Elige dos selecciones diferentes.",
+    en: "Choose two different teams."
+  },
+  "Sele\xE7\xE3o n\xE3o encontrada.": {
+    es: "Selecci\xF3n no encontrada.",
+    en: "Team not found."
+  },
+  // Live match chat (/api/chat)
+  "Partida desconhecida.": { es: "Partido desconocido.", en: "Unknown match." },
+  "Chat temporariamente indispon\xEDvel. Tente em instantes.": {
+    es: "Chat no disponible temporalmente. Prueba en unos instantes.",
+    en: "Chat temporarily unavailable. Try again in a moment."
+  },
+  "O chat abre quando a partida come\xE7a.": {
+    es: "El chat se abre cuando comienza el partido.",
+    en: "Chat opens when the match starts."
+  },
+  "Voc\xEA est\xE1 enviando mensagens r\xE1pido demais. Respire.": {
+    es: "Est\xE1s enviando mensajes demasiado r\xE1pido. Respira.",
+    en: "You're sending messages too fast. Take a breather."
+  }
 };
-var localizeNote = (text, locale) => locale === "es" ? NOTE_TRANSLATIONS[text] ?? text : text;
+var localizeNote = (text, locale) => locale === "pt" ? text : NOTE_TRANSLATIONS[text]?.[locale] ?? text;
 var HTML_SEO = {
   es: {
     htmlLang: "es-419",
@@ -19429,11 +19564,21 @@ var HTML_SEO = {
     ogDescription: "Cuenta regresiva, d\xF3nde ver, alineaciones, tablas de posiciones y llave de la Copa Mundial de la FIFA 2026 \u2014 todo en un solo lugar.",
     ogSiteName: "Ahora en el Mundial 26",
     ogImageAlt: "Ahora en el Mundial 26 \u2014 compa\xF1ero de la Copa Mundial FIFA 2026"
+  },
+  en: {
+    htmlLang: "en-US",
+    ogLocale: "en_US",
+    canonical: "https://en.copa2026.mpbarbosa.com/",
+    title: "Now at the World Cup 26 \u2014 FIFA World Cup 2026 live",
+    description: "Follow the FIFA World Cup 2026 live: countdown, where to watch, lineups, group standings, qualification and bracket \u2014 all in one place.",
+    ogDescription: "Countdown, where to watch, lineups, standings and bracket for the FIFA World Cup 2026 \u2014 all in one place.",
+    ogSiteName: "Now at the World Cup 26",
+    ogImageAlt: "Now at the World Cup 26 \u2014 FIFA World Cup 2026 companion"
   }
 };
 var localizeIndexHtml = (html, locale) => {
-  if (locale !== "es") return html;
-  const seo = HTML_SEO.es;
+  if (locale === "pt") return html;
+  const seo = HTML_SEO[locale];
   return html.replace(/(<html[^>]*\blang=")[^"]*(")/, `$1${seo.htmlLang}$2`).replace(/<title>[^<]*<\/title>/, `<title>${seo.title}</title>`).replace(
     /(<meta\s+name="description"\s+content=")[^"]*(")/,
     `$1${seo.description}$2`
@@ -19461,10 +19606,10 @@ var localizeIndexHtml = (html, locale) => {
   ).replace(
     /(<link\s+rel="canonical"\s+href=")[^"]*(")/,
     `$1${seo.canonical}$2`
-  ).replace("</head>", `  <script>window.__AGORA_LOCALE__="es";</script>
+  ).replace("</head>", `  <script>window.__AGORA_LOCALE__="${locale}";</script>
   </head>`);
 };
-var localizeResilienceNote = (payload, locale) => locale === "es" && typeof payload.note === "string" ? { ...payload, note: localizeNote(payload.note, locale) } : payload;
+var localizeResilienceNote = (payload, locale) => locale !== "pt" && typeof payload.note === "string" ? { ...payload, note: localizeNote(payload.note, locale) } : payload;
 
 // traffic-report-core.ts
 function splitSections(text) {
@@ -19724,9 +19869,18 @@ var CHAT_MESSAGES = {
     textEmpty: "Escribe un mensaje.",
     textTooLong: (max) => `El mensaje supera los ${max} caracteres.`,
     textLinks: "El mensaje no puede contener enlaces."
+  },
+  en: {
+    nicknameInvalid: "Invalid nickname.",
+    nicknameEmpty: "Choose a nickname to join in.",
+    nicknameLinks: "Nicknames can't contain links.",
+    textInvalid: "Invalid message.",
+    textEmpty: "Type a message.",
+    textTooLong: (max) => `Your message is over ${max} characters.`,
+    textLinks: "Messages can't contain links."
   }
 };
-var chatMessages = (locale) => locale === "es" ? CHAT_MESSAGES.es : CHAT_MESSAGES.pt;
+var chatMessages = (locale) => CHAT_MESSAGES[locale] ?? CHAT_MESSAGES.pt;
 var CHAT_LIMITS = {
   /** Max characters in a nickname (clamped, then validated non-empty). */
   maxNicknameLength: 24,
@@ -26620,6 +26774,47 @@ var coreCatalog = {
     "nav.noticias.desc": "Feed de novedades sobre selecciones, sedes y entradas.",
     "nav.fanzone.label": "Fan Zone",
     "nav.fanzone.desc": "Quiz y minijuegos para que el hincha siga el Mundial en clima de charla."
+  },
+  en: {
+    // App shell — header, banners, controls
+    "shell.brandName": "Now at the World Cup",
+    "shell.newVersion": "New version available",
+    "shell.updateNow": "Update now",
+    "shell.editClock": "Change Clock",
+    "shell.howToUse": "How to use the app",
+    "shell.toggleTheme": "Toggle visual style",
+    "shell.switchLanguage": "Change language",
+    // Footer
+    "footer.rights": "\xA9 2026 Now at the World Cup 26. All rights reserved. FIFA World Cup, trademarks and logos are the property of their respective owners.",
+    "footer.madeWith": "Built with care for the sports-data fanatic.",
+    "footer.credits": "Credits:",
+    "footer.privacy": "Privacy Policy",
+    "footer.pageVersion": "Page version:",
+    // Navigation (mirrors NAV_ITEMS ids)
+    "nav.dashboard.label": "Dashboard",
+    "nav.dashboard.desc": "Dashboard under construction.",
+    "nav.ao-vivo.label": "Live",
+    "nav.ao-vivo.desc": "Follow the timer, broadcasts and every play of each match.",
+    "nav.partidas.label": "Matches",
+    "nav.partidas.desc": "See every finished, live and scheduled match of the World Cup.",
+    "nav.grupos.label": "Groups",
+    "nav.grupos.desc": "Standings tables for the tournament's 12 groups.",
+    "nav.chaveamento.label": "Knockout",
+    "nav.chaveamento.desc": "Interactive knockout bracket all the way to the grand final.",
+    "nav.selecoes.label": "Teams",
+    "nav.selecoes.desc": "Complete list of the teams that qualified for the World Cup with access to each team's panel.",
+    "nav.jogadores.label": "Players",
+    "nav.jogadores.desc": "Individual profiles of the athletes who qualified for the World Cup.",
+    "nav.lideres.label": "Leaders",
+    "nav.lideres.desc": "Top scorers, discipline and team standouts of the World Cup.",
+    "nav.estadios.label": "Stadiums",
+    "nav.estadios.desc": "Map and fun facts of the World Cup's 16 host venues.",
+    "nav.social-medias.label": "Social",
+    "nav.social-medias.desc": "Social feed of the World Cup world with filters, trends, likes and comments.",
+    "nav.noticias.label": "News",
+    "nav.noticias.desc": "Feed of updates on teams, venues and tickets.",
+    "nav.fanzone.label": "Fan Zone",
+    "nav.fanzone.desc": "Quiz and mini-games for fans to follow the World Cup with a laid-back vibe."
   }
 };
 
@@ -26904,6 +27099,146 @@ var aoVivoCatalog = {
     "aoVivo.overlayCard.currentClub": "Club actual",
     "aoVivo.overlayCard.matchContext": "Contexto del partido",
     "aoVivo.overlayCard.matchContextValue": "{teamName} x {opponentName}: {playerName} aparece en el radar de las jugadas del partido."
+  },
+  en: {
+    // Header match-selector group labels
+    "aoVivo.group.finished": "Finished matches: ",
+    "aoVivo.group.live": "Current matches: ",
+    "aoVivo.group.upcoming": "Upcoming matches: ",
+    // Incident feed badges (GOAL / YC / RC / SUB / PLAY)
+    "aoVivo.incident.goal": "GOAL",
+    "aoVivo.incident.yellow": "YC",
+    "aoVivo.incident.red": "RC",
+    "aoVivo.incident.sub": "SUB",
+    "aoVivo.incident.play": "PLAY",
+    // Incident text fragments (rebuilt around the highlighted player name)
+    "aoVivo.incidentText.scoredSuffix": " scored.",
+    "aoVivo.incidentText.yellowSuffix": " picked up a yellow.",
+    "aoVivo.incidentText.redSuffix": " was sent off.",
+    "aoVivo.incidentText.subOut": "Off ",
+    "aoVivo.incidentText.subIn": ", on ",
+    // Simulated-incident texts (local demo simulator)
+    "aoVivo.sim.goalGeneric": "Simulation goal for {teamName}. The group table was recalculated instantly.",
+    "aoVivo.sim.yellowGeneric": "Yellow card for {teamName} in the simulation pressure.",
+    "aoVivo.sim.redGeneric": "Red card for {teamName} on a locally recreated play.",
+    "aoVivo.sim.subGeneric": "Simulated substitution for {teamName}.",
+    "aoVivo.sim.whistle": "Simulated whistle on {teamName}.",
+    "aoVivo.sim.comment": "Local update for {teamName}.",
+    // Overlay source/updated line
+    "aoVivo.overlay.pending": "Update pending",
+    "aoVivo.overlay.unavailable": "Update unavailable",
+    "aoVivo.overlay.updatedAt": "Updated {time}",
+    "aoVivo.overlay.sourceSimulation": "Local simulation",
+    "aoVivo.overlay.sourceOfficial": "Official",
+    "aoVivo.overlay.sourceFallback": "Local fallback",
+    // Status line
+    "aoVivo.status.live": "LIVE",
+    "aoVivo.status.liveWithTime": "LIVE \u2022 {time}",
+    "aoVivo.status.suspended": "SUSPENDED",
+    "aoVivo.status.finished": "FINAL",
+    "aoVivo.status.preGame": "PREGAME",
+    "aoVivo.status.officialFifaTitle": "Official match status per FIFA",
+    // Simultaneous-live alert + toggle
+    "aoVivo.simultaneous.liveNow": "{count} matches live now",
+    "aoVivo.simultaneous.tapToSwitch": "Simultaneous matches \u2014 tap to switch:",
+    "aoVivo.simultaneous.bothAria": "See both live matches side by side",
+    "aoVivo.simultaneous.both": "Both",
+    "aoVivo.simultaneous.matchAria": "See {teamA} vs {teamB}",
+    // Match-selector chips (tooltips / aria)
+    "aoVivo.selector.matchTooltip": "{teamA} vs {teamB}",
+    "aoVivo.selector.prevIn": "See earlier matches in {label}",
+    "aoVivo.selector.nextIn": "See upcoming matches in {label}",
+    // Clock / simulation config drawer
+    "aoVivo.config.title": "SET UP THE MOCK CLOCK",
+    "aoVivo.config.close": "Close [X]",
+    "aoVivo.config.narrationStatus": "Narration status",
+    "aoVivo.config.browserSupport": "Browser support",
+    "aoVivo.config.available": "Available",
+    "aoVivo.config.unavailable": "Unavailable",
+    "aoVivo.config.voiceEngine": "Voice engine (CDN)",
+    "aoVivo.config.loaded": "Loaded",
+    "aoVivo.config.loading": "Loading\u2026",
+    "aoVivo.config.dash": "\u2014",
+    "aoVivo.config.selectedVoice": "Selected voice",
+    "aoVivo.config.loadingVoice": "loading voice\u2026",
+    "aoVivo.config.voiceOnDevice": " \xB7 on device",
+    "aoVivo.config.voiceOnNetwork": " \xB7 from network",
+    "aoVivo.config.narration": "Narration",
+    "aoVivo.config.enabled": "Enabled",
+    "aoVivo.config.disabled": "Disabled",
+    "aoVivo.config.voiceLabel": "Voice (pick one that speaks on your device)",
+    "aoVivo.config.voiceAuto": "Automatic (recommended)",
+    "aoVivo.config.voiceNetworkSuffix": " \xB7 network",
+    "aoVivo.config.testVoiceStarting": "starting\u2026",
+    "aoVivo.config.testVoiceTitle": "Speak a test phrase now (direct device test)",
+    "aoVivo.config.testVoice": "Test voice",
+    "aoVivo.config.kickoffLabel": "Main Kickoff Time:",
+    "aoVivo.config.kickoffPlaceholder": "Example: 16:00",
+    "aoVivo.config.remainingLabel": "Time Remaining (Seconds):",
+    "aoVivo.config.convertedPreview": "Converted preview: {value}",
+    "aoVivo.config.simulatorTitle": "Score and discipline simulator",
+    "aoVivo.config.simulatorDesc": "Use the Brazil vs Morocco clash to validate the demo clock and watch Groups react to goals and cards in real time.",
+    "aoVivo.config.resetDemo": "Reset local demo",
+    "aoVivo.config.startLive": "Start live",
+    "aoVivo.config.goal": "Goal {code}",
+    "aoVivo.config.yellow": "Yellow {code}",
+    "aoVivo.config.red": "Red {code}",
+    "aoVivo.config.finishMatch": "End match",
+    "aoVivo.config.applyToMatch": "Apply to Match",
+    // Scoreboard
+    "aoVivo.scoreboard.penaltyTitle": "Penalty shootout result",
+    "aoVivo.scoreboard.penaltyLabel": "Penalties {a}",
+    "aoVivo.scoreboard.advancesOnPenalties": "{name} advances on penalties",
+    "aoVivo.scoreboard.openGroupTable": "Open {group} table",
+    "aoVivo.scoreboard.stadiumLocalTimeTitle": "Local time at the stadium",
+    "aoVivo.scoreboard.localTime": "Local time",
+    "aoVivo.scoreboard.countdown": "Kickoff in:",
+    "aoVivo.scoreboard.brasiliaTime": "BRAS\xCDLIA TIME",
+    "aoVivo.scoreboard.fifaMatchPage": "Official FIFA page for this match",
+    "aoVivo.scoreboard.simultaneousOne": "Heads up: another match at the same time",
+    "aoVivo.scoreboard.simultaneousMany": "Heads up: other matches at the same time",
+    "aoVivo.scoreboard.simultaneousTitle": "{teamA} vs {teamB} \u2014 kicks off at the same time",
+    "aoVivo.scoreboard.simultaneousAria": "See {teamA} vs {teamB}, which kicks off at the same time",
+    // Tabs
+    "aoVivo.tab.broadcast": "Where to Watch",
+    "aoVivo.tab.lineup": "Lineup",
+    "aoVivo.tab.postGame": "Postgame",
+    "aoVivo.tab.preGame": "Pregame",
+    "aoVivo.tab.instagram": "Instagram",
+    // Broadcast guide
+    "aoVivo.broadcast.title": "Where to watch the match",
+    "aoVivo.broadcast.loadingNote": "Loading official FIFA data...",
+    "aoVivo.broadcast.videoAria": "Watch on YouTube: {title}",
+    "aoVivo.broadcast.countryLabel": "Broadcast country",
+    "aoVivo.broadcast.noneForCountry": "No official broadcast listed for this country.",
+    // Incident panel
+    "aoVivo.incidents.title": "Match highlights",
+    "aoVivo.incidents.feedSimulation": "Local simulation feed",
+    "aoVivo.incidents.feedOfficial": "Official FIFA feed",
+    "aoVivo.incidents.feedWaiting": "Waiting for official FIFA plays",
+    "aoVivo.incidents.clickHint": "Click the highlighted name to open the player card",
+    "aoVivo.incidents.empty": "No official plays recorded by FIFA so far.",
+    "aoVivo.incidents.listenPlay": "Listen to the play",
+    // Finished-match bar
+    "aoVivo.finished.label": "Finished matches:",
+    "aoVivo.finished.prev": "See earlier finished matches",
+    "aoVivo.finished.next": "See later finished matches",
+    // Analysis + Instagram tabs
+    "aoVivo.analysis.highlights": "Match highlights",
+    "aoVivo.analysis.preview": "Match preview",
+    "aoVivo.analysis.highlightsLabel": "Highlights",
+    "aoVivo.analysis.previewLabel": "Preview",
+    "aoVivo.instagram.title": "On Instagram",
+    "aoVivo.instagram.open": "Open on Instagram",
+    // Lineup tab
+    "aoVivo.lineup.title": "TACTICAL HUB AND SPATIAL LAYOUT",
+    "aoVivo.lineup.desc": "Strategic positioning planned for the official S\xE3o Paulo / New York 2026 clash.",
+    // Incident player overlay
+    "aoVivo.overlayCard.position": "Position",
+    "aoVivo.overlayCard.birth": "Born",
+    "aoVivo.overlayCard.currentClub": "Current club",
+    "aoVivo.overlayCard.matchContext": "Match context",
+    "aoVivo.overlayCard.matchContextValue": "{teamName} vs {opponentName}: {playerName} shows up on the radar of the match's key plays."
   }
 };
 
@@ -27114,6 +27449,109 @@ var standingsCatalog = {
     "standings.history.openMatchTitle": "Abrir el partido {teamA} x {teamB}",
     "standings.history.openMatchAria": "Abrir el partido {teamA} contra {teamB}",
     "standings.history.live": "\u25CF en vivo"
+  },
+  en: {
+    // StandingsView — header
+    "standings.title": "Standings Table",
+    "standings.subtitle": "Group Stage \u2022 12 groups of 4 teams",
+    "standings.criteriaButtonTitle": "Qualification criteria",
+    "standings.criteria": "Criteria",
+    // StandingsView — tooltip legend hint
+    "standings.legendPrefix": "Tap or hover over the",
+    "standings.legendQualified": "(qualified),",
+    "standings.legendEliminated": "(eliminated), over the",
+    "standings.legendThirdHighlight": "3rd highlighted",
+    "standings.legendThirdHint": "(awaiting the 8 best third-place finishers) or over the",
+    "standings.legendPosition": "position no.",
+    "standings.legendPositionHint": "(1st/2nd still up for grabs) to see the mathematical breakdown of each team's situation.",
+    // StandingsView — table columns
+    "standings.col.pts": "PTS",
+    "standings.col.sg": "GD",
+    "standings.col.j": "P",
+    "standings.col.v": "W",
+    "standings.col.e": "D",
+    "standings.col.d": "L",
+    "standings.col.gf": "GF",
+    "standings.col.ga": "GA",
+    "standings.col.position": "Position",
+    "standings.col.team": "Team",
+    // StandingsView — group card status
+    "standings.live": "Live",
+    "standings.finished": "Finished",
+    "standings.liveMatchLine": "{teamA} {scoreA}\u2013{scoreB} {teamB} \xB7 in progress",
+    "standings.notPlayedYet": "Group-stage results not played yet",
+    "standings.somePending": "Some matchups in this group haven't been played yet",
+    // StandingsView — row titles/notes
+    "standings.rowTitleQualified": "Mathematically qualified for the knockout stage",
+    "standings.rowTitleEliminated": "Eliminated from the group stage",
+    "standings.rowTitleAwaitingThird": "Awaiting the 8 best third-place finishers",
+    "standings.noteThirdQualified": "Finished 3rd in {group} and advanced to the knockout stage as one of the 8 best third-place finishers ({position} of the 12).",
+    "standings.noteThirdEliminated": "Finished 3rd in {group} and is eliminated \u2014 fell short of the 8 best third-place finishers ({position} of the 12).",
+    "standings.noteAwaitingThird": "Finished 3rd in {group}. The 8 best third-place finishers advance to the knockout stage \u2014 the cut is only set once every group wraps up.{suffix}",
+    "standings.noteAwaitingThirdSuffix": " Provisional position among the 12 third-place teams: {position} \u2014 {status}",
+    "standings.noteAwaitingThirdInside": "inside the 8 that advance.",
+    "standings.noteAwaitingThirdOutside": "outside the 8, for now.",
+    // StandingsView — group analysis section
+    "standings.groupAnalysis": "Group analysis",
+    // StandingsRulesCard
+    "standings.rules.title": "Qualification Criteria",
+    "standings.rules.subtitle": "Article 13 \xB7 FIFA WC 2026 Regulations",
+    "standings.rules.close": "Close",
+    "standings.rules.intro": "When two or more teams are tied on points at the end of the group stage, the criteria below are applied in order.",
+    "standings.rules.step1": "Step 1",
+    "standings.rules.step1Title": "Head-to-head",
+    "standings.rules.step1Desc": "Only the matches between the tied teams",
+    "standings.rules.step1A": "Most points among them",
+    "standings.rules.step1B": "Best goal difference in the matches among them",
+    "standings.rules.step1C": "Most goals scored in the matches among them",
+    "standings.rules.step2": "Step 2",
+    "standings.rules.step2Title": "If still tied",
+    "standings.rules.step2Desc": "Criteria A\u2013C reapplied to the remaining subgroup; if still tied:",
+    "standings.rules.step2D": "Best goal difference across all group matches",
+    "standings.rules.step2E": "Most goals scored across all group matches",
+    "standings.rules.step2F": "Fair play \u2014 lowest disciplinary points total:",
+    "standings.rules.yellowCard": "Yellow card",
+    "standings.rules.yellowCardPts": "\u22121 pt",
+    "standings.rules.indirectRed": "Indirect red (2 yellows)",
+    "standings.rules.indirectRedPts": "\u22123 pts",
+    "standings.rules.directRed": "Direct red",
+    "standings.rules.directRedPts": "\u22124 pts",
+    "standings.rules.yellowPlusRed": "Yellow + direct red",
+    "standings.rules.yellowPlusRedPts": "\u22125 pts",
+    "standings.rules.step3": "Step 3",
+    "standings.rules.step3Title": "Last resort",
+    "standings.rules.step3G": "Most recent FIFA/Coca-Cola Men's Ranking",
+    "standings.rules.step3H": "Prior ranking editions, retroactively, until a decision is reached",
+    "standings.rules.best8Title": "8 best third-place finishers",
+    "standings.rules.best8Desc": "Separate criterion \u2014 no head-to-head:",
+    "standings.rules.best8Order": "Points \u2192 Goal difference \u2192 Goals scored \u2192 Fair play \u2192 FIFA Ranking",
+    "standings.rules.officialLink": "See the official FIFA regulations",
+    // ThirdPlaceTable
+    "standings.third.title": "Best 3rd-place finishers",
+    "standings.third.subtitle": "8 of the 12 groups advance via 3rd place \xB7 provisional ranking",
+    "standings.third.colGroup": "Grp.",
+    "standings.third.colTeam": "Team",
+    "standings.third.colChance": "Chance",
+    "standings.third.colChanceTitle": "Simulated probability (Monte Carlo) of advancing to the knockout stage",
+    "standings.third.colJTitle": "Matches played (finished + in progress)",
+    "standings.third.colFpTitle": "Fair play (Art. 13.2f): \u22121 yellow, \u22123 second yellow, \u22124 direct red",
+    "standings.third.guaranteedTitle": "Guaranteed spot in the knockout stage (100% in the simulations)",
+    "standings.third.guaranteedAria": "Guaranteed qualification",
+    "standings.third.eliminatedTitle": "Eliminated: 0% chance of landing among the 8 best 3rd-place finishers",
+    "standings.third.eliminatedAria": "Eliminated",
+    "standings.third.chanceCellTitle": "Simulated probability of advancing to the knockout stage",
+    "standings.third.footnote": "The green line marks the cut for the 8 qualifiers. The Chance column is a simulated probability (Monte Carlo) of advancing to the knockout stage \u2014 a call for the fans, not a locked result. The official assignment of each 3rd-place team to the knockout bracket is only set once the group stage ends.",
+    "standings.third.tooltipBase": "{name} \xB7 {ord}",
+    "standings.third.tooltipOrd": "{rank} best 3rd-place finisher",
+    "standings.third.tooltipGuaranteed": "{name} \xB7 {ord} \u2014 knockout-stage qualification guaranteed.",
+    "standings.third.tooltipEliminated": "{name} \xB7 {ord} \u2014 eliminated: no scenarios for landing among the 8 best 3rd-place finishers.",
+    "standings.third.tooltipInside": "{name} \xB7 {ord} \u2014 inside the provisional cut of 8, but no guaranteed spot ({pct}% in the simulations).",
+    "standings.third.tooltipContention": "{name} \xB7 {ord} \u2014 outside the provisional cut of 8, but still in the hunt ({pct}% in the simulations).",
+    // GroupMatchHistory
+    "standings.history.title": "Match history",
+    "standings.history.openMatchTitle": "Open the {teamA} vs {teamB} match",
+    "standings.history.openMatchAria": "Open the {teamA} against {teamB} match",
+    "standings.history.live": "\u25CF live"
   }
 };
 
@@ -27152,6 +27590,23 @@ var teamsCatalog = {
     "teams.qualifiedTitle": "Clasificada a la fase eliminatoria",
     "teams.eliminatedBadge": "Eliminada",
     "teams.eliminatedTitle": "Sin chances de clasificaci\xF3n a la fase eliminatoria"
+  },
+  en: {
+    "teams.title": "Teams",
+    "teams.subtitle": "All 48 World Cup teams with direct access to each squad's full panel",
+    "teams.legendQualified": "\u2713 Qualified",
+    "teams.legendQualifiedDesc": "spot locked up in the knockout round",
+    "teams.legendEliminated": "\u2715 Eliminated",
+    "teams.legendEliminatedDesc": "no chance of qualifying",
+    "teams.groupTeamCount": "{count} teams",
+    "teams.teamStatsOne": "{code} \u2022 {points} pt \u2022 {played} {jogos}",
+    "teams.teamStatsMany": "{code} \u2022 {points} pts \u2022 {played} {jogos}",
+    "teams.gameSingular": "match",
+    "teams.gamePlural": "matches",
+    "teams.qualifiedBadge": "Qualified",
+    "teams.qualifiedTitle": "Qualified for the knockout round",
+    "teams.eliminatedBadge": "Eliminated",
+    "teams.eliminatedTitle": "No chance of qualifying for the knockout round"
   }
 };
 
@@ -27236,6 +27691,46 @@ var partidasCatalog = {
     "partidas.provAbbrev": "prov.",
     // Empty state
     "partidas.emptyState": "No hay partidos en esta franja por ahora."
+  },
+  en: {
+    // Header
+    "partidas.title": "Matches",
+    "partidas.subtitle": "Compact list inspired by the BBC scoreboard to browse the schedule without visual clutter.",
+    // Filter tabs (label + short label shown per date section)
+    "partidas.filterScheduled": "Scheduled",
+    "partidas.filterScheduledShort": "Schedule",
+    "partidas.filterLive": "Live",
+    "partidas.filterLiveShort": "Live",
+    "partidas.filterFinished": "Finished",
+    "partidas.filterFinishedShort": "Results",
+    // Count copy (match/matches)
+    "partidas.matchCountSingular": "{count} match",
+    "partidas.matchCountPlural": "{count} matches",
+    // Phase header
+    "partidas.groupStagePhase": "Group Stage",
+    "partidas.hiddenHintSingular": " hidden",
+    "partidas.hiddenHintPlural": " hidden",
+    // Status strip — compact label
+    "partidas.statusCompact.PRE_GAME": "Schedule",
+    "partidas.statusCompact.LIVE": "Live",
+    "partidas.statusCompact.SUSPENDED": "Stopped",
+    "partidas.statusCompact.FINISHED": "FT",
+    // Status — accessible (aria) label
+    "partidas.statusAccessible.PRE_GAME": "Scheduled",
+    "partidas.statusAccessible.LIVE": "Live",
+    "partidas.statusAccessible.SUSPENDED": "Match stopped",
+    "partidas.statusAccessible.FINISHED": "Finished",
+    // Center scoreboard display
+    "partidas.kickoff": "Kickoff",
+    "partidas.penalties": "Pens. {teamA} x {teamB}",
+    "partidas.fullTimeLong": "Full Time",
+    "partidas.inPlay": "In play",
+    "partidas.suspended": "Stopped",
+    // Provisional-team badge
+    "partidas.qualifiedProvisional": "Qualified (provisional)",
+    "partidas.provAbbrev": "prov.",
+    // Empty state
+    "partidas.emptyState": "No matches in this range right now."
   }
 };
 
@@ -27280,6 +27775,26 @@ var commonCatalog = {
     "common.freshness.staleTitle": "El an\xE1lisis est\xE1 detr\xE1s del \xFAltimo partido",
     "common.freshness.upToDate": "Actualizada",
     "common.freshness.stale": "Desactualizada"
+  },
+  en: {
+    // MatchWeatherChip
+    "common.weatherChip.title": "See the stadium weather forecast \u2022 Feels like {apparent}\xB0 \u2022 Humidity {humidity}% \u2022 Wind {wind} km/h",
+    "common.weatherChip.ariaLabel": "Weather at the stadium: {description}, {temperature} degrees. Open the weather forecast.",
+    // RefereeChip
+    "common.referee.caption": "Referee",
+    "common.referee.titleWithCountry": "Match referee: {name} ({country})",
+    "common.referee.title": "Match referee: {name}",
+    "common.referee.labelWithCountry": "Referee: {name}, {country}",
+    "common.referee.label": "Referee: {name}",
+    "common.referee.openCard": "{label} \u2014 open referee card",
+    // WeatherSuspensionNotice
+    "common.weatherSuspension.title": "Open the FIFA regulations on suspended matches",
+    "common.weatherSuspension.text": "Match halted \u2014 FIFA protocol for suspension due to weather conditions",
+    // AnalysisFreshnessBadge
+    "common.freshness.upToDateTitle": "The analysis reflects the latest match",
+    "common.freshness.staleTitle": "The analysis is behind the latest match",
+    "common.freshness.upToDate": "Up to date",
+    "common.freshness.stale": "Out of date"
   }
 };
 
@@ -27330,6 +27845,29 @@ var jogadoresCatalog = {
     "jogadores.emptyHint": "Prueba con otro nombre o selecci\xF3n",
     "jogadores.detailPosition": "Posici\xF3n",
     "jogadores.detailBirth": "Nacimiento"
+  },
+  en: {
+    "jogadores.title": "Players",
+    "jogadores.viewProfileOf": "View {name}'s profile",
+    "jogadores.legendBadge": "Legend",
+    "jogadores.instagramVerified": "Verified Instagram",
+    "jogadores.teamPlayerCount": "{group} \xB7 {count} players",
+    "jogadores.viewLineupOf": "View {name}'s lineup",
+    "jogadores.searchPlaceholder": "Search player...",
+    "jogadores.searchAriaLabel": "Search player by name",
+    "jogadores.clearSearch": "Clear search",
+    "jogadores.teamFilterLabel": "Team",
+    "jogadores.filterByTeam": "Filter by team",
+    "jogadores.allTeams": "All teams",
+    "jogadores.starsFilter": "\u2605 World Cup Stars",
+    "jogadores.starsFilterTitle": "Show only the World Cup stars",
+    "jogadores.clearAllFilters": "View all \xD7",
+    "jogadores.subtitleFiltered": "{count} player{plural} found",
+    "jogadores.subtitleAll": "{teams} teams \xB7 {players} players",
+    "jogadores.emptyTitle": "No players found",
+    "jogadores.emptyHint": "Try another name or team",
+    "jogadores.detailPosition": "Position",
+    "jogadores.detailBirth": "Born"
   }
 };
 
@@ -27432,6 +27970,55 @@ var lideresCatalog = {
     "lideres.detailClub": "Club actual",
     "lideres.detailPosition": "Posici\xF3n",
     "lideres.officialHighlight": "Destacado oficial del torneo por {team}."
+  },
+  en: {
+    "lideres.title": "Tournament Leaders",
+    "lideres.subtitle": "Scoring, discipline, and team standouts from the World Cup",
+    "lideres.updatedAt": "Updated {time}",
+    "lideres.updateUnavailable": "Update unavailable",
+    "lideres.updatePending": "Update pending",
+    "lideres.loading": "Loading the official competition leaders radar...",
+    "lideres.error": "Couldn't load the tournament leaders right now.",
+    "lideres.playerEmpty": "FIFA hasn't logged enough events yet for this ranking.",
+    "lideres.teamEmpty": "There aren't enough matches yet to build this team ranking.",
+    "lideres.photoAlt": "Photo of {name}",
+    "lideres.openTeamPanel": "Open full {team} panel",
+    "lideres.shirt": "Jersey {number}",
+    "lideres.topScorersTitle": "Top Scorers",
+    "lideres.topScorersSubtitle": "Who's found the net the most",
+    "lideres.yellowCardsTitle": "Yellow Cards",
+    "lideres.yellowCardsSubtitle": "Most booked in the tournament",
+    "lideres.redCardsTitle": "Red Cards",
+    "lideres.redCardsSubtitle": "Ejections on record",
+    "lideres.bestAttackTitle": "Best Attacks",
+    "lideres.bestAttackSubtitle": "Most goals scored",
+    "lideres.bestDefenseTitle": "Best Defenses",
+    "lideres.bestDefenseSubtitle": "Fewest goals conceded",
+    "lideres.cleanSheetsTitle": "Clean Sheets",
+    "lideres.cleanSheetsSubtitle": "Matches without conceding",
+    "lideres.goalsOne": "{count} goal",
+    "lideres.goalsMany": "{count} goals",
+    "lideres.yellowsOne": "{count} yellow",
+    "lideres.yellowsMany": "{count} yellows",
+    "lideres.redsOne": "{count} red",
+    "lideres.redsMany": "{count} reds",
+    "lideres.concededOne": "{count} conceded",
+    "lideres.concededMany": "{count} conceded",
+    "lideres.cleanSheetOne": "{count} clean sheet",
+    "lideres.cleanSheetMany": "{count} clean sheets",
+    "lideres.attackDetail": "{matches} \u2022 {wins}",
+    "lideres.matchesOne": "{count} match",
+    "lideres.matchesMany": "{count} matches",
+    "lideres.winsOne": "{count} win",
+    "lideres.winsMany": "{count} wins",
+    "lideres.defenseDetail": "{cleanSheets} \u2022 {matches}",
+    "lideres.cleanSheetsDetail": "{goalsAgainst} conceded \u2022 {matches}",
+    "lideres.statGoals": "Goals",
+    "lideres.statYellows": "Yellows",
+    "lideres.statReds": "Reds",
+    "lideres.detailClub": "Current club",
+    "lideres.detailPosition": "Position",
+    "lideres.officialHighlight": "Official tournament standout for {team}."
   }
 };
 
@@ -27542,6 +28129,59 @@ var bracketCatalog = {
     "bracket.predictor.simulatedBadge": "Pron\xF3stico simulado",
     "bracket.predictor.prognosisFallback": "Pron\xF3stico",
     "bracket.predictor.error": "No se pudo generar el pron\xF3stico ahora. Intenta elegir el cruce nuevamente."
+  },
+  en: {
+    // Stage labels (per-stage columns)
+    "bracket.stage.R32": "Round of 32",
+    "bracket.stage.R16": "Round of 16",
+    "bracket.stage.QF": "Quarterfinals",
+    "bracket.stage.SF": "Semifinals",
+    "bracket.stage.TP": "3rd place",
+    "bracket.stage.F": "Final",
+    // Stage labels (short, full-bracket column headers)
+    "bracket.stageShort.R32": "Round of 32",
+    "bracket.stageShort.R16": "Round of 16",
+    "bracket.stageShort.QF": "Quarters",
+    "bracket.stageShort.SF": "Semis",
+    "bracket.stageShort.TP": "3rd place",
+    "bracket.stageShort.F": "Final",
+    // Slot row markers
+    "bracket.slot.qualified": "Qualified",
+    "bracket.slot.eliminated": "Eliminated",
+    "bracket.slot.provisionalShort": "prov.",
+    "bracket.slot.viewTeam": "View {name} team",
+    // Column subheading (confronto count)
+    "bracket.column.confrontoSingular": "{count} matchup",
+    "bracket.column.confrontoPlural": "{count} matchups",
+    "bracket.column.finalSummary": "Grand final in East Rutherford",
+    "bracket.column.thirdPlaceSummary": "Third-Place Match",
+    // View header
+    "bracket.title": "World Cup Knockout",
+    "bracket.subtitle": "Official FIFA bracket \u2022 dates in Bras\xEDlia time \u2022 Round of 32 spots filled provisionally by the current standings",
+    "bracket.route.title": "Road to MetLife Stadium",
+    "bracket.route.subtitle": "East Rutherford \u2022 Round of 32 \u2192 final \u2022 includes the Third-Place Match",
+    // View toggle
+    "bracket.toggle.aria": "Knockout view mode",
+    "bracket.toggle.columns": "Columns",
+    "bracket.toggle.full": "Full bracket",
+    // Legend
+    "bracket.legend.qualified": "Qualified",
+    "bracket.legend.provisional": "prov. Provisional",
+    "bracket.legend.bestThird": "Best 3rd",
+    "bracket.legend.officialLabels": "Other spots: official labels",
+    // Full bracket
+    "bracket.full.openTeam": "Open {name} team",
+    "bracket.full.rotateHint": "Rotate your phone to landscape mode to see the full bracket",
+    // Predictor panel
+    "bracket.predictor.title": "Matchup prediction",
+    "bracket.predictor.subtitle": "Pick a knockout matchup that's already set and generate a prediction from a statistical model (Poisson/Dixon-Coles) based on the teams' current campaign.",
+    "bracket.predictor.simulated": "Simulated",
+    "bracket.predictor.empty": "No knockout matchup has both spots set yet. As soon as the standings fill both sides of a match, the prediction shows up here.",
+    "bracket.predictor.confrontoLabel": "Matchup",
+    "bracket.predictor.loading": "Generating prediction\u2026",
+    "bracket.predictor.simulatedBadge": "Simulated prediction",
+    "bracket.predictor.prognosisFallback": "Prediction",
+    "bracket.predictor.error": "Couldn't generate the prediction right now. Try picking the matchup again."
   }
 };
 
@@ -27550,6 +28190,7 @@ var playerCardCatalog = {
   pt: {
     // Shared chrome
     "playerCard.close": "Fechar",
+    "playerCard.starBadge": "\u2605 Craque da Copa",
     "playerCard.openInstagram": "Abrir no Instagram",
     "playerCard.instagramHighlightOne": "Destaque no Instagram",
     "playerCard.instagramHighlightMany": "Destaques no Instagram",
@@ -27607,6 +28248,7 @@ var playerCardCatalog = {
   es: {
     // Shared chrome
     "playerCard.close": "Cerrar",
+    "playerCard.starBadge": "\u2605 Crack del Mundial",
     "playerCard.openInstagram": "Abrir en Instagram",
     "playerCard.instagramHighlightOne": "Destacado en Instagram",
     "playerCard.instagramHighlightMany": "Destacados en Instagram",
@@ -27660,6 +28302,64 @@ var playerCardCatalog = {
     "playerCard.refereeRole": "\xC1rbitro(a)",
     "playerCard.refereeRoleCountry": "\xC1rbitro(a) \u2022 {country}",
     "playerCard.refereeBlurb": "\xC1rbitro(a) principal designado(a) por la FIFA para el partido."
+  },
+  en: {
+    // Shared chrome
+    "playerCard.close": "Close",
+    "playerCard.starBadge": "\u2605 World Cup Star",
+    "playerCard.openInstagram": "Open on Instagram",
+    "playerCard.instagramHighlightOne": "Instagram highlight",
+    "playerCard.instagramHighlightMany": "Instagram highlights",
+    // Player stat / detail labels
+    "playerCard.stat.shirt": "Number",
+    "playerCard.stat.age": "Age",
+    "playerCard.stat.height": "Height",
+    "playerCard.stat.goals": "Goals",
+    "playerCard.stat.yellows": "Yellows",
+    "playerCard.stat.reds": "Reds",
+    // Social platform labels
+    "playerCard.social.site": "Official site",
+    "playerCard.social.wikipedia": "Wikipedia",
+    "playerCard.social.followers": "followers",
+    // Birth-date month abbreviations
+    "playerCard.month.jan": "Jan",
+    "playerCard.month.feb": "Feb",
+    "playerCard.month.mar": "Mar",
+    "playerCard.month.apr": "Apr",
+    "playerCard.month.may": "May",
+    "playerCard.month.jun": "Jun",
+    "playerCard.month.jul": "Jul",
+    "playerCard.month.aug": "Aug",
+    "playerCard.month.sep": "Sep",
+    "playerCard.month.oct": "Oct",
+    "playerCard.month.nov": "Nov",
+    "playerCard.month.dec": "Dec",
+    // Player overlay card
+    "playerCard.photoAlt": "Photo of {name}",
+    "playerCard.signatureAlt": "Signature of {name}",
+    "playerCard.zoomedPhotoAlt": "Enlarged photo of {name}",
+    "playerCard.eyebrow": "Full player card",
+    "playerCard.openTeamPanel": "Open full {team} panel",
+    "playerCard.openFullPhoto": "Open full-size photo",
+    "playerCard.officialSocials": "Official socials",
+    "playerCard.webSearch": "Search the web",
+    "playerCard.news": "News",
+    // Coach card
+    "playerCard.coachEyebrow": "Head coach card",
+    "playerCard.coachRole": "Head coach",
+    "playerCard.coachRoleTeam": "Head coach \u2022 {team}",
+    "playerCard.coachGames": "Matches",
+    "playerCard.coachWins": "Wins",
+    "playerCard.coachDraws": "Draws",
+    "playerCard.coachLosses": "Losses",
+    "playerCard.coachGoals": "Goals (for / against)",
+    "playerCard.coachGoalDiff": "Goal difference",
+    "playerCard.coachPhotoCredit": "Photo:",
+    // Referee card
+    "playerCard.refereeEyebrow": "Referee card",
+    "playerCard.refereeRole": "Referee",
+    "playerCard.refereeRoleCountry": "Referee \u2022 {country}",
+    "playerCard.refereeBlurb": "Head referee assigned by FIFA for the match."
   }
 };
 
@@ -27731,6 +28431,40 @@ var venuesNewsCatalog = {
     "venuesNews.news.filterVenues": "Sedes",
     "venuesNews.news.filterTickets": "Entradas",
     "venuesNews.news.filterTeams": "Equipos",
+    "venuesNews.news.filterGeneral": "General"
+  },
+  en: {
+    // Country labels
+    "venuesNews.country.USA": "United States",
+    "venuesNews.country.MEX": "Mexico",
+    "venuesNews.country.CAN": "Canada",
+    // VenueMapView — header
+    "venuesNews.venues.title": "World Cup Stadiums",
+    "venuesNews.venues.subtitle": "16 venues \u2022 real OpenStreetMap map \u2022 explore by host city",
+    // VenueMapView — map panel
+    "venuesNews.venues.mapTitle": "World Cup Routes",
+    "venuesNews.venues.mapHint": "Pan the map, zoom in, and tap a marker to open the venue",
+    "venuesNews.venues.mapDescription": "Explore all 16 venues at real scale, with free zoom across Canada, the United States, and Mexico.",
+    // VenueMapView — mobile list
+    "venuesNews.venues.matchCount": "{count} matches",
+    // VenueMapView — detail panel
+    "venuesNews.venues.selectedVenue": "Selected venue",
+    "venuesNews.venues.highlightedMatches": "{count} featured matches",
+    "venuesNews.venues.capacity": "Capacity",
+    "venuesNews.venues.inauguration": "Opened",
+    "venuesNews.venues.arenaXRay": "Arena X-ray",
+    "venuesNews.venues.matchesHere": "Matches at this venue",
+    "venuesNews.venues.matchesHereHint": "Cross-referenced with the app's featured matches",
+    "venuesNews.venues.noMatches": "This arena hasn't hosted any of the page's featured matches yet.",
+    // NewsView — header
+    "venuesNews.news.title": "News Hub",
+    "venuesNews.news.subtitle": "Updates on venues, tickets, teams, and behind-the-scenes World Cup stories",
+    "venuesNews.news.highlightsCount": "{count} highlights in focus",
+    // NewsView — filters
+    "venuesNews.news.filterAll": "All",
+    "venuesNews.news.filterVenues": "Venues",
+    "venuesNews.news.filterTickets": "Tickets",
+    "venuesNews.news.filterTeams": "Teams",
     "venuesNews.news.filterGeneral": "General"
   }
 };
@@ -27928,6 +28662,102 @@ var fanSocialCatalog = {
     "fanSocial.trendingHint": "Toca un hashtag para filtrar el feed",
     "fanSocial.postCountSingular": "post",
     "fanSocial.postCountPlural": "posts"
+  },
+  en: {
+    // FanZoneView — header
+    "fanSocial.fanZoneTitle": "Fan Zone",
+    "fanSocial.fanZoneSubtitle": "Fan trivia quiz, penalty shootout and simulated match predictions",
+    "fanSocial.fanZoneScopeNote": "100% simulated prediction \u2022 no external AI",
+    // Trivia panel
+    "fanSocial.triviaTitle": "Fan trivia quiz",
+    "fanSocial.triviaWarmup": "Warming up the quiz",
+    "fanSocial.triviaProgress": "Question {current} of {total}",
+    "fanSocial.triviaScore": "Score: {score}",
+    "fanSocial.triviaLoading": "Loading fan warm-up questions...",
+    "fanSocial.triviaError": "Couldn't load the quiz right now. Try refreshing the Fan Zone.",
+    "fanSocial.triviaCorrect": "Correct answer",
+    "fanSocial.triviaWrong": "Not this time",
+    "fanSocial.triviaRestart": "Restart quiz",
+    "fanSocial.triviaNext": "Next question",
+    // Penalty panel
+    "fanSocial.penaltyTitle": "Penalty shootout",
+    "fanSocial.penaltySubtitle": "Pick your corner and see which way the keeper dives",
+    "fanSocial.penaltyReset": "Restart shootout",
+    "fanSocial.penaltyShots": "Shots",
+    "fanSocial.penaltyGoals": "Goals",
+    "fanSocial.penaltySaves": "Saves",
+    "fanSocial.penaltyExplainer": "The keeper alternates corner reads in a pseudo-random pattern to keep the game fast and consistent between rounds.",
+    "fanSocial.penaltyOptionLeft": "Left corner",
+    "fanSocial.penaltyOptionCenter": "Down the middle",
+    "fanSocial.penaltyOptionRight": "Right corner",
+    "fanSocial.penaltyLastResult": "Result of the last kick",
+    "fanSocial.penaltyGoalConfirmed": "Goal confirmed",
+    "fanSocial.penaltyKeeperSaved": "Keeper saved it",
+    "fanSocial.penaltyResultShotPrefix": "You shot to the",
+    "fanSocial.penaltyResultKeeperMid": "and the keeper dove to the",
+    "fanSocial.penaltyResultSuffix": ".",
+    "fanSocial.penaltyDirLeft": "left",
+    "fanSocial.penaltyDirCenter": "center",
+    "fanSocial.penaltyDirRight": "right",
+    "fanSocial.penaltyEmpty": "Take the first kick to open the Fan Zone scoreboard.",
+    // Predictor panel
+    "fanSocial.predictorTitle": "Match prediction",
+    "fanSocial.predictorSubtitle": "Pick two teams and generate a forecast from their current campaign.",
+    "fanSocial.predictorSimulated": "Simulated",
+    "fanSocial.predictorHome": "Home",
+    "fanSocial.predictorAway": "Away",
+    "fanSocial.predictorSelect": "Select\u2026",
+    "fanSocial.predictorNotesPlaceholder": "Optional: your take (injuries, weather, home advantage\u2026)",
+    "fanSocial.predictorSameTeams": "Pick two different teams.",
+    "fanSocial.predictorGenerating": "Generating\u2026",
+    "fanSocial.predictorGenerate": "Generate prediction",
+    "fanSocial.predictorSimulatedBadge": "Simulated prediction",
+    "fanSocial.predictorError": "Couldn't generate the prediction right now. Try again.",
+    // SocialMediasView — header
+    "fanSocial.socialTitle": "Social",
+    "fanSocial.socialSubtitle": "The world at the World Cup \u2022 social feed with filters, likes and real-time comments",
+    "fanSocial.socialMultiview": "Live multiview",
+    // FIFA profile card
+    "fanSocial.fifaCardLabel": "Official FIFA World Cup card",
+    "fanSocial.fifaProfileLabel": "Official FIFA World Cup profile on Instagram",
+    "fanSocial.fifaOfficialProfile": "@fifaworldcup \u2022 Official profile",
+    "fanSocial.fifaFollowBlurb": "Follow the official FIFA World Cup 2026 account and catch everything from the World Cup firsthand.",
+    "fanSocial.fifaFollow": "Follow",
+    // Player Instagram highlights feed
+    "fanSocial.igHighlightsSubtitle": "The best moments from the World Cup's stars, straight from Instagram",
+    "fanSocial.igHighlightsAria": "Player highlights on Instagram",
+    // Google Trends card
+    "fanSocial.trendsLabel": "Trending searches on Google",
+    "fanSocial.trendsTitle": "Trending on Google",
+    "fanSocial.trendsSportsOnly": "Sports only",
+    "fanSocial.trendsSource": "Google Trends \u2022 Brazil",
+    "fanSocial.trendsLoading": "Loading trending searches\u2026",
+    "fanSocial.trendsEmpty": "No trending sports searches right now.",
+    "fanSocial.trendsSearches": "{traffic} searches",
+    // Filters
+    "fanSocial.filterAll": "All",
+    "fanSocial.filterPhotos": "Photos",
+    "fanSocial.filterNews": "News",
+    "fanSocial.filterOfficial": "Official",
+    "fanSocial.filtersLabel": "Filter posts",
+    // Category badges
+    "fanSocial.categoryPhoto": "Photo",
+    "fanSocial.categoryNews": "News",
+    "fanSocial.categoryOfficial": "Official",
+    // Feed
+    "fanSocial.feedLabel": "Social feed",
+    "fanSocial.feedEmptyPrefix": "No posts for this filter right now. Try another tag or go back to ",
+    "fanSocial.feedEmptyAll": "All",
+    "fanSocial.feedEmptySuffix": ".",
+    "fanSocial.postOfficialAccount": "Official account",
+    "fanSocial.commentsEmpty": "Be the first to comment on this post.",
+    "fanSocial.commentPlaceholder": "Keep it real\u2026",
+    "fanSocial.commentSubmit": "Send comment",
+    // Trending sidebar
+    "fanSocial.trendingTitle": "Trending",
+    "fanSocial.trendingHint": "Tap a hashtag to filter the feed",
+    "fanSocial.postCountSingular": "post",
+    "fanSocial.postCountPlural": "posts"
   }
 };
 
@@ -28066,6 +28896,73 @@ var teamLineupCatalog = {
     "teamLineup.abbrWon": "G",
     "teamLineup.abbrDrawn": "E",
     "teamLineup.abbrLost": "P"
+  },
+  en: {
+    "teamLineup.updateUnavailable": "Update unavailable",
+    "teamLineup.updatedAt": "Updated {time}",
+    "teamLineup.statusLive": "LIVE",
+    "teamLineup.statusFinished": "FINAL",
+    "teamLineup.statusNext": "NEXT MATCH",
+    "teamLineup.penaltySuffix": "({team} x {opponent} pens.)",
+    "teamLineup.noRecord": "No record",
+    "teamLineup.matchClock": "Match clock",
+    "teamLineup.hostCity": "Host city",
+    "teamLineup.matchCardEmpty": "There isn't enough match action yet to fill this team block. As soon as the schedule or the official result shows up, the panel updates automatically.",
+    "teamLineup.matchVideosHeading": "Match videos \u2014 full game and highlights",
+    "teamLineup.watchOnYoutube": "Watch on YouTube: {title}",
+    "teamLineup.highlights": "Highlights",
+    "teamLineup.fullGame": "Full game",
+    "teamLineup.videosPending": "Waiting for Caz\xE9 TV to upload the videos to YouTube.",
+    "teamLineup.igHighlightsSubtitle": "The team's best moments, straight from Instagram",
+    "teamLineup.historyTitle": "World Cup 2026 history",
+    "teamLineup.historyCountOne": "{count} match at the World Cup",
+    "teamLineup.historyCountMany": "{count} matches at the World Cup",
+    "teamLineup.colStage": "Stage",
+    "teamLineup.colOpponent": "Opponent",
+    "teamLineup.colScore": "Score",
+    "teamLineup.colResult": "Res.",
+    "teamLineup.penaltyLine": "{team} x {opponent} pens.",
+    "teamLineup.liveChip": "Live",
+    "teamLineup.playerPhotoAlt": "Photo of {name}",
+    "teamLineup.shirtNumber": "Jersey {number}",
+    "teamLineup.noShirt": "No jersey confirmed",
+    "teamLineup.noLeaderEntries": "FIFA hasn't logged any events of this type for the team yet.",
+    "teamLineup.noBroadcasters": "No broadcasters published right now for this team's current or next match.",
+    "teamLineup.open": "Open",
+    "teamLineup.populationMillions": "{value} M",
+    "teamLineup.pillCapital": "Capital",
+    "teamLineup.pillPopulation": "Population",
+    "teamLineup.pillArea": "Area",
+    "teamLineup.pillLanguage": "Language",
+    "teamLineup.pillGovernment": "Government",
+    "teamLineup.pillCurrency": "Currency",
+    "teamLineup.readMoreWikipedia": "Read more on Wikipedia",
+    "teamLineup.back": "Back",
+    "teamLineup.groupLabel": "\u2022 Group {group}",
+    "teamLineup.openCoachCard": "Open head coach {coach} card",
+    "teamLineup.coachLabel": "Head coach",
+    "teamLineup.federationTitle": "Official site of {abbr} \u2014 {name}",
+    "teamLineup.federationAria": "Open the official site of {abbr}",
+    "teamLineup.loadingPanel": "Building the full team panel...",
+    "teamLineup.loadError": "We couldn't load the full team panel right now.",
+    "teamLineup.matchesLabel": "Matches",
+    "teamLineup.scheduleEmpty": "The team's schedule has no records yet for this tournament.",
+    "teamLineup.cardNow": "Now",
+    "teamLineup.cardNext": "Next",
+    "teamLineup.cardLast": "Last",
+    "teamLineup.analysisTitle": "Team analysis",
+    "teamLineup.lineupTitle": "Team lineup",
+    "teamLineup.lineupOfficial": "Official FIFA lineup",
+    "teamLineup.lineupEstimated": "Estimated lineup (local data)",
+    "teamLineup.lineupUnavailable": "Lineup unavailable",
+    "teamLineup.lineupUnavailableBody": "FIFA hasn't released this team's lineup yet. In the meantime, the panel is waiting for the official confirmation or the next local update.",
+    "teamLineup.campaignTitle": "Campaign",
+    "teamLineup.campaignRank": "{group} \u2022 {rank} of {size}",
+    "teamLineup.points": "Points",
+    "teamLineup.abbrPlayed": "P",
+    "teamLineup.abbrWon": "W",
+    "teamLineup.abbrDrawn": "D",
+    "teamLineup.abbrLost": "L"
   }
 };
 
@@ -28322,6 +29219,132 @@ var dashboardCatalog = {
     "dashboard.trafficSeriesRequests": "Solicitudes (acumulado)",
     "dashboard.trafficSeriesRate": "Solicitudes/min",
     "dashboard.trafficHourTooltip": "{hour}h \xB7 {count} sol"
+  },
+  en: {
+    // Header
+    "dashboard.title": "Dashboard",
+    "dashboard.subtitlePanorama": "The FIFA World Cup 2026 by the numbers",
+    "dashboard.subtitleTrafego": "Behind the scenes of the site's audience by the numbers",
+    // Freshness badge
+    "dashboard.freshnessTitleUpToDate": "The panel reflects the last match played",
+    "dashboard.freshnessTitleStale": "A match was played after this panel was published",
+    "dashboard.freshUpToDate": "Up to date",
+    "dashboard.freshStale": "Out of date",
+    // Tabs
+    "dashboard.tabsAriaLabel": "Dashboard sections",
+    "dashboard.tabPanorama": "Overview",
+    "dashboard.tabTrafego": "Traffic",
+    // KPI tiles
+    "dashboard.kpiTeams": "Teams",
+    "dashboard.kpiTeamsHint": "6 continents",
+    "dashboard.kpiStadiums": "Host cities",
+    "dashboard.kpiStadiumsHint": "3 countries",
+    "dashboard.kpiMatchesFinished": "Matches finished",
+    "dashboard.kpiMatchesFinishedHint": "of {total}",
+    "dashboard.kpiLive": "Live",
+    "dashboard.kpiLiveHint": "now",
+    "dashboard.kpiUpcoming": "Scheduled",
+    "dashboard.kpiUpcomingHint": "to be played",
+    "dashboard.kpiGroupGoals": "Goals (groups)",
+    "dashboard.kpiGroupGoalsHint": "{value} per match",
+    // Legend / phase labels
+    "dashboard.phaseGroupStage": "Group Stage",
+    "dashboard.phaseRoundOf32": "Round of 32",
+    "dashboard.phaseRoundOf16": "Round of 16",
+    // Chart: continents
+    "dashboard.chartContinentsTitle": "Teams by continent",
+    "dashboard.chartContinentsSubtitle": "by stage \xB7 {groupStage} groups \u2192 {roundOf32} Round of 32 \u2192 {roundOf16} Round of 16",
+    // Chart: matches by status
+    "dashboard.chartStatusTitle": "Matches by status",
+    "dashboard.chartStatusSubtitle": "whole tournament \xB7 groups + knockout",
+    "dashboard.donutCenterLabel": "matches",
+    // Chart: goals by group
+    "dashboard.chartGroupGoalsTitle": "Goals by group",
+    "dashboard.chartGroupGoalsSubtitle": "group stage \xB7 goals scored",
+    // Chart: top scorers
+    "dashboard.chartTopTeamsTitle": "Team scoring leaders",
+    "dashboard.chartTopTeamsSubtitle": "whole tournament \xB7 groups + knockout \xB7 8 highest-scoring attacks",
+    // Chart: goals by phase
+    "dashboard.chartPhaseGoalsTitle": "Goals by stage",
+    "dashboard.chartPhaseGoalsSubtitle": "goals scored by stage \xB7 groups + knockout \xB7 {total} goals",
+    "dashboard.phaseGameSingular": "{count} match",
+    "dashboard.phaseGamePlural": "{count} matches",
+    // Chart: goals by minute
+    "dashboard.chartGoalsByMinuteTitle": "Goals by minute",
+    "dashboard.chartGoalsByMinuteSubtitleTeam": "{team} \xB7 {count} {goals} \xB7 match minute \xD7 number of goals",
+    "dashboard.chartGoalsByMinuteSubtitleAll": "all finished matches \xB7 {count} goals \xB7 match minute \xD7 number of goals",
+    "dashboard.goalSingular": "goal",
+    "dashboard.goalPlural": "goals",
+    "dashboard.goalsTeamFilterAria": "Filter goals by minute by team",
+    "dashboard.goalsTeamFilterAll": "All teams",
+    "dashboard.goalsTeamFilterOption": "{name} ({goals})",
+    "dashboard.goalsByMinuteEmpty": "No goals recorded for this team",
+    "dashboard.axisMinute": "minute",
+    "dashboard.axisGoals": "goals",
+    "dashboard.markerHalfTime": "halftime",
+    // Chart: goals heat-map
+    "dashboard.chartHeatmapTitle": "Goals heat map",
+    "dashboard.chartHeatmapSubtitle": "goals by team group \xD7 15-min interval \xB7 {total} goals",
+    "dashboard.heatmapRowHeader": "Group",
+    "dashboard.heatmapCellSingular": "Group {group} \xB7 {interval} min \xB7 {value} goal",
+    "dashboard.heatmapCellPlural": "Group {group} \xB7 {interval} min \xB7 {value} goals",
+    // Chart primitives (shared)
+    "dashboard.lineChartNeedTwoPoints": "At least two snapshots are needed to plot the trend",
+    "dashboard.scatterAria": "{yLabel} by {xLabel}",
+    "dashboard.heatmapLegendLess": "less",
+    "dashboard.heatmapLegendMore": "more",
+    // Traffic panel — status classes
+    "dashboard.statusSuccess": "Success (2xx)",
+    "dashboard.statusRedirect": "Redirect (3xx)",
+    "dashboard.statusClientError": "Client error (4xx)",
+    "dashboard.statusServerError": "Server error (5xx)",
+    "dashboard.statusOther": "Other",
+    // Traffic panel — empty/loading states
+    "dashboard.trafficEmptySnapshot": "No data in this snapshot",
+    "dashboard.trafficLoadFailed": "Could not load the traffic panel",
+    "dashboard.trafficLoading": "Loading traffic data\u2026",
+    "dashboard.trafficNoSnapshots": "No traffic snapshots available yet",
+    // Traffic panel — summary line
+    "dashboard.trafficSummarySingular": "{count} snapshot \xB7 updated {when}",
+    "dashboard.trafficSummaryPlural": "{count} snapshots \xB7 updated {when}",
+    "dashboard.trafficGeoSuffix": " \xB7 geo: GeoLite2",
+    // Traffic panel — KPI tiles
+    "dashboard.trafficKpiRequests": "Requests",
+    "dashboard.trafficKpiRequestsHint": "in the log window",
+    "dashboard.trafficKpiUniqueIps": "Unique IPs",
+    "dashboard.trafficKpiAvgRate": "Avg req/min",
+    "dashboard.trafficKpiAvgRateHint": "in the window",
+    "dashboard.trafficKpiBots": "Bots",
+    "dashboard.trafficKpiBotsHint": "{count} hits",
+    "dashboard.trafficKpiSynthetic": "Synthetic (e2e)",
+    "dashboard.trafficKpiSyntheticHint": "{count} hits",
+    "dashboard.trafficKpiLogLines": "Log lines",
+    // Traffic panel — chart titles/subtitles
+    "dashboard.trafficCumulativeTitle": "Cumulative traffic",
+    "dashboard.trafficCumulativeSubtitle": "cumulative requests in the log window \xB7 per snapshot",
+    "dashboard.trafficRateTitle": "Request rate",
+    "dashboard.trafficRateSubtitle": "requests/min between consecutive snapshots",
+    "dashboard.trafficTopPathsTitle": "Most accessed routes",
+    "dashboard.trafficTopPathsSubtitle": "synthetic e2e routes excluded",
+    "dashboard.trafficByHourTitle": "Requests by hour (UTC)",
+    "dashboard.trafficByHourSubtitle": "distribution across the day",
+    "dashboard.trafficStatusCodesTitle": "HTTP status codes",
+    "dashboard.trafficStatusCodesSubtitle": "grouped by class",
+    "dashboard.trafficCountriesVisitorsTitle": "Countries (unique visitors)",
+    "dashboard.trafficCountriesVisitorsSubtitle": "top 10 by unique IP",
+    "dashboard.trafficCountriesVolumeTitle": "Countries (request volume)",
+    "dashboard.trafficCountriesVolumeSubtitle": "top 10 by requests",
+    "dashboard.trafficCitiesVisitorsTitle": "Cities (unique visitors)",
+    "dashboard.trafficCitiesSubtitle": "less precise than country \xB7 (unknown) bucket expected",
+    "dashboard.trafficCitiesVolumeTitle": "Cities (request volume)",
+    "dashboard.trafficByDayTitle": "Requests by day",
+    "dashboard.trafficByDaySubtitle": "each day of the log window",
+    "dashboard.trafficReferrersTitle": "Top referrers",
+    "dashboard.trafficReferrersSubtitle": "traffic source",
+    // Traffic panel — series names + hour tooltip
+    "dashboard.trafficSeriesRequests": "Requests (cumulative)",
+    "dashboard.trafficSeriesRate": "Requests/min",
+    "dashboard.trafficHourTooltip": "{hour}h \xB7 {count} req"
   }
 };
 
@@ -28372,6 +29395,29 @@ var liveExtrasCatalog = {
     // MatchSpeechToggle
     "liveExtras.speech.disable": "Desactivar la narraci\xF3n de las jugadas",
     "liveExtras.speech.enable": "Activar la narraci\xF3n de las jugadas"
+  },
+  en: {
+    // MatchChatPanel
+    "liveExtras.chat.heading": "Live chatter",
+    "liveExtras.chat.liveBadge": "Live",
+    "liveExtras.chat.subtitle": "Anonymous chat only during the match \u2014 messages disappear when the game ends.",
+    "liveExtras.chat.empty": "Be the first to sound off about the game.",
+    "liveExtras.chat.nicknamePlaceholder": "Your nickname",
+    "liveExtras.chat.nicknameAria": "Nickname",
+    "liveExtras.chat.messagePlaceholder": "Sound off\u2026",
+    "liveExtras.chat.messageAria": "Message",
+    "liveExtras.chat.sendAria": "Send message",
+    "liveExtras.chat.closed": "The chat opens when the match kicks off. Come back at the opening whistle!",
+    // SimultaneousLiveMatches
+    "liveExtras.live.liveWithTime": "LIVE \u2022 {time}",
+    "liveExtras.live.live": "LIVE",
+    "liveExtras.live.suspended": "SUSPENDED",
+    "liveExtras.live.finished": "FINAL",
+    "liveExtras.live.whereToWatch": "Where to watch",
+    "liveExtras.live.incidents": "Plays",
+    // MatchSpeechToggle
+    "liveExtras.speech.disable": "Turn off play-by-play narration",
+    "liveExtras.speech.enable": "Turn on play-by-play narration"
   }
 };
 
@@ -28476,6 +29522,56 @@ var bannersCatalog = {
     "banners.teamCountdown.selectAria": "Elige la selecci\xF3n a seguir",
     "banners.teamCountdown.closeAria": "Cerrar el seguimiento de la selecci\xF3n",
     "banners.teamCountdown.countdownAria": "Faltan {time} para el pr\xF3ximo partido"
+  },
+  en: {
+    // DonationPix
+    "banners.pix.pixPrefix": "Pix:",
+    "banners.pix.copyKeyAria": "Copy Pix key",
+    "banners.pix.copied": "Copied",
+    "banners.pix.copy": "Copy",
+    "banners.pix.blurb": "Scan the QR code in your bank app or copy the Pix key. Every contribution helps keep the project online.",
+    "banners.pix.keyLabel": "Pix key \xB7 {keyType}",
+    "banners.pix.brcodeCopied": "Pix Copy and Paste copied",
+    "banners.pix.brcodeCopy": "Copy Pix Copy and Paste",
+    // CookieConsentBanner
+    "banners.cookie.ariaLabel": "Cookie notice",
+    "banners.cookie.textBefore": "We use cookies to measure audience and show ads, helping keep the site online. By accepting, you agree to the use of cookies. See our",
+    "banners.cookie.privacyPolicy": "Privacy Policy",
+    "banners.cookie.essential": "Essential only",
+    "banners.cookie.accept": "Accept",
+    // ShareButton
+    "banners.share.shareTitle": "Share",
+    "banners.share.shareAria": "Share the app",
+    "banners.share.linkCopied": "Link copied!",
+    // OnlineCountBadge
+    "banners.online.titleOne": "{count} fan online now",
+    "banners.online.titleMany": "{count} fans online now",
+    "banners.online.label": "online",
+    // VersionCheckTimer
+    "banners.version.updateTitle": "New version available \u2014 reload to update",
+    "banners.version.newVersion": "new version",
+    "banners.version.lastCheckAt": "last checked at {time}",
+    "banners.version.awaitingFirst": "awaiting the first check",
+    "banners.version.nextCheckTitle": "Next new-version check in {countdown} \u2022 {last}",
+    "banners.version.timerAria": "Time until the next new-version check",
+    "banners.version.updateNow": "Update now",
+    "banners.version.checkNow": "Check for update now",
+    "banners.version.updateNowAria": "Update to the new version now",
+    // AdSlot
+    "banners.ads.label": "Advertisement",
+    // TeamCountdownBadge (followed-team next-match countdown)
+    "banners.teamCountdown.next": "Next match",
+    "banners.teamCountdown.live": "{team} live",
+    "banners.teamCountdown.onPitch": "On the pitch",
+    "banners.teamCountdown.probable": "Likely matchup",
+    "banners.teamCountdown.change": "Change team",
+    "banners.teamCountdown.choose": "Choose your team",
+    "banners.teamCountdown.chooseHint": "Follow your team's next match",
+    "banners.teamCountdown.noNextMatch": "No next match",
+    "banners.teamCountdown.noNextMatchHint": "Choose another team to follow",
+    "banners.teamCountdown.selectAria": "Choose the team to follow",
+    "banners.teamCountdown.closeAria": "Close the team tracker",
+    "banners.teamCountdown.countdownAria": "{time} left until the next match"
   }
 };
 
@@ -28608,6 +29704,70 @@ var toursCatalog = {
     "tours.fullBracket.step2.description": 'Este bot\xF3n cambia las columnas por la llave completa \u2014 la tabla sim\xE9trica con todas las selecciones y la copa en el centro. En "Siguiente" la activo por ti.',
     "tours.fullBracket.step3.title": "La llave completa \u2713",
     "tours.fullBracket.step3.description": "\xA1Listo! Las selecciones convergen desde los lados hasta la copa en el centro: las banderas encendidas muestran qui\xE9n avanz\xF3 y las casillas vac\xEDas esperan los pr\xF3ximos partidos. En el celular, gira la pantalla al modo horizontal."
+  },
+  en: {
+    // featureTour.ts — TOUR_STEPS
+    "tours.feature.welcome.title": "Welcome to Agora na Copa 26 \u26BD",
+    "tours.feature.welcome.description": "A quick tour of the app's main areas \u2014 it takes less than 30 seconds.",
+    "tours.feature.aoVivo.title": "Live",
+    "tours.feature.aoVivo.description": "Score, where to watch (Globo, SporTV, Caz\xE9TV, FIFA+), and the lineups for every match.",
+    "tours.feature.jogadores.title": "Players",
+    "tours.feature.jogadores.description": "Search any player and open the full profile by tapping the name.",
+    "tours.feature.lideres.title": "Leaders",
+    "tours.feature.lideres.description": "Top scorers, cards, and the stats that decide the World Cup.",
+    "tours.feature.chaveamento.title": "Knockout",
+    "tours.feature.chaveamento.description": "Follow the knockout road all the way to the final.",
+    "tours.feature.social.title": "Social",
+    "tours.feature.social.description": "Trends and the World Cup social feed, all in one place.",
+    "tours.feature.theme.title": "Light or dark theme",
+    "tours.feature.theme.description": "Tap here to switch the look whenever you want.",
+    // messiTour.ts
+    "tours.messi.step1.title": "Meet the greatest star \u2B50",
+    "tours.messi.step1.description": `Lionel Messi is the star of the World Cup. Let's open his card \u2014 it all starts on the Players tab. Tap "Next".`,
+    "tours.messi.step2.title": "Lionel Messi",
+    "tours.messi.step2.description": `Here's Messi among the players. Tap "Next" to open the full card.`,
+    "tours.messi.step3.title": "Messi's full card \u2713",
+    "tours.messi.step3.description": "Done! Stats, analysis, and official socials \u2014 that's how you open any player's card.",
+    // tipTours.ts — team lineup tour
+    "tours.teamLineup.step1.title": "See every team's squad \u{1F30E}",
+    "tours.teamLineup.step1.description": 'All 48 teams have a full page. It all starts on the Teams tab \u2014 tap "Next".',
+    "tours.teamLineup.step2.title": "Tap the flag",
+    "tours.teamLineup.step2.description": "Tap the team's crest to open the full squad. Let's open Brazil.",
+    "tours.teamLineup.step3.title": "Full squad \u2713",
+    "tours.teamLineup.step3.description": "Done! Starting lineup, coaching staff, and match history \u2014 that's how you open any team.",
+    // tipTours.ts — best thirds tour
+    "tours.bestThirds.step1.title": "8 of the 12 third-place teams advance \u{1F9EE}",
+    "tours.bestThirds.step1.description": `Not every 3rd-place team is out \u2014 and you can see who goes through. Let's find that table: open the Groups tab on "Next".`,
+    "tours.bestThirds.step2.title": "Scroll to the bottom of the page \u2B07\uFE0F",
+    "tours.bestThirds.step2.description": `The "Best third-place teams" section sits at the foot of this page, right below the 12 groups. Tap "Next" and I'll take you there.`,
+    "tours.bestThirds.step3.title": "Found it: Best third-place teams \u2713",
+    "tours.bestThirds.step3.description": "Here it is. The 12 third-place teams are ranked by points, goal difference, goals, and fair play. The green line marks the cut: the top 8 advance to the knockout stage.",
+    // tipTours.ts — bracket tour
+    "tours.bracket.step1.title": "The road to the final \u{1F3C6}",
+    "tours.bracket.step1.description": 'Follow the whole knockout stage, from the Round of 32 to the final, on the Knockout tab \u2014 tap "Next".',
+    "tours.bracket.step2.title": "World Cup knockout stage",
+    "tours.bracket.step2.description": "At each round, the matchup is built from the qualified teams \u2014 including the spots for the 8 best third-place teams.",
+    // tipTours.ts — bracket feeder tour
+    "tours.bracketFeeder.step1.title": "Who decides the opponent? \u{1F50D}",
+    "tours.bracketFeeder.step1.description": 'In the Knockout stage, each matchup is born from two matches in the previous round \u2014 and you can see which ones. Open the Knockout tab on "Next".',
+    "tours.bracketFeeder.step2.title": "Point to a Round of 16 match",
+    "tours.bracketFeeder.step2.description": `Hover (or tap, on mobile) over a Round of 16 matchup. On "Next" I'll do it for you.`,
+    "tours.bracketFeeder.step3.title": "The 2 Round of 32 matches \u2713",
+    "tours.bracketFeeder.step3.description": "Done! The Round of 32 lights up the two matches that decide who reaches this matchup \u2014 highlighted and side by side. The rest of the column fades out to focus on the path.",
+    // tipTours.ts — group history tour
+    "tours.groupHistory.step1.title": "All the group's matches \u{1F4C5}",
+    "tours.groupHistory.step1.description": 'Results and upcoming matches for each group are on the group card. Open the Groups tab on "Next".',
+    "tours.groupHistory.step2.title": "Match history",
+    "tours.groupHistory.step2.description": `Every group has a "Match history" section. Tap "Next" and I'll open it for you.`,
+    "tours.groupHistory.step3.title": "Results and upcoming matches \u2713",
+    "tours.groupHistory.step3.description": "Done! Matches already played show the score and upcoming ones show the kickoff time \u2014 in order, without leaving the table.",
+    // tipTours.ts — full bracket tour
+    "tours.fullBracket.step1.title": "The whole bracket on one screen \u{1F3C6}",
+    "tours.fullBracket.step1.description": 'You can see the entire knockout stage like a poster, from the Round of 32 to the final. Open the Knockout tab on "Next".',
+    "tours.fullBracket.step2.title": 'Turn on the "Full bracket"',
+    "tours.fullBracket.step2.description": `This button swaps the columns for the full bracket \u2014 the symmetrical table with all the teams and the trophy in the center. On "Next" I'll turn it on for you.`,
+    "tours.fullBracket.step3.title": "The full bracket \u2713",
+    "tours.fullBracket.step3.description": "Done! The teams converge from the sides toward the trophy in the center: the lit flags show who advanced and the empty boxes await the upcoming matches. On mobile, rotate your screen to landscape mode."
   }
 };
 
@@ -28676,6 +29836,38 @@ var utilsCatalog = {
     "utils.stage.SF": "Semifinal",
     "utils.stage.TP": "Tercer puesto",
     "utils.stage.F": "Final"
+  },
+  en: {
+    // teamTournamentStatus.ts
+    "utils.classifiedFor": "Qualified for {stage}",
+    "utils.champion": "Champions",
+    "utils.runnerUp": "Runners-up",
+    "utils.thirdPlace": "3rd place",
+    "utils.fourthPlace": "4th place",
+    "utils.eliminatedIn": "Eliminated in {stage}",
+    "utils.eliminatedGroupStage": "Eliminated in the group stage",
+    // matchResult.ts
+    "utils.pointsOne": "+1 pt",
+    "utils.pointsMany": "+{pts} pts",
+    "utils.pointsZero": "0 pts",
+    "utils.runnerUpShort": "Runners-up",
+    "utils.qualified": "Qualified",
+    "utils.eliminated": "Eliminated",
+    // playerDisplay.ts
+    "utils.positionGK": "Goalkeeper",
+    "utils.positionDF": "Defender",
+    "utils.positionMF": "Midfielder",
+    "utils.positionFW": "Forward",
+    // dateFormat.ts
+    "utils.updatedOn": "Updated on {stamp}",
+    // knockoutSlots.ts
+    "utils.stage.group": "Group Stage",
+    "utils.stage.R32": "Round of 32",
+    "utils.stage.R16": "Round of 16",
+    "utils.stage.QF": "Quarterfinals",
+    "utils.stage.SF": "Semifinals",
+    "utils.stage.TP": "Third-Place Match",
+    "utils.stage.F": "Final"
   }
 };
 
@@ -28700,10 +29892,11 @@ var MODULES = [
   toursCatalog,
   utilsCatalog
 ];
-var mergeLocale = (pick) => Object.assign({}, ...MODULES.map((module2) => module2[pick]));
+var mergeLocale = (pick) => Object.assign({}, ...MODULES.map((module2) => module2[pick] ?? {}));
 var CATALOGS = {
   pt: mergeLocale("pt"),
-  es: mergeLocale("es")
+  es: mergeLocale("es"),
+  en: mergeLocale("en")
 };
 
 // src/i18n/LocaleContext.tsx
@@ -28779,9 +29972,63 @@ var ES_TEAM_NAMES = {
   URU: "URUGUAY",
   UZB: "UZBEKIST\xC1N"
 };
+var EN_TEAM_NAMES = {
+  ALG: "ALGERIA",
+  ARG: "ARGENTINA",
+  AUS: "AUSTRALIA",
+  AUT: "AUSTRIA",
+  BEL: "BELGIUM",
+  BIH: "BOSNIA AND HERZEGOVINA",
+  BRA: "BRAZIL",
+  CAN: "CANADA",
+  CIV: "IVORY COAST",
+  COD: "DR CONGO",
+  COL: "COLOMBIA",
+  CPV: "CAPE VERDE",
+  CRO: "CROATIA",
+  CUW: "CURA\xC7AO",
+  CZE: "CZECHIA",
+  ECU: "ECUADOR",
+  EGY: "EGYPT",
+  ENG: "ENGLAND",
+  ESP: "SPAIN",
+  FRA: "FRANCE",
+  GER: "GERMANY",
+  GHA: "GHANA",
+  HAI: "HAITI",
+  IRN: "IRAN",
+  IRQ: "IRAQ",
+  JOR: "JORDAN",
+  JPN: "JAPAN",
+  KOR: "SOUTH KOREA",
+  KSA: "SAUDI ARABIA",
+  MAR: "MOROCCO",
+  MEX: "MEXICO",
+  NED: "NETHERLANDS",
+  NOR: "NORWAY",
+  NZL: "NEW ZEALAND",
+  PAN: "PANAMA",
+  PAR: "PARAGUAY",
+  POR: "PORTUGAL",
+  QAT: "QATAR",
+  RSA: "SOUTH AFRICA",
+  SCO: "SCOTLAND",
+  SEN: "SENEGAL",
+  SUI: "SWITZERLAND",
+  SWE: "SWEDEN",
+  TUN: "TUNISIA",
+  TUR: "TURKEY",
+  URU: "URUGUAY",
+  USA: "UNITED STATES",
+  UZB: "UZBEKISTAN"
+};
+var TEAM_NAMES_BY_LOCALE = {
+  es: ES_TEAM_NAMES,
+  en: EN_TEAM_NAMES
+};
 var localizeTeamName = (name, code, locale = getActiveLocale()) => {
-  if (locale !== "es" || !code) return name;
-  return ES_TEAM_NAMES[code] ?? name;
+  if (!code) return name;
+  return TEAM_NAMES_BY_LOCALE[locale]?.[code] ?? name;
 };
 
 // src/appMatches.ts
@@ -28874,14 +30121,41 @@ var ES_WEEKDAYS = [
   "viernes",
   "s\xE1bado"
 ];
+var EN_MONTHS = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+var EN_WEEKDAYS = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
 var formatKickoffDate = (kickoffTimestamp) => {
   const [datePart] = kickoffTimestamp.split("T");
   const [year, month, day] = datePart.split("-").map(Number);
-  const es = getActiveLocale() === "es";
+  const weekdayIndex = new Date(Date.UTC(year, month - 1, day)).getUTCDay();
+  const locale = getActiveLocale();
+  if (locale === "en") {
+    return `${EN_MONTHS[month - 1]} ${day}, ${year} (${EN_WEEKDAYS[weekdayIndex]})`;
+  }
+  const es = locale === "es";
   const months = es ? ES_MONTHS : PT_MONTHS;
   const weekdays = es ? ES_WEEKDAYS : PT_WEEKDAYS;
-  const weekday = weekdays[new Date(Date.UTC(year, month - 1, day)).getUTCDay()];
-  return `${day} ${months[month - 1]} ${year} (${weekday})`;
+  return `${day} ${months[month - 1]} ${year} (${weekdays[weekdayIndex]})`;
 };
 var formatKickoffTime = (kickoffTimestamp) => kickoffTimestamp.slice(11, 16);
 var buildTeamEntry = (teamCode) => {
@@ -29386,6 +30660,213 @@ var teamAnalysis_default = {
     updatedAt: "2026-07-04T11:52:00-03:00",
     text: "## Leitura\nA Argentina segue viva e nas oitavas de final, mas precisou suar para chegar l\xE1. Depois de uma fase de grupos impec\xE1vel, sofreu mais do que esperava diante da estreante Cabo Verde e s\xF3 avan\xE7ou na prorroga\xE7\xE3o.\n## Desempenho\nNo Grupo J foram tr\xEAs vit\xF3rias em tr\xEAs: 3 a 0 na Arg\xE9lia, 2 a 0 na \xC1ustria e 3 a 1 na Jord\xE2nia \u2014 nove pontos e lideran\xE7a folgada. Nos 16-avos, o roteiro complicou: Messi abriu aos 29, mas Cabo Verde empatou duas vezes (Deroy Duarte e Sidny Lopes Cabral) e levou o jogo ao tempo extra. Lisandro Mart\xEDnez marcou aos 92 e um gol contra de Diney Borges, aos 111, decretou o 3 a 2.\n## N\xFAmeros\nQuatro jogos, quatro vit\xF3rias, 11 gols marcados e apenas 3 sofridos \u2014 campanha 100%. L\xEDder do Grupo J, a Argentina encara o Egito nas oitavas de final, dia 7 de julho."
   }
+};
+
+// src/data/teamAnalysis.en.json
+var teamAnalysis_en_default = {
+  COL: {
+    text: "## Reading\nColombia are in the Round of 16 and arrive with momentum. They won Group K without losing and, in the Round of 32, beat Ghana with an early goal and plenty of defensive solidity, confirming their strong form.\n## Performance\nIn the group they earned seven points: 3-1 over Uzbekistan, 1-0 over DR Congo and a 0-0 with Portugal that secured first place. In the Round of 32, Jhon Arias settled it early in the 14th minute and Colombia held the 1-0 to the end, with no major scares against Ghana.\n## By the numbers\nFour matches, three wins and one draw; 5 goals scored and only 1 conceded \u2014 the defense is the great strength. Winners of Group K, Colombia face Switzerland in the Round of 16 on July 7.",
+    updatedAt: "2026-07-04T11:52:00-03:00"
+  },
+  POR: {
+    text: "## Reading\nRoberto Mart\xEDnez's Portugal advanced to the Round of 16 the hard way: they came from behind to beat Croatia 2-1 in the Round of 32, with Cristiano Ronaldo equalizing from the penalty spot and Gon\xE7alo Ramos deciding it in stoppage time. The captain scored his first goal in a World Cup knockout match and keeps the Portuguese dream alive.\n## Performance\nThey qualified second in Group K. They drew with DR Congo (1-1), thrashed Uzbekistan 5-0 (two for Ronaldo) and were held to a 0-0 by Colombia, surrendering first place. A solid defense (only one goal conceded), but an inconsistent attack against the more qualified sides.\n## Round of 32\nCroatia went ahead through Ivan Perisic (53'). Ronaldo equalized from the spot (68') \u2014 his first goal in a World Cup knockout match \u2014 and, with the game heading toward extra time, Gon\xE7alo Ramos appeared at 90+4' to complete the 2-1 comeback.\n## By the numbers\nGP4 \xB7 2-1 comeback win over Croatia in the Round of 32 \xB7 2nd in Group K (5 points, GD +5 in the Group Stage). Cristiano Ronaldo finally broke through in the knockouts. Qualified for the Round of 16, where they face Spain.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  COD: {
+    text: "## Reading\nS\xE9bastien Desabre's DR Congo made history by reaching the knockouts as one of the best third-placed teams, and even gave England a scare: they went ahead in the Round of 32 but were turned around and lost 2-1, ending their run with their heads held high.\n## Performance\nThey finished 3rd in Group K with 4 points, qualifying among the best third-placed teams. They drew with Portugal (1-1), lost to Colombia (1-0) and beat Uzbekistan 3-1 in the decisive round (two for Yoane Wissa, top scorer with three goals).\n## Round of 32\nAgainst England, Brian Cipenga silenced the favorites early at 7'. The Leopards held the lead until halftime, but Harry Kane appeared twice in the second half (75' and 86') to turn the game around. Noah Sadiki was booked in the 27th minute.\n## By the numbers\nGP4 \xB7 2-1 loss to England in the Round of 32 \xB7 eliminated. They had qualified as one of the eight best third-placed teams (3rd in Group K, 4 points) \u2014 an unprecedented feat. Top scorer: Yoane Wissa. The end of a historic campaign.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  UZB: {
+    text: "## Reading\nHistoric World Cup debutants, Fabio Cannavaro's Uzbekistan bowed out in the Group Stage, without a point and with a defense in tatters: 11 goals conceded, by far the worst record in Group K. In their first appearance, the team felt the gap in level to the favorites and finish bottom, eliminated.\n## Performance\nThey debuted losing to Colombia 3-1, with Abbosbek Fayzullaev scoring the Uzbek goal. Next, they were overrun by Portugal 5-0, with no answer to the Portuguese attack. In the finale, they lived their cruelest chapter: they opened the scoring against DR Congo through Eldor Shomurodov early in the 10th minute, but conceded the comeback and lost 3-1, letting slip the chance for a positive send-off.\n## By the numbers\nGP3 \xB7 3 losses \xB7 2 goals scored \xB7 11 conceded (GD -9) \xB7 4th and last in Group K, eliminated. Goals from Abbosbek Fayzullaev and Eldor Shomurodov (one each). End of the road: Uzbekistan bid farewell to their first World Cup with hard lessons at the back.",
+    updatedAt: "2026-06-28T02:21:00-03:00"
+  },
+  ENG: {
+    text: "## Reading\nThomas Tuchel's England had to sweat, but advanced: they fell behind and came from behind to beat DR Congo 2-1 in the Round of 32, with two goals from Harry Kane in the second half. Unbeaten since the start of the tournament, they march on firmly into the knockouts.\n## Performance\nThey finished top of Group L and unbeaten: 4-2 over Croatia in the opener (two for Kane), 0-0 with Ghana and 2-0 over Panama. Firepower with Kane and squad depth \u2014 Saka, Eze and Rashford on the bench \u2014 were the trump cards.\n## Round of 32\nDR Congo silenced the English through Brian Cipenga early at 7'. But England piled on the pressure and Harry Kane settled it down the stretch, with a brace (75' and 86') that completed the comeback. Jude Bellingham was booked in the 19th minute.\n## By the numbers\nGP4 \xB7 2-1 comeback win over DR Congo in the Round of 32 \xB7 unbeaten winners of Group L (7 points, GD +4 in the Group Stage). Top scorer: Harry Kane, decisive once again. Coach: Thomas Tuchel. Qualified for the Round of 16, where they face Mexico.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  GHA: {
+    text: "## Reading\nGhana's run ended in the Round of 32. Qualified as one of the best third-placed teams from Group L, they ran into a solid Colombia and lost 1-0, lacking the finishing touch to dream of the Round of 16.\n## Performance\nIn the group, Ghana did enough: 1-0 over Panama, 0-0 with England and a 2-1 loss to Croatia \u2014 four points and a spot via the third-place route. In the Round of 32, they conceded Jhon Arias's goal early at 14 and, despite pressing in the second half, could not find the equalizer against the Colombian rearguard.\n## By the numbers\nFour matches, one win, one draw and two losses; only 2 goals scored and 3 conceded \u2014 the unproductive attack weighed heavily. Third in Group L, Ghana are eliminated in the Round of 32.",
+    updatedAt: "2026-07-04T11:52:00-03:00"
+  },
+  PAN: {
+    text: "## Reading\nPanama bid farewell to the World Cup without a point and without scoring a goal. The three losses in Group L, all by a narrow margin, left the team bottom of the group.\n## Performance\nThey lost to Ghana 1-0, to Croatia 1-0 and to England 2-0, never once finding the opposition net.\n## By the numbers\nGP3 \xB7 3 losses \xB7 0 goals scored \xB7 4 conceded (GD -4) \xB7 bottom of Group L with 0 points. Eliminated in the Group Stage.",
+    updatedAt: "2026-06-27T22:24:00-03:00"
+  },
+  CRO: {
+    text: "## Reading\nCroatia bid farewell to the World Cup in the Round of 32: they went ahead against Portugal, but conceded the comeback and lost 2-1. Likely the last World Cup for Luka Modri\u0107, who left the field after a dignified campaign.\n## Performance\nThey qualified 2nd in Group L. They lost to England 4-2 in the opener, but reacted with hard-fought wins over Panama (1-0) and Ghana (2-1), with Modri\u0107 orchestrating the midfield.\n## Round of 32\nAgainst Portugal, Ivan Perisic opened the scoring (53') and left the Croatians close to the Round of 16. But Cristiano Ronaldo equalized from the spot (68') and Gon\xE7alo Ramos settled it in stoppage time (90+4'), sealing the 2-1 elimination. Modri\u0107 was booked in the 59th minute.\n## By the numbers\nGP4 \xB7 2-1 loss to Portugal in the Round of 32 \xB7 eliminated. They had qualified 2nd in Group L (6 points). End of the road at the World Cup for Luka Modri\u0107's generation.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  FRA: {
+    text: "## Reading\nDidier Deschamps's France are in the Quarterfinals and remain at 100%. After thrashing Sweden in the Round of 32, they needed patience to overcome a very compact Paraguay \u2014 and, as almost always, Kylian Mbapp\xE9 appeared to settle it. Les Bleus reach the business end of the knockouts as one of the major title contenders.\n## Performance\nThey closed out Group I with three wins and the best attack in the section: 3-1 over Senegal, 3-0 over Iraq and 4-1 over Norway, with a show from Ousmane Demb\xE9l\xE9 (three goals). In the Round of 32, they overran Sweden 3-0 (Mbapp\xE9 twice, at 45' and 74', and Barcola at 53'). In the Round of 16, against a battling Paraguay, they broke the resistance only at 70', through Mbapp\xE9, in the 1-0 that earned the spot.\n## By the numbers\nFive matches, five wins \u2014 a perfect record. Unbeaten winners of Group I with 9 points (GD +8 in the first round). In the Round of 32, 3-0 over Sweden; in the Round of 16, 1-0 over Paraguay. Top scorer: Kylian Mbapp\xE9 (7 goals). Next challenge: Morocco, in the Quarterfinals.",
+    updatedAt: "2026-07-04T21:42:00-03:00"
+  },
+  NOR: {
+    text: "## Reading\nErling Haaland's Norway stayed alive in the World Cup: they beat Ivory Coast 2-1 in the Round of 32 and advanced to the Round of 16. As always, the number 9 appeared at the decisive moment to stamp the ticket.\n## Performance\nThey qualified second in Group I. They lost to France 4-1 in the opener, but reacted with two wins \u2014 3-2 over Senegal (two for Haaland) and 4-1 over Iraq (two more from the top scorer). Haaland closed the Group Stage with four goals.\n## Round of 32\nAgainst the Elephants, Norway went ahead through Antonio Nusa (39'), saw Amad Diallo equalize (74') and had to sweat until Erling Haaland decided it at 86', securing the 2-1 and the spot.\n## By the numbers\nGP4 \xB7 2-1 win over Ivory Coast in the Round of 32 \xB7 runners-up in Group I (6 points, GD +1 in the Group Stage). Top scorer: Erling Haaland. Qualified for the Round of 16, where they face Brazil.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  SEN: {
+    text: "## Reading\nSenegal were a step away from advancing, but saw the dream collapse: they went up 2-0 over Belgium in the Round of 32, conceded the equalizer late and were eliminated 3-2 in extra time. A bitter goodbye after dominating much of the game.\n## Performance\nThey had qualified as one of the best third-placed teams in Group I, with 3 points. They lost to France (3-1) and Norway (3-2, two for Sarr), but thrashed Iraq 5-0 in the final round to secure the spot on goal difference.\n## Round of 32\nAgainst Belgium, Senegal played the perfect game for more than 80 minutes: Habib Diarra (24') and Ismaila Sarr (51') made it 2-0. But Romelu Lukaku (86') and Youri Tielemans (89') equalized, and the same Tielemans decided it in extra time (120+5'), eliminating the Lions of Teranga 3-2.\n## By the numbers\nGP4 \xB7 3-2 extra-time loss to Belgium in the Round of 32 \xB7 eliminated. They had qualified among the eight best third-placed teams (3rd in Group I, 3 points). Top scorer: Ismaila Sarr. End of the campaign.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  IRQ: {
+    text: "## Reading\nIraq had a campaign to forget in Group I: three losses, no points and a defense that collapsed, conceding 12 goals in three matches. The team bids farewell to the World Cup at the bottom of the group.\n## Performance\nThey lost to France 3-0, conceded 4-1 to Norway \u2014 Aymen Hussein scored, but also put one in his own net in stoppage time \u2014 and were thrashed by Senegal 5-0 in the final round.\n## By the numbers\nGP3 \xB7 3 losses \xB7 1 goal scored \xB7 12 conceded (GD -11) \xB7 bottom of Group I with 0 points. Eliminated in the Group Stage.",
+    updatedAt: "2026-06-27T22:24:00-03:00"
+  },
+  NED: {
+    text: "## Reading\nRonald Koeman's Netherlands dominated Group F, but bid farewell to the World Cup right away in the Round of 32. Clear leaders of the section with 7 points and the most productive attack in the group (10 goals), the Oranje reached the knockouts unbeaten \u2014 and fell on penalties to Morocco, without losing in regulation.\n## Performance\nIn the Group Stage, they drew 2-2 with Japan (Van Dijk and Summerville), overran Sweden 5-1 (two for Brobbey, two for Gakpo) and beat Tunisia 3-1 \u2014 an unbeaten campaign that secured first place. In the Round of 32, the script turned to drama: Gakpo opened the scoring in the 72nd minute, but Issa Diop equalized at 90+1 and took the game to extra time. Goalless in the extra period, the decision went to a penalty shootout, and Morocco won 3-2 \u2014 Koopmeiners and Weghorst converted, but Kluivert, Timber and Summerville missed.\n## By the numbers\nGroup Stage: GP3 \xB7 2 wins \xB7 1 draw \xB7 10 goals scored \xB7 4 conceded (GD +6) \xB7 1st in Group F with 7 points. Top scorer: Brian Brobbey (3 goals). In the Round of 32, a 1-1 draw with Morocco and elimination on penalties (2-3). End of the road for the Netherlands at the World Cup.",
+    updatedAt: "2026-06-30T21:49:00-03:00"
+  },
+  JPN: {
+    text: "## Reading\nHajime Moriyasu's Japan bid farewell to the World Cup in the Round of 32. Runners-up in Group F, they went toe to toe with Brazil and even went ahead, but conceded the comeback in the second half and were eliminated 2-1. They end the World Cup unbeaten in the Group Stage and with the feeling that they were close to a historic upset.\n## Performance\nIn the first round they drew 2-2 with the Netherlands, thrashed Tunisia 4-0 and were held to a 1-1 by Sweden. In the Round of 32, Kaishu Sano opened the scoring against Brazil (29'), but Casemiro (56') and Gabriel Martinelli (90+5') turned it around for the Sele\xE7\xE3o. An intense and organized side, they lacked the ability to hold the result against a giant.\n## By the numbers\nGroup Stage: 1W 2D, 7 goals scored, 3 conceded (GD +4), 2nd in Group F (5 pts). In the Round of 32, eliminated by Brazil 2-1. Standout in the first round: top scorer Ayase Ueda.",
+    updatedAt: "2026-06-29T19:58:00-03:00"
+  },
+  SWE: {
+    text: "## Reading\nGraham Potter's Sweden reached the Round of 32 as one of the best third-placed teams, but ran into France: they lost 3-0 and bid farewell to the World Cup. The attack of Isak and Gy\xF6keres had no answer to French power.\n## Performance\nThey finished 3rd in Group F with 4 points: they thrashed Tunisia 5-1 in the opener, but conceded 5-1 to the Netherlands and drew 1-1 with Japan. Defensive wobbles marked the campaign, salvaged by the goal difference from the opening rout.\n## Round of 32\nAgainst France, there was no story: Kylian Mbapp\xE9 (45'), Bradley Barcola (53') and Mbapp\xE9 again (74') sealed the 3-0 that eliminated the Swedes.\n## By the numbers\nGP4 \xB7 3-0 loss to France in the Round of 32 \xB7 eliminated. They had qualified as one of the eight best third-placed teams (3rd in Group F, 4 points). End of the campaign.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  TUN: {
+    text: "## Reading\nHerv\xE9 Renard's Tunisia had a campaign to forget and are eliminated: they lost all three matches in Group F and finished bottom, with the worst goal difference of the Group Stage. The defense, fragile in every game, was the big problem.\n## Performance\nThey conceded 5-1 to Sweden in the opener (goal from Omar Rekik), were thrashed 4-0 by Japan and lost 3-1 to the Netherlands, pulling one back through Hazem Mastouri. They conceded 12 goals in three matches and never managed to balance the contests.\n## By the numbers\nGP3 \xB7 3 losses \xB7 2 goals scored \xB7 12 conceded (GD -10) \xB7 bottom of Group F, without points. Eliminated in the Group Stage.",
+    updatedAt: "2026-06-26T01:24:00-03:00"
+  },
+  CAN: {
+    text: "## Reading\nJesse Marsch's Canada's home World Cup ended in the Round of 16. After a historic campaign \u2014 the best by a host nation at a World Cup \u2014 the Canadians ran into a far superior Morocco and fell 3-0. The positive balance remains: getting past the Group Stage and winning a knockout match for the first time.\n## Performance\nIn the first round, they drew with Bosnia (1-1), thrashed Qatar 6-0 \u2014 a hat-trick from Jonathan David \u2014 and lost to Switzerland 2-1. In the Round of 32, they got past South Africa 1-0 with a goal from Stephen Eust\xE1quio in stoppage time (90+2'). In the Round of 16, however, they had no answer for Morocco: Azzedine Ounahi scored twice (50' and 82') and Soufiane Rahimi completed the 3-0 in stoppage time. David, the team's top scorer, was even booked at 43 and couldn't find the net.\n## By the numbers\nFive matches: 2 wins, 1 draw and 2 losses. In the Group Stage, 2nd in Group B (4 pts, 8 goals scored and 3 conceded, GD +5). In the Round of 32, 1-0 over South Africa; in the Round of 16, 0-3 to Morocco \u2014 eliminated. Top scorer: Jonathan David (3 goals).",
+    updatedAt: "2026-07-04T16:59:00-03:00"
+  },
+  SUI: {
+    text: "## Reading\nSwitzerland are in the Round of 16 and live up to the status they carried. They won Group B with authority and, in the Round of 32, dispatched Algeria without any scares, keeping the efficient edge that has taken them so far.\n## Performance\nIn the Group Stage they earned seven points: a 1-1 draw with Qatar in the opener, followed by 4-1 over Bosnia and 2-1 over Canada \u2014 the best campaign in the group. In the Round of 32, they settled it early against Algeria: Breel Embolo opened the scoring in the 10th minute and Dan Ndoye doubled it early at 46, in the 2-0 that stamped the ticket.\n## By the numbers\nFour matches, three wins and one draw, 9 goals scored and only 4 conceded. Winners of Group B, Switzerland now face Colombia in the Round of 16 on July 7.",
+    updatedAt: "2026-07-04T11:52:00-03:00"
+  },
+  QAT: {
+    text: "## Reading\nJulen Lopetegui's Qatar had a Group Stage to forget and finished bottom of Group B, eliminated. They earned just 1 point \u2014 the draw with Switzerland in the opener \u2014 and lost the following two matches, conceding 10 goals in total. The campaign exposed the limitations and indiscipline of a team that disappointed.\n## Performance\nAfter the promising 1-1 with Switzerland, Qatar collapsed: they conceded 6-0 to Canada, with two sendings-off, and lost 3-1 to Bosnia in the send-off, pulling one back through Hassan Al-Haydos (42). A fragile defense and a lack of consistency marked the worst campaign in the group.\n## By the numbers\nGP3 \xB7 1 draw \xB7 2 losses \xB7 2 goals scored \xB7 10 conceded (GD -8) \xB7 bottom of Group B with 1 point. Eliminated in the Group Stage.",
+    updatedAt: "2026-06-24T19:00:00.000Z"
+  },
+  BIH: {
+    text: "## Reading\nSergej Barbarez's Bosnia and Herzegovina advanced to the knockouts among the best third-placed teams, but fell against the host nation: they lost to the United States 2-0 and bowed out of the World Cup in the Round of 32.\n## Performance\nThey finished 3rd in Group B with 4 points: a draw with Canada (1-1), a 4-1 loss to Switzerland and a 3-1 win over Qatar in the send-off. The heavy defeat against the Swiss cost them the goal difference in the fight for the 2nd direct spot.\n## Round of 32\nAgainst the United States, Bosnia stalled against the opposition attack: Folarin Balogun opened the scoring (45') and, even with the forward sent off in the 64th minute, Malik Tillman doubled it (82') to seal the 2-0.\n## By the numbers\nGP4 \xB7 2-0 loss to the United States in the Round of 32 \xB7 eliminated. They had qualified among the eight best third-placed teams (3rd in Group B, 4 points). End of the campaign.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  USA: {
+    text: "## Reading\nMauricio Pochettino's United States, the host nation, keep dreaming: they beat Bosnia and Herzegovina 2-0 in the Round of 32 and advanced to the Round of 16, even while playing almost the entire second half a man down after Balogun's sending-off.\n## Performance\nThey advanced as winners of Group D with 6 points: 4-1 over Paraguay (two for Balogun), 2-0 over Australia and a 3-2 loss to Turkey when already qualified. A productive attack, with Folarin Balogun standing out.\n## Round of 32\nAgainst Bosnia, Balogun opened the scoring at the end of the first half (45'), but was sent off in the 64th minute, leaving the U.S. with ten. Even so, Malik Tillman doubled it (82') and secured the 2-0 and qualification.\n## By the numbers\nGP4 \xB7 2-0 win over Bosnia and Herzegovina in the Round of 32 \xB7 winners of Group D (6 points, GD +4 in the Group Stage). Qualified for the Round of 16, where they face Belgium.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  AUS: {
+    text: "## Reading\nAustralia bid farewell to the World Cup in the Round of 32, but by the finest of margins. Runners-up in Group D, they held Egypt to a 1-1 and forced a penalty shootout, where they were ultimately beaten. They left the field without being defeated in regulation.\n## Performance\nIn the Group Stage, a balanced campaign: 2-0 over Turkey, a 2-0 loss to the United States and a 0-0 with Paraguay \u2014 four points and second place. In the Round of 32, they fell behind to Egypt (Emam Ashour, 13'), but equalized through a Mohamed Hany own goal at 55. In the shootout, only Irvine and Mabil converted, and the 4-2 sent the Australians home.\n## By the numbers\nFour matches, one win, two draws and one loss in regulation; 5 goals scored and 4 conceded. Runners-up in Group D, Australia are eliminated in the Round of 32, beaten only from the penalty spot.",
+    updatedAt: "2026-07-04T11:52:00-03:00"
+  },
+  PAR: {
+    text: "## Reading\nGustavo Alfaro's Paraguay's fairy-tale campaign ended in the Round of 16. After eliminating four-time champions Germany on penalties in the Round of 32, La Albirroja held France for more than an hour, but fell 1-0 to a Mbapp\xE9 goal. They leave with their heads held high as one of the World Cup's great upsets.\n## Performance\nIn the Group Stage they were 3rd in Group D: they conceded 4-1 to the United States, reacted by beating Turkey 1-0 (a lightning goal from Mat\xEDas Galarza in the 2nd minute) and held a 0-0 with Australia, enough to advance among the best third-placed teams. In the Round of 32, they drew 1-1 with Germany and won on penalties 4-3, with goalkeeper Orlando Gill saving two kicks. In the Round of 16, they resisted France bravely until being overcome by Mbapp\xE9 at 70'.\n## By the numbers\nFive matches: 1 win, 2 draws (one decided on penalties) and 2 losses. They finished 3rd in Group D (4 pts) and advanced among the best third-placed teams. In the Round of 32, they eliminated Germany on penalties (1-1, 4-3); in the Round of 16, 0-1 to France \u2014 eliminated. They end a historic campaign.",
+    updatedAt: "2026-07-04T21:42:00-03:00"
+  },
+  TUR: {
+    text: "## Reading\nVincenzo Montella's Turkey were one of the disappointments of the first round and are eliminated: they finished 4th in Group D, even with the win over the United States in the send-off. Despite names like Arda G\xFCler and Hakan \xC7alhano\u011Flu, the Turks only got going when it was already too late.\n## Performance\nThey lost their first two matches without scoring \u2014 2-0 to Australia and 1-0 to Paraguay \u2014 and truly complicated their situation. In the final round, they finally woke up and beat the U.S. 3-2, with Arda G\xFCler, Bar\u0131\u015F Alper Y\u0131lmaz and Kaan Ayhan (in stoppage time), but the result served only to avoid finishing bottom.\n## By the numbers\nGP3 \xB7 1 win \xB7 2 losses \xB7 3 goals scored \xB7 5 conceded (GD -2) \xB7 4th in Group D with 3 points. Eliminated in the Group Stage.",
+    updatedAt: "2026-06-26T01:24:00-03:00"
+  },
+  EGY: {
+    text: "## Reading\nEgypt are in the Round of 16 after a penalty shootout of pure composure. They got out of the group unbeaten and, in the Round of 32, needed the spot kicks to overcome a battling Australia \u2014 but they marched on with authority from the mark.\n## Performance\nIn Group G they earned five points without a loss: 1-1 with Belgium, 3-1 over New Zealand and 1-1 with Iran. In the Round of 32, Emam Ashour opened the scoring at 13, but an own goal leveled everything and took the game to penalties. There, Egypt were perfect with their first kicks \u2014 Saber, Rabia, Salah and Abdelmaguid \u2014 and closed it out 4-2.\n## By the numbers\nFour matches unbeaten in regulation, with 6 goals scored and 4 conceded. Runners-up in Group G, Egypt face Argentina in the Round of 16 on July 7.",
+    updatedAt: "2026-07-04T11:52:00-03:00"
+  },
+  NZL: {
+    text: "## Reading\nNew Zealand bid farewell to the World Cup. They finished last in Group G, without wins and with a defense that conceded ten goals in three matches.\n## Performance\nThey lost 3-1 to Egypt in the opener (Finn Surman scored, but conceded the comeback), grabbed a surprising 2-2 with Iran \u2014 Elijah Just shone with two goals \u2014 and were overrun 5-1 by Belgium in the send-off. The point against Iran was the only one of the campaign.\n## By the numbers\nGP3 \xB7 1D 2L \xB7 4 goals scored, 10 conceded, GD -6 and only 1 point. Fourth and last in Group G \u2014 eliminated. Elijah Just, with three goals, was the team's attacking figure.",
+    updatedAt: "2026-06-27T02:34:00-03:00"
+  },
+  CIV: {
+    text: "## Reading\nEmerse Fa\xE9's Ivory Coast made history in the Group Stage and reached the knockouts, but the run stopped in the Round of 32: they lost to Norway 2-1 and were eliminated, despite battling to the end.\n## Performance\nThey qualified 2nd in Group E with 6 points: 1-0 over Ecuador (Amad Diallo at 90'), a 2-1 loss to Germany and 2-0 over Cura\xE7ao (two for Nicolas P\xE9p\xE9). A competitive side that won the head-to-head clashes for the spot.\n## Round of 32\nAgainst Norway, the Elephants fell behind to Antonio Nusa's goal (39'), equalized through Amad Diallo (74'), but conceded to Erling Haaland at 86' and lost 2-1.\n## By the numbers\nGP4 \xB7 2-1 loss to Norway in the Round of 32 \xB7 eliminated (2nd in Group E, 6 points). The end of a historic campaign.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  ECU: {
+    text: "## Reading\nSebasti\xE1n Beccacece's Ecuador's run came to an end in the Round of 32. Third in Group E and qualified among the best third-placed teams, Ecuador were overcome by host nation Mexico 2-0 and bid farewell to the World Cup.\n## Performance\nIn the Group Stage they earned 4 points \u2014 one win, one draw and one loss \u2014 with a disciplined defense (only 2 goals conceded), but little finishing (2 scored). In the Round of 32, they ran into an efficient Mexico: they conceded both goals in the first half (Qui\xF1ones and Jim\xE9nez) and could not react, finishing with ten after Piero Hincapi\xE9's sending-off at 90+5'.\n## By the numbers\nGroup Stage: GP3 \xB7 1 win \xB7 1 draw \xB7 1 loss \xB7 2 goals scored \xB7 2 conceded (GD 0) \xB7 3rd in Group E with 4 points (qualified as a best third-placed team). In the Round of 32, a 2-0 loss to Mexico and elimination. End of the road at the World Cup.",
+    updatedAt: "2026-07-01T01:15:00-03:00"
+  },
+  CUW: {
+    text: "## Reading\nCura\xE7ao, led by veteran Dick Advocaat, bid farewell to their first World Cup in the Group Stage, but left with their heads held high: one of the smallest nations ever to play at a World Cup earned a historic point in Group E. They lacked the fighting spark against the stronger sides.\n## Performance\nThey conceded 7-1 to Germany in the opener (goal from Livano Comenencia), but surprised by holding a goalless draw with Ecuador, earning their first-ever point at a World Cup. In the send-off, they lost 2-0 to Ivory Coast. Defensively fragile in the bigger games, but battling in the direct duel.\n## By the numbers\nGP3 \xB7 1 draw \xB7 2 losses \xB7 1 goal scored \xB7 9 conceded (GD -8) \xB7 4th in Group E with 1 point. Eliminated in the Group Stage, but with a historic point on their World Cup debut.",
+    updatedAt: "2026-06-26T01:24:00-03:00"
+  },
+  KOR: {
+    text: "## Reading\nHong Myung-bo's South Korea are eliminated. They finished the Group Stage 3rd in Group A with 3 points and, among the twelve third-placed teams, came in 10th \u2014 outside the cut of the eight that advanced. Mexico (9 pts) dominated the group and South Africa (4 pts) took the other spot; Son Heung-min's side lacked attacking sharpness in the decisive matches.\n## Performance\nThey debuted with a comeback win over the Czech Republic 2-1: Ladislav Krejci opened for the Czechs (59'), but Hwang In-beom (67') and Oh Hyeon-gyu (80') turned it around. They dropped off afterward \u2014 they lost to leaders Mexico 1-0 (Luis Romo, 50') and, in the final round, were overcome by South Africa 1-0 (Thapelo Maseko, 63'), a result that left them behind in Group A and, in the end, out of the knockouts.\n## By the numbers\nGP3 \xB7 1W 2L \xB7 2 goals scored, 3 conceded, GD -1 and 3 points. Third in Group A and 10th among the third-placed teams \u2014 eliminated. Hwang In-beom and Oh Hyeon-gyu scored the South Korean goals.",
+    updatedAt: "2026-06-29T19:26:00-03:00"
+  },
+  CZE: {
+    text: "## Reading\nMiroslav Koubek's Czech Republic had a campaign to forget and finished bottom of Group A, eliminated. They earned just 1 point in three matches and suffered too much at the back, especially against hosts Mexico in the send-off. Even with Patrik Schick and Tom\xE1\u0161 Sou\u010Dek, they lacked the solidity to sustain results.\n## Performance\nThey lost to South Korea 2-1 in the opener (goal from Ladislav Krej\u010D\xED), drew with South Africa 1-1 (Michal Sad\xEDlek) and were thrashed 3-0 by Mexico in the final round. The attack produced in the first games, but the defense collapsed and the team bids farewell without a win.\n## By the numbers\nGP3 \xB7 1 draw \xB7 2 losses \xB7 2 goals scored \xB7 6 conceded (GD -4) \xB7 bottom of Group A with 1 point. Eliminated in the Group Stage.",
+    updatedAt: "2026-06-25T01:00:00.000Z"
+  },
+  RSA: {
+    text: "## Reading\nHugo Broos's South Africa had a brave campaign, but stopped in the Round of 32. After surprising by qualifying 2nd in Group A, Bafana Bafana held Canada for almost the entire game and only conceded in stoppage time, eliminated 1-0. They left with their heads held high.\n## Performance\nIn the Group Stage they lost to Mexico (0-2), drew with the Czech Republic (1-1) and won the direct clash with South Korea 1-0 (Maseko, 63'), securing the spot. In the Round of 32, they defended well against Canada, but conceded Eust\xE1quio's goal at 90+2' and were eliminated.\n## By the numbers\nGroup Stage: 1W 1D 1L, 2 goals scored, 3 conceded (GD -1), 2nd in Group A (4 pts). In the Round of 32, eliminated by Canada 1-0. They ended the World Cup among the top 32.",
+    updatedAt: "2026-06-29T19:58:00-03:00"
+  },
+  ALG: {
+    text: "## Reading\nAlgeria's campaign ended in the Round of 32. Qualified as one of the best third-placed teams from Group J, they ran into a more efficient Switzerland and fell 2-0, unable to mount the reaction they needed.\n## Performance\nIn the group, Algeria fluctuated: they lost 3-0 to Argentina, reacted with a 2-1 over Jordan and grabbed a dramatic 3-3 with Austria that secured the spot on points. In the Round of 32, however, they saw Switzerland go up 2-0 early in the second half and had no answer \u2014 only a yellow card for Cha\xEFbi and another for Boudaoui to show for it.\n## By the numbers\nFour matches, one win, two draws and one loss; 5 goals scored and 9 conceded. Third in Group J, Algeria are eliminated in the Round of 32.",
+    updatedAt: "2026-07-04T11:52:00-03:00"
+  },
+  JOR: {
+    text: "## Reading\nWorld Cup debutants, Jamal Sellami's Jordan bid farewell in the Group Stage, without a point, but not without leaving their mark. The Jordanians found the net in all three Group J matches \u2014 a notable feat for a debutant \u2014 even though defensive fragility cost them dearly. They finished last, eliminated, but take home the historic record of the country's first goal at a World Cup.\n## Performance\nThey lost to Austria 3-1 in the opener, with Ali Olwan scoring Jordan's first-ever World Cup goal. In the following round, against Algeria \u2014 their big chance \u2014 they even led through Nizar Al-Rashdan in the 36th minute, but conceded the comeback 2-1 (Nadhir Benbouali and Amine Gouiri) and were left with no hope of qualifying. In the finale, they still troubled Argentina with a goal from Mousa Al-Tamari, but were beaten 3-1.\n## By the numbers\nGP3 \xB7 3 losses \xB7 3 goals scored \xB7 8 conceded (GD -5) \xB7 4th and last in Group J, eliminated. Goals from Ali Olwan, Nizar Al-Rashdan and Mousa Al-Tamari (one each). End of the road: Jordan bid farewell to their first World Cup with the defense as their weak point, but with the certainty that they know how to score at this level.",
+    updatedAt: "2026-06-28T02:17:00-03:00"
+  },
+  SCO: {
+    text: "## Reading\nSteve Clarke's Scotland are eliminated. They finished the Group Stage 3rd in Group C with 3 points and, among the twelve third-placed teams, came in 11th \u2014 outside the cut of the eight that advanced. Brazil (7 pts) and Morocco (7 pts) took the direct spots; the Scots were left with the feeling of a missed opportunity after a promising opener.\n## Performance\nThey started well, beating Haiti 1-0 with a goal from John McGinn (28'), but dropped off in output. They lost to Morocco 1-0 to a lightning goal from Ismael Saibari early in the 2nd minute and were overrun by Brazil 3-0 \u2014 two from Vin\xEDcius J\xFAnior (7' and 45+3') and one from Matheus Cunha (60') \u2014 without mounting a reaction. They lacked attacking punch: only one goal in three matches.\n## By the numbers\nGP3 \xB7 1W 2L \xB7 1 goal scored, 4 conceded, GD -3 and 3 points. Third in Group C and 11th among the third-placed teams \u2014 eliminated. McGinn scored the campaign's only goal.",
+    updatedAt: "2026-06-29T19:07:00-03:00"
+  },
+  MAR: {
+    text: "## Reading\nWalid Regragui's Morocco are in the Quarterfinals. After eliminating the Netherlands on penalties in the Round of 32, the Atlas Lions overran host nation Canada 3-0 in the Round of 16, with Azzedine Ounahi in inspired form. Solid at the back and efficient up front, Morocco march on and dream big, repeating their standout run from 2022.\n## Performance\nIn the Group Stage, they held Brazil to a 1-1 (Saibari opened, Vin\xEDcius J\xFAnior equalized), beat Scotland 1-0 (Saibari in the 2nd minute) and closed out with 4-2 over Haiti. In the Round of 32, they drew 1-1 with the Netherlands and advanced on penalties (3-2). In the Round of 16, they dominated Canada: Ounahi scored at 50 and at 82, and Rahimi made it three at 90+8, in the 3-0 that stamped a spot among the last eight.\n## By the numbers\nFive matches, unbeaten in regulation: 3 wins and 2 draws (one of them decided on penalties). In the Group Stage, 2nd in Group C (7 pts, same as Brazil, behind only on goal difference). In the Round of 32, 1-1 with the Netherlands and qualification on penalties; in the Round of 16, 3-0 over Canada. Top scorer: Ismael Saibari (3 goals). Next challenge: the winner of Paraguay vs. France, in the Quarterfinals.",
+    updatedAt: "2026-07-04T16:59:00-03:00"
+  },
+  HAI: {
+    text: "## Reading\nS\xE9bastien Mign\xE9's Haiti bid farewell to the World Cup in the Group Stage, eliminated with three losses in Group C. Despite the effort, they lacked defensive consistency: the Caribbean side conceded goals in every match and finished bottom, without points.\n## Performance\nThey lost to Scotland 1-0 in the opener, were overcome by Brazil 3-0 (Matheus Cunha twice and Vin\xEDcius J\xFAnior) and fell 4-2 to Morocco, when at least they found the net through Wilson Isidor and a Bounou own goal. Competitive in some passages, but fragile in the duels with the stronger sides.\n## By the numbers\nGP3 \xB7 3 losses \xB7 2 goals scored \xB7 8 conceded (GD -6) \xB7 bottom of Group C, without points. Eliminated in the Group Stage.",
+    updatedAt: "2026-06-26T01:24:00-03:00"
+  },
+  KSA: {
+    text: "## Reading\nSaudi Arabia bid farewell to the World Cup. They finished last in Group H, without wins, and paid dearly for the rout suffered in the opener. The two draws that followed were not enough to dream of qualifying.\n## Performance\nThey conceded 4-0 to Spain in the opener, a result that weighed on the goal difference. They reacted with a 1-1 against Uruguay, with Abdulelah Alamri (41') scoring, and held a 0-0 with Cape Verde in the final round \u2014 but they lacked firepower to advance.\n## By the numbers\nGP3 \xB7 2D 1L \xB7 1 goal scored, 5 conceded, GD -4 and 2 points. Fourth and last in Group H \u2014 eliminated.",
+    updatedAt: "2026-06-27T08:24:00-03:00"
+  },
+  ESP: {
+    text: "## Reading\nSpain stayed flawless: they thrashed Austria 3-0 in the Round of 32 and advanced to the Round of 16 without any scares, keeping their defense impenetrable. With Mikel Oyarzabal in great form, La Roja establish themselves as title contenders.\n## Performance\nThey dominated Group H in first place, with the best defense in the section and without conceding a goal: 0-0 with Cape Verde, 4-0 over Saudi Arabia (goals from Yamal and Oyarzabal, among others) and 1-0 over Uruguay, through \xC1lex Baena.\n## Round of 32\nAgainst Austria, Oyarzabal opened the scoring (36'), Pedro Porro doubled it (66') and Oyarzabal closed the account (89'), sealing the 3-0 with authority \u2014 another game without conceding.\n## By the numbers\nGP4 \xB7 3-0 win over Austria in the Round of 32 \xB7 winners of Group H (7 points, without conceding a goal in the Group Stage, GD +5). Standout: Mikel Oyarzabal, with two goals. Qualified for the Round of 16, where they face Portugal.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  CPV: {
+    text: "## Reading\nCape Verde bid farewell to the World Cup with their heads held high. Debutants and underdogs, the island had a historic campaign: they got out of the group unbeaten and were only eliminated by Argentina in extra time, after scaring the favorites to the end.\n## Performance\nIn the Group Stage, three draws worth their weight in gold: 0-0 with Spain, 2-2 with Uruguay and 0-0 with Saudi Arabia \u2014 three points and an unprecedented qualification in second in Group H. In the Round of 32, they sold themselves dearly: they equalized twice against Argentina, through Deroy Duarte (59') and Sidny Lopes Cabral (103'), and only conceded in the 3-2 extra time.\n## By the numbers\nFour matches without winning in regulation, but only one loss \u2014 in extra time; 4 goals scored and 5 conceded. Runners-up in Group H, Cape Verde are eliminated in the Round of 32, ending a memorable debut.",
+    updatedAt: "2026-07-04T11:52:00-03:00"
+  },
+  URU: {
+    text: "## Reading\nUruguay were one of the biggest disappointments of the first round. Without a win in Group H \u2014 two draws and one loss \u2014 La Celeste finished third with just 2 points and are eliminated: among the twelve third-placed teams they came in last, well short of the cut of the eight that advanced. Spain (7 pts) dominated the group and Cape Verde (3 pts), on their World Cup debut, took the second spot.\n## Performance\nThey debuted by conceding a 2-2 to Cape Verde: they fell behind to Kevin Pina (21'), turned it around still in the first half through Maxi Araujo (44') and Canobbio (45+6'), but were caught again by H\xE9lio Varela (61'). Against Saudi Arabia they were held to a 1-1 \u2014 Abdulelah Alamri opened for the Saudis (41') and Maxi Araujo leveled everything (80'). In the send-off, they lost 1-0 to Spain, goal from \xC1lex Baena (42'), and bid farewell to the World Cup without a single win.\n## By the numbers\nGP3 \xB7 2D 1L \xB7 3 goals scored, 4 conceded, GD -1 and just 2 points. Third in Group H and 12th (last) among the third-placed teams \u2014 eliminated. Maxi Araujo, with 2 goals, was the only attacking bright spot of a campaign to forget.",
+    updatedAt: "2026-06-29T18:57:00-03:00"
+  },
+  IRN: {
+    text: "## Reading\nIran are eliminated by the finest of margins. Unbeaten in the Group Stage \u2014 three draws \u2014 they finished 3rd in Group G and, among the twelve third-placed teams, came in 9th, one place below the cut: the eighth and last to qualify, Senegal, took the spot on goal difference (+2 against Iran's zero). They lacked the ability to turn solidity into wins.\n## Performance\nThey conceded a 2-2 to New Zealand chasing the game twice: Elijah Just opened (7' and 54') for the Kiwis and Ramin Rezaeian (32') and Mohammad Mohebbi (64') responded. They held a solid 0-0 against Belgium \u2014 even with a man advantage after Nathan Ngoy's sending-off (66') \u2014 and closed with a 1-1 against Egypt: Mahmoud Saber opened (5') and Rezaeian leveled soon after (14'). No losses, but no wins.\n## By the numbers\nGP3 \xB7 3D \xB7 3 goals scored, 3 conceded, GD zero and 3 points. Third in Group G and 9th among the third-placed teams \u2014 eliminated on goal difference. Ramin Rezaeian, with 2 goals, was the attacking standout.",
+    updatedAt: "2026-06-29T19:37:00-03:00"
+  },
+  GER: {
+    text: "## Reading\nA melancholy and early elimination. Julian Nagelsmann's Germany topped Group E, but fell right away in the Round of 32, surprised by Paraguay on penalties. Despite the devastating attack in the Group Stage, the four-time champions did not get past their knockout opener \u2014 the biggest upset of the World Cup so far.\n## Performance\nIn the Group Stage, they debuted with a 7-1 rout of Cura\xE7ao, beat Ivory Coast 2-1 (two for Deniz Undav) and lost 2-1 to Ecuador when already qualified. In the Round of 32, they drew 1-1 with Paraguay \u2014 Kai Havertz leveled at 54' after Enciso's goal \u2014 took the game to extra time and succumbed on penalties 4-3, with goalkeeper Gill saving the kicks of Havertz and Woltemade.\n## By the numbers\nGroup Stage: 2W 1L, 10 goals scored, 4 conceded (GD +6), 1st in Group E (6 pts). In the Round of 32, eliminated by Paraguay (1-1, 3-4 on penalties). Top scorer in the first round: Deniz Undav (3 goals). End of the road at the World Cup.",
+    updatedAt: "2026-06-29T23:08:00-03:00"
+  },
+  BEL: {
+    text: "## Reading\nBelgium suffered like never before, but advanced in epic fashion: they went down 2-0 to Senegal, found the equalizer late and won 3-2 in extra time, with Youri Tielemans deciding it in stoppage time of the extra period. A spot in the Round of 16 with plenty of drama.\n## Performance\nThey advanced in first in Group G, but gave a scare: two draws (1-1 with Egypt, 0-0 with Iran) before thrashing New Zealand 5-1, securing first place on goal difference ahead of Egypt.\n## Round of 32\nSenegal went up 2-0 through Habib Diarra (24') and Ismaila Sarr (51'). But the Red Devils reacted: Romelu Lukaku pulled one back (86') and Youri Tielemans equalized (89'), taking the game to extra time. Already at 120+5', Tielemans scored again and completed the 3-2 comeback.\n## By the numbers\nGP4 \xB7 3-2 comeback win over Senegal in extra time of the Round of 32 \xB7 winners of Group G (5 points, GD +4 in the Group Stage). Knockout hero: Youri Tielemans. Qualified for the Round of 16, where they face the United States.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  AUT: {
+    text: "## Reading\nRalf Rangnick's Austria reached the Round of 32 buoyed by the coach's organization, but ran into Spain: they lost 3-0 and bid farewell to the World Cup, with no answer for La Roja.\n## Performance\nThey qualified 2nd in Group J with 4 points: a 3-1 win over Jordan, a 2-0 loss to Argentina and a dramatic 3-3 draw with Algeria (Kalajdzic saving it at 90+6').\n## Round of 32\nAgainst Spain, Austria resisted for more than half an hour, but gave way: Mikel Oyarzabal opened the scoring (36'), Pedro Porro doubled it (66') and Oyarzabal closed (89') the 3-0 that eliminated the Austrians.\n## By the numbers\nGP4 \xB7 3-0 loss to Spain in the Round of 32 \xB7 eliminated. They had qualified 2nd in Group J (4 points). End of the campaign.",
+    updatedAt: "2026-07-02T23:30:00-03:00"
+  },
+  BRA: {
+    text: "## Reading\nCarlo Ancelotti's Brazil are in the Round of 16. Winners of Group C, they came from behind to beat Japan 2-1 in the Round of 32 and remain firmly in the title race, backed by the best defense of the first round and an attack led by Vin\xEDcius Jr and Matheus Cunha. But they had to sweat: the Sele\xE7\xE3o fell behind before experience spoke louder in the second half.\n## Performance\nIn the Group Stage they got going after the 1-1 with Morocco, with 3-0 wins over Haiti and Scotland. In the Round of 32 they got a scare: Kaishu Sano opened for Japan (29'), but Casemiro equalized in the second half (56') and Gabriel Martinelli sealed the comeback in stoppage time (90+5'). Vin\xEDcius Jr (4 goals in the Group Stage) and Cunha (3) remain the attacking references.\n## By the numbers\nGroup Stage: 2W 1D, 7 goals scored, 1 conceded, 2 clean sheets, 1st in Group C (7 pts, GD +6). In the Round of 32, they beat Japan 2-1. Now they await in the Round of 16 the winner of Ivory Coast vs. Norway.",
+    updatedAt: "2026-06-29T19:58:00-03:00"
+  },
+  MEX: {
+    text: "## Reading\nThe host nation march on flawlessly at the World Cup. Javier Aguirre's Mexico won Group A with a 100% record and without conceding a goal and, in the Round of 32, beat Ecuador 2-0 to stamp a spot in the Round of 16 \u2014 four wins, eight goals scored and none conceded at the World Cup.\n## Performance\nIn the Group Stage, they overran opponents: 3-0 over the Czech Republic, 1-0 over South Korea and 2-0 over South Africa, clear leaders and an impenetrable defense. In the Round of 32, in front of their fans, they settled it early with Juli\xE1n Qui\xF1ones (22') and Ra\xFAl Jim\xE9nez (31') and controlled the game to the end \u2014 they even saw Ecuador finish with ten after Piero Hincapi\xE9's sending-off.\n## By the numbers\nGroup Stage: GP3 \xB7 3 wins \xB7 6 goals scored \xB7 0 conceded (GD +6) \xB7 1st in Group A with 9 points. In the Round of 32, 2-0 over Ecuador (Qui\xF1ones and Jim\xE9nez). In total: 4 matches, 8 goals scored, none conceded. Next challenge: the Round of 16.",
+    updatedAt: "2026-07-01T01:15:00-03:00"
+  },
+  ARG: {
+    text: "## Reading\nArgentina remain alive and in the Round of 16, but they had to sweat to get there. After a flawless Group Stage, they suffered more than expected against debutants Cape Verde and only advanced in extra time.\n## Performance\nIn Group J they went three wins from three: 3-0 over Algeria, 2-0 over Austria and 3-1 over Jordan \u2014 nine points and a comfortable lead. In the Round of 32, the script got complicated: Messi opened the scoring at 29, but Cape Verde equalized twice (Deroy Duarte and Sidny Lopes Cabral) and took the game to the extra period. Lisandro Mart\xEDnez scored at 92 and a Diney Borges own goal, at 111, sealed the 3-2.\n## By the numbers\nFour matches, four wins, 11 goals scored and only 3 conceded \u2014 a 100% campaign. Winners of Group J, Argentina face Egypt in the Round of 16 on July 7.",
+    updatedAt: "2026-07-04T11:52:00-03:00"
+  }
+};
+
+// src/data/editorial.ts
+var pickEditorialEntry = (ptMap, enMap, key, locale) => {
+  const pt = ptMap[key];
+  if (!pt) return void 0;
+  if (locale === "en") {
+    const en = enMap[key];
+    if (en?.text) return { text: en.text, updatedAt: pt.updatedAt };
+  }
+  return pt;
 };
 
 // src/utils/analysisFreshness.ts
@@ -31099,6 +32580,7 @@ var redditPosts_default = [
 
 // server.ts
 var TEAM_ANALYSIS_BY_CODE = teamAnalysis_default;
+var TEAM_ANALYSIS_EN_BY_CODE = teamAnalysis_en_default;
 import_dotenv.default.config();
 var APP_VERSION = (() => {
   try {
@@ -32150,7 +33632,12 @@ var buildTeamViewPayload = async (teamCode, country, language) => {
     "redCards"
   ).slice(0, 3);
   const teamSummary = aggregatedLeaders.teamLeaders.find((leader) => leader.teamCode === normalizedTeamCode) ?? null;
-  const teamAnalysisEntry = TEAM_ANALYSIS_BY_CODE[normalizedTeamCode] ?? null;
+  const teamAnalysisEntry = pickEditorialEntry(
+    TEAM_ANALYSIS_BY_CODE,
+    TEAM_ANALYSIS_EN_BY_CODE,
+    normalizedTeamCode,
+    localeFromFifaLanguage(language)
+  ) ?? null;
   const teamAnalysisUpdatedAt = teamAnalysisEntry?.updatedAt ?? null;
   const teamAnalysisUpToDate = teamAnalysisEntry ? isAnalysisUpToDate(teamAnalysisUpdatedAt, lastMatch?.kickoffTimestamp ?? null) : null;
   const updatedAtCandidates = [
@@ -32802,7 +34289,7 @@ var fetchVenueWeather = async (lat, lng, locale) => {
   }
   return {
     source: "open-meteo",
-    note: locale === "es" ? "Condiciones en el estadio \u2022 Open-Meteo" : "Condi\xE7\xF5es no est\xE1dio \u2022 Open-Meteo",
+    note: localizeNote("Condi\xE7\xF5es no est\xE1dio \u2022 Open-Meteo", locale),
     updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
     weather: snapshot
   };
@@ -32814,7 +34301,7 @@ app.get("/api/match-weather", async (req, res) => {
   if (lat === null || lng === null) {
     res.status(400).json({
       source: "fallback",
-      note: locale === "es" ? "Coordenadas del estadio inv\xE1lidas." : "Coordenadas do est\xE1dio inv\xE1lidas.",
+      note: localizeNote("Coordenadas do est\xE1dio inv\xE1lidas.", locale),
       updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
       weather: null
     });
@@ -32839,14 +34326,14 @@ app.get("/api/match-weather", async (req, res) => {
       res.json({
         ...cached.payload,
         source: "fallback",
-        note: locale === "es" ? "Actualizando el clima\u2026" : "Atualizando o clima\u2026"
+        note: localizeNote("Atualizando o clima\u2026", locale)
       });
       return;
     }
     res.set("Cache-Control", "public, max-age=60");
     res.json({
       source: "fallback",
-      note: locale === "es" ? "Clima no disponible por ahora." : "Clima indispon\xEDvel no momento.",
+      note: localizeNote("Clima indispon\xEDvel no momento.", locale),
       updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
       weather: null
     });
@@ -32972,13 +34459,13 @@ app.post("/api/predict", (req, res) => {
   const userNotes = typeof body.userNotes === "string" ? body.userNotes : void 0;
   if (!homeKey || !awayKey) {
     res.status(400).json({
-      error: locale === "es" ? "Indica las dos selecciones (homeTeam y awayTeam)." : "Informe as duas sele\xE7\xF5es (homeTeam e awayTeam)."
+      error: localizeNote("Informe as duas sele\xE7\xF5es (homeTeam e awayTeam).", locale)
     });
     return;
   }
   if (homeKey.toUpperCase() === awayKey.toUpperCase()) {
     res.status(400).json({
-      error: locale === "es" ? "Elige dos selecciones diferentes." : "Escolha duas sele\xE7\xF5es diferentes."
+      error: localizeNote("Escolha duas sele\xE7\xF5es diferentes.", locale)
     });
     return;
   }
@@ -32992,7 +34479,7 @@ app.post("/api/predict", (req, res) => {
   const away = byKey.get(awayKey.toUpperCase());
   if (!home || !away) {
     res.status(404).json({
-      error: locale === "es" ? "Selecci\xF3n no encontrada." : "Sele\xE7\xE3o n\xE3o encontrada."
+      error: localizeNote("Sele\xE7\xE3o n\xE3o encontrada.", locale)
     });
     return;
   }
@@ -33122,19 +34609,18 @@ app.get("/api/chat/:matchId", (req, res) => {
 app.post("/api/chat/:matchId", (req, res) => {
   res.set("Cache-Control", "no-store");
   const locale = localeForRequest(req);
-  const es = locale === "es";
   const { matchId } = req.params;
   if (!VALID_MATCH_IDS.has(matchId)) {
-    return res.status(404).json({ error: es ? "Partido desconocido." : "Partida desconhecida." });
+    return res.status(404).json({ error: localizeNote("Partida desconhecida.", locale) });
   }
   if (process.memoryUsage().rss > CHAT_MAX_RSS_BYTES) {
     return res.status(503).json({
-      error: es ? "Chat no disponible temporalmente. Prueba en unos instantes." : "Chat temporariamente indispon\xEDvel. Tente em instantes."
+      error: localizeNote("Chat temporariamente indispon\xEDvel. Tente em instantes.", locale)
     });
   }
   if (!isMatchLive(matchId)) {
     return res.status(403).json({
-      error: es ? "El chat se abre cuando comienza el partido." : "O chat abre quando a partida come\xE7a."
+      error: localizeNote("O chat abre quando a partida come\xE7a.", locale)
     });
   }
   const body = req.body ?? {};
@@ -33145,7 +34631,7 @@ app.post("/api/chat/:matchId", (req, res) => {
   const now = Date.now();
   if (!passesRateLimit(chatRateMap, deriveClientKey(req), now)) {
     return res.status(429).json({
-      error: es ? "Est\xE1s enviando mensajes demasiado r\xE1pido. Respira." : "Voc\xEA est\xE1 enviando mensagens r\xE1pido demais. Respire."
+      error: localizeNote("Voc\xEA est\xE1 enviando mensagens r\xE1pido demais. Respire.", locale)
     });
   }
   const message = appendMessage(
