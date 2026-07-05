@@ -3244,7 +3244,8 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Breel_Embolo"
     },
     dateOfBirth: "1997-02-14",
-    height: 184
+    height: 184,
+    instagramPostUrl: "https://www.instagram.com/p/DZviGU4ku_i/"
   },
   "394456": {
     fifaId: "394456",
@@ -4352,7 +4353,8 @@ var squads_default = {
     },
     instagramPostUrls: [
       "https://www.instagram.com/reel/DZ2ZDoSIGay/",
-      "https://www.instagram.com/p/DZ32ycliNzr/"
+      "https://www.instagram.com/p/DZ32ycliNzr/",
+      "https://www.instagram.com/p/DZ86LB8gPeW/"
     ]
   },
   "402884": {
@@ -5630,7 +5632,8 @@ var squads_default = {
     height: 185,
     socials: {
       wikipedia: "https://en.wikipedia.org/wiki/Diney_(footballer,_born_1995)"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaY0YqtkSGv/"
   },
   "411226": {
     fifaId: "411226",
@@ -18465,7 +18468,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/a54cc361-8a38-4340-bbaa-1dab41b73626/HERNANDEZ-Cucho_418881",
     dateOfBirth: "1999-04-20",
-    height: 176
+    height: 176,
+    instagramPostUrl: "https://www.instagram.com/p/DZu1K3MjqrI/"
   },
   "356704": {
     fifaId: "356704",
