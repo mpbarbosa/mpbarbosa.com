@@ -8768,7 +8768,8 @@ var squads_default = {
     socials: {
       instagram: "bremer",
       wikipedia: "https://pt.wikipedia.org/wiki/Bremer"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaBgqbtgOBb/"
   },
   "433066": {
     fifaId: "433066",
