@@ -11996,7 +11996,8 @@ var squads_default = {
     socials: {
       instagram: "endrick",
       wikipedia: "https://pt.wikipedia.org/wiki/Endrick"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZ0hHoxmBxu/"
   },
   "463780": {
     fifaId: "463780",
