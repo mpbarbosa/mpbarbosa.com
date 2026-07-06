@@ -26756,7 +26756,11 @@ var KNOCKOUT_RESULTS = {
   90: { status: "FINISHED", score: { teamA: 0, teamB: 3 } },
   // #91 · Oitavas · 04/07/2026 — Brasil 1×2 Noruega (Erling Haaland 79' e 90' p/ NOR; Neymar Jr
   // 90+10' p/ BRA). Noruega classificada às Quartas; alimenta a #99 (slot W91). Brasil eliminado.
-  91: { status: "FINISHED", score: { teamA: 1, teamB: 2 } }
+  91: { status: "FINISHED", score: { teamA: 1, teamB: 2 } },
+  // #92 · Oitavas · 05/07/2026 — México 2×3 Inglaterra (Jude Bellingham 36' e 38', Harry Kane 60'
+  // p/ ING; Julian Quiñones 42' e Raúl Jiménez 69' p/ MEX; Jarell Quansah expulso aos 54' p/ ING).
+  // Inglaterra classificada às Quartas mesmo com um a menos; alimenta a #99 (slot W92). México eliminado.
+  92: { status: "FINISHED", score: { teamA: 2, teamB: 3 } }
 };
 
 // src/i18n/catalogs/core.ts
@@ -29212,6 +29216,8 @@ var dashboardCatalog = {
     "dashboard.trafficCumulativeSubtitle": "requisi\xE7\xF5es acumuladas na janela do log \xB7 por instant\xE2neo",
     "dashboard.trafficRateTitle": "Ritmo de requisi\xE7\xF5es",
     "dashboard.trafficRateSubtitle": "requisi\xE7\xF5es/min entre instant\xE2neos consecutivos",
+    "dashboard.trafficRateStartAria": "Data inicial do ritmo de requisi\xE7\xF5es",
+    "dashboard.trafficRateEndAria": "Data final do ritmo de requisi\xE7\xF5es",
     "dashboard.trafficTopPathsTitle": "Rotas mais acessadas",
     "dashboard.trafficTopPathsSubtitle": "rotas sint\xE9ticas de e2e exclu\xEDdas",
     "dashboard.trafficByHourTitle": "Requisi\xE7\xF5es por hora (UTC)",
@@ -29338,6 +29344,8 @@ var dashboardCatalog = {
     "dashboard.trafficCumulativeSubtitle": "solicitudes acumuladas en la ventana del log \xB7 por instant\xE1nea",
     "dashboard.trafficRateTitle": "Ritmo de solicitudes",
     "dashboard.trafficRateSubtitle": "solicitudes/min entre instant\xE1neas consecutivas",
+    "dashboard.trafficRateStartAria": "Fecha inicial del ritmo de solicitudes",
+    "dashboard.trafficRateEndAria": "Fecha final del ritmo de solicitudes",
     "dashboard.trafficTopPathsTitle": "Rutas m\xE1s accedidas",
     "dashboard.trafficTopPathsSubtitle": "rutas sint\xE9ticas de e2e excluidas",
     "dashboard.trafficByHourTitle": "Solicitudes por hora (UTC)",
@@ -29464,6 +29472,8 @@ var dashboardCatalog = {
     "dashboard.trafficCumulativeSubtitle": "cumulative requests in the log window \xB7 per snapshot",
     "dashboard.trafficRateTitle": "Request rate",
     "dashboard.trafficRateSubtitle": "requests/min between consecutive snapshots",
+    "dashboard.trafficRateStartAria": "Request-rate start date",
+    "dashboard.trafficRateEndAria": "Request-rate end date",
     "dashboard.trafficTopPathsTitle": "Most accessed routes",
     "dashboard.trafficTopPathsSubtitle": "synthetic e2e routes excluded",
     "dashboard.trafficByHourTitle": "Requests by hour (UTC)",
