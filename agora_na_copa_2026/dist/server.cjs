@@ -53,7 +53,7 @@ var squads_default = {
     number: 10,
     position: "FW",
     club: "Al Hilal",
-    pictureUrl: "",
+    pictureUrl: "https://digitalhub.fifa.com/transform/49424ad5-f8d5-485a-a55b-07c22b49bd07/NEYMAR_314197",
     socials: {
       instagram: "neymarjr",
       instagramFollowers: 23e7,
