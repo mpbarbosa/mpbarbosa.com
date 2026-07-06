@@ -61,7 +61,10 @@ var squads_default = {
     },
     dateOfBirth: "1992-02-05",
     height: 175,
-    instagramPostUrl: "https://www.instagram.com/p/DaCJER5DRhv/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaCJER5DRhv/",
+      "https://www.instagram.com/p/Dabh4eHllW8/"
+    ]
   },
   "201200": {
     fifaId: "201200",
