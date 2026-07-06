@@ -19138,6 +19138,14 @@ var getRefereeFromFifa = (fifaMatch, language = "pt") => {
     fifaOfficialId: referee.OfficialId || void 0
   };
 };
+var resolveKickoffOverride = (localKickoffTimestamp, fifaDate) => {
+  if (!fifaDate) return void 0;
+  const fifaMs = new Date(fifaDate).getTime();
+  if (Number.isNaN(fifaMs)) return void 0;
+  const localMs = new Date(localKickoffTimestamp).getTime();
+  if (!Number.isNaN(localMs) && fifaMs === localMs) return void 0;
+  return fifaDate;
+};
 var buildMatchStateEntry = (localMatch, fifaMatch, fifaLiveMatch) => {
   if (!fifaMatch) {
     return {
@@ -19164,11 +19172,16 @@ var buildMatchStateEntry = (localMatch, fifaMatch, fifaLiveMatch) => {
     fifaLiveMatch?.MatchStatus ?? fifaMatch.MatchStatus,
     fifaLiveMatch?.Period
   );
+  const kickoffOverride = resolveKickoffOverride(
+    localMatch.kickoffTimestamp,
+    fifaLiveMatch?.Date || fifaMatch.Date
+  );
   return {
     status,
     score: liveScore || fifaScore || (status === "PRE_GAME" ? void 0 : localMatch.score),
     penaltyScore: status === "PRE_GAME" ? void 0 : penaltyScore,
     matchTime: status === "LIVE" && fifaLiveMatch?.MatchTime ? fifaLiveMatch.MatchTime : void 0,
+    kickoffOverride,
     officialStatus,
     referee: getRefereeFromFifa(fifaMatch),
     incidents: incidents && incidents.length > 0 ? incidents : void 0,
@@ -26740,7 +26753,10 @@ var KNOCKOUT_RESULTS = {
   89: { status: "FINISHED", score: { teamA: 0, teamB: 1 } },
   // #90 · Oitavas · Houston Stadium · 04/07/2026 — Canadá 0×3 Marrocos (Azzedine Ounahi 50' e
   // 82', Soufiane Rahimi 90+8' p/ MAR). Marrocos classificado às Quartas; alimenta a #97 (slot W90).
-  90: { status: "FINISHED", score: { teamA: 0, teamB: 3 } }
+  90: { status: "FINISHED", score: { teamA: 0, teamB: 3 } },
+  // #91 · Oitavas · 04/07/2026 — Brasil 1×2 Noruega (Erling Haaland 79' e 90' p/ NOR; Neymar Jr
+  // 90+10' p/ BRA). Noruega classificada às Quartas; alimenta a #99 (slot W91). Brasil eliminado.
+  91: { status: "FINISHED", score: { teamA: 1, teamB: 2 } }
 };
 
 // src/i18n/catalogs/core.ts
@@ -30064,6 +30080,94 @@ function decisiveSlot(score, penaltyScore) {
   return penaltyScore.teamA > penaltyScore.teamB ? "A" : "B";
 }
 
+// src/utils/kickoffFormat.ts
+var PT_MONTHS = [
+  "Janeiro",
+  "Fevereiro",
+  "Mar\xE7o",
+  "Abril",
+  "Maio",
+  "Junho",
+  "Julho",
+  "Agosto",
+  "Setembro",
+  "Outubro",
+  "Novembro",
+  "Dezembro"
+];
+var PT_WEEKDAYS = [
+  "domingo",
+  "segunda-feira",
+  "ter\xE7a-feira",
+  "quarta-feira",
+  "quinta-feira",
+  "sexta-feira",
+  "s\xE1bado"
+];
+var ES_MONTHS = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre"
+];
+var ES_WEEKDAYS = [
+  "domingo",
+  "lunes",
+  "martes",
+  "mi\xE9rcoles",
+  "jueves",
+  "viernes",
+  "s\xE1bado"
+];
+var EN_MONTHS = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+var EN_WEEKDAYS = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
+var formatKickoffDateFromParts = (year, month, day, weekdayIndex) => {
+  const locale = getActiveLocale();
+  if (locale === "en") {
+    return `${EN_MONTHS[month - 1]} ${day}, ${year} (${EN_WEEKDAYS[weekdayIndex]})`;
+  }
+  const es = locale === "es";
+  const months = es ? ES_MONTHS : PT_MONTHS;
+  const weekdays = es ? ES_WEEKDAYS : PT_WEEKDAYS;
+  return `${day} ${months[month - 1]} ${year} (${weekdays[weekdayIndex]})`;
+};
+var formatKickoffDate = (kickoffTimestamp) => {
+  const [datePart] = kickoffTimestamp.split("T");
+  const [year, month, day] = datePart.split("-").map(Number);
+  const weekdayIndex = new Date(Date.UTC(year, month - 1, day)).getUTCDay();
+  return formatKickoffDateFromParts(year, month, day, weekdayIndex);
+};
+var formatKickoffTime = (kickoffTimestamp) => kickoffTimestamp.slice(11, 16);
+
 // src/i18n/teamNames.ts
 var ES_TEAM_NAMES = {
   ALG: "ARGELIA",
@@ -30159,20 +30263,6 @@ var localizeTeamName = (name, code, locale = getActiveLocale()) => {
 };
 
 // src/appMatches.ts
-var PT_MONTHS = [
-  "Janeiro",
-  "Fevereiro",
-  "Mar\xE7o",
-  "Abril",
-  "Maio",
-  "Junho",
-  "Julho",
-  "Agosto",
-  "Setembro",
-  "Outubro",
-  "Novembro",
-  "Dezembro"
-];
 var BASE_MATCHES = matches_default;
 var existingIds = new Set(BASE_MATCHES.map((match) => match.id));
 var lineupByTeamCode = /* @__PURE__ */ new Map();
@@ -30216,75 +30306,6 @@ var teamByCode = new Map(
     }
   ])
 );
-var PT_WEEKDAYS = [
-  "domingo",
-  "segunda-feira",
-  "ter\xE7a-feira",
-  "quarta-feira",
-  "quinta-feira",
-  "sexta-feira",
-  "s\xE1bado"
-];
-var ES_MONTHS = [
-  "Enero",
-  "Febrero",
-  "Marzo",
-  "Abril",
-  "Mayo",
-  "Junio",
-  "Julio",
-  "Agosto",
-  "Septiembre",
-  "Octubre",
-  "Noviembre",
-  "Diciembre"
-];
-var ES_WEEKDAYS = [
-  "domingo",
-  "lunes",
-  "martes",
-  "mi\xE9rcoles",
-  "jueves",
-  "viernes",
-  "s\xE1bado"
-];
-var EN_MONTHS = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December"
-];
-var EN_WEEKDAYS = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday"
-];
-var formatKickoffDate = (kickoffTimestamp) => {
-  const [datePart] = kickoffTimestamp.split("T");
-  const [year, month, day] = datePart.split("-").map(Number);
-  const weekdayIndex = new Date(Date.UTC(year, month - 1, day)).getUTCDay();
-  const locale = getActiveLocale();
-  if (locale === "en") {
-    return `${EN_MONTHS[month - 1]} ${day}, ${year} (${EN_WEEKDAYS[weekdayIndex]})`;
-  }
-  const es = locale === "es";
-  const months = es ? ES_MONTHS : PT_MONTHS;
-  const weekdays = es ? ES_WEEKDAYS : PT_WEEKDAYS;
-  return `${day} ${months[month - 1]} ${year} (${weekdays[weekdayIndex]})`;
-};
-var formatKickoffTime = (kickoffTimestamp) => kickoffTimestamp.slice(11, 16);
 var buildTeamEntry = (teamCode) => {
   const team2 = teamByCode.get(teamCode);
   if (!team2) {
