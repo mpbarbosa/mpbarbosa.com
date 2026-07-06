@@ -19735,6 +19735,11 @@ function parseSummary(text, file) {
   const cities = parseGeoSection(s["Top cities"]);
   const geoSource = countries.geoSource || cities.geoSource;
   const bots = Number(grab(/Bot-ish hits:\s*(\d+)/, (s["Bot / crawler share"] || []).join("\n")));
+  const selfClientRaw = grab(
+    /Self-client hits \(excluded\):\s*(\d+)/,
+    (s["Self-client (excluded)"] || []).join("\n")
+  );
+  const selfClientExcluded = selfClientRaw == null ? null : Number(selfClientRaw);
   const suspectLines = s["Suspect / synthetic paths (e2e test fixtures)"] || [];
   const suspect = Number(grab(/Suspect hits:\s*(\d+)/, suspectLines.join("\n")));
   const suspectSources = [];
@@ -19766,6 +19771,7 @@ function parseSummary(text, file) {
     byDay: parseCountRows(s["Requests by day"] || []),
     bots: Number.isFinite(bots) ? bots : null,
     suspect: Number.isFinite(suspect) ? suspect : null,
+    selfClientExcluded: selfClientExcluded != null && Number.isFinite(selfClientExcluded) ? selfClientExcluded : null,
     suspectSources
   };
 }
@@ -19781,6 +19787,7 @@ function projectLatest(snap) {
     geoSource: snap.geoSource,
     bots: snap.bots,
     suspect: snap.suspect,
+    selfClientExcluded: snap.selfClientExcluded,
     topPaths: snap.topPaths.filter((r) => !SYNTHETIC.test(r.label)),
     statusCodes: snap.statusCodes,
     referrers: snap.referrers.filter((r) => r.label !== '"-"' && !/^rt=/.test(r.label)).map((r) => ({ ...r, label: r.label.replace(/^"|"$/g, "") })),
@@ -29213,6 +29220,8 @@ var dashboardCatalog = {
     "dashboard.trafficKpiBotsHint": "{count} hits",
     "dashboard.trafficKpiSynthetic": "Sint\xE9tico (e2e)",
     "dashboard.trafficKpiSyntheticHint": "{count} hits",
+    "dashboard.trafficKpiSelfClient": "Auto-cliente",
+    "dashboard.trafficKpiSelfClientHint": "{pct}% do log bruto (exclu\xEDdo)",
     "dashboard.trafficKpiLogLines": "Linhas de log",
     // Traffic panel — chart titles/subtitles
     "dashboard.trafficCumulativeTitle": "Tr\xE1fego acumulado",
@@ -29343,6 +29352,8 @@ var dashboardCatalog = {
     "dashboard.trafficKpiBotsHint": "{count} hits",
     "dashboard.trafficKpiSynthetic": "Sint\xE9tico (e2e)",
     "dashboard.trafficKpiSyntheticHint": "{count} hits",
+    "dashboard.trafficKpiSelfClient": "Auto-cliente",
+    "dashboard.trafficKpiSelfClientHint": "{pct}% del log en bruto (excluido)",
     "dashboard.trafficKpiLogLines": "L\xEDneas de log",
     // Traffic panel — chart titles/subtitles
     "dashboard.trafficCumulativeTitle": "Tr\xE1fico acumulado",
@@ -29473,6 +29484,8 @@ var dashboardCatalog = {
     "dashboard.trafficKpiBotsHint": "{count} hits",
     "dashboard.trafficKpiSynthetic": "Synthetic (e2e)",
     "dashboard.trafficKpiSyntheticHint": "{count} hits",
+    "dashboard.trafficKpiSelfClient": "Self-client",
+    "dashboard.trafficKpiSelfClientHint": "{pct}% of raw log (excluded)",
     "dashboard.trafficKpiLogLines": "Log lines",
     // Traffic panel — chart titles/subtitles
     "dashboard.trafficCumulativeTitle": "Cumulative traffic",
