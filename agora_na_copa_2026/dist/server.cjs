@@ -516,8 +516,8 @@ var squads_default = {
     },
     dateOfBirth: "1992-10-02",
     height: 193,
-    worldCupNote: "## Leitura\nSeguran\xE7a nas traves rumo \xE0s oitavas. Alisson foi vazado uma vez, mas viu o Brasil reagir e vencer o Jap\xE3o por 2 a 1 nos 16-avos. O goleiro segue como o seguro de vida de uma Sele\xE7\xE3o que avan\xE7ou no mata-mata.\n## Desempenho\nFechou a fase de grupos com dois clean sheets e a lideran\xE7a do Grupo C. Nos 16-avos, foi vazado por Kaishu Sano aos 29 contra o Jap\xE3o, mas o Brasil virou com Casemiro (56') e Gabriel Martinelli (90+5'), garantindo a vaga nas oitavas. Sem cart\xF5es.\n## N\xFAmeros\nJ4 \xB7 2 gols sofridos no Mundial \xB7 classificado \xE0s oitavas de final. O Brasil, 1\xBA do Grupo C, venceu o Jap\xE3o por 2 a 1 nos 16-avos.",
-    worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z",
+    worldCupNote: "## Leitura\nMuralha superada no fim. Alisson pouco p\xF4de fazer diante da dobradinha de Haaland, e o Brasil caiu por 2 a 1 para a Noruega nas oitavas. O goleiro se despede do Mundial de cabe\xE7a erguida, mas sem conseguir segurar o artilheiro noruegu\xEAs.\n## Desempenho\nVinha s\xF3lido: dois clean sheets na fase de grupos, a lideran\xE7a do Grupo C e a virada sobre o Jap\xE3o nos 16-avos. Nas oitavas, por\xE9m, foi vazado duas vezes por Erling Haaland (79' e 90'); Neymar Jr descontou nos acr\xE9scimos (90+10'), tarde demais. Sem cart\xF5es. Fim de linha.\n## N\xFAmeros\nJ5 \xB7 4 gols sofridos no Mundial \xB7 eliminado nas oitavas de final. O Brasil perdeu para a Noruega por 2 a 1 e deu adeus \xE0 Copa.",
+    worldCupNoteUpdatedAt: "2026-07-05T20:00:00.000Z",
     instagramPostUrls: [
       "https://www.instagram.com/p/DaL65g6yWCY/",
       "https://www.instagram.com/p/DaRNtKpG7g0/",
@@ -542,8 +542,8 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Casemiro"
     },
     instagramPostUrl: "https://www.instagram.com/p/DZ_ZOsDjAzO/",
-    worldCupNote: "## Leitura\nLideran\xE7a e gol na hora certa. Casemiro deixou a marca dele no mata-mata: fez o gol de empate na virada por 2 a 1 sobre o Jap\xE3o que levou o Brasil \xE0s oitavas. Aos 34 anos, o volante respondeu quando o equil\xEDbrio pesava.\n## Desempenho\nNa fase de grupos atuou no empate com o Marrocos (amarelo aos 37) e na vit\xF3ria sobre a Esc\xF3cia. Contra o Jap\xE3o, levou amarelo cedo (14') mas foi protagonista: com o Brasil atr\xE1s ap\xF3s o gol de Sano (29'), igualou aos 56 minutos. Martinelli fez o segundo nos acr\xE9scimos (90+5') e Casemiro saiu aplaudido aos 90+1.\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 2 amarelos \xB7 classificado \xE0s oitavas. O Brasil bateu o Jap\xE3o por 2 a 1 nos 16-avos, com gol do volante.",
-    worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z"
+    worldCupNote: "## Leitura\nHer\xF3i dos 16-avos, sem repetir a dose. Casemiro, que havia empatado contra o Jap\xE3o, n\xE3o conseguiu evitar a elimina\xE7\xE3o: o Brasil perdeu por 2 a 1 para a Noruega e caiu nas oitavas. Encerramento amargo para o l\xEDder em campo.\n## Desempenho\nNa fase de grupos jogou o empate com o Marrocos (amarelo aos 37') e a vit\xF3ria sobre a Esc\xF3cia, e nos 16-avos marcou o gol de empate na virada sobre o Jap\xE3o. Nas oitavas, no entanto, n\xE3o houve rea\xE7\xE3o: Haaland fez dois (79' e 90') e o gol de Neymar (90+10') apenas maquiou o placar. Sem cart\xE3o desta vez.\n## N\xFAmeros\nJ5 \xB7 1 gol \xB7 2 amarelos \xB7 eliminado nas oitavas de final. O Brasil perdeu por 2 a 1 para a Noruega e est\xE1 fora da Copa.",
+    worldCupNoteUpdatedAt: "2026-07-05T20:00:00.000Z"
   },
   "310116": {
     fifaId: "310116",
@@ -1826,8 +1826,8 @@ var squads_default = {
     },
     dateOfBirth: "1993-07-28",
     height: 190,
-    worldCupNote: "## Leitura\nO capit\xE3o decidiu de novo. Harry Kane marcou os dois gols da virada por 2 a 1 sobre a RD Congo nos 16-avos e levou a Inglaterra \xE0s oitavas de final. Sempre ele nos momentos de decis\xE3o do English Team.\n## Desempenho\nFez dois sobre a Cro\xE1cia na estreia (4 a 2), parou no 0 a 0 com Gana e marcou no 2 a 0 sobre o Panam\xE1. Nos 16-avos, a Inglaterra saiu atr\xE1s \u2014 Brian Cipenga fez 1 a 0 para a RD Congo aos 7' \u2014, mas Kane apareceu na reta final com uma dobradinha (75' e 86') para completar a virada.\n## N\xFAmeros\nJ4 \xB7 5 gols \xB7 0 cart\xF5es \xB7 Inglaterra classificada \xE0s oitavas de final, onde encara o M\xE9xico. Kane chegou a cinco gols no Mundial, decisivo mais uma vez.",
-    worldCupNoteUpdatedAt: "2026-07-01T16:00:00.000Z",
+    worldCupNote: "## Leitura\nO capit\xE3o n\xE3o para de marcar. Harry Kane fez o gol que colocou a Inglaterra \xE0 frente por 3 a 1 sobre o M\xE9xico e ajudou a garantir a vaga nas quartas de final \u2014 mesmo com um a menos no segundo tempo. Chegou a 6 gols no Mundial, sempre decisivo.\n## Desempenho\nFez dois sobre a Cro\xE1cia na estreia, marcou no 2 a 0 sobre o Panam\xE1 e a dobradinha da virada sobre a RD Congo nos 16-avos. Nas oitavas contra o M\xE9xico, ampliou aos 60' (3 a 1) logo ap\xF3s a expuls\xE3o de Quansah; o M\xE9xico ainda descontou com Jim\xE9nez (69'), mas a Inglaterra segurou o 3 a 2 e avan\xE7ou. Saiu aos 90'.\n## N\xFAmeros\nJ5 \xB7 6 gols \xB7 0 cart\xF5es \xB7 Inglaterra classificada \xE0s quartas de final, onde encara a Noruega de Haaland. Kane chegou a seis gols, logo atr\xE1s do trio de artilheiros (7).",
+    worldCupNoteUpdatedAt: "2026-07-06T00:00:00.000Z",
     instagramPostUrl: "https://www.instagram.com/p/DZ8oJCFFqhu/"
   },
   "369434": {
@@ -5217,8 +5217,8 @@ var squads_default = {
       "https://www.instagram.com/p/DZjBZ9UjVG6/",
       "https://www.instagram.com/p/DZzgqBDCBSS/"
     ],
-    worldCupNote: "## Leitura\nSem balan\xE7ar as redes, mas nas oitavas. Vin\xEDcius J\xFAnior n\xE3o marcou no 2 a 1 sobre o Jap\xE3o, mas viu o Brasil garantir a vaga no mata-mata. Artilheiro da Sele\xE7\xE3o na fase de grupos com 4 gols, o atacante segue como refer\xEAncia ofensiva rumo \xE0s oitavas.\n## Desempenho\nBrilhou na fase de grupos, com gols sobre Marrocos, Haiti e dois sobre a Esc\xF3cia (4 no total). Nos 16-avos contra o Jap\xE3o, titular, passou em branco, mas o Brasil virou com Casemiro (56') e Martinelli (90+5') ap\xF3s o gol de Sano (29'). Sem cart\xF5es.\n## N\xFAmeros\nJ4 \xB7 4 gols \xB7 0 cart\xF5es \xB7 artilheiro do Brasil. A Sele\xE7\xE3o, 1\xAA do Grupo C, venceu o Jap\xE3o por 2 a 1 nos 16-avos e est\xE1 nas oitavas de final.",
-    worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z",
+    worldCupNote: "## Leitura\nArtilheiro do Brasil, sem final feliz. Vin\xEDcius J\xFAnior terminou o Mundial como maior goleador da Sele\xE7\xE3o (4 gols), mas n\xE3o conseguiu evitar a queda nas oitavas: derrota por 2 a 1 para a Noruega. O atacante deixa o torneio com a sensa\xE7\xE3o de quem fez muito, mas n\xE3o o bastante.\n## Desempenho\nBrilhou na fase de grupos com gols sobre Marrocos, Haiti e dois sobre a Esc\xF3cia (4 no total). Passou em branco na virada sobre o Jap\xE3o e tamb\xE9m na derrota para a Noruega, quando os gols de Haaland (79' e 90') selaram a elimina\xE7\xE3o \u2014 Neymar descontou aos 90+10'. Sem cart\xF5es no Mundial.\n## N\xFAmeros\nJ5 \xB7 4 gols \xB7 0 cart\xF5es \xB7 artilheiro do Brasil, eliminado nas oitavas. A Sele\xE7\xE3o perdeu para a Noruega por 2 a 1 e se despede da Copa.",
+    worldCupNoteUpdatedAt: "2026-07-05T20:00:00.000Z",
     dateOfBirth: "2000-07-12",
     height: 176,
     socials: {
@@ -6796,8 +6796,8 @@ var squads_default = {
     },
     dateOfBirth: "2000-07-21",
     height: 195,
-    worldCupNote: "## Leitura\nDescansado e decisivo. Poupado na \xFAltima rodada da fase de grupos, Erling Haaland voltou com tudo nos 16-avos: marcou o gol da vit\xF3ria por 2 a 1 sobre a Costa do Marfim e levou a Noruega \xE0s oitavas. Agora com 5 gols, \xE9 o vice-artilheiro do Mundial.\n## Desempenho\nFez quatro gols nas duas primeiras rodadas (dois sobre o Iraque, dois sobre o Senegal) e foi poupado na derrota para a Fran\xE7a. No mata-mata, decidiu: com o 1 a 1 contra a Costa do Marfim \u2014 Nusa (39') e Amad Diallo (74') \u2014, Haaland fez o gol da classifica\xE7\xE3o aos 86 minutos, garantindo o 2 a 1.\n## N\xFAmeros\nJ4 \xB7 5 gols \xB7 0 cart\xF5es \xB7 vice-artilheiro da Copa, atr\xE1s apenas de Messi (6). A Noruega bateu a Costa do Marfim por 2 a 1 e avan\xE7ou \xE0s oitavas de final.",
-    worldCupNoteUpdatedAt: "2026-06-30T17:00:00.000Z",
+    worldCupNote: "## Leitura\nO gigante derrubou o Brasil. Erling Haaland marcou duas vezes na reta final e comandou a vit\xF3ria por 2 a 1 sobre a Sele\xE7\xE3o, eliminando o Brasil e levando a Noruega \xE0s quartas de final. Com 7 gols, assumiu a artilharia da Copa.\n## Desempenho\nFez quatro gols nas duas primeiras rodadas (dois sobre o Iraque, dois sobre o Senegal), foi poupado contra a Fran\xE7a e decidiu os 16-avos diante da Costa do Marfim. Nas oitavas, foi ainda mais letal: abriu o placar aos 79' e ampliou aos 90' contra o Brasil; Neymar descontou nos acr\xE9scimos (90+10'), sem evitar a queda brasileira.\n## N\xFAmeros\nJ5 \xB7 7 gols \xB7 0 cart\xF5es \xB7 artilheiro da Copa, ao lado de Mbapp\xE9 e Messi (7). A Noruega bateu o Brasil por 2 a 1 e avan\xE7ou \xE0s quartas de final, onde enfrenta a Inglaterra.",
+    worldCupNoteUpdatedAt: "2026-07-05T20:00:00.000Z",
     instagramPostUrls: [
       "https://www.instagram.com/p/DaONQazv3q_/",
       "https://www.instagram.com/reel/DZ7ymbXvMdt/"
@@ -8032,8 +8032,8 @@ var squads_default = {
       instagramFollowers: 6e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Matheus_Cunha"
     },
-    worldCupNote: "## Leitura\nMenos minutos, mas vaga nas oitavas. Matheus Cunha foi titular nos 16-avos e saiu no segundo tempo na virada por 2 a 1 sobre o Jap\xE3o. Revela\xE7\xE3o da fase de grupos com 3 gols, o atacante segue no elenco brasileiro rumo ao mata-mata.\n## Desempenho\nCresceu na fase de grupos, com dois gols sobre o Haiti e um sobre a Esc\xF3cia (3 no total). Contra o Jap\xE3o, come\xE7ou jogando e foi substitu\xEDdo por Martinelli aos 65 minutos \u2014 justamente o autor do gol da vit\xF3ria (90+5'), ap\xF3s Sano abrir (29') e Casemiro empatar (56'). Sem marcar, mas com a vaga garantida.\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 classificado \xE0s oitavas. O Brasil bateu o Jap\xE3o por 2 a 1 nos 16-avos de final.",
-    worldCupNoteUpdatedAt: "2026-06-29T17:00:00.000Z",
+    worldCupNote: "## Leitura\nRevela\xE7\xE3o que n\xE3o teve o desfecho sonhado. Matheus Cunha foi titular nas oitavas, mas saiu no segundo tempo e viu do banco o Brasil ser eliminado pela Noruega (2 a 1). Autor de 3 gols na fase de grupos, o atacante encerra o Mundial em alta apesar da queda coletiva.\n## Desempenho\nCresceu na fase de grupos, com dois gols sobre o Haiti e um sobre a Esc\xF3cia (3 no total). Contra a Noruega, come\xE7ou jogando e foi substitu\xEDdo por Endrick aos 58 minutos. Sem o time reagir, Haaland decidiu (79' e 90') e Neymar apenas descontou (90+10'). Sem marcar nas oitavas.\n## N\xFAmeros\nJ5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 eliminado nas oitavas de final. O Brasil perdeu por 2 a 1 para a Noruega e est\xE1 fora da Copa.",
+    worldCupNoteUpdatedAt: "2026-07-05T20:00:00.000Z",
     instagramPostUrl: "https://www.instagram.com/p/DZ_LJUvmRNe/"
   },
   "430624": {
@@ -19813,11 +19813,14 @@ function buildTrafficDashboard(files, updatedAt) {
       const dMin = (snap.generatedMs - prev.generatedMs) / 6e4;
       if (dMin > 0) ratePerMin = Math.max(0, Math.round(dReq / dMin));
     }
+    const countries = {};
+    for (const row of snap.countriesByVolume) countries[row.label] = row.count;
     return {
       t: snap.generatedMs,
       requests: snap.requests || 0,
       uniqueIps: snap.uniqueIps || 0,
-      ratePerMin
+      ratePerMin,
+      countries
     };
   });
   const first = snaps[0];
@@ -29218,6 +29221,8 @@ var dashboardCatalog = {
     "dashboard.trafficRateSubtitle": "requisi\xE7\xF5es/min entre instant\xE2neos consecutivos",
     "dashboard.trafficRateStartAria": "Data inicial do ritmo de requisi\xE7\xF5es",
     "dashboard.trafficRateEndAria": "Data final do ritmo de requisi\xE7\xF5es",
+    "dashboard.trafficRateCountryAria": "Filtrar o ritmo de requisi\xE7\xF5es por pa\xEDs",
+    "dashboard.trafficRateCountryAll": "Todos os pa\xEDses",
     "dashboard.trafficTopPathsTitle": "Rotas mais acessadas",
     "dashboard.trafficTopPathsSubtitle": "rotas sint\xE9ticas de e2e exclu\xEDdas",
     "dashboard.trafficByHourTitle": "Requisi\xE7\xF5es por hora (UTC)",
@@ -29346,6 +29351,8 @@ var dashboardCatalog = {
     "dashboard.trafficRateSubtitle": "solicitudes/min entre instant\xE1neas consecutivas",
     "dashboard.trafficRateStartAria": "Fecha inicial del ritmo de solicitudes",
     "dashboard.trafficRateEndAria": "Fecha final del ritmo de solicitudes",
+    "dashboard.trafficRateCountryAria": "Filtrar el ritmo de solicitudes por pa\xEDs",
+    "dashboard.trafficRateCountryAll": "Todos los pa\xEDses",
     "dashboard.trafficTopPathsTitle": "Rutas m\xE1s accedidas",
     "dashboard.trafficTopPathsSubtitle": "rutas sint\xE9ticas de e2e excluidas",
     "dashboard.trafficByHourTitle": "Solicitudes por hora (UTC)",
@@ -29474,6 +29481,8 @@ var dashboardCatalog = {
     "dashboard.trafficRateSubtitle": "requests/min between consecutive snapshots",
     "dashboard.trafficRateStartAria": "Request-rate start date",
     "dashboard.trafficRateEndAria": "Request-rate end date",
+    "dashboard.trafficRateCountryAria": "Filter request rate by country",
+    "dashboard.trafficRateCountryAll": "All countries",
     "dashboard.trafficTopPathsTitle": "Most accessed routes",
     "dashboard.trafficTopPathsSubtitle": "synthetic e2e routes excluded",
     "dashboard.trafficByHourTitle": "Requests by hour (UTC)",
