@@ -624,7 +624,8 @@ var squads_default = {
     socials: {
       instagram: "davidalaba",
       wikipedia: "https://pt.wikipedia.org/wiki/David_Alaba"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaV3F8GjL3A/"
   },
   "318647": {
     fifaId: "318647",
@@ -899,7 +900,8 @@ var squads_default = {
       instagram: "memphisdepay",
       instagramFollowers: 2e7,
       wikipedia: "https://pt.wikipedia.org/wiki/Memphis_Depay"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZ1cr3vjYpE/"
   },
   "336170": {
     fifaId: "336170",
@@ -2840,7 +2842,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaJEBlOgsGG/",
       "https://www.instagram.com/p/DaZSbgnkYGr/",
       "https://www.instagram.com/p/DaZPLicEbdx/",
-      "https://www.instagram.com/p/DaPKsLMlTsQ/"
+      "https://www.instagram.com/p/DaPKsLMlTsQ/",
+      "https://www.instagram.com/p/DaY_UpAmOmO/"
     ],
     worldCupNote: "## Leitura\nO farol franc\xEAs n\xE3o apaga. Kylian Mbapp\xE9 marcou o gol da vit\xF3ria por 1 a 0 sobre o Paraguai nas oitavas de final e levou a Fran\xE7a \xE0s quartas. Capit\xE3o e artilheiro, o camisa 10 chegou a sete gols no Mundial e segue decisivo nos momentos que pesam.\n## Desempenho\nFez quatro gols na fase de grupos (dois no Senegal, dois no Iraque) e liderou os 100% de aproveitamento da Fran\xE7a no Grupo I. Nos 16-avos, marcou duas vezes na goleada por 3 a 0 sobre a Su\xE9cia (45' e 74'). Nas oitavas, diante de um Paraguai muito fechado, quebrou a resist\xEAncia aos 70' \u2014 seu s\xE9timo gol no Mundial \u2014 e garantiu a classifica\xE7\xE3o francesa.\n## N\xFAmeros\nJ5 \xB7 7 gols \xB7 0 cart\xF5es \xB7 Fran\xE7a classificada \xE0s quartas de final, onde enfrenta o Marrocos. Mbapp\xE9 segue como artilheiro e principal nome do ataque de um dos favoritos ao t\xEDtulo.",
     worldCupNoteUpdatedAt: "2026-07-04T21:00:00.000Z"
@@ -7365,7 +7368,8 @@ var squads_default = {
     height: 178,
     socials: {
       wikipedia: "https://pt.wikipedia.org/wiki/Mois%C3%A9s_Caicedo"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZm8oCEEduG/"
   },
   "429063": {
     fifaId: "429063",
@@ -9339,7 +9343,8 @@ var squads_default = {
     socials: {
       instagram: "wsemedo7",
       wikipedia: "https://en.wikipedia.org/wiki/Willy_Semedo"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaYPjUpke59/"
   },
   "433754": {
     fifaId: "433754",
@@ -11173,7 +11178,10 @@ var squads_default = {
       instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Mike_Maignan"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DaQCW1HlaPs/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaQCW1HlaPs/",
+      "https://www.instagram.com/p/DaaDT7-grFL/"
+    ]
   },
   "448341": {
     fifaId: "448341",
@@ -11868,7 +11876,8 @@ var squads_default = {
     socials: {
       instagram: "mwene",
       wikipedia: "https://pt.wikipedia.org/wiki/Phillipp_Mwene"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZrfsMFFlzp/"
   },
   "463465": {
     fifaId: "463465",
@@ -18318,7 +18327,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/3beeef45-2af9-4641-aa23-24aabb1ff865/RIOS-Richard_473050",
     dateOfBirth: "2000-06-02",
-    height: 185
+    height: 185,
+    instagramPostUrl: "https://www.instagram.com/p/DaYbvXvlvSm/"
   },
   "428886": {
     fifaId: "428886",
@@ -18330,7 +18340,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/e1e5fb3a-67cb-4e0d-9a70-95b7cc6d5ebf/DIAZ-Luis_428886",
     dateOfBirth: "1997-01-13",
-    height: 179
+    height: 179,
+    instagramPostUrl: "https://www.instagram.com/p/DaZcgqMFJ0n/"
   },
   "425580": {
     fifaId: "425580",
@@ -18450,7 +18461,11 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/961b906c-13d4-4869-942a-5f5d2e3fab3e/LERMA-Jefferson_395550",
     dateOfBirth: "1994-10-25",
-    height: 180
+    height: 180,
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZvjQEXD_C5/",
+      "https://www.instagram.com/p/DaYOudOFTjm/"
+    ]
   },
   "394500": {
     fifaId: "394500",
@@ -18462,7 +18477,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/efd8e0c0-6d52-43f0-95ce-b9c258914603/MOJICA-Johan_394500",
     dateOfBirth: "1992-08-21",
-    height: 184
+    height: 184,
+    instagramPostUrl: "https://www.instagram.com/p/DZoEVNJlMF4/"
   },
   "476345": {
     fifaId: "476345",
@@ -18536,7 +18552,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/ce6f352e-52e7-4265-9bc9-d482292fe4fb/SANCHEZ-Davinson_386013",
     dateOfBirth: "1996-06-12",
-    height: 188
+    height: 188,
+    instagramPostUrl: "https://www.instagram.com/p/DZ--LJTEZQF/"
   },
   "385998": {
     fifaId: "385998",
@@ -18715,6 +18732,8 @@ var FIFA_MATCH_STATUS = {
   // kickoff delayed (e.g. weather) but still expected — FIFA renders "Atrasado"
   LINE_UPS: 12,
   // line-ups published (still pre-match)
+  RESCHEDULED: 13,
+  // kickoff moved to a new date/time — FIFA renders "Reagendado" (pre-match)
   SUSPENDED: 99
   // stopped mid-match (e.g. weather), may resume
 };
@@ -18725,6 +18744,7 @@ var getMatchStatusFromFifa = (localMatch, fifaMatch) => {
     case FIFA_MATCH_STATUS.FUTURE:
     case FIFA_MATCH_STATUS.LINE_UPS:
     case FIFA_MATCH_STATUS.DELAYED:
+    case FIFA_MATCH_STATUS.RESCHEDULED:
       return "PRE_GAME";
     case FIFA_MATCH_STATUS.LIVE:
       return "LIVE";
@@ -18734,12 +18754,12 @@ var getMatchStatusFromFifa = (localMatch, fifaMatch) => {
     case FIFA_MATCH_STATUS.SUSPENDED:
       return "SUSPENDED";
   }
-  if (typeof fifaMatch.MatchStatus === "number") {
-    return "LIVE";
-  }
   const kickoffTime = new Date(fifaMatch.Date).getTime();
   if (!Number.isNaN(kickoffTime) && kickoffTime > Date.now()) {
     return "PRE_GAME";
+  }
+  if (typeof fifaMatch.MatchStatus === "number") {
+    return "LIVE";
   }
   if (typeof fifaMatch.HomeTeamScore === "number" || typeof fifaMatch.AwayTeamScore === "number") {
     return "LIVE";
@@ -18785,6 +18805,7 @@ var FIFA_STATUS_LABELS = {
   [FIFA_MATCH_STATUS.POSTPONED]: "Adiado",
   [FIFA_MATCH_STATUS.CANCELLED]: "Cancelado",
   [FIFA_MATCH_STATUS.DELAYED]: "Atrasado",
+  [FIFA_MATCH_STATUS.RESCHEDULED]: "Reagendado",
   [FIFA_MATCH_STATUS.SUSPENDED]: "Paralisado"
 };
 var TERMINAL_OR_ABNORMAL_STATUS = /* @__PURE__ */ new Set([
@@ -18793,7 +18814,8 @@ var TERMINAL_OR_ABNORMAL_STATUS = /* @__PURE__ */ new Set([
   FIFA_MATCH_STATUS.ABANDONED,
   FIFA_MATCH_STATUS.POSTPONED,
   FIFA_MATCH_STATUS.CANCELLED,
-  FIFA_MATCH_STATUS.DELAYED
+  FIFA_MATCH_STATUS.DELAYED,
+  FIFA_MATCH_STATUS.RESCHEDULED
 ]);
 var getOfficialFifaStatusLabel = (matchStatus, period) => {
   if (typeof matchStatus === "number" && TERMINAL_OR_ABNORMAL_STATUS.has(matchStatus)) {
