@@ -144,7 +144,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/bb1dfed7-fde5-4558-8bf0-fe299883d6fa/OSPINA-David_228686",
     dateOfBirth: "1988-08-31",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "d_ospina1"
+    }
   },
   "228912": {
     fifaId: "228912",
@@ -268,7 +271,10 @@ var squads_default = {
       instagram: "jamesrodriguez10",
       instagramFollowers: 5e7
     },
-    instagramPostUrl: "https://www.instagram.com/p/DaI4aWKkZDs/",
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaI4aWKkZDs/",
+      "https://www.instagram.com/p/DZ-vbR5Efh3/"
+    ],
     worldCupNote: "## Leitura\nCapit\xE3o e camisa 10, James Rodr\xEDguez volta a ser o maestro da Col\xF4mbia: o organizador que dita o ritmo e a principal refer\xEAncia t\xE9cnica de uma sele\xE7\xE3o que venceu o Grupo K com autoridade. Mais de uma d\xE9cada depois da Chuteira de Ouro de 2014, segue sendo a batuta criativa que os colombianos procuram em cada arma\xE7\xE3o.\n## Desempenho\nTitular nas quatro partidas, foi o c\xE9rebro da arma\xE7\xE3o e saiu para poupar f\xF4lego em todas: substitu\xEDdo aos 72' na vit\xF3ria por 3\xD71 sobre o Uzbequist\xE3o, aos 58' no 1\xD70 diante da RD Congo e aos 76' no 0\xD70 com Portugal que carimbou a lideran\xE7a do grupo. Nos 16-avos, come\xE7ou o triunfo por 1\xD70 sobre Gana \u2014 gol de Jhon Arias aos 14' \u2014 antes de dar lugar a Richard R\xEDos. Ainda sem marcar na competi\xE7\xE3o, \xE9 o fio condutor de um time que sofreu apenas um gol em toda a fase de grupos.\n## N\xFAmeros\nJ4 \xB7 0 gols \xB7 0 cart\xF5es \xB7 l\xEDder do Grupo K (7 pts), classificada \xE0s oitavas",
     worldCupNoteUpdatedAt: "2026-07-04T01:30:00.000Z"
   },
@@ -26047,7 +26053,7 @@ var matches_default = [
     status: "FINISHED",
     score: {
       teamA: 3,
-      teamB: 2
+      teamB: 1
     },
     countdownTargetSeconds: 0,
     broadcasters: []
