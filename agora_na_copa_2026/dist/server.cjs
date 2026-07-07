@@ -916,7 +916,10 @@ var squads_default = {
     },
     worldCupNote: "## Leitura\nA muralha que leva a Inglaterra \xE0s quartas. Jordan Pickford, camisa 1 e goleiro titular dos Three Lions, foi a base da defesa que sustentou a campanha rumo ao mata-mata: dois jogos sem sofrer gols na fase de grupos e regularidade sob as traves na reta decisiva. Aos 32 anos, o arqueiro do Everton segue como o dono absoluto da meta inglesa em mais uma Copa.\n## Desempenho\nNa estreia levou dois na vit\xF3ria por 4 a 2 sobre a Cro\xE1cia, mas se recuperou com dois jogos sem ser vazado \u2014 0 a 0 com Gana e 2 a 0 sobre o Panam\xE1 \u2014 para garantir a lideran\xE7a do Grupo L. No mata-mata, sofreu um gol na vit\xF3ria por 2 a 1 sobre a RD Congo (16-avos) e dois no eletrizante 3 a 2 sobre o M\xE9xico (oitavas), quando a Inglaterra segurou o resultado mesmo com um a menos ap\xF3s a expuls\xE3o de Quansah. Foram quatro vit\xF3rias e um empate no caminho at\xE9 as quartas de final.\n## N\xFAmeros\nJ5 \xB7 2 jogos sem sofrer gols \xB7 5 gols sofridos \xB7 0 cart\xF5es \xB7 1\xBA do Grupo L (7 pts). A Inglaterra est\xE1 nas quartas de final, onde encara a Noruega de Haaland.",
     worldCupNoteUpdatedAt: "2026-07-06T00:00:00.000Z",
-    instagramPostUrl: "https://www.instagram.com/p/Dab-mrPjBeH/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/Dab-mrPjBeH/",
+      "https://www.instagram.com/p/DZqMTJOlxBi/"
+    ]
   },
   "336088": {
     fifaId: "336088",
