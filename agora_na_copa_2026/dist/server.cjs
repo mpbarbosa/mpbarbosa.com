@@ -4389,7 +4389,10 @@ var squads_default = {
       instagram: "jamiromonteiro",
       wikipedia: "https://pt.wikipedia.org/wiki/Jamiro_Monteiro"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DaLQu7nFY-h/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaLQu7nFY-h/",
+      "https://www.instagram.com/p/DaYWiKGFXx5/"
+    ]
   },
   "401924": {
     fifaId: "401924",
@@ -4799,7 +4802,10 @@ var squads_default = {
       instagram: "diogomcosta99",
       wikipedia: "https://pt.wikipedia.org/wiki/Diogo_Costa"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DZqYaexAIPb/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZqYaexAIPb/",
+      "https://www.instagram.com/p/DagNcx9gMxk/"
+    ]
   },
   "403002": {
     fifaId: "403002",
@@ -7529,7 +7535,8 @@ var squads_default = {
     socials: {
       instagram: "johan_pipe",
       wikipedia: "https://pt.wikipedia.org/wiki/Johan_V%C3%A1squez"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/Dadrv74HDq1/"
   },
   "425804": {
     fifaId: "425804",
@@ -9393,7 +9400,8 @@ var squads_default = {
     socials: {
       instagram: "soufiane_rahimi",
       wikipedia: "https://pt.wikipedia.org/wiki/Soufiane_Rahimi"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaN9mDDkRuW/"
   },
   "433439": {
     fifaId: "433439",
@@ -10313,7 +10321,8 @@ var squads_default = {
     },
     instagramPostUrls: [
       "https://www.instagram.com/p/DZ0VvuHlEUn/",
-      "https://www.instagram.com/p/DZikPX_FHtf/"
+      "https://www.instagram.com/p/DZikPX_FHtf/",
+      "https://www.instagram.com/p/DaZVbRniMVB/"
     ]
   },
   "441236": {
@@ -11914,7 +11923,8 @@ var squads_default = {
     height: 186,
     socials: {
       wikipedia: "https://en.wikipedia.org/wiki/Chadi_Riad"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaMyeGrgLo8/"
   },
   "448612": {
     fifaId: "448612",
@@ -13080,7 +13090,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaYbvXvlvSm/",
       "https://www.instagram.com/p/DaI9E3EkYDt/",
       "https://www.instagram.com/p/DaYs4dikXig/",
-      "https://www.instagram.com/p/DZ-umdhkWzS/"
+      "https://www.instagram.com/p/DZ-umdhkWzS/",
+      "https://www.instagram.com/p/Dad-GeJDpMQ/"
     ]
   },
   "473062": {
@@ -15237,7 +15248,8 @@ var squads_default = {
     socials: {
       instagram: "francisco.conceicao7",
       wikipedia: "https://pt.wikipedia.org/wiki/Francisco_Concei%C3%A7%C3%A3o"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaVpkqEEYrQ/"
   },
   "485131": {
     fifaId: "485131",
@@ -15765,7 +15777,8 @@ var squads_default = {
     socials: {
       instagram: "nestory._",
       wikipedia: "https://pt.wikipedia.org/wiki/Nestory_Irankunda"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaY2WPQlFq_/"
   },
   "486317": {
     fifaId: "486317",
@@ -17201,7 +17214,8 @@ var squads_default = {
     socials: {
       instagram: "mateo.chaveez",
       wikipedia: "https://en.wikipedia.org/wiki/Mateo_Ch%C3%A1vez"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaBUeQNjw3b/"
   },
   "502245": {
     fifaId: "502245",
@@ -25834,17 +25848,95 @@ var matches_default = [
       secondaryColor: "#ffffff",
       group: "Grupo J",
       lineup: [
-        { id: "aut1", name: "Schlager", number: 1, position: "GK", x: 50, y: 88 },
-        { id: "aut16", name: "Phillip Mwene", number: 16, position: "DF", x: 15, y: 70 },
-        { id: "aut8", name: "Alaba", number: 8, position: "DF", x: 38, y: 75 },
-        { id: "aut3", name: "Kevin Danso", number: 3, position: "DF", x: 62, y: 75 },
-        { id: "aut5", name: "Stefan Posch", number: 5, position: "DF", x: 85, y: 70 },
-        { id: "aut6", name: "Nicolas Seiwald", number: 6, position: "MF", x: 35, y: 48 },
-        { id: "aut4", name: "Xaver Schlager", number: 4, position: "MF", x: 65, y: 48 },
-        { id: "aut21", name: "Patrick Wimmer", number: 21, position: "FW", x: 15, y: 26 },
-        { id: "aut9", name: "Sabitzer", number: 9, position: "MF", x: 50, y: 32 },
-        { id: "aut20", name: "Laimer", number: 20, position: "MF", x: 85, y: 26 },
-        { id: "aut7", name: "Arnautovic", number: 7, position: "FW", x: 50, y: 12, captain: true }
+        {
+          id: "aut1",
+          name: "Schlager",
+          number: 1,
+          position: "GK",
+          x: 50,
+          y: 88
+        },
+        {
+          id: "aut16",
+          name: "Phillip Mwene",
+          number: 16,
+          position: "DF",
+          x: 15,
+          y: 70
+        },
+        {
+          id: "aut8",
+          name: "Alaba",
+          number: 8,
+          position: "DF",
+          x: 38,
+          y: 75
+        },
+        {
+          id: "aut3",
+          name: "Kevin Danso",
+          number: 3,
+          position: "DF",
+          x: 62,
+          y: 75
+        },
+        {
+          id: "aut5",
+          name: "Stefan Posch",
+          number: 5,
+          position: "DF",
+          x: 85,
+          y: 70
+        },
+        {
+          id: "aut6",
+          name: "Nicolas Seiwald",
+          number: 6,
+          position: "MF",
+          x: 35,
+          y: 48
+        },
+        {
+          id: "aut4",
+          name: "Xaver Schlager",
+          number: 4,
+          position: "MF",
+          x: 65,
+          y: 48
+        },
+        {
+          id: "aut21",
+          name: "Patrick Wimmer",
+          number: 21,
+          position: "FW",
+          x: 15,
+          y: 26
+        },
+        {
+          id: "aut9",
+          name: "Sabitzer",
+          number: 9,
+          position: "MF",
+          x: 50,
+          y: 32
+        },
+        {
+          id: "aut20",
+          name: "Laimer",
+          number: 20,
+          position: "MF",
+          x: 85,
+          y: 26
+        },
+        {
+          id: "aut7",
+          name: "Arnautovic",
+          number: 7,
+          position: "FW",
+          x: 50,
+          y: 12,
+          captain: true
+        }
       ]
     },
     teamB: {
@@ -25855,17 +25947,95 @@ var matches_default = [
       secondaryColor: "#ce1126",
       group: "Grupo J",
       lineup: [
-        { id: "jor1", name: "Yazeed Abulaila", number: 1, position: "GK", x: 50, y: 88 },
-        { id: "jor3", name: "Abdallah Nasib", number: 3, position: "DF", x: 15, y: 70 },
-        { id: "jor16", name: "Mohammad Abualnadi", number: 16, position: "DF", x: 38, y: 75 },
-        { id: "jor5", name: "Yazan Alarab", number: 5, position: "DF", x: 62, y: 75 },
-        { id: "jor2", name: "Mohammad Abuhasheesh", number: 2, position: "DF", x: 85, y: 70 },
-        { id: "jor6", name: "Amer Jamous", number: 6, position: "MF", x: 35, y: 50 },
-        { id: "jor8", name: "Noor Alrawabdeh", number: 8, position: "MF", x: 50, y: 52 },
-        { id: "jor21", name: "Nizar Alrashdan", number: 21, position: "MF", x: 65, y: 50 },
-        { id: "jor10", name: "Mousa Altamari", number: 10, position: "FW", x: 85, y: 25, captain: true },
-        { id: "jor7", name: "Mohammad Abuzraiq", number: 7, position: "FW", x: 15, y: 25 },
-        { id: "jor9", name: "Ali Olwan", number: 9, position: "FW", x: 50, y: 12 }
+        {
+          id: "jor1",
+          name: "Yazeed Abulaila",
+          number: 1,
+          position: "GK",
+          x: 50,
+          y: 88
+        },
+        {
+          id: "jor3",
+          name: "Abdallah Nasib",
+          number: 3,
+          position: "DF",
+          x: 15,
+          y: 70
+        },
+        {
+          id: "jor16",
+          name: "Mohammad Abualnadi",
+          number: 16,
+          position: "DF",
+          x: 38,
+          y: 75
+        },
+        {
+          id: "jor5",
+          name: "Yazan Alarab",
+          number: 5,
+          position: "DF",
+          x: 62,
+          y: 75
+        },
+        {
+          id: "jor2",
+          name: "Mohammad Abuhasheesh",
+          number: 2,
+          position: "DF",
+          x: 85,
+          y: 70
+        },
+        {
+          id: "jor6",
+          name: "Amer Jamous",
+          number: 6,
+          position: "MF",
+          x: 35,
+          y: 50
+        },
+        {
+          id: "jor8",
+          name: "Noor Alrawabdeh",
+          number: 8,
+          position: "MF",
+          x: 50,
+          y: 52
+        },
+        {
+          id: "jor21",
+          name: "Nizar Alrashdan",
+          number: 21,
+          position: "MF",
+          x: 65,
+          y: 50
+        },
+        {
+          id: "jor10",
+          name: "Mousa Altamari",
+          number: 10,
+          position: "FW",
+          x: 85,
+          y: 25,
+          captain: true
+        },
+        {
+          id: "jor7",
+          name: "Mohammad Abuzraiq",
+          number: 7,
+          position: "FW",
+          x: 15,
+          y: 25
+        },
+        {
+          id: "jor9",
+          name: "Ali Olwan",
+          number: 9,
+          position: "FW",
+          x: 50,
+          y: 12
+        }
       ]
     },
     stadiumName: "Est\xE1dio da Ba\xEDa de S\xE3o Francisco",
@@ -25877,7 +26047,7 @@ var matches_default = [
     status: "FINISHED",
     score: {
       teamA: 3,
-      teamB: 1
+      teamB: 2
     },
     countdownTargetSeconds: 0,
     broadcasters: []
@@ -25892,17 +26062,95 @@ var matches_default = [
       secondaryColor: "#ffffff",
       group: "Grupo B",
       lineup: [
-        { id: "qat22", name: "Meshaal Barsham", number: 22, position: "GK", x: 50, y: 88 },
-        { id: "qat14", name: "Homam Ahmed", number: 14, position: "DF", x: 15, y: 70 },
-        { id: "qat5", name: "Jassem Gaber", number: 5, position: "DF", x: 38, y: 75 },
-        { id: "qat16", name: "Boualem Khoukhi", number: 16, position: "DF", x: 62, y: 75 },
-        { id: "qat2", name: "Pedro Miguel", number: 2, position: "DF", x: 85, y: 70 },
-        { id: "qat6", name: "Abdulaziz Hatem", number: 6, position: "MF", x: 35, y: 50 },
-        { id: "qat23", name: "A. Madibo", number: 23, position: "MF", x: 50, y: 52 },
-        { id: "qat12", name: "Karim Boudiaf", number: 12, position: "MF", x: 65, y: 50 },
-        { id: "qat11", name: "Afif", number: 11, position: "FW", x: 85, y: 25 },
-        { id: "qat10", name: "Hassan Alhaydos", number: 10, position: "FW", x: 15, y: 25, captain: true },
-        { id: "qat19", name: "Almoez Ali", number: 19, position: "FW", x: 50, y: 12 }
+        {
+          id: "qat22",
+          name: "Meshaal Barsham",
+          number: 22,
+          position: "GK",
+          x: 50,
+          y: 88
+        },
+        {
+          id: "qat14",
+          name: "Homam Ahmed",
+          number: 14,
+          position: "DF",
+          x: 15,
+          y: 70
+        },
+        {
+          id: "qat5",
+          name: "Jassem Gaber",
+          number: 5,
+          position: "DF",
+          x: 38,
+          y: 75
+        },
+        {
+          id: "qat16",
+          name: "Boualem Khoukhi",
+          number: 16,
+          position: "DF",
+          x: 62,
+          y: 75
+        },
+        {
+          id: "qat2",
+          name: "Pedro Miguel",
+          number: 2,
+          position: "DF",
+          x: 85,
+          y: 70
+        },
+        {
+          id: "qat6",
+          name: "Abdulaziz Hatem",
+          number: 6,
+          position: "MF",
+          x: 35,
+          y: 50
+        },
+        {
+          id: "qat23",
+          name: "A. Madibo",
+          number: 23,
+          position: "MF",
+          x: 50,
+          y: 52
+        },
+        {
+          id: "qat12",
+          name: "Karim Boudiaf",
+          number: 12,
+          position: "MF",
+          x: 65,
+          y: 50
+        },
+        {
+          id: "qat11",
+          name: "Afif",
+          number: 11,
+          position: "FW",
+          x: 85,
+          y: 25
+        },
+        {
+          id: "qat10",
+          name: "Hassan Alhaydos",
+          number: 10,
+          position: "FW",
+          x: 15,
+          y: 25,
+          captain: true
+        },
+        {
+          id: "qat19",
+          name: "Almoez Ali",
+          number: 19,
+          position: "FW",
+          x: 50,
+          y: 12
+        }
       ]
     },
     teamB: {
@@ -25913,17 +26161,95 @@ var matches_default = [
       secondaryColor: "#ffffff",
       group: "Grupo B",
       lineup: [
-        { id: "sui1", name: "Kobel", number: 1, position: "GK", x: 50, y: 88 },
-        { id: "sui13", name: "Rodriguez", number: 13, position: "DF", x: 15, y: 70 },
-        { id: "sui4", name: "Elvedi", number: 4, position: "DF", x: 38, y: 75 },
-        { id: "sui5", name: "Akanji", number: 5, position: "DF", x: 62, y: 75 },
-        { id: "sui3", name: "Widmer", number: 3, position: "DF", x: 85, y: 70 },
-        { id: "sui10", name: "Xhaka", number: 10, position: "MF", x: 35, y: 48, captain: true },
-        { id: "sui8", name: "Freuler", number: 8, position: "MF", x: 65, y: 48 },
-        { id: "sui17", name: "Vargas", number: 17, position: "FW", x: 15, y: 26 },
-        { id: "sui20", name: "Michel Aebischer", number: 20, position: "MF", x: 50, y: 32 },
-        { id: "sui11", name: "Ndoye", number: 11, position: "FW", x: 85, y: 26 },
-        { id: "sui7", name: "Embolo", number: 7, position: "FW", x: 50, y: 12 }
+        {
+          id: "sui1",
+          name: "Kobel",
+          number: 1,
+          position: "GK",
+          x: 50,
+          y: 88
+        },
+        {
+          id: "sui13",
+          name: "Rodriguez",
+          number: 13,
+          position: "DF",
+          x: 15,
+          y: 70
+        },
+        {
+          id: "sui4",
+          name: "Elvedi",
+          number: 4,
+          position: "DF",
+          x: 38,
+          y: 75
+        },
+        {
+          id: "sui5",
+          name: "Akanji",
+          number: 5,
+          position: "DF",
+          x: 62,
+          y: 75
+        },
+        {
+          id: "sui3",
+          name: "Widmer",
+          number: 3,
+          position: "DF",
+          x: 85,
+          y: 70
+        },
+        {
+          id: "sui10",
+          name: "Xhaka",
+          number: 10,
+          position: "MF",
+          x: 35,
+          y: 48,
+          captain: true
+        },
+        {
+          id: "sui8",
+          name: "Freuler",
+          number: 8,
+          position: "MF",
+          x: 65,
+          y: 48
+        },
+        {
+          id: "sui17",
+          name: "Vargas",
+          number: 17,
+          position: "FW",
+          x: 15,
+          y: 26
+        },
+        {
+          id: "sui20",
+          name: "Michel Aebischer",
+          number: 20,
+          position: "MF",
+          x: 50,
+          y: 32
+        },
+        {
+          id: "sui11",
+          name: "Ndoye",
+          number: 11,
+          position: "FW",
+          x: 85,
+          y: 26
+        },
+        {
+          id: "sui7",
+          name: "Embolo",
+          number: 7,
+          position: "FW",
+          x: 50,
+          y: 12
+        }
       ]
     },
     stadiumName: "Est\xE1dio da Ba\xEDa de S\xE3o Francisco",
