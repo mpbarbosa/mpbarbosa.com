@@ -146,7 +146,8 @@ var squads_default = {
     dateOfBirth: "1988-08-31",
     height: 183,
     socials: {
-      instagram: "d_ospina1"
+      instagram: "d_ospina1",
+      instagramFollowers: 6e6
     }
   },
   "228912": {
@@ -666,7 +667,11 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/5617bc24-ff35-493b-95f2-22239373414a/ARIAS-Santiago_315614",
     dateOfBirth: "1992-01-13",
     height: 177,
-    instagramPostUrl: "https://www.instagram.com/p/DaJDsdulTLD/"
+    instagramPostUrl: "https://www.instagram.com/p/DaJDsdulTLD/",
+    socials: {
+      instagram: "santiagoarias13",
+      instagramFollowers: 2e6
+    }
   },
   "316002": {
     fifaId: "316002",
@@ -1443,7 +1448,11 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/ab12e549-2406-4bbb-a420-0f9ccef2c09e/QUINTERO-Juan_356704",
     dateOfBirth: "1993-01-18",
-    height: 167
+    height: 167,
+    socials: {
+      instagram: "juanferquinterop",
+      instagramFollowers: 4e6
+    }
   },
   "356731": {
     fifaId: "356731",
@@ -1661,7 +1670,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/0a3646b6-8b61-4004-a460-0aad23a8ff36/VARGAS-Camilo_360642",
     dateOfBirth: "1989-03-09",
-    height: 183
+    height: 183,
+    socials: {
+      instagram: "kmilov12"
+    }
   },
   "363863": {
     fifaId: "363863",
@@ -1956,7 +1968,10 @@ var squads_default = {
     instagramPostUrls: [
       "https://www.instagram.com/p/DZ-tQWJHEVV/",
       "https://www.instagram.com/p/DaJEwFgHIia/"
-    ]
+    ],
+    socials: {
+      instagram: "jhoncordoba9"
+    }
   },
   "369744": {
     fifaId: "369744",
@@ -2690,7 +2705,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/b7af4c7c-edc7-483d-a804-068ea864840e/MONTERO-Alvaro_385998",
     dateOfBirth: "1995-03-29",
-    height: 201
+    height: 201,
+    socials: {
+      instagram: "alvaromontero1"
+    }
   },
   "386013": {
     fifaId: "386013",
@@ -2708,7 +2726,11 @@ var squads_default = {
       "https://www.instagram.com/p/DZvHM-qkWaE/",
       "https://www.instagram.com/p/DaJLG7okSDS/",
       "https://www.instagram.com/p/DaYUXk3kcLF/"
-    ]
+    ],
+    socials: {
+      instagram: "daosanchez13",
+      instagramFollowers: 2e6
+    }
   },
   "386339": {
     fifaId: "386339",
@@ -3406,7 +3428,10 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/e3774306-ac78-44ee-954b-9f4328a035c1/MACHADO-Deiver_394376",
     dateOfBirth: "1993-09-02",
     height: 173,
-    instagramPostUrl: "https://www.instagram.com/p/DaJTFEOD0l_/"
+    instagramPostUrl: "https://www.instagram.com/p/DaJTFEOD0l_/",
+    socials: {
+      instagram: "machadodeiver"
+    }
   },
   "394456": {
     fifaId: "394456",
@@ -3436,7 +3461,11 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/efd8e0c0-6d52-43f0-95ce-b9c258914603/MOJICA-Johan_394500",
     dateOfBirth: "1992-08-21",
     height: 184,
-    instagramPostUrl: "https://www.instagram.com/p/DZoEVNJlMF4/"
+    instagramPostUrl: "https://www.instagram.com/p/DZoEVNJlMF4/",
+    socials: {
+      instagram: "johanmojica",
+      instagramFollowers: 86e4
+    }
   },
   "394824": {
     fifaId: "394824",
@@ -3791,7 +3820,11 @@ var squads_default = {
     instagramPostUrls: [
       "https://www.instagram.com/p/DZvjQEXD_C5/",
       "https://www.instagram.com/p/DaYOudOFTjm/"
-    ]
+    ],
+    socials: {
+      instagram: "jeffersonlerma",
+      instagramFollowers: 4e5
+    }
   },
   "395552": {
     fifaId: "395552",
@@ -3803,7 +3836,11 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/908d10ae-e26e-4937-82b2-6baa54784ac7/MINA-Yerry_395552",
     dateOfBirth: "1994-09-23",
-    height: 195
+    height: 195,
+    socials: {
+      instagram: "yerrymina",
+      instagramFollowers: 3e6
+    }
   },
   "395755": {
     fifaId: "395755",
@@ -5444,7 +5481,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/cd3d4afc-5780-444f-80ca-fc55b53a5329/CAMPAZ-Leandro_405755",
     dateOfBirth: "2000-05-24",
-    height: 166
+    height: 166,
+    socials: {
+      instagram: "bicho08_"
+    }
   },
   "405841": {
     fifaId: "405841",
@@ -6364,7 +6404,11 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/a54cc361-8a38-4340-bbaa-1dab41b73626/HERNANDEZ-Cucho_418881",
     dateOfBirth: "1999-04-20",
     height: 176,
-    instagramPostUrl: "https://www.instagram.com/p/DZu1K3MjqrI/"
+    instagramPostUrl: "https://www.instagram.com/p/DZu1K3MjqrI/",
+    socials: {
+      instagram: "cuchohernandez",
+      instagramFollowers: 71e4
+    }
   },
   "418963": {
     fifaId: "418963",
@@ -7509,7 +7553,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/52a87992-08b2-4124-b02b-d25bd6e83c09/CARRASCAL-Jorge_425580",
     dateOfBirth: "1998-05-25",
-    height: 180
+    height: 180,
+    socials: {
+      instagram: "carrascall"
+    }
   },
   "425607": {
     fifaId: "425607",
@@ -7637,7 +7684,8 @@ var squads_default = {
     dateOfBirth: "1997-01-13",
     height: 179,
     socials: {
-      instagram: "luisdiaz19_"
+      instagram: "luisdiaz19_",
+      instagramFollowers: 9e6
     },
     instagramPostUrls: [
       "https://www.instagram.com/p/DaZcgqMFJ0n/",
@@ -7656,7 +7704,11 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/898b7742-30e2-4b72-8470-dbcdf5d5e058/SUAREZ-Luis_428905",
     dateOfBirth: "1997-12-02",
     height: 179,
-    instagramPostUrl: "https://www.instagram.com/p/DaYIt4vDkYt/"
+    instagramPostUrl: "https://www.instagram.com/p/DaYIt4vDkYt/",
+    socials: {
+      instagram: "luissuarez.26",
+      instagramFollowers: 36e4
+    }
   },
   "429063": {
     fifaId: "429063",
@@ -8820,7 +8872,11 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/597b88e8-d3ab-4f1f-9ba5-c031478769d3/MUNOZ-Daniel_431200",
     dateOfBirth: "1996-05-26",
     height: 180,
-    instagramPostUrl: "https://www.instagram.com/p/DZxjUNxnLBZ/"
+    instagramPostUrl: "https://www.instagram.com/p/DZxjUNxnLBZ/",
+    socials: {
+      instagram: "daniel.chitiva",
+      instagramFollowers: 1e6
+    }
   },
   "431202": {
     fifaId: "431202",
@@ -10606,7 +10662,10 @@ var squads_default = {
     instagramPostUrls: [
       "https://www.instagram.com/p/DaOBrUREYmX/",
       "https://www.instagram.com/p/DaX_T1GgiwN/"
-    ]
+    ],
+    socials: {
+      instagram: "jhonlucumi26"
+    }
   },
   "441623": {
     fifaId: "441623",
@@ -12428,7 +12487,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/818f768e-54da-4c5f-88ef-8f596240c2b5/PUERTA-Gustavo_463902",
     dateOfBirth: "2003-07-23",
-    height: 173
+    height: 173,
+    socials: {
+      instagram: "gustavo_puerta_10"
+    }
   },
   "464055": {
     fifaId: "464055",
@@ -13030,7 +13092,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/0ba9e182-1726-4513-ab33-e6224e61815a/CASTANO-Kevin_470759",
     dateOfBirth: "2000-09-29",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "kevincasta5"
+    }
   },
   "470760": {
     fifaId: "470760",
@@ -13098,7 +13163,11 @@ var squads_default = {
       "https://www.instagram.com/p/DaYs4dikXig/",
       "https://www.instagram.com/p/DZ-umdhkWzS/",
       "https://www.instagram.com/p/Dad-GeJDpMQ/"
-    ]
+    ],
+    socials: {
+      instagram: "richardrios.m",
+      instagramFollowers: 6e6
+    }
   },
   "473062": {
     fifaId: "473062",
@@ -13204,7 +13273,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/bbf850f0-89dd-4ccc-979d-bb7b23e769b1/DITTA-Willer_476345",
     dateOfBirth: "1998-01-23",
-    height: 179
+    height: 179,
+    socials: {
+      instagram: "willerditta4"
+    }
   },
   "476348": {
     fifaId: "476348",
@@ -16151,7 +16223,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/80d3008e-fc71-4841-bedb-fbb9e0bfe3b8/PORTILLA-Juan_489849",
     dateOfBirth: "1998-09-12",
-    height: 181
+    height: 181,
+    socials: {
+      instagram: "laporti10"
+    }
   },
   "491166": {
     fifaId: "491166",
@@ -16288,7 +16363,10 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/300b07da-6c9b-4607-a30d-11a11614e6d8/GOMEZ-Andres_492189",
     dateOfBirth: "2002-09-12",
-    height: 170
+    height: 170,
+    socials: {
+      instagram: "andresgmz_11"
+    }
   },
   "492315": {
     fifaId: "492315",
@@ -27207,7 +27285,20 @@ var KNOCKOUT_RESULTS = {
   // #92 · Oitavas · 05/07/2026 — México 2×3 Inglaterra (Jude Bellingham 36' e 38', Harry Kane 60'
   // p/ ING; Julian Quiñones 42' e Raúl Jiménez 69' p/ MEX; Jarell Quansah expulso aos 54' p/ ING).
   // Inglaterra classificada às Quartas mesmo com um a menos; alimenta a #99 (slot W92). México eliminado.
-  92: { status: "FINISHED", score: { teamA: 2, teamB: 3 } }
+  92: { status: "FINISHED", score: { teamA: 2, teamB: 3 } },
+  // #93 · Oitavas · Dallas Stadium · 06/07/2026 — Portugal 0×1 Espanha (Mikel Merino aos 90+1').
+  // Espanha classificada às Quartas nos acréscimos; alimenta a #98 (slot W93). Portugal (Cristiano
+  // Ronaldo) eliminado.
+  93: { status: "FINISHED", score: { teamA: 0, teamB: 1 } },
+  // #94 · Oitavas · Seattle Stadium · 06/07/2026 — Estados Unidos 1×4 Bélgica (Charles De Ketelaere
+  // 1' e 33', Hans Vanaken 57', Romelu Lukaku 90+3' p/ BEL; Malik Tillman 31' p/ EUA). Bélgica
+  // classificada às Quartas com autoridade; alimenta a #98 (slot W94). EUA eliminados.
+  94: { status: "FINISHED", score: { teamA: 1, teamB: 4 } },
+  // #95 · Oitavas · Atlanta Stadium · 07/07/2026 — Argentina 3×2 Egito (Yasser Ibrahim 15' e Mostafa
+  // Zico 67' p/ EGY; Cristian Romero 79', Lionel Messi 83' e Enzo Fernández 90+2' p/ ARG; um egípcio
+  // expulso aos 90+4'). Argentina virou de 0×2 e se classificou às Quartas; alimenta a #100 (slot
+  // W95). Egito eliminado.
+  95: { status: "FINISHED", score: { teamA: 3, teamB: 2 } }
 };
 
 // src/i18n/catalogs/core.ts
