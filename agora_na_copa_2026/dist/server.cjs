@@ -191,7 +191,8 @@ var squads_default = {
       "https://www.instagram.com/p/DZ-s34VkfDU/",
       "https://www.instagram.com/p/DaWg1ZzgILy/",
       "https://www.instagram.com/p/DaVH_x6j8ih/",
-      "https://www.instagram.com/p/DaYZ09gFQqx/"
+      "https://www.instagram.com/p/DaYZ09gFQqx/",
+      "https://www.instagram.com/p/DagL8gfkXx9/"
     ],
     worldCupNote: "## Leitura\nMessi segue impar\xE1vel e artilheiro isolado do Mundial. Depois de fechar a fase de grupos com 6 gols, o capit\xE3o abriu o placar nos 16-avos e chegou a 7 \u2014 a Argentina avan\xE7a \xE0s oitavas cada vez mais favorita ao t\xEDtulo, com um cl\xE1ssico contra o Egito de Salah pela frente.\n## Desempenho\nHat-trick na estreia (3 a 0 na Arg\xE9lia, aos 17, 60 e 76), dois sobre a \xC1ustria (2 a 0, aos 38 e 90+5) e o gol que fechou o 3 a 1 sobre a Jord\xE2nia (aos 80, tendo entrado no 2\xBA tempo). Nos 16-avos, marcou aos 29 o gol que abriu o dur\xEDssimo 3 a 2 sobre Cabo Verde \u2014 que levou a decis\xE3o \xE0 prorroga\xE7\xE3o (2 a 2 com Sidny Lopes Cabral aos 103) at\xE9 um gol contra de Diney Borges aos 111 carimbar a vaga.\n## N\xFAmeros\nJ4 \xB7 7 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina ganhou o Grupo J com 9 pontos (100%, SG +7) e passou pelos 16-avos; nas oitavas encara o Egito.",
     worldCupNoteUpdatedAt: "2026-07-03T22:00:00.000Z",
@@ -658,7 +659,8 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/5617bc24-ff35-493b-95f2-22239373414a/ARIAS-Santiago_315614",
     dateOfBirth: "1992-01-13",
-    height: 177
+    height: 177,
+    instagramPostUrl: "https://www.instagram.com/p/DaJDsdulTLD/"
   },
   "316002": {
     fifaId: "316002",
@@ -675,7 +677,10 @@ var squads_default = {
       instagram: "davidalaba",
       wikipedia: "https://pt.wikipedia.org/wiki/David_Alaba"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DaV3F8GjL3A/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaV3F8GjL3A/",
+      "https://www.instagram.com/p/DZrcqyKjLyn/"
+    ]
   },
   "318647": {
     fifaId: "318647",
@@ -1310,7 +1315,8 @@ var squads_default = {
     socials: {
       instagram: "sadiomaneofficiel",
       wikipedia: "https://pt.wikipedia.org/wiki/Sadio_Man%C3%A9"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZ_xj3-FRJv/"
   },
   "354861": {
     fifaId: "354861",
@@ -2694,7 +2700,8 @@ var squads_default = {
     instagramPostUrls: [
       "https://www.instagram.com/p/DZ--LJTEZQF/",
       "https://www.instagram.com/p/DZvHM-qkWaE/",
-      "https://www.instagram.com/p/DaJLG7okSDS/"
+      "https://www.instagram.com/p/DaJLG7okSDS/",
+      "https://www.instagram.com/p/DaYUXk3kcLF/"
     ]
   },
   "386339": {
@@ -7395,7 +7402,8 @@ var squads_default = {
     },
     instagramPostUrls: [
       "https://www.instagram.com/p/DZ0AnOMiCAy/",
-      "https://www.instagram.com/p/DadflBEmwyP/"
+      "https://www.instagram.com/p/DadflBEmwyP/",
+      "https://www.instagram.com/p/DaN9kUJDq-g/"
     ]
   },
   "424081": {
@@ -7460,7 +7468,8 @@ var squads_default = {
       wikipedia: "https://pt.wikipedia.org/wiki/Mat%C3%ADas_Galarza"
     },
     dateOfBirth: "2002-02-11",
-    height: 175
+    height: 175,
+    instagramPostUrl: "https://www.instagram.com/p/DafqoZmkfRr/"
   },
   "424556": {
     fifaId: "424556",
@@ -7614,7 +7623,14 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/e1e5fb3a-67cb-4e0d-9a70-95b7cc6d5ebf/DIAZ-Luis_428886",
     dateOfBirth: "1997-01-13",
     height: 179,
-    instagramPostUrl: "https://www.instagram.com/p/DaZcgqMFJ0n/"
+    socials: {
+      instagram: "luisdiaz19_"
+    },
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaZcgqMFJ0n/",
+      "https://www.instagram.com/p/DaJIk4WGk7n/",
+      "https://www.instagram.com/p/DZ-5Cl3mtXx/"
+    ]
   },
   "428905": {
     fifaId: "428905",
@@ -7678,7 +7694,8 @@ var squads_default = {
     height: 177,
     instagramPostUrls: [
       "https://www.instagram.com/p/DaQoHc7EV2K/",
-      "https://www.instagram.com/p/Dac17_ajMgf/"
+      "https://www.instagram.com/p/Dac17_ajMgf/",
+      "https://www.instagram.com/p/DaQcR-DikI3/"
     ]
   },
   "429392": {
@@ -8177,7 +8194,8 @@ var squads_default = {
     height: 180,
     socials: {
       wikipedia: "https://en.wikipedia.org/wiki/Emam_Ashour"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaWhECbiHxV/"
   },
   "430512": {
     fifaId: "430512",
@@ -8328,7 +8346,8 @@ var squads_default = {
       instagram: "alemacallister",
       instagramFollowers: 9e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Alexis_Mac_Allister"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DagORkXvh4j/"
   },
   "430631": {
     fifaId: "430631",
@@ -8345,7 +8364,8 @@ var squads_default = {
       instagram: "nicoigonzalez",
       instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Nicol%C3%A1s_Gonz%C3%A1lez"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DagORkXvh4j/"
   },
   "430657": {
     fifaId: "430657",
@@ -9164,7 +9184,8 @@ var squads_default = {
       instagram: "declanrice",
       instagramFollowers: 7e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Declan_Rice"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaI9svcDcPA/"
   },
   "433118": {
     fifaId: "433118",
@@ -12566,7 +12587,8 @@ var squads_default = {
     socials: {
       instagram: "briangutierrez_11",
       wikipedia: "https://en.wikipedia.org/wiki/Brian_Guti%C3%A9rrez"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaW_b4MDhgD/"
   },
   "464542": {
     fifaId: "464542",
@@ -15419,7 +15441,8 @@ var squads_default = {
     socials: {
       instagram: "manu_kne",
       wikipedia: "https://pt.wikipedia.org/wiki/Manu_Kon%C3%A9"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaZ2ufujgg9/"
   },
   "485740": {
     fifaId: "485740",
@@ -17564,7 +17587,8 @@ var squads_default = {
     socials: {
       instagram: "djedspence",
       wikipedia: "https://en.wikipedia.org/wiki/Djed_Spence"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaSHOOOjkiO/"
   },
   "506335": {
     fifaId: "506335",
