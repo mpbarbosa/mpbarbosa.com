@@ -95,7 +95,9 @@ var squads_default = {
       "https://www.instagram.com/p/DZ8ZcOkiD9h/",
       "https://www.instagram.com/p/DaUJJ9ZCPyJ/",
       "https://www.instagram.com/p/DaZSbgnkYGr/",
-      "https://www.instagram.com/p/Dad23YiHfJq/"
+      "https://www.instagram.com/p/Dad23YiHfJq/",
+      "https://www.instagram.com/p/Daeg1GKEcvP/",
+      "https://www.instagram.com/p/DaeXqQqFF50/"
     ]
   },
   "215285": {
@@ -1155,7 +1157,8 @@ var squads_default = {
     socials: {
       instagram: "kkoulibaly26",
       wikipedia: "https://pt.wikipedia.org/wiki/Kalidou_Koulibaly"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZsVwl2DmfI/"
   },
   "339987": {
     fifaId: "339987",
@@ -1512,7 +1515,8 @@ var squads_default = {
       instagram: "romelulukaku",
       instagramFollowers: 9e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Romelu_Lukaku"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaRxy_VCLG9/"
   },
   "358120": {
     fifaId: "358120",
@@ -1935,7 +1939,11 @@ var squads_default = {
     club: "",
     pictureUrl: "https://digitalhub.fifa.com/transform/549e0eab-ae8f-4f4b-8d9b-36cbeaae716c/CORDOBA-Jhon_369530",
     dateOfBirth: "1993-05-11",
-    height: 186
+    height: 186,
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZ-tQWJHEVV/",
+      "https://www.instagram.com/p/DaJEwFgHIia/"
+    ]
   },
   "369744": {
     fifaId: "369744",
@@ -2682,7 +2690,11 @@ var squads_default = {
     pictureUrl: "https://digitalhub.fifa.com/transform/ce6f352e-52e7-4265-9bc9-d482292fe4fb/SANCHEZ-Davinson_386013",
     dateOfBirth: "1996-06-12",
     height: 188,
-    instagramPostUrl: "https://www.instagram.com/p/DZ--LJTEZQF/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZ--LJTEZQF/",
+      "https://www.instagram.com/p/DZvHM-qkWaE/",
+      "https://www.instagram.com/p/DaJLG7okSDS/"
+    ]
   },
   "386339": {
     fifaId: "386339",
@@ -4857,9 +4869,10 @@ var squads_default = {
     dateOfBirth: "1997-01-09",
     height: 194,
     socials: {
-      instagram: "sofiane_diop",
+      instagram: "issa_diop_05",
       wikipedia: "https://pt.wikipedia.org/wiki/Issa_Diop"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaY8vh1CE6l/"
   },
   "403090": {
     fifaId: "403090",
@@ -5062,7 +5075,8 @@ var squads_default = {
     socials: {
       instagram: "piojo.13",
       wikipedia: "https://pt.wikipedia.org/wiki/Roberto_Alvarado"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaUizIZkXi1/"
   },
   "403596": {
     fifaId: "403596",
@@ -5777,7 +5791,9 @@ var squads_default = {
     height: 191,
     socials: {
       instagram: "m.elshenawy1"
-    }
+    },
+    worldCupNote: "## Leitura\nO pared\xE3o da zebra eg\xEDpcia. Aos 37 anos, Mohamed Elshenawy \u2014 camisa 1 e goleiro do Al Ahly \u2014 \xE9 a seguran\xE7a sob as traves da campanha surpreendente do Egito, que passou como 2\xBA do Grupo G e eliminou a Austr\xE1lia nos p\xEAnaltis para seguir vivo no mata-mata. Veterano e experiente, cresceu justamente na hora da decis\xE3o.\n## Desempenho\nNa fase de grupos sofreu um gol em cada jogo \u2014 o 1 a 1 com a B\xE9lgica, a vit\xF3ria por 3 a 1 sobre a Nova Zel\xE2ndia e o 1 a 1 com o Ir\xE3 \u2014, saldo suficiente para garantir a vaga em segundo do Grupo G. Nos 16-avos, contra a Austr\xE1lia, o Egito abriu com Emam Ashour (13'), levou o empate num gol contra de Mohamed Hany (55') e segurou o 1 a 1 at\xE9 a prorroga\xE7\xE3o. Na disputa por p\xEAnaltis, com Elshenawy no gol, os eg\xEDpcios converteram com Saber, Rabia, Salah e Abdelmaguid e levaram a melhor para avan\xE7ar.\n## N\xFAmeros\nJ4 \xB7 4 gols sofridos \xB7 0 jogos sem sofrer \xB7 2\xBA do Grupo G (5 pts). O Egito eliminou a Austr\xE1lia nos p\xEAnaltis (ap\xF3s 1 a 1) e segue no mata-mata.",
+    worldCupNoteUpdatedAt: "2026-07-03T18:00:00.000Z"
   },
   "408950": {
     fifaId: "408950",
@@ -6998,7 +7014,8 @@ var squads_default = {
     instagramPostUrls: [
       "https://www.instagram.com/p/DaONQazv3q_/",
       "https://www.instagram.com/reel/DZ7ymbXvMdt/",
-      "https://www.instagram.com/p/DadaOISG5pF/"
+      "https://www.instagram.com/p/DadaOISG5pF/",
+      "https://www.instagram.com/p/DabZw1OPJsQ/"
     ]
   },
   "419654": {
@@ -7374,7 +7391,11 @@ var squads_default = {
     socials: {
       instagram: "asedi_",
       wikipedia: "https://en.wikipedia.org/wiki/Anass_Salah-Eddine"
-    }
+    },
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZ0AnOMiCAy/",
+      "https://www.instagram.com/p/DadflBEmwyP/"
+    ]
   },
   "424081": {
     fifaId: "424081",
@@ -7654,7 +7675,10 @@ var squads_default = {
     },
     dateOfBirth: "1997-03-24",
     height: 177,
-    instagramPostUrl: "https://www.instagram.com/p/DaQoHc7EV2K/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaQoHc7EV2K/",
+      "https://www.instagram.com/p/Dac17_ajMgf/"
+    ]
   },
   "429392": {
     fifaId: "429392",
@@ -9026,7 +9050,10 @@ var squads_default = {
       instagram: "bremer",
       wikipedia: "https://pt.wikipedia.org/wiki/Bremer"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DaBgqbtgOBb/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaBgqbtgOBb/",
+      "https://www.instagram.com/p/Daf2NX6jKMI/"
+    ]
   },
   "433066": {
     fifaId: "433066",
@@ -10262,7 +10289,10 @@ var squads_default = {
       instagram: "julioenciso.33",
       wikipedia: "https://pt.wikipedia.org/wiki/Julio_Enciso"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DZ0VvuHlEUn/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZ0VvuHlEUn/",
+      "https://www.instagram.com/p/DZikPX_FHtf/"
+    ]
   },
   "441236": {
     fifaId: "441236",
@@ -11286,7 +11316,10 @@ var squads_default = {
       instagramFollowers: 42e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Jude_Bellingham"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DacKaQHAnDq/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DacKaQHAnDq/",
+      "https://www.instagram.com/p/Dab4z1vjC9l/"
+    ]
   },
   "448203": {
     fifaId: "448203",
@@ -11484,7 +11517,8 @@ var squads_default = {
     socials: {
       instagram: "hansvanaken20",
       wikipedia: "https://pt.wikipedia.org/wiki/Hans_Vanaken"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaejTmuCB40/"
   },
   "448346": {
     fifaId: "448346",
@@ -11520,7 +11554,10 @@ var squads_default = {
     },
     worldCupNote: "## Leitura\nFicou em campo at\xE9 a prorroga\xE7\xE3o da virada. Leandro Trossard foi titular nos 16-avos contra o Senegal e atuou at\xE9 os 109', quando a B\xE9lgica ainda buscava o improv\xE1vel \u2014 e conseguiu: venceu por 3 a 2 na prorroga\xE7\xE3o e avan\xE7ou \xE0s oitavas de final.\n## Desempenho\nExplodiu na fase de grupos com dois gols sobre a Nova Zel\xE2ndia, que deram a ponta do Grupo G. Nos 16-avos, come\xE7ou jogando diante do Senegal e saiu aos 109' (entrou Onana), sem marcar num jogo dram\xE1tico: a B\xE9lgica saiu de 0 a 2 (Diarra 24', Sarr 51') para vencer com Lukaku (86') e Tielemans (89' e 120+5').\n## N\xFAmeros\nJ4 \xB7 2 gols \xB7 0 cart\xF5es \xB7 B\xE9lgica classificada \xE0s oitavas de final, onde encara os Estados Unidos. Trossard seguiu titular na campanha do mata-mata.",
     worldCupNoteUpdatedAt: "2026-07-01T20:00:00.000Z",
-    instagramPostUrl: "https://www.instagram.com/p/DYvHLw0jIbg/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DYvHLw0jIbg/",
+      "https://www.instagram.com/p/DaSWjukjJm9/"
+    ]
   },
   "448360": {
     fifaId: "448360",
@@ -11553,7 +11590,8 @@ var squads_default = {
     socials: {
       instagram: "charlesdeketelaere",
       wikipedia: "https://pt.wikipedia.org/wiki/Charles_De_Ketelaere"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaTCMfPFCJF/"
   },
   "448363": {
     fifaId: "448363",
@@ -11585,7 +11623,8 @@ var squads_default = {
     socials: {
       instagram: "its_onana",
       wikipedia: "https://pt.wikipedia.org/wiki/Amadou_Onana"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaTp8bMEfRe/"
   },
   "448366": {
     fifaId: "448366",
@@ -13016,7 +13055,9 @@ var squads_default = {
     height: 185,
     instagramPostUrls: [
       "https://www.instagram.com/p/DaYbvXvlvSm/",
-      "https://www.instagram.com/p/DaI9E3EkYDt/"
+      "https://www.instagram.com/p/DaI9E3EkYDt/",
+      "https://www.instagram.com/p/DaYs4dikXig/",
+      "https://www.instagram.com/p/DZ-umdhkWzS/"
     ]
   },
   "473062": {
@@ -13662,7 +13703,8 @@ var squads_default = {
     socials: {
       instagram: "caceres_j4",
       wikipedia: "https://pt.wikipedia.org/wiki/Juan_Jos%C3%A9_C%C3%A1ceres"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/Daan3inFoR5/"
   },
   "479781": {
     fifaId: "479781",
@@ -16453,7 +16495,11 @@ var squads_default = {
     socials: {
       instagram: "chemsdinetalbi",
       wikipedia: "https://en.wikipedia.org/wiki/Chemsdine_Talbi"
-    }
+    },
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DZy-sOgjdiV/",
+      "https://www.instagram.com/p/DabdAPGDV1g/"
+    ]
   },
   "494313": {
     fifaId: "494313",
@@ -16468,7 +16514,11 @@ var squads_default = {
     height: 176,
     socials: {
       wikipedia: "https://en.wikipedia.org/wiki/Yannick_Semedo"
-    }
+    },
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaY0cvjgWLF/",
+      "https://www.instagram.com/p/DaGMLIXlNJD/"
+    ]
   },
   "494314": {
     fifaId: "494314",
@@ -16765,7 +16815,8 @@ var squads_default = {
     height: 175,
     socials: {
       instagram: "mauriciomp7"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZiNR0Xkf1Y/"
   },
   "495054": {
     fifaId: "495054",
@@ -29176,15 +29227,21 @@ var dashboardCatalog = {
     "dashboard.kpiLiveHint": "agora",
     "dashboard.kpiUpcoming": "Agendados",
     "dashboard.kpiUpcomingHint": "a disputar",
-    "dashboard.kpiGroupGoals": "Gols (grupos)",
-    "dashboard.kpiGroupGoalsHint": "{value} por jogo",
+    "dashboard.kpiGoals": "Gols",
+    "dashboard.kpiGoalsHint": "{value} por jogo",
     // Legend / phase labels
     "dashboard.phaseGroupStage": "Fase de grupos",
     "dashboard.phaseRoundOf32": "16-avos",
     "dashboard.phaseRoundOf16": "Oitavas",
+    "dashboard.phaseRoundOf8": "Quartas",
+    "dashboard.phaseRoundOf4": "Semis",
+    "dashboard.phaseFinal": "Final",
+    "dashboard.phaseChampion": "Campe\xE3o",
+    "dashboard.phaseFilterAll": "Todas as fases",
+    "dashboard.phaseFilterLabel": "Filtrar por fase",
     // Chart: continents
     "dashboard.chartContinentsTitle": "Sele\xE7\xF5es por continente",
-    "dashboard.chartContinentsSubtitle": "por fase \xB7 {groupStage} grupos \u2192 {roundOf32} 16-avos \u2192 {roundOf16} oitavas",
+    "dashboard.chartContinentsByStage": "por fase",
     // Chart: matches by status
     "dashboard.chartStatusTitle": "Partidas por situa\xE7\xE3o",
     "dashboard.chartStatusSubtitle": "todo o torneio \xB7 grupos + mata-mata",
@@ -29308,15 +29365,21 @@ var dashboardCatalog = {
     "dashboard.kpiLiveHint": "ahora",
     "dashboard.kpiUpcoming": "Programados",
     "dashboard.kpiUpcomingHint": "por disputar",
-    "dashboard.kpiGroupGoals": "Goles (grupos)",
-    "dashboard.kpiGroupGoalsHint": "{value} por partido",
+    "dashboard.kpiGoals": "Goles",
+    "dashboard.kpiGoalsHint": "{value} por partido",
     // Legend / phase labels
     "dashboard.phaseGroupStage": "Fase de grupos",
     "dashboard.phaseRoundOf32": "16-avos",
     "dashboard.phaseRoundOf16": "Octavos",
+    "dashboard.phaseRoundOf8": "Cuartos",
+    "dashboard.phaseRoundOf4": "Semis",
+    "dashboard.phaseFinal": "Final",
+    "dashboard.phaseChampion": "Campe\xF3n",
+    "dashboard.phaseFilterAll": "Todas las fases",
+    "dashboard.phaseFilterLabel": "Filtrar por fase",
     // Chart: continents
     "dashboard.chartContinentsTitle": "Selecciones por continente",
-    "dashboard.chartContinentsSubtitle": "por fase \xB7 {groupStage} grupos \u2192 {roundOf32} 16-avos \u2192 {roundOf16} octavos",
+    "dashboard.chartContinentsByStage": "por fase",
     // Chart: matches by status
     "dashboard.chartStatusTitle": "Partidos por situaci\xF3n",
     "dashboard.chartStatusSubtitle": "todo el torneo \xB7 grupos + eliminatorias",
@@ -29440,15 +29503,21 @@ var dashboardCatalog = {
     "dashboard.kpiLiveHint": "now",
     "dashboard.kpiUpcoming": "Scheduled",
     "dashboard.kpiUpcomingHint": "to be played",
-    "dashboard.kpiGroupGoals": "Goals (groups)",
-    "dashboard.kpiGroupGoalsHint": "{value} per match",
+    "dashboard.kpiGoals": "Goals",
+    "dashboard.kpiGoalsHint": "{value} per match",
     // Legend / phase labels
     "dashboard.phaseGroupStage": "Group Stage",
     "dashboard.phaseRoundOf32": "Round of 32",
     "dashboard.phaseRoundOf16": "Round of 16",
+    "dashboard.phaseRoundOf8": "Round of 8",
+    "dashboard.phaseRoundOf4": "Round of 4",
+    "dashboard.phaseFinal": "Final",
+    "dashboard.phaseChampion": "Champion",
+    "dashboard.phaseFilterAll": "All rounds",
+    "dashboard.phaseFilterLabel": "Filter by round",
     // Chart: continents
     "dashboard.chartContinentsTitle": "Teams by continent",
-    "dashboard.chartContinentsSubtitle": "by stage \xB7 {groupStage} groups \u2192 {roundOf32} Round of 32 \u2192 {roundOf16} Round of 16",
+    "dashboard.chartContinentsByStage": "by stage",
     // Chart: matches by status
     "dashboard.chartStatusTitle": "Matches by status",
     "dashboard.chartStatusSubtitle": "whole tournament \xB7 groups + knockout",
