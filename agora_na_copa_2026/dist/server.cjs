@@ -4124,7 +4124,8 @@ var squads_default = {
       instagram: "odegaard.98",
       instagramFollowers: 7e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Martin_%C3%98degaard"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaRJFX0CF9I/"
   },
   "400721": {
     fifaId: "400721",
@@ -4269,7 +4270,8 @@ var squads_default = {
     socials: {
       instagram: "deniszakaria",
       wikipedia: "https://pt.wikipedia.org/wiki/Denis_Zakaria"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaUnjQhiEfc/"
   },
   "401470": {
     fifaId: "401470",
@@ -8497,7 +8499,10 @@ var squads_default = {
       instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Mikel_Merino"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DaTuP1wj2sd/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaTuP1wj2sd/",
+      "https://www.instagram.com/p/DaFaG47ka6q/"
+    ]
   },
   "430735": {
     fifaId: "430735",
@@ -11531,7 +11536,8 @@ var squads_default = {
     socials: {
       instagram: "brandonmechele",
       wikipedia: "https://en.wikipedia.org/wiki/Brandon_Mechele"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZpt_vllACu/"
   },
   "448362": {
     fifaId: "448362",
