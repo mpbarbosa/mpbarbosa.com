@@ -618,7 +618,8 @@ var squads_default = {
     club: "Sunderland A.F.C.",
     pictureUrl: "https://digitalhub.fifa.com/transform/a6c333cc-3042-4094-9ec0-094479b8ca3a/XHAKA-Granit_311558",
     socials: {
-      instagram: "granit_xhaka",
+      instagram: "granitxhaka",
+      instagramFollowers: 4e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Granit_Xhaka"
     },
     dateOfBirth: "1992-09-27",
@@ -637,6 +638,7 @@ var squads_default = {
     height: 182,
     socials: {
       instagram: "rrodriguez.68",
+      instagramFollowers: 33e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Ricardo_Rodr%C3%ADguez_(futebolista)"
     }
   },
@@ -3410,7 +3412,8 @@ var squads_default = {
     club: "Stade Rennais F.C.",
     pictureUrl: "https://digitalhub.fifa.com/transform/b2483096-041c-489b-a1c5-6d930f380909/EMBOLO-Breel_393480",
     socials: {
-      instagram: "breel.embolo",
+      instagram: "breelembolo97",
+      instagramFollowers: 42e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Breel_Embolo"
     },
     dateOfBirth: "1997-02-14",
@@ -4332,6 +4335,7 @@ var squads_default = {
     height: 189,
     socials: {
       instagram: "deniszakaria",
+      instagramFollowers: 53e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Denis_Zakaria"
     },
     instagramPostUrl: "https://www.instagram.com/p/DaUnjQhiEfc/"
@@ -4462,6 +4466,7 @@ var squads_default = {
     height: 181,
     socials: {
       instagram: "remo_freuler",
+      instagramFollowers: 11e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Remo_Freuler"
     },
     instagramPostUrl: "https://www.instagram.com/p/DaX_T1GgiwN/"
@@ -5277,7 +5282,8 @@ var squads_default = {
     club: "Inter Milan",
     pictureUrl: "https://digitalhub.fifa.com/transform/3a90610e-9f70-434a-b8b0-450a1ea81d75/AKANJI-Manuel_405178",
     socials: {
-      instagram: "akanji.manu",
+      instagram: "manuelobafemiakanji",
+      instagramFollowers: 15e5,
       wikipedia: "https://pt.wikipedia.org/wiki/Manuel_Akanji"
     },
     dateOfBirth: "1995-07-19",
@@ -11007,6 +11013,7 @@ var squads_default = {
     height: 196,
     socials: {
       instagram: "gregorkobel",
+      instagramFollowers: 62e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Gregor_Kobel"
     }
   },
@@ -11036,7 +11043,8 @@ var squads_default = {
     club: "OGC Nice",
     pictureUrl: "https://digitalhub.fifa.com/transform/b536dbbe-88a2-4caf-97c0-6baac25c43fe/NDOYE-Dan_448114",
     socials: {
-      instagram: "dandan_ndoye",
+      instagram: "danndoye10",
+      instagramFollowers: 17e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Dan_Ndoye"
     },
     dateOfBirth: "2000-10-25",
@@ -11055,6 +11063,7 @@ var squads_default = {
     height: 181,
     socials: {
       instagram: "ardonjashari",
+      instagramFollowers: 19e4,
       wikipedia: "https://en.wikipedia.org/wiki/Ardon_Jashari"
     }
   },
@@ -11084,7 +11093,8 @@ var squads_default = {
     club: "FC Basel",
     pictureUrl: "https://digitalhub.fifa.com/transform/dd8abcd7-7775-4f67-9e25-eaa6e7cb2b97/OKAFOR-Noah_448127",
     socials: {
-      instagram: "noah.okafor",
+      instagram: "noah.arinze",
+      instagramFollowers: 1e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Noah_Okafor"
     },
     dateOfBirth: "2000-05-24",
@@ -11115,7 +11125,8 @@ var squads_default = {
     club: "Sevilla FC",
     pictureUrl: "https://digitalhub.fifa.com/transform/625f7ce0-81a9-4bab-9b18-c9ec395b5096/VARGAS-Ruben_448131",
     socials: {
-      instagram: "rubenvargas11",
+      instagram: "iamrubenvargas",
+      instagramFollowers: 13e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Rub%C3%A9n_Vargas"
     },
     dateOfBirth: "1998-08-05",
@@ -17327,7 +17338,7 @@ var squads_default = {
     club: "SC Freiburg",
     pictureUrl: "https://digitalhub.fifa.com/transform/a0cb9413-32ea-4b8f-9801-55474cb12b77/MANZAMBI-Johan_502727",
     socials: {
-      instagram: "jkmanzambi",
+      instagram: "_jkmanzambi",
       wikipedia: "https://pt.wikipedia.org/wiki/Johan_Manzambi"
     },
     dateOfBirth: "2005-10-14",
@@ -19972,6 +19983,7 @@ function parseSummary(text, file) {
     citiesByVolume: cities.byVolume,
     byHour,
     byDay: parseCountRows(s["Requests by day"] || []),
+    uniqueIpsByDay: parseCountRows(s["Unique IPs by day"] || []),
     bots: Number.isFinite(bots) ? bots : null,
     suspect: Number.isFinite(suspect) ? suspect : null,
     selfClientExcluded: selfClientExcluded != null && Number.isFinite(selfClientExcluded) ? selfClientExcluded : null,
@@ -19999,7 +20011,8 @@ function projectLatest(snap) {
     citiesByVisitor: snap.citiesByVisitor,
     citiesByVolume: snap.citiesByVolume,
     byHour: snap.byHour,
-    byDay: snap.byDay
+    byDay: snap.byDay,
+    uniqueIpsByDay: snap.uniqueIpsByDay
   };
 }
 function buildTrafficDashboard(files, updatedAt) {
@@ -29781,6 +29794,8 @@ var dashboardCatalog = {
     "dashboard.trafficCitiesVolumeTitle": "Cidades (volume de requisi\xE7\xF5es)",
     "dashboard.trafficByDayTitle": "Requisi\xE7\xF5es por dia",
     "dashboard.trafficByDaySubtitle": "cada dia da janela do log",
+    "dashboard.trafficUniqueIpsByDayTitle": "Visitantes \xFAnicos por dia",
+    "dashboard.trafficUniqueIpsByDaySubtitle": "IPs distintos por dia na janela do log",
     "dashboard.trafficReferrersTitle": "Principais referenciadores",
     "dashboard.trafficReferrersSubtitle": "origem do tr\xE1fego",
     // Traffic panel — series names + hour tooltip
@@ -29919,6 +29934,8 @@ var dashboardCatalog = {
     "dashboard.trafficCitiesVolumeTitle": "Ciudades (volumen de solicitudes)",
     "dashboard.trafficByDayTitle": "Solicitudes por d\xEDa",
     "dashboard.trafficByDaySubtitle": "cada d\xEDa de la ventana del log",
+    "dashboard.trafficUniqueIpsByDayTitle": "Visitantes \xFAnicos por d\xEDa",
+    "dashboard.trafficUniqueIpsByDaySubtitle": "IPs distintas por d\xEDa en la ventana del log",
     "dashboard.trafficReferrersTitle": "Principales referenciadores",
     "dashboard.trafficReferrersSubtitle": "origen del tr\xE1fico",
     // Traffic panel — series names + hour tooltip
@@ -30057,6 +30074,8 @@ var dashboardCatalog = {
     "dashboard.trafficCitiesVolumeTitle": "Cities (request volume)",
     "dashboard.trafficByDayTitle": "Requests by day",
     "dashboard.trafficByDaySubtitle": "each day of the log window",
+    "dashboard.trafficUniqueIpsByDayTitle": "Unique visitors per day",
+    "dashboard.trafficUniqueIpsByDaySubtitle": "distinct IPs per day in the log window",
     "dashboard.trafficReferrersTitle": "Top referrers",
     "dashboard.trafficReferrersSubtitle": "traffic source",
     // Traffic panel — series names + hour tooltip
