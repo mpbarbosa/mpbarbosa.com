@@ -80,8 +80,13 @@ var squads_default = {
       instagramFollowers: 67e7,
       wikipedia: "https://pt.wikipedia.org/wiki/Cristiano_Ronaldo"
     },
-    worldCupNote: "## Leitura\nDesencantou no mata-mata. Depois de balan\xE7ar as redes na fase de grupos, Cristiano Ronaldo marcou seu primeiro gol em mata-matas de Copa: empatou de p\xEAnalti na virada por 2 a 1 sobre a Cro\xE1cia que colocou Portugal nas oitavas de final. O capit\xE3o mant\xE9m vivo o sonho luso.\n## Desempenho\nFicou em branco na estreia (1 a 1 com a RD Congo), fez dois na goleada por 5 a 0 sobre o Uzbequist\xE3o (6' e 39') e parou no 0 a 0 com a Col\xF4mbia. Nos 16-avos, contra a Cro\xE1cia, empatou de p\xEAnalti aos 68' \u2014 seu primeiro gol em mata-matas de Copa \u2014 e Gon\xE7alo Ramos completou a virada nos acr\xE9scimos (90+4').\n## N\xFAmeros\nJ4 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal classificado \xE0s oitavas de final, onde encara a Espanha. Ronaldo desencantou no mata-mata na hora certa.",
-    worldCupNoteUpdatedAt: "2026-07-02T23:00:00.000Z",
+    worldCupNote: `## Leitura
+O adeus do capit\xE3o. Cristiano Ronaldo encerrou sua trajet\xF3ria em Copas na elimina\xE7\xE3o para a Espanha por 1 a 0 nas oitavas de final \u2014 um gol de Mikel Merino nos acr\xE9scimos (90+1') tirou Portugal do Mundial. Foi titular no que deve ter sido sua \xFAltima Copa e saiu de campo, como disse depois, "de consci\xEAncia tranquila".
+## Desempenho
+Ficou em branco na estreia (1 a 1 com a RD Congo), fez dois na goleada por 5 a 0 sobre o Uzbequist\xE3o (6' e 39') e parou no 0 a 0 com a Col\xF4mbia. Nos 16-avos, empatou de p\xEAnalti aos 68' contra a Cro\xE1cia \u2014 seu primeiro gol em mata-matas de Copa \u2014 e Gon\xE7alo Ramos completou a virada nos acr\xE9scimos. Nas oitavas, por\xE9m, ficou sem espa\xE7o num duelo europeu travado e viu La Roja decidir com os reservas: Ferran Torres serviu Merino no fim.
+## N\xFAmeros
+J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanha. Aos 41 anos, foi provavelmente a \xFAltima Copa de Cristiano Ronaldo.`,
+    worldCupNoteUpdatedAt: "2026-07-06T19:00:00.000Z",
     dateOfBirth: "1985-02-05",
     height: 185,
     instagramPostUrls: [
@@ -198,8 +203,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaYZ09gFQqx/",
       "https://www.instagram.com/p/DagL8gfkXx9/"
     ],
-    worldCupNote: "## Leitura\nMessi segue impar\xE1vel e artilheiro isolado do Mundial. Depois de fechar a fase de grupos com 6 gols, o capit\xE3o abriu o placar nos 16-avos e chegou a 7 \u2014 a Argentina avan\xE7a \xE0s oitavas cada vez mais favorita ao t\xEDtulo, com um cl\xE1ssico contra o Egito de Salah pela frente.\n## Desempenho\nHat-trick na estreia (3 a 0 na Arg\xE9lia, aos 17, 60 e 76), dois sobre a \xC1ustria (2 a 0, aos 38 e 90+5) e o gol que fechou o 3 a 1 sobre a Jord\xE2nia (aos 80, tendo entrado no 2\xBA tempo). Nos 16-avos, marcou aos 29 o gol que abriu o dur\xEDssimo 3 a 2 sobre Cabo Verde \u2014 que levou a decis\xE3o \xE0 prorroga\xE7\xE3o (2 a 2 com Sidny Lopes Cabral aos 103) at\xE9 um gol contra de Diney Borges aos 111 carimbar a vaga.\n## N\xFAmeros\nJ4 \xB7 7 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina ganhou o Grupo J com 9 pontos (100%, SG +7) e passou pelos 16-avos; nas oitavas encara o Egito.",
-    worldCupNoteUpdatedAt: "2026-07-03T22:00:00.000Z",
+    worldCupNote: "## Leitura\nMessi decide de novo e segue artilheiro. O capit\xE3o marcou o gol do empate na virada por 3 a 2 sobre o Egito e chegou a 8 gols no Mundial, mantendo a Argentina viva e cada vez mais favorita \u2014 agora nas quartas de final, contra a Su\xED\xE7a.\n## Desempenho\nHat-trick na estreia (3 a 0 na Arg\xE9lia), dois sobre a \xC1ustria (2 a 0) e o gol do 3 a 1 sobre a Jord\xE2nia. Nos 16-avos, abriu aos 29 o dur\xEDssimo 3 a 2 sobre Cabo Verde. Nas oitavas, a Argentina levou um susto: perdia por 2 a 0 para o Egito (Yasser Ibrahim aos 15, Mostafa Zico aos 67) at\xE9 reagir com Romero (79'), o empate de Messi (83') e o gol de Enzo Fern\xE1ndez nos acr\xE9scimos (90+2'), completando a virada por 3 a 2 ainda no tempo normal.\n## N\xFAmeros\nJ5 \xB7 8 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina avan\xE7ou \xE0s quartas de final, onde encara a Su\xED\xE7a.",
+    worldCupNoteUpdatedAt: "2026-07-07T16:00:00.000Z",
     dateOfBirth: "1987-06-24",
     height: 170
   },
@@ -276,8 +281,8 @@ var squads_default = {
       "https://www.instagram.com/p/DaI4aWKkZDs/",
       "https://www.instagram.com/p/DZ-vbR5Efh3/"
     ],
-    worldCupNote: "## Leitura\nCapit\xE3o e camisa 10, James Rodr\xEDguez volta a ser o maestro da Col\xF4mbia: o organizador que dita o ritmo e a principal refer\xEAncia t\xE9cnica de uma sele\xE7\xE3o que venceu o Grupo K com autoridade. Mais de uma d\xE9cada depois da Chuteira de Ouro de 2014, segue sendo a batuta criativa que os colombianos procuram em cada arma\xE7\xE3o.\n## Desempenho\nTitular nas quatro partidas, foi o c\xE9rebro da arma\xE7\xE3o e saiu para poupar f\xF4lego em todas: substitu\xEDdo aos 72' na vit\xF3ria por 3\xD71 sobre o Uzbequist\xE3o, aos 58' no 1\xD70 diante da RD Congo e aos 76' no 0\xD70 com Portugal que carimbou a lideran\xE7a do grupo. Nos 16-avos, come\xE7ou o triunfo por 1\xD70 sobre Gana \u2014 gol de Jhon Arias aos 14' \u2014 antes de dar lugar a Richard R\xEDos. Ainda sem marcar na competi\xE7\xE3o, \xE9 o fio condutor de um time que sofreu apenas um gol em toda a fase de grupos.\n## N\xFAmeros\nJ4 \xB7 0 gols \xB7 0 cart\xF5es \xB7 l\xEDder do Grupo K (7 pts), classificada \xE0s oitavas",
-    worldCupNoteUpdatedAt: "2026-07-04T01:30:00.000Z"
+    worldCupNote: "## Leitura\nO maestro se despede. James Rodr\xEDguez foi titular nas oitavas contra a Su\xED\xE7a, mas saiu aos 66' e assistiu do banco \xE0 elimina\xE7\xE3o nos p\xEAnaltis, ap\xF3s o 0 a 0 que resistiu \xE0 prorroga\xE7\xE3o. A Col\xF4mbia cai invicta no tempo normal, e o capit\xE3o encerra mais uma Copa sem repetir a magia de 2014.\n## Desempenho\nTitular e c\xE9rebro da arma\xE7\xE3o nas quatro primeiras partidas \u2014 sempre substitu\xEDdo para poupar f\xF4lego \u2014, foi o fio condutor de um time que venceu o Grupo K e passou por Gana (1 a 0) nos 16-avos. Nas oitavas, come\xE7ou o duelo com a Su\xED\xE7a e deu lugar a Juan Quintero aos 66' num jogo travado que terminou 0 a 0 ap\xF3s a prorroga\xE7\xE3o. Nos p\xEAnaltis, a Col\xF4mbia converteu com Quintero, Campaz e Luis D\xEDaz, mas parou no 4 a 3 e deu adeus ao Mundial. James terminou a competi\xE7\xE3o sem marcar.\n## N\xFAmeros\nJ5 \xB7 0 gols \xB7 0 cart\xF5es \xB7 Col\xF4mbia eliminada nas oitavas pela Su\xED\xE7a (0 a 0, 4 a 3 nos p\xEAnaltis).",
+    worldCupNoteUpdatedAt: "2026-07-07T20:00:00.000Z"
   },
   "269592": {
     fifaId: "269592",
@@ -1218,8 +1223,8 @@ var squads_default = {
       "https://www.instagram.com/p/DZ5kmxVAW24/",
       "https://www.instagram.com/p/DZ4Jg5jD6FI/"
     ],
-    worldCupNote: "## Leitura\nSalah \xE9 o farol do Egito e segue levando os Fara\xF3s adiante: depois de garantir a vaga na fase de grupos, foi um dos cobradores da disputa de p\xEAnaltis que eliminou a Austr\xE1lia e colocou o Egito nas oitavas \u2014 onde reencontra a Argentina de Messi.\n## Desempenho\nDiscreto no 1 a 1 com a B\xE9lgica (substitu\xEDdo aos 76), decidiu contra a Nova Zel\xE2ndia com o gol aos 67 na virada por 3 a 1, e no 1 a 1 com o Ir\xE3 o empate bastou para classificar. Nos 16-avos, o 1 a 1 com a Austr\xE1lia (Emam Ashour aos 13; gol contra de Mohamed Hany aos 55) foi para os p\xEAnaltis, e Salah converteu sua cobran\xE7a no 4 a 2 que valeu a vaga.\n## N\xFAmeros\nJ4 \xB7 1 gol (+ p\xEAnalti convertido na disputa) \xB7 0 cart\xF5es. O Egito passou em 2\xBA no Grupo G (5 pontos, SG +2) e eliminou a Austr\xE1lia nos p\xEAnaltis; nas oitavas enfrenta a Argentina.",
-    worldCupNoteUpdatedAt: "2026-07-03T18:00:00.000Z"
+    worldCupNote: "## Leitura\nDeu tudo, mas n\xE3o bastou. Salah foi o c\xE9rebro do susto eg\xEDpcio: participou do lance que abriu 2 a 0 sobre a Argentina de Messi nas oitavas, mas viu os Fara\xF3s sofrerem a virada nos minutos finais e ca\xEDrem por 3 a 2. O sonho do Egito termina no mata-mata.\n## Desempenho\nDecidiu contra a Nova Zel\xE2ndia com o gol aos 67 na virada por 3 a 1, e no 1 a 1 com o Ir\xE3 o empate bastou para classificar em 2\xBA do Grupo G. Nos 16-avos, converteu seu p\xEAnalti no 4 a 2 que eliminou a Austr\xE1lia (ap\xF3s 1 a 1). Nas oitavas, o Egito surpreendeu com Yasser Ibrahim (15') e Mostafa Zico (67'), mas Romero (79'), Messi (83') e Enzo Fern\xE1ndez (90+2') completaram a virada argentina. Salah n\xE3o marcou, por\xE9m deixou sua marca na cria\xE7\xE3o do 2 a 0.\n## N\xFAmeros\nJ5 \xB7 1 gol (+ p\xEAnalti convertido no mata-mata) \xB7 0 cart\xF5es. O Egito, 2\xBA do Grupo G, foi eliminado pela Argentina nas oitavas (3 a 2, de virada).",
+    worldCupNoteUpdatedAt: "2026-07-07T16:00:00.000Z"
   },
   "344661": {
     fifaId: "344661",
@@ -1558,8 +1563,8 @@ var squads_default = {
       instagramFollowers: 26e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Kevin_De_Bruyne"
     },
-    worldCupNote: "## Leitura\nSaiu antes da virada \xE9pica. Kevin De Bruyne come\xE7ou os 16-avos contra o Senegal, mas foi substitu\xEDdo aos 56', com a B\xE9lgica perdendo por 2 a 0 \u2014 e viu do banco os Diabos Vermelhos buscarem uma rea\xE7\xE3o dram\xE1tica para vencer por 3 a 2 na prorroga\xE7\xE3o e avan\xE7ar \xE0s oitavas.\n## Desempenho\nTitular e decisivo na fase de grupos, com gol na goleada por 5 a 1 sobre a Nova Zel\xE2ndia que deu a ponta do Grupo G. Nos 16-avos, foi titular diante do Senegal, mas deixou o campo aos 56' (entrou Raskin) quando a B\xE9lgica perdia por 2 a 0 \u2014 Habib Diarra (24') e Ismaila Sarr (51') marcaram. A rea\xE7\xE3o viria depois, com Lukaku (86') e Tielemans (89' e 120+5').\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 0 cart\xF5es \xB7 B\xE9lgica classificada \xE0s oitavas de final, onde encara os Estados Unidos. De Bruyne saiu antes da virada, mas o time avan\xE7ou.",
-    worldCupNoteUpdatedAt: "2026-07-01T20:00:00.000Z",
+    worldCupNote: "## Leitura\nFicou no banco na goleada. Kevin De Bruyne foi preservado por Rudi Garcia e come\xE7ou as oitavas contra os Estados Unidos entre os reservas \u2014 sem entrar em campo, viu a B\xE9lgica atropelar por 4 a 1 e avan\xE7ar \xE0s quartas. Gest\xE3o de f\xF4lego que deu certo, ainda que tenha deixado o craque de fora.\n## Desempenho\nTitular e decisivo na fase de grupos, com gol na goleada por 5 a 1 sobre a Nova Zel\xE2ndia. Nos 16-avos foi titular diante do Senegal, mas saiu aos 56' com a B\xE9lgica perdendo por 2 a 0 \u2014 e viu do banco a virada por 3 a 2 na prorroga\xE7\xE3o. Nas oitavas, Garcia o preservou (sem les\xE3o, mas fora dos 100% f\xEDsicos) e nem o relacionou entre os titulares: a B\xE9lgica goleou os EUA por 4 a 1, com Charles De Ketelaere (duas vezes), Vanaken e Lukaku.\n## N\xFAmeros\nJ5 \xB7 1 gol \xB7 0 cart\xF5es \xB7 n\xE3o atuou nas oitavas; B\xE9lgica classificada \xE0s quartas de final, onde encara a Espanha.",
+    worldCupNoteUpdatedAt: "2026-07-07T00:00:00.000Z",
     instagramPostUrls: [
       "https://www.instagram.com/p/DZ9QmtoiJKj/",
       "https://www.instagram.com/p/DZozZswm3WJ/"
@@ -5858,8 +5863,8 @@ var squads_default = {
     socials: {
       instagram: "m.elshenawy1"
     },
-    worldCupNote: "## Leitura\nO pared\xE3o da zebra eg\xEDpcia. Aos 37 anos, Mohamed Elshenawy \u2014 camisa 1 e goleiro do Al Ahly \u2014 \xE9 a seguran\xE7a sob as traves da campanha surpreendente do Egito, que passou como 2\xBA do Grupo G e eliminou a Austr\xE1lia nos p\xEAnaltis para seguir vivo no mata-mata. Veterano e experiente, cresceu justamente na hora da decis\xE3o.\n## Desempenho\nNa fase de grupos sofreu um gol em cada jogo \u2014 o 1 a 1 com a B\xE9lgica, a vit\xF3ria por 3 a 1 sobre a Nova Zel\xE2ndia e o 1 a 1 com o Ir\xE3 \u2014, saldo suficiente para garantir a vaga em segundo do Grupo G. Nos 16-avos, contra a Austr\xE1lia, o Egito abriu com Emam Ashour (13'), levou o empate num gol contra de Mohamed Hany (55') e segurou o 1 a 1 at\xE9 a prorroga\xE7\xE3o. Na disputa por p\xEAnaltis, com Elshenawy no gol, os eg\xEDpcios converteram com Saber, Rabia, Salah e Abdelmaguid e levaram a melhor para avan\xE7ar.\n## N\xFAmeros\nJ4 \xB7 4 gols sofridos \xB7 0 jogos sem sofrer \xB7 2\xBA do Grupo G (5 pts). O Egito eliminou a Austr\xE1lia nos p\xEAnaltis (ap\xF3s 1 a 1) e segue no mata-mata.",
-    worldCupNoteUpdatedAt: "2026-07-03T18:00:00.000Z"
+    worldCupNote: "## Leitura\nFicou no banco no adeus eg\xEDpcio. Depois de ser o pared\xE3o da campanha surpreendente, Mohamed Elshenawy deu lugar a Mostafa Shobeir no gol para as oitavas \u2014 e viu da reserva o Egito desperdi\xE7ar uma vantagem de 2 a 0 e cair para a Argentina por 3 a 2. Encerra-se a caminhada dos Fara\xF3s.\n## Desempenho\nNa fase de grupos sofreu um gol em cada jogo (1 a 1 com a B\xE9lgica, 3 a 1 na Nova Zel\xE2ndia, 1 a 1 com o Ir\xE3), garantindo a vaga em 2\xBA do Grupo G. Nos 16-avos, defendeu o gol na disputa de p\xEAnaltis que eliminou a Austr\xE1lia. Nas oitavas, por\xE9m, o t\xE9cnico optou por Shobeir sob as traves \u2014 que ainda defendeu uma cobran\xE7a de Messi \u2014 e Elshenawy n\xE3o atuou. O Egito abriu 2 a 0 sobre a Argentina, mas levou a virada e foi eliminado.\n## N\xFAmeros\nJ5 \xB7 4 gols sofridos \xB7 n\xE3o atuou nas oitavas \xB7 2\xBA do Grupo G. O Egito foi eliminado pela Argentina nas oitavas (3 a 2).",
+    worldCupNoteUpdatedAt: "2026-07-07T16:00:00.000Z"
   },
   "408950": {
     fifaId: "408950",
@@ -10835,8 +10840,8 @@ var squads_default = {
       instagramFollowers: 33e4,
       wikipedia: "https://pt.wikipedia.org/wiki/%C3%81lex_Baena"
     },
-    worldCupNote: "## Leitura\nVoltou ao rod\xEDzio no mata-mata. \xC1lex Baena foi titular nos 16-avos, mas desta vez sem repetir o gol decisivo da fase de grupos: a Espanha n\xE3o precisou dele para golear a \xC1ustria por 3 a 0 e avan\xE7ar \xE0s oitavas com autoridade.\n## Desempenho\nHer\xF3i da fase de grupos, com o gol da vit\xF3ria por 1 a 0 sobre o Uruguai que selou a lideran\xE7a do Grupo H. Nos 16-avos, foi titular contra a \xC1ustria e saiu aos 71' (entrou Ferran Torres), sem marcar \u2014 Mikel Oyarzabal (duas vezes) e Pedro Porro resolveram o 3 a 0.\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 1 cart\xE3o amarelo \xB7 Espanha classificada \xE0s oitavas de final, onde encara Portugal. Baena seguiu no rod\xEDzio de La Roja, agora sem balan\xE7ar as redes.",
-    worldCupNoteUpdatedAt: "2026-07-02T19:00:00.000Z"
+    worldCupNote: "## Leitura\nSeguiu no rod\xEDzio nas oitavas. \xC1lex Baena foi titular na vit\xF3ria por 1 a 0 sobre Portugal e saiu aos 75' \u2014 justamente para a entrada de Ferran Torres, que participaria do gol da classifica\xE7\xE3o. Sem marcar, mas com a Espanha nas quartas de final.\n## Desempenho\nHer\xF3i da fase de grupos, com o gol da vit\xF3ria por 1 a 0 sobre o Uruguai que selou a lideran\xE7a do Grupo H. Nos 16-avos foi titular contra a \xC1ustria e saiu aos 71' (3 a 0). Nas oitavas, come\xE7ou o 1 a 0 sobre Portugal e deixou o campo aos 75' para Ferran Torres \u2014 que minutos depois serviu Merino no gol da vit\xF3ria nos acr\xE9scimos. Baena ainda sem repetir no mata-mata o gol decisivo da fase de grupos.\n## N\xFAmeros\nJ5 \xB7 1 gol \xB7 1 cart\xE3o amarelo \xB7 Espanha classificada \xE0s quartas de final, onde encara a B\xE9lgica.",
+    worldCupNoteUpdatedAt: "2026-07-06T19:00:00.000Z"
   },
   "447864": {
     fifaId: "447864",
@@ -11015,7 +11020,8 @@ var squads_default = {
       instagram: "gregorkobel",
       instagramFollowers: 62e4,
       wikipedia: "https://pt.wikipedia.org/wiki/Gregor_Kobel"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaUsRrGDPLu/"
   },
   "448112": {
     fifaId: "448112",
@@ -11659,8 +11665,8 @@ var squads_default = {
       instagramFollowers: 2e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Leandro_Trossard"
     },
-    worldCupNote: "## Leitura\nFicou em campo at\xE9 a prorroga\xE7\xE3o da virada. Leandro Trossard foi titular nos 16-avos contra o Senegal e atuou at\xE9 os 109', quando a B\xE9lgica ainda buscava o improv\xE1vel \u2014 e conseguiu: venceu por 3 a 2 na prorroga\xE7\xE3o e avan\xE7ou \xE0s oitavas de final.\n## Desempenho\nExplodiu na fase de grupos com dois gols sobre a Nova Zel\xE2ndia, que deram a ponta do Grupo G. Nos 16-avos, come\xE7ou jogando diante do Senegal e saiu aos 109' (entrou Onana), sem marcar num jogo dram\xE1tico: a B\xE9lgica saiu de 0 a 2 (Diarra 24', Sarr 51') para vencer com Lukaku (86') e Tielemans (89' e 120+5').\n## N\xFAmeros\nJ4 \xB7 2 gols \xB7 0 cart\xF5es \xB7 B\xE9lgica classificada \xE0s oitavas de final, onde encara os Estados Unidos. Trossard seguiu titular na campanha do mata-mata.",
-    worldCupNoteUpdatedAt: "2026-07-01T20:00:00.000Z",
+    worldCupNote: "## Leitura\nTitular na goleada. Leandro Trossard come\xE7ou as oitavas contra os Estados Unidos e atuou at\xE9 os 89' na vit\xF3ria tranquila por 4 a 1, que colocou a B\xE9lgica nas quartas de final. Sem marcar desta vez, mas pe\xE7a da campanha do mata-mata.\n## Desempenho\nExplodiu na fase de grupos com dois gols sobre a Nova Zel\xE2ndia, que deram a ponta do Grupo G. Nos 16-avos, foi titular diante do Senegal e atuou at\xE9 os 109' na virada dram\xE1tica por 3 a 2 na prorroga\xE7\xE3o. Nas oitavas, come\xE7ou o 4 a 1 sobre os EUA \u2014 De Ketelaere (duas vezes), Vanaken e Lukaku marcaram \u2014 e saiu aos 89' para Saelemaekers. Seguiu sem balan\xE7ar as redes no mata-mata.\n## N\xFAmeros\nJ5 \xB7 2 gols \xB7 0 cart\xF5es \xB7 B\xE9lgica classificada \xE0s quartas de final, onde encara a Espanha.",
+    worldCupNoteUpdatedAt: "2026-07-07T00:00:00.000Z",
     instagramPostUrls: [
       "https://www.instagram.com/p/DYvHLw0jIbg/",
       "https://www.instagram.com/p/DaSWjukjJm9/"
@@ -14993,8 +14999,8 @@ var squads_default = {
       instagramFollowers: 45e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Lamine_Yamal"
     },
-    worldCupNote: "## Leitura\nSeguiu como titular rumo \xE0s oitavas. Lamine Yamal foi a campo nos 16-avos e atuou at\xE9 os 85' na goleada por 3 a 0 sobre a \xC1ustria, que classificou a Espanha com autoridade. Sem marcar desta vez, mas pe\xE7a fixa de La Roja no mata-mata.\n## Desempenho\nDesencantou na fase de grupos com seu primeiro gol em Mundiais, na goleada por 4 a 0 sobre a Ar\xE1bia Saudita, e ajudou a Espanha a liderar o Grupo H. Nos 16-avos, foi titular contra a \xC1ustria e saiu aos 85' (entrou Gavi), sem balan\xE7ar as redes \u2014 Mikel Oyarzabal (duas vezes) e Pedro Porro fizeram o 3 a 0.\n## N\xFAmeros\nJ4 \xB7 1 gol \xB7 0 cart\xF5es \xB7 Espanha classificada \xE0s oitavas de final, onde encara Portugal. Yamal segue como titular do craque espanhol no mata-mata.",
-    worldCupNoteUpdatedAt: "2026-07-02T19:00:00.000Z",
+    worldCupNote: "## Leitura\nSegue firme rumo \xE0s quartas. Lamine Yamal foi titular na vit\xF3ria por 1 a 0 sobre Portugal e ajudou a Espanha a avan\xE7ar num cl\xE1ssico ib\xE9rico decidido apenas no fim por Mikel Merino. Sem marcar, mas pe\xE7a fixa e mais perigosa de La Roja no mata-mata.\n## Desempenho\nDesencantou na fase de grupos com seu primeiro gol em Mundiais, na goleada por 4 a 0 sobre a Ar\xE1bia Saudita, e ajudou a Espanha a liderar o Grupo H. Nos 16-avos foi titular no 3 a 0 sobre a \xC1ustria (saiu aos 85'). Nas oitavas, completou os 90 minutos no 1 a 0 sobre Portugal, jogo resolvido por Merino nos acr\xE9scimos ap\xF3s passe de Ferran Torres. Segue sem balan\xE7ar as redes no mata-mata, mas \xE9 um dos maiores dribladores do torneio.\n## N\xFAmeros\nJ5 \xB7 1 gol \xB7 0 cart\xF5es \xB7 Espanha classificada \xE0s quartas de final, onde encara a B\xE9lgica.",
+    worldCupNoteUpdatedAt: "2026-07-06T19:00:00.000Z",
     instagramPostUrls: [
       "https://www.instagram.com/p/DZ3B-0cj0TN/",
       "https://www.instagram.com/reel/DZzshFaxghJ/",
@@ -31214,8 +31220,8 @@ var wikipediaCountries_default = WIKIPEDIA_COUNTRIES;
 // src/data/teamAnalysis.json
 var teamAnalysis_default = {
   COL: {
-    updatedAt: "2026-07-04T11:52:00-03:00",
-    text: "## Leitura\nA Col\xF4mbia est\xE1 nas oitavas de final e chega embalada. Ganhou o Grupo K sem perder e, nos 16-avos, bateu Gana com um gol cedo e muita solidez defensiva, confirmando o bom momento.\n## Desempenho\nNo grupo foram sete pontos: 3 a 1 no Uzbequist\xE3o, 1 a 0 na RD Congo e um 0 a 0 com Portugal que garantiu a lideran\xE7a. Nos 16-avos, Jhon Arias resolveu logo aos 14 minutos e a Col\xF4mbia segurou o 1 a 0 at\xE9 o fim, sem sustos maiores diante de Gana.\n## N\xFAmeros\nQuatro jogos, tr\xEAs vit\xF3rias e um empate; 5 gols marcados e apenas 1 sofrido \u2014 a defesa \xE9 o grande trunfo. L\xEDder do Grupo K, a Col\xF4mbia enfrenta a Su\xED\xE7a nas oitavas de final, dia 7 de julho."
+    text: "## Leitura\nA Col\xF4mbia se despede da Copa nas oitavas de final, eliminada pela Su\xED\xE7a nos p\xEAnaltis ap\xF3s um 0 a 0 que resistiu \xE0 prorroga\xE7\xE3o. \xC9 uma sa\xEDda amarga para uma campanha que terminou invicta no tempo normal e exibiu a defesa mais econ\xF4mica do torneio \u2014 mas que esbarrou na loteria das penalidades.\n## Desempenho\nNo grupo foram sete pontos e a lideran\xE7a: 3 a 1 no Uzbequist\xE3o, 1 a 0 na RD Congo e um 0 a 0 com Portugal. Nos 16-avos, bateu Gana por 1 a 0 com muita solidez. Nas oitavas, segurou o 0 a 0 com a Su\xED\xE7a por 120 minutos, mas nos p\xEAnaltis converteu apenas com Quintero, Campaz e Luis D\xEDaz e parou no 4 a 3.\n## N\xFAmeros\nCinco jogos, tr\xEAs vit\xF3rias e dois empates, sem perder dentro das quatro linhas; 5 gols marcados e s\xF3 1 sofrido em toda a Copa \u2014 o grande trunfo colombiano. A lideran\xE7a do Grupo K e o bom futebol, por\xE9m, n\xE3o bastaram: a Col\xF4mbia cai nas oitavas e encerra sua participa\xE7\xE3o no Mundial.",
+    updatedAt: "2026-07-07T20:39:00-03:00"
   },
   POR: {
     text: "## Leitura\nO sonho de Portugal e de Cristiano Ronaldo terminou nas oitavas de final. A sele\xE7\xE3o de Roberto Mart\xEDnez perdeu para a Espanha por 1 a 0, com um gol de Mikel Merino j\xE1 nos acr\xE9scimos, e deu adeus ao Mundial no cl\xE1ssico ib\xE9rico.\n## Desempenho\nVice-l\xEDder do Grupo K e dono de uma das defesas mais s\xF3lidas do torneio, Portugal vinha de virada sobre a Cro\xE1cia por 2 a 1 nos 16-avos. Nas oitavas, por\xE9m, esbarrou numa Espanha ainda mais fechada: o jogo ficou no 0 a 0 at\xE9 que Mikel Merino apareceu aos 90+1' para decretar a elimina\xE7\xE3o lusa. Ronaldo se despede do Mundial sem conseguir furar o bloqueio espanhol.\n## N\xFAmeros\nCampanha encerrada nas oitavas de final. Fase de grupos: 1V 2E, 2\xBA do Grupo K (5 pts, SG +5). Nos 16-avos bateu a Cro\xE1cia (2-1); nas oitavas, derrota por 1 a 0 para a Espanha. Eliminado do Mundial.",
@@ -31282,8 +31288,8 @@ var teamAnalysis_default = {
     text: "## Leitura\nA Copa em casa do Canad\xE1 de Jesse Marsch terminou nas oitavas de final. Depois de uma campanha hist\xF3rica \u2014 a melhor da sele\xE7\xE3o anfitri\xE3 em Mundiais \u2014, os canadenses esbarraram num Marrocos muito superior e ca\xEDram por 3 a 0. Fica o saldo positivo: passar da fase de grupos e vencer um mata-mata pela primeira vez.\n## Desempenho\nNa primeira fase, empatou com a B\xF3snia (1 a 1), goleou o Catar por 6 a 0 \u2014 hat-trick de Jonathan David \u2014 e perdeu para a Su\xED\xE7a por 2 a 1. Nos 16-avos, superou a \xC1frica do Sul por 1 a 0 com gol de Stephen Eust\xE1quio nos acr\xE9scimos (90+2'). Nas oitavas, por\xE9m, n\xE3o teve resposta para o Marrocos: Azzedine Ounahi marcou duas vezes (50' e 82') e Soufiane Rahimi fechou o 3 a 0 nos acr\xE9scimos. David, artilheiro do time, ainda levou amarelo aos 43 e n\xE3o achou o gol.\n## N\xFAmeros\nCinco jogos: 2 vit\xF3rias, 1 empate e 2 derrotas. Na fase de grupos, 2\xBA do Grupo B (4 pts, 8 gols marcados e 3 sofridos, SG +5). Nos 16-avos, 1 a 0 na \xC1frica do Sul; nas oitavas, 0 a 3 para o Marrocos \u2014 eliminado. Artilheiro: Jonathan David (3 gols)."
   },
   SUI: {
-    updatedAt: "2026-07-04T11:52:00-03:00",
-    text: "## Leitura\nA Su\xED\xE7a est\xE1 nas oitavas de final e faz jus ao favoritismo que carregava. Venceu o Grupo B com autoridade e, nos 16-avos, despachou a Arg\xE9lia sem sustos, mantendo a pegada eficiente que a levou t\xE3o longe.\n## Desempenho\nNa fase de grupos foram sete pontos: empate por 1 a 1 com o Catar na estreia, seguido de 4 a 1 sobre a B\xF3snia e 2 a 1 no Canad\xE1 \u2014 a melhor campanha do grupo. Nos 16-avos, resolveu cedo contra a Arg\xE9lia: Breel Embolo abriu aos 10 minutos e Dan Ndoye ampliou logo aos 46, no 2 a 0 que carimbou a vaga.\n## N\xFAmeros\nQuatro jogos, tr\xEAs vit\xF3rias e um empate, 9 gols marcados e apenas 4 sofridos. L\xEDder do Grupo B, a Su\xED\xE7a agora encara a Col\xF4mbia nas oitavas de final, dia 7 de julho."
+    text: "## Leitura\nA Su\xED\xE7a est\xE1 nas quartas de final e segue invicta no tempo normal. Depois de vencer o Grupo B com autoridade e passar pela Arg\xE9lia nos 16-avos, superou a Col\xF4mbia nas oitavas em um duelo travado que s\xF3 se resolveu nos p\xEAnaltis \u2014 prova da personalidade de um time eficiente e dif\xEDcil de bater.\n## Desempenho\nNa fase de grupos foram sete pontos: empate por 1 a 1 com o Catar na estreia, seguido de 4 a 1 sobre a B\xF3snia e 2 a 1 no Canad\xE1. Nos 16-avos, resolveu cedo diante da Arg\xE9lia, com Embolo abrindo aos 10 e Ndoye ampliando aos 46, no 2 a 0. Nas oitavas, o 0 a 0 com a Col\xF4mbia foi para a decis\xE3o por p\xEAnaltis, e a Su\xED\xE7a converteu com Xhaka, Amdouni, Itten e Vargas para vencer por 4 a 3 e seguir viva.\n## N\xFAmeros\nCinco jogos, tr\xEAs vit\xF3rias e dois empates, sem derrota no tempo normal: 9 gols marcados e apenas 3 sofridos, uma das defesas mais s\xF3lidas do torneio. L\xEDder do Grupo B, a Su\xED\xE7a agora encara a Argentina de Messi nas quartas de final, dia 11 de julho.",
+    updatedAt: "2026-07-07T20:39:00-03:00"
   },
   QAT: {
     text: "## Leitura\nO Catar de Julen Lopetegui fez uma fase de grupos para esquecer e terminou na lanterna do Grupo B, eliminado. Somou apenas 1 ponto \u2014 o empate com a Su\xED\xE7a na estreia \u2014 e perdeu os dois jogos seguintes, sofrendo 10 gols no total. A campanha exp\xF4s as limita\xE7\xF5es e a indisciplina de um time que decepcionou.\n## Desempenho\nDepois do promissor 1 a 1 com a Su\xED\xE7a, o Catar desabou: levou 6 a 0 do Canad\xE1, com duas expuls\xF5es, e perdeu por 3 a 1 para a B\xF3snia na despedida, descontando com Hassan Al-Haydos (42). Defesa fr\xE1gil e falta de consist\xEAncia marcaram a pior campanha do grupo.\n## N\xFAmeros\nJ3 \xB7 1 empate \xB7 2 derrotas \xB7 2 gols marcados \xB7 10 sofridos (SG -8) \xB7 lanterna do Grupo B com 1 ponto. Eliminado na fase de grupos.",
@@ -32846,6 +32852,15 @@ function computeStandings(matches = APP_MATCHES) {
     };
   });
 }
+function remainingByTeam(codes, matches) {
+  const remaining = new Map([...codes].map((code) => [code, 0]));
+  for (const m of matches) {
+    if (m.stageName !== "Group Stage" || m.status === "FINISHED") continue;
+    if (codes.has(m.teamA.code)) remaining.set(m.teamA.code, remaining.get(m.teamA.code) + 1);
+    if (codes.has(m.teamB.code)) remaining.set(m.teamB.code, remaining.get(m.teamB.code) + 1);
+  }
+  return remaining;
+}
 function haveMutualRemainingMatch(codeA, codeB, allMatches) {
   return allMatches.some(
     (m) => m.stageName === "Group Stage" && m.status !== "FINISHED" && (m.teamA.code === codeA && m.teamB.code === codeB || m.teamA.code === codeB && m.teamB.code === codeA)
@@ -32893,12 +32908,7 @@ function canPairReachTogether(A, B, targetPts, remaining, allMatches) {
 }
 function computeGroupQualification(sortedRows, allMatches) {
   const codes = new Set(sortedRows.map((r) => r.code));
-  const remaining = new Map(sortedRows.map((r) => [r.code, 0]));
-  for (const m of allMatches) {
-    if (m.stageName !== "Group Stage" || m.status === "FINISHED") continue;
-    if (codes.has(m.teamA.code)) remaining.set(m.teamA.code, remaining.get(m.teamA.code) + 1);
-    if (codes.has(m.teamB.code)) remaining.set(m.teamB.code, remaining.get(m.teamB.code) + 1);
-  }
+  const remaining = remainingByTeam(codes, allMatches);
   const totalRemaining = [...remaining.values()].reduce((a, b) => a + b, 0);
   if (totalRemaining === 0) {
     return new Map(
