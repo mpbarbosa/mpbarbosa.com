@@ -11498,7 +11498,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
       instagram: "enzojfernandez",
       instagramFollowers: 13e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Enzo_Fern%C3%A1ndez"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaggPS9AYXQ/"
   },
   "448290": {
     fifaId: "448290",
