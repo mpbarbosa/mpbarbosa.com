@@ -33405,7 +33405,7 @@ var BACKGROUND_WARM_FAILURE_RETRY_MS = 30 * 1e3;
 var CIRCUIT_BREAKER_FAILURE_THRESHOLD = 3;
 var CIRCUIT_BREAKER_OPEN_MS = 60 * 1e3;
 var TOURNAMENT_LEADER_LIMIT = 5;
-var WIKIPEDIA_API_BASE = "https://pt.wikipedia.org/api/rest_v1";
+var wikipediaRestBase = (lang) => `https://${lang}.wikipedia.org/api/rest_v1`;
 var WIKIDATA_API_BASE = "https://www.wikidata.org/w/api.php";
 var COUNTRY_INFO_CACHE_TTL_MS = 24 * 60 * 60 * 1e3;
 var WIKIPEDIA_USER_AGENT = "agora-na-copa-2026 (https://github.com/mpbarbosa/agora_na_copa_2026)";
@@ -34686,15 +34686,36 @@ app.get("/api/team-view/:teamCode", async (req, res) => {
     });
   }
 });
-async function fetchCountryInfo(code) {
+async function localizedWikipediaArticle(wikidataId, lang) {
+  try {
+    const url = `${WIKIDATA_API_BASE}?action=wbgetentities&ids=${wikidataId}&props=sitelinks&sitefilter=${lang}wiki&format=json`;
+    const res = await fetch(url, { headers: { "User-Agent": WIKIPEDIA_USER_AGENT } });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.entities?.[wikidataId]?.sitelinks?.[`${lang}wiki`]?.title ?? null;
+  } catch {
+    return null;
+  }
+}
+async function fetchCountryInfo(code, lang = "pt") {
   const entry = wikipediaCountries_default[code.toUpperCase()];
   if (!entry) return null;
-  const cached = countryInfoCache.get(code);
+  const cacheKey = `${code}:${lang}`;
+  const cached = countryInfoCache.get(cacheKey);
   if (cached && cached.expiresAt > Date.now()) return cached.payload;
   const { ptArticle, wikidataId } = entry;
   const now = (/* @__PURE__ */ new Date()).toISOString();
-  const encodedTitle = encodeURIComponent(ptArticle);
-  const summaryUrl = `${WIKIPEDIA_API_BASE}/page/summary/${encodedTitle}`;
+  let wikiLang = "pt";
+  let article = ptArticle;
+  if (lang !== "pt") {
+    const localized = await localizedWikipediaArticle(wikidataId, lang);
+    if (localized) {
+      wikiLang = lang;
+      article = localized;
+    }
+  }
+  const encodedTitle = encodeURIComponent(article);
+  const summaryUrl = `${wikipediaRestBase(wikiLang)}/page/summary/${encodedTitle}`;
   const summaryRes = await fetch(summaryUrl, {
     headers: { "User-Agent": WIKIPEDIA_USER_AGENT }
   });
@@ -34705,7 +34726,7 @@ async function fetchCountryInfo(code) {
       extract: "",
       thumbnailUrl: null,
       flagSvgUrl: null,
-      wikipediaUrl: `https://pt.wikipedia.org/wiki/${encodedTitle}`,
+      wikipediaUrl: `https://${wikiLang}.wikipedia.org/wiki/${encodedTitle}`,
       population: null,
       areaSqKm: null,
       capital: null,
@@ -34762,7 +34783,7 @@ async function fetchCountryInfo(code) {
   let government = null;
   let currency = null;
   if (allQids.length > 0) {
-    const labelsUrl = `${WIKIDATA_API_BASE}?action=wbgetentities&ids=${allQids.join("|")}&languages=pt%7Cen&props=labels&format=json`;
+    const labelsUrl = `${WIKIDATA_API_BASE}?action=wbgetentities&ids=${allQids.join("|")}&languages=${lang}%7Cen%7Cpt&props=labels&format=json`;
     const labelsRes = await fetch(labelsUrl, {
       headers: { "User-Agent": WIKIPEDIA_USER_AGENT }
     });
@@ -34771,7 +34792,7 @@ async function fetchCountryInfo(code) {
       const labelOf = (qid) => {
         if (!qid) return null;
         const labels = labelsData.entities?.[qid]?.labels;
-        return labels?.["pt"]?.value ?? labels?.["en"]?.value ?? null;
+        return labels?.[lang]?.value ?? labels?.["en"]?.value ?? labels?.["pt"]?.value ?? null;
       };
       capital = labelOf(capitalQid);
       language = languageQids.map(labelOf).filter(Boolean).join(" / ") || null;
@@ -34785,7 +34806,7 @@ async function fetchCountryInfo(code) {
     extract: summary.extract ?? "",
     thumbnailUrl: summary.thumbnail?.source ?? null,
     flagSvgUrl,
-    wikipediaUrl: summary.content_urls?.desktop?.page ?? `https://pt.wikipedia.org/wiki/${encodedTitle}`,
+    wikipediaUrl: summary.content_urls?.desktop?.page ?? `https://${wikiLang}.wikipedia.org/wiki/${encodedTitle}`,
     population,
     areaSqKm: areaSqKm ? Math.round(areaSqKm) : null,
     capital,
@@ -34796,7 +34817,7 @@ async function fetchCountryInfo(code) {
     note: "Dados da Wikipedia e Wikidata.",
     updatedAt: now
   };
-  countryInfoCache.set(code, {
+  countryInfoCache.set(cacheKey, {
     expiresAt: Date.now() + COUNTRY_INFO_CACHE_TTL_MS,
     payload
   });
@@ -34806,7 +34827,7 @@ app.get("/api/country-info/:code", async (req, res) => {
   const code = req.params.code.toUpperCase();
   const locale = localeForRequest(req);
   try {
-    const payload = await fetchCountryInfo(code);
+    const payload = await fetchCountryInfo(code, locale);
     if (!payload) {
       res.status(404).json({ error: localizeNote("Pa\xEDs n\xE3o encontrado", locale) });
       return;
@@ -34815,7 +34836,7 @@ app.get("/api/country-info/:code", async (req, res) => {
     res.json(localizeResilienceNote(payload, locale));
   } catch (error) {
     console.error("Wikipedia API Error in /api/country-info:", error);
-    const stale = countryInfoCache.get(code);
+    const stale = countryInfoCache.get(`${code}:${locale}`);
     if (stale) {
       res.set("Cache-Control", "public, max-age=3600");
       res.json({
