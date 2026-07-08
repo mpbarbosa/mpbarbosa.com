@@ -1545,7 +1545,10 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
       instagramFollowers: 9e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Romelu_Lukaku"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DaRxy_VCLG9/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DaRxy_VCLG9/",
+      "https://www.instagram.com/p/DaesfsoFGL2/"
+    ]
   },
   "358120": {
     fifaId: "358120",
