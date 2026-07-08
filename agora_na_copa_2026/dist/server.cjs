@@ -27321,7 +27321,12 @@ var KNOCKOUT_RESULTS = {
   // Zico 67' p/ EGY; Cristian Romero 79', Lionel Messi 83' e Enzo Fernández 90+2' p/ ARG; um egípcio
   // expulso aos 90+4'). Argentina virou de 0×2 e se classificou às Quartas; alimenta a #100 (slot
   // W95). Egito eliminado.
-  95: { status: "FINISHED", score: { teamA: 3, teamB: 2 } }
+  95: { status: "FINISHED", score: { teamA: 3, teamB: 2 } },
+  // #96 · Oitavas · BC Place Vancouver · 07/07/2026 — Suíça 0×0 Colômbia (após a prorrogação),
+  // Suíça 4×3 nos pênaltis (Granit Xhaka, Zeki Amdouni, Cedric Itten e Ruben Vargas; Juan
+  // Quintero, Jaminton Campaz e Luis Díaz p/ COL). Suíça classificada às Quartas; alimenta a
+  // #100 (slot W96), duelo com a Argentina. Colômbia eliminada.
+  96: { status: "FINISHED", score: { teamA: 0, teamB: 0 }, penaltyScore: { teamA: 4, teamB: 3 } }
 };
 
 // src/i18n/catalogs/core.ts
@@ -30212,6 +30217,7 @@ var bannersCatalog = {
     "banners.teamCountdown.live": "{team} ao vivo",
     "banners.teamCountdown.onPitch": "Em campo",
     "banners.teamCountdown.probable": "Confronto prov\xE1vel",
+    "banners.teamCountdown.opponentTbd": "Advers\xE1rio a definir",
     "banners.teamCountdown.change": "Trocar sele\xE7\xE3o",
     "banners.teamCountdown.choose": "Escolha sua sele\xE7\xE3o",
     "banners.teamCountdown.chooseHint": "Acompanhe o pr\xF3ximo jogo da sua sele\xE7\xE3o",
@@ -30263,6 +30269,7 @@ var bannersCatalog = {
     "banners.teamCountdown.live": "{team} en vivo",
     "banners.teamCountdown.onPitch": "En cancha",
     "banners.teamCountdown.probable": "Cruce probable",
+    "banners.teamCountdown.opponentTbd": "Rival por definir",
     "banners.teamCountdown.change": "Cambiar selecci\xF3n",
     "banners.teamCountdown.choose": "Elige tu selecci\xF3n",
     "banners.teamCountdown.chooseHint": "Sigue el pr\xF3ximo partido de tu selecci\xF3n",
@@ -30314,6 +30321,7 @@ var bannersCatalog = {
     "banners.teamCountdown.live": "{team} live",
     "banners.teamCountdown.onPitch": "On the pitch",
     "banners.teamCountdown.probable": "Likely matchup",
+    "banners.teamCountdown.opponentTbd": "Opponent TBD",
     "banners.teamCountdown.change": "Change team",
     "banners.teamCountdown.choose": "Choose your team",
     "banners.teamCountdown.chooseHint": "Follow your team's next match",
