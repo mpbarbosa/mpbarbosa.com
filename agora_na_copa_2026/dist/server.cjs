@@ -4728,7 +4728,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
       instagram: "lautaromartinez",
       instagramFollowers: 12e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Lautaro_Mart%C3%ADnez"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DarsfrdltzO/"
   },
   "402921": {
     fifaId: "402921",
@@ -6185,7 +6186,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
       instagram: "juliaanalvarez",
       instagramFollowers: 2e7,
       wikipedia: "https://pt.wikipedia.org/wiki/Juli%C3%A1n_Alvarez"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/Darftu1EZme/"
   },
   "416576": {
     fifaId: "416576",
