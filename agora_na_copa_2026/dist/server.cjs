@@ -923,7 +923,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
     socials: {
       instagram: "laporte",
       wikipedia: "https://pt.wikipedia.org/wiki/Aymeric_Laporte"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaoVapOj6F2/"
   },
   "336022": {
     fifaId: "336022",
@@ -3393,7 +3394,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
     socials: {
       instagram: "grimaldo35",
       wikipedia: "https://pt.wikipedia.org/wiki/Alejandro_Grimaldo"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DastBIuAtWi/"
   },
   "391646": {
     fifaId: "391646",
@@ -8717,7 +8719,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
     height: 190,
     socials: {
       wikipedia: "https://pt.wikipedia.org/wiki/Unai_Sim%C3%B3n"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaeJbukRNH7/"
   },
   "430754": {
     fifaId: "430754",
