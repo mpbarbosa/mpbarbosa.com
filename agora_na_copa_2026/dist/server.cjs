@@ -27326,7 +27326,15 @@ var KNOCKOUT_RESULTS = {
   // Suíça 4×3 nos pênaltis (Granit Xhaka, Zeki Amdouni, Cedric Itten e Ruben Vargas; Juan
   // Quintero, Jaminton Campaz e Luis Díaz p/ COL). Suíça classificada às Quartas; alimenta a
   // #100 (slot W96), duelo com a Argentina. Colômbia eliminada.
-  96: { status: "FINISHED", score: { teamA: 0, teamB: 0 }, penaltyScore: { teamA: 4, teamB: 3 } }
+  96: { status: "FINISHED", score: { teamA: 0, teamB: 0 }, penaltyScore: { teamA: 4, teamB: 3 } },
+  // #97 · Quartas · Boston Stadium · 09/07/2026 — França 2×0 Marrocos (Kylian Mbappé 60',
+  // Ousmane Dembélé 66'). França classificada às Semifinais; alimenta a #101 (slot W97), duelo
+  // com a Espanha. Marrocos eliminado.
+  97: { status: "FINISHED", score: { teamA: 2, teamB: 0 } },
+  // #98 · Quartas · Los Angeles Stadium · 10/07/2026 — Espanha 2×1 Bélgica (Fabián Ruiz 30' e
+  // Mikel Merino 88' p/ ESP; Charles De Ketelaere 41' p/ BEL). Espanha classificada às
+  // Semifinais; alimenta a #101 (slot W98). Bélgica eliminada.
+  98: { status: "FINISHED", score: { teamA: 2, teamB: 1 } }
 };
 
 // src/i18n/catalogs/core.ts
@@ -30561,7 +30569,15 @@ var utilsCatalog = {
     "utils.stage.QF": "Quartas de Final",
     "utils.stage.SF": "Semifinal",
     "utils.stage.TP": "Disputa do 3\xBA Lugar",
-    "utils.stage.F": "Final"
+    "utils.stage.F": "Final",
+    // knockoutSlots.ts — unresolved feeder-slot placeholder labels
+    "utils.slot.pos1": "1\xBA {group}",
+    "utils.slot.pos2": "2\xBA {group}",
+    "utils.slot.bestThird": "Melhor 3\xBA \xB7 {groups}",
+    "utils.slot.winner": "Vencedor #{n}",
+    "utils.slot.loser": "Perdedor #{n}",
+    "utils.slot.bestThirdDesc": "Um dos melhores terceiros colocados \u2014 dos grupos {groups}",
+    "utils.slot.orConnector": " ou "
   },
   es: {
     // teamTournamentStatus.ts
@@ -30593,7 +30609,15 @@ var utilsCatalog = {
     "utils.stage.QF": "Cuartos de final",
     "utils.stage.SF": "Semifinal",
     "utils.stage.TP": "Tercer puesto",
-    "utils.stage.F": "Final"
+    "utils.stage.F": "Final",
+    // knockoutSlots.ts — unresolved feeder-slot placeholder labels
+    "utils.slot.pos1": "1\xBA {group}",
+    "utils.slot.pos2": "2\xBA {group}",
+    "utils.slot.bestThird": "Mejor 3\xBA \xB7 {groups}",
+    "utils.slot.winner": "Ganador #{n}",
+    "utils.slot.loser": "Perdedor #{n}",
+    "utils.slot.bestThirdDesc": "Uno de los mejores terceros \u2014 de los grupos {groups}",
+    "utils.slot.orConnector": " o "
   },
   en: {
     // teamTournamentStatus.ts
@@ -30625,7 +30649,15 @@ var utilsCatalog = {
     "utils.stage.QF": "Quarterfinals",
     "utils.stage.SF": "Semifinals",
     "utils.stage.TP": "Third-Place Match",
-    "utils.stage.F": "Final"
+    "utils.stage.F": "Final",
+    // knockoutSlots.ts — unresolved feeder-slot placeholder labels
+    "utils.slot.pos1": "1st {group}",
+    "utils.slot.pos2": "2nd {group}",
+    "utils.slot.bestThird": "Best 3rd \xB7 {groups}",
+    "utils.slot.winner": "Winner #{n}",
+    "utils.slot.loser": "Loser #{n}",
+    "utils.slot.bestThirdDesc": "One of the best third-placed teams \u2014 from groups {groups}",
+    "utils.slot.orConnector": " or "
   }
 };
 
@@ -30656,6 +30688,14 @@ var CATALOGS = {
   es: mergeLocale("es"),
   en: mergeLocale("en")
 };
+var translate = (locale, key, params) => {
+  const template = CATALOGS[locale]?.[key] ?? CATALOGS.pt[key] ?? key;
+  if (!params) return template;
+  return template.replace(
+    /\{(\w+)\}/g,
+    (match, name) => name in params ? String(params[name]) : match
+  );
+};
 
 // src/i18n/LocaleContext.tsx
 var import_react = require("react");
@@ -30664,14 +30704,16 @@ var LocaleContext = (0, import_react.createContext)(null);
 
 // src/utils/knockoutSlots.ts
 function humanizeSlot(slot) {
+  const locale = getActiveLocale();
   const groupPos = slot.match(/^([12])([A-L])$/);
-  if (groupPos) return `${groupPos[1]}\xBA ${groupPos[2]}`;
+  if (groupPos) return translate(locale, `utils.slot.pos${groupPos[1]}`, { group: groupPos[2] });
   const bestThird = slot.match(/^3([A-L]{2,})$/);
-  if (bestThird) return `Melhor 3\xBA \xB7 ${bestThird[1].split("").join("/")}`;
+  if (bestThird)
+    return translate(locale, "utils.slot.bestThird", { groups: bestThird[1].split("").join("/") });
   const winner = slot.match(/^W(\d+)$/);
-  if (winner) return `Vencedor #${winner[1]}`;
+  if (winner) return translate(locale, "utils.slot.winner", { n: winner[1] });
   const loser = slot.match(/^RU(\d+)$/);
-  if (loser) return `Perdedor #${loser[1]}`;
+  if (loser) return translate(locale, "utils.slot.loser", { n: loser[1] });
   return slot;
 }
 var KNOCKOUT_STAGE_NAMES = {
