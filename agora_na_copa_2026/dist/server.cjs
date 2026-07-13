@@ -2302,7 +2302,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
     socials: {
       instagram: "orjanhnyland1",
       wikipedia: "https://en.wikipedia.org/wiki/%C3%98rjan_Nyland"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DZ0yg81De_L/"
   },
   "373344": {
     fifaId: "373344",
@@ -11062,7 +11063,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
       wikipedia: "https://pt.wikipedia.org/wiki/Dan_Ndoye"
     },
     dateOfBirth: "2000-10-25",
-    height: 184
+    height: 184,
+    instagramPostUrl: "https://www.instagram.com/p/Das5JTqlJhy/"
   },
   "448120": {
     fifaId: "448120",
@@ -17663,7 +17665,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
     socials: {
       instagram: "joaquinseys65",
       wikipedia: "https://en.wikipedia.org/wiki/Joaquin_Seys"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DaqUtp3GiWZ/"
   },
   "506124": {
     fifaId: "506124",
@@ -19857,7 +19860,8 @@ var HTML_SEO = {
     description: "Sigue la Copa Mundial de la FIFA 2026 en vivo: cuenta regresiva, d\xF3nde ver, alineaciones, tablas de posiciones de los grupos, clasificaci\xF3n y llave \u2014 todo en un solo lugar.",
     ogDescription: "Cuenta regresiva, d\xF3nde ver, alineaciones, tablas de posiciones y llave de la Copa Mundial de la FIFA 2026 \u2014 todo en un solo lugar.",
     ogSiteName: "Ahora en el Mundial 26",
-    ogImageAlt: "Ahora en el Mundial 26 \u2014 compa\xF1ero de la Copa Mundial FIFA 2026"
+    ogImageAlt: "Ahora en el Mundial 26 \u2014 compa\xF1ero de la Copa Mundial FIFA 2026",
+    sportsEventName: "Copa Mundial FIFA 2026"
   },
   en: {
     htmlLang: "en-US",
@@ -19867,7 +19871,8 @@ var HTML_SEO = {
     description: "Follow the FIFA World Cup 2026 live: countdown, where to watch, lineups, group standings, qualification and bracket \u2014 all in one place.",
     ogDescription: "Countdown, where to watch, lineups, standings and bracket for the FIFA World Cup 2026 \u2014 all in one place.",
     ogSiteName: "Now at the World Cup 26",
-    ogImageAlt: "Now at the World Cup 26 \u2014 FIFA World Cup 2026 companion"
+    ogImageAlt: "Now at the World Cup 26 \u2014 FIFA World Cup 2026 companion",
+    sportsEventName: "FIFA World Cup 2026"
   }
 };
 var localizeIndexHtml = (html, locale) => {
@@ -19900,7 +19905,10 @@ var localizeIndexHtml = (html, locale) => {
   ).replace(
     /(<link\s+rel="canonical"\s+href=")[^"]*(")/,
     `$1${seo.canonical}$2`
-  ).replace("</head>", `  <script>window.__AGORA_LOCALE__="${locale}";</script>
+  ).replace(
+    /(<meta\s+property="og:url"\s+content=")[^"]*(")/,
+    `$1${seo.canonical}$2`
+  ).replace(/"inLanguage": "pt-BR"/, `"inLanguage": "${seo.htmlLang}"`).replace(/"name": "Agora na Copa 26"/g, `"name": "${seo.ogSiteName}"`).replace(/"name": "Copa do Mundo FIFA 2026"/, `"name": "${seo.sportsEventName}"`).replace("</head>", `  <script>window.__AGORA_LOCALE__="${locale}";</script>
   </head>`);
 };
 var localizeResilienceNote = (payload, locale) => locale !== "pt" && typeof payload.note === "string" ? { ...payload, note: localizeNote(payload.note, locale) } : payload;
@@ -27355,6 +27363,10 @@ var coreCatalog = {
   pt: {
     // App shell — header, banners, controls
     "shell.brandName": "Agora na Copa",
+    // Full <title> for the home/default view (mirrors index.html); other views
+    // get "<label> — <brand>" via App's document.title effect.
+    "meta.homeTitle": "Agora na Copa 26 \u2014 Copa do Mundo FIFA 2026 ao vivo",
+    "meta.titleSuffix": "Agora na Copa 26",
     "shell.newVersion": "Nova vers\xE3o dispon\xEDvel",
     "shell.updateNow": "Atualizar agora",
     "shell.editClock": "Mudar Rel\xF3gio",
@@ -27396,6 +27408,8 @@ var coreCatalog = {
   es: {
     // App shell
     "shell.brandName": "Ahora en el Mundial",
+    "meta.homeTitle": "Ahora en el Mundial 26 \u2014 Copa Mundial FIFA 2026 en vivo",
+    "meta.titleSuffix": "Ahora en el Mundial 26",
     "shell.newVersion": "Actualizaci\xF3n disponible",
     "shell.updateNow": "Actualizar ahora",
     "shell.editClock": "Cambiar reloj",
@@ -27437,6 +27451,8 @@ var coreCatalog = {
   en: {
     // App shell — header, banners, controls
     "shell.brandName": "Now at the World Cup",
+    "meta.homeTitle": "Now at the World Cup 26 \u2014 FIFA World Cup 2026 live",
+    "meta.titleSuffix": "Now at the World Cup 26",
     "shell.newVersion": "New version available",
     "shell.updateNow": "Update now",
     "shell.editClock": "Change Clock",
@@ -35530,6 +35546,37 @@ app.get("/api/health", (_req, res) => {
       totalMem: import_node_os.default.totalmem()
     }
   });
+});
+app.get("/sitemap.xml", (_req, res) => {
+  const homes = [
+    { loc: "https://copa2026.mpbarbosa.com/", hreflang: "pt-BR" },
+    { loc: "https://es.copa2026.mpbarbosa.com/", hreflang: "es" },
+    { loc: "https://en.copa2026.mpbarbosa.com/", hreflang: "en" }
+  ];
+  const alternates = [
+    ...homes.map((h) => `    <xhtml:link rel="alternate" hreflang="${h.hreflang}" href="${h.loc}"/>`),
+    `    <xhtml:link rel="alternate" hreflang="x-default" href="https://copa2026.mpbarbosa.com/"/>`
+  ].join("\n");
+  const lastmod = (/* @__PURE__ */ new Date()).toISOString().slice(0, 10);
+  const urls = homes.map(
+    (h) => [
+      "  <url>",
+      `    <loc>${h.loc}</loc>`,
+      alternates,
+      `    <lastmod>${lastmod}</lastmod>`,
+      "    <changefreq>daily</changefreq>",
+      "    <priority>1.0</priority>",
+      "  </url>"
+    ].join("\n")
+  ).join("\n");
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${urls}
+</urlset>
+`;
+  res.set("Content-Type", "application/xml; charset=utf-8");
+  res.set("Cache-Control", "public, max-age=3600");
+  res.send(xml);
 });
 async function startServer() {
   const port = await resolveAppPort();
