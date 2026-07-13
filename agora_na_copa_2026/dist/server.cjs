@@ -201,7 +201,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
       "https://www.instagram.com/p/DaWg1ZzgILy/",
       "https://www.instagram.com/p/DaVH_x6j8ih/",
       "https://www.instagram.com/p/DaYZ09gFQqx/",
-      "https://www.instagram.com/p/DagL8gfkXx9/"
+      "https://www.instagram.com/p/DagL8gfkXx9/",
+      "https://www.instagram.com/p/Das9JkliA4N/"
     ],
     worldCupNote: "## Leitura\nMessi decide de novo e segue artilheiro. O capit\xE3o marcou o gol do empate na virada por 3 a 2 sobre o Egito e chegou a 8 gols no Mundial, mantendo a Argentina viva e cada vez mais favorita \u2014 agora nas quartas de final, contra a Su\xED\xE7a.\n## Desempenho\nHat-trick na estreia (3 a 0 na Arg\xE9lia), dois sobre a \xC1ustria (2 a 0) e o gol do 3 a 1 sobre a Jord\xE2nia. Nos 16-avos, abriu aos 29 o dur\xEDssimo 3 a 2 sobre Cabo Verde. Nas oitavas, a Argentina levou um susto: perdia por 2 a 0 para o Egito (Yasser Ibrahim aos 15, Mostafa Zico aos 67) at\xE9 reagir com Romero (79'), o empate de Messi (83') e o gol de Enzo Fern\xE1ndez nos acr\xE9scimos (90+2'), completando a virada por 3 a 2 ainda no tempo normal.\n## N\xFAmeros\nJ5 \xB7 8 gols \xB7 0 cart\xF5es \xB7 artilheiro isolado da Copa. A Argentina avan\xE7ou \xE0s quartas de final, onde encara a Su\xED\xE7a.",
     worldCupNoteUpdatedAt: "2026-07-07T16:00:00.000Z",
@@ -7511,7 +7512,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
     socials: {
       instagram: "haissemhassan",
       wikipedia: "https://en.wikipedia.org/wiki/Haissem_Hassan"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DanaIZYjTaP/"
   },
   "424119": {
     fifaId: "424119",
@@ -16226,7 +16228,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
     socials: {
       instagram: "renatoveiga95",
       wikipedia: "https://pt.wikipedia.org/wiki/Renato_Veiga"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DagQG9CEva8/"
   },
   "489732": {
     fifaId: "489732",
@@ -16857,7 +16860,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
     socials: {
       instagram: "andreasschjelderup",
       wikipedia: "https://pt.wikipedia.org/wiki/Andreas_Schjelderup"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/DatOsBujOaV/"
   },
   "494627": {
     fifaId: "494627",
@@ -20016,7 +20020,7 @@ function parseSummary(text, file) {
     suspectSources
   };
 }
-var SYNTHETIC = /Atacante%20Teste|Goleiro%20Teste|Abdulilah%20Alamri|Clube%20Teste/;
+var SYNTHETIC = /Atacante%20Teste|Goleiro%20Teste|Abdulilah%20Alamri|Clube%20Teste|\/api\/health(?![\w-])/;
 function projectLatest(snap) {
   return {
     file: snap.file,
@@ -29841,7 +29845,7 @@ var dashboardCatalog = {
     "dashboard.trafficRateCountryAria": "Filtrar o ritmo de requisi\xE7\xF5es por pa\xEDs",
     "dashboard.trafficRateCountryAll": "Todos os pa\xEDses",
     "dashboard.trafficTopPathsTitle": "Rotas mais acessadas",
-    "dashboard.trafficTopPathsSubtitle": "rotas sint\xE9ticas de e2e exclu\xEDdas",
+    "dashboard.trafficTopPathsSubtitle": "rotas sint\xE9ticas de e2e e de monitoramento exclu\xEDdas",
     "dashboard.trafficByHourTitle": "Requisi\xE7\xF5es por hora (UTC)",
     "dashboard.trafficByHourSubtitle": "distribui\xE7\xE3o ao longo do dia",
     "dashboard.trafficStatusCodesTitle": "C\xF3digos de status HTTP",
@@ -29981,7 +29985,7 @@ var dashboardCatalog = {
     "dashboard.trafficRateCountryAria": "Filtrar el ritmo de solicitudes por pa\xEDs",
     "dashboard.trafficRateCountryAll": "Todos los pa\xEDses",
     "dashboard.trafficTopPathsTitle": "Rutas m\xE1s accedidas",
-    "dashboard.trafficTopPathsSubtitle": "rutas sint\xE9ticas de e2e excluidas",
+    "dashboard.trafficTopPathsSubtitle": "rutas sint\xE9ticas de e2e y de monitoreo excluidas",
     "dashboard.trafficByHourTitle": "Solicitudes por hora (UTC)",
     "dashboard.trafficByHourSubtitle": "distribuci\xF3n a lo largo del d\xEDa",
     "dashboard.trafficStatusCodesTitle": "C\xF3digos de estado HTTP",
@@ -30121,7 +30125,7 @@ var dashboardCatalog = {
     "dashboard.trafficRateCountryAria": "Filter request rate by country",
     "dashboard.trafficRateCountryAll": "All countries",
     "dashboard.trafficTopPathsTitle": "Most accessed routes",
-    "dashboard.trafficTopPathsSubtitle": "synthetic e2e routes excluded",
+    "dashboard.trafficTopPathsSubtitle": "synthetic e2e and monitoring routes excluded",
     "dashboard.trafficByHourTitle": "Requests by hour (UTC)",
     "dashboard.trafficByHourSubtitle": "distribution across the day",
     "dashboard.trafficStatusCodesTitle": "HTTP status codes",
