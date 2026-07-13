@@ -8428,7 +8428,10 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
       instagramFollowers: 9e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Alexis_Mac_Allister"
     },
-    instagramPostUrl: "https://www.instagram.com/p/DagORkXvh4j/"
+    instagramPostUrls: [
+      "https://www.instagram.com/p/DagORkXvh4j/",
+      "https://www.instagram.com/p/DasubVgkSWT/"
+    ]
   },
   "430631": {
     fifaId: "430631",
