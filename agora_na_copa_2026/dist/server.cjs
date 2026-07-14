@@ -27362,7 +27362,11 @@ var KNOCKOUT_RESULTS = {
   // #100 · Quartas · Kansas City Stadium — Argentina 3×1 Suíça após a prorrogação (Alexis Mac
   // Allister 10', Julián Álvarez 112' e Lautaro Martínez 120+1' p/ ARG; Dan Ndoye 67' p/ SUI).
   // Argentina classificada às Semifinais; alimenta a #102 (slot W100). Suíça eliminada.
-  100: { status: "FINISHED", score: { teamA: 3, teamB: 1 } }
+  100: { status: "FINISHED", score: { teamA: 3, teamB: 1 } },
+  // #101 · Semifinal · Dallas Stadium · 14/07/2026 — França 0×2 Espanha (Mikel Oyarzabal 22',
+  // Pedro Porro 58'). Espanha classificada à FINAL (#104, slot W101); França cai para a disputa
+  // do 3º lugar (#103, slot L101/RU101). Rabiot, Cucurella e Mbappé amarelados.
+  101: { status: "FINISHED", score: { teamA: 0, teamB: 2 } }
 };
 
 // src/i18n/catalogs/core.ts
