@@ -8705,7 +8705,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
       wikipedia: "https://pt.wikipedia.org/wiki/Mikel_Oyarzabal"
     },
     instagramPostUrls: [
-      "https://www.instagram.com/p/DZ5e3aJmmL3/"
+      "https://www.instagram.com/p/DZ5e3aJmmL3/",
+      "https://www.instagram.com/p/DaqvOpxkn-o/"
     ]
   },
   "430753": {
@@ -31352,8 +31353,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-07-02T23:30:00-03:00"
   },
   FRA: {
-    text: "## Leitura\nA Fran\xE7a de Didier Deschamps est\xE1 na semifinal e mant\xE9m os 100% de aproveitamento. Bateu o Marrocos por 2 a 0 nas quartas \u2014 Mbapp\xE9 e Demb\xE9l\xE9 decidiram em seis minutos \u2014 e chega \xE0 reta final do Mundial como uma das grandes favoritas ao t\xEDtulo, com o melhor ataque e uma das defesas mais seguras da competi\xE7\xE3o.\n## Desempenho\nFechou o Grupo I com tr\xEAs vit\xF3rias (3 a 1 no Senegal, 3 a 0 no Iraque, 4 a 1 na Noruega). No mata-mata, atropelou a Su\xE9cia (3 a 0), quebrou a resist\xEAncia do Paraguai (1 a 0, gol de Mbapp\xE9) e superou o Marrocos nas quartas: Kylian Mbapp\xE9 abriu aos 60' e Ousmane Demb\xE9l\xE9 ampliou aos 66', no 2 a 0.\n## N\xFAmeros\nSeis jogos, seis vit\xF3rias \u2014 aproveitamento perfeito, invicta no Mundial. 16 gols marcados e apenas 2 sofridos (SG +14). Artilheiro: Kylian Mbapp\xE9 (8 gols). Na semifinal, encara a Espanha.",
-    updatedAt: "2026-07-09T20:00:00.000Z"
+    text: "## Leitura\nA Fran\xE7a de Didier Deschamps caiu na semifinal. Foi batida por 2 a 0 pela Espanha e n\xE3o chegou \xE0 decis\xE3o do Mundial \u2014 a primeira derrota da equipe no torneio, que at\xE9 ent\xE3o somava seis vit\xF3rias em seis jogos. Dona do melhor ataque da competi\xE7\xE3o, Les Bleus agora disputam o terceiro lugar.\n## Desempenho\nA campanha vinha impec\xE1vel: liderou o Grupo I com tr\xEAs vit\xF3rias (3 a 1 no Senegal, 3 a 0 no Iraque, 4 a 1 na Noruega) e avan\xE7ou atropelando no mata-mata \u2014 3 a 0 na Su\xE9cia, 1 a 0 no Paraguai e 2 a 0 no Marrocos. Na semifinal, por\xE9m, esbarrou numa Espanha superior: Mikel Oyarzabal abriu aos 22\u2019 e Pedro Porro ampliou aos 58\u2019. Rabiot e Mbapp\xE9 foram advertidos, e a Fran\xE7a pouco criou diante da defesa mais segura do torneio.\n## N\xFAmeros\nSete jogos: seis vit\xF3rias e uma derrota \u2014 justamente a que valia a vaga na final. 16 gols marcados e 4 sofridos (SG +12). Artilheiro: Kylian Mbapp\xE9 (8 gols), goleador do Mundial ao lado de Messi. A seguir, a disputa do terceiro lugar, contra o perdedor de Inglaterra x Argentina.",
+    updatedAt: "2026-07-14T19:31:00-03:00"
   },
   NOR: {
     text: "## Leitura\nFim de linha nas quartas de final, mas de cabe\xE7a erguida. A Noruega de St\xE5le Solbakken foi superada pela Inglaterra por 2 a 1 e se despede do Mundial ap\xF3s a melhor campanha de sua hist\xF3ria \u2014 que incluiu a elimina\xE7\xE3o do Brasil nas oitavas. Desta vez, Erling Haaland foi neutralizado e a virada inglesa nos acr\xE9scimos encerrou o sonho.\n## Desempenho\nNa fase de grupos ficou em 2\xBA do Grupo I (4 a 1 no Iraque, 3 a 2 no Senegal, 1 a 4 para a Fran\xE7a). No mata-mata, passou pela Costa do Marfim (2 a 1) e chocou o mundo ao eliminar o Brasil (2 a 1, dois de Haaland). Nas quartas, Andreas Schjelderup abriu aos 36', mas a Inglaterra virou com a dobradinha de Bellingham (45+2' e 90+3').\n## N\xFAmeros\nSeis jogos: 4 vit\xF3rias e 2 derrotas; 13 gols marcados, 11 sofridos. Artilheiro: Erling Haaland (7 gols), o grande nome da campanha. Eliminada nas quartas de final pela Inglaterra (1 a 2).",
@@ -31472,8 +31473,8 @@ var teamAnalysis_default = {
     updatedAt: "2026-06-27T08:24:00-03:00"
   },
   ESP: {
-    text: "## Leitura\nA Espanha de Luis de la Fuente est\xE1 na semifinal. Venceu a B\xE9lgica por 2 a 1 nas quartas, num jogo em que sofreu o seu primeiro gol no Mundial, mas voltou a contar com o her\xF3i Mikel Merino \u2014 decisivo aos 88', como j\xE1 havia sido contra Portugal. La Roja segue como uma das grandes candidatas ao t\xEDtulo.\n## Desempenho\nL\xEDder do Grupo H sem ser vazada na primeira fase, goleou a \xC1ustria (3 a 0) nos 16-avos e superou Portugal (1 a 0, Merino nos acr\xE9scimos) nas oitavas. Nas quartas, contra a B\xE9lgica, Fabi\xE1n Ruiz abriu aos 30', Charles De Ketelaere empatou aos 41' \u2014 o primeiro gol sofrido pela Espanha no torneio \u2014 e Merino desempatou aos 88', no 2 a 1.\n## N\xFAmeros\nSeis jogos: 5 vit\xF3rias e 1 empate, invicta. 11 gols marcados e apenas 1 sofrido (o de De Ketelaere nas quartas). Her\xF3i recorrente: Mikel Merino. Na semifinal, encara a Fran\xE7a.",
-    updatedAt: "2026-07-10T19:00:00.000Z"
+    text: "## Leitura\nA Espanha de Luis de la Fuente est\xE1 na final do Mundial. Bateu a Fran\xE7a por 2 a 0 na semifinal, com gols de Mikel Oyarzabal e Pedro Porro, e chega \xE0 decis\xE3o invicta e com a defesa mais s\xF3lida da competi\xE7\xE3o \u2014 apenas um gol sofrido em sete jogos. La Roja aguarda o vencedor de Inglaterra x Argentina.\n## Desempenho\nCresceu a cada rodada. L\xEDder do Grupo H sem ser vazada na primeira fase, goleou a \xC1ustria (3 a 0), superou Portugal (1 a 0, Merino nos acr\xE9scimos) e passou pela B\xE9lgica (2 a 1), \xFAnico jogo em que foi vazada. Na semifinal, controlou a Fran\xE7a: Oyarzabal abriu aos 22\u2019, Porro ampliou aos 58\u2019 e a defesa n\xE3o deu chances a Mbapp\xE9 e companhia, segurando mais um jogo sem sofrer gols.\n## N\xFAmeros\nSete jogos: seis vit\xF3rias e um empate, invicta. 13 gols marcados e apenas 1 sofrido (SG +12) \u2014 a defesa menos vazada do Mundial. Artilheiro: Mikel Oyarzabal (5 gols), autor do primeiro gol na semifinal. Na final, encara o vencedor de Inglaterra x Argentina.",
+    updatedAt: "2026-07-14T19:31:00-03:00"
   },
   CPV: {
     updatedAt: "2026-07-04T11:52:00-03:00",
