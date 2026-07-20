@@ -27372,7 +27372,16 @@ var KNOCKOUT_RESULTS = {
   // 55' p/ ING; Enzo Fernández 85' e Lautaro Martínez 90+2' p/ ARG). Argentina classificada à
   // FINAL (#104, slot W102); Inglaterra cai para a disputa do 3º lugar (#103, slot L102/RU102).
   // Anderson; Lisandro Martínez, Romero e De Paul amarelados.
-  102: { status: "FINISHED", score: { teamA: 1, teamB: 2 } }
+  102: { status: "FINISHED", score: { teamA: 1, teamB: 2 } },
+  // #103 · Disputa do 3º Lugar · Miami Stadium · 18/07/2026 — França 4×6 Inglaterra (Kylian
+  // Mbappé 48' e 66', Bradley Barcola 54', Ousmane Dembélé 90+6' p/ FRA; Declan Rice 3', Ezri
+  // Konsa 18', Bukayo Saka 37', 45+1' e 87' [hat-trick] e Jude Bellingham 90+8' p/ ING).
+  // Inglaterra fica com o 3º lugar num jogo de dez gols; França em 4º.
+  103: { status: "FINISHED", score: { teamA: 4, teamB: 6 } },
+  // #104 · FINAL · New York/New Jersey Stadium · 19/07/2026 — Espanha 1×0 Argentina na
+  // prorrogação (Ferran Torres 106'). 🏆 ESPANHA CAMPEÃ DA COPA DO MUNDO FIFA 2026; Argentina
+  // vice-campeã.
+  104: { status: "FINISHED", score: { teamA: 1, teamB: 0 } }
 };
 
 // src/i18n/catalogs/core.ts
@@ -27384,6 +27393,10 @@ var coreCatalog = {
     // get "<label> — <brand>" via App's document.title effect.
     "meta.homeTitle": "Agora na Copa 26 \u2014 Copa do Mundo FIFA 2026 ao vivo",
     "meta.titleSuffix": "Agora na Copa 26",
+    // Champion celebration carousel (Ao Vivo, shown once the Final is decided)
+    "champion.title": "{name} \u2014 Campe\xE3 do Mundo 2026",
+    "champion.subtitle": "Elenco campe\xE3o da Copa do Mundo FIFA 2026",
+    "champion.tileAria": "Ver a sele\xE7\xE3o campe\xE3 \u2014 {name}",
     "shell.newVersion": "Nova vers\xE3o dispon\xEDvel",
     "shell.updateNow": "Atualizar agora",
     "shell.editClock": "Mudar Rel\xF3gio",
@@ -27427,6 +27440,9 @@ var coreCatalog = {
     "shell.brandName": "Ahora en el Mundial",
     "meta.homeTitle": "Ahora en el Mundial 26 \u2014 Copa Mundial FIFA 2026 en vivo",
     "meta.titleSuffix": "Ahora en el Mundial 26",
+    "champion.title": "{name} \u2014 Campe\xF3n del Mundo 2026",
+    "champion.subtitle": "Plantel campe\xF3n de la Copa Mundial FIFA 2026",
+    "champion.tileAria": "Ver la selecci\xF3n campeona \u2014 {name}",
     "shell.newVersion": "Actualizaci\xF3n disponible",
     "shell.updateNow": "Actualizar ahora",
     "shell.editClock": "Cambiar reloj",
@@ -27470,6 +27486,9 @@ var coreCatalog = {
     "shell.brandName": "Now at the World Cup",
     "meta.homeTitle": "Now at the World Cup 26 \u2014 FIFA World Cup 2026 live",
     "meta.titleSuffix": "Now at the World Cup 26",
+    "champion.title": "{name} \u2014 2026 World Champions",
+    "champion.subtitle": "FIFA World Cup 2026 champion squad",
+    "champion.tileAria": "View the champion team \u2014 {name}",
     "shell.newVersion": "New version available",
     "shell.updateNow": "Update now",
     "shell.editClock": "Change Clock",
