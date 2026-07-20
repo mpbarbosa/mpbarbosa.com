@@ -5432,7 +5432,8 @@ J5 \xB7 3 gols \xB7 0 cart\xF5es \xB7 Portugal eliminado nas oitavas pela Espanh
       instagram: "ferrantorres",
       instagramFollowers: 8e6,
       wikipedia: "https://pt.wikipedia.org/wiki/Ferran_Torres"
-    }
+    },
+    instagramPostUrl: "https://www.instagram.com/p/Da_vhzqAiUd/"
   },
   "405562": {
     fifaId: "405562",
