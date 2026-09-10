@@ -207,6 +207,7 @@ button:focus {
     margin-top: 20px;
 }
 
+.user-info h2,
 .user-info h3 {
     color: #1DB954;
     margin-bottom: 15px;
@@ -249,6 +250,7 @@ button:focus {
     border-left: 4px solid #1DB954;
 }
 
+.step h2,
 .step h3 {
     color: #1DB954;
     margin-bottom: 8px;
